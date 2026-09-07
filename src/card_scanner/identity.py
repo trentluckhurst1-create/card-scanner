@@ -28,10 +28,15 @@ BRANDS = [
     "Bowman Chrome",
     "Bowman Draft",
     "Bowman",
+    "Panini Phoenix",
+    "Panini One and One",
+    "One and One",
     "Topps Chrome",
     "Topps Finest",
     "Topps",
     "Panini Prizm",
+    "Panini",
+    "Fleer Retro",
     "Prizm",
     "Select",
     "Donruss Optic",
@@ -88,6 +93,12 @@ PARALLEL_TERMS = [
     "Cracked Ice",
     "Sparkle",
     "Sunflower Seeds",
+    "Team Multi-Patch Booklet",
+    "Rookie Badge Signature",
+    "AFL Badge Signature",
+    "Solo Double Patch",
+    "Dual Patch",
+    "Jumbo Patch",
     "Mojo",
     "Shimmer",
     "Scope",
@@ -163,6 +174,9 @@ NON_PLAYER_UPPER = {
     "RISING",
     "STAR",
     "PREDICTOR",
+    "ISO",
+    "SSP",
+    "AXIS",
 }
 
 
@@ -201,6 +215,8 @@ def _extract_brand(title: str) -> str | None:
         reverse=True,
     ):
         if brand.lower() in lower:
+            if brand == "One and One":
+                return "Panini One and One"
             return brand
 
     return None
@@ -238,6 +254,14 @@ def _extract_set_name(
     if m:
         return "Select AFL Footy Stars"
 
+    m = re.search(
+        r"\bSelect\s+AFL\s+Seamless\b",
+        title,
+        flags=re.I,
+    )
+    if m:
+        return "Select AFL Seamless"
+
     # Keep the identified brand as the conservative fallback.
     return brand
 
@@ -264,6 +288,12 @@ def _strip_league_tokens(words: list[str]) -> list[str]:
 
     while cleaned and cleaned[-1].rstrip(".") in LEAGUE_PREFIX_TOKENS:
         cleaned.pop()
+
+    while cleaned and cleaned[-1].rstrip(".") in NON_PLAYER_UPPER:
+        cleaned.pop()
+
+    while cleaned and cleaned[0].rstrip(".") in NON_PLAYER_UPPER:
+        cleaned.pop(0)
 
     return cleaned
 
@@ -329,6 +359,13 @@ def _extract_uppercase_player(title: str) -> str | None:
         ]
 
         if any(r in phrase for r in rejects):
+            continue
+
+        if re.search(
+            rf"\b{re.escape(phrase)}\b\s+Team\s+Multi[- ]Patch\s+Booklet\b",
+            title,
+            flags=re.I,
+        ):
             continue
 
         cleaned.append(" ".join(words))

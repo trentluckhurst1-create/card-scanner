@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-import json
 import sys
 import unittest
 from pathlib import Path
@@ -69,6 +68,63 @@ class EbaySourceTests(unittest.TestCase):
 
         with self.assertRaisesRegex(RuntimeError, "EBAY_CLIENT_ID.*EBAY_CLIENT_SECRET"):
             source.search_market("MLB", "anything", 5)
+
+    def test_empty_search(self):
+        def handler(request: httpx.Request) -> httpx.Response:
+            if str(request.url) == TOKEN_URL:
+                return httpx.Response(200, json={"access_token": "token", "expires_in": 7200})
+            return httpx.Response(200, json={"itemSummaries": []})
+
+        source = EbaySource(client=httpx.Client(transport=httpx.MockTransport(handler)))
+        source.client_id = "id"
+        source.client_secret = "secret"
+
+        self.assertEqual(source.search_market("MLB", "nothing", 5), [])
+
+    def test_duplicate_listing_dedupes(self):
+        item = {
+            "itemId": "v1|123",
+            "title": "2025 Bowman Draft KYSON WITHERSPOON Chrome Prospect 1st Auto Gold Wave 7/50",
+            "itemWebUrl": "https://www.ebay.com.au/itm/123",
+            "price": {"value": "100.00", "currency": "AUD"},
+        }
+
+        def handler(request: httpx.Request) -> httpx.Response:
+            if str(request.url) == TOKEN_URL:
+                return httpx.Response(200, json={"access_token": "token", "expires_in": 7200})
+            return httpx.Response(200, json={"itemSummaries": [item, item]})
+
+        source = EbaySource(client=httpx.Client(transport=httpx.MockTransport(handler)))
+        source.client_id = "id"
+        source.client_secret = "secret"
+
+        self.assertEqual(len(source.search_market("MLB", "kyson", 5)), 1)
+
+    def test_auth_failure_raises_http_status(self):
+        def handler(request: httpx.Request) -> httpx.Response:
+            if str(request.url) == TOKEN_URL:
+                return httpx.Response(401, json={"error": "invalid_client"}, request=request)
+            return httpx.Response(200, json={})
+
+        source = EbaySource(client=httpx.Client(transport=httpx.MockTransport(handler)))
+        source.client_id = "id"
+        source.client_secret = "bad"
+
+        with self.assertRaises(httpx.HTTPStatusError):
+            source.search_market("MLB", "kyson", 5)
+
+    def test_rate_limit_raises_http_status(self):
+        def handler(request: httpx.Request) -> httpx.Response:
+            if str(request.url) == TOKEN_URL:
+                return httpx.Response(200, json={"access_token": "token", "expires_in": 7200})
+            return httpx.Response(429, json={"error": "rate_limit"}, request=request)
+
+        source = EbaySource(client=httpx.Client(transport=httpx.MockTransport(handler)))
+        source.client_id = "id"
+        source.client_secret = "secret"
+
+        with self.assertRaises(httpx.HTTPStatusError):
+            source.search_market("MLB", "kyson", 5)
 
 
 if __name__ == "__main__":

@@ -1,16 +1,37 @@
 from __future__ import annotations
+import csv
 import typer
 from rich.console import Console
 from rich.table import Table
 
-from .db import finish_scan_run, init_db, start_scan_run, upsert_listing, save_valuation
+from .cherry_collector import CherryCollector
+from .db import (
+    fetch_listings,
+    fetch_sold_comps,
+    fetch_sold_comps_for_listing,
+    finish_scan_run,
+    init_db,
+    list_watch_items,
+    save_opportunity,
+    save_sold_valuation,
+    start_scan_run,
+    upsert_listing,
+    save_valuation,
+    watch_event_history,
+)
+from .identity_audit import audit_identities
 from .identity import parse_identity
 from .market_engine import MarketEngine
 from .models import Listing
+from .opportunity import assess_opportunity
+from .reporting import events_table, insufficient_comps_table, opportunities_table
+from .risk import title_risk_details
 from .scoring import score_listing
 from .sold_comps import import_sold_comp_csv
 from .sources.ebay import EbaySource
 from .sources.cherry import CherrySource
+from .valuation import value_from_sold_comps
+from .watchlist import add_watch, remove_watch
 
 app = typer.Typer(no_args_is_help=True)
 console = Console()
@@ -74,6 +95,94 @@ def scan_cherry(
     for item in items:
         upsert_listing(item)
     console.print(f"[green]Stored {len(items)} Cherry listings for {sport.upper()}.[/green]")
+
+
+@app.command("scan-cherry-all")
+def scan_cherry_all(
+    sport: str = typer.Option(..., help="NFL, NBA, MLB, AFL or ALL"),
+    force: bool = typer.Option(False, help="Ignore CHERRY_SCAN_CACHE_MINUTES"),
+    page_size: int | None = typer.Option(None, help="Override CHERRY_PAGE_SIZE"),
+    max_products: int | None = typer.Option(None, help="Override CHERRY_MAX_PRODUCTS_PER_SPORT"),
+):
+    init_db()
+    sports = ["NFL", "NBA", "MLB", "AFL"] if sport.upper() == "ALL" else [sport.upper()]
+    collector = CherryCollector(
+        page_size=page_size,
+        max_products_per_sport=max_products,
+    )
+    table = Table(title="Cherry Full Ingestion")
+
+    for column in [
+        "SPORT",
+        "FETCHED",
+        "NEW",
+        "UPDATED",
+        "UNCHANGED",
+        "PRICE_DROPS",
+        "PRICE_RISES",
+        "MISSING",
+        "INACTIVE",
+        "ERRORS",
+        "STATUS",
+    ]:
+        table.add_column(column)
+
+    for sport_name in sports:
+        summary = collector.scan_sport(sport_name, force=force)
+        status = "CACHE_SKIP" if summary.skipped_cache else "PASS"
+        if summary.errors:
+            status = "PARTIAL"
+        table.add_row(
+            summary.sport,
+            str(summary.fetched),
+            str(summary.new),
+            str(summary.updated),
+            str(summary.unchanged),
+            str(summary.price_drops),
+            str(summary.price_rises),
+            str(summary.missing),
+            str(summary.inactive),
+            str(summary.errors),
+            status,
+        )
+
+    console.print(table)
+
+
+@app.command("audit-identities")
+def audit_identities_cmd(
+    source: str = typer.Option("cherry"),
+    sport: str = typer.Option("ALL", help="NFL, NBA, MLB, AFL or ALL"),
+    limit: int = typer.Option(10000),
+):
+    init_db()
+    listings = fetch_listings(source, sport.upper(), limit)
+    summary = audit_identities(listings)
+    console.print(f"TOTAL_LISTINGS={summary.total}")
+    console.print(f"PLAYER_COVERAGE={summary.player_coverage:.2f}%")
+    console.print(f"YEAR_COVERAGE={summary.year_coverage:.2f}%")
+    console.print(f"SET_COVERAGE={summary.set_coverage:.2f}%")
+    console.print(f"PARALLEL_COVERAGE={summary.parallel_coverage:.2f}%")
+    console.print(f"SERIAL_COVERAGE={summary.serial_coverage:.2f}%")
+    console.print(f"CARD_NUMBER_COVERAGE={summary.card_number_coverage:.2f}%")
+    console.print(f"GRADE_COVERAGE={summary.grade_coverage:.2f}%")
+    console.print(f"COMP_READY_RATE={summary.comp_ready_rate:.2f}%")
+
+    table = Table(title="Lowest Confidence Identities")
+    for column in ["SPORT", "CONF", "PLAYER", "TITLE", "EXPLANATION"]:
+        table.add_column(column)
+
+    for row in summary.lowest_confidence:
+        identity = row.identity
+        table.add_row(
+            row.sport,
+            f"{row.confidence:.3f}",
+            identity.player if identity and identity.player else "",
+            row.title[:80],
+            "; ".join(row.explanations[:6]),
+        )
+
+    console.print(table)
 
 @app.command("scan-market")
 def scan_market(
@@ -172,10 +281,200 @@ def import_sold_comps_cmd(
     sport: str = typer.Option(..., help="NFL, NBA, MLB, AFL or ALL"),
 ):
     init_db()
-    imported, matches = import_sold_comp_csv(csv_path, sport.upper())
+    result = import_sold_comp_csv(csv_path, sport.upper())
     console.print(
-        f"[green]Imported {imported} sold comps and saved {matches} comparable matches.[/green]"
+        f"[green]Imported {result.imported} sold comps and saved {result.matches_saved} comparable matches.[/green]"
     )
+    console.print(f"DUPLICATES_IN_FILE={result.duplicates_in_file}")
+    console.print(f"DUPLICATES_EXISTING={result.duplicates_existing}")
+    console.print(f"INVALID_DATES={result.invalid_dates}")
+    console.print(f"INVALID_PRICES={result.invalid_prices}")
+    console.print(f"MISSING_CURRENCY={result.missing_currency}")
+    console.print(f"MISSING_AUD_CONVERSION={result.missing_aud_conversion}")
+
+    if result.errors:
+        for error in result.errors[:10]:
+            console.print(f"[yellow]{error}[/yellow]")
+
+
+@app.command("audit-sold-comps")
+def audit_sold_comps_cmd(
+    limit: int = typer.Option(50),
+):
+    init_db()
+    table = Table(title="Sold Comp Import Audit")
+    for column in ["SOURCE", "SALE_ID", "SOLD_DATE", "PRICE", "AUD", "MATCHES", "EXACT", "STRONG", "RELATED", "TITLE"]:
+        table.add_column(column)
+
+    for row in fetch_sold_comps(limit):
+        table.add_row(
+            row["source"],
+            row["sale_id"],
+            row["sold_date"],
+            f"{row['currency']} {row['sold_price']:.2f}",
+            f"A${row['sold_price_aud']:.2f}" if row["sold_price_aud"] is not None else "FX_PENDING",
+            str(row["match_count"] or 0),
+            str(row["exact_matches"] or 0),
+            str(row["strong_matches"] or 0),
+            str(row["related_matches"] or 0),
+            row["title"][:70],
+        )
+
+    console.print(table)
+
+
+@app.command("value-sold-comps")
+def value_sold_comps_cmd(
+    sport: str = typer.Option("ALL", help="NFL, NBA, MLB, AFL or ALL"),
+    limit: int = typer.Option(10000),
+):
+    init_db()
+    listings = fetch_listings("cherry", sport.upper(), limit)
+    valued = 0
+
+    for listing in listings:
+        valuation = value_from_sold_comps(
+            listing.external_id,
+            fetch_sold_comps_for_listing(listing.external_id),
+        )
+        save_sold_valuation(valuation)
+        opportunity = assess_opportunity(
+            listing,
+            valuation,
+            title_risk_details(listing.title),
+        )
+        save_opportunity(opportunity)
+        valued += 1
+
+    console.print(f"[green]VALUED_LISTINGS={valued}[/green]")
+
+
+@app.command("opportunities")
+def opportunities_cmd(
+    sport: str = typer.Option("ALL"),
+    limit: int = typer.Option(50),
+    export_csv: str | None = typer.Option(None, "--export-csv"),
+):
+    init_db()
+    console.print(opportunities_table(sport.upper(), limit, export_csv))
+
+
+@app.command("new-cherry-listings")
+def new_cherry_listings_cmd(
+    sport: str = typer.Option("ALL"),
+    limit: int = typer.Option(50),
+    export_csv: str | None = typer.Option(None, "--export-csv"),
+):
+    init_db()
+    console.print(events_table("NEW_LISTING", sport.upper(), limit, export_csv))
+
+
+@app.command("price-drops")
+def price_drops_cmd(
+    sport: str = typer.Option("ALL"),
+    limit: int = typer.Option(50),
+    export_csv: str | None = typer.Option(None, "--export-csv"),
+):
+    init_db()
+    console.print(events_table("PRICE_DROP", sport.upper(), limit, export_csv))
+
+
+@app.command("insufficient-comps")
+def insufficient_comps_cmd(
+    sport: str = typer.Option("ALL"),
+    limit: int = typer.Option(50),
+    export_csv: str | None = typer.Option(None, "--export-csv"),
+):
+    init_db()
+    console.print(insufficient_comps_table(sport.upper(), limit, export_csv))
+
+
+@app.command("identity-failures")
+def identity_failures_cmd(
+    sport: str = typer.Option("ALL"),
+    limit: int = typer.Option(50),
+):
+    init_db()
+    listings = fetch_listings("cherry", sport.upper(), 10000)
+    summary = audit_identities(listings, low_confidence_limit=limit)
+    table = Table(title="Identity Failures / Low Confidence")
+    for column in ["SPORT", "CONF", "TITLE", "EXPLANATION"]:
+        table.add_column(column)
+
+    for row in summary.lowest_confidence:
+        table.add_row(
+            row.sport,
+            f"{row.confidence:.3f}",
+            row.title[:90],
+            "; ".join(row.explanations),
+        )
+
+    console.print(table)
+
+
+@app.command("watch-add")
+def watch_add_cmd(
+    watch_type: str = typer.Option(..., help="listing, player, identity_signature or query"),
+    value: str = typer.Option(...),
+    sport: str | None = typer.Option(None),
+    label: str | None = typer.Option(None),
+):
+    init_db()
+    watch_id = add_watch(watch_type, value, sport, label)
+    console.print(f"[green]WATCH_ID={watch_id}[/green]")
+
+
+@app.command("watch-remove")
+def watch_remove_cmd(
+    watch_id: int = typer.Option(...),
+):
+    init_db()
+    removed = remove_watch(watch_id)
+    console.print("REMOVED=YES" if removed else "REMOVED=NO")
+
+
+@app.command("watch-list")
+def watch_list_cmd(
+    include_inactive: bool = typer.Option(False),
+):
+    init_db()
+    table = Table(title="Watchlist")
+    for column in ["ID", "TYPE", "SPORT", "VALUE", "LABEL", "ACTIVE"]:
+        table.add_column(column)
+
+    for row in list_watch_items(include_inactive):
+        table.add_row(
+            str(row["id"]),
+            row["watch_type"],
+            row["sport"] or "",
+            row["value"],
+            row["label"] or "",
+            "YES" if row["active"] else "NO",
+        )
+
+    console.print(table)
+
+
+@app.command("watch-history")
+def watch_history_cmd(
+    limit: int = typer.Option(50),
+):
+    init_db()
+    table = Table(title="Watch Event History")
+    for column in ["AT", "EVENT", "TYPE", "VALUE", "SOURCE", "EXTERNAL_ID"]:
+        table.add_column(column)
+
+    for row in watch_event_history(limit):
+        table.add_row(
+            row["created_at"],
+            row["event_type"],
+            row["watch_type"] or "",
+            row["value"] or "",
+            row["source"] or "",
+            row["external_id"] or "",
+        )
+
+    console.print(table)
 
 if __name__ == "__main__":
     app()

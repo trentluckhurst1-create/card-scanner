@@ -112,6 +112,69 @@ class SoldCompMatch(BaseModel):
     match_reasons: list[str] = Field(default_factory=list)
     rejection_reasons: list[str] = Field(default_factory=list)
 
+class IdentityAuditRow(BaseModel):
+    external_id: str
+    sport: str
+    title: str
+    identity: Optional[CardIdentity] = None
+    confidence: float
+    explanations: list[str] = Field(default_factory=list)
+
+class SoldValuation(BaseModel):
+    source_listing_external_id: str
+    sold_comp_count: int = 0
+    exact_comp_count: int = 0
+    strong_comp_count: int = 0
+    related_comp_count: int = 0
+    latest_sale_aud: Optional[float] = None
+    median_sale_aud: Optional[float] = None
+    weighted_median_aud: Optional[float] = None
+    trimmed_mean_aud: Optional[float] = None
+    median_30_day_aud: Optional[float] = None
+    median_90_day_aud: Optional[float] = None
+    median_180_day_aud: Optional[float] = None
+    fair_value_aud: Optional[float] = None
+    quick_sale_value_aud: Optional[float] = None
+    liquidity_score: float = 0.0
+    comp_confidence: float = 0.0
+    market_direction: str = "INSUFFICIENT_DATA"
+    market_direction_reason: str = ""
+    status: str = "INSUFFICIENT_SOLD_COMPS"
+    explanation: dict = Field(default_factory=dict)
+
+class Opportunity(BaseModel):
+    source_listing_external_id: str
+    landed_cost_aud: Optional[float] = None
+    fair_value_aud: Optional[float] = None
+    quick_sale_value_aud: Optional[float] = None
+    edge_pct: Optional[float] = None
+    opportunity_score: float = 0.0
+    identity_confidence: float = 0.0
+    comp_confidence: float = 0.0
+    liquidity_score: float = 0.0
+    risk_score: float = 0.0
+    market_direction: str = "INSUFFICIENT_DATA"
+    status: str = "INSUFFICIENT_SOLD_COMPS"
+    reasons: list[str] = Field(default_factory=list)
+
+class WatchItem(BaseModel):
+    watch_type: str
+    value: str
+    sport: Optional[str] = None
+    label: Optional[str] = None
+
+class WatchEvent(BaseModel):
+    watch_item_id: Optional[int] = None
+    event_type: str
+    source: Optional[str] = None
+    external_id: Optional[str] = None
+    details: dict = Field(default_factory=dict)
+
+class RiskFlag(BaseModel):
+    code: str
+    severity: str
+    reason: str
+
 class Valuation(BaseModel):
     listing_external_id: str
     landed_cost_aud: float

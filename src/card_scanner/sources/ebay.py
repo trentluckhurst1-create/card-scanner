@@ -6,6 +6,7 @@ from card_scanner.currency import AudOnlyCurrencyProvider, CurrencyProvider
 from card_scanner.config import settings
 from card_scanner.identity import parse_identity
 from card_scanner.models import Listing, MarketListing
+from card_scanner.providers import ActiveMarketProvider
 from card_scanner.risk import title_risk_flags
 from .base import ListingSource
 
@@ -14,7 +15,7 @@ TOKEN_URL = "https://api.ebay.com/identity/v1/oauth2/token"
 BROWSE_SEARCH_URL = "https://api.ebay.com/buy/browse/v1/item_summary/search"
 
 
-class EbaySource(ListingSource):
+class EbaySource(ListingSource, ActiveMarketProvider):
     name = "ebay"
 
     def __init__(
@@ -128,7 +129,13 @@ class EbaySource(ListingSource):
 
         out: list[MarketListing] = []
 
+        seen_ids: set[str] = set()
+
         for item in r.json().get("itemSummaries", []):
+            external_id = item["itemId"]
+            if external_id in seen_ids:
+                continue
+            seen_ids.add(external_id)
             price = item.get("price") or {}
             shipping_options = item.get("shippingOptions") or []
             shipping = None
@@ -151,7 +158,7 @@ class EbaySource(ListingSource):
             )
             listing = MarketListing(
                 source=self.name,
-                external_id=item["itemId"],
+                external_id=external_id,
                 title=title,
                 url=item.get("itemWebUrl", ""),
                 price=item_price,

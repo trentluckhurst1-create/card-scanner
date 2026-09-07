@@ -65,6 +65,22 @@ Refresh Cherry listings:
 python -m card_scanner.cli scan-cherry --sport MLB --limit 20
 ```
 
+Run governed paginated Cherry ingestion:
+
+```powershell
+python -m card_scanner.cli scan-cherry-all --sport MLB --max-products 20 --page-size 20 --force
+python -m card_scanner.cli scan-cherry-all --sport ALL
+```
+
+The full collector records scan run IDs, first/last seen state, current and previous prices, snapshots, `NEW_LISTING`, `PRICE_DROP`, `PRICE_RISE`, `RELISTED`, `MISSING_FROM_SCAN` and `INACTIVE` events. A listing is not marked inactive until it has been missed for `CHERRY_MISSING_SCAN_THRESHOLD` scans.
+
+Audit identity coverage:
+
+```powershell
+python -m card_scanner.cli audit-identities --source cherry --sport ALL
+python -m card_scanner.cli identity-failures --sport AFL --limit 20
+```
+
 Scan Cherry against live eBay active listings:
 
 ```powershell
@@ -78,6 +94,8 @@ Import manual sold comps from a permitted source:
 
 ```powershell
 python -m card_scanner.cli import-sold-comps --csv .\manual_sold_comps.csv --sport MLB
+python -m card_scanner.cli audit-sold-comps --limit 50
+python -m card_scanner.cli value-sold-comps --sport MLB
 ```
 
 CSV fields:
@@ -87,6 +105,24 @@ source,sale_id,sold_date,title,sold_price,currency,shipping,sold_price_aud,URL,n
 ```
 
 If a sold comp is already in AUD, the importer can calculate AUD exactly. If it is in a foreign currency and `sold_price_aud` is blank, the AUD value remains unknown rather than using a guessed exchange rate.
+
+Report opportunities and events:
+
+```powershell
+python -m card_scanner.cli opportunities --sport MLB --limit 50 --export-csv output/mlb_opportunities.csv
+python -m card_scanner.cli new-cherry-listings --sport ALL --limit 50
+python -m card_scanner.cli price-drops --sport ALL --limit 50
+python -m card_scanner.cli insufficient-comps --sport ALL --limit 50
+```
+
+Watchlist:
+
+```powershell
+python -m card_scanner.cli watch-add --watch-type player --value "Kyson Witherspoon" --sport MLB
+python -m card_scanner.cli watch-list
+python -m card_scanner.cli watch-history --limit 50
+python -m card_scanner.cli watch-remove --watch-id 1
+```
 
 ## Active Market Metrics
 
@@ -128,6 +164,15 @@ Market search uses per-run query caching and conservative defaults:
 MARKET_CACHE_HOURS=6
 MAX_MARKET_QUERIES_PER_RUN=25
 EBAY_RESULTS_PER_QUERY=25
+CHERRY_PAGE_SIZE=250
+CHERRY_MAX_PRODUCTS_PER_SPORT=5000
+CHERRY_SCAN_CACHE_MINUTES=30
+CHERRY_MISSING_SCAN_THRESHOLD=3
+EXACT_COMP_MAX_AGE_DAYS=365
+RELATED_COMP_MAX_AGE_DAYS=180
+MIN_EXACT_COMPS_HIGH_CONFIDENCE=3
+MIN_TOTAL_COMPS_MEDIUM_CONFIDENCE=3
+OUTLIER_IQR_MULTIPLIER=1.5
 ```
 
 Exact-card queries omit serial numerator but keep serial denominator, parallel, grade and other material identity fields. This allows `Gold Wave 38/50` and `Gold Wave 7/50` to compare, while preventing `/50` from being treated as `/250`, base, raw-vs-graded, auto-vs-non-auto, or a different parallel.

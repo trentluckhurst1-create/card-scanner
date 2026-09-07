@@ -112,6 +112,57 @@ class CherrySource(ListingSource):
 
         return products
 
+    def product_to_listing(
+        self,
+        product: dict,
+        sport: str,
+    ) -> Listing:
+        sport = sport.upper()
+        title = " ".join(
+            str(product.get("title", "")).split()
+        )
+
+        if not title:
+            raise ValueError("Cherry product missing title")
+
+        handle = str(product.get("handle", "")).strip()
+
+        if not handle:
+            raise ValueError("Cherry product missing handle")
+
+        product_id = str(product.get("id", "")).strip()
+
+        if not product_id:
+            product_id = handle
+
+        price, available = _variant_price(product)
+
+        if not available:
+            raise ValueError("Cherry product unavailable")
+
+        if price <= 0:
+            raise ValueError("Cherry product missing positive price")
+
+        url = f"{BASE_URL}/products/{handle}"
+
+        return Listing(
+            source=self.name,
+            external_id=product_id,
+            url=url,
+            title=title,
+            sport=sport,
+            price=price,
+            currency="AUD",
+            shipping=0.0,
+            image_url=_image_url(product),
+            seller="Cherry Collectables",
+            condition="Raw / Store Listing",
+            identity=parse_identity(
+                title,
+                sport,
+            ),
+        )
+
     def search(
         self,
         sport: str,
@@ -143,58 +194,16 @@ class CherrySource(ListingSource):
                 break
 
             for product in products:
-
-                title = " ".join(
-                    str(product.get("title", "")).split()
-                )
-
-                if not title:
+                try:
+                    listing = self.product_to_listing(product, sport)
+                except ValueError:
                     continue
 
                 if (
                     query_normalized
-                    and query_normalized not in title.lower()
+                    and query_normalized not in listing.title.lower()
                 ):
                     continue
-
-                handle = str(product.get("handle", "")).strip()
-
-                if not handle:
-                    continue
-
-                product_id = str(product.get("id", "")).strip()
-
-                if not product_id:
-                    product_id = handle
-
-                price, available = _variant_price(product)
-
-                # Do not ingest sold-out / unavailable products as live buys.
-                if not available:
-                    continue
-
-                if price <= 0:
-                    continue
-
-                url = f"{BASE_URL}/products/{handle}"
-
-                listing = Listing(
-                    source=self.name,
-                    external_id=product_id,
-                    url=url,
-                    title=title,
-                    sport=sport,
-                    price=price,
-                    currency="AUD",
-                    shipping=0.0,
-                    image_url=_image_url(product),
-                    seller="Cherry Collectables",
-                    condition="Raw / Store Listing",
-                    identity=parse_identity(
-                        title,
-                        sport,
-                    ),
-                )
 
                 results.append(listing)
 

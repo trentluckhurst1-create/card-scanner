@@ -13,6 +13,10 @@ class CurrencyProvider(ABC):
         raise NotImplementedError
 
 
+class FxProvider(CurrencyProvider):
+    pass
+
+
 class AudOnlyCurrencyProvider(CurrencyProvider):
     def to_aud(
         self,

@@ -113,6 +113,30 @@ class IdentityRegressionTests(unittest.TestCase):
 
         self.assertEqual(identity_signature(first), identity_signature(second))
 
+    def test_insert_suffix_trimmed_from_player(self):
+        identity = parse_identity(
+            "2024-25 One and One JA MORANT ISO Auto 36/49",
+            "NBA",
+        )
+
+        self.assertEqual(identity.player, "Ja Morant")
+        self.assertEqual(identity.brand, "Panini One and One")
+
+    def test_audit_discovered_sets_parse(self):
+        phoenix = parse_identity(
+            "2022 Panini Phoenix KENNY PICKETT Rookie #101 PSA 9 (713)",
+            "NFL",
+        )
+        fleer = parse_identity(
+            "2012 Fleer Retro RUSSELL WILSON Rookie Sensations Auto #RS-23 PSA 9 (169)",
+            "NFL",
+        )
+
+        self.assertEqual(phoenix.brand, "Panini Phoenix")
+        self.assertEqual(fleer.brand, "Fleer Retro")
+        self.assertEqual(phoenix.player, "Kenny Pickett")
+        self.assertEqual(fleer.player, "Russell Wilson")
+
 
 if __name__ == "__main__":
     unittest.main()
