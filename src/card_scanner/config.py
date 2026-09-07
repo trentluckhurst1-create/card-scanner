@@ -30,5 +30,16 @@ class Settings:
     opportunity_buy_edge_pct: float = float(os.getenv("OPPORTUNITY_BUY_EDGE_PCT", "25"))
     opportunity_strong_buy_edge_pct: float = float(os.getenv("OPPORTUNITY_STRONG_BUY_EDGE_PCT", "45"))
     cherry_shipping_aud: str = os.getenv("CHERRY_SHIPPING_AUD", "")
+    the_card_api_key: str = os.getenv("THE_CARD_API_KEY", "")
+    the_card_api_base_url: str = os.getenv(
+        "THE_CARD_API_BASE_URL",
+        "https://thecardapi.com/api/v1/market/sales",
+    )
+    the_card_api_results_per_query: int = int(
+        os.getenv("THE_CARD_API_RESULTS_PER_QUERY", "100")
+    )
+    the_card_api_recent_days: int = int(
+        os.getenv("THE_CARD_API_RECENT_DAYS", "3")
+    )
 
 settings = Settings()

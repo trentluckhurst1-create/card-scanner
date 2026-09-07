@@ -31,6 +31,8 @@ from .sold_comps import import_sold_comp_csv
 from .sources.ebay import EbaySource
 from .sources.cherry import CherrySource
 from .valuation import value_from_sold_comps
+from .sold_comp_engine import EphemeralSoldCompEngine
+from .the_card_api import TheCardApiSoldCompProvider
 from .watchlist import add_watch, remove_watch
 
 app = typer.Typer(no_args_is_help=True)
@@ -475,6 +477,146 @@ def watch_history_cmd(
         )
 
     console.print(table)
+
+
+@app.command("live-sold-comps")
+def live_sold_comps_cmd(
+    sport: str = typer.Option(
+        ...,
+        help="NFL, NBA, MLB or AFL",
+    ),
+    title: str = typer.Option(
+        ...,
+        help="Exact target card listing title",
+    ),
+    limit: int = typer.Option(
+        100,
+        help="Maximum ephemeral API rows per query",
+    ),
+):
+    """
+    Query recent confirmed eBay sold comps through The Card API.
+
+    Free-tier API transaction rows are never written to SQLite,
+    JSON, CSV or disk cache.
+    """
+    sport = sport.upper()
+
+    identity = parse_identity(title, sport)
+
+    provider = TheCardApiSoldCompProvider()
+
+    missing = provider.missing_credentials()
+
+    if missing:
+        console.print(
+            "[red]Missing THE_CARD_API_KEY in local .env.[/red]"
+        )
+        raise typer.Exit(1)
+
+    engine = EphemeralSoldCompEngine(
+        provider=provider,
+        results_per_query=limit,
+    )
+
+    result = engine.scan_identity(
+        source_listing_external_id="EPHEMERAL-LIVE",
+        sport=sport,
+        identity=identity,
+    )
+
+    console.print("")
+    console.print(
+        "[bold]THE CARD API - EPHEMERAL SOLD COMP AUDIT[/bold]"
+    )
+    console.print(
+        "PERSISTENCE_ALLOWED=NO"
+    )
+    console.print(
+        f"IDENTITY_QUALITY={result.identity_quality:.3f}"
+    )
+    console.print(
+        f"QUERIES={result.query_count}"
+    )
+    console.print(
+        f"FETCHED_RECENT={result.fetched_count}"
+    )
+    console.print(
+        f"ACCEPTED={result.accepted_count}"
+    )
+    console.print(
+        f"EXACT={result.exact_count}"
+    )
+    console.print(
+        f"STRONG={result.strong_count}"
+    )
+    console.print(
+        f"REJECTED={result.rejected_count}"
+    )
+    console.print(
+        f"VALUATION_STATUS={result.valuation.status}"
+    )
+
+    if result.valuation.fair_value_aud is not None:
+        console.print(
+            f"FAIR_VALUE_AUD=A${result.valuation.fair_value_aud:.2f}"
+        )
+        console.print(
+            f"COMP_CONFIDENCE={result.valuation.comp_confidence:.3f}"
+        )
+    else:
+        console.print("FAIR_VALUE_AUD=UNAVAILABLE")
+
+    table = Table(
+        title="Accepted Confirmed Recent Sold Comps"
+    )
+
+    for column in [
+        "DATE",
+        "LEVEL",
+        "PRICE",
+        "AUD_VALUE",
+        "TYPE",
+        "TITLE",
+    ]:
+        table.add_column(column)
+
+    for comp, match in result.comp_matches:
+        raw_price = (
+            f"{comp.currency} {comp.sold_price:.2f}"
+        )
+        aud = (
+            f"A${comp.sold_price_aud:.2f}"
+            if comp.sold_price_aud is not None
+            else "FX_REQUIRED"
+        )
+
+        table.add_row(
+            comp.sold_date,
+            match.match_level.value,
+            raw_price,
+            aud,
+            comp.sale_type or "",
+            comp.title[:90],
+        )
+
+    console.print(table)
+
+    if any(
+        comp.sold_price_aud is None
+        for comp, _ in result.comp_matches
+    ):
+        console.print(
+            "[yellow]Foreign-currency comps were NOT converted "
+            "using an invented FX rate and therefore cannot drive "
+            "AUD valuation yet.[/yellow]"
+        )
+
+    console.print(
+        "[yellow]Raw API sales were held in memory only and "
+        "were not persisted.[/yellow]"
+    )
+
 
 if __name__ == "__main__":
     app()
