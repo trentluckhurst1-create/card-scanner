@@ -166,5 +166,83 @@ class IdentityRegressionTests(unittest.TestCase):
         self.assertEqual(xfractor.parallel, "X-Fractor")
 
 
+    def test_live_ebay_mahomes_lazer_psa10(self):
+        identity = parse_identity(
+            "2020 Panini Prizm - PATRICK MAHOMES LAZER PRIZM PSA 10 GEM MT B-10",
+            "NFL",
+        )
+
+        self.assertEqual(identity.player, "Patrick Mahomes")
+        self.assertEqual(identity.year, "2020")
+        self.assertEqual(identity.brand, "Panini Prizm")
+        self.assertEqual(identity.set_name, "Panini Prizm")
+        self.assertEqual(identity.parallel, "Lazer Prizm")
+        self.assertEqual(identity.grader, "PSA")
+        self.assertEqual(identity.grade, 10.0)
+
+    def test_live_ebay_mahomes_pink_wave_denominator_only(self):
+        identity = parse_identity(
+            "Patrick Mahomes II 2025 Topps Chrome #148 Pink Wave /250",
+            "NFL",
+        )
+
+        self.assertEqual(identity.player, "Patrick Mahomes II")
+        self.assertEqual(identity.year, "2025")
+        self.assertEqual(identity.brand, "Topps Chrome")
+        self.assertEqual(identity.set_name, "Topps Chrome")
+        self.assertEqual(identity.card_number, "148")
+        self.assertEqual(identity.parallel, "Pink Wave")
+        self.assertIsNone(identity.serial_current)
+        self.assertEqual(identity.serial_total, 250)
+
+    def test_live_ebay_ja_morant_stained_glass_psa8(self):
+        identity = parse_identity(
+            "2020-21 Panini Mosaic Stained Glass #6 JA MORANT PSA 8",
+            "NBA",
+        )
+
+        self.assertEqual(identity.player, "Ja Morant")
+        self.assertEqual(identity.year, "2020-21")
+        self.assertEqual(identity.brand, "Panini Mosaic")
+        self.assertEqual(identity.set_name, "Panini Mosaic")
+        self.assertEqual(identity.card_number, "6")
+        self.assertEqual(identity.parallel, "Stained Glass")
+        self.assertEqual(identity.grader, "PSA")
+        self.assertEqual(identity.grade, 8.0)
+
+    def test_live_ebay_mixed_case_mahomes_at_front(self):
+        identity = parse_identity(
+            "Patrick Mahomes II Shadow Etch #SE-1 2025 Topps Chrome Football",
+            "NFL",
+        )
+
+        self.assertEqual(identity.player, "Patrick Mahomes II")
+        self.assertEqual(identity.year, "2025")
+        self.assertEqual(identity.brand, "Topps Chrome")
+        self.assertEqual(identity.card_number, "SE-1")
+
+    def test_live_ebay_mixed_case_mahomes_after_set(self):
+        identity = parse_identity(
+            "2021 Panini Clearly Donruss Patrick Mahomes II Retro 1991 #91-12 Chiefs PSA 9",
+            "NFL",
+        )
+
+        self.assertEqual(identity.player, "Patrick Mahomes II")
+        self.assertEqual(identity.year, "2021")
+        self.assertEqual(identity.card_number, "91-12")
+        self.assertEqual(identity.grader, "PSA")
+        self.assertEqual(identity.grade, 9.0)
+
+    def test_denominator_only_serial_does_not_create_numerator(self):
+        identity = parse_identity(
+            "2025 Topps Chrome Patrick Mahomes II Pink Wave /250 #148",
+            "NFL",
+        )
+
+        self.assertIsNone(identity.serial_current)
+        self.assertEqual(identity.serial_total, 250)
+
+
+
 if __name__ == "__main__":
     unittest.main()
