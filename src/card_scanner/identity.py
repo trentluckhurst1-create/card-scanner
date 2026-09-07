@@ -69,6 +69,7 @@ BRANDS = [
 
 
 PARALLEL_TERMS = [
+    "Teal Explosion",
     "Superfractor",
     "Gold Vinyl",
     "Gold Wave",
@@ -170,6 +171,8 @@ SPORT_HINTS = {
 
 
 NON_PLAYER_UPPER = {
+    "AFL",
+    "OPTIMUM",
     "ROOKIE",
     "AUTO",
     "AUTOGRAPH",
@@ -431,6 +434,17 @@ def _extract_uppercase_player(title: str) -> str | None:
 
 
 PLAYER_STOP_WORDS = {
+    "afl",
+    "brownlow",
+    "booklet",
+    "draft",
+    "level",
+    "medal",
+    "memorabilia",
+    "optimum",
+    "pick",
+    "platinum",
+    "rated",
     "auto",
     "autograph",
     "autographs",
