@@ -36,6 +36,8 @@ from .sold_comp_engine import EphemeralSoldCompEngine
 from .the_card_api import TheCardApiSoldCompProvider
 from .watchlist import add_watch, remove_watch
 from .opportunity_scanner import (
+    MultiStoreSource,
+    NamedStoreSource,
     opportunity_result_sort_key,
     scan_store_opportunities,
 )
@@ -633,7 +635,7 @@ def scan_opportunities_cmd(
     source: str = typer.Option(
         "cherry",
         "--source",
-        help="Acquisition source: cherry or sportscardstore",
+        help="Acquisition source: cherry, sportscardstore or all",
     ),
     sport: str = typer.Option(
         "ALL",
@@ -665,10 +667,24 @@ def scan_opportunities_cmd(
     elif source == "sportscardstore":
         store_source = SportsCardStoreSource()
         source_label = "Sports Card Store"
+    elif source == "all":
+        store_source = MultiStoreSource(
+            [
+                NamedStoreSource(
+                    name="Cherry",
+                    source=CherrySource(),
+                ),
+                NamedStoreSource(
+                    name="Sports Card Store",
+                    source=SportsCardStoreSource(),
+                ),
+            ]
+        )
+        source_label = "All Stores"
     else:
         console.print(
             "[red]Unsupported source. "
-            "Expected cherry or sportscardstore.[/red]"
+            "Expected cherry, sportscardstore or all.[/red]"
         )
         raise typer.Exit(2)
 

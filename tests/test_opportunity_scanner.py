@@ -336,3 +336,76 @@ def test_generic_store_scanner_accepts_non_cherry_source() -> None:
     assert result.candidates_considered == 1
     assert result.candidates_scanned == 1
     assert result.results[0].listing.source == "sportscardstore"
+
+
+def test_multi_store_uses_one_shared_sold_query_budget():
+    from card_scanner.opportunity_scanner import (
+        MultiStoreSource,
+        NamedStoreSource,
+        scan_store_opportunities,
+    )
+
+    class FakeStore:
+        def __init__(self, listings):
+            self._listings = listings
+
+        def search(self, sport, query="", limit=50):
+            return self._listings[:limit]
+
+    class FakeSoldProvider:
+        persistence_allowed = False
+        raw_response_persistence_allowed = False
+
+        def __init__(self):
+            self.query_count = 0
+
+        def sold_comps(self, sport, query, limit):
+            self.query_count += 1
+            return []
+
+    first = listing(
+        "store-a-card",
+        "NFL",
+        "2020 Panini Prizm PATRICK MAHOMES Lazer Prizm PSA 10",
+    ).model_copy(update={"source": "store_a"})
+
+    second = listing(
+        "store-b-card",
+        "NFL",
+        "2020 Panini Prizm PATRICK MAHOMES Lazer Prizm PSA 10",
+    ).model_copy(update={
+        "source": "store_b",
+    })
+
+    stores = MultiStoreSource(
+        [
+            NamedStoreSource(
+                name="Store A",
+                source=FakeStore([first]),
+            ),
+            NamedStoreSource(
+                name="Store B",
+                source=FakeStore([second]),
+            ),
+        ]
+    )
+
+    provider = FakeSoldProvider()
+
+    summary = scan_store_opportunities(
+        store_source=stores,
+        sold_provider=provider,
+        sport="NFL",
+        listings_per_sport=10,
+        max_candidates_per_sport=2,
+        sold_results_per_query=100,
+        max_sold_queries=2,
+    )
+
+    assert summary.fetched_listings == 2
+    assert summary.candidates_considered == 2
+    assert summary.candidates_scanned == 1
+    assert summary.sold_queries_used == 2
+    assert summary.query_budget == 2
+    assert summary.budget_remaining == 0
+    assert provider.query_count == 2

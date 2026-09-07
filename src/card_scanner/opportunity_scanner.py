@@ -29,6 +29,39 @@ class StoreSearchSource(Protocol):
 
 
 @dataclass(frozen=True)
+class NamedStoreSource:
+    name: str
+    source: StoreSearchSource
+
+
+class MultiStoreSource:
+    def __init__(
+        self,
+        stores: list[NamedStoreSource],
+    ) -> None:
+        self.stores = list(stores)
+
+    def search(
+        self,
+        sport: str,
+        query: str = "",
+        limit: int = 50,
+    ) -> list[Listing]:
+        listings: list[Listing] = []
+
+        for store in self.stores:
+            listings.extend(
+                store.source.search(
+                    sport,
+                    query,
+                    limit,
+                )
+            )
+
+        return listings
+
+
+@dataclass(frozen=True)
 class OpportunityScanResult:
     listing: Listing
     identity_quality: float
