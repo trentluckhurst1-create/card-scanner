@@ -34,6 +34,16 @@ from .valuation import value_from_sold_comps
 from .sold_comp_engine import EphemeralSoldCompEngine
 from .the_card_api import TheCardApiSoldCompProvider
 from .watchlist import add_watch, remove_watch
+from .opportunity_scanner import (
+    opportunity_result_sort_key,
+    scan_cherry_opportunities,
+)
+from .config import (
+    OPPORTUNITY_SCAN_LISTINGS_PER_SPORT,
+    OPPORTUNITY_SCAN_MAX_CANDIDATES_PER_SPORT,
+    OPPORTUNITY_SCAN_SOLD_RESULTS_PER_QUERY,
+    OPPORTUNITY_SCAN_MAX_SOLD_QUERIES,
+)
 
 app = typer.Typer(no_args_is_help=True)
 console = Console()
@@ -616,6 +626,158 @@ def live_sold_comps_cmd(
         "[yellow]Raw API sales were held in memory only and "
         "were not persisted.[/yellow]"
     )
+
+
+@app.command("scan-opportunities")
+def scan_opportunities_cmd(
+    sport: str = typer.Option(
+        "ALL",
+        help="NFL, NBA, MLB, AFL or ALL",
+    ),
+    listings_per_sport: int = typer.Option(
+        OPPORTUNITY_SCAN_LISTINGS_PER_SPORT,
+        "--listings-per-sport",
+    ),
+    max_candidates: int = typer.Option(
+        OPPORTUNITY_SCAN_MAX_CANDIDATES_PER_SPORT,
+        "--max-candidates",
+    ),
+    sold_limit: int = typer.Option(
+        OPPORTUNITY_SCAN_SOLD_RESULTS_PER_QUERY,
+        "--sold-limit",
+    ),
+    max_sold_queries: int = typer.Option(
+        OPPORTUNITY_SCAN_MAX_SOLD_QUERIES,
+        "--max-sold-queries",
+    ),
+):
+    sport = sport.upper()
+
+    provider = TheCardApiSoldCompProvider()
+
+    if provider.missing_credentials():
+        console.print(
+            "[red]Missing THE_CARD_API_KEY in local .env.[/red]"
+        )
+        raise typer.Exit(1)
+
+    summary = scan_cherry_opportunities(
+        cherry_source=CherrySource(),
+        sold_provider=provider,
+        sport=sport,
+        listings_per_sport=listings_per_sport,
+        max_candidates_per_sport=max_candidates,
+        sold_results_per_query=sold_limit,
+        max_sold_queries=max_sold_queries,
+    )
+
+    console.print("")
+    console.print(
+        "[bold]CARD SCANNER - CHERRY OPPORTUNITY SCAN[/bold]"
+    )
+    console.print(
+        "[yellow]EPHEMERAL RECENT SOLD-COMP ANALYSIS[/yellow]"
+    )
+    console.print("RAW_API_PERSISTENCE=NO")
+
+    table = Table(
+        title="Automatic Cherry Mispricing Scanner"
+    )
+
+    for column in [
+        "SPORT",
+        "PLAYER",
+        "CARD",
+        "CHERRY",
+        "IDENTITY",
+        "FETCHED",
+        "EXACT",
+        "STRONG",
+        "SOLD_COMPS",
+        "FAIR_VALUE",
+        "QUICK_SALE",
+        "EDGE",
+        "COMP_CONF",
+        "RISK",
+        "STATUS",
+    ]:
+        table.add_column(column)
+
+    for result in sorted(
+        summary.results,
+        key=opportunity_result_sort_key,
+    ):
+        identity = result.listing.identity
+        valuation = result.valuation
+        opportunity = result.opportunity
+
+        table.add_row(
+            result.listing.sport,
+            identity.player if identity and identity.player else "",
+            result.listing.title[:70],
+            f"A${result.listing.price + result.listing.shipping:.2f}",
+            f"{result.identity_quality:.3f}",
+            str(result.fetched_count),
+            str(result.exact_count),
+            str(result.strong_count),
+            str(valuation.sold_comp_count),
+            (
+                f"A${valuation.fair_value_aud:.2f}"
+                if valuation.fair_value_aud is not None
+                else ""
+            ),
+            (
+                f"A${valuation.quick_sale_value_aud:.2f}"
+                if valuation.quick_sale_value_aud is not None
+                else ""
+            ),
+            (
+                f"{opportunity.edge_pct:.1f}%"
+                if opportunity.edge_pct is not None
+                else ""
+            ),
+            f"{valuation.comp_confidence:.3f}",
+            f"{opportunity.risk_score:.1f}",
+            opportunity.status,
+        )
+
+    console.print(table)
+
+    console.print(f"FETCHED_LISTINGS={summary.fetched_listings}")
+    console.print(
+        f"CANDIDATES_CONSIDERED={summary.candidates_considered}"
+    )
+    console.print(
+        f"CANDIDATES_SCANNED={summary.candidates_scanned}"
+    )
+    console.print(f"VALUED={summary.valued_count}")
+    console.print(f"STRONG_BUY={summary.strong_buy_count}")
+    console.print(f"BUY={summary.buy_count}")
+    console.print(f"WATCH={summary.watch_count}")
+    console.print(f"FAIR={summary.fair_count}")
+    console.print(f"OVERPRICED={summary.overpriced_count}")
+    console.print(f"HIGH_RISK={summary.high_risk_count}")
+    console.print(
+        f"INSUFFICIENT_SOLD_COMPS={summary.insufficient_comps_count}"
+    )
+    console.print(
+        f"INSUFFICIENT_IDENTITY={summary.insufficient_identity_count}"
+    )
+    console.print(
+        f"SOLD_QUERIES_USED={summary.sold_queries_used}"
+    )
+    console.print(
+        f"SOLD_QUERY_BUDGET={summary.query_budget}"
+    )
+    console.print(
+        f"SOLD_QUERY_BUDGET_REMAINING={summary.budget_remaining}"
+    )
+    console.print(
+        f"PROVIDER_HTTP_QUERIES={provider.query_count}"
+    )
+    console.print("RAW_API_PERSISTENCE=NO")
+    console.print("API_SOLD_ROWS_PERSISTED=0")
+    console.print("API_SOLD_MATCHES_PERSISTED=0")
 
 
 if __name__ == "__main__":
