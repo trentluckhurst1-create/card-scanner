@@ -1,4 +1,4 @@
-﻿from __future__ import annotations
+from __future__ import annotations
 
 from dataclasses import dataclass
 from datetime import date
@@ -18,7 +18,7 @@ from .the_card_api import TheCardApiSoldCompProvider
 SPORTS = ("NFL", "NBA", "MLB", "AFL")
 
 
-class CherrySearchSource(Protocol):
+class StoreSearchSource(Protocol):
     def search(
         self,
         sport: str,
@@ -134,8 +134,8 @@ def _status_count(
     )
 
 
-def scan_cherry_opportunities(
-    cherry_source: CherrySearchSource,
+def scan_store_opportunities(
+    store_source: StoreSearchSource,
     sold_provider=None,
     sport: str = "ALL",
     listings_per_sport: int = 50,
@@ -145,7 +145,7 @@ def scan_cherry_opportunities(
     as_of: date | None = None,
 ) -> OpportunityScanSummary:
     """
-    Run an ephemeral Cherry -> sold comps -> valuation -> opportunity scan.
+    Run an ephemeral store -> sold comps -> valuation -> opportunity scan.
 
     The Card API sale rows, sold matches, valuations and opportunities created
     by this function remain in memory only.
@@ -193,7 +193,7 @@ def scan_cherry_opportunities(
     insufficient_identity_count = 0
 
     for sport_name in sports:
-        listings = cherry_source.search(
+        listings = store_source.search(
             sport_name,
             "",
             listings_per_sport,
@@ -308,6 +308,29 @@ def scan_cherry_opportunities(
         fetched_listings=fetched_listings,
     )
 
+
+
+def scan_cherry_opportunities(
+    cherry_source: StoreSearchSource,
+    sold_provider=None,
+    sport: str = "ALL",
+    listings_per_sport: int = 50,
+    max_candidates_per_sport: int = 10,
+    sold_results_per_query: int = 100,
+    max_sold_queries: int = 80,
+    as_of: date | None = None,
+) -> OpportunityScanSummary:
+    """Backward-compatible Cherry wrapper around the generic store scanner."""
+    return scan_store_opportunities(
+        store_source=cherry_source,
+        sold_provider=sold_provider,
+        sport=sport,
+        listings_per_sport=listings_per_sport,
+        max_candidates_per_sport=max_candidates_per_sport,
+        sold_results_per_query=sold_results_per_query,
+        max_sold_queries=max_sold_queries,
+        as_of=as_of,
+    )
 
 _STATUS_ORDER = {
     "STRONG_BUY": 0,

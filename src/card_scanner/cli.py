@@ -30,13 +30,14 @@ from .scoring import score_listing
 from .sold_comps import import_sold_comp_csv
 from .sources.ebay import EbaySource
 from .sources.cherry import CherrySource
+from .sources.sportscardstore import SportsCardStoreSource
 from .valuation import value_from_sold_comps
 from .sold_comp_engine import EphemeralSoldCompEngine
 from .the_card_api import TheCardApiSoldCompProvider
 from .watchlist import add_watch, remove_watch
 from .opportunity_scanner import (
     opportunity_result_sort_key,
-    scan_cherry_opportunities,
+    scan_store_opportunities,
 )
 from .config import (
     OPPORTUNITY_SCAN_LISTINGS_PER_SPORT,
@@ -204,7 +205,6 @@ def scan_market(
 ):
     init_db()
     source = source.lower()
-    sport = sport.upper()
 
     if source != "cherry":
         console.print("[red]scan-market currently supports --source cherry only.[/red]")
@@ -630,6 +630,11 @@ def live_sold_comps_cmd(
 
 @app.command("scan-opportunities")
 def scan_opportunities_cmd(
+    source: str = typer.Option(
+        "cherry",
+        "--source",
+        help="Acquisition source: cherry or sportscardstore",
+    ),
     sport: str = typer.Option(
         "ALL",
         help="NFL, NBA, MLB, AFL or ALL",
@@ -651,7 +656,21 @@ def scan_opportunities_cmd(
         "--max-sold-queries",
     ),
 ):
+    source = source.lower().strip()
     sport = sport.upper()
+
+    if source == "cherry":
+        store_source = CherrySource()
+        source_label = "Cherry"
+    elif source == "sportscardstore":
+        store_source = SportsCardStoreSource()
+        source_label = "Sports Card Store"
+    else:
+        console.print(
+            "[red]Unsupported source. "
+            "Expected cherry or sportscardstore.[/red]"
+        )
+        raise typer.Exit(2)
 
     provider = TheCardApiSoldCompProvider()
 
@@ -661,8 +680,8 @@ def scan_opportunities_cmd(
         )
         raise typer.Exit(1)
 
-    summary = scan_cherry_opportunities(
-        cherry_source=CherrySource(),
+    summary = scan_store_opportunities(
+        store_source=store_source,
         sold_provider=provider,
         sport=sport,
         listings_per_sport=listings_per_sport,
@@ -673,7 +692,7 @@ def scan_opportunities_cmd(
 
     console.print("")
     console.print(
-        "[bold]CARD SCANNER - CHERRY OPPORTUNITY SCAN[/bold]"
+        f"[bold]CARD SCANNER - {source_label.upper()} OPPORTUNITY SCAN[/bold]"
     )
     console.print(
         "[yellow]EPHEMERAL RECENT SOLD-COMP ANALYSIS[/yellow]"
@@ -681,14 +700,14 @@ def scan_opportunities_cmd(
     console.print("RAW_API_PERSISTENCE=NO")
 
     table = Table(
-        title="Automatic Cherry Mispricing Scanner"
+        title=f"Automatic {source_label} Mispricing Scanner"
     )
 
     for column in [
         "SPORT",
         "PLAYER",
         "CARD",
-        "CHERRY",
+        "STORE_PRICE",
         "IDENTITY",
         "FETCHED",
         "EXACT",

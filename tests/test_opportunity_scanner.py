@@ -1,4 +1,4 @@
-﻿from __future__ import annotations
+from __future__ import annotations
 
 import sys
 import unittest
@@ -14,6 +14,7 @@ from card_scanner.identity import parse_identity
 from card_scanner.models import Listing, SoldComp
 from card_scanner.opportunity_scanner import (
     scan_cherry_opportunities,
+    scan_store_opportunities,
 )
 
 
@@ -303,3 +304,35 @@ class OpportunityScannerTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+def test_generic_store_scanner_accepts_non_cherry_source() -> None:
+    title = (
+        "2020 Panini Prizm PATRICK MAHOMES "
+        "Lazer Prizm PSA 10"
+    )
+
+    target = listing(
+        "store-1",
+        "NFL",
+        title,
+        price=229.0,
+    ).model_copy(
+        update={"source": "sportscardstore"}
+    )
+
+    provider = QueryProvider()
+
+    result = scan_store_opportunities(
+        store_source=FakeCherry({"NFL": [target]}),
+        sold_provider=provider,
+        sport="NFL",
+        max_candidates_per_sport=1,
+        sold_results_per_query=100,
+        max_sold_queries=2,
+        as_of=AS_OF,
+    )
+
+    assert result.fetched_listings == 1
+    assert result.candidates_considered == 1
+    assert result.candidates_scanned == 1
+    assert result.results[0].listing.source == "sportscardstore"
