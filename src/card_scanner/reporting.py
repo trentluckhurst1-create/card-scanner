@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 import csv
-import json
 from pathlib import Path
 
 from rich.table import Table
@@ -68,7 +67,7 @@ def opportunities_table(
             "FAIR_VALUE": row["fair_value_aud"],
             "QUICK_SALE": row["quick_sale_value_aud"],
             "EDGE": row["edge_pct"],
-            "SOLD_COMPS": "",
+            "SOLD_COMPS": row["sold_comp_count"],
             "COMP_CONF": row["comp_confidence"],
             "LIQUIDITY": row["liquidity_score"],
             "RISK": row["risk_score"],

@@ -9,6 +9,7 @@ __pycache__/
 .ruff_cache/
 data/*.sqlite3
 data/*.sqlite3-*
+output/
 *.tmp
 *.temp
 *.log

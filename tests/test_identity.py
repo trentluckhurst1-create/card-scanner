@@ -137,6 +137,34 @@ class IdentityRegressionTests(unittest.TestCase):
         self.assertEqual(phoenix.player, "Kenny Pickett")
         self.assertEqual(fleer.player, "Russell Wilson")
 
+    def test_live_cherry_initials_and_insert_parallel(self):
+        identity = parse_identity(
+            "2025 Bowman Draft JD DIX Chrome Aqua Reptilian 93/125 #161",
+            "MLB",
+        )
+
+        self.assertEqual(identity.player, "JD Dix")
+        self.assertEqual(identity.parallel, "Aqua Reptilian")
+        self.assertEqual(identity.serial_total, 125)
+
+    def test_more_live_product_families(self):
+        limited = parse_identity(
+            "2012 Limited RUSSELL WILSON Rookie Phenom Jersey Auto 22/49 #225 PSA 7 (673)",
+            "NFL",
+        )
+        sp = parse_identity(
+            "2012 Sp Authentic RUSSELL WILSON Rookie Autograph Patch 567/885 #272 PSA 7 (170)",
+            "NFL",
+        )
+        xfractor = parse_identity(
+            "2025 Bowman Draft CADE CROSSLAND 1st Bowman Chrome X-Fractor #183",
+            "MLB",
+        )
+
+        self.assertEqual(limited.brand, "Limited")
+        self.assertEqual(sp.brand, "SP Authentic")
+        self.assertEqual(xfractor.parallel, "X-Fractor")
+
 
 if __name__ == "__main__":
     unittest.main()

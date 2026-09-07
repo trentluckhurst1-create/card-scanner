@@ -41,6 +41,7 @@ BRANDS = [
     "Select",
     "Donruss Optic",
     "Donruss",
+    "SP Authentic",
     "Flawless",
     "National Treasures",
     "Immaculate",
@@ -53,6 +54,7 @@ BRANDS = [
     "Chronicles",
     "Absolute",
     "Certified",
+    "Limited",
     "Score",
 ]
 
@@ -85,6 +87,7 @@ PARALLEL_TERMS = [
     "Blue",
     "Fuchsia",
     "Pink Laser",
+    "X-Fractor",
     "Orange Fireworks",
     "Mercury Green",
     "Refractor",
@@ -99,6 +102,15 @@ PARALLEL_TERMS = [
     "Solo Double Patch",
     "Dual Patch",
     "Jumbo Patch",
+    "Aqua Reptilian",
+    "Steel Metal",
+    "Bowman Spotlights",
+    "Prized Prospects",
+    "All Kings",
+    "Comic Court",
+    "Class of '25",
+    "Axis",
+    "SSP",
     "Mojo",
     "Shimmer",
     "Scope",
@@ -361,13 +373,6 @@ def _extract_uppercase_player(title: str) -> str | None:
         if any(r in phrase for r in rejects):
             continue
 
-        if re.search(
-            rf"\b{re.escape(phrase)}\b\s+Team\s+Multi[- ]Patch\s+Booklet\b",
-            title,
-            flags=re.I,
-        ):
-            continue
-
         cleaned.append(" ".join(words))
 
     if not cleaned:
@@ -387,6 +392,8 @@ def _extract_uppercase_player(title: str) -> str | None:
         elif upper == "SR":
             parts.append("Sr.")
         elif upper in {"II", "III", "IV"}:
+            parts.append(upper)
+        elif token.isupper() and len(upper) <= 2 and not set(upper).intersection({"A", "E", "I", "O", "U"}):
             parts.append(upper)
         else:
             parts.append(

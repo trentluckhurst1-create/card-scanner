@@ -54,7 +54,7 @@ def audit_identities(
     rows: list[IdentityAuditRow] = []
 
     for listing in listings:
-        identity = listing.identity or parse_identity(
+        identity = parse_identity(
             listing.title,
             listing.sport,
         )

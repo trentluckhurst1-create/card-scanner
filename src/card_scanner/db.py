@@ -1198,11 +1198,19 @@ def latest_opportunities(
     limit: int,
 ) -> list[sqlite3.Row]:
     sql = """
-        SELECT o.*, l.sport, l.title, l.price, l.currency, l.identity_json
+        SELECT o.*, l.sport, l.title, l.price, l.currency, l.identity_json,
+               v.sold_comp_count
         FROM opportunities o
         JOIN listings l
           ON l.external_id=o.source_listing_external_id
          AND l.source='cherry'
+        LEFT JOIN sold_valuations v
+          ON v.source_listing_external_id=o.source_listing_external_id
+         AND v.id IN (
+             SELECT MAX(id)
+             FROM sold_valuations
+             GROUP BY source_listing_external_id
+         )
         WHERE l.active=1
           AND o.id IN (
               SELECT MAX(id)
