@@ -159,9 +159,13 @@ class TheCardApiProviderTests(unittest.TestCase):
             call["params"]["platform"],
             "ebay",
         )
+        self.assertNotIn(
+            "category",
+            call["params"],
+        )
         self.assertEqual(
-            call["params"]["category"],
-            "sports",
+            call["params"]["platform"],
+            "ebay",
         )
         self.assertEqual(
             call["headers"]["x-market-api-key"],

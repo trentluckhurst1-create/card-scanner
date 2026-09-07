@@ -153,7 +153,6 @@ class TheCardApiSoldCompProvider(SoldCompProvider):
         params = {
             "q": self._query_with_safety_terms(normalized_query),
             "platform": "ebay",
-            "category": "sports",
             "limit": safe_limit,
         }
 
