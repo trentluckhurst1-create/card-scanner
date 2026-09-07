@@ -22,12 +22,30 @@ from .valuation import value_from_sold_comps
 MIN_SOLD_COMP_IDENTITY_QUALITY = 0.70
 
 
+def player_recall_query(identity: CardIdentity) -> str | None:
+    """
+    High-recall API discovery query.
+
+    Precision does NOT belong in the remote query. The provider should
+    retrieve a broad player candidate pool and assess_strict_sold_comp()
+    decides locally which sales are genuine valuation evidence.
+    """
+
+    if not identity.player:
+        return None
+
+    query = " ".join(identity.player.split()).strip()
+
+    return query or None
+
+
 @dataclass(frozen=True)
 class EphemeralSoldCompScanResult:
     source_listing_external_id: str
     sport: str
     exact_query: str | None
     broad_query: str | None
+    player_query: str | None
     identity_quality: float
     fetched_count: int
     accepted_count: int
@@ -291,6 +309,7 @@ class EphemeralSoldCompEngine:
         quality = comp_quality(identity)
         exact_query = exact_comp_query(identity)
         broad_query = broad_comp_query(identity)
+        player_query = player_recall_query(identity)
 
         if quality < MIN_SOLD_COMP_IDENTITY_QUALITY:
             valuation = SoldValuation(
@@ -311,6 +330,7 @@ class EphemeralSoldCompEngine:
                 sport=sport,
                 exact_query=exact_query,
                 broad_query=broad_query,
+                player_query=player_query,
                 identity_quality=quality,
                 fetched_count=0,
                 accepted_count=0,
@@ -325,11 +345,19 @@ class EphemeralSoldCompEngine:
         all_comps: list[SoldComp] = []
         queries_used = 0
 
-        if exact_query:
+        # High-recall discovery: retrieve by player first.
+        #
+        # Do not put year/set/parallel/serial/grade precision into the
+        # primary API query. Real marketplace titles vary too much and
+        # rare-card terms can collapse remote recall to zero.
+        #
+        # Precision remains entirely governed by
+        # assess_strict_sold_comp().
+        if player_query:
             all_comps.extend(
                 self.provider.sold_comps(
                     sport,
-                    exact_query,
+                    player_query,
                     self.results_per_query,
                 )
             )
@@ -357,13 +385,14 @@ class EphemeralSoldCompEngine:
             in {MatchLevel.EXACT, MatchLevel.STRONG}
         ]
 
-        # Broad fallback only when exact search did not supply
-        # enough genuine accepted comps.
+        # Supplemental identity-aware retrieval is permitted only when
+        # the player recall pool did not produce sufficient genuine
+        # comps. Strict local matching remains unchanged.
         if (
             len(accepted)
             < settings.min_total_comps_medium_confidence
             and broad_query
-            and broad_query != exact_query
+            and broad_query != player_query
         ):
             all_comps.extend(
                 self.provider.sold_comps(
@@ -409,8 +438,8 @@ class EphemeralSoldCompEngine:
                     "explanation": {
                         **valuation.explanation,
                         "reason": (
-                            "free-tier 3-day exact/strong sold-comp "
-                            "depth insufficient"
+                            "free-tier 3-day player-recall exact/strong "
+                            "sold-comp depth insufficient"
                         ),
                         "recent_days": self.recent_days,
                         "persistence_allowed": False,
@@ -450,6 +479,7 @@ class EphemeralSoldCompEngine:
             sport=sport,
             exact_query=exact_query,
             broad_query=broad_query,
+            player_query=player_query,
             identity_quality=quality,
             fetched_count=len(recent),
             accepted_count=len(accepted),

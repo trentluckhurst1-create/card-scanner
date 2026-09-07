@@ -409,5 +409,180 @@ class EphemeralSoldCompEngineTests(unittest.TestCase):
         )
 
 
+    def test_player_first_retrieval_finds_exact_among_noise(self):
+        target = parse_identity(
+            "2020 Panini Prizm PATRICK MAHOMES "
+            "Lazer Prizm PSA 10",
+            "NFL",
+        )
+
+        exact = SoldComp(
+            source="the_card_api_ebay",
+            sale_id="MAHOMES_EXACT",
+            sold_date="2026-09-06",
+            title=(
+                "2020 Panini Prizm - PATRICK MAHOMES "
+                "LAZER PRIZM PSA 10 GEM MT B-10"
+            ),
+            sold_price=100.0,
+            currency="AUD",
+            sold_price_aud=100.0,
+            identity=parse_identity(
+                "2020 Panini Prizm - PATRICK MAHOMES "
+                "LAZER PRIZM PSA 10 GEM MT B-10",
+                "NFL",
+            ),
+        )
+
+        noise = SoldComp(
+            source="the_card_api_ebay",
+            sale_id="MAHOMES_NOISE",
+            sold_date="2026-09-06",
+            title=(
+                "2025 Topps Chrome Patrick Mahomes II "
+                "#148 Pink Wave /250"
+            ),
+            sold_price=33.0,
+            currency="AUD",
+            sold_price_aud=33.0,
+            identity=parse_identity(
+                "2025 Topps Chrome Patrick Mahomes II "
+                "#148 Pink Wave /250",
+                "NFL",
+            ),
+        )
+
+        provider = QueryProvider(
+            [noise, exact],
+            [],
+        )
+
+        result = EphemeralSoldCompEngine(
+            provider=provider,
+            results_per_query=100,
+            recent_days=3,
+        ).scan_identity(
+            "MAHOMES_TARGET",
+            "NFL",
+            target,
+            as_of=date(2026, 9, 8),
+        )
+
+        self.assertEqual(
+            provider.calls[0][1],
+            "Patrick Mahomes",
+        )
+        self.assertEqual(result.player_query, "Patrick Mahomes")
+        self.assertEqual(result.accepted_count, 1)
+        self.assertEqual(result.exact_count, 1)
+        self.assertEqual(
+            result.comp_matches[0][0].sale_id,
+            "MAHOMES_EXACT",
+        )
+
+    def test_player_first_still_rejects_wrong_sibling(self):
+        target = parse_identity(
+            "2025 Topps Chrome PATRICK MAHOMES II "
+            "#148 Pink Wave /250",
+            "NFL",
+        )
+
+        wrong = SoldComp(
+            source="the_card_api_ebay",
+            sale_id="WRONG",
+            sold_date="2026-09-06",
+            title=(
+                "2025 Topps Chrome Patrick Mahomes II "
+                "#148 Refractor /199"
+            ),
+            sold_price=80.0,
+            currency="AUD",
+            sold_price_aud=80.0,
+            identity=parse_identity(
+                "2025 Topps Chrome Patrick Mahomes II "
+                "#148 Refractor /199",
+                "NFL",
+            ),
+        )
+
+        provider = QueryProvider(
+            [wrong],
+            [],
+        )
+
+        result = EphemeralSoldCompEngine(
+            provider=provider,
+            results_per_query=100,
+            recent_days=3,
+        ).scan_identity(
+            "PINK_WAVE_TARGET",
+            "NFL",
+            target,
+            as_of=date(2026, 9, 8),
+        )
+
+        self.assertEqual(
+            provider.calls[0][1],
+            "Patrick Mahomes II",
+        )
+        self.assertEqual(result.accepted_count, 0)
+        self.assertEqual(result.exact_count, 0)
+        self.assertEqual(
+            result.valuation.status,
+            "INSUFFICIENT_RECENT_COMPS",
+        )
+
+    def test_player_first_can_value_three_exact_comps(self):
+        target = parse_identity(
+            "2025 Bowman Draft KYSON WITHERSPOON "
+            "Chrome Prospect 1st Auto Gold Wave 38/50",
+            "MLB",
+        )
+
+        comps = [
+            sold(
+                "PF1",
+                "2025 Bowman Draft KYSON WITHERSPOON "
+                "Chrome Prospect 1st Auto Gold Wave 1/50",
+                150,
+            ),
+            sold(
+                "PF2",
+                "2025 Bowman Draft KYSON WITHERSPOON "
+                "Chrome Prospect 1st Auto Gold Wave 2/50",
+                155,
+            ),
+            sold(
+                "PF3",
+                "2025 Bowman Draft KYSON WITHERSPOON "
+                "Chrome Prospect 1st Auto Gold Wave 3/50",
+                152,
+            ),
+        ]
+
+        provider = QueryProvider(comps)
+
+        result = EphemeralSoldCompEngine(
+            provider=provider,
+            results_per_query=100,
+            recent_days=3,
+        ).scan_identity(
+            "KYSON_TARGET",
+            "MLB",
+            target,
+            as_of=date(2026, 9, 8),
+        )
+
+        self.assertEqual(
+            provider.calls[0][1],
+            "Kyson Witherspoon",
+        )
+        self.assertEqual(result.accepted_count, 3)
+        self.assertEqual(result.exact_count, 3)
+        self.assertEqual(result.valuation.status, "VALUED")
+        self.assertFalse(result.persistence_allowed)
+
+
+
 if __name__ == "__main__":
     unittest.main()
