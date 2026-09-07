@@ -6,6 +6,7 @@ from typing import Any
 import httpx
 
 from .config import settings
+from .fx import RbaFxProvider
 from .identity import parse_identity
 from .models import SoldComp
 from .providers import SoldCompProvider
@@ -31,6 +32,7 @@ class TheCardApiSoldCompProvider(SoldCompProvider):
         api_key: str | None = None,
         base_url: str | None = None,
         client: httpx.Client | Any | None = None,
+        fx_provider: Any | None = None,
     ):
         self.api_key = api_key if api_key is not None else settings.the_card_api_key
         self.base_url = (
@@ -45,6 +47,17 @@ class TheCardApiSoldCompProvider(SoldCompProvider):
                 "User-Agent": "CARD-SCANNER/1.0",
                 "Accept": "application/json",
             },
+        )
+
+        # Production/default construction gets official RBA historical FX.
+        #
+        # When a custom HTTP client is injected (tests/offline callers), FX
+        # remains disabled unless an FX provider is explicitly injected.
+        # This prevents hidden second-network dependencies in controlled tests.
+        self.fx_provider = (
+            fx_provider
+            if fx_provider is not None
+            else (RbaFxProvider() if client is None else None)
         )
 
         # Session-memory cache only. Never serialized.
@@ -212,6 +225,27 @@ class TheCardApiSoldCompProvider(SoldCompProvider):
             # The Card API documents eBay `price` as the buyer price.
             # Do not add shipping again.
             sold_price_aud = price if currency == "AUD" else None
+            fx_note = None
+
+            if (
+                currency != "AUD"
+                and self.fx_provider is not None
+            ):
+                conversion = self.fx_provider.convert_to_aud(
+                    price,
+                    currency,
+                    sold_date,
+                )
+
+                sold_price_aud = conversion.aud_amount
+
+                fx_note = (
+                    f"FX_STATUS={conversion.status};"
+                    f"FX_SOURCE={conversion.source};"
+                    f"FX_RATE_DATE={conversion.rate_date or ''};"
+                    f"FX_FOREIGN_PER_AUD="
+                    f"{conversion.foreign_per_aud or ''}"
+                )
 
             comps.append(
                 SoldComp(
@@ -235,6 +269,7 @@ class TheCardApiSoldCompProvider(SoldCompProvider):
                         "EPHEMERAL_FREE_TIER;"
                         "PRICE_CONFIRMED=TRUE;"
                         "PERSISTENCE_ALLOWED=FALSE"
+                        + (f";{fx_note}" if fx_note else "")
                     ),
                     identity=parse_identity(title, sport.upper()),
                 )

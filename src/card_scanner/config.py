@@ -41,5 +41,9 @@ class Settings:
     the_card_api_recent_days: int = int(
         os.getenv("THE_CARD_API_RECENT_DAYS", "3")
     )
+    rba_fx_csv_url: str = os.getenv(
+        "RBA_FX_CSV_URL",
+        "https://www.rba.gov.au/statistics/tables/csv/f11.1-data.csv",
+    )
 
 settings = Settings()
