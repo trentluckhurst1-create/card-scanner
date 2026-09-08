@@ -242,6 +242,80 @@ class IdentityRegressionTests(unittest.TestCase):
         self.assertIsNone(identity.serial_current)
         self.assertEqual(identity.serial_total, 250)
 
+    def test_gimko_expansion_identity_audit_titles(self):
+        cases = [
+            (
+                "NBA",
+                "2009 Panini Prestige Chris Bosh Prestigious Pros #36/50 Raptors",
+                {
+                    "brand": "Panini Prestige",
+                    "player": "Chris Bosh",
+                    "card_number": "36",
+                },
+            ),
+            (
+                "NBA",
+                "2009 Upper Deck Draft Edition Dante Cunningham Auto #797/899 Spurs",
+                {
+                    "brand": "Upper Deck Draft Edition",
+                    "player": "Dante Cunningham",
+                    "card_number": "797",
+                    "autograph": True,
+                },
+            ),
+            (
+                "NFL",
+                "2015 Panini Playbook Duke Johnson Rookie Dual Jersey 189/199 Cleveland Browns",
+                {
+                    "brand": "Panini Playbook",
+                    "player": "Duke Johnson",
+                    "serial_current": 189,
+                    "serial_total": 199,
+                    "rookie": True,
+                    "memorabilia": True,
+                },
+            ),
+            (
+                "NFL",
+                "2014 Black Gold Demaryius Thomas shadowbox 157/199 Denver BRONCOS",
+                {
+                    "brand": "Black Gold",
+                    "player": "Demaryius Thomas",
+                    "parallel": None,
+                    "serial_current": 157,
+                    "serial_total": 199,
+                },
+            ),
+            (
+                "MLB",
+                "2000 Bowman Chrome baseball Rocco Baldelli rookie card 91 - Tampa Bay Devil Rays",
+                {
+                    "brand": "Bowman Chrome",
+                    "player": "Rocco Baldelli",
+                    "card_number": "91",
+                    "rookie": True,
+                },
+            ),
+            (
+                "MLB",
+                "1998 Upper Deck A Piece of the Action 1 #3 Tony Gwynn Jersey",
+                {
+                    "brand": "Upper Deck",
+                    "player": "Tony Gwynn",
+                    "card_number": "3",
+                    "memorabilia": True,
+                },
+            ),
+        ]
+
+        for sport, title, expected in cases:
+            with self.subTest(title=title):
+                identity = parse_identity(title, sport)
+                self.assertEqual(identity.sport, sport)
+
+                for field, value in expected.items():
+                    self.assertEqual(getattr(identity, field), value)
+
 
 
 if __name__ == "__main__":

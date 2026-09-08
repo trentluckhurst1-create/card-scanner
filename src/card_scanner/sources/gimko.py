@@ -17,6 +17,18 @@ CATEGORY_BY_SPORT = {
         "afl-australian-rules-cards",
         "1921",
     ),
+    "NBA": (
+        "basketball-cards",
+        "1870",
+    ),
+    "NFL": (
+        "nfl-football-cards",
+        "1922",
+    ),
+    "MLB": (
+        "baseball-cards",
+        "1872",
+    ),
 }
 
 ITEM_LINK_RE = re.compile(

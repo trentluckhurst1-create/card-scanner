@@ -478,4 +478,4 @@ def test_gimko_unsupported_sport_does_not_break_all_store_fetch():
         ]
     )
 
-    assert stores.search("NBA", limit=5) == []
+    assert stores.search("CRICKET", limit=5) == []

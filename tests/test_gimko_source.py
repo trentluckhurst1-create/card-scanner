@@ -46,6 +46,21 @@ SINGLE_CARD_DETAIL_HTML = """
 """
 
 
+SPORT_DETAIL_TITLES = {
+    "NBA": "2009 Panini Prestige Chris Bosh Prestigious Pros #36/50 Raptors",
+    "NFL": "2015 Panini Playbook Duke Johnson Rookie Dual Jersey 189/199 Cleveland Browns",
+    "MLB": "2000 Bowman Chrome baseball Rocco Baldelli rookie card 91 - Tampa Bay Devil Rays",
+}
+
+
+EXPECTED_CATEGORY_PARAMS = {
+    "AFL": ("afl-australian-rules-cards", "1921"),
+    "NBA": ("basketball-cards", "1870"),
+    "NFL": ("nfl-football-cards", "1922"),
+    "MLB": ("baseball-cards", "1872"),
+}
+
+
 def category_html(*ids: str) -> str:
     links = "\n".join(
         f'<a href="select-footy-stars-2018-adelaide-crows-full-team-base-set-w-adelaide-aflw,name,{item_id},auction_id,auction_details">Item {item_id}</a>'
@@ -53,6 +68,23 @@ def category_html(*ids: str) -> str:
     )
 
     return f"<html><body>{links}</body></html>"
+
+
+def detail_html(title: str) -> str:
+    return f"""
+<html>
+  <head>
+    <title>{title} | Gimko</title>
+  </head>
+  <body>
+    <a href="/stores/card-table/">Card Table</a>
+    <p class="desc">Price:</p>
+    <div class="val b"><p>$12.50 AUD</p></div>
+    <p class="desc">Shipping:</p>
+    <div class="val"><p>$4.00 AUD</p></div>
+  </body>
+</html>
+"""
 
 
 class GimkoSourceTests(unittest.TestCase):
@@ -99,7 +131,37 @@ class GimkoSourceTests(unittest.TestCase):
     def test_unsupported_sport_returns_empty(self):
         source = self.source_for(lambda request: httpx.Response(500))
 
-        self.assertEqual(source.search("NBA", limit=5), [])
+        self.assertEqual(source.search("CRICKET", limit=5), [])
+
+    def test_new_sports_use_verified_buy_out_category_params(self):
+        for sport, title in SPORT_DETAIL_TITLES.items():
+            with self.subTest(sport=sport):
+                category, parent_id = EXPECTED_CATEGORY_PARAMS[sport]
+
+                def handler(request: httpx.Request) -> httpx.Response:
+                    if request.url.path.endswith("/categories.php"):
+                        self.assertEqual(
+                            request.url.params.get("item_type"),
+                            "buy_out",
+                        )
+                        self.assertEqual(
+                            request.url.params.get("category"),
+                            category,
+                        )
+                        self.assertEqual(
+                            request.url.params.get("parent_id"),
+                            parent_id,
+                        )
+                        return httpx.Response(200, text=category_html("9001"))
+                    return httpx.Response(200, text=detail_html(title))
+
+                listings = self.source_for(handler).search(sport, limit=1)
+
+                self.assertEqual(len(listings), 1)
+                listing = listings[0]
+                self.assertEqual(listing.sport, sport)
+                self.assertEqual(listing.identity.sport, sport)
+                self.assertEqual(listing.title, title)
 
     def test_query_filtering(self):
         def handler(request: httpx.Request) -> httpx.Response:

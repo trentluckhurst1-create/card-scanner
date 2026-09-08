@@ -22,6 +22,11 @@ CARD_NUMBER_RE = re.compile(
     re.I,
 )
 
+CARD_WORD_NUMBER_RE = re.compile(
+    r"\bcard\s+([A-Z0-9]*\d[A-Z0-9\-\.]*)\b",
+    re.I,
+)
+
 GRADE_RE = re.compile(
     r"\b(PSA|BGS|SGC|CGC)\s*(\d+(?:\.\d+)?)\b",
     re.I,
@@ -32,8 +37,12 @@ BRANDS = [
     "Bowman Chrome",
     "Bowman Draft",
     "Bowman",
+    "Upper Deck Draft Edition",
+    "Upper Deck",
     "Panini Phoenix",
     "Panini One and One",
+    "Panini Prestige",
+    "Panini Playbook",
     "Panini Mosaic",
     "Panini Chronicles",
     "Panini Hoops",
@@ -43,6 +52,7 @@ BRANDS = [
     "Topps Chrome",
     "Topps Finest",
     "Topps",
+    "Black Gold",
     "Panini Prizm",
     "Panini",
     "Fleer Retro",
@@ -304,8 +314,21 @@ def _extract_set_name(
     return brand
 
 
-def _extract_parallel(title: str) -> str | None:
-    lower = title.lower()
+def _extract_parallel(
+    title: str,
+    brand: str | None = None,
+) -> str | None:
+    search_text = title
+
+    if brand:
+        search_text = re.sub(
+            re.escape(brand),
+            " ",
+            search_text,
+            flags=re.I,
+        )
+
+    lower = search_text.lower()
 
     for parallel in sorted(
         PARALLEL_TERMS,
@@ -451,13 +474,19 @@ PLAYER_STOP_WORDS = {
     "baseball",
     "basketball",
     "bgs",
+    "black",
     "bowman",
+    "broncos",
     "card",
     "chiefs",
     "chrome",
+    "cleveland",
     "cosmic",
+    "devil",
     "donruss",
     "draft",
+    "dual",
+    "edition",
     "football",
     "gem",
     "graded",
@@ -471,7 +500,14 @@ PLAYER_STOP_WORDS = {
     "nba",
     "panini",
     "patch",
+    "piece",
+    "playbook",
     "prizm",
+    "prestige",
+    "prestigious",
+    "pros",
+    "raptors",
+    "rays",
     "psa",
     "refractor",
     "relic",
@@ -479,7 +515,11 @@ PLAYER_STOP_WORDS = {
     "sgc",
     "signature",
     "signed",
+    "shadowbox",
+    "spurs",
+    "tampa",
     "topps",
+    "upper",
 }
 
 
@@ -658,6 +698,16 @@ def _extract_mixed_case_player(
             "NBA",
             "MLB",
             "WNBA",
+            "Prestigious Pros",
+            "A Piece of the Action",
+            "Draft Edition",
+            "Dual",
+            "Shadowbox",
+            "Raptors",
+            "Spurs",
+            "Cleveland Browns",
+            "Denver Broncos",
+            "Tampa Bay Devil Rays",
             "Chiefs",
             "Grizzlies",
             "Memphis",
@@ -819,6 +869,11 @@ def parse_identity(
     )
     grade_match = GRADE_RE.search(text)
     card_number_match = CARD_NUMBER_RE.search(text)
+    card_word_number_match = (
+        None
+        if card_number_match
+        else CARD_WORD_NUMBER_RE.search(text)
+    )
 
     brand = _extract_brand(text)
     set_name = _extract_set_name(
@@ -826,7 +881,10 @@ def parse_identity(
         brand,
     )
 
-    parallel = _extract_parallel(text)
+    parallel = _extract_parallel(
+        text,
+        brand,
+    )
 
     player = _clean_extracted_player(
         _extract_uppercase_player(text)
@@ -881,9 +939,15 @@ def parse_identity(
         brand=brand,
         set_name=set_name,
         player=player,
-        card_number=card_number_match.group(1)
-        if card_number_match
-        else None,
+        card_number=(
+            card_number_match.group(1)
+            if card_number_match
+            else (
+                card_word_number_match.group(1)
+                if card_word_number_match
+                else None
+            )
+        ),
         parallel=parallel,
         serial_current=int(serial_match.group(1))
         if serial_match

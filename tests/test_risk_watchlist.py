@@ -64,6 +64,37 @@ class RiskWatchlistTests(unittest.TestCase):
 
         self.assertNotIn("LOT_OR_BUNDLE", title_risk_flags(title))
 
+    def test_pack_box_and_set_terms_remain_non_opportunities(self):
+        terms = [
+            "hobby box",
+            "blaster box",
+            "mega box",
+            "hanger pack",
+            "value pack",
+            "bundle box",
+            "starter pack",
+        ]
+
+        for term in terms:
+            with self.subTest(term=term):
+                self.assertIn(
+                    "BOX_OR_PACK",
+                    title_risk_flags(f"2024 Panini Prizm {term}"),
+                )
+
+        set_terms = [
+            "full team base set",
+            "complete set",
+            "team set",
+        ]
+
+        for term in set_terms:
+            with self.subTest(term=term):
+                self.assertIn(
+                    "LOT_OR_BUNDLE",
+                    title_risk_flags(f"2024 Select Footy Stars {term}"),
+                )
+
     def test_full_team_base_set_cannot_be_buy(self):
         title = "Select Footy Stars 2018 - Adelaide Crows Full Team Base Set (w/ Adelaide AFLW)"
         listing = Listing(
