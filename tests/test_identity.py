@@ -533,3 +533,27 @@ def test_parallel_terms_do_not_match_inside_longer_words():
 
     assert identity.player == "Ja Morant"
     assert identity.parallel == "SSP"
+
+
+def test_ud_ionix_alias_normalizes_to_upper_deck_ionix():
+    identity = parse_identity(
+        "1998-99 UD Ionix MICHAEL JORDAN Kinetix #K1 BCCG 10 (566)"
+    )
+
+    assert identity.year == "1998-99"
+    assert identity.player == "Michael Jordan"
+    assert identity.brand == "Upper Deck Ionix"
+    assert identity.set_name == "Upper Deck Ionix"
+    assert identity.card_number == "K1"
+
+
+def test_upper_deck_ionix_canonical_title_remains_unchanged():
+    identity = parse_identity(
+        "1998-99 Upper Deck Ionix Michael Jordan Area 23 #A4 SGC 9.5"
+    )
+
+    assert identity.year == "1998-99"
+    assert identity.player == "Michael Jordan"
+    assert identity.brand == "Upper Deck Ionix"
+    assert identity.set_name == "Upper Deck Ionix"
+    assert identity.card_number == "A4"

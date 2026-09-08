@@ -72,9 +72,12 @@ python -m card_scanner.cli scan-opportunities --source cherry --sport AFL --list
 python -m card_scanner.cli scan-opportunities --source sportscardstore --sport AFL --listings-per-sport 5 --max-candidates 2 --max-sold-queries 2
 python -m card_scanner.cli scan-opportunities --source gimko --sport AFL --listings-per-sport 5 --max-candidates 1 --max-sold-queries 2
 python -m card_scanner.cli scan-opportunities --source all --sport AFL --listings-per-sport 5 --max-candidates 2 --max-sold-queries 2
+python -m card_scanner.cli scan-opportunities --source all --sport NBA --listings-per-sport 25 --max-candidates 10 --sold-limit 100 --max-sold-queries 10
 ```
 
 Gimko V1 supports AFL Buy Out/fixed-price listings only. It uses the public category HTML, does not persist HTML, and treats full team/base/complete set listings as multi-card set risk rather than single-card opportunities.
+
+Acquisition-store scans can read from Cherry, Sports Card Store, Gimko and Urban Empire. `--source all` pools the supported stores for the selected sport, while each candidate's cross-store reference pool excludes the candidate's own source.
 
 Run governed paginated Cherry ingestion:
 
@@ -143,9 +146,15 @@ Foreign-currency listings are marked `FX_PENDING` and excluded from AUD metrics 
 
 Active asking prices are not sold prices. Do not treat `active_market_median` or any active asking metric as fair value.
 
+Cross-store active listings are reference-only. They can support `WATCH`-style context or explain why a candidate lacks comparable asking inventory, but they must never produce `BUY`, `STRONG_BUY`, `fair_value_aud` or `quick_sale_value_aud`.
+
+Cross-store diagnostics include a reporting-only cumulative identity funnel: `CROSS_STORE`, `IDENTITY_PRESENT`, `SAME_PLAYER`, `SAME_YEAR`, `SAME_PRODUCT`, `SAME_CARD_NUMBER`, `SAME_PARALLEL`, `SAME_SERIAL`, `SAME_ROOKIE`, `SAME_AUTO_MEM`, `SAME_GRADING` and `EXACT_STRONG`. The funnel explains where possible references fail; it does not create or loosen accepted references.
+
 ## Sold Comps
 
-The code includes a `SoldCompProvider` interface and a manual CSV import path. No automated 130 Point provider exists, and the project must not scrape 130 Point or undocumented/private endpoints.
+The code includes a `SoldCompProvider` interface, a manual CSV import path and an ephemeral The Card API evaluation provider. No automated 130 Point provider exists, and the project must not scrape 130 Point, eBay sold pages or undocumented/private endpoints.
+
+The Card API sales are held in memory only during the scan. Raw API responses, normalized API sales and API sold matches are not persisted to SQLite, JSON, CSV or disk cache. Free-tier use is evaluation / personal / non-commercial only.
 
 Future permitted sold-comp providers can feed normalized sale records into the same matching and valuation architecture.
 

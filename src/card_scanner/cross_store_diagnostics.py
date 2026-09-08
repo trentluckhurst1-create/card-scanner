@@ -232,3 +232,111 @@ def summarize_reference_rejections(
         counts.update(diagnostic.reasons)
 
     return dict(sorted(counts.items()))
+
+
+def build_reference_funnel(
+    candidate: Listing,
+    references: list[Listing],
+) -> dict[str, int]:
+    """
+    Reporting-only cumulative cross-store identity funnel.
+
+    Each stage counts only references that survived every prior stage.
+    It does not create market references or alter matching decisions.
+    """
+    stages = [
+        "CROSS_STORE",
+        "IDENTITY_PRESENT",
+        "SAME_PLAYER",
+        "SAME_YEAR",
+        "SAME_PRODUCT",
+        "SAME_CARD_NUMBER",
+        "SAME_PARALLEL",
+        "SAME_SERIAL",
+        "SAME_ROOKIE",
+        "SAME_AUTO_MEM",
+        "SAME_GRADING",
+        "EXACT_STRONG",
+    ]
+    counts = {stage: 0 for stage in stages}
+    seen: set[tuple[str, str]] = set()
+
+    for reference in references:
+        key = (reference.source.casefold(), reference.external_id)
+
+        if key in seen:
+            continue
+        seen.add(key)
+
+        if _same_source(candidate, reference):
+            continue
+
+        counts["CROSS_STORE"] += 1
+
+        if candidate.identity is None or reference.identity is None:
+            continue
+        counts["IDENTITY_PRESENT"] += 1
+
+        left = candidate.identity
+        right = reference.identity
+
+        if not left.player or not right.player or _norm(left.player) != _norm(right.player):
+            continue
+        counts["SAME_PLAYER"] += 1
+
+        left_year = normalize_card_year(left.year)
+        right_year = normalize_card_year(right.year)
+        if left_year is None or right_year is None or left_year != right_year:
+            continue
+        counts["SAME_YEAR"] += 1
+
+        left_product = _product_value(candidate)
+        right_product = _product_value(reference)
+        if not left_product or not right_product or _norm(left_product) != _norm(right_product):
+            continue
+        counts["SAME_PRODUCT"] += 1
+
+        if not left.card_number or not right.card_number or _norm(left.card_number) != _norm(right.card_number):
+            continue
+        counts["SAME_CARD_NUMBER"] += 1
+
+        if not left.parallel or not right.parallel or _norm(left.parallel) != _norm(right.parallel):
+            continue
+        counts["SAME_PARALLEL"] += 1
+
+        if left.serial_total is None or right.serial_total is None:
+            continue
+        if left.serial_total != right.serial_total:
+            continue
+        counts["SAME_SERIAL"] += 1
+
+        if left.rookie != right.rookie:
+            continue
+        counts["SAME_ROOKIE"] += 1
+
+        if left.autograph != right.autograph or left.memorabilia != right.memorabilia:
+            continue
+        counts["SAME_AUTO_MEM"] += 1
+
+        left_graded = left.grader is not None or left.grade is not None
+        right_graded = right.grader is not None or right.grade is not None
+        if left_graded != right_graded:
+            continue
+        if left.grader and right.grader and _norm(left.grader) != _norm(right.grader):
+            continue
+        if left.grade is not None or right.grade is not None:
+            if left.grade is None or right.grade is None:
+                continue
+            if float(left.grade) != float(right.grade):
+                continue
+        counts["SAME_GRADING"] += 1
+
+        assessment = assess_match(
+            left,
+            right,
+            risk_flags=title_risk_flags(reference.title),
+        )
+        if assessment.match_level in (MatchLevel.EXACT, MatchLevel.STRONG):
+            counts["EXACT_STRONG"] += 1
+
+    return counts

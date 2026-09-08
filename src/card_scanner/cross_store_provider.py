@@ -4,6 +4,7 @@ from dataclasses import dataclass
 
 from .cross_store_diagnostics import (
     ReferenceRejectionDiagnostic,
+    build_reference_funnel,
     diagnose_reference_rejections,
     summarize_reference_rejections,
 )
@@ -22,6 +23,7 @@ class CrossStoreSearchResult:
     store_errors: tuple[str, ...]
     rejection_diagnostics: tuple[ReferenceRejectionDiagnostic, ...] = ()
     rejection_summary: dict[str, int] | None = None
+    reference_funnel: dict[str, int] | None = None
 
 
 class CrossStoreReferenceProvider:
@@ -132,6 +134,10 @@ class CrossStoreReferenceProvider:
             store_errors=store_errors,
             rejection_diagnostics=tuple(diagnostics),
             rejection_summary=summarize_reference_rejections(diagnostics),
+            reference_funnel=build_reference_funnel(
+                candidate,
+                listings,
+            ),
         )
 
 

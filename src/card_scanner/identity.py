@@ -319,6 +319,9 @@ def infer_sport(
 def _extract_brand(title: str) -> str | None:
     lower = title.lower()
 
+    if re.search(r"\bUD\s+Ionix\b", title, flags=re.I):
+        return "Upper Deck Ionix"
+
     for brand in sorted(
         BRANDS,
         key=len,

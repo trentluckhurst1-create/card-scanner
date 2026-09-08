@@ -178,6 +178,19 @@ def test_assess_builds_reference_from_other_stores() -> None:
         is MarketReferenceStatus.REFERENCE_AVAILABLE
     )
     assert result.reference.matched_listing_count == 2
+    assert result.reference_funnel is not None
+    assert result.reference_funnel["CROSS_STORE"] == 2
+    assert result.reference_funnel["IDENTITY_PRESENT"] == 2
+    assert result.reference_funnel["SAME_PLAYER"] == 2
+    assert result.reference_funnel["SAME_YEAR"] == 2
+    assert result.reference_funnel["SAME_PRODUCT"] == 2
+    assert result.reference_funnel["SAME_CARD_NUMBER"] == 2
+    assert result.reference_funnel["SAME_PARALLEL"] == 2
+    assert result.reference_funnel["SAME_SERIAL"] == 2
+    assert result.reference_funnel["SAME_ROOKIE"] == 2
+    assert result.reference_funnel["SAME_AUTO_MEM"] == 2
+    assert result.reference_funnel["SAME_GRADING"] == 2
+    assert result.reference_funnel["EXACT_STRONG"] == 2
     assert result.reference.source_count == 2
     assert result.reference.median_reference_price_aud == 167.5
     assert (
