@@ -150,6 +150,14 @@ Cross-store active listings are reference-only. They can support `WATCH`-style c
 
 Cross-store diagnostics include a reporting-only cumulative identity funnel: `CROSS_STORE`, `IDENTITY_PRESENT`, `SAME_PLAYER`, `SAME_YEAR`, `SAME_PRODUCT`, `SAME_CARD_NUMBER`, `SAME_PARALLEL`, `SAME_SERIAL`, `SAME_ROOKIE`, `SAME_AUTO_MEM`, `SAME_GRADING` and `EXACT_STRONG`. The funnel explains where possible references fail; it does not create or loosen accepted references.
 
+## Mispricing Assessment
+
+The scanner ranks opportunities by explainable mispricing quality, not raw discount alone. The `MISPRICE` score combines sold fair-value edge, identity confidence, sold-comp confidence, exact-comp depth, liquidity, comp recency, price dispersion, risk flags and cross-store ask context.
+
+Each scan row reports `LOOKS_CHEAP` and `MAY_BE_CHEAP`. `LOOKS_CHEAP` captures evidence such as sold fair-value edge, landed cost below quick-sale value and cross-store active ask discount. `MAY_BE_CHEAP` captures legitimate explanations such as insufficient sold evidence, weak identity confidence, low liquidity, wide sold-price dispersion, old comps, falling market direction, title risk language or weak cross-store overlap.
+
+Raw percentage edge is intentionally capped by evidence quality. A smaller edge with exact identity, recent exact sold comps and low dispersion should outrank a larger discount with weak sold evidence or unresolved risk.
+
 ## Sold Comps
 
 The code includes a `SoldCompProvider` interface, a manual CSV import path and an ephemeral The Card API evaluation provider. No automated 130 Point provider exists, and the project must not scrape 130 Point, eBay sold pages or undocumented/private endpoints.

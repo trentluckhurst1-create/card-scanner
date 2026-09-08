@@ -768,6 +768,9 @@ def scan_opportunities_cmd(
         "FAIR_VALUE",
         "QUICK_SALE",
         "EDGE",
+        "MISPRICE",
+        "LOOKS_CHEAP",
+        "MAY_BE_CHEAP",
         "COMP_CONF",
         "RISK",
         "STATUS",
@@ -781,6 +784,7 @@ def scan_opportunities_cmd(
         identity = result.listing.identity
         valuation = result.valuation
         opportunity = result.opportunity
+        mispricing = result.mispricing
 
         table.add_row(
             result.listing.sport,
@@ -806,6 +810,21 @@ def scan_opportunities_cmd(
             (
                 f"{opportunity.edge_pct:.1f}%"
                 if opportunity.edge_pct is not None
+                else ""
+            ),
+            (
+                f"{mispricing.score:.1f}"
+                if mispricing is not None
+                else ""
+            ),
+            (
+                "; ".join(mispricing.why_it_looks_cheap)[:80]
+                if mispricing is not None
+                else ""
+            ),
+            (
+                "; ".join(mispricing.why_it_may_be_cheap)[:80]
+                if mispricing is not None
                 else ""
             ),
             f"{valuation.comp_confidence:.3f}",

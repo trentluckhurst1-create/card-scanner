@@ -100,6 +100,70 @@ class ValuationOpportunityTests(unittest.TestCase):
 
         self.assertEqual(opportunity.status, "HIGH_RISK")
 
+    def test_valuation_reports_evidence_age_and_dispersion(self):
+        valuation = value_from_sold_comps(
+            "C1",
+            [
+                comp(100, "2026-09-01", "S1"),
+                comp(120, "2026-08-20", "S2"),
+                comp(140, "2026-08-10", "S3"),
+            ],
+            as_of=date(2026, 9, 8),
+        )
+
+        self.assertEqual(valuation.status, "VALUED")
+        self.assertEqual(
+            valuation.explanation["newest_comp_age_days"],
+            7,
+        )
+        self.assertEqual(
+            valuation.explanation["oldest_comp_age_days"],
+            29,
+        )
+        self.assertEqual(
+            valuation.explanation["median_comp_age_days"],
+            19,
+        )
+        self.assertGreater(
+            valuation.explanation["price_spread_pct"],
+            0,
+        )
+        self.assertGreater(
+            valuation.explanation["median_absolute_deviation_pct"],
+            0,
+        )
+
+    def test_wide_dispersion_reduces_comp_confidence(self):
+        tight = value_from_sold_comps(
+            "C1",
+            [
+                comp(118, "2026-09-01", "T1"),
+                comp(120, "2026-08-20", "T2"),
+                comp(122, "2026-08-10", "T3"),
+            ],
+            as_of=date(2026, 9, 8),
+        )
+        wide = value_from_sold_comps(
+            "C1",
+            [
+                comp(60, "2026-09-01", "W1"),
+                comp(120, "2026-08-20", "W2"),
+                comp(180, "2026-08-10", "W3"),
+            ],
+            as_of=date(2026, 9, 8),
+        )
+
+        self.assertEqual(tight.status, "VALUED")
+        self.assertEqual(wide.status, "VALUED")
+        self.assertGreater(
+            tight.comp_confidence,
+            wide.comp_confidence,
+        )
+        self.assertGreater(
+            wide.explanation["dispersion_confidence_penalty"],
+            0,
+        )
+
 
 if __name__ == "__main__":
     unittest.main()

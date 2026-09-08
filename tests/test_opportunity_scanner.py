@@ -13,6 +13,8 @@ sys.path.insert(
 from card_scanner.identity import parse_identity
 from card_scanner.models import Listing, SoldComp
 from card_scanner.opportunity_scanner import (
+    OpportunityScanResult,
+    opportunity_result_sort_key,
     scan_cherry_opportunities,
     scan_store_opportunities,
 )
@@ -683,3 +685,122 @@ def test_active_reference_pool_cannot_independently_create_buy():
     assert result.valuation.fair_value_aud is None
     assert result.opportunity.status == "INSUFFICIENT_SOLD_COMPS"
     assert result.opportunity.status not in {"BUY", "STRONG_BUY"}
+
+
+def test_scan_results_include_mispricing_assessment():
+    target = listing(
+        "KYSON",
+        "MLB",
+        "2025 Bowman Draft KYSON WITHERSPOON "
+        "Chrome Prospect 1st Auto Gold Wave 38/50",
+        price=100.0,
+    )
+    rows = [
+        sold(
+            "S1",
+            "MLB",
+            "2025 Bowman Draft KYSON WITHERSPOON "
+            "Chrome Prospect 1st Auto Gold Wave 1/50",
+            150.0,
+        ),
+        sold(
+            "S2",
+            "MLB",
+            "2025 Bowman Draft KYSON WITHERSPOON "
+            "Chrome Prospect 1st Auto Gold Wave 2/50",
+            152.0,
+        ),
+        sold(
+            "S3",
+            "MLB",
+            "2025 Bowman Draft KYSON WITHERSPOON "
+            "Chrome Prospect 1st Auto Gold Wave 3/50",
+            151.0,
+        ),
+    ]
+
+    result = scan_cherry_opportunities(
+        cherry_source=FakeCherry({"MLB": [target]}),
+        sold_provider=QueryProvider({"Kyson Witherspoon": rows}),
+        sport="MLB",
+        max_candidates_per_sport=1,
+        max_sold_queries=2,
+        as_of=AS_OF,
+    ).results[0]
+
+    assert result.mispricing is not None
+    assert result.mispricing.score > 0
+    assert any(
+        "sold fair-value edge" in reason
+        for reason in result.mispricing.why_it_looks_cheap
+    )
+
+
+def test_opportunity_sort_uses_mispricing_score_before_raw_edge():
+    from card_scanner.mispricing import MispricingAssessment
+    from card_scanner.models import Opportunity, SoldValuation
+
+    base_listing = listing(
+        "BASE",
+        "MLB",
+        "2025 Bowman Draft KYSON WITHERSPOON "
+        "Chrome Prospect 1st Auto Gold Wave 38/50",
+    )
+
+    higher_quality = OpportunityScanResult(
+        listing=base_listing,
+        identity_quality=0.95,
+        player_query=None,
+        exact_query=None,
+        broad_query=None,
+        fetched_count=0,
+        accepted_count=0,
+        exact_count=0,
+        strong_count=0,
+        rejected_count=0,
+        sold_queries_used=0,
+        valuation=SoldValuation(source_listing_external_id="A"),
+        opportunity=Opportunity(
+            source_listing_external_id="A",
+            edge_pct=20.0,
+            status="WATCH",
+        ),
+        mispricing=MispricingAssessment(
+            score=80.0,
+            why_it_looks_cheap=("strong evidence",),
+            why_it_may_be_cheap=(),
+            evidence_flags=(),
+            suppressions=(),
+        ),
+    )
+    raw_edge_only = OpportunityScanResult(
+        listing=base_listing.model_copy(update={"external_id": "RAW"}),
+        identity_quality=0.95,
+        player_query=None,
+        exact_query=None,
+        broad_query=None,
+        fetched_count=0,
+        accepted_count=0,
+        exact_count=0,
+        strong_count=0,
+        rejected_count=0,
+        sold_queries_used=0,
+        valuation=SoldValuation(source_listing_external_id="B"),
+        opportunity=Opportunity(
+            source_listing_external_id="B",
+            edge_pct=60.0,
+            status="WATCH",
+        ),
+        mispricing=MispricingAssessment(
+            score=40.0,
+            why_it_looks_cheap=("big raw edge",),
+            why_it_may_be_cheap=("weak evidence",),
+            evidence_flags=(),
+            suppressions=(),
+        ),
+    )
+
+    assert sorted(
+        [raw_edge_only, higher_quality],
+        key=opportunity_result_sort_key,
+    )[0] is higher_quality

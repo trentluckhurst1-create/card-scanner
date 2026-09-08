@@ -95,6 +95,52 @@ def _weighted_median(records: list[dict]) -> float | None:
     return round(median(expanded), 2)
 
 
+def _price_spread_pct(values: list[float]) -> float | None:
+    baseline = median(values) if values else None
+
+    if baseline is None or baseline <= 0:
+        return None
+
+    return round((max(values) - min(values)) / baseline * 100.0, 2)
+
+
+def _median_absolute_deviation_pct(values: list[float]) -> float | None:
+    if not values:
+        return None
+
+    baseline = median(values)
+
+    if baseline <= 0:
+        return None
+
+    deviations = [
+        abs(value - baseline)
+        for value in values
+    ]
+
+    return round(median(deviations) / baseline * 100.0, 2)
+
+
+def _age_metrics(records: list[dict]) -> dict[str, float | int | None]:
+    ages = [
+        int(record["age_days"])
+        for record in records
+    ]
+
+    if not ages:
+        return {
+            "newest_comp_age_days": None,
+            "oldest_comp_age_days": None,
+            "median_comp_age_days": None,
+        }
+
+    return {
+        "newest_comp_age_days": min(ages),
+        "oldest_comp_age_days": max(ages),
+        "median_comp_age_days": round(median(ages), 1),
+    }
+
+
 def _market_direction(records: list[dict]) -> tuple[str, str]:
     recent = [
         record["price"]
@@ -204,6 +250,9 @@ def value_from_sold_comps(
     median_90 = _median([record["price"] for record in accepted if record["age_days"] <= 90])
     median_180 = _median([record["price"] for record in accepted if record["age_days"] <= 180])
     direction, direction_reason = _market_direction(accepted)
+    price_spread_pct = _price_spread_pct(filtered_prices)
+    mad_pct = _median_absolute_deviation_pct(filtered_prices)
+    age_metrics = _age_metrics(filtered_records)
 
     total_count = len(accepted)
     exact_count = counts[MatchLevel.EXACT]
@@ -237,6 +286,9 @@ def value_from_sold_comps(
                 "reason": "minimum sold comp depth not met",
                 "valuation_records": len(valuation_records),
                 "outlier_filtered_count": len(prices) - len(filtered_prices),
+                "price_spread_pct": price_spread_pct,
+                "median_absolute_deviation_pct": mad_pct,
+                **age_metrics,
             },
         )
 
@@ -251,6 +303,19 @@ def value_from_sold_comps(
         0.50 * average_similarity
         + 0.30 * liquidity_score
         + exact_bonus,
+    )
+    dispersion_penalty = 0.0
+    if price_spread_pct is not None:
+        if price_spread_pct >= 100.0:
+            dispersion_penalty = 0.15
+        elif price_spread_pct >= 60.0:
+            dispersion_penalty = 0.10
+        elif price_spread_pct >= 35.0:
+            dispersion_penalty = 0.05
+
+    comp_confidence = max(
+        0.0,
+        comp_confidence - dispersion_penalty,
     )
     fair_value = weighted_median or median_sale
     quick_sale = (
@@ -283,6 +348,10 @@ def value_from_sold_comps(
             "basis": "exact comps preferred" if exact_records else "strong/related comps",
             "valuation_records": len(valuation_records),
             "outlier_filtered_count": len(prices) - len(filtered_prices),
+            "price_spread_pct": price_spread_pct,
+            "median_absolute_deviation_pct": mad_pct,
+            **age_metrics,
+            "dispersion_confidence_penalty": dispersion_penalty,
             "quick_sale_discount": settings.quick_sale_discount,
         },
     )

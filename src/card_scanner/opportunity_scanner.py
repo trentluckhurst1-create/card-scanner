@@ -7,6 +7,7 @@ from typing import Protocol
 from .comp_key import comp_quality
 from .market_reference import CrossStoreReference
 from .models import Listing, Opportunity, SoldValuation
+from .mispricing import MispricingAssessment, assess_mispricing
 from .opportunity import assess_opportunity
 from .risk import title_risk_details
 from .sold_comp_engine import (
@@ -111,6 +112,7 @@ class OpportunityScanResult:
     sold_queries_used: int
     valuation: SoldValuation
     opportunity: Opportunity
+    mispricing: MispricingAssessment | None = None
     cross_store_reference: CrossStoreReference | None = None
     reference_rejection_summary: dict[str, int] | None = None
 
@@ -371,10 +373,18 @@ def scan_store_opportunities(
             sold_queries_used += sold_result.query_count
             candidates_scanned += 1
 
+            risk_flags = title_risk_details(listing.title)
             opportunity = assess_opportunity(
                 listing,
                 sold_result.valuation,
-                title_risk_details(listing.title),
+                risk_flags,
+            )
+            mispricing = assess_mispricing(
+                listing,
+                sold_result.valuation,
+                opportunity,
+                risk_flags,
+                cross_store_reference,
             )
 
             results.append(
@@ -392,6 +402,7 @@ def scan_store_opportunities(
                     sold_queries_used=sold_result.query_count,
                     valuation=sold_result.valuation,
                     opportunity=opportunity,
+                    mispricing=mispricing,
                     cross_store_reference=cross_store_reference,
                     reference_rejection_summary=reference_rejection_summary,
                 )
@@ -472,10 +483,10 @@ def opportunity_result_sort_key(
         99,
     )
 
-    if opportunity.status in {"BUY", "STRONG_BUY"}:
-        secondary = -float(
-            opportunity.opportunity_score or 0.0
-        )
+    if result.mispricing is not None:
+        secondary = -float(result.mispricing.score)
+    elif opportunity.status in {"BUY", "STRONG_BUY"}:
+        secondary = -float(opportunity.opportunity_score or 0.0)
     elif opportunity.edge_pct is not None:
         secondary = -float(opportunity.edge_pct)
     else:
