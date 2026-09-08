@@ -91,17 +91,34 @@ class CrossStoreReferenceProvider:
     ) -> CrossStoreSearchResult:
         collected = self.search(candidate)
 
-        reference = build_cross_store_reference(
+        return self.assess_from_pool(
             candidate,
             collected.listings,
+            stores_considered=collected.stores_considered,
+            stores_searched=collected.stores_searched,
+            store_errors=collected.store_errors,
+        )
+
+    def assess_from_pool(
+        self,
+        candidate: Listing,
+        listings: list[Listing],
+        *,
+        stores_considered: int = 0,
+        stores_searched: int = 0,
+        store_errors: tuple[str, ...] = (),
+    ) -> CrossStoreSearchResult:
+        reference = build_cross_store_reference(
+            candidate,
+            listings,
         )
 
         return CrossStoreSearchResult(
             reference=reference,
-            stores_considered=collected.stores_considered,
-            stores_searched=collected.stores_searched,
-            listings_fetched=len(collected.listings),
-            store_errors=collected.store_errors,
+            stores_considered=stores_considered,
+            stores_searched=stores_searched,
+            listings_fetched=len(listings),
+            store_errors=store_errors,
         )
 
 

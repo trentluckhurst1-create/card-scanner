@@ -257,3 +257,53 @@ def test_provider_returns_no_reference_when_other_stores_empty() -> None:
         result.reference.status
         is MarketReferenceStatus.NO_REFERENCE
     )
+
+def test_assess_from_pool_does_not_refetch_stores() -> None:
+    candidate = make_listing(
+        source="cherry",
+        external_id="candidate",
+        price=120.0,
+    )
+
+    gimko_listing = make_listing(
+        source="gimko",
+        external_id="g1",
+        price=165.0,
+        serial_current=38,
+    )
+
+    sportscardstore_listing = make_listing(
+        source="sportscardstore",
+        external_id="s1",
+        price=160.0,
+        shipping=10.0,
+        serial_current=12,
+    )
+
+    store = FakeStore([])
+
+    provider = CrossStoreReferenceProvider(
+        stores=[
+            NamedStoreSource("gimko", store),
+        ]
+    )
+
+    result = provider.assess_from_pool(
+        candidate,
+        [
+            gimko_listing,
+            sportscardstore_listing,
+        ],
+        stores_considered=2,
+        stores_searched=2,
+    )
+
+    assert store.calls == []
+    assert result.stores_considered == 2
+    assert result.stores_searched == 2
+    assert result.listings_fetched == 2
+    assert (
+        result.reference.status
+        is MarketReferenceStatus.REFERENCE_AVAILABLE
+    )
+    assert result.reference.matched_listing_count == 2
