@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 
+from .listing_history import ListingHistoryAssessment
 from .market_reference import CrossStoreReference, MarketReferenceStatus
 from .models import Listing, Opportunity, RiskFlag, SoldValuation
 
@@ -62,6 +63,7 @@ def assess_mispricing(
     opportunity: Opportunity,
     risk_flags: list[RiskFlag] | None = None,
     cross_store_reference: CrossStoreReference | None = None,
+    listing_history: ListingHistoryAssessment | None = None,
 ) -> MispricingAssessment:
     """
     Explain whether a cheap-looking card is a defensible mispricing.
@@ -156,6 +158,56 @@ def assess_mispricing(
             _add_once(
                 may_be,
                 "cross-store active reference depth is insufficient",
+            )
+
+    if listing_history is not None:
+        if listing_history.is_new:
+            _add_once(
+                evidence,
+                "first observed in current history window",
+            )
+            if edge_pct is not None and edge_pct >= 10.0:
+                _add_once(
+                    looks,
+                    "new listing entered below defensible fair value",
+                )
+
+        if listing_history.is_price_drop:
+            change_pct = listing_history.price_change_pct
+            if change_pct is not None:
+                _add_once(
+                    looks,
+                    f"price dropped {abs(change_pct):.1f}% since previous observation",
+                )
+            else:
+                _add_once(
+                    looks,
+                    "price dropped since previous observation",
+                )
+
+        if listing_history.observation_count <= 1:
+            _add_once(
+                may_be,
+                "history evidence is sparse",
+            )
+
+        if (
+            listing_history.is_stale
+            and edge_pct is not None
+            and edge_pct >= 10.0
+        ):
+            _add_once(
+                may_be,
+                (
+                    "listing has remained active for "
+                    f"{listing_history.age_days} days despite apparent discount"
+                ),
+            )
+
+        if listing_history.price_drop_count >= 2:
+            _add_once(
+                may_be,
+                "repeated price reductions may indicate weaker market demand",
             )
 
     if opportunity.identity_confidence < 0.85:
@@ -261,6 +313,28 @@ def assess_mispricing(
         ):
             active_score = min(discount, 40.0) / 40.0 * 5.0
 
+    history_score = 0.0
+    history_penalty = 0.0
+    if (
+        listing_history is not None
+        and valuation.status == "VALUED"
+        and positive_edge > 0
+    ):
+        if listing_history.is_new:
+            history_score += 2.0
+        if listing_history.is_price_drop:
+            history_score += min(
+                abs(listing_history.price_change_pct or 0.0),
+                30.0,
+            ) / 30.0 * 4.0
+
+        history_score = min(history_score, 6.0)
+
+        if listing_history.is_stale:
+            history_penalty += 4.0
+        if listing_history.price_drop_count >= 2:
+            history_penalty += 3.0
+
     risk_penalty = min(opportunity.risk_score * 0.45, 35.0)
     dispersion_penalty = 0.0
     if spread_pct is not None and spread_pct >= 60.0:
@@ -274,8 +348,10 @@ def assess_mispricing(
             + identity_score
             + sold_score
             + active_score
+            + history_score
             - risk_penalty
-            - dispersion_penalty,
+            - dispersion_penalty
+            - history_penalty,
         ),
     )
 

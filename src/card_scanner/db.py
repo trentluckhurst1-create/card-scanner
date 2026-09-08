@@ -118,6 +118,52 @@ CREATE TABLE IF NOT EXISTS listing_events (
     details_json TEXT
 );
 
+CREATE TABLE IF NOT EXISTS store_listing_states (
+    source TEXT NOT NULL,
+    external_id TEXT NOT NULL,
+    sport TEXT NOT NULL,
+    url TEXT NOT NULL,
+    title TEXT NOT NULL,
+    price REAL,
+    currency TEXT NOT NULL,
+    shipping REAL,
+    landed_aud REAL,
+    first_seen_at TEXT NOT NULL,
+    last_seen_at TEXT NOT NULL,
+    previous_price REAL,
+    current_price REAL,
+    min_observed_price REAL,
+    max_observed_price REAL,
+    observation_count INTEGER NOT NULL DEFAULT 0,
+    price_change_count INTEGER NOT NULL DEFAULT 0,
+    price_drop_count INTEGER NOT NULL DEFAULT 0,
+    price_increase_count INTEGER NOT NULL DEFAULT 0,
+    last_price_change_at TEXT,
+    latest_price_change_amount REAL,
+    latest_price_change_pct REAL,
+    history_status TEXT NOT NULL,
+    identity_json TEXT,
+    identity_fingerprint TEXT,
+    active INTEGER NOT NULL DEFAULT 1,
+    PRIMARY KEY(source, external_id)
+);
+
+CREATE TABLE IF NOT EXISTS store_listing_price_events (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    source TEXT NOT NULL,
+    external_id TEXT NOT NULL,
+    observed_at TEXT NOT NULL,
+    event_type TEXT NOT NULL,
+    previous_price REAL,
+    current_price REAL,
+    price_change_amount REAL,
+    price_change_pct REAL,
+    currency TEXT NOT NULL,
+    scan_run_id INTEGER,
+    details_json TEXT NOT NULL,
+    UNIQUE(source, external_id, observed_at, event_type)
+);
+
 CREATE TABLE IF NOT EXISTS market_listings (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     source TEXT NOT NULL,
@@ -286,6 +332,8 @@ CREATE TABLE IF NOT EXISTS watch_events (
 
 CREATE INDEX IF NOT EXISTS idx_market_matches_listing ON market_matches(source_listing_external_id);
 CREATE INDEX IF NOT EXISTS idx_market_metrics_listing ON market_metrics(source_listing_external_id);
+CREATE INDEX IF NOT EXISTS idx_store_listing_states_sport ON store_listing_states(sport);
+CREATE INDEX IF NOT EXISTS idx_store_listing_events_listing ON store_listing_price_events(source, external_id);
 CREATE INDEX IF NOT EXISTS idx_sold_comp_matches_listing ON sold_comp_matches(source_listing_external_id);
 CREATE INDEX IF NOT EXISTS idx_listing_events_listing ON listing_events(source, external_id);
 CREATE INDEX IF NOT EXISTS idx_sold_valuations_listing ON sold_valuations(source_listing_external_id);

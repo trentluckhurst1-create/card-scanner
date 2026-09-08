@@ -710,6 +710,11 @@ def scan_opportunities_cmd(
         OPPORTUNITY_SCAN_MAX_SOLD_QUERIES,
         "--max-sold-queries",
     ),
+    record_history: bool = typer.Option(
+        True,
+        "--record-history/--no-record-history",
+        help="Persist lawful active store listing observations.",
+    ),
 ):
     sport = sport.upper()
 
@@ -731,6 +736,9 @@ def scan_opportunities_cmd(
         )
         raise typer.Exit(1)
 
+    if record_history:
+        init_db()
+
     summary = scan_store_opportunities(
         store_source=store_source,
         sold_provider=provider,
@@ -739,6 +747,7 @@ def scan_opportunities_cmd(
         max_candidates_per_sport=max_candidates,
         sold_results_per_query=sold_limit,
         max_sold_queries=max_sold_queries,
+        record_history=record_history,
     )
 
     console.print("")
@@ -760,6 +769,9 @@ def scan_opportunities_cmd(
         "PLAYER",
         "CARD",
         "STORE_PRICE",
+        "HISTORY",
+        "AGE",
+        "PRICE_CHG",
         "IDENTITY",
         "FETCHED",
         "EXACT",
@@ -785,6 +797,10 @@ def scan_opportunities_cmd(
         valuation = result.valuation
         opportunity = result.opportunity
         mispricing = result.mispricing
+        history = result.listing_history
+        price_change = ""
+        if history and history.price_change_pct is not None:
+            price_change = f"{history.price_change_pct:.1f}%"
 
         table.add_row(
             result.listing.sport,
@@ -792,6 +808,9 @@ def scan_opportunities_cmd(
             identity.player if identity and identity.player else "",
             result.listing.title[:70],
             f"A${result.listing.price + result.listing.shipping:.2f}",
+            history.history_status if history else "",
+            str(history.age_days) if history else "",
+            price_change,
             f"{result.identity_quality:.3f}",
             str(result.fetched_count),
             str(result.exact_count),
@@ -854,6 +873,17 @@ def scan_opportunities_cmd(
     console.print(
         f"INSUFFICIENT_IDENTITY={summary.insufficient_identity_count}"
     )
+    console.print(f"HISTORY_OBSERVED={summary.history_observed_count}")
+    console.print(f"HISTORY_NEW={summary.history_new_count}")
+    console.print(f"HISTORY_UNCHANGED={summary.history_unchanged_count}")
+    console.print(f"HISTORY_PRICE_DROPS={summary.history_price_drop_count}")
+    console.print(
+        f"HISTORY_PRICE_INCREASES={summary.history_price_increase_count}"
+    )
+    console.print(f"HISTORY_RELISTED={summary.history_relisted_count}")
+    console.print(f"HISTORY_STALE={summary.history_stale_count}")
+    console.print(f"HISTORY_EVENTS={summary.history_event_count}")
+    console.print(f"HISTORY_ERRORS={len(summary.history_errors)}")
     console.print(
         f"SOLD_QUERIES_USED={summary.sold_queries_used}"
     )

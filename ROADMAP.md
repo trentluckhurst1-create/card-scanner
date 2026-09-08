@@ -40,8 +40,8 @@
 - "WHY IS IT CHEAP?" disproof checks
 
 ## Phase 5 — discovery + alerts
-- Newly listed detector
-- Price-change detector
+- [x] Newly listed detector
+- [x] Price-change detector
 - Misspelling / under-described listing detector
 - Cherry new-arrival monitor
 - High-score alerts

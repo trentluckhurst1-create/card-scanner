@@ -45,6 +45,9 @@ class Settings:
         "RBA_FX_CSV_URL",
         "https://www.rba.gov.au/statistics/tables/csv/f11.1-data.csv",
     )
+    listing_stale_days: int = int(
+        os.getenv("LISTING_STALE_DAYS", "45")
+    )
 
 settings = Settings()
 

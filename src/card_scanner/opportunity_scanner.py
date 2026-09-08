@@ -2,9 +2,15 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 from datetime import date
+from datetime import datetime
 from typing import Protocol
 
 from .comp_key import comp_quality
+from .listing_history import (
+    ListingHistoryAssessment,
+    ListingHistoryBatch,
+    record_store_listing_observations,
+)
 from .market_reference import CrossStoreReference
 from .models import Listing, Opportunity, SoldValuation
 from .mispricing import MispricingAssessment, assess_mispricing
@@ -113,6 +119,7 @@ class OpportunityScanResult:
     valuation: SoldValuation
     opportunity: Opportunity
     mispricing: MispricingAssessment | None = None
+    listing_history: ListingHistoryAssessment | None = None
     cross_store_reference: CrossStoreReference | None = None
     reference_rejection_summary: dict[str, int] | None = None
 
@@ -135,6 +142,15 @@ class OpportunityScanSummary:
     insufficient_identity_count: int
     high_risk_count: int
     fetched_listings: int
+    history_observed_count: int = 0
+    history_new_count: int = 0
+    history_unchanged_count: int = 0
+    history_price_drop_count: int = 0
+    history_price_increase_count: int = 0
+    history_relisted_count: int = 0
+    history_stale_count: int = 0
+    history_event_count: int = 0
+    history_errors: tuple[str, ...] = ()
     reference_store_errors: tuple[str, ...] = ()
 
 
@@ -216,6 +232,9 @@ def scan_store_opportunities(
     sold_results_per_query: int = 100,
     max_sold_queries: int = 80,
     as_of: date | None = None,
+    record_history: bool = False,
+    history_observed_at: datetime | None = None,
+    history_stale_after_days: int | None = None,
 ) -> OpportunityScanSummary:
     """
     Run an ephemeral store -> sold comps -> valuation -> opportunity scan.
@@ -265,9 +284,19 @@ def scan_store_opportunities(
     sold_queries_used = 0
     insufficient_identity_count = 0
     reference_store_errors: list[str] = []
+    history_observed_count = 0
+    history_new_count = 0
+    history_unchanged_count = 0
+    history_price_drop_count = 0
+    history_price_increase_count = 0
+    history_relisted_count = 0
+    history_stale_count = 0
+    history_event_count = 0
+    history_errors: list[str] = []
 
     for sport_name in sports:
         collection: MultiStoreCollection | None = None
+        history_batch: ListingHistoryBatch | None = None
 
         if isinstance(store_source, MultiStoreSource):
             collection = store_source.collect(
@@ -285,6 +314,22 @@ def scan_store_opportunities(
             )
 
         fetched_listings += len(listings)
+
+        if record_history:
+            history_batch = record_store_listing_observations(
+                listings,
+                observed_at=history_observed_at,
+                stale_after_days=history_stale_after_days,
+            )
+            history_observed_count += history_batch.observed_count
+            history_new_count += history_batch.state_created_count
+            history_unchanged_count += history_batch.unchanged_count
+            history_price_drop_count += history_batch.price_drop_count
+            history_price_increase_count += history_batch.price_increase_count
+            history_relisted_count += history_batch.relisted_count
+            history_stale_count += history_batch.stale_count
+            history_event_count += history_batch.event_count
+            history_errors.extend(history_batch.errors)
 
         ranked = sorted(
             listings,
@@ -321,6 +366,13 @@ def scan_store_opportunities(
             if listing.identity is None:
                 continue
 
+            listing_history = (
+                history_batch.histories.get(
+                    (listing.source.casefold(), listing.external_id)
+                )
+                if history_batch is not None
+                else None
+            )
             cross_store_reference = None
             reference_rejection_summary = None
 
@@ -385,6 +437,7 @@ def scan_store_opportunities(
                 opportunity,
                 risk_flags,
                 cross_store_reference,
+                listing_history,
             )
 
             results.append(
@@ -403,6 +456,7 @@ def scan_store_opportunities(
                     valuation=sold_result.valuation,
                     opportunity=opportunity,
                     mispricing=mispricing,
+                    listing_history=listing_history,
                     cross_store_reference=cross_store_reference,
                     reference_rejection_summary=reference_rejection_summary,
                 )
@@ -434,6 +488,15 @@ def scan_store_opportunities(
         insufficient_identity_count=insufficient_identity_count,
         high_risk_count=_status_count(results, "HIGH_RISK"),
         fetched_listings=fetched_listings,
+        history_observed_count=history_observed_count,
+        history_new_count=history_new_count,
+        history_unchanged_count=history_unchanged_count,
+        history_price_drop_count=history_price_drop_count,
+        history_price_increase_count=history_price_increase_count,
+        history_relisted_count=history_relisted_count,
+        history_stale_count=history_stale_count,
+        history_event_count=history_event_count,
+        history_errors=tuple(history_errors),
         reference_store_errors=tuple(reference_store_errors),
     )
 

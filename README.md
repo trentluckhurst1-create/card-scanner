@@ -150,6 +150,17 @@ Cross-store active listings are reference-only. They can support `WATCH`-style c
 
 Cross-store diagnostics include a reporting-only cumulative identity funnel: `CROSS_STORE`, `IDENTITY_PRESENT`, `SAME_PLAYER`, `SAME_YEAR`, `SAME_PRODUCT`, `SAME_CARD_NUMBER`, `SAME_PARALLEL`, `SAME_SERIAL`, `SAME_ROOKIE`, `SAME_AUTO_MEM`, `SAME_GRADING` and `EXACT_STRONG`. The funnel explains where possible references fail; it does not create or loosen accepted references.
 
+## Active Listing History
+
+The acquisition-store scanner can persist lawful active-listing history for Cherry, Sports Card Store Australia, Gimko and Urban Empire. scan-opportunities records this history by default; use --no-record-history to disable it.
+
+History is keyed by source + external_id and tracks first seen, last seen, current/previous/minimum/maximum asking price, observation count, price-change counts and conservative lifecycle context.
+
+Bounded or partial scans do not infer that an unseen listing disappeared or became inactive. A listing can only be treated as relisted when prior state explicitly records it as inactive.
+
+Active listing history is timing and risk context only. It cannot create air_value_aud, quick_sale_value_aud, satisfy the minimum sold-comp requirement, or create BUY / STRONG_BUY. A price drop is evidence about the seller's asking-price movement, not proof of card value.
+
+The Card API sold-sale data remains on a separate ephemeral path. Raw API responses, normalized API sales and API sold matches are not written into active listing history or persisted by the live opportunity scanner.
 ## Mispricing Assessment
 
 The scanner ranks opportunities by explainable mispricing quality, not raw discount alone. The `MISPRICE` score combines sold fair-value edge, identity confidence, sold-comp confidence, exact-comp depth, liquidity, comp recency, price dispersion, risk flags and cross-store ask context.
