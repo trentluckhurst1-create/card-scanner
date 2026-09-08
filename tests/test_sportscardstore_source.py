@@ -19,6 +19,18 @@ class FakeClient:
 
     def get(self, url, params=None):
         self.calls.append((url, params))
+
+        if isinstance(self.payload, list):
+            page = int((params or {}).get("page", 1))
+            index = page - 1
+
+            if 0 <= index < len(self.payload):
+                payload = self.payload[index]
+            else:
+                payload = {"products": []}
+
+            return FakeResponse(payload)
+
         return FakeResponse(self.payload)
 
     def close(self):
@@ -70,7 +82,7 @@ def test_sportscardstore_source_parses_available_listing() -> None:
     assert client.calls == [
         (
             "https://sportscardstore.com.au/collections/nba-singles/products.json",
-            {"limit": 5},
+            {"limit": 250, "page": 1},
         )
     ]
 
@@ -119,3 +131,210 @@ def test_sportscardstore_source_rejects_unsupported_sport_without_call() -> None
 
     assert rows == []
     assert client.calls == []
+
+def make_product(
+    product_id: int,
+    title: str,
+    *,
+    available: bool = True,
+    price: str = "10.00",
+) -> dict:
+    return {
+        "id": product_id,
+        "title": title,
+        "handle": f"card-{product_id}",
+        "variants": [
+            {
+                "available": available,
+                "price": price,
+            }
+        ],
+        "images": [],
+    }
+
+
+def test_sportscardstore_source_paginates_until_query_match() -> None:
+    first_page = [
+        make_product(
+            product_id,
+            f"Other Player Card {product_id}",
+        )
+        for product_id in range(1, 251)
+    ]
+
+    second_page = [
+        make_product(
+            251,
+            "2019-20 PANINI DONRUSS OPTIC Ja Morant Rated Rookie RC",
+        )
+    ]
+
+    client = FakeClient(
+        [
+            {"products": first_page},
+            {"products": second_page},
+        ]
+    )
+    source = SportsCardStoreSource(client=client)
+
+    rows = source.search(
+        "NBA",
+        query="Ja Morant",
+        limit=5,
+    )
+
+    assert len(rows) == 1
+    assert rows[0].identity.player == "Ja Morant"
+
+    assert len(client.calls) == 2
+    assert client.calls[0][1] == {
+        "limit": 250,
+        "page": 1,
+    }
+    assert client.calls[1][1] == {
+        "limit": 250,
+        "page": 2,
+    }
+
+
+def test_sportscardstore_source_stops_when_limit_reached() -> None:
+    first_page = [
+        make_product(
+            product_id,
+            f"NBA Player Card {product_id}",
+        )
+        for product_id in range(1, 251)
+    ]
+
+    client = FakeClient(
+        [
+            {"products": first_page},
+            {
+                "products": [
+                    make_product(
+                        251,
+                        "Should Never Be Requested",
+                    )
+                ]
+            },
+        ]
+    )
+    source = SportsCardStoreSource(client=client)
+
+    rows = source.search(
+        "NBA",
+        limit=2,
+    )
+
+    assert len(rows) == 2
+    assert len(client.calls) == 1
+
+
+def test_sportscardstore_source_skips_unavailable_across_pages() -> None:
+    first_page = [
+        make_product(
+            product_id,
+            f"Target Player Card {product_id}",
+            available=False,
+        )
+        for product_id in range(1, 251)
+    ]
+
+    second_page = [
+        make_product(
+            251,
+            "Target Player Available Card",
+        )
+    ]
+
+    client = FakeClient(
+        [
+            {"products": first_page},
+            {"products": second_page},
+        ]
+    )
+    source = SportsCardStoreSource(client=client)
+
+    rows = source.search(
+        "NBA",
+        query="Target Player",
+        limit=1,
+    )
+
+    assert len(rows) == 1
+    assert rows[0].external_id == "251"
+    assert len(client.calls) == 2
+
+
+def test_sportscardstore_source_deduplicates_products_across_pages() -> None:
+    first_page = [
+        make_product(
+            1,
+            "Target Player First Card",
+        )
+    ]
+
+    first_page.extend(
+        make_product(
+            product_id,
+            f"Other Player Card {product_id}",
+        )
+        for product_id in range(2, 251)
+    )
+
+    second_page = [
+        make_product(
+            1,
+            "Target Player First Card",
+        ),
+        make_product(
+            251,
+            "Target Player Second Card",
+        ),
+    ]
+
+    client = FakeClient(
+        [
+            {"products": first_page},
+            {"products": second_page},
+        ]
+    )
+    source = SportsCardStoreSource(client=client)
+
+    rows = source.search(
+        "NBA",
+        query="Target Player",
+        limit=2,
+    )
+
+    assert len(rows) == 2
+    assert [row.external_id for row in rows] == [
+        "1",
+        "251",
+    ]
+    assert len(client.calls) == 2
+
+
+def test_sportscardstore_source_stops_on_short_final_page() -> None:
+    client = FakeClient(
+        [
+            {
+                "products": [
+                    make_product(
+                        1,
+                        "Completely Different Player",
+                    )
+                ]
+            }
+        ]
+    )
+    source = SportsCardStoreSource(client=client)
+
+    rows = source.search(
+        "NBA",
+        query="Target Player",
+        limit=5,
+    )
+
+    assert rows == []
+    assert len(client.calls) == 1
