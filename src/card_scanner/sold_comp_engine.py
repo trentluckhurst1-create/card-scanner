@@ -5,7 +5,7 @@ from datetime import date
 
 from .comp_key import broad_comp_query, comp_quality, exact_comp_query
 from .config import settings
-from .market_matching import _same, assess_match
+from .market_matching import _same, _same_year, assess_match
 from .models import (
     CardIdentity,
     MatchLevel,
@@ -115,7 +115,7 @@ def assess_strict_sold_comp(
     if source.year:
         if not candidate.year:
             strict_rejections.append("candidate year missing")
-        elif not _same(source.year, candidate.year):
+        elif not _same_year(source.year, candidate.year):
             strict_rejections.append("different year")
 
     # Require set/brand identity rather than merely using it as a score.

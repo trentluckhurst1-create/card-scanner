@@ -3,6 +3,7 @@
 import re
 
 from .models import CardIdentity
+from .year_normalization import normalize_card_year
 
 
 def _clean(value: str | None) -> str | None:
@@ -23,7 +24,7 @@ def identity_signature(identity: CardIdentity) -> str:
 
     fields = [
         identity.sport,
-        identity.year,
+        normalize_card_year(identity.year) or identity.year,
         identity.set_name or identity.brand,
         identity.player,
         identity.card_number,

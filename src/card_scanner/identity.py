@@ -6,7 +6,7 @@ from .models import CardIdentity
 
 
 YEAR_RE = re.compile(
-    r"\b((?:19|20)\d{2})(?:-(\d{2}))?\b"
+    r"\b((?:19|20)\d{2})(?:[-/](\d{2}))?\b"
 )
 
 SERIAL_RE = re.compile(
@@ -111,6 +111,13 @@ PARALLEL_TERMS = [
     "Gold Power",
     "Gold Shimmer",
     "Gold Refractor",
+    "Black Prizm",
+    "Silver Prizm",
+    "Red White Blue",
+    "Green Velocity",
+    "Light Blue",
+    "Blue Ice",
+    "Gold Foil",
     "Gold",
     "Ruby",
     "Emerald",
@@ -131,6 +138,7 @@ PARALLEL_TERMS = [
     "Blue Refractor",
     "Blue",
     "Fuchsia",
+    "Pink Fluorescent",
     "Pink Laser",
     "Pink Wave",
     "Lazer Prizm",
@@ -171,6 +179,40 @@ PARALLEL_TERMS = [
     "Disco",
     "Holo",
 ]
+
+
+def _first_non_year_serial(
+    text: str,
+    year_match: re.Match[str] | None,
+) -> re.Match[str] | None:
+    year_span = year_match.span() if year_match else None
+
+    for match in SERIAL_RE.finditer(text):
+        if year_span and match.span() == year_span:
+            continue
+
+        return match
+
+    return None
+
+
+def _first_non_year_total_only_serial(
+    text: str,
+    year_match: re.Match[str] | None,
+) -> re.Match[str] | None:
+    year_span = year_match.span() if year_match else None
+
+    for match in SERIAL_TOTAL_ONLY_RE.finditer(text):
+        if (
+            year_span
+            and year_span[0] <= match.start()
+            and match.end() <= year_span[1]
+        ):
+            continue
+
+        return match
+
+    return None
 
 
 SPORT_HINTS = {
@@ -384,7 +426,13 @@ def _extract_parallel(
         key=len,
         reverse=True,
     ):
-        if parallel.lower() in lower:
+        pattern = (
+            r"(?<![A-Za-z0-9])"
+            + re.escape(parallel).replace(r"\ ", r"\s+")
+            + r"(?![A-Za-z0-9])"
+        )
+
+        if re.search(pattern, search_text, flags=re.I):
             return parallel
 
     return None
@@ -1054,11 +1102,17 @@ def parse_identity(
     lower = text.lower()
 
     year_match = YEAR_RE.search(text)
-    serial_match = SERIAL_RE.search(text)
+    serial_match = _first_non_year_serial(
+        text,
+        year_match,
+    )
     serial_total_only_match = (
         None
         if serial_match
-        else SERIAL_TOTAL_ONLY_RE.search(text)
+        else _first_non_year_total_only_serial(
+            text,
+            year_match,
+        )
     )
     grade_match = GRADE_RE.search(text)
     card_number_match = CARD_NUMBER_RE.search(text)

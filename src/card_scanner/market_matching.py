@@ -4,6 +4,7 @@ import re
 from dataclasses import dataclass
 
 from .models import CardIdentity, MatchLevel
+from .year_normalization import normalize_card_year
 
 
 REJECTING_RISK_FLAGS = {
@@ -36,6 +37,19 @@ def _same(a: object | None, b: object | None) -> bool:
     return _norm(a) == _norm(b)
 
 
+def _same_year(
+    a: str | None,
+    b: str | None,
+) -> bool:
+    left = normalize_card_year(a)
+    right = normalize_card_year(b)
+
+    if left is None or right is None:
+        return False
+
+    return left == right
+
+
 def _has_grading(identity: CardIdentity) -> bool:
     return bool(identity.grader or identity.grade is not None)
 
@@ -57,6 +71,21 @@ def _add_presence_score(
     if _same(left, right):
         reasons.append(label)
         return weight
+
+    return 0.0
+
+
+def _add_year_score(
+    source: CardIdentity,
+    candidate: CardIdentity,
+    reasons: list[str],
+) -> float:
+    if source.year is None or candidate.year is None:
+        return 0.0
+
+    if _same_year(source.year, candidate.year):
+        reasons.append("same year")
+        return 0.12
 
     return 0.0
 
@@ -87,7 +116,7 @@ def assess_match(
         rejections.append("candidate player missing")
 
     if source.year and candidate.year:
-        if _same(source.year, candidate.year):
+        if _same_year(source.year, candidate.year):
             reasons.append("same year")
         else:
             rejections.append(
@@ -150,7 +179,7 @@ def assess_match(
 
     score = 0.0
     score += _add_presence_score(source, candidate, "player", "same player", 0.25, reasons)
-    score += _add_presence_score(source, candidate, "year", "same year", 0.12, reasons)
+    score += _add_year_score(source, candidate, reasons)
     score += _add_presence_score(source, candidate, "set_name", "same set", 0.14, reasons)
     score += _add_presence_score(source, candidate, "brand", "same brand", 0.08, reasons)
     score += _add_presence_score(source, candidate, "card_number", "same card number", 0.12, reasons)
@@ -182,7 +211,7 @@ def assess_match(
 
     exact_requirements = [
         not source.player or _same(source.player, candidate.player),
-        not source.year or _same(source.year, candidate.year),
+        not source.year or _same_year(source.year, candidate.year),
         not (source.set_name or source.brand)
         or _same(source.set_name or source.brand, candidate.set_name or candidate.brand),
         not source.card_number or _same(source.card_number, candidate.card_number),

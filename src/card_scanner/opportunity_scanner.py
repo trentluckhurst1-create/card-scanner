@@ -112,6 +112,7 @@ class OpportunityScanResult:
     valuation: SoldValuation
     opportunity: Opportunity
     cross_store_reference: CrossStoreReference | None = None
+    reference_rejection_summary: dict[str, int] | None = None
 
 
 @dataclass(frozen=True)
@@ -319,6 +320,7 @@ def scan_store_opportunities(
                 continue
 
             cross_store_reference = None
+            reference_rejection_summary = None
 
             if collection is not None:
                 from .cross_store_provider import CrossStoreReferenceProvider
@@ -345,6 +347,9 @@ def scan_store_opportunities(
                     store_errors=collection.store_errors,
                 )
                 cross_store_reference = reference_result.reference
+                reference_rejection_summary = (
+                    reference_result.rejection_summary
+                )
 
             engine = EphemeralSoldCompEngine(
                 provider=provider,
@@ -388,6 +393,7 @@ def scan_store_opportunities(
                     valuation=sold_result.valuation,
                     opportunity=opportunity,
                     cross_store_reference=cross_store_reference,
+                    reference_rejection_summary=reference_rejection_summary,
                 )
             )
 

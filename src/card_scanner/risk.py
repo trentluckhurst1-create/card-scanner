@@ -3,6 +3,7 @@ from __future__ import annotations
 import re
 
 from .models import CardIdentity, RiskFlag
+from .year_normalization import normalize_card_year
 
 
 RISK_PATTERNS = {
@@ -66,7 +67,12 @@ def structural_risk_details(
         if (target.set_name or target.brand).lower() != (candidate.set_name or candidate.brand).lower():
             add("DIFFERENT_SET", "medium", "candidate set differs from target")
 
-    if target.year and candidate.year and target.year != candidate.year:
+    if (
+        target.year
+        and candidate.year
+        and normalize_card_year(target.year)
+        != normalize_card_year(candidate.year)
+    ):
         add("DIFFERENT_YEAR", "high", "candidate year differs from target")
 
     if target.card_number and candidate.card_number and target.card_number.lower() != candidate.card_number.lower():

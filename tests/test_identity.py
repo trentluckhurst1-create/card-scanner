@@ -359,6 +359,62 @@ class IdentityRegressionTests(unittest.TestCase):
                     player,
                 )
 
+    def test_verified_live_parallel_phrases(self):
+        cases = [
+            (
+                "NBA",
+                "2019-20 Panini Prizm Kobe Bryant #8 Red White Blue Prizm",
+                "Red White Blue",
+            ),
+            (
+                "NFL",
+                "2020 Donruss Optic CeeDee Lamb Rated Rookie Green Velocity #156 PSA 10 Gem Mint",
+                "Green Velocity",
+            ),
+            (
+                "NFL",
+                "2021 Panini Select Tom Brady Premier Level Light Blue Prizm /99",
+                "Light Blue",
+            ),
+            (
+                "NBA",
+                "2024-25 Prizm Black LUKA DONCIC Base Blue Ice /125 #5",
+                "Blue Ice",
+            ),
+            (
+                "NBA",
+                "2019-20 Panini Kobe Bryant Career Highlights #50 Black Prizm 1/1 PSA 8",
+                "Black Prizm",
+            ),
+            (
+                "NBA",
+                "1993-94 Fleer Michael Jordan Living Legends #4 Gold Foil Insert CGA 8",
+                "Gold Foil",
+            ),
+            (
+                "NBA",
+                "2023-24 Topps Chrome Victor Wembanyama Rookie #1 Green Topps Refractor PSA 10",
+                "Refractor",
+            ),
+        ]
+
+        for sport, title, parallel in cases:
+            with self.subTest(title=title):
+                self.assertEqual(
+                    parse_identity(title, sport).parallel,
+                    parallel,
+                )
+
+    def test_slash_season_year_does_not_become_serial_number(self):
+        identity = parse_identity(
+            "2025/26 NBA Topps Inception Basketball Sealed Hobby Box",
+            "NBA",
+        )
+
+        self.assertEqual(identity.year, "2025/26")
+        self.assertIsNone(identity.serial_current)
+        self.assertIsNone(identity.serial_total)
+
     def test_gimko_expansion_identity_audit_titles(self):
         cases = [
             (
@@ -452,3 +508,28 @@ def test_parse_panini_gold_standard_player() -> None:
     assert identity.card_number == "103"
     assert identity.serial_total == 65
     assert identity.rookie is True
+
+
+def test_live_pink_fluorescent_parallel_boundary_regression():
+    identity = parse_identity(
+        "2019 Mosaic CAM REDDISH Rookie NBA Debut Pink Fluorescent 4/10 #271 PSA 10 (631)",
+        "NBA",
+    )
+
+    assert identity.player == "Cam Reddish"
+    assert identity.parallel == "Pink Fluorescent"
+    assert identity.serial_current == 4
+    assert identity.serial_total == 10
+    assert identity.card_number == "271"
+    assert identity.grader == "PSA"
+    assert identity.grade == 10.0
+
+
+def test_parallel_terms_do_not_match_inside_longer_words():
+    identity = parse_identity(
+        "2025-26 Topps JA MORANT Golden Mirror SSP #182",
+        "NBA",
+    )
+
+    assert identity.player == "Ja Morant"
+    assert identity.parallel == "SSP"

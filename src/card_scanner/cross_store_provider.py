@@ -2,6 +2,11 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 
+from .cross_store_diagnostics import (
+    ReferenceRejectionDiagnostic,
+    diagnose_reference_rejections,
+    summarize_reference_rejections,
+)
 from .cross_store_reference import build_cross_store_reference
 from .market_reference import CrossStoreReference
 from .models import Listing
@@ -15,6 +20,8 @@ class CrossStoreSearchResult:
     stores_searched: int
     listings_fetched: int
     store_errors: tuple[str, ...]
+    rejection_diagnostics: tuple[ReferenceRejectionDiagnostic, ...] = ()
+    rejection_summary: dict[str, int] | None = None
 
 
 class CrossStoreReferenceProvider:
@@ -112,6 +119,10 @@ class CrossStoreReferenceProvider:
             candidate,
             listings,
         )
+        diagnostics = diagnose_reference_rejections(
+            candidate,
+            listings,
+        )
 
         return CrossStoreSearchResult(
             reference=reference,
@@ -119,6 +130,8 @@ class CrossStoreReferenceProvider:
             stores_searched=stores_searched,
             listings_fetched=len(listings),
             store_errors=store_errors,
+            rejection_diagnostics=tuple(diagnostics),
+            rejection_summary=summarize_reference_rejections(diagnostics),
         )
 
 
