@@ -30,6 +30,7 @@ from .scoring import score_listing
 from .sold_comps import import_sold_comp_csv
 from .sources.ebay import EbaySource
 from .sources.cherry import CherrySource
+from .sources.gimko import GimkoSource
 from .sources.sportscardstore import SportsCardStoreSource
 from .valuation import value_from_sold_comps
 from .sold_comp_engine import EphemeralSoldCompEngine
@@ -50,6 +51,46 @@ from .config import (
 
 app = typer.Typer(no_args_is_help=True)
 console = Console()
+
+
+def opportunity_store_source(
+    source: str,
+):
+    source = source.lower().strip()
+
+    if source == "cherry":
+        return CherrySource(), "Cherry"
+
+    if source == "sportscardstore":
+        return SportsCardStoreSource(), "Sports Card Store"
+
+    if source == "gimko":
+        return GimkoSource(), "Gimko"
+
+    if source == "all":
+        return (
+            MultiStoreSource(
+                [
+                    NamedStoreSource(
+                        name="Cherry",
+                        source=CherrySource(),
+                    ),
+                    NamedStoreSource(
+                        name="Sports Card Store",
+                        source=SportsCardStoreSource(),
+                    ),
+                    NamedStoreSource(
+                        name="Gimko",
+                        source=GimkoSource(),
+                    ),
+                ]
+            ),
+            "All Stores",
+        )
+
+    raise ValueError(
+        "Unsupported source. Expected cherry, sportscardstore, gimko or all."
+    )
 
 @app.command("init-db")
 def init_db_cmd():
@@ -635,7 +676,7 @@ def scan_opportunities_cmd(
     source: str = typer.Option(
         "cherry",
         "--source",
-        help="Acquisition source: cherry, sportscardstore or all",
+        help="Acquisition source: cherry, sportscardstore, gimko or all",
     ),
     sport: str = typer.Option(
         "ALL",
@@ -658,33 +699,14 @@ def scan_opportunities_cmd(
         "--max-sold-queries",
     ),
 ):
-    source = source.lower().strip()
     sport = sport.upper()
 
-    if source == "cherry":
-        store_source = CherrySource()
-        source_label = "Cherry"
-    elif source == "sportscardstore":
-        store_source = SportsCardStoreSource()
-        source_label = "Sports Card Store"
-    elif source == "all":
-        store_source = MultiStoreSource(
-            [
-                NamedStoreSource(
-                    name="Cherry",
-                    source=CherrySource(),
-                ),
-                NamedStoreSource(
-                    name="Sports Card Store",
-                    source=SportsCardStoreSource(),
-                ),
-            ]
-        )
-        source_label = "All Stores"
-    else:
+    try:
+        store_source, source_label = opportunity_store_source(source)
+    except ValueError:
         console.print(
             "[red]Unsupported source. "
-            "Expected cherry, sportscardstore or all.[/red]"
+            "Expected cherry, sportscardstore, gimko or all.[/red]"
         )
         raise typer.Exit(2)
 
@@ -721,6 +743,7 @@ def scan_opportunities_cmd(
 
     for column in [
         "SPORT",
+        "STORE",
         "PLAYER",
         "CARD",
         "STORE_PRICE",
@@ -748,6 +771,7 @@ def scan_opportunities_cmd(
 
         table.add_row(
             result.listing.sport,
+            result.listing.source,
             identity.player if identity and identity.player else "",
             result.listing.title[:70],
             f"A${result.listing.price + result.listing.shipping:.2f}",

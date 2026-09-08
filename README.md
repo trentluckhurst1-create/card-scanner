@@ -65,6 +65,17 @@ Refresh Cherry listings:
 python -m card_scanner.cli scan-cherry --sport MLB --limit 20
 ```
 
+Run acquisition-store opportunity scans:
+
+```powershell
+python -m card_scanner.cli scan-opportunities --source cherry --sport AFL --listings-per-sport 5 --max-candidates 2 --max-sold-queries 2
+python -m card_scanner.cli scan-opportunities --source sportscardstore --sport AFL --listings-per-sport 5 --max-candidates 2 --max-sold-queries 2
+python -m card_scanner.cli scan-opportunities --source gimko --sport AFL --listings-per-sport 5 --max-candidates 1 --max-sold-queries 2
+python -m card_scanner.cli scan-opportunities --source all --sport AFL --listings-per-sport 5 --max-candidates 2 --max-sold-queries 2
+```
+
+Gimko V1 supports AFL Buy Out/fixed-price listings only. It uses the public category HTML, does not persist HTML, and treats full team/base/complete set listings as multi-card set risk rather than single-card opportunities.
+
 Run governed paginated Cherry ingestion:
 
 ```powershell

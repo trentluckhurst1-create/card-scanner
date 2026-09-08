@@ -9,7 +9,7 @@ RISK_PATTERNS = {
     "DIGITAL": (r"\b(digital|e-?card|nft)\b", "high", "title indicates a digital card"),
     "CUSTOM": (r"\b(custom|art card)\b", "high", "title indicates a custom card"),
     "REPRINT": (r"\b(reprint|facsimile|reproduction|replica)\b", "high", "title indicates a reprint or replica"),
-    "LOT_OR_BUNDLE": (r"\b(lot|bundle|mixed lot|team lot|player lot|multi[- ]?card|matching pair)\b", "high", "title indicates a lot or bundle"),
+    "LOT_OR_BUNDLE": (r"\b(lot|bundle|mixed lot|team lot|player lot|multi[- ]?card|matching pair|full team base set|team set|complete set|base set|full set)\b", "high", "title indicates a lot, bundle, or multi-card set"),
     "BOX_OR_PACK": (r"\b(box|pack|case break|sealed|hobby box|blaster)\b", "high", "title indicates sealed product rather than one card"),
     "DAMAGED": (r"\b(damaged|damage|crease|creased|scratch|scratched|print line|poor condition)\b", "medium", "title indicates condition damage"),
     "ALTERED": (r"\b(altered|trimmed)\b", "high", "title indicates alteration or trimming"),

@@ -409,3 +409,73 @@ def test_multi_store_uses_one_shared_sold_query_budget():
     assert summary.query_budget == 2
     assert summary.budget_remaining == 0
     assert provider.query_count == 2
+
+
+def test_gimko_can_be_included_in_multi_store_source():
+    from card_scanner.opportunity_scanner import MultiStoreSource, NamedStoreSource
+
+    class FakeStore:
+        def __init__(self, source_name, rows):
+            self.source_name = source_name
+            self.rows = rows
+
+        def search(self, sport, query="", limit=50):
+            return [
+                row.model_copy(update={"source": self.source_name})
+                for row in self.rows[:limit]
+            ]
+
+    base = listing(
+        "card-1",
+        "AFL",
+        "2026 Select AFL Footy Stars JASON HORNE-FRANCIS Mercury Green 37/70 #64",
+    )
+
+    stores = MultiStoreSource(
+        [
+            NamedStoreSource("Cherry", FakeStore("cherry", [base])),
+            NamedStoreSource("Sports Card Store", FakeStore("sportscardstore", [base])),
+            NamedStoreSource("Gimko", FakeStore("gimko", [base])),
+        ]
+    )
+
+    rows = stores.search("AFL", limit=5)
+
+    assert [row.source for row in rows] == ["cherry", "sportscardstore", "gimko"]
+
+
+def test_cli_opportunity_source_dispatch_includes_gimko_and_all():
+    from card_scanner.cli import opportunity_store_source
+    from card_scanner.opportunity_scanner import MultiStoreSource
+    from card_scanner.sources.gimko import GimkoSource
+
+    gimko_source, gimko_label = opportunity_store_source("gimko")
+    all_source, all_label = opportunity_store_source("all")
+
+    assert isinstance(gimko_source, GimkoSource)
+    assert gimko_label == "Gimko"
+    assert isinstance(all_source, MultiStoreSource)
+    assert all_label == "All Stores"
+    assert [store.name for store in all_source.stores] == [
+        "Cherry",
+        "Sports Card Store",
+        "Gimko",
+    ]
+
+
+def test_gimko_unsupported_sport_does_not_break_all_store_fetch():
+    from card_scanner.opportunity_scanner import MultiStoreSource, NamedStoreSource
+    from card_scanner.sources.gimko import GimkoSource
+
+    class EmptyStore:
+        def search(self, sport, query="", limit=50):
+            return []
+
+    stores = MultiStoreSource(
+        [
+            NamedStoreSource("Empty", EmptyStore()),
+            NamedStoreSource("Gimko", GimkoSource(client=None)),
+        ]
+    )
+
+    assert stores.search("NBA", limit=5) == []
