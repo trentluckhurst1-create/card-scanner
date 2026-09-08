@@ -242,6 +242,123 @@ class IdentityRegressionTests(unittest.TestCase):
         self.assertIsNone(identity.serial_current)
         self.assertEqual(identity.serial_total, 250)
 
+    def test_urban_empire_boundary_player_regressions(self):
+        cases = [
+            (
+                "NBA",
+                "2025 Topps Chrome PARADOX (Case Hit) LeBron James PX-9",
+                "LeBron James",
+            ),
+            (
+                "NBA",
+                "1997-98 Bowman's Best Michael Jordan #96 Best Performance Holo",
+                "Michael Jordan",
+            ),
+            (
+                "NBA",
+                "2021-22 Panini Noir Nikola Jokic Sneaker Spotlight Auto #SNS-NJK /99",
+                "Nikola Jokic",
+            ),
+            (
+                "NBA",
+                "2017-18 Panini Select Jayson Tatum Concourse Rookie #93 Silver Prizm",
+                "Jayson Tatum",
+            ),
+            (
+                "NFL",
+                "2023 Panini Illusions Jared Goff Trophy Collection Signatures Gold /25 #35",
+                "Jared Goff",
+            ),
+            (
+                "NFL",
+                "2022 Panini Donruss Brock Purdy Rated Rookie Optic Preview Green Velocity #P-374 PSA 9",
+                "Brock Purdy",
+            ),
+            (
+                "NFL",
+                "2023 Panini Black Jayden Reed Rookie Signature Materials Royal Auto /75 #RSM-28",
+                "Jayden Reed",
+            ),
+            (
+                "NFL",
+                "Travis Kelce 2024 Panini Absolute Kaboom! Horizontal SSP",
+                "Travis Kelce",
+            ),
+            (
+                "NFL",
+                "2025 Panini Absolute Kaboom Horizontal Mike Evans #12",
+                "Mike Evans",
+            ),
+            (
+                "NBA",
+                "2019-20 Panini Prizm Kobe Bryant #8 Red White Blue Prizm",
+                "Kobe Bryant",
+            ),
+            (
+                "NFL",
+                "Patrick Mahomes II Shadow Etch #SE-1 2025 Topps Chrome Football",
+                "Patrick Mahomes II",
+            ),
+            (
+                "NFL",
+                "2024 Panini Gold Standard Drake Maye Rookie #103 White Gold /65",
+                "Drake Maye",
+            ),
+        ]
+
+        for sport, title, player in cases:
+            with self.subTest(title=title):
+                self.assertEqual(
+                    parse_identity(title, sport).player,
+                    player,
+                )
+
+    def test_urban_empire_known_good_player_forms(self):
+        cases = [
+            (
+                "NFL",
+                "2022 Panini Immaculate Chris Olave Rookie Patch Autograph #106 /99",
+                "Chris Olave",
+            ),
+            (
+                "NFL",
+                "2022 Panini Immaculate Ahmad \u201cSauce\u201d Gardner Rookie Patch Auto /99 #103 RC",
+                "Ahmad Sauce Gardner",
+            ),
+            (
+                "NFL",
+                "2020 Donruss Optic CeeDee Lamb Rated Rookie Green Velocity #156 PSA 10 Gem Mint",
+                "CeeDee Lamb",
+            ),
+            (
+                "NFL",
+                "2020 Panini Mosaic Saquon Barkley Stained Glass SSP #SG7 PSA 9 Mint",
+                "Saquon Barkley",
+            ),
+            (
+                "NFL",
+                "2024 Panini Origins Michael Penix Jr. Rookie Jumbo Patch Auto /99 #RJA-MPE",
+                "Michael Penix Jr.",
+            ),
+            (
+                "NFL",
+                "Bo Nix 2025 Panini Immaculate Memorabilia Red Patch /75",
+                "Bo Nix",
+            ),
+            (
+                "NFL",
+                "Nico Collins 2021 Panini Contenders Optic Green Rookie Auto /25",
+                "Nico Collins",
+            ),
+        ]
+
+        for sport, title, player in cases:
+            with self.subTest(title=title):
+                self.assertEqual(
+                    parse_identity(title, sport).player,
+                    player,
+                )
+
     def test_gimko_expansion_identity_audit_titles(self):
         cases = [
             (
@@ -320,3 +437,18 @@ class IdentityRegressionTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+def test_parse_panini_gold_standard_player() -> None:
+    identity = parse_identity(
+        "2024 Panini Gold Standard Drake Maye Rookie #103 White Gold /65",
+        "NFL",
+    )
+
+    assert identity.brand == "Panini Gold Standard"
+    assert identity.set_name == "Panini Gold Standard"
+    assert identity.player == "Drake Maye"
+    assert identity.parallel == "White Gold"
+    assert identity.card_number == "103"
+    assert identity.serial_total == 65
+    assert identity.rookie is True

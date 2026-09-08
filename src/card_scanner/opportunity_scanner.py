@@ -5,6 +5,7 @@ from datetime import date
 from typing import Protocol
 
 from .comp_key import comp_quality
+from .market_reference import CrossStoreReference
 from .models import Listing, Opportunity, SoldValuation
 from .opportunity import assess_opportunity
 from .risk import title_risk_details
@@ -34,6 +35,14 @@ class NamedStoreSource:
     source: StoreSearchSource
 
 
+@dataclass(frozen=True)
+class MultiStoreCollection:
+    listings: list[Listing]
+    stores_considered: int
+    stores_searched: int
+    store_errors: tuple[str, ...]
+
+
 class MultiStoreSource:
     def __init__(
         self,
@@ -47,18 +56,44 @@ class MultiStoreSource:
         query: str = "",
         limit: int = 50,
     ) -> list[Listing]:
+        return self.collect(
+            sport,
+            query,
+            limit,
+        ).listings
+
+    def collect(
+        self,
+        sport: str,
+        query: str = "",
+        limit: int = 50,
+    ) -> MultiStoreCollection:
         listings: list[Listing] = []
+        errors: list[str] = []
+        stores_searched = 0
 
         for store in self.stores:
-            listings.extend(
-                store.source.search(
+            try:
+                rows = store.source.search(
                     sport,
                     query,
                     limit,
                 )
-            )
+            except Exception as exc:
+                errors.append(
+                    f"{store.name}: {type(exc).__name__}: {exc}"
+                )
+                continue
 
-        return listings
+            stores_searched += 1
+            listings.extend(rows)
+
+        return MultiStoreCollection(
+            listings=listings,
+            stores_considered=len(self.stores),
+            stores_searched=stores_searched,
+            store_errors=tuple(errors),
+        )
 
 
 @dataclass(frozen=True)
@@ -76,6 +111,7 @@ class OpportunityScanResult:
     sold_queries_used: int
     valuation: SoldValuation
     opportunity: Opportunity
+    cross_store_reference: CrossStoreReference | None = None
 
 
 @dataclass(frozen=True)
@@ -96,6 +132,7 @@ class OpportunityScanSummary:
     insufficient_identity_count: int
     high_risk_count: int
     fetched_listings: int
+    reference_store_errors: tuple[str, ...] = ()
 
 
 def _identity_richness(listing: Listing) -> int:
@@ -224,13 +261,25 @@ def scan_store_opportunities(
     candidates_scanned = 0
     sold_queries_used = 0
     insufficient_identity_count = 0
+    reference_store_errors: list[str] = []
 
     for sport_name in sports:
-        listings = store_source.search(
-            sport_name,
-            "",
-            listings_per_sport,
-        )
+        collection: MultiStoreCollection | None = None
+
+        if isinstance(store_source, MultiStoreSource):
+            collection = store_source.collect(
+                sport_name,
+                "",
+                listings_per_sport,
+            )
+            listings = collection.listings
+            reference_store_errors.extend(collection.store_errors)
+        else:
+            listings = store_source.search(
+                sport_name,
+                "",
+                listings_per_sport,
+            )
 
         fetched_listings += len(listings)
 
@@ -268,6 +317,34 @@ def scan_store_opportunities(
 
             if listing.identity is None:
                 continue
+
+            cross_store_reference = None
+
+            if collection is not None:
+                from .cross_store_provider import CrossStoreReferenceProvider
+
+                searched_sources = {
+                    row.source.casefold()
+                    for row in listings
+                }
+
+                reference_result = CrossStoreReferenceProvider(
+                    stores=store_source.stores,
+                    listings_per_store=listings_per_sport,
+                ).assess_from_pool(
+                    listing,
+                    listings,
+                    stores_considered=max(
+                        0,
+                        collection.stores_considered - 1,
+                    ),
+                    stores_searched=len(
+                        searched_sources
+                        - {listing.source.casefold()}
+                    ),
+                    store_errors=collection.store_errors,
+                )
+                cross_store_reference = reference_result.reference
 
             engine = EphemeralSoldCompEngine(
                 provider=provider,
@@ -310,6 +387,7 @@ def scan_store_opportunities(
                     sold_queries_used=sold_result.query_count,
                     valuation=sold_result.valuation,
                     opportunity=opportunity,
+                    cross_store_reference=cross_store_reference,
                 )
             )
 
@@ -339,6 +417,7 @@ def scan_store_opportunities(
         insufficient_identity_count=insufficient_identity_count,
         high_risk_count=_status_count(results, "HIGH_RISK"),
         fetched_listings=fetched_listings,
+        reference_store_errors=tuple(reference_store_errors),
     )
 
 

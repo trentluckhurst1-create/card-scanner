@@ -34,11 +34,35 @@ GRADE_RE = re.compile(
 
 
 BRANDS = [
+    "Bowman's Best",
+    "Flair Showcase",
+    "Fleer Ultra",
+    "Fleer",
+    "SkyBox E-X2000",
+    "SkyBox",
+    "NBA Hoops",
+    "UD Choice",
+    "Upper Deck SPx",
+    "Upper Deck HoloGrFX",
+    "Upper Deck Ovation",
+    "Upper Deck Ionix",
+    "Upper Deck Collector's Choice",
+    "Upper Deck SP",
+    "Panini Noir",
+    "Panini Select",
+    "Panini Illusions",
+    "Panini Black",
+    "Panini Excalibur",
+    "Panini Contenders Optic",
+    "Topps Midnight",
+    "Topps Signature Class",
+    "Topps Stadium Club",
     "Bowman Chrome",
     "Bowman Draft",
     "Bowman",
     "Upper Deck Draft Edition",
     "Upper Deck",
+    "Panini Gold Standard",
     "Panini Phoenix",
     "Panini One and One",
     "Panini Prestige",
@@ -79,6 +103,7 @@ BRANDS = [
 
 
 PARALLEL_TERMS = [
+    "White Gold",
     "Teal Explosion",
     "Superfractor",
     "Gold Vinyl",
@@ -276,8 +301,32 @@ def _extract_set_name(
     # the set family used for comp matching.
     preferred = [
         "Bowman Draft",
+        "Bowman's Best",
+        "Flair Showcase",
+        "Fleer Ultra",
+        "Fleer",
+        "SkyBox E-X2000",
+        "SkyBox",
+        "NBA Hoops",
+        "UD Choice",
+        "Upper Deck SPx",
+        "Upper Deck HoloGrFX",
+        "Upper Deck Ovation",
+        "Upper Deck Ionix",
+        "Upper Deck Collector's Choice",
+        "Upper Deck SP",
+        "Panini Noir",
+        "Panini Select",
+        "Panini Illusions",
+        "Panini Black",
+        "Panini Excalibur",
+        "Panini Contenders Optic",
+        "Topps Midnight",
+        "Topps Signature Class",
+        "Topps Stadium Club",
         "Bowman Chrome",
         "Topps Chrome",
+        "Panini Gold Standard",
         "Panini Mosaic",
         "Panini Chronicles",
         "Panini Hoops",
@@ -527,7 +576,13 @@ def _normalise_player_display(words: list[str]) -> str | None:
     cleaned: list[str] = []
 
     for token in words:
-        token = token.strip(" -_,:;()[]{}")
+        token = token.strip(" -_,:;()[]{}!?\"")
+        token = (
+            token.replace("\u201c", "")
+            .replace("\u201d", "")
+            .replace("\u2018", "")
+            .replace("\u2019", "'")
+        )
 
         if not token:
             continue
@@ -546,6 +601,8 @@ def _normalise_player_display(words: list[str]) -> str | None:
             and upper.isalpha()
         ):
             cleaned.append(upper)
+        elif not token.isupper() and not token.islower():
+            cleaned.append(token)
         else:
             cleaned.append(
                 "-".join(
@@ -619,6 +676,142 @@ def _clean_extracted_player(
 
     return _normalise_player_display(words)
 
+
+def _extract_boundary_player(
+    title: str,
+    brand: str | None,
+) -> str | None:
+    """
+    High-precision marketplace player extraction based on title position.
+
+    Supports:
+      YEAR + BRAND + PLAYER + card descriptors
+      PLAYER + YEAR + BRAND + card descriptors
+
+    Legacy extractors remain fallbacks.
+    """
+
+    if not brand:
+        return None
+
+    year_match = YEAR_RE.search(title)
+
+    if not year_match:
+        return None
+
+    brand_match = re.search(
+        re.escape(brand),
+        title,
+        flags=re.I,
+    )
+
+    if not brand_match:
+        return None
+
+    def clean_tokens(segment: str) -> list[str]:
+        return [
+            token
+            for token in (
+                raw.strip(" -_,:;()[]{}!?\"")
+                .replace("\u201c", "")
+                .replace("\u201d", "")
+                .replace("\u2018", "")
+                .replace("\u2019", "'")
+                for raw in segment.split()
+            )
+            if token
+        ]
+
+    suffixes = {
+        "JR",
+        "SR",
+        "II",
+        "III",
+        "IV",
+    }
+
+    def player_words(tokens: list[str]) -> list[str] | None:
+        if len(tokens) < 2:
+            return None
+
+        first_two = [
+            token.rstrip(".").lower()
+            for token in tokens[:2]
+        ]
+
+        if any(
+            token in PLAYER_STOP_WORDS
+            for token in first_two
+        ):
+            return None
+
+        words = tokens[:2]
+
+        if len(tokens) >= 3:
+            third_upper = tokens[2].rstrip(".").upper()
+
+            if third_upper in suffixes:
+                words = tokens[:3]
+            elif (
+                len(tokens) >= 4
+                and tokens[1].strip("?")
+                and tokens[1] != tokens[1].strip("?")
+            ):
+                words = tokens[:3]
+            elif (
+                len(tokens) >= 3
+                and (
+                    title.find("\u201c" + tokens[1] + "\u201d") >= 0
+                    or title.find('"' + tokens[1] + '"') >= 0
+                )
+            ):
+                words = tokens[:3]
+
+        return words
+
+    player_first = year_match.start() > 0
+
+    if player_first:
+        segment = title[:year_match.start()].strip()
+
+        if not segment:
+            return None
+
+        words = player_words(clean_tokens(segment))
+
+        if words is None:
+            return None
+
+        return _normalise_player_display(words)
+
+    segment = title[brand_match.end():].strip()
+
+    if not segment:
+        return None
+
+    prefix_patterns = [
+        r"^Update\b",
+        r"^USA\b",
+        r"^PARADOX\s*\(\s*Case\s+Hit\s*\)\s*",
+        r"^Kaboom!?\s+Horizontal\b",
+        r"^Mystery\s+Finest\s+Bordered\b",
+    ]
+
+    for pattern in prefix_patterns:
+        segment = re.sub(
+            pattern,
+            " ",
+            segment,
+            count=1,
+            flags=re.I,
+        ).strip()
+
+    words = player_words(clean_tokens(segment))
+
+    if words is None:
+        return None
+
+    return _normalise_player_display(words)
 
 def _extract_mixed_case_player(
     title: str,
@@ -891,12 +1084,19 @@ def parse_identity(
     )
 
     if not player:
+        player = _clean_extracted_player(
+            _extract_boundary_player(
+                text,
+                brand,
+            )
+        )
+
+    if not player:
         player = _extract_mixed_case_player(
             text,
             brand,
             parallel,
         )
-
     player = _clean_extracted_player(player)
 
     rookie = bool(

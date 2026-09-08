@@ -32,6 +32,7 @@ from .sources.ebay import EbaySource
 from .sources.cherry import CherrySource
 from .sources.gimko import GimkoSource
 from .sources.sportscardstore import SportsCardStoreSource
+from .sources.urban_empire import UrbanEmpireSource
 from .valuation import value_from_sold_comps
 from .sold_comp_engine import EphemeralSoldCompEngine
 from .the_card_api import TheCardApiSoldCompProvider
@@ -67,6 +68,9 @@ def opportunity_store_source(
     if source == "gimko":
         return GimkoSource(), "Gimko"
 
+    if source == "urbanempire":
+        return UrbanEmpireSource(), "Urban Empire"
+
     if source == "all":
         return (
             MultiStoreSource(
@@ -83,13 +87,18 @@ def opportunity_store_source(
                         name="Gimko",
                         source=GimkoSource(),
                     ),
+                    NamedStoreSource(
+                        name="Urban Empire",
+                        source=UrbanEmpireSource(),
+                    ),
                 ]
             ),
             "All Stores",
         )
 
     raise ValueError(
-        "Unsupported source. Expected cherry, sportscardstore, gimko or all."
+        "Unsupported source. Expected cherry, sportscardstore, "
+        "gimko, urbanempire or all."
     )
 
 @app.command("init-db")
@@ -676,7 +685,10 @@ def scan_opportunities_cmd(
     source: str = typer.Option(
         "cherry",
         "--source",
-        help="Acquisition source: cherry, sportscardstore, gimko or all",
+        help=(
+            "Acquisition source: cherry, sportscardstore, "
+            "gimko, urbanempire or all"
+        ),
     ),
     sport: str = typer.Option(
         "ALL",
@@ -706,7 +718,8 @@ def scan_opportunities_cmd(
     except ValueError:
         console.print(
             "[red]Unsupported source. "
-            "Expected cherry, sportscardstore, gimko or all.[/red]"
+            "Expected cherry, sportscardstore, gimko, "
+            "urbanempire or all.[/red]"
         )
         raise typer.Exit(2)
 

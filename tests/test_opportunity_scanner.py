@@ -411,7 +411,7 @@ def test_multi_store_uses_one_shared_sold_query_budget():
     assert provider.query_count == 2
 
 
-def test_gimko_can_be_included_in_multi_store_source():
+def test_all_sources_can_be_included_in_multi_store_source():
     from card_scanner.opportunity_scanner import MultiStoreSource, NamedStoreSource
 
     class FakeStore:
@@ -436,30 +436,41 @@ def test_gimko_can_be_included_in_multi_store_source():
             NamedStoreSource("Cherry", FakeStore("cherry", [base])),
             NamedStoreSource("Sports Card Store", FakeStore("sportscardstore", [base])),
             NamedStoreSource("Gimko", FakeStore("gimko", [base])),
+            NamedStoreSource("Urban Empire", FakeStore("urbanempire", [base])),
         ]
     )
 
     rows = stores.search("AFL", limit=5)
 
-    assert [row.source for row in rows] == ["cherry", "sportscardstore", "gimko"]
+    assert [row.source for row in rows] == [
+        "cherry",
+        "sportscardstore",
+        "gimko",
+        "urbanempire",
+    ]
 
 
 def test_cli_opportunity_source_dispatch_includes_gimko_and_all():
     from card_scanner.cli import opportunity_store_source
     from card_scanner.opportunity_scanner import MultiStoreSource
     from card_scanner.sources.gimko import GimkoSource
+    from card_scanner.sources.urban_empire import UrbanEmpireSource
 
     gimko_source, gimko_label = opportunity_store_source("gimko")
+    urban_source, urban_label = opportunity_store_source("urbanempire")
     all_source, all_label = opportunity_store_source("all")
 
     assert isinstance(gimko_source, GimkoSource)
     assert gimko_label == "Gimko"
+    assert isinstance(urban_source, UrbanEmpireSource)
+    assert urban_label == "Urban Empire"
     assert isinstance(all_source, MultiStoreSource)
     assert all_label == "All Stores"
     assert [store.name for store in all_source.stores] == [
         "Cherry",
         "Sports Card Store",
         "Gimko",
+        "Urban Empire",
     ]
 
 
@@ -479,3 +490,196 @@ def test_gimko_unsupported_sport_does_not_break_all_store_fetch():
     )
 
     assert stores.search("CRICKET", limit=5) == []
+
+
+class CountingStore:
+    def __init__(self, rows):
+        self.rows = rows
+        self.calls = []
+
+    def search(self, sport, query="", limit=50):
+        self.calls.append((sport, query, limit))
+        return self.rows[:limit]
+
+
+class BrokenStore:
+    def __init__(self):
+        self.calls = []
+
+    def search(self, sport, query="", limit=50):
+        self.calls.append((sport, query, limit))
+        raise RuntimeError("store unavailable")
+
+
+def reference_ready_listing(source, external_id, price=100.0):
+    return listing(
+        external_id,
+        "NBA",
+        "2025 Panini Prizm EXAMPLE PLAYER Gold 7/50 #101 RC",
+        price=price,
+    ).model_copy(update={"source": source})
+
+
+def test_multi_store_scan_reuses_one_reference_pool_for_candidates():
+    from card_scanner.market_reference import MarketReferenceStatus
+    from card_scanner.opportunity_scanner import MultiStoreSource, NamedStoreSource
+
+    cherry = CountingStore([reference_ready_listing("cherry", "c1", 90.0)])
+    sportscardstore = CountingStore([
+        reference_ready_listing("sportscardstore", "s1", 140.0)
+    ])
+    gimko = CountingStore([reference_ready_listing("gimko", "g1", 150.0)])
+    urban = CountingStore([reference_ready_listing("urbanempire", "u1", 160.0)])
+
+    provider = QueryProvider()
+
+    summary = scan_store_opportunities(
+        store_source=MultiStoreSource(
+            [
+                NamedStoreSource("Cherry", cherry),
+                NamedStoreSource("Sports Card Store", sportscardstore),
+                NamedStoreSource("Gimko", gimko),
+                NamedStoreSource("Urban Empire", urban),
+            ]
+        ),
+        sold_provider=provider,
+        sport="NBA",
+        listings_per_sport=10,
+        max_candidates_per_sport=2,
+        sold_results_per_query=100,
+        max_sold_queries=4,
+        as_of=AS_OF,
+    )
+
+    assert cherry.calls == [("NBA", "", 10)]
+    assert sportscardstore.calls == [("NBA", "", 10)]
+    assert gimko.calls == [("NBA", "", 10)]
+    assert urban.calls == [("NBA", "", 10)]
+    assert summary.candidates_scanned == 2
+    assert summary.sold_queries_used == 4
+    assert all(
+        result.cross_store_reference is not None
+        for result in summary.results
+    )
+    assert (
+        summary.results[0].cross_store_reference.status
+        is MarketReferenceStatus.REFERENCE_AVAILABLE
+    )
+
+
+def test_multi_store_reference_pool_excludes_own_and_same_store_items():
+    from card_scanner.market_reference import MarketReferenceStatus
+    from card_scanner.opportunity_scanner import MultiStoreSource, NamedStoreSource
+
+    cherry = CountingStore(
+        [
+            reference_ready_listing("cherry", "candidate", 90.0),
+            reference_ready_listing("cherry", "same-store", 120.0),
+        ]
+    )
+    sportscardstore = CountingStore([
+        reference_ready_listing("sportscardstore", "s1", 140.0)
+    ])
+    gimko = CountingStore([reference_ready_listing("gimko", "g1", 150.0)])
+    urban = CountingStore([reference_ready_listing("urbanempire", "u1", 160.0)])
+
+    summary = scan_store_opportunities(
+        store_source=MultiStoreSource(
+            [
+                NamedStoreSource("Cherry", cherry),
+                NamedStoreSource("Sports Card Store", sportscardstore),
+                NamedStoreSource("Gimko", gimko),
+                NamedStoreSource("Urban Empire", urban),
+            ]
+        ),
+        sold_provider=QueryProvider(),
+        sport="NBA",
+        listings_per_sport=10,
+        max_candidates_per_sport=1,
+        sold_results_per_query=100,
+        max_sold_queries=2,
+        as_of=AS_OF,
+    )
+
+    reference = summary.results[0].cross_store_reference
+
+    assert reference is not None
+    assert reference.status is MarketReferenceStatus.REFERENCE_AVAILABLE
+    assert reference.matched_listing_count == 3
+    assert reference.source_count == 3
+    assert "cherry" not in reference.reference_sources
+
+
+def test_multi_store_source_errors_are_isolated_during_scan():
+    from card_scanner.opportunity_scanner import MultiStoreSource, NamedStoreSource
+
+    cherry = CountingStore([reference_ready_listing("cherry", "c1", 90.0)])
+    broken = BrokenStore()
+    gimko = CountingStore([reference_ready_listing("gimko", "g1", 150.0)])
+
+    summary = scan_store_opportunities(
+        store_source=MultiStoreSource(
+            [
+                NamedStoreSource("Cherry", cherry),
+                NamedStoreSource("Broken", broken),
+                NamedStoreSource("Gimko", gimko),
+            ]
+        ),
+        sold_provider=QueryProvider(),
+        sport="NBA",
+        listings_per_sport=10,
+        max_candidates_per_sport=1,
+        sold_results_per_query=100,
+        max_sold_queries=2,
+        as_of=AS_OF,
+    )
+
+    assert summary.candidates_scanned == 1
+    assert len(summary.reference_store_errors) == 1
+    assert summary.reference_store_errors[0].startswith(
+        "Broken: RuntimeError:"
+    )
+
+
+def test_active_reference_pool_cannot_independently_create_buy():
+    from card_scanner.market_reference import MarketReferenceStatus
+    from card_scanner.opportunity_scanner import MultiStoreSource, NamedStoreSource
+
+    summary = scan_store_opportunities(
+        store_source=MultiStoreSource(
+            [
+                NamedStoreSource(
+                    "Cherry",
+                    CountingStore([reference_ready_listing("cherry", "c1", 40.0)]),
+                ),
+                NamedStoreSource(
+                    "Sports Card Store",
+                    CountingStore([
+                        reference_ready_listing("sportscardstore", "s1", 400.0)
+                    ]),
+                ),
+                NamedStoreSource(
+                    "Gimko",
+                    CountingStore([reference_ready_listing("gimko", "g1", 420.0)]),
+                ),
+            ]
+        ),
+        sold_provider=QueryProvider(),
+        sport="NBA",
+        listings_per_sport=10,
+        max_candidates_per_sport=1,
+        sold_results_per_query=100,
+        max_sold_queries=2,
+        as_of=AS_OF,
+    )
+
+    result = summary.results[0]
+
+    assert result.cross_store_reference is not None
+    assert (
+        result.cross_store_reference.status
+        is MarketReferenceStatus.REFERENCE_AVAILABLE
+    )
+    assert result.valuation.fair_value_aud is None
+    assert result.opportunity.status == "INSUFFICIENT_SOLD_COMPS"
+    assert result.opportunity.status not in {"BUY", "STRONG_BUY"}
