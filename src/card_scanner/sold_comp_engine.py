@@ -302,9 +302,11 @@ class EphemeralSoldCompEngine:
         sport: str,
         identity: CardIdentity,
         as_of: date | None = None,
+        max_queries: int = 2,
     ) -> EphemeralSoldCompScanResult:
         as_of = as_of or date.today()
         sport = sport.upper()
+        max_queries = max(0, min(int(max_queries), 2))
 
         quality = comp_quality(identity)
         exact_query = exact_comp_query(identity)
@@ -353,7 +355,7 @@ class EphemeralSoldCompEngine:
         #
         # Precision remains entirely governed by
         # assess_strict_sold_comp().
-        if player_query:
+        if player_query and max_queries >= 1:
             all_comps.extend(
                 self.provider.sold_comps(
                     sport,
@@ -393,6 +395,7 @@ class EphemeralSoldCompEngine:
             < settings.min_total_comps_medium_confidence
             and broad_query
             and broad_query != player_query
+            and queries_used < max_queries
         ):
             all_comps.extend(
                 self.provider.sold_comps(

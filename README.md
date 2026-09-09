@@ -285,3 +285,14 @@ Final bounded validation:
 The five retained REVIEW cases were intentionally left unresolved because certainty would require unsafe inference: one ambiguous Black NFL product title, one abbreviated 10-11 NBA season title, and three yearless Chronology listings.
 
 Under-description assessment is exposed in opportunity results and CLI reporting as title-identity status/risk. Mispricing assessment may apply a confidence penalty for REVIEW or POOR_IDENTITY, but the underlying opportunity status and valuation evidence gates remain unchanged.
+
+### Sold query budget efficiency
+
+- The live sold-comp path uses one shared bounded query budget per scan.
+- A candidate may start when one sold query remains.
+- The sold engine receives an explicit per-candidate query allowance capped at two.
+- The player-recall query is attempted first; the supplemental identity-aware query runs only when both evidence need and remaining allowance permit it.
+- An odd query budget can therefore use its final call rather than reserving two calls that may not be required.
+- Query-budget efficiency does not weaken sold-comp identity matching, the minimum sold-comp identity-quality gate, or the minimum genuine sold-comp requirement.
+- Active asking prices remain corroborative only and cannot create fair value or BUY status.
+- The Card API sold rows remain ephemeral and are not persisted.

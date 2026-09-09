@@ -97,3 +97,11 @@ Deferred future work:
 - independent metadata/image evidence for true omitted-attribute detection;
 - broader product alias expansion only when supported by live false-positive evidence;
 - continued precision monitoring as additional stores and sports-card inventories are added.
+
+## Completed — Sold Query Budget Efficiency V1
+
+- Shared sold-query budgets now permit a final one-query candidate instead of requiring two calls to remain before every candidate.
+- EphemeralSoldCompEngine accepts a bounded per-candidate query allowance of zero to two calls.
+- Supplemental sold search is suppressed when the candidate allowance is exhausted.
+- Existing strict sold identity matching and valuation thresholds are unchanged.
+- Added regression coverage for one-query scans, supplemental-query suppression, odd shared budgets, and valuation from three exact comps returned by a single query.

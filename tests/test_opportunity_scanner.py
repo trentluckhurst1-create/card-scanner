@@ -164,6 +164,79 @@ class OpportunityScannerTests(unittest.TestCase):
             "Patrick Mahomes",
         )
 
+    def test_single_query_budget_scans_candidate(self):
+        target = listing(
+            "ONE",
+            "NFL",
+            "2020 Panini Prizm PATRICK MAHOMES Lazer Prizm PSA 10",
+        )
+        provider = QueryProvider()
+
+        result = scan_cherry_opportunities(
+            cherry_source=FakeCherry({"NFL": [target]}),
+            sold_provider=provider,
+            sport="NFL",
+            max_candidates_per_sport=1,
+            max_sold_queries=1,
+            as_of=AS_OF,
+        )
+
+        self.assertEqual(result.candidates_scanned, 1)
+        self.assertEqual(result.sold_queries_used, 1)
+        self.assertEqual(result.budget_remaining, 0)
+        self.assertEqual(len(provider.calls), 1)
+        self.assertEqual(provider.calls[0][1], "Patrick Mahomes")
+
+    def test_single_query_budget_suppresses_supplemental_query(self):
+        target = listing(
+            "ONE-SUPPRESS",
+            "MLB",
+            "2025 Bowman Draft ALPHA PLAYER Chrome Prospect Auto Gold Wave 1/50",
+        )
+        provider = QueryProvider()
+
+        result = scan_cherry_opportunities(
+            cherry_source=FakeCherry({"MLB": [target]}),
+            sold_provider=provider,
+            sport="MLB",
+            max_candidates_per_sport=1,
+            max_sold_queries=1,
+            as_of=AS_OF,
+        )
+
+        self.assertEqual(result.candidates_scanned, 1)
+        self.assertEqual(result.sold_queries_used, 1)
+        self.assertEqual(len(provider.calls), 1)
+
+    def test_odd_query_budget_uses_final_single_query(self):
+        cards = [
+            listing(
+                "ODD-A",
+                "MLB",
+                "2025 Bowman Draft ALPHA PLAYER Chrome Prospect Auto Gold Wave 1/50",
+            ),
+            listing(
+                "ODD-B",
+                "MLB",
+                "2025 Bowman Draft BETA PLAYER Chrome Prospect Auto Gold Wave 2/50",
+            ),
+        ]
+        provider = QueryProvider()
+
+        result = scan_cherry_opportunities(
+            cherry_source=FakeCherry({"MLB": cards}),
+            sold_provider=provider,
+            sport="MLB",
+            max_candidates_per_sport=2,
+            max_sold_queries=3,
+            as_of=AS_OF,
+        )
+
+        self.assertEqual(result.candidates_scanned, 2)
+        self.assertEqual(result.sold_queries_used, 3)
+        self.assertEqual(result.budget_remaining, 0)
+        self.assertEqual(len(provider.calls), 3)
+
     def test_three_exact_comps_can_value(self):
         target = listing(
             "KYSON",
@@ -209,6 +282,60 @@ class OpportunityScannerTests(unittest.TestCase):
             sport="MLB",
             max_candidates_per_sport=1,
             max_sold_queries=2,
+            as_of=AS_OF,
+        )
+
+        item = result.results[0]
+
+        self.assertEqual(item.exact_count, 3)
+        self.assertEqual(item.valuation.status, "VALUED")
+        self.assertIsNotNone(item.valuation.fair_value_aud)
+
+    def test_three_exact_comps_can_value_with_one_query_budget(self):
+        target = listing(
+            "KYSON",
+            "MLB",
+            "2025 Bowman Draft KYSON WITHERSPOON "
+            "Chrome Prospect 1st Auto Gold Wave 38/50",
+            price=50.0,
+        )
+
+        rows = [
+            sold(
+                "S1",
+                "MLB",
+                "2025 Bowman Draft KYSON WITHERSPOON "
+                "Chrome Prospect 1st Auto Gold Wave 1/50",
+                150.0,
+            ),
+            sold(
+                "S2",
+                "MLB",
+                "2025 Bowman Draft KYSON WITHERSPOON "
+                "Chrome Prospect 1st Auto Gold Wave 2/50",
+                155.0,
+            ),
+            sold(
+                "S3",
+                "MLB",
+                "2025 Bowman Draft KYSON WITHERSPOON "
+                "Chrome Prospect 1st Auto Gold Wave 3/50",
+                152.0,
+            ),
+        ]
+
+        provider = QueryProvider(
+            {
+                "Kyson Witherspoon": rows,
+            }
+        )
+
+        result = scan_cherry_opportunities(
+            cherry_source=FakeCherry({"MLB": [target]}),
+            sold_provider=provider,
+            sport="MLB",
+            max_candidates_per_sport=1,
+            max_sold_queries=1,
             as_of=AS_OF,
         )
 

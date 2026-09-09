@@ -363,9 +363,9 @@ def scan_store_opportunities(
         for listing in selected:
             remaining = max_sold_queries - sold_queries_used
 
-            # Existing sold engine can use up to two calls:
-            # player recall + supplemental broad query.
-            if remaining < 2:
+            # The sold engine may use one player-recall call and,
+            # only when budget permits, one supplemental broad call.
+            if remaining < 1:
                 break
 
             if listing.identity is None:
@@ -420,6 +420,7 @@ def scan_store_opportunities(
                 sport=listing.sport,
                 identity=listing.identity,
                 as_of=as_of,
+                max_queries=min(2, remaining),
             )
 
             if sold_result.query_count > remaining:
