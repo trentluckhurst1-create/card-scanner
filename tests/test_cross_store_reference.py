@@ -235,3 +235,51 @@ def test_rejecting_bundle_risk_cannot_be_reference() -> None:
 
     assert result.status is MarketReferenceStatus.NO_REFERENCE
     assert result.matched_listing_count == 0
+
+def test_cross_store_reference_exposes_consensus_metrics() -> None:
+    candidate = make_listing(source="cherry", external_id="candidate", price=100.0, identity=make_identity())
+    references = [
+        make_listing(source="gimko", external_id="g1", price=140.0, identity=make_identity()),
+        make_listing(source="urbanempire", external_id="u1", price=145.0, identity=make_identity()),
+        make_listing(source="sportscardstore", external_id="s1", price=150.0, identity=make_identity()),
+    ]
+
+    result = build_cross_store_reference(candidate, references)
+
+    assert result.matched_listing_count == 3
+    assert result.exact_match_count == 3
+    assert result.active_price_spread_pct == 6.9
+    assert result.active_mad_pct == 3.45
+    assert result.candidate_discount_to_lowest_pct == 28.57
+    assert result.consensus_strength == 1.0
+    assert result.consensus_level == "STRONG"
+
+
+def test_wide_active_price_dispersion_weakens_consensus() -> None:
+    candidate = make_listing(source="cherry", external_id="candidate", price=100.0, identity=make_identity())
+    references = [
+        make_listing(source="gimko", external_id="g1", price=110.0, identity=make_identity()),
+        make_listing(source="urbanempire", external_id="u1", price=200.0, identity=make_identity()),
+        make_listing(source="sportscardstore", external_id="s1", price=300.0, identity=make_identity()),
+    ]
+
+    result = build_cross_store_reference(candidate, references)
+
+    assert result.status is MarketReferenceStatus.REFERENCE_AVAILABLE
+    assert result.active_price_spread_pct == 95.0
+    assert result.active_mad_pct == 45.0
+    assert result.consensus_strength == 0.787
+    assert result.consensus_level == "MODERATE"
+
+
+def test_one_store_never_becomes_cross_market_consensus() -> None:
+    candidate = make_listing(source="cherry", external_id="candidate", price=100.0, identity=make_identity())
+    references = [
+        make_listing(source="gimko", external_id="g1", price=150.0, identity=make_identity()),
+    ]
+
+    result = build_cross_store_reference(candidate, references)
+
+    assert result.status is MarketReferenceStatus.INSUFFICIENT_REFERENCE
+    assert result.consensus_strength == 0.0
+    assert result.consensus_level == "NO_CONSENSUS"

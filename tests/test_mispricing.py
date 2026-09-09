@@ -97,6 +97,11 @@ def active_reference(
         max_reference_price_aud=160.0,
         candidate_discount_to_median_pct=discount,
         confidence=0.9,
+        active_price_spread_pct=21.43,
+        active_mad_pct=7.14,
+        candidate_discount_to_lowest_pct=23.08,
+        consensus_strength=0.95,
+        consensus_level="STRONG",
         status=status,
     )
 
@@ -382,3 +387,115 @@ def test_underdescription_does_not_modify_existing_buy_status():
     )
 
     assert original.status == "BUY"
+
+def test_strong_consensus_strengthens_active_market_context():
+    target = listing(
+        "2025 Bowman Draft KYSON WITHERSPOON Chrome Prospect "
+        "1st Auto Gold Wave 38/50"
+    )
+    reference = active_reference(discount=33.3)
+
+    result = assess_mispricing(
+        target,
+        valued(),
+        opportunity(edge=25.0),
+        [],
+        reference,
+    )
+
+    assert any(
+        "active-market consensus strong (0.950)" == flag
+        for flag in result.evidence_flags
+    )
+    assert any(
+        "candidate is 23.1% below lowest accepted competing ask" == flag
+        for flag in result.evidence_flags
+    )
+
+
+def test_weak_consensus_reduces_active_market_score_and_adds_caution():
+    target = listing(
+        "2025 Bowman Draft KYSON WITHERSPOON Chrome Prospect "
+        "1st Auto Gold Wave 38/50"
+    )
+
+    strong = active_reference(discount=40.0)
+    weak = CrossStoreReference(
+        candidate_source=strong.candidate_source,
+        candidate_external_id=strong.candidate_external_id,
+        candidate_landed_aud=strong.candidate_landed_aud,
+        matched_listing_count=strong.matched_listing_count,
+        exact_match_count=strong.exact_match_count,
+        strong_match_count=strong.strong_match_count,
+        source_count=strong.source_count,
+        reference_sources=strong.reference_sources,
+        reference_prices_aud=strong.reference_prices_aud,
+        min_reference_price_aud=strong.min_reference_price_aud,
+        median_reference_price_aud=strong.median_reference_price_aud,
+        max_reference_price_aud=strong.max_reference_price_aud,
+        candidate_discount_to_median_pct=40.0,
+        confidence=strong.confidence,
+        active_price_spread_pct=90.0,
+        active_mad_pct=45.0,
+        candidate_discount_to_lowest_pct=10.0,
+        consensus_strength=0.40,
+        consensus_level="WEAK",
+        status=MarketReferenceStatus.REFERENCE_AVAILABLE,
+    )
+
+    strong_result = assess_mispricing(
+        target,
+        valued(),
+        opportunity(edge=25.0),
+        [],
+        strong,
+    )
+    weak_result = assess_mispricing(
+        target,
+        valued(),
+        opportunity(edge=25.0),
+        [],
+        weak,
+    )
+
+    assert weak_result.score < strong_result.score
+    assert (
+        "cross-market active-ask consensus is weak"
+        in weak_result.why_it_may_be_cheap
+    )
+
+
+def test_active_consensus_still_cannot_escape_missing_sold_value_cap():
+    target = listing(
+        "2020 Panini Prizm PATRICK MAHOMES Lazer Prizm PSA 10",
+        price=40.0,
+    )
+    valuation = SoldValuation(
+        source_listing_external_id="C1",
+        sold_comp_count=0,
+        exact_comp_count=0,
+        comp_confidence=0.0,
+        liquidity_score=0.0,
+        status="INSUFFICIENT_RECENT_COMPS",
+    )
+    reference = active_reference(discount=70.0)
+
+    result = assess_mispricing(
+        target,
+        valuation,
+        Opportunity(
+            source_listing_external_id="C1",
+            landed_cost_aud=40.0,
+            identity_confidence=0.95,
+            status="INSUFFICIENT_SOLD_COMPS",
+        ),
+        [],
+        reference,
+    )
+
+    assert result.score <= 25.0
+    assert "sold valuation unavailable" in result.suppressions
+    assert (
+        "genuine sold-comp evidence is insufficient"
+        in result.why_it_may_be_cheap
+    )

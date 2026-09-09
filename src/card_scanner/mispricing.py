@@ -162,16 +162,31 @@ def assess_mispricing(
 
     if cross_store_reference is not None:
         discount = cross_store_reference.candidate_discount_to_median_pct
+        lowest_discount = (
+            cross_store_reference.candidate_discount_to_lowest_pct
+        )
+        consensus_level = cross_store_reference.consensus_level
+        consensus_strength = cross_store_reference.consensus_strength
+
         if (
             cross_store_reference.status
             == MarketReferenceStatus.REFERENCE_AVAILABLE
-            and discount is not None
-            and discount > 0
         ):
-            _add_once(
-                looks,
-                f"cross-store ask is {discount:.1f}% below median ask",
-            )
+            if discount is not None and discount > 0:
+                _add_once(
+                    looks,
+                    f"cross-store ask is {discount:.1f}% below median ask",
+                )
+
+            if lowest_discount is not None and lowest_discount > 0:
+                _add_once(
+                    evidence,
+                    (
+                        f"candidate is {lowest_discount:.1f}% below lowest "
+                        "accepted competing ask"
+                    ),
+                )
+
             _add_once(
                 evidence,
                 (
@@ -179,6 +194,39 @@ def assess_mispricing(
                     "cross-store active references"
                 ),
             )
+
+            _add_once(
+                evidence,
+                (
+                    f"active-market consensus {consensus_level.lower()} "
+                    f"({consensus_strength:.3f})"
+                ),
+            )
+
+            if cross_store_reference.active_mad_pct is not None:
+                _add_once(
+                    evidence,
+                    (
+                        "active-market median absolute deviation "
+                        f"{cross_store_reference.active_mad_pct:.1f}%"
+                    ),
+                )
+
+            if cross_store_reference.active_price_spread_pct is not None:
+                _add_once(
+                    evidence,
+                    (
+                        "active-market price spread "
+                        f"{cross_store_reference.active_price_spread_pct:.1f}%"
+                    ),
+                )
+
+            if consensus_level == "WEAK":
+                _add_once(
+                    may_be,
+                    "cross-market active-ask consensus is weak",
+                )
+
         elif (
             cross_store_reference.status
             == MarketReferenceStatus.NO_REFERENCE
@@ -187,6 +235,7 @@ def assess_mispricing(
                 may_be,
                 "no accepted cross-store active reference",
             )
+
         elif (
             cross_store_reference.status
             == MarketReferenceStatus.INSUFFICIENT_REFERENCE
@@ -346,8 +395,13 @@ def assess_mispricing(
             == MarketReferenceStatus.REFERENCE_AVAILABLE
             and discount is not None
             and discount > 0
+            and cross_store_reference.consensus_strength > 0
         ):
-            active_score = min(discount, 40.0) / 40.0 * 5.0
+            raw_active_score = min(discount, 40.0) / 40.0 * 5.0
+            active_score = (
+                raw_active_score
+                * min(cross_store_reference.consensus_strength, 1.0)
+            )
 
     history_score = 0.0
     history_penalty = 0.0

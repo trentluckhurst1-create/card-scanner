@@ -73,6 +73,64 @@ def _landed_aud(listing: Listing) -> float | None:
     return round(landed, 2)
 
 
+def _active_price_dispersion(
+    prices: tuple[float, ...],
+) -> tuple[float | None, float | None]:
+    if not prices:
+        return None, None
+
+    baseline = float(median(prices))
+    if baseline <= 0:
+        return None, None
+
+    spread = (max(prices) - min(prices)) / baseline * 100.0
+    deviations = tuple(abs(price - baseline) for price in prices)
+    mad = float(median(deviations)) / baseline * 100.0
+
+    return round(spread, 2), round(mad, 2)
+
+
+def _consensus_strength(
+    *,
+    source_count: int,
+    matched_count: int,
+    exact_count: int,
+    mad_pct: float | None,
+) -> tuple[float, str]:
+    if source_count < 2 or matched_count < 2:
+        return 0.0, "NO_CONSENSUS"
+
+    breadth = min(source_count / 3.0, 1.0)
+    exact_share = exact_count / matched_count if matched_count else 0.0
+
+    if mad_pct is None:
+        dispersion = 0.0
+    elif mad_pct <= 10.0:
+        dispersion = 1.0
+    elif mad_pct <= 20.0:
+        dispersion = 0.75
+    elif mad_pct <= 35.0:
+        dispersion = 0.45
+    else:
+        dispersion = 0.15
+
+    strength = round(
+        (0.40 * breadth)
+        + (0.35 * exact_share)
+        + (0.25 * dispersion),
+        3,
+    )
+
+    if strength >= 0.80:
+        level = "STRONG"
+    elif strength >= 0.60:
+        level = "MODERATE"
+    else:
+        level = "WEAK"
+
+    return strength, level
+
+
 def build_cross_store_reference(
     candidate: Listing,
     references: list[Listing],
@@ -172,6 +230,15 @@ def build_cross_store_reference(
     )
 
     median_price = float(median(prices))
+    active_spread_pct, active_mad_pct = _active_price_dispersion(prices)
+    lowest_price = min(prices)
+    discount_to_lowest = (
+        (lowest_price - candidate_landed)
+        / lowest_price
+        * 100.0
+        if lowest_price > 0
+        else None
+    )
 
     discount_pct = (
         (median_price - candidate_landed)
@@ -203,6 +270,13 @@ def build_cross_store_reference(
         3,
     )
 
+    consensus_strength, consensus_level = _consensus_strength(
+        source_count=source_count,
+        matched_count=len(points),
+        exact_count=exact_count,
+        mad_pct=active_mad_pct,
+    )
+
     status = (
         MarketReferenceStatus.REFERENCE_AVAILABLE
         if len(points) >= 2 and source_count >= 2
@@ -228,6 +302,15 @@ def build_cross_store_reference(
             else None
         ),
         confidence=confidence,
+        active_price_spread_pct=active_spread_pct,
+        active_mad_pct=active_mad_pct,
+        candidate_discount_to_lowest_pct=(
+            round(discount_to_lowest, 2)
+            if discount_to_lowest is not None
+            else None
+        ),
+        consensus_strength=consensus_strength,
+        consensus_level=consensus_level,
         status=status,
     )
 

@@ -43,6 +43,11 @@ class CrossStoreReference:
     candidate_discount_to_median_pct: float | None
     confidence: float
     status: MarketReferenceStatus
+    active_price_spread_pct: float | None = None
+    active_mad_pct: float | None = None
+    candidate_discount_to_lowest_pct: float | None = None
+    consensus_strength: float = 0.0
+    consensus_level: str = "NO_CONSENSUS"
 
 
 class MarketReferenceProvider(Protocol):
