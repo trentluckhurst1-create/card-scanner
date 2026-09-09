@@ -5,6 +5,10 @@ from datetime import date
 from datetime import datetime
 from typing import Protocol
 
+from .candidate_discovery import (
+    assess_candidate_discovery,
+    candidate_discovery_sort_key,
+)
 from .comp_key import comp_quality
 from .listing_history import (
     ListingHistoryAssessment,
@@ -336,26 +340,36 @@ def scan_store_opportunities(
             history_event_count += history_batch.event_count
             history_errors.extend(history_batch.errors)
 
-        ranked = sorted(
-            listings,
-            key=candidate_priority,
+        discovery_assessments = []
+
+        for listing in listings:
+            listing_history = (
+                history_batch.histories.get(
+                    (listing.source.casefold(), listing.external_id)
+                )
+                if history_batch is not None
+                else None
+            )
+
+            discovery_assessments.append(
+                assess_candidate_discovery(
+                    listing,
+                    listing_history,
+                )
+            )
+
+        discovery_assessments.sort(
+            key=candidate_discovery_sort_key
         )
 
         eligible: list[Listing] = []
 
-        for listing in ranked:
-            identity = listing.identity
-            quality = comp_quality(identity) if identity else 0.0
-
-            if (
-                identity is None
-                or not identity.player
-                or quality < MIN_SOLD_COMP_IDENTITY_QUALITY
-            ):
+        for discovery in discovery_assessments:
+            if not discovery.sold_comp_ready:
                 insufficient_identity_count += 1
                 continue
 
-            eligible.append(listing)
+            eligible.append(discovery.listing)
 
         selected = eligible[:max_candidates_per_sport]
         candidates_considered += len(selected)
