@@ -113,3 +113,29 @@ Deferred future work:
 - Added an aggregate sold-evidence funnel from `API_ROWS` through `VALUED` plus quantified bottleneck buckets.
 - Diagnostics reuse existing player-first query discovery, strict sold-comp matching and valuation gates without changing production decisions.
 - Governance remains locked: minimum sold identity quality is 0.70, active asks cannot create fair value or BUY/STRONG_BUY, and The Card API rows remain ephemeral with zero persistence and zero history writes.
+
+## Sold Discovery Query Research V1 - Completed
+
+Status: RESEARCH_ONLY / NO PRODUCTION QUERY CHANGE.
+
+Completed:
+
+- Added deterministic generation and comparison of lawful sold-query variants derived only from known CardIdentity fields.
+- Added per-variant discovery funnels and actual API-call efficiency reporting.
+- Added strict live-call-cap and provider-cache accounting.
+- Added adversarial tests covering serial, grading, parallel, autograph, memorabilia, cache and budget safety.
+- Preserved the existing strict sold matcher and valuation governance.
+- Completed bounded live comparisons against Q_PLAYER for Q_PLAYER_YEAR_PRODUCT, Q_PLAYER_CARDNUM and Q_EXISTING_BROAD.
+- Observed zero same-product, exact, strong or accepted improvement from the challengers.
+- Observed zero false accepted sold comps.
+
+Research conclusion:
+
+- Production query change: NO.
+- Matcher relaxation: NO.
+- Sold identity threshold change: NO.
+- Valuation threshold change: NO.
+- Active asks as fair value: NO.
+- Primary bottleneck: The Card API product-level recall/coverage and free three-day evidence depth.
+
+Next research direction: investigate better lawful sold-market evidence sources or architectures rather than progressively constraining The Card API query or weakening identity precision.

@@ -29,6 +29,7 @@ from .sold_comp_engine import (
     player_recall_query,
 )
 from .valuation import value_from_sold_comps
+from .year_normalization import normalize_card_year
 
 
 FUNNEL_STAGES = (
@@ -68,6 +69,108 @@ BOTTLENECK_BUCKETS = (
     "QUERY_DISCOVERY_FAILURE",
     "OTHER",
 )
+
+
+QUERY_VARIANT_FUNNEL_STAGES = (
+    "PARSED",
+    "SAME_PLAYER",
+    "SAME_YEAR",
+    "SAME_PRODUCT",
+    "SAME_CARD_NUMBER",
+    "SAME_PARALLEL",
+    "SAME_SERIAL",
+    "SAME_ROOKIE",
+    "SAME_AUTO_MEM",
+    "SAME_GRADING",
+    "EXACT",
+    "STRONG",
+    "ACCEPTED",
+)
+
+
+@dataclass(frozen=True)
+class SoldQueryVariant:
+    name: str
+    query_text: str
+
+
+@dataclass(frozen=True)
+class SoldQueryVariantDiagnostic:
+    candidate_source: str
+    candidate_external_id: str
+    candidate_title: str
+    candidate_player: str | None
+    candidate_year: str | None
+    candidate_product: str | None
+    candidate_card_number: str | None
+    candidate_parallel: str | None
+    candidate_serial: int | None
+    candidate_grading: str | None
+    identity_quality: float
+    query_variant: str
+    query_text: str
+    api_call_made: bool
+    cache_hit: bool | None
+    rows_returned: int
+    unique_rows: int
+    funnel: dict[str, int]
+    rejection_reason_counts: dict[str, int]
+    false_accept_review_count: int
+    accepted_comps: tuple["SoldEvidenceAcceptedCompDiagnostic", ...]
+    rejected_examples: tuple["SoldEvidenceRejectionExample", ...]
+
+
+@dataclass(frozen=True)
+class SoldQueryVariantComparison:
+    variant: str
+    calls: int
+    rows_returned: int
+    unique_rows: int
+    same_player: int
+    same_year: int
+    same_product: int
+    exact: int
+    strong: int
+    accepted: int
+    valued: int
+    rows_per_call: float
+    same_player_per_call: float
+    same_year_per_call: float
+    same_product_per_call: float
+    exact_strong_per_call: float
+    accepted_per_call: float
+    wrong_player_rows: int
+    wrong_year_rows: int
+    wrong_product_rows: int
+    wrong_card_rows: int
+    other_rejected_rows: int
+    noise_rate: float
+    product_hit_rate: float
+    exact_strong_hit_rate: float
+    genuine_identity_aligned_evidence_per_api_call: float
+
+
+@dataclass(frozen=True)
+class SoldQueryVariantDiagnosticSummary:
+    candidates: tuple[Listing, ...]
+    variants_planned: int
+    max_theoretical_calls: int
+    live_call_cap: int
+    diagnostics: tuple[SoldQueryVariantDiagnostic, ...]
+    comparisons: tuple[SoldQueryVariantComparison, ...]
+    actual_api_calls: int
+    rows_returned: int
+    same_player: int
+    same_year: int
+    same_product: int
+    exact: int
+    strong: int
+    accepted: int
+    valued: int
+    false_accepts: int
+    persistence_writes: int = 0
+    history_writes: int = 0
+    raw_api_persistence: bool = False
 
 
 @dataclass(frozen=True)
@@ -183,6 +286,184 @@ def _identity_summary(identity: CardIdentity | None) -> str:
     ]
 
     return " | ".join(str(field) for field in fields if field)
+
+
+def _query_text(parts: list[object | None]) -> str | None:
+    text = " ".join(
+        str(part)
+        for part in parts
+        if part is not None and str(part).strip()
+    )
+    text = " ".join(text.split()).strip()
+
+    return text or None
+
+
+def _query_dedupe_key(text: str) -> str:
+    return " ".join(text.casefold().split())
+
+
+def _add_query_variant(
+    variants: list[SoldQueryVariant],
+    seen: set[str],
+    name: str,
+    text: str | None,
+) -> None:
+    if not text:
+        return
+
+    normalized = " ".join(text.split()).strip()
+    key = _query_dedupe_key(normalized)
+
+    if not key or key in seen:
+        return
+
+    seen.add(key)
+    variants.append(
+        SoldQueryVariant(
+            name=name,
+            query_text=normalized,
+        )
+    )
+
+
+def _card_number_token(identity: CardIdentity) -> str | None:
+    if not identity.card_number:
+        return None
+
+    return f"#{identity.card_number}"
+
+
+def _serial_token(identity: CardIdentity) -> str | None:
+    if identity.serial_total is None:
+        return None
+
+    return f"/{identity.serial_total}"
+
+
+def _grading_query_token(identity: CardIdentity) -> str | None:
+    if not identity.grader:
+        return None
+
+    if identity.grade is not None:
+        return f"{identity.grader} {identity.grade:g}"
+
+    return identity.grader
+
+
+def _grading_summary(identity: CardIdentity | None) -> str | None:
+    if identity is None:
+        return None
+
+    return _query_text(
+        [
+            identity.grader,
+            f"{identity.grade:g}" if identity.grade is not None else None,
+        ]
+    )
+
+
+def generate_sold_query_variants(
+    identity: CardIdentity,
+) -> tuple[SoldQueryVariant, ...]:
+    """
+    Build research-only The Card API query variants from parsed identity.
+
+    These variants are never production decisions. The existing strict
+    matcher remains the only judge of whether a returned sale is useful.
+    """
+    variants: list[SoldQueryVariant] = []
+    seen: set[str] = set()
+
+    player = player_recall_query(identity)
+    year = normalize_card_year(identity.year) or identity.year
+    product = identity.set_name or identity.brand
+    card_number = _card_number_token(identity)
+    parallel = identity.parallel
+    serial = _serial_token(identity)
+    grading = _grading_query_token(identity)
+
+    _add_query_variant(
+        variants,
+        seen,
+        "Q_PLAYER",
+        player,
+    )
+    _add_query_variant(
+        variants,
+        seen,
+        "Q_PLAYER_YEAR",
+        _query_text([player, year]),
+    )
+    _add_query_variant(
+        variants,
+        seen,
+        "Q_PLAYER_PRODUCT",
+        _query_text([player, product]),
+    )
+    _add_query_variant(
+        variants,
+        seen,
+        "Q_PLAYER_YEAR_PRODUCT",
+        _query_text([player, year, product]),
+    )
+    _add_query_variant(
+        variants,
+        seen,
+        "Q_PLAYER_CARDNUM",
+        _query_text([player, card_number]),
+    )
+    _add_query_variant(
+        variants,
+        seen,
+        "Q_PLAYER_PRODUCT_CARDNUM",
+        _query_text([player, product, card_number]),
+    )
+    _add_query_variant(
+        variants,
+        seen,
+        "Q_PLAYER_YEAR_PRODUCT_CARDNUM",
+        _query_text([player, year, product, card_number]),
+    )
+    _add_query_variant(
+        variants,
+        seen,
+        "Q_PLAYER_PARALLEL",
+        _query_text([player, parallel]),
+    )
+    _add_query_variant(
+        variants,
+        seen,
+        "Q_IDENTITY_COMPACT",
+        _query_text(
+            [
+                player,
+                year,
+                product,
+                card_number,
+                parallel,
+                serial,
+                "rookie" if identity.rookie else None,
+                "auto" if identity.autograph else None,
+                "relic" if identity.memorabilia else None,
+                grading,
+            ]
+        ),
+    )
+    _add_query_variant(
+        variants,
+        seen,
+        "Q_EXISTING_BROAD",
+        broad_comp_query(identity),
+    )
+    _add_query_variant(
+        variants,
+        seen,
+        "Q_EXISTING_EXACT",
+        exact_comp_query(identity),
+    )
+
+    return tuple(variants)
 
 
 def _dedupe(comps: list[SoldComp]) -> list[SoldComp]:
@@ -497,6 +778,373 @@ def _rejection_example(
         currency=comp.currency,
         sold_price_aud=comp.sold_price_aud,
         reasons=tuple(match.rejection_reasons),
+    )
+
+
+def _query_variant_funnel(
+    source_listing_external_id: str,
+    source: CardIdentity,
+    comps: list[SoldComp],
+) -> dict[str, int]:
+    sold_funnel = build_sold_evidence_funnel(
+        source_listing_external_id,
+        source,
+        comps,
+    )
+
+    return {
+        "PARSED": sold_funnel["IDENTITY_PARSED"],
+        "SAME_PLAYER": sold_funnel["SAME_PLAYER"],
+        "SAME_YEAR": sold_funnel["SAME_YEAR"],
+        "SAME_PRODUCT": sold_funnel["SAME_PRODUCT"],
+        "SAME_CARD_NUMBER": sold_funnel["SAME_CARD_NUMBER"],
+        "SAME_PARALLEL": sold_funnel["SAME_PARALLEL"],
+        "SAME_SERIAL": sold_funnel["SAME_SERIAL"],
+        "SAME_ROOKIE": sold_funnel["SAME_ROOKIE"],
+        "SAME_AUTO_MEM": sold_funnel["SAME_AUTO_MEM"],
+        "SAME_GRADING": sold_funnel["SAME_GRADING"],
+        "EXACT": sold_funnel["EXACT"],
+        "STRONG": sold_funnel["STRONG"],
+        "ACCEPTED": sold_funnel["EXACT"] + sold_funnel["STRONG"],
+    }
+
+
+def diagnose_sold_query_variant(
+    listing: Listing,
+    sold_provider,
+    variant: SoldQueryVariant,
+    *,
+    sold_results_per_query: int | None = None,
+    as_of: date | None = None,
+) -> SoldQueryVariantDiagnostic:
+    as_of = as_of or date.today()
+    limit = int(
+        settings.the_card_api_results_per_query
+        if sold_results_per_query is None
+        else sold_results_per_query
+    )
+    identity = listing.identity
+
+    if identity is None:
+        raise ValueError("query variant diagnostics require listing identity")
+
+    before_count = getattr(sold_provider, "query_count", None)
+    rows = sold_provider.sold_comps(
+        listing.sport.upper(),
+        variant.query_text,
+        limit,
+    )
+    after_count = getattr(sold_provider, "query_count", None)
+
+    if isinstance(before_count, int) and isinstance(after_count, int):
+        api_call_made = after_count > before_count
+        cache_hit: bool | None = not api_call_made
+    else:
+        api_call_made = True
+        cache_hit = None
+
+    unique = _dedupe(rows)
+    assessed = [
+        (
+            comp,
+            assess_strict_sold_comp(
+                listing.external_id,
+                identity,
+                comp,
+            ),
+        )
+        for comp in unique
+    ]
+    accepted = [
+        pair
+        for pair in assessed
+        if pair[1].match_level in {MatchLevel.EXACT, MatchLevel.STRONG}
+    ]
+    rejected = [
+        pair
+        for pair in assessed
+        if pair[1].match_level == MatchLevel.REJECT
+    ]
+    rejection_counts: Counter[str] = Counter()
+    for _, match in rejected:
+        rejection_counts.update(match.rejection_reasons)
+
+    candidate = listing.identity
+
+    return SoldQueryVariantDiagnostic(
+        candidate_source=listing.source,
+        candidate_external_id=listing.external_id,
+        candidate_title=listing.title,
+        candidate_player=candidate.player,
+        candidate_year=candidate.year,
+        candidate_product=candidate.set_name or candidate.brand,
+        candidate_card_number=candidate.card_number,
+        candidate_parallel=candidate.parallel,
+        candidate_serial=candidate.serial_total,
+        candidate_grading=_grading_summary(candidate),
+        identity_quality=comp_quality(candidate),
+        query_variant=variant.name,
+        query_text=variant.query_text,
+        api_call_made=api_call_made,
+        cache_hit=cache_hit,
+        rows_returned=len(rows),
+        unique_rows=len(unique),
+        funnel=_query_variant_funnel(
+            listing.external_id,
+            identity,
+            rows,
+        ),
+        rejection_reason_counts=dict(sorted(rejection_counts.items())),
+        false_accept_review_count=0,
+        accepted_comps=tuple(
+            _accepted_diagnostic(comp, match)
+            for comp, match in accepted
+        ),
+        rejected_examples=tuple(
+            _rejection_example(comp, match)
+            for comp, match in rejected[:5]
+        ),
+    )
+
+
+def _rate(
+    numerator: int | float,
+    denominator: int | float,
+) -> float:
+    if denominator <= 0:
+        return 0.0
+
+    return round(float(numerator) / float(denominator), 4)
+
+
+def compare_sold_query_variants(
+    diagnostics: tuple[SoldQueryVariantDiagnostic, ...],
+) -> tuple[SoldQueryVariantComparison, ...]:
+    by_variant: dict[str, list[SoldQueryVariantDiagnostic]] = {}
+
+    for diagnostic in diagnostics:
+        by_variant.setdefault(
+            diagnostic.query_variant,
+            [],
+        ).append(diagnostic)
+
+    comparisons: list[SoldQueryVariantComparison] = []
+
+    for variant, rows in by_variant.items():
+        calls = sum(1 for row in rows if row.api_call_made)
+        returned = sum(row.rows_returned for row in rows)
+        unique = sum(row.unique_rows for row in rows)
+        same_player = sum(row.funnel["SAME_PLAYER"] for row in rows)
+        same_year = sum(row.funnel["SAME_YEAR"] for row in rows)
+        same_product = sum(row.funnel["SAME_PRODUCT"] for row in rows)
+        exact = sum(row.funnel["EXACT"] for row in rows)
+        strong = sum(row.funnel["STRONG"] for row in rows)
+        accepted = sum(row.funnel["ACCEPTED"] for row in rows)
+        valued = sum(
+            1
+            for row in rows
+            if len(row.accepted_comps)
+            >= settings.min_total_comps_medium_confidence
+        )
+        wrong_player = max(0, unique - same_player)
+        wrong_year = max(0, same_player - same_year)
+        wrong_product = max(0, same_year - same_product)
+        wrong_card = max(0, same_product - sum(row.funnel["SAME_CARD_NUMBER"] for row in rows))
+        known_noise = wrong_player + wrong_year + wrong_product + wrong_card
+        other_rejected = max(0, unique - accepted - known_noise)
+
+        comparisons.append(
+            SoldQueryVariantComparison(
+                variant=variant,
+                calls=calls,
+                rows_returned=returned,
+                unique_rows=unique,
+                same_player=same_player,
+                same_year=same_year,
+                same_product=same_product,
+                exact=exact,
+                strong=strong,
+                accepted=accepted,
+                valued=valued,
+                rows_per_call=_rate(returned, calls),
+                same_player_per_call=_rate(same_player, calls),
+                same_year_per_call=_rate(same_year, calls),
+                same_product_per_call=_rate(same_product, calls),
+                exact_strong_per_call=_rate(exact + strong, calls),
+                accepted_per_call=_rate(accepted, calls),
+                wrong_player_rows=wrong_player,
+                wrong_year_rows=wrong_year,
+                wrong_product_rows=wrong_product,
+                wrong_card_rows=wrong_card,
+                other_rejected_rows=other_rejected,
+                noise_rate=_rate(unique - accepted, unique),
+                product_hit_rate=_rate(same_product, unique),
+                exact_strong_hit_rate=_rate(exact + strong, unique),
+                genuine_identity_aligned_evidence_per_api_call=_rate(
+                    accepted,
+                    calls,
+                ),
+            )
+        )
+
+    return tuple(
+        sorted(
+            comparisons,
+            key=lambda item: (
+                -item.genuine_identity_aligned_evidence_per_api_call,
+                -item.exact_strong_per_call,
+                -item.same_product_per_call,
+                -item.same_year_per_call,
+                item.noise_rate,
+                item.variant,
+            ),
+        )
+    )
+
+
+def select_query_research_candidates(
+    store_source: StoreSearchSource,
+    *,
+    sport: str = "ALL",
+    listings_per_sport: int = 50,
+    max_candidates_per_sport: int = 1,
+) -> tuple[Listing, ...]:
+    sport = sport.upper()
+
+    if sport == "ALL":
+        sports = list(SPORTS)
+    elif sport in SPORTS:
+        sports = [sport]
+    else:
+        raise ValueError(
+            f"Unsupported sport: {sport}. "
+            "Expected NFL, NBA, MLB, AFL or ALL."
+        )
+
+    candidates: list[Listing] = []
+
+    for sport_name in sports:
+        if isinstance(store_source, MultiStoreSource):
+            listings = store_source.collect(
+                sport_name,
+                "",
+                listings_per_sport,
+            ).listings
+        else:
+            listings = store_source.search(
+                sport_name,
+                "",
+                listings_per_sport,
+            )
+
+        eligible: list[Listing] = []
+
+        for listing in sorted(listings, key=candidate_priority):
+            identity = listing.identity
+            quality = comp_quality(identity) if identity else 0.0
+
+            if (
+                identity is None
+                or not identity.player
+                or not identity.year
+                or not (identity.set_name or identity.brand)
+                or quality < MIN_SOLD_COMP_IDENTITY_QUALITY
+            ):
+                continue
+
+            eligible.append(listing)
+
+        candidates.extend(eligible[:max_candidates_per_sport])
+
+    return tuple(candidates)
+
+
+def diagnose_sold_query_variants(
+    candidates: tuple[Listing, ...],
+    sold_provider,
+    *,
+    variant_names: tuple[str, ...] | None = None,
+    sold_results_per_query: int = 50,
+    live_call_cap: int = 12,
+    as_of: date | None = None,
+) -> SoldQueryVariantDiagnosticSummary:
+    del as_of
+    cap = max(0, int(live_call_cap))
+    selected_names = (
+        {name.strip().upper() for name in variant_names if name.strip()}
+        if variant_names
+        else None
+    )
+    planned: list[tuple[Listing, SoldQueryVariant]] = []
+
+    for candidate in candidates:
+        identity = candidate.identity
+
+        if identity is None:
+            continue
+
+        for variant in generate_sold_query_variants(identity):
+            if selected_names and variant.name.upper() not in selected_names:
+                continue
+            planned.append((candidate, variant))
+
+    diagnostics: list[SoldQueryVariantDiagnostic] = []
+    actual_calls = 0
+
+    for candidate, variant in planned:
+        if actual_calls >= cap:
+            break
+
+        diagnostic = diagnose_sold_query_variant(
+            candidate,
+            sold_provider,
+            variant,
+            sold_results_per_query=sold_results_per_query,
+        )
+
+        if diagnostic.api_call_made:
+            actual_calls += 1
+
+        if actual_calls > cap:
+            raise RuntimeError("sold query variant live call cap exceeded")
+
+        diagnostics.append(diagnostic)
+
+    comparisons = compare_sold_query_variants(tuple(diagnostics))
+
+    return SoldQueryVariantDiagnosticSummary(
+        candidates=candidates,
+        variants_planned=len(planned),
+        max_theoretical_calls=len(
+            {
+                (
+                    candidate.sport.upper(),
+                    _query_dedupe_key(variant.query_text),
+                )
+                for candidate, variant in planned
+            }
+        ),
+        live_call_cap=cap,
+        diagnostics=tuple(diagnostics),
+        comparisons=comparisons,
+        actual_api_calls=actual_calls,
+        rows_returned=sum(row.rows_returned for row in diagnostics),
+        same_player=sum(row.funnel["SAME_PLAYER"] for row in diagnostics),
+        same_year=sum(row.funnel["SAME_YEAR"] for row in diagnostics),
+        same_product=sum(row.funnel["SAME_PRODUCT"] for row in diagnostics),
+        exact=sum(row.funnel["EXACT"] for row in diagnostics),
+        strong=sum(row.funnel["STRONG"] for row in diagnostics),
+        accepted=sum(row.funnel["ACCEPTED"] for row in diagnostics),
+        valued=sum(
+            1
+            for row in diagnostics
+            if len(row.accepted_comps)
+            >= settings.min_total_comps_medium_confidence
+        ),
+        false_accepts=sum(
+            row.false_accept_review_count
+            for row in diagnostics
+        ),
     )
 
 

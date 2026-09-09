@@ -37,7 +37,10 @@ from .valuation import value_from_sold_comps
 from .sold_comp_engine import EphemeralSoldCompEngine
 from .sold_evidence_diagnostics import (
     FUNNEL_STAGES,
+    generate_sold_query_variants,
+    diagnose_sold_query_variants,
     scan_store_sold_evidence_diagnostics,
+    select_query_research_candidates,
 )
 from .the_card_api import TheCardApiSoldCompProvider
 from .watchlist import add_watch, remove_watch
@@ -924,6 +927,363 @@ def diagnose_sold_evidence_cmd(
     console.print("PERSISTENCE_WRITES=0")
     console.print("HISTORY_WRITES=0")
     console.print("RAW_API_PERSISTENCE=NO")
+
+
+def _query_bottlenecks_from_variant_diagnostics(diagnostics):
+    counts: dict[str, int] = {}
+
+    def add(bucket: str, value: int) -> None:
+        if value > 0:
+            counts[bucket] = counts.get(bucket, 0) + value
+
+    for row in diagnostics:
+        unique = row.unique_rows
+        parsed = row.funnel["PARSED"]
+        same_player = row.funnel["SAME_PLAYER"]
+        same_year = row.funnel["SAME_YEAR"]
+        same_product = row.funnel["SAME_PRODUCT"]
+        same_card = row.funnel["SAME_CARD_NUMBER"]
+        same_parallel = row.funnel["SAME_PARALLEL"]
+        same_serial = row.funnel["SAME_SERIAL"]
+        same_rookie = row.funnel["SAME_ROOKIE"]
+        same_auto_mem = row.funnel["SAME_AUTO_MEM"]
+        same_grading = row.funnel["SAME_GRADING"]
+
+        if row.rows_returned == 0:
+            add("NO_RESULTS", 1)
+            if row.query_variant != "Q_PLAYER":
+                add("OVER_CONSTRAINED_QUERY", 1)
+
+        add("IDENTITY_PARSE_LIMIT", max(0, unique - parsed))
+        add("PLAYER_NOISE", max(0, parsed - same_player))
+        add("WRONG_YEAR", max(0, same_player - same_year))
+        add("WRONG_PRODUCT", max(0, same_year - same_product))
+        add("WRONG_CARD_NUMBER", max(0, same_product - same_card))
+        add("WRONG_PARALLEL", max(0, same_card - same_parallel))
+        add("WRONG_SERIAL", max(0, same_parallel - same_serial))
+        add("ROOKIE_MISMATCH", max(0, same_serial - same_rookie))
+        add("AUTO_MEM_MISMATCH", max(0, same_rookie - same_auto_mem))
+        add("GRADING_MISMATCH", max(0, same_auto_mem - same_grading))
+
+        if (
+            row.query_variant == "Q_PLAYER"
+            and unique > 0
+            and row.funnel["ACCEPTED"] == 0
+        ):
+            add("UNDER_CONSTRAINED_QUERY", 1)
+
+    if (
+        diagnostics
+        and sum(row.rows_returned for row in diagnostics) > 0
+        and sum(row.funnel["SAME_PRODUCT"] for row in diagnostics) == 0
+    ):
+        add("PROVIDER_COVERAGE_LIMIT", 1)
+
+    return dict(sorted(counts.items()))
+
+
+@app.command("research-sold-query-variants")
+def research_sold_query_variants_cmd(
+    source: str = typer.Option(
+        "all",
+        "--source",
+        help=(
+            "Acquisition source: cherry, sportscardstore, "
+            "gimko, urbanempire or all"
+        ),
+    ),
+    sport: str = typer.Option(
+        "ALL",
+        help="NFL, NBA, MLB, AFL or ALL.",
+    ),
+    listings_per_sport: int = typer.Option(
+        10,
+        "--listings-per-sport",
+        help="Store listings fetched per sport.",
+    ),
+    max_candidates: int = typer.Option(
+        1,
+        "--max-candidates",
+        help="High-identity candidates selected per sport.",
+    ),
+    sold_limit: int = typer.Option(
+        50,
+        "--sold-limit",
+        help="Maximum ephemeral sold rows requested per query.",
+    ),
+    live_call_cap: int = typer.Option(
+        8,
+        "--live-call-cap",
+        help="Maximum actual The Card API calls for this experiment.",
+    ),
+    variants: str = typer.Option(
+        (
+            "Q_PLAYER,Q_PLAYER_YEAR_PRODUCT,Q_PLAYER_PRODUCT_CARDNUM,"
+            "Q_PLAYER_PARALLEL,Q_IDENTITY_COMPACT,Q_EXISTING_BROAD"
+        ),
+        "--variants",
+        help="Comma-separated research query variants.",
+    ),
+):
+    """
+    Compare research-only sold-query variants under a strict live call cap.
+    """
+    sport = sport.upper()
+
+    try:
+        store_source, source_label = opportunity_store_source(source)
+    except ValueError:
+        console.print(
+            "[red]Unsupported source. "
+            "Expected cherry, sportscardstore, gimko, "
+            "urbanempire or all.[/red]"
+        )
+        raise typer.Exit(2)
+
+    selected_variants = tuple(
+        item.strip()
+        for item in variants.split(",")
+        if item.strip()
+    )
+    candidates = select_query_research_candidates(
+        store_source,
+        sport=sport,
+        listings_per_sport=listings_per_sport,
+        max_candidates_per_sport=max_candidates,
+    )
+    planned = []
+    for candidate in candidates:
+        if candidate.identity is None:
+            continue
+        for variant in generate_sold_query_variants(candidate.identity):
+            if variant.name in selected_variants:
+                planned.append((candidate, variant))
+
+    max_theoretical_calls = len(
+        {
+            (
+                candidate.sport.upper(),
+                " ".join(variant.query_text.casefold().split()),
+            )
+            for candidate, variant in planned
+        }
+    )
+
+    console.print("")
+    console.print(
+        f"[bold]CARD SCANNER - {source_label.upper()} SOLD QUERY "
+        "VARIANT RESEARCH[/bold]"
+    )
+    console.print("STAGE=STAGE_A")
+    console.print(f"CANDIDATES_SELECTED={len(candidates)}")
+    console.print(f"QUERY_VARIANTS_PLANNED={len(planned)}")
+    console.print(f"MAX_THEORETICAL_CALLS={max_theoretical_calls}")
+    console.print(f"LIVE_CALL_CAP={live_call_cap}")
+
+    if live_call_cap <= 0 or not candidates or not planned:
+        console.print("STAGE_A_ACTUAL_API_CALLS=0")
+        console.print("PERSISTENCE_WRITES=0")
+        console.print("HISTORY_WRITES=0")
+        console.print("RAW_API_PERSISTENCE=NO")
+        return
+
+    provider = TheCardApiSoldCompProvider()
+
+    if provider.missing_credentials():
+        console.print(
+            "[red]Missing THE_CARD_API_KEY in local .env.[/red]"
+        )
+        raise typer.Exit(1)
+
+    summary = diagnose_sold_query_variants(
+        candidates,
+        provider,
+        variant_names=selected_variants,
+        sold_results_per_query=sold_limit,
+        live_call_cap=live_call_cap,
+    )
+
+    console.print(f"STAGE_A_CANDIDATES={len(summary.candidates)}")
+    console.print(
+        f"STAGE_A_ACTUAL_API_CALLS={summary.actual_api_calls}"
+    )
+    console.print(f"STAGE_A_ROWS={summary.rows_returned}")
+    console.print(f"STAGE_A_SAME_PLAYER={summary.same_player}")
+    console.print(f"STAGE_A_SAME_YEAR={summary.same_year}")
+    console.print(f"STAGE_A_SAME_PRODUCT={summary.same_product}")
+    console.print(f"STAGE_A_EXACT={summary.exact}")
+    console.print(f"STAGE_A_STRONG={summary.strong}")
+    console.print(f"STAGE_A_ACCEPTED={summary.accepted}")
+    console.print("PERSISTENCE_WRITES=0")
+    console.print("HISTORY_WRITES=0")
+    console.print("RAW_API_PERSISTENCE=NO")
+
+    for index, row in enumerate(summary.diagnostics, start=1):
+        console.print("")
+        console.print(
+            f"QUERY_RESULT[{index}] CANDIDATE={row.candidate_external_id} "
+            f"VARIANT={row.query_variant}"
+        )
+        console.print(f"CANDIDATE_TITLE={row.candidate_title}")
+        console.print(
+            f"CANDIDATE_PLAYER={row.candidate_player or ''} "
+            f"CANDIDATE_YEAR={row.candidate_year or ''} "
+            f"CANDIDATE_PRODUCT={row.candidate_product or ''} "
+            f"CANDIDATE_CARD_NUMBER={row.candidate_card_number or ''} "
+            f"CANDIDATE_PARALLEL={row.candidate_parallel or ''} "
+            f"CANDIDATE_SERIAL="
+            f"{row.candidate_serial if row.candidate_serial is not None else ''} "
+            f"CANDIDATE_GRADING={row.candidate_grading or ''} "
+            f"IDENTITY_QUALITY={row.identity_quality:.3f}"
+        )
+        console.print(
+            f"QUERY_TEXT={row.query_text} "
+            f"API_CALL_MADE={'YES' if row.api_call_made else 'NO'} "
+            f"CACHE_HIT="
+            f"{'UNKNOWN' if row.cache_hit is None else ('YES' if row.cache_hit else 'NO')} "
+            f"ROWS_RETURNED={row.rows_returned} "
+            f"UNIQUE_ROWS={row.unique_rows}"
+        )
+        console.print(
+            "FUNNEL="
+            + ", ".join(
+                f"{key}:{value}"
+                for key, value in row.funnel.items()
+            )
+        )
+        if row.rejection_reason_counts:
+            console.print(
+                "REJECTION_REASON_COUNTS="
+                + ", ".join(
+                    f"{reason}:{count}"
+                    for reason, count in row.rejection_reason_counts.items()
+                )
+            )
+
+    comparison = Table(
+        title="Per-Variant Comparison",
+        safe_box=True,
+    )
+    for column in [
+        "VARIANT",
+        "CALLS",
+        "ROWS",
+        "SAME_PLAYER",
+        "SAME_YEAR",
+        "SAME_PRODUCT",
+        "EXACT",
+        "STRONG",
+        "ACCEPTED",
+        "PRODUCT/CALL",
+        "EXACT_STRONG/CALL",
+        "NOISE",
+    ]:
+        comparison.add_column(column)
+    for item in summary.comparisons:
+        comparison.add_row(
+            item.variant,
+            str(item.calls),
+            str(item.rows_returned),
+            str(item.same_player),
+            str(item.same_year),
+            str(item.same_product),
+            str(item.exact),
+            str(item.strong),
+            str(item.accepted),
+            f"{item.same_product_per_call:.4f}",
+            f"{item.exact_strong_per_call:.4f}",
+            f"{item.noise_rate:.2%}",
+        )
+    console.print(comparison)
+
+    accepted_table = Table(
+        title="Accepted Variant Results For Manual Review",
+        safe_box=True,
+    )
+    for column in [
+        "CANDIDATE_TITLE",
+        "SOLD_TITLE",
+        "MATCH_LEVEL",
+        "SOLD_DATE",
+        "SOLD_PRICE",
+        "CURRENCY",
+        "REJECTION_REASONS",
+        "WHY_ACCEPTED",
+    ]:
+        accepted_table.add_column(column)
+    for row in summary.diagnostics:
+        for comp in row.accepted_comps:
+            accepted_table.add_row(
+                row.candidate_title[:70],
+                comp.title[:70],
+                comp.match_level,
+                comp.sold_date,
+                f"{comp.price:.2f}",
+                comp.currency,
+                "",
+                "; ".join(comp.match_reasons)[:80],
+            )
+    console.print(accepted_table)
+
+    bottlenecks = _query_bottlenecks_from_variant_diagnostics(
+        summary.diagnostics
+    )
+    bottleneck_table = Table(
+        title="Query Discovery Bottlenecks",
+        safe_box=True,
+    )
+    bottleneck_table.add_column("BUCKET")
+    bottleneck_table.add_column("COUNT")
+    for bucket, count in bottlenecks.items():
+        bottleneck_table.add_row(bucket, str(count))
+    console.print(bottleneck_table)
+
+    best = summary.comparisons[0] if summary.comparisons else None
+    control = next(
+        (
+            item
+            for item in summary.comparisons
+            if item.variant == "Q_PLAYER"
+        ),
+        None,
+    )
+    console.print(
+        f"BEST_RESEARCH_VARIANT={best.variant if best else ''}"
+    )
+    console.print("CURRENT_PRODUCTION_VARIANT=Q_PLAYER_THEN_EXISTING_BROAD")
+    console.print(
+        "BEST_VARIANT_ADVANTAGE="
+        + (
+            (
+                f"accepted_per_call={best.accepted_per_call:.4f}; "
+                f"same_product_per_call={best.same_product_per_call:.4f}"
+            )
+            if best
+            else ""
+        )
+    )
+    console.print(
+        f"BEST_VARIANT_COST=calls={best.calls if best else 0}"
+    )
+    console.print(
+        f"BEST_VARIANT_FALSE_ACCEPTS={summary.false_accepts}"
+    )
+    if control and best:
+        console.print(
+            "CURRENT_QUERY_PERFORMANCE="
+            f"calls={control.calls}; rows={control.rows_returned}; "
+            f"same_product={control.same_product}; "
+            f"exact_strong={control.exact + control.strong}; "
+            f"accepted={control.accepted}"
+        )
+        console.print(
+            "PROPOSED_QUERY_PERFORMANCE="
+            f"calls={best.calls}; rows={best.rows_returned}; "
+            f"same_product={best.same_product}; "
+            f"exact_strong={best.exact + best.strong}; "
+            f"accepted={best.accepted}"
+        )
+    console.print(f"PROVIDER_HTTP_QUERIES={provider.query_count}")
 
 
 @app.command("scan-opportunities")

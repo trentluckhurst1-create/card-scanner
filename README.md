@@ -306,3 +306,24 @@ Under-description assessment is exposed in opportunity results and CLI reporting
 - Query-budget efficiency does not weaken sold-comp identity matching, the minimum sold-comp identity-quality gate, or the minimum genuine sold-comp requirement.
 - Active asking prices remain corroborative only and cannot create fair value or BUY status.
 - The Card API sold rows remain ephemeral and are not persisted.
+
+## Sold Discovery Query Research V1
+
+Sold Discovery Query Research V1 is research-only instrumentation for measuring whether alternate lawful The Card API query formulations improve sold-comp discovery under the existing strict local identity matcher.
+
+Governance remains unchanged:
+
+- The Card API sold data remains ephemeral and is never persisted.
+- Active asking prices do not establish fair value.
+- The minimum sold-comp identity-quality threshold remains 0.70.
+- A valuation still requires sufficient genuine accepted sold evidence.
+- Query research cannot weaken player, year, product, serial, parallel, autograph, memorabilia, grading, risk, or other identity protections.
+- Production remains limited to the existing bounded sold-query architecture.
+
+The research harness measures each query variant through parsed rows, same-player, same-year, same-product, same-card-number, exact, strong and accepted evidence, with actual HTTP-call accounting and manual review support.
+
+Bounded live research compared the player control with year/product, card-number and existing broad formulations. None improved same-product, exact, strong or accepted sold evidence. More constrained formulations frequently returned zero rows or increased irrelevant results. No false accepted comps were observed.
+
+Decision: RESEARCH_ONLY. No production query change is justified by the observed evidence. The primary limitation is The Card API product-level recall and coverage within the free three-day sold window, not evidence that the strict matcher or valuation thresholds should be relaxed.
+
+Do not respond to sparse sold evidence by weakening identity matching, lowering the 0.70 threshold, reducing the minimum genuine-comp requirement, or promoting active asks to valuation authority.
