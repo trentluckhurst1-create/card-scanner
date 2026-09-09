@@ -21,6 +21,10 @@ from .sold_comp_engine import (
     MIN_SOLD_COMP_IDENTITY_QUALITY,
 )
 from .the_card_api import TheCardApiSoldCompProvider
+from .underdescription import (
+    UnderdescriptionAssessment,
+    assess_underdescription,
+)
 
 
 SPORTS = ("NFL", "NBA", "MLB", "AFL")
@@ -120,6 +124,7 @@ class OpportunityScanResult:
     opportunity: Opportunity
     mispricing: MispricingAssessment | None = None
     listing_history: ListingHistoryAssessment | None = None
+    underdescription: UnderdescriptionAssessment | None = None
     cross_store_reference: CrossStoreReference | None = None
     reference_rejection_summary: dict[str, int] | None = None
 
@@ -426,6 +431,7 @@ def scan_store_opportunities(
             candidates_scanned += 1
 
             risk_flags = title_risk_details(listing.title)
+            underdescription = assess_underdescription(listing)
             opportunity = assess_opportunity(
                 listing,
                 sold_result.valuation,
@@ -438,6 +444,7 @@ def scan_store_opportunities(
                 risk_flags,
                 cross_store_reference,
                 listing_history,
+                underdescription,
             )
 
             results.append(
@@ -457,6 +464,7 @@ def scan_store_opportunities(
                     opportunity=opportunity,
                     mispricing=mispricing,
                     listing_history=listing_history,
+                    underdescription=underdescription,
                     cross_store_reference=cross_store_reference,
                     reference_rejection_summary=reference_rejection_summary,
                 )

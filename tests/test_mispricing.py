@@ -8,6 +8,7 @@ from card_scanner.market_reference import (
 )
 from card_scanner.mispricing import assess_mispricing
 from card_scanner.models import Listing, Opportunity, SoldValuation
+from card_scanner.underdescription import assess_underdescription
 
 
 def listing(
@@ -300,3 +301,84 @@ def test_history_cannot_create_high_score_without_sold_value():
 
     assert result.score <= 25.0
     assert "genuine sold-comp evidence is insufficient" in result.why_it_may_be_cheap
+
+def test_underdescription_penalizes_mispricing_without_changing_opportunity_status():
+    clear_listing = listing(
+        "2024 Panini Prizm Joe Burrow Gold 7/10 #55"
+    )
+    poor_listing = listing(
+        "2024 Panini Prizm Gold /10 #101"
+    )
+
+    clear_opportunity = opportunity(edge=25.0)
+    poor_opportunity = opportunity(edge=25.0)
+
+    clear_underdescription = assess_underdescription(clear_listing)
+    poor_underdescription = assess_underdescription(poor_listing)
+
+    clear_result = assess_mispricing(
+        clear_listing,
+        valued(),
+        clear_opportunity,
+        [],
+        underdescription=clear_underdescription,
+    )
+
+    poor_result = assess_mispricing(
+        poor_listing,
+        valued(),
+        poor_opportunity,
+        [],
+        underdescription=poor_underdescription,
+    )
+
+    assert clear_underdescription.status == "CLEAR"
+    assert poor_underdescription.status == "POOR_IDENTITY"
+    assert poor_result.score < clear_result.score
+
+    assert clear_opportunity.status == poor_opportunity.status
+    assert poor_opportunity.status not in {"BUY", "STRONG_BUY"} or (
+        clear_opportunity.status in {"BUY", "STRONG_BUY"}
+    )
+
+    assert any(
+        "under-description risk" in reason
+        for reason in poor_result.why_it_may_be_cheap
+    )
+    assert (
+        "poor title identity limits confidence in apparent mispricing"
+        in poor_result.suppressions
+    )
+
+
+def test_underdescription_does_not_modify_existing_buy_status():
+    target = listing(
+        "2024 Panini Prizm Gold /10 #101"
+    )
+
+    original = Opportunity(
+        source_listing_external_id="C1",
+        landed_cost_aud=40.0,
+        fair_value_aud=100.0,
+        quick_sale_value_aud=80.0,
+        edge_pct=60.0,
+        opportunity_score=90.0,
+        identity_confidence=0.95,
+        comp_confidence=0.90,
+        liquidity_score=0.85,
+        risk_score=0.0,
+        market_direction="STABLE",
+        status="BUY",
+    )
+
+    underdescription = assess_underdescription(target)
+
+    assess_mispricing(
+        target,
+        valued(),
+        original,
+        [],
+        underdescription=underdescription,
+    )
+
+    assert original.status == "BUY"

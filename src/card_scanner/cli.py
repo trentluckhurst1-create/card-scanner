@@ -773,6 +773,8 @@ def scan_opportunities_cmd(
         "AGE",
         "PRICE_CHG",
         "IDENTITY",
+        "TITLE_ID",
+        "TITLE_RISK",
         "FETCHED",
         "EXACT",
         "STRONG",
@@ -798,6 +800,7 @@ def scan_opportunities_cmd(
         opportunity = result.opportunity
         mispricing = result.mispricing
         history = result.listing_history
+        underdescription = result.underdescription
         price_change = ""
         if history and history.price_change_pct is not None:
             price_change = f"{history.price_change_pct:.1f}%"
@@ -812,6 +815,12 @@ def scan_opportunities_cmd(
             str(history.age_days) if history else "",
             price_change,
             f"{result.identity_quality:.3f}",
+            underdescription.status if underdescription else "",
+            (
+                f"{underdescription.risk_score:.1f}"
+                if underdescription
+                else ""
+            ),
             str(result.fetched_count),
             str(result.exact_count),
             str(result.strong_count),

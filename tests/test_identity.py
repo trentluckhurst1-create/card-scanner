@@ -557,3 +557,94 @@ def test_upper_deck_ionix_canonical_title_remains_unchanged():
     assert identity.brand == "Upper Deck Ionix"
     assert identity.set_name == "Upper Deck Ionix"
     assert identity.card_number == "A4"
+
+def test_parallel_and_serial_fragment_is_not_player():
+    identity = parse_identity(
+        "2024 Panini Prizm Gold /10 #101",
+        "NFL",
+    )
+
+    assert identity.year == "2024"
+    assert identity.brand == "Panini Prizm"
+    assert identity.parallel == "Gold"
+    assert identity.serial_total == 10
+    assert identity.card_number == "101"
+    assert identity.player is None
+
+def test_afl_named_product_families_are_recognized():
+    cases = [
+        (
+            '2022 AFL SUPREMACY ROOKIE Blue Nick Daicos COLLINGWOOD MAGPIES 61/75 RPB4',
+            'AFL Supremacy',
+        ),
+        (
+            '2022 AFL OPTIMUM Nick Daicos Copper Draft Pick Signature 154/170 PSG 10 PRISTINE',
+            'AFL Optimum',
+        ),
+        (
+            '2025 AFL EMINENCE Platinum Nameplate Sam Darcy 1 20/40 NB302 Bulldogs',
+            'AFL Eminence',
+        ),
+        (
+            '2024 AFL LEGACY Ultimate Jack Delean Gold DPS 83/85',
+            'AFL Legacy',
+        ),
+    ]
+
+    for title, expected_product in cases:
+        identity = parse_identity(title, 'AFL')
+        assert identity.brand == expected_product
+        assert identity.set_name == expected_product
+
+def test_live_shorthand_illusions_normalizes_to_panini_illusions():
+    identity = parse_identity(
+        '2024 Illusions JAYDEN DANIELS Rookie Trophy Blue 124/125 #93 PSA 8 (361)',
+        'NFL',
+    )
+
+    assert identity.year == '2024'
+    assert identity.brand == 'Panini Illusions'
+    assert identity.set_name == 'Panini Illusions'
+    assert identity.player == 'Jayden Daniels'
+    assert identity.parallel == 'Blue'
+    assert identity.serial_current == 124
+    assert identity.serial_total == 125
+    assert identity.card_number == '93'
+
+
+def test_chronology_is_product_not_player_contamination():
+    identity = parse_identity(
+        "Al Horford Chronology Rookie Letterman Patch #d /50 'R'",
+        'NBA',
+    )
+
+    assert identity.brand == 'Chronology'
+    assert identity.set_name == 'Chronology'
+    assert identity.player == 'Al Horford'
+    assert identity.serial_total == 50
+    assert identity.rookie is True
+    assert identity.memorabilia is True
+
+
+def test_black_shorthand_remains_ambiguous_not_panini_black():
+    identity = parse_identity(
+        '2012 Black RUSSELL WILSON Rookie Signature Materials Auto 240/349 PSA 7 (671)',
+        'NFL',
+    )
+
+    assert identity.brand is None
+    assert identity.set_name is None
+    assert identity.parallel == 'Black'
+    assert identity.player == 'Russell Wilson'
+
+
+def test_abbreviated_season_year_is_not_silently_inferred():
+    identity = parse_identity(
+        'Damion James 10-11 Absolute Memorabilia Rookie Premiere Mateirals Jumbo Patch #d /5',
+        'NBA',
+    )
+
+    assert identity.year is None
+    assert identity.brand == 'Absolute'
+    assert identity.set_name == 'Absolute'
+    assert identity.player == 'Damion James'

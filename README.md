@@ -229,3 +229,59 @@ The deterministic suite covers identity parsing, suffix normalization, prefix cl
 ## Next Steps
 
 Add a permitted real FX provider, then add a permitted sold-comp provider or continue importing manual sales. Only after genuine sold transactions are available should the valuation layer produce fair value, quick-sale value and any BUY-style decision.
+
+## UNDER-DESCRIBED LISTING INTELLIGENCE V1
+
+The scanner includes a precision-first title-quality and identity-anomaly layer for active marketplace listings.
+
+Its purpose is not to invent hidden card attributes. All current acquisition sources derive card identity from the same public seller title, so the system cannot legitimately claim that an attribute was omitted unless independent evidence exists.
+
+V1 therefore asks a narrower and defensible question:
+
+Is the seller title sufficiently specific and internally coherent for reliable individual-card identification?
+
+Possible outcomes:
+
+- CLEAR - no material title-identity anomaly detected.
+- REVIEW - identity is usable but contains unresolved ambiguity or missing structural information.
+- POOR_IDENTITY - title identity is materially inadequate for dependable card identification.
+- NOT_APPLICABLE - sealed boxes, packs, bundles, repacks, or other non-individual-card products.
+
+The detector may flag structural issues such as missing year, missing recognized product family, weak identity attached to serial numbering, weak identity attached to card numbering, generic player identity, or extremely incomplete core identity.
+
+Important governance:
+
+- Under-description intelligence cannot create BUY or STRONG_BUY.
+- It cannot satisfy or relax the sold-comparable threshold.
+- It cannot relax card matching requirements.
+- It cannot infer unseen rookie, autograph, memorabilia, serial, grading, parallel, or other attributes.
+- Active listing titles remain marketplace evidence only; they do not establish fair value.
+- comp_quality remains sold-comp identity completeness and is not treated as a generic title-quality threshold.
+- The live sold-comp identity threshold remains 0.70.
+- Sealed and repack products are excluded from individual-card title-risk scoring.
+
+Parser precision work introduced with this tranche includes:
+
+- prevention of serial/card-number fragments such as Gold /10 from being promoted to player identity;
+- narrow AFL product recognition for AFL Supremacy, AFL Optimum, AFL Eminence, and AFL Legacy;
+- narrow four-digit-year Illusions shorthand normalization to Panini Illusions;
+- explicit Chronology product recognition;
+- Letterman treated as a card descriptor rather than part of a player name;
+- deliberate refusal to infer generic Black as Panini Black, because Black is also a legitimate parallel descriptor;
+- deliberate refusal to infer abbreviated seasons such as 10-11 until abbreviated-season normalization has its own governed design.
+
+Live four-store validation was performed across NFL, NBA, MLB, and AFL using Cherry, Sports Card Store Australia, Gimko, and Urban Empire, with no sold API calls, no history writes, and no persistence.
+
+Final bounded validation:
+
+- total listings: 181
+- applicable individual-card listings: 165
+- CLEAR: 160
+- REVIEW: 5
+- POOR_IDENTITY: 0
+- NOT_APPLICABLE: 16
+- applicable review rate: 3.03%
+
+The five retained REVIEW cases were intentionally left unresolved because certainty would require unsafe inference: one ambiguous Black NFL product title, one abbreviated 10-11 NBA season title, and three yearless Chronology listings.
+
+Under-description assessment is exposed in opportunity results and CLI reporting as title-identity status/risk. Mispricing assessment may apply a confidence penalty for REVIEW or POOR_IDENTITY, but the underlying opportunity status and valuation evidence gates remain unchanged.

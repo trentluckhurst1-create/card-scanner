@@ -50,3 +50,50 @@
 
 ## Rule
 No auto-buying until the scanner has been audited on historical and live opportunities.
+
+## UNDER-DESCRIBED LISTING INTELLIGENCE V1 COMPLETE
+
+Status: COMPLETE / VALIDATED / READY TO COMMIT
+
+Delivered:
+
+- dedicated under-description/title-quality assessment;
+- CLEAR / REVIEW / POOR_IDENTITY / NOT_APPLICABLE classification;
+- structural identity anomaly signals;
+- sealed/box/pack/repack exclusion from individual-card scoring;
+- opportunity scanner integration;
+- explainable mispricing integration;
+- CLI title-identity status and risk output;
+- conservative parser precision fixes discovered during live validation;
+- regression coverage for detector governance and parser behavior;
+- live four-store bounded validation.
+
+Final live validation:
+
+- 181 listings observed;
+- 165 applicable individual-card listings;
+- 160 CLEAR;
+- 5 REVIEW;
+- 0 POOR_IDENTITY;
+- 16 NOT_APPLICABLE;
+- 3.03% applicable review rate;
+- zero sold API calls;
+- zero persistence;
+- zero history writes.
+
+Governance remains locked:
+
+- no BUY or STRONG_BUY from title-quality evidence alone;
+- minimum sold-comp identity quality remains 0.70;
+- active asks do not establish fair value;
+- no hidden-attribute inference;
+- no matching relaxation;
+- no generic Black to Panini Black inference;
+- no abbreviated-season inference yet.
+
+Deferred future work:
+
+- governed abbreviated-season normalization such as 10-11 to canonical season only after ambiguity rules are designed and tested;
+- independent metadata/image evidence for true omitted-attribute detection;
+- broader product alias expansion only when supported by live false-positive evidence;
+- continued precision monitoring as additional stores and sports-card inventories are added.

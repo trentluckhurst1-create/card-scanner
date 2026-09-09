@@ -34,6 +34,10 @@ GRADE_RE = re.compile(
 
 
 BRANDS = [
+    "AFL Supremacy",
+    "AFL Optimum",
+    "AFL Eminence",
+    "AFL Legacy",
     "Bowman's Best",
     "Flair Showcase",
     "Fleer Ultra",
@@ -95,6 +99,7 @@ BRANDS = [
     "Spectra",
     "Origins",
     "Chronicles",
+    "Chronology",
     "Absolute",
     "Certified",
     "Limited",
@@ -321,6 +326,15 @@ def _extract_brand(title: str) -> str | None:
 
     if re.search(r"\bUD\s+Ionix\b", title, flags=re.I):
         return "Upper Deck Ionix"
+
+    # Marketplace shorthand commonly omits "Panini" from Illusions.
+    # Require a normal four-digit card year so the alias remains narrow.
+    if YEAR_RE.search(title) and re.search(
+        r"\bIllusions\b",
+        title,
+        flags=re.I,
+    ):
+        return "Panini Illusions"
 
     for brand in sorted(
         BRANDS,
@@ -592,6 +606,7 @@ PLAYER_STOP_WORDS = {
     "graded",
     "grizzlies",
     "jersey",
+    "letterman",
     "kc",
     "memphis",
     "mint",
@@ -700,6 +715,16 @@ def _clean_extracted_player(
     """
 
     if not player:
+        return None
+
+    # Player candidates must never contain marketplace card-numbering
+    # syntax. This prevents fragments such as "Gold /10" or
+    # "#101 PSA" from being promoted to player identity.
+    if (
+        re.search(r"\d", player)
+        or re.search(r"(?:^|\s)/\s*\d", player)
+        or "#" in player
+    ):
         return None
 
     words = player.split()

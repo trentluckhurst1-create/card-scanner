@@ -5,6 +5,7 @@ from dataclasses import dataclass
 from .listing_history import ListingHistoryAssessment
 from .market_reference import CrossStoreReference, MarketReferenceStatus
 from .models import Listing, Opportunity, RiskFlag, SoldValuation
+from .underdescription import UnderdescriptionAssessment
 
 
 @dataclass(frozen=True)
@@ -64,6 +65,7 @@ def assess_mispricing(
     risk_flags: list[RiskFlag] | None = None,
     cross_store_reference: CrossStoreReference | None = None,
     listing_history: ListingHistoryAssessment | None = None,
+    underdescription: UnderdescriptionAssessment | None = None,
 ) -> MispricingAssessment:
     """
     Explain whether a cheap-looking card is a defensible mispricing.
@@ -77,6 +79,40 @@ def assess_mispricing(
     evidence: list[str] = []
     suppressions: list[str] = []
 
+    underdescription_penalty = 0.0
+
+    if underdescription is not None:
+        if underdescription.status == "POOR_IDENTITY":
+            _add_once(
+                may_be,
+                "under-description risk: seller title has poor identity specificity",
+            )
+            _add_once(
+                evidence,
+                "UNDERDESCRIPTION_POOR_IDENTITY",
+            )
+            _add_once(
+                suppressions,
+                "poor title identity limits confidence in apparent mispricing",
+            )
+            underdescription_penalty = 8.0
+
+        elif underdescription.status == "REVIEW":
+            _add_once(
+                may_be,
+                "under-description risk: seller title needs identity review",
+            )
+            _add_once(
+                evidence,
+                "UNDERDESCRIPTION_REVIEW",
+            )
+            underdescription_penalty = 3.0
+
+        for signal in underdescription.signals:
+            _add_once(
+                evidence,
+                signal.code,
+            )
     edge_pct = opportunity.edge_pct
 
     if edge_pct is not None and edge_pct >= 10.0:
@@ -351,7 +387,8 @@ def assess_mispricing(
             + history_score
             - risk_penalty
             - dispersion_penalty
-            - history_penalty,
+            - history_penalty
+            - underdescription_penalty,
         ),
     )
 

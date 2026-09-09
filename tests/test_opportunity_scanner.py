@@ -804,3 +804,46 @@ def test_opportunity_sort_uses_mispricing_score_before_raw_edge():
         [raw_edge_only, higher_quality],
         key=opportunity_result_sort_key,
     )[0] is higher_quality
+
+def test_scan_result_exposes_underdescription_assessment():
+    target = listing(
+        "review-1",
+        "NFL",
+        "2024 Joe Burrow Gold /10 #55",
+        price=50.0,
+    )
+
+    summary = scan_store_opportunities(
+        store_source=FakeCherry({"NFL": [target]}),
+        sold_provider=QueryProvider(),
+        sport="NFL",
+        listings_per_sport=10,
+        max_candidates_per_sport=1,
+        sold_results_per_query=10,
+        max_sold_queries=2,
+    )
+
+    assert len(summary.results) == 1
+
+    result = summary.results[0]
+
+    assert result.identity_quality == 0.75
+    assert result.underdescription is not None
+    assert result.underdescription.status == "REVIEW"
+    assert "MISSING_PRODUCT" in result.underdescription.signal_codes
+    assert (
+        "SERIAL_WITH_WEAK_IDENTITY"
+        in result.underdescription.signal_codes
+    )
+    assert (
+        "CARD_NUMBER_WITH_WEAK_IDENTITY"
+        in result.underdescription.signal_codes
+    )
+
+    assert result.mispricing is not None
+    assert any(
+        "under-description risk" in reason
+        for reason in result.mispricing.why_it_may_be_cheap
+    )
+
+    assert result.opportunity.status not in {"BUY", "STRONG_BUY"}
