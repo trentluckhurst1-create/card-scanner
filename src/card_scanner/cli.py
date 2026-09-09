@@ -35,6 +35,10 @@ from .sources.sportscardstore import SportsCardStoreSource
 from .sources.urban_empire import UrbanEmpireSource
 from .valuation import value_from_sold_comps
 from .sold_comp_engine import EphemeralSoldCompEngine
+from .sold_evidence_diagnostics import (
+    FUNNEL_STAGES,
+    scan_store_sold_evidence_diagnostics,
+)
 from .the_card_api import TheCardApiSoldCompProvider
 from .watchlist import add_watch, remove_watch
 from .opportunity_scanner import (
@@ -678,6 +682,248 @@ def live_sold_comps_cmd(
         "[yellow]Raw API sales were held in memory only and "
         "were not persisted.[/yellow]"
     )
+
+
+@app.command("diagnose-sold-evidence")
+def diagnose_sold_evidence_cmd(
+    source: str = typer.Option(
+        "all",
+        "--source",
+        help=(
+            "Acquisition source: cherry, sportscardstore, "
+            "gimko, urbanempire or all"
+        ),
+    ),
+    sport: str = typer.Option(
+        "ALL",
+        help="NFL, NBA, MLB, AFL or ALL.",
+    ),
+    listings_per_sport: int = typer.Option(
+        10,
+        "--listings-per-sport",
+        help="Store listings fetched per sport.",
+    ),
+    max_candidates: int = typer.Option(
+        1,
+        "--max-candidates",
+        help="High-identity candidates scanned per sport.",
+    ),
+    sold_limit: int = typer.Option(
+        50,
+        "--sold-limit",
+        help="Maximum ephemeral sold rows requested per query.",
+    ),
+    max_sold_queries: int = typer.Option(
+        8,
+        "--max-sold-queries",
+        help="Global live sold API call budget.",
+    ),
+):
+    """
+    Run a bounded, read-only sold-evidence diagnostic audit.
+
+    The Card API rows remain in memory only. This command does not
+    initialize SQLite, record listing history, or save raw API data.
+    """
+    sport = sport.upper()
+
+    try:
+        store_source, source_label = opportunity_store_source(source)
+    except ValueError:
+        console.print(
+            "[red]Unsupported source. "
+            "Expected cherry, sportscardstore, gimko, "
+            "urbanempire or all.[/red]"
+        )
+        raise typer.Exit(2)
+
+    provider = TheCardApiSoldCompProvider()
+
+    if provider.missing_credentials():
+        console.print(
+            "[red]Missing THE_CARD_API_KEY in local .env.[/red]"
+        )
+        raise typer.Exit(1)
+
+    summary = scan_store_sold_evidence_diagnostics(
+        store_source=store_source,
+        sold_provider=provider,
+        sport=sport,
+        listings_per_sport=listings_per_sport,
+        max_candidates_per_sport=max_candidates,
+        sold_results_per_query=sold_limit,
+        max_sold_queries=max_sold_queries,
+    )
+
+    console.print("")
+    console.print(
+        f"[bold]CARD SCANNER - {source_label.upper()} SOLD EVIDENCE "
+        "DIAGNOSTIC[/bold]"
+    )
+    console.print("[yellow]READ_ONLY_EPHEMERAL_RESEARCH=YES[/yellow]")
+
+    for index, result in enumerate(summary.results, start=1):
+        q1 = result.queries[0] if len(result.queries) >= 1 else None
+        q2 = result.queries[1] if len(result.queries) >= 2 else None
+        console.print("")
+        console.print(
+            f"CANDIDATE[{index}] "
+            f"SPORT={result.sport} STORE={result.source} "
+            f"EXTERNAL_ID={result.external_id}"
+        )
+        console.print(f"TITLE={result.listing_title}")
+        console.print(
+            f"IDENTITY_QUALITY={result.identity_quality:.3f} "
+            f"IDENTITY={result.identity_summary}"
+        )
+        console.print(
+            "QUERY_1="
+            + (q1.query_text if q1 else "")
+            + " ROWS="
+            + (str(q1.rows_returned) if q1 else "0")
+        )
+        console.print(
+            "QUERY_2="
+            + (q2.query_text if q2 else "")
+            + " ROWS="
+            + (str(q2.rows_returned) if q2 else "0")
+        )
+        console.print(
+            f"UNIQUE_ROWS={result.unique_sold_rows} "
+            f"IDENTITY_PARSED={result.rows_with_parseable_identity} "
+            f"RECENT_ROWS={result.recent_sold_rows} "
+            f"EXACT={result.exact_matches} "
+            f"STRONG={result.strong_matches} "
+            f"REJECTED={result.rejected_matches}"
+        )
+        console.print(
+            f"MEDIAN_AUD="
+            f"{result.median_aud if result.median_aud is not None else ''} "
+            f"SPREAD_PCT="
+            f"{result.spread_pct if result.spread_pct is not None else ''} "
+            f"MAD_PCT="
+            f"{result.median_absolute_deviation_pct if result.median_absolute_deviation_pct is not None else ''}"
+        )
+        console.print(
+            f"VALUATION_STATUS={result.valuation_status} "
+            f"VALUATION_CONFIDENCE={result.valuation_confidence:.3f} "
+            f"QUERY_COUNT={result.query_count}"
+        )
+        if result.rejection_reason_counts:
+            console.print(
+                "REJECTION_REASON_COUNTS="
+                + ", ".join(
+                    f"{reason}:{count}"
+                    for reason, count in result.rejection_reason_counts.items()
+                )
+            )
+
+    funnel_table = Table(
+        title="Aggregate Sold Evidence Funnel",
+        safe_box=True,
+    )
+    funnel_table.add_column("STAGE")
+    funnel_table.add_column("COUNT")
+    for stage in FUNNEL_STAGES:
+        funnel_table.add_row(
+            stage,
+            str(summary.aggregate_funnel.get(stage, 0)),
+        )
+    console.print(funnel_table)
+
+    bottleneck_table = Table(
+        title="Bottleneck Classification",
+        safe_box=True,
+    )
+    bottleneck_table.add_column("BUCKET")
+    bottleneck_table.add_column("COUNT")
+    for bucket, count in summary.bottleneck_counts.items():
+        bottleneck_table.add_row(bucket, str(count))
+    console.print(bottleneck_table)
+
+    accepted_table = Table(
+        title="Accepted Sold Comps For Manual Review",
+        safe_box=True,
+    )
+    for column in [
+        "CANDIDATE",
+        "SALE_ID",
+        "DATE",
+        "PRICE",
+        "AUD",
+        "TYPE",
+        "LEVEL",
+        "SCORE",
+        "IDENTITY",
+        "TITLE",
+    ]:
+        accepted_table.add_column(column)
+    for result in summary.results:
+        for comp in result.accepted_comps:
+            accepted_table.add_row(
+                result.external_id,
+                comp.sale_id,
+                comp.sold_date,
+                f"{comp.currency} {comp.price:.2f}",
+                (
+                    f"A${comp.sold_price_aud:.2f}"
+                    if comp.sold_price_aud is not None
+                    else "FX_REQUIRED"
+                ),
+                comp.sale_type or "",
+                comp.match_level,
+                f"{comp.match_score:.3f}",
+                comp.identity_summary[:70],
+                comp.title[:70],
+            )
+    console.print(accepted_table)
+
+    rejected_table = Table(
+        title="Representative Rejected Near Matches",
+        safe_box=True,
+    )
+    for column in [
+        "CANDIDATE",
+        "SALE_ID",
+        "DATE",
+        "PRICE",
+        "AUD",
+        "REASONS",
+        "TITLE",
+    ]:
+        rejected_table.add_column(column)
+    for result in summary.results:
+        for comp in result.rejected_examples[:3]:
+            rejected_table.add_row(
+                result.external_id,
+                comp.sale_id,
+                comp.sold_date,
+                f"{comp.currency} {comp.price:.2f}",
+                (
+                    f"A${comp.sold_price_aud:.2f}"
+                    if comp.sold_price_aud is not None
+                    else "FX_REQUIRED"
+                ),
+                "; ".join(comp.reasons)[:80],
+                comp.title[:70],
+            )
+    console.print(rejected_table)
+
+    console.print(f"FETCHED_LISTINGS={summary.fetched_listings}")
+    console.print(
+        f"CANDIDATES_CONSIDERED={summary.candidates_considered}"
+    )
+    console.print(f"CANDIDATES_SCANNED={summary.candidates_scanned}")
+    console.print(f"VALUED={summary.valued_count}")
+    console.print(f"SOLD_API_CALLS={summary.sold_api_calls}")
+    console.print(f"SOLD_QUERY_BUDGET={summary.query_budget}")
+    console.print(
+        f"SOLD_QUERY_BUDGET_REMAINING={summary.budget_remaining}"
+    )
+    console.print(f"PROVIDER_HTTP_QUERIES={provider.query_count}")
+    console.print("PERSISTENCE_WRITES=0")
+    console.print("HISTORY_WRITES=0")
+    console.print("RAW_API_PERSISTENCE=NO")
 
 
 @app.command("scan-opportunities")

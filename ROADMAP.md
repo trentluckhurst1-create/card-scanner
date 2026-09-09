@@ -105,3 +105,11 @@ Deferred future work:
 - Supplemental sold search is suppressed when the candidate allowance is exhausted.
 - Existing strict sold identity matching and valuation thresholds are unchanged.
 - Added regression coverage for one-query scans, supplemental-query suppression, odd shared budgets, and valuation from three exact comps returned by a single query.
+
+## Completed - Sold Evidence Diagnostics V1
+
+- Added a read-only live diagnostic command for The Card API sold evidence quality research.
+- The diagnostic reports per-candidate query text, row counts, unique rows, parsed identities, exact/strong/rejected counts, rejection reasons, sale ages, price-quality metrics and valuation status.
+- Added an aggregate sold-evidence funnel from `API_ROWS` through `VALUED` plus quantified bottleneck buckets.
+- Diagnostics reuse existing player-first query discovery, strict sold-comp matching and valuation gates without changing production decisions.
+- Governance remains locked: minimum sold identity quality is 0.70, active asks cannot create fair value or BUY/STRONG_BUY, and The Card API rows remain ephemeral with zero persistence and zero history writes.

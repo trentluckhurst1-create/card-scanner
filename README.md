@@ -79,6 +79,14 @@ Gimko V1 supports AFL Buy Out/fixed-price listings only. It uses the public cate
 
 Acquisition-store scans can read from Cherry, Sports Card Store, Gimko and Urban Empire. `--source all` pools the supported stores for the selected sport, while each candidate's cross-store reference pool excludes the candidate's own source.
 
+Run a bounded sold-evidence diagnostic without writing history or API rows:
+
+```powershell
+python -m card_scanner.cli diagnose-sold-evidence --source all --sport ALL --listings-per-sport 10 --max-candidates 1 --sold-limit 50 --max-sold-queries 8
+```
+
+The diagnostic command is reporting-only. It reuses the live player-first query strategy, strict sold-comp matching and sold valuation gates, then prints per-candidate query counts, accepted comps, representative rejections, price-quality metrics and an aggregate funnel: `API_ROWS`, `UNIQUE_ROWS`, `IDENTITY_PARSED`, `SAME_PLAYER`, `SAME_YEAR`, `SAME_PRODUCT`, `SAME_CARD_NUMBER`, `SAME_PARALLEL`, `SAME_SERIAL`, `SAME_ROOKIE`, `SAME_AUTO_MEM`, `SAME_GRADING`, `EXACT`, `STRONG`, `ACCEPTED` and `VALUED`.
+
 Run governed paginated Cherry ingestion:
 
 ```powershell
@@ -174,6 +182,8 @@ Raw percentage edge is intentionally capped by evidence quality. A smaller edge 
 The code includes a `SoldCompProvider` interface, a manual CSV import path and an ephemeral The Card API evaluation provider. No automated 130 Point provider exists, and the project must not scrape 130 Point, eBay sold pages or undocumented/private endpoints.
 
 The Card API sales are held in memory only during the scan. Raw API responses, normalized API sales and API sold matches are not persisted to SQLite, JSON, CSV or disk cache. Free-tier use is evaluation / personal / non-commercial only.
+
+Sold-evidence diagnostics are read-only and emit `PERSISTENCE_WRITES=0`, `HISTORY_WRITES=0` and `RAW_API_PERSISTENCE=NO` so live research can audit free-tier evidence quality without becoming a data-ingestion path.
 
 Future permitted sold-comp providers can feed normalized sale records into the same matching and valuation architecture.
 
