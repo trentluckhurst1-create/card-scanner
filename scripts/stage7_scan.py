@@ -6,6 +6,7 @@ from pathlib import Path
 from card_scanner.cli import opportunity_store_source
 from card_scanner.dashboard_export import write_dashboard_payload
 from card_scanner.db import init_db
+from card_scanner.market_catalogue import capture_store_source, catalogue_observations
 from card_scanner.opportunity_scanner import scan_store_opportunities
 from card_scanner.the_card_api import TheCardApiSoldCompProvider
 
@@ -41,9 +42,11 @@ def main() -> int:
     record_history = not args.no_record_history
 
     try:
-        store_source, source_label = opportunity_store_source(args.source)
+        raw_store_source, source_label = opportunity_store_source(args.source)
     except ValueError as exc:
         raise SystemExit(str(exc)) from exc
+
+    store_source = capture_store_source(raw_store_source)
 
     provider = TheCardApiSoldCompProvider()
     if provider.missing_credentials():
@@ -63,12 +66,21 @@ def main() -> int:
         record_history=record_history,
     )
 
-    output = write_dashboard_payload(summary, Path(args.dashboard_json))
+    market_listings = catalogue_observations(
+        store_source,
+        include_history=record_history,
+    )
+    output = write_dashboard_payload(
+        summary,
+        Path(args.dashboard_json),
+        market_listings=market_listings,
+    )
 
     print("CARD_SCANNER_STAGE7_SCAN=PASS")
     print(f"SOURCE={source_label}")
     print(f"SPORT={args.sport.upper()}")
     print(f"FETCHED_LISTINGS={summary.fetched_listings}")
+    print(f"MARKET_CATALOGUE={len(market_listings)}")
     print(f"CANDIDATES_SCANNED={summary.candidates_scanned}")
     print(f"VALUED={summary.valued_count}")
     print(f"BUY={summary.buy_count}")
@@ -87,6 +99,7 @@ def main() -> int:
     print(f"REFERENCE_STORE_ERRORS={len(summary.reference_store_errors)}")
     print(f"DASHBOARD_JSON={output}")
     print(f"PROVIDER_HTTP_QUERIES={provider.query_count}")
+    print("ACTIVE_STORE_REFETCH_FOR_CATALOGUE=NO")
     print("RAW_API_PERSISTENCE=NO")
     print("API_SOLD_ROWS_PERSISTED=0")
     print("API_SOLD_MATCHES_PERSISTED=0")
