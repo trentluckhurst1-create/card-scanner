@@ -3,47 +3,75 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Card Scanner Live</title>
+  <title>Card Scanner — Live Market Intelligence</title>
   <style>
-    body{font-family:Inter,Segoe UI,Arial,sans-serif;background:#0b1220;color:#e5eefc;margin:0;padding:32px}
-    .wrap{max-width:1100px;margin:auto}.top{display:flex;justify-content:space-between;gap:16px;align-items:center;flex-wrap:wrap}
-    h1{margin:0;font-size:32px}.muted{color:#9fb0ca}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin-top:24px}
-    .card{background:#131d2f;border:1px solid #24324a;border-radius:14px;padding:18px}.num{font-size:30px;font-weight:700}.good{color:#63d392}.warn{color:#f0c674}.bad{color:#ff7b7b}
-    table{width:100%;border-collapse:collapse;margin-top:12px}.panel{margin-top:24px;background:#131d2f;border:1px solid #24324a;border-radius:14px;padding:18px}
-    th,td{text-align:left;padding:10px;border-bottom:1px solid #24324a;font-size:14px}a{color:#79b8ff}.pill{display:inline-block;padding:4px 8px;border-radius:999px;background:#1e2a40;font-size:12px}
+    :root{--bg:#07101c;--sidebar:#0a1422;--panel:#0f1b2b;--panel2:#132238;--line:#223553;--text:#eef6ff;--muted:#8fa4bf;--blue:#2f80ed;--cyan:#58c7ff;--green:#43d17a;--amber:#ffbf4d;--red:#ff6878;--purple:#8d7dff}
+    *{box-sizing:border-box} body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;background:linear-gradient(180deg,#08111d,#06101a 55%,#07111d);color:var(--text)}
+    a{color:inherit;text-decoration:none}.app{min-height:100vh;display:grid;grid-template-columns:244px 1fr}.sidebar{background:linear-gradient(180deg,#0b1626,#08111d);border-right:1px solid #16263c;padding:22px 16px;position:sticky;top:0;height:100vh;display:flex;flex-direction:column}.brand{display:flex;gap:12px;align-items:center;padding:2px 8px 24px}.logo{width:38px;height:38px;border:2px solid #dfeaff;border-radius:11px;display:grid;place-items:center;font-weight:900}.brand h1{font-size:17px;margin:0}.brand small{color:var(--muted)}.nav{display:grid;gap:7px}.nav a{padding:12px 13px;border-radius:10px;color:#c9d7ea;font-size:14px}.nav a.active,.nav a:hover{background:#17335e;color:white}.dot{width:8px;height:8px;border-radius:50%;display:inline-block;background:var(--green);margin-right:7px}.sidebar-status{margin-top:auto;background:#111f33;border:1px solid #223653;border-radius:14px;padding:14px;font-size:12px;line-height:1.7;color:var(--muted)}
+    main{padding:24px 28px 40px;min-width:0}.topbar{display:flex;gap:16px;align-items:center}.search{flex:1;display:flex;background:#0e1b2d;border:1px solid var(--line);border-radius:12px;overflow:hidden}.search input{flex:1;background:transparent;border:0;color:white;padding:14px 16px;font-size:14px;outline:none}.search button{background:var(--blue);color:white;border:0;padding:0 24px;font-weight:700}.live{background:#0d251e;border:1px solid #1e5c45;color:#87efaf;padding:11px 15px;border-radius:999px;font-size:13px;white-space:nowrap}.filters{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}.chip{padding:8px 12px;background:#101d2f;border:1px solid #21344f;border-radius:9px;color:#b8c7da;font-size:13px}.chip.active{background:#1e4e94;border-color:#2f80ed;color:white}.store-strip{margin-left:auto;color:var(--muted);font-size:12px;display:flex;gap:8px;align-items:center}.store{padding:7px 9px;border:1px solid var(--line);border-radius:8px;background:#0d1928;color:#dbe7f5}
+    .metrics{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}.metric{background:linear-gradient(180deg,#101e31,#0d1928);border:1px solid var(--line);border-radius:14px;padding:16px}.metric .label{color:var(--muted);font-size:12px}.metric .value{font-size:28px;font-weight:800;margin-top:6px}.metric .sub{font-size:11px;color:#6f849d;margin-top:5px}
+    .grid2{display:grid;grid-template-columns:1.55fr 1fr;gap:14px;margin-top:14px}.panel{background:linear-gradient(180deg,#101e31,#0d1928);border:1px solid var(--line);border-radius:14px;padding:17px}.panel h2{font-size:16px;margin:0 0 14px}.panel-head{display:flex;justify-content:space-between;gap:10px;align-items:center}.panel-head span{color:var(--cyan);font-size:12px}.feature{display:grid;grid-template-columns:150px 1fr;gap:16px}.card-art{height:205px;border-radius:14px;background:linear-gradient(145deg,#172a44,#0b1522);border:1px solid #304766;display:grid;place-items:center;color:#6882a4;text-align:center;font-size:12px;padding:15px}.eyebrow{font-size:11px;color:#7c98b7}.feature h3{font-size:22px;margin:4px 0}.badges{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0}.badge{font-size:11px;background:#173257;border:1px solid #244b79;padding:5px 8px;border-radius:999px;color:#9fd1ff}.stores{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:15px}.store-card{background:#0b1726;border:1px solid #263956;border-radius:10px;padding:11px}.store-card strong{display:block;margin-top:8px}.store-card small{color:var(--muted)}.waiting{color:var(--amber)}.market-note{margin-top:10px;padding:10px 12px;border-radius:10px;background:#17220f;border:1px solid #344b22;color:#c9e98b;font-size:12px}
+    .chart{height:250px;border-radius:12px;background:linear-gradient(180deg,rgba(47,128,237,.10),rgba(47,128,237,0));position:relative;overflow:hidden}.chart:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(to bottom,transparent 0 49px,rgba(115,150,190,.12) 50px),repeating-linear-gradient(to right,transparent 0 64px,rgba(115,150,190,.08) 65px)}.chart svg{position:absolute;inset:0;width:100%;height:100%}.chart-label{position:absolute;left:14px;bottom:12px;color:#7890ad;font-size:11px}
+    .wide{margin-top:14px}.table-wrap{overflow:auto}table{width:100%;border-collapse:collapse;min-width:850px}th,td{padding:11px 9px;border-bottom:1px solid #1f314c;text-align:left;font-size:12px}th{color:#7f96b3;font-weight:600}.status{padding:5px 8px;border-radius:999px;font-weight:700;font-size:10px;display:inline-block}.watch{background:#13365d;color:#8fc6ff}.check{background:#493615;color:#ffd06b}.buy{background:#163c2a;color:#8ef3b7}.muted{color:var(--muted)}
+    .bottom{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin-top:14px}.trend-row,.activity-row{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid #1c2e47;font-size:12px}.good{color:var(--green)}.warn{color:var(--amber)}.bad{color:var(--red)}.ring{height:155px;display:grid;place-items:center;position:relative}.ring:before{content:"";width:118px;height:118px;border-radius:50%;background:conic-gradient(var(--blue) 0 80%,var(--amber) 80% 100%);mask:radial-gradient(circle 42px,transparent 98%,black 100%)}.ring .center{position:absolute;text-align:center}.ring .center strong{font-size:24px;display:block}
+    @media(max-width:1100px){.app{grid-template-columns:1fr}.sidebar{display:none}.metrics{grid-template-columns:repeat(2,1fr)}.grid2,.bottom{grid-template-columns:1fr}.feature{grid-template-columns:1fr}.card-art{height:150px}.stores{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:620px){main{padding:16px}.topbar{align-items:stretch;flex-direction:column}.metrics{grid-template-columns:1fr}.stores{grid-template-columns:1fr}.store-strip{margin-left:0;flex-wrap:wrap}}
   </style>
 </head>
 <body>
-<div class="wrap">
-  <div class="top"><div><h1>Card Scanner Live</h1><div class="muted">NFL · NBA · MLB · AFL — governed mispricing research</div></div><div id="updated" class="pill">Loading…</div></div>
-  <div class="grid">
-    <div class="card"><div class="muted">Fetched</div><div id="fetched" class="num">—</div></div>
-    <div class="card"><div class="muted">Scanned</div><div id="scanned" class="num">—</div></div>
-    <div class="card"><div class="muted">BUY</div><div id="buy" class="num good">—</div></div>
-    <div class="card"><div class="muted">Strong BUY</div><div id="strongBuy" class="num good">—</div></div>
-    <div class="card"><div class="muted">Insufficient sold comps</div><div id="insufficient" class="num warn">—</div></div>
-  </div>
-  <div class="panel"><h2>Latest validation</h2><table><tbody id="metrics"></tbody></table></div>
-  <div class="panel"><h2>Governance</h2><div id="governance"></div></div>
-  <div class="panel"><h2>Development</h2><p id="stage"></p><p><a href="https://github.com/trentluckhurst1-create/card-scanner">Open private GitHub repository</a></p><div class="muted">This page refreshes its status feed every 20 seconds. Scanner BUY decisions still require genuine sold-comp evidence.</div></div>
+<div class="app">
+  <aside class="sidebar">
+    <div class="brand"><div class="logo">CS</div><div><h1>CARD SCANNER</h1><small>Find value. Compare smarter.</small></div></div>
+    <nav class="nav">
+      <a class="active" href="#">Dashboard</a><a href="#compare">Search & Compare</a><a href="#scanner">Live Scanner</a><a href="#opportunities">Opportunities</a><a href="#history">Price History</a><a href="#watchlist">Watchlist</a><a href="#trends">Market Trends</a><a href="https://github.com/trentluckhurst1-create/card-scanner">GitHub</a>
+    </nav>
+    <div class="sidebar-status"><div><span class="dot"></span><strong style="color:#8ef3b7">Scanner Online</strong></div><div id="sideUpdated">Last update: loading…</div><div id="sideStage">Stage 7</div><div>Governed mode · No auto-buy</div></div>
+  </aside>
+
+  <main>
+    <div class="topbar">
+      <div class="search"><input id="searchInput" placeholder="Search for a player, card, set, year or parallel…"><button onclick="demoSearch()">Search</button></div>
+      <div class="live"><span class="dot"></span>Live Updates</div>
+    </div>
+
+    <div class="filters"><button class="chip active">All Sports</button><button class="chip">NBA</button><button class="chip">NFL</button><button class="chip">MLB</button><button class="chip">AFL</button><div class="store-strip"><span>Comparing</span><span class="store">Cherry</span><span class="store">Sports Card Store</span><span class="store">Gimko</span><span class="store">Urban Empire</span></div></div>
+
+    <section class="metrics">
+      <div class="metric"><div class="label">Listings Scanned</div><div id="fetched" class="value">—</div><div class="sub">latest governed scan</div></div>
+      <div class="metric"><div class="label">Cards Analysed</div><div id="scanned" class="value">—</div><div class="sub">deep identity + comp review</div></div>
+      <div class="metric"><div class="label">Buy Opportunities</div><div id="buy" class="value good">—</div><div class="sub">requires genuine sold evidence</div></div>
+      <div class="metric"><div class="label">Strong Buys</div><div id="strongBuy" class="value good">—</div><div class="sub">highest conviction only</div></div>
+      <div class="metric"><div class="label">Needs Sold Evidence</div><div id="insufficient" class="value warn">—</div><div class="sub">research queue</div></div>
+    </section>
+
+    <section class="grid2" id="compare">
+      <div class="panel">
+        <div class="panel-head"><h2>Featured Card Comparison</h2><span>One-stop market view</span></div>
+        <div class="feature">
+          <div class="card-art">CARD IMAGE<br><br>Live product imagery will appear here as the interface evolves</div>
+          <div><div class="eyebrow">EXACT IDENTITY MATCHING</div><h3>Search any card across every connected store</h3><div class="badges"><span class="badge">Player</span><span class="badge">Year</span><span class="badge">Set</span><span class="badge">Card #</span><span class="badge">Parallel</span><span class="badge">Grade</span></div>
+            <div class="stores"><div class="store-card">Cherry<strong class="waiting">Awaiting match</strong><small>landed AUD</small></div><div class="store-card">Sports Card Store<strong class="waiting">Awaiting match</strong><small>landed AUD</small></div><div class="store-card">Gimko<strong class="waiting">Awaiting match</strong><small>landed AUD</small></div><div class="store-card">Urban Empire<strong class="waiting">Awaiting match</strong><small>landed AUD</small></div></div>
+            <div class="market-note">Active asks are comparison evidence only. Fair value and BUY status remain locked until genuine sold-comp requirements are satisfied.</div>
+          </div>
+        </div>
+      </div>
+      <div class="panel" id="history"><div class="panel-head"><h2>Price History</h2><span>Persistent monitoring</span></div><div class="chart"><svg viewBox="0 0 600 250" preserveAspectRatio="none"><polyline fill="none" stroke="#2f80ed" stroke-width="4" points="0,165 70,162 130,168 190,145 250,132 310,138 380,116 450,127 520,98 600,106"/><polyline fill="none" stroke="#58c7ff" stroke-width="2" stroke-dasharray="6 8" points="0,190 120,188 240,180 360,172 480,160 600,150"/></svg><div class="chart-label">Historical store observations will populate automatically as scans accumulate.</div></div></div>
+    </section>
+
+    <section class="panel wide" id="opportunities"><div class="panel-head"><h2>Top Opportunities</h2><span>Research priority · not manufactured fair value</span></div><div class="table-wrap"><table><thead><tr><th>#</th><th>Card</th><th>Store</th><th>Price</th><th>Exact Sold</th><th>Active Refs</th><th>History</th><th>Research</th><th>Status</th></tr></thead><tbody id="opportunityRows"><tr><td>1</td><td>Awaiting next persistent scan</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td><span class="status watch">WATCH</span></td></tr><tr><td>2</td><td>Price drops and cross-store gaps will surface here</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td><span class="status check">RESEARCH</span></td></tr></tbody></table></div></section>
+
+    <section class="bottom">
+      <div class="panel" id="trends"><div class="panel-head"><h2>Market Trends</h2><span>Live later</span></div><div class="trend-row"><span>Price drops detected</span><strong id="priceDrops" class="good">0</strong></div><div class="trend-row"><span>New listings</span><strong id="newListings">0</strong></div><div class="trend-row"><span>History observations</span><strong id="historyObs">0</strong></div><div class="trend-row"><span>Sold queries used</span><strong id="soldQueries">—</strong></div></div>
+      <div class="panel"><h2>Cards by Status</h2><div class="ring"><div class="center"><strong id="ringScanned">—</strong><span class="muted">analysed</span></div></div><div class="trend-row"><span>BUY</span><strong id="statusBuy" class="good">0</strong></div><div class="trend-row"><span>STRONG BUY</span><strong id="statusStrong" class="good">0</strong></div><div class="trend-row"><span>Insufficient sold comps</span><strong id="statusInsufficient" class="warn">—</strong></div></div>
+      <div class="panel"><div class="panel-head"><h2>Recent Activity</h2><span><span class="dot"></span>Live</span></div><div id="activity"><div class="activity-row"><span>Dashboard loaded</span><span class="muted">now</span></div><div class="activity-row"><span>Waiting for persistent history scan</span><span class="muted">Stage 7</span></div><div class="activity-row"><span>Governance protections active</span><span class="good">PASS</span></div></div></div>
+    </section>
+  </main>
 </div>
 <script>
-async function load(){
-  try{
-    const r=await fetch('latest.json?ts='+Date.now(),{cache:'no-store'}); const d=await r.json();
-    document.getElementById('updated').textContent='Updated '+d.updated;
-    document.getElementById('fetched').textContent=d.metrics.fetched_listings;
-    document.getElementById('scanned').textContent=d.metrics.candidates_scanned;
-    document.getElementById('buy').textContent=d.metrics.buy;
-    document.getElementById('strongBuy').textContent=d.metrics.strong_buy;
-    document.getElementById('insufficient').textContent=d.metrics.insufficient_sold_comps;
-    document.getElementById('stage').textContent=d.stage;
-    const rows=[['Head',d.head],['Valued',d.metrics.valued],['WATCH valuation',d.metrics.watch],['Sold queries used',d.metrics.sold_queries_used],['Provider HTTP queries',d.metrics.provider_http_queries],['History observed',d.metrics.history_observed]];
-    document.getElementById('metrics').innerHTML=rows.map(x=>`<tr><th>${x[0]}</th><td>${x[1]}</td></tr>`).join('');
-    document.getElementById('governance').innerHTML=d.governance.map(x=>`<p>✓ ${x}</p>`).join('');
-  }catch(e){document.getElementById('updated').textContent='Status feed unavailable';}
-}
-load(); setInterval(load,20000);
+function n(v,f='—'){return v===undefined||v===null?f:v}
+async function load(){try{const r=await fetch('latest.json?ts='+Date.now(),{cache:'no-store'});const d=await r.json();const m=d.metrics||{};document.getElementById('fetched').textContent=n(m.fetched_listings);document.getElementById('scanned').textContent=n(m.candidates_scanned);document.getElementById('buy').textContent=n(m.buy,0);document.getElementById('strongBuy').textContent=n(m.strong_buy,0);document.getElementById('insufficient').textContent=n(m.insufficient_sold_comps);document.getElementById('sideUpdated').textContent='Last update: '+n(d.updated,'unknown');document.getElementById('sideStage').textContent=n(d.stage,'Stage 7');document.getElementById('ringScanned').textContent=n(m.candidates_scanned);document.getElementById('statusBuy').textContent=n(m.buy,0);document.getElementById('statusStrong').textContent=n(m.strong_buy,0);document.getElementById('statusInsufficient').textContent=n(m.insufficient_sold_comps);document.getElementById('historyObs').textContent=n(m.history_observed,0);document.getElementById('soldQueries').textContent=n(m.sold_queries_used);document.getElementById('priceDrops').textContent=n(m.history_price_drops,0);document.getElementById('newListings').textContent=n(m.history_new,0)}catch(e){document.getElementById('sideUpdated').textContent='Live feed unavailable'}}
+function demoSearch(){const q=document.getElementById('searchInput').value.trim();if(!q)return;document.querySelector('.feature h3').textContent='Search queued: '+q;document.querySelector('.market-note').textContent='Interactive live cross-store search is the next evolution step. This visual layer is already wired for the persistent status feed.'}
+load();setInterval(load,20000);
 </script>
 </body>
 </html>
