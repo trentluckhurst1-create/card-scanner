@@ -29,15 +29,31 @@ def _all_keys(value):
             yield from _all_keys(child)
 
 
-def test_seed_market_feed_uses_governed_schema_and_contains_no_card_payloads():
+def test_market_feed_uses_governed_schema_without_raw_payload_keys():
     payload = json.loads(Path("docs/market.json").read_text(encoding="utf-8"))
 
     assert payload["schema_version"] == 1
-    assert payload["cards"] == []
-    assert payload["generated_at"] is None
+    assert isinstance(payload["cards"], list)
+    assert payload["generated_at"] is None or isinstance(payload["generated_at"], str)
     assert not any(key.startswith("raw") for key in _all_keys(payload))
     assert any("not fair value" in rule for rule in payload["governance"])
     assert any("genuine sold evidence" in rule for rule in payload["governance"])
+
+    for card in payload["cards"]:
+        valuation = card["valuation"]
+        research = card["research"]
+        sold_evidence = card["sold_evidence"]
+
+        assert research["can_create_buy"] is False
+        assert "raw" not in sold_evidence
+
+        if valuation["status"] != "VALUED":
+            assert valuation["fair_value_aud"] is None
+            assert valuation["edge_pct"] is None
+
+        if card["opportunity_status"] in {"BUY", "STRONG_BUY"}:
+            assert valuation["status"] == "VALUED"
+            assert sold_evidence["accepted_count"] > 0
 
 
 def test_live_dashboard_consumes_governed_market_feed():
