@@ -108,6 +108,7 @@ BRANDS = [
 
 
 PARALLEL_TERMS = [
+    "Black Pearl",
     "Gold Disco",
     "Purple Ice",
 
@@ -763,6 +764,212 @@ def _clean_extracted_player(
     return _normalise_player_display(words)
 
 
+AFL_SUPREMACY_CLUB_SUFFIXES = [
+    "GREATER WESTERN SYDNEY GIANTS",
+    "NORTH MELBOURNE KANGAROOS",
+    "PORT ADELAIDE POWER",
+    "COLLINGWOOD MAGPIES",
+    "WESTERN BULLDOGS",
+    "BRISBANE LIONS",
+    "CARLTON BLUES",
+    "ADELAIDE CROWS",
+    "ESSENDON BOMBERS",
+    "FREMANTLE DOCKERS",
+    "GOLD COAST SUNS",
+    "HAWTHORN HAWKS",
+    "MELBOURNE DEMONS",
+    "RICHMOND TIGERS",
+    "ST KILDA SAINTS",
+    "SYDNEY SWANS",
+    "WEST COAST EAGLES",
+    "GEELONG CATS",
+    "GWS GIANTS",
+    "COLLINGWOOD",
+    "RICHMOND",
+    "ADELAIDE",
+    "BRISBANE",
+    "CARLTON",
+    "ESSENDON",
+    "FREMANTLE",
+    "GEELONG",
+    "HAWTHORN",
+    "MELBOURNE",
+    "SYDNEY",
+]
+
+AFL_SUPREMACY_LEADING_PHRASES = [
+    "FRANCHISE FUTURE",
+]
+
+AFL_SUPREMACY_LEADING_TERMS = {
+    "AUTO",
+    "AUTOGRAPH",
+    "AUTOGRAPHS",
+    "JERSEY",
+    "MEMORABILIA",
+    "PATCH",
+    "RC",
+    "RELIC",
+    "ROOKIE",
+    "SIGNATURE",
+    "SIGNATURES",
+}
+
+
+def _afl_supremacy_core(title: str) -> str | None:
+    if not re.search(r"\bAFL\s+SUPREMACY\b", title, flags=re.I):
+        return None
+
+    work = YEAR_RE.sub(" ", title, count=1)
+    work = re.sub(
+        r"\b(?:SELECT\s+)?AFL\s+SUPREMACY\b",
+        " ",
+        work,
+        flags=re.I,
+    )
+    work = GRADE_RE.sub(" ", work)
+    work = SERIAL_RE.sub(" ", work)
+    work = SERIAL_TOTAL_ONLY_RE.sub(" ", work)
+    work = CARD_NUMBER_RE.sub(" ", work)
+    work = re.sub(r"\b[A-Z]{2,5}\d{1,4}\b", " ", work)
+    work = re.sub(r"[^A-Za-z'\-. ]+", " ", work)
+
+    return " ".join(work.split())
+
+
+def _strip_afl_supremacy_leading_descriptors(text: str) -> str:
+    work = text
+
+    changed = True
+    while changed:
+        changed = False
+
+        for phrase in AFL_SUPREMACY_LEADING_PHRASES:
+            next_work = re.sub(
+                rf"^{re.escape(phrase)}\b",
+                " ",
+                work,
+                count=1,
+                flags=re.I,
+            ).strip()
+            if next_work != work:
+                work = next_work
+                changed = True
+                break
+
+        if changed:
+            continue
+
+        next_work = re.sub(
+            r"^[A-Za-z'\-.]+\b",
+            lambda match: (
+                " "
+                if match.group(0).rstrip(".").upper()
+                in AFL_SUPREMACY_LEADING_TERMS
+                else match.group(0)
+            ),
+            work,
+            count=1,
+        ).strip()
+        if next_work != work:
+            work = next_work
+            changed = True
+
+    return work
+
+
+def _strip_afl_supremacy_club_suffix(text: str) -> str:
+    work = text
+
+    for club in AFL_SUPREMACY_CLUB_SUFFIXES:
+        next_work = re.sub(
+            rf"\b{re.escape(club)}$",
+            " ",
+            work,
+            count=1,
+            flags=re.I,
+        ).strip()
+        if next_work != work:
+            return next_work
+
+    return work
+
+
+def _extract_afl_supremacy_parallel(title: str) -> str | None:
+    core = _afl_supremacy_core(title)
+
+    if core is None:
+        return None
+
+    work = _strip_afl_supremacy_leading_descriptors(core)
+
+    for parallel in sorted(PARALLEL_TERMS, key=len, reverse=True):
+        pattern = (
+            r"^"
+            + re.escape(parallel).replace(r"\ ", r"\s+")
+            + r"(?![A-Za-z0-9])"
+        )
+        if re.search(pattern, work, flags=re.I):
+            return parallel
+
+    return None
+
+
+def _extract_afl_supremacy_player(
+    title: str,
+    parallel: str | None,
+) -> str | None:
+    """
+    High-precision AFL Supremacy player extraction.
+
+    Supremacy marketplace titles can place descriptors before the
+    player and an uppercase club name after the player. Generic
+    uppercase extraction can therefore promote the club to player.
+    """
+    core = _afl_supremacy_core(title)
+
+    if core is None:
+        return None
+
+    work = _strip_afl_supremacy_leading_descriptors(core)
+
+    if parallel:
+        work = re.sub(
+            (
+                r"^"
+                + re.escape(parallel).replace(r"\ ", r"\s+")
+                + r"(?![A-Za-z0-9])"
+            ),
+            " ",
+            work,
+            count=1,
+            flags=re.I,
+        ).strip()
+
+    work = _strip_afl_supremacy_leading_descriptors(work)
+    work = _strip_afl_supremacy_club_suffix(work)
+
+    tokens = work.split()
+
+    if len(tokens) < 2:
+        return None
+
+    suffixes = {"JR", "SR", "II", "III", "IV"}
+    words = tokens[:2]
+
+    if (
+        len(tokens) >= 3
+        and tokens[2].rstrip(".").upper() in suffixes
+    ):
+        words = tokens[:3]
+
+    lowered = [word.rstrip(".").lower() for word in words]
+
+    if any(word in PLAYER_STOP_WORDS for word in lowered):
+        return None
+
+    return _normalise_player_display(words)
+
 def _extract_boundary_player(
     title: str,
     brand: str | None,
@@ -1170,10 +1377,20 @@ def parse_identity(
         text,
         brand,
     )
+    if brand == "AFL Supremacy":
+        parallel = _extract_afl_supremacy_parallel(text)
 
     player = _clean_extracted_player(
-        _extract_uppercase_player(text)
+        _extract_afl_supremacy_player(
+            text,
+            parallel,
+        )
     )
+
+    if not player:
+        player = _clean_extracted_player(
+            _extract_uppercase_player(text)
+        )
 
     if not player:
         player = _clean_extracted_player(

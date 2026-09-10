@@ -12,7 +12,7 @@ _GRADER_TOKEN_RE = re.compile(r'\b(?:PSA|BGS|SGC|CGC)\b', re.I)
 _NON_CARD_PRODUCT_RE = re.compile(
     r'\b(?:'
     r'(?:sealed\s+)?(?:hobby|blaster|mega|retail|bundle)?\s*box'
-    r'|(?:sealed\s+)?(?:value|jumbo|hobby|retail|slab)?\s*pack'
+    r'|(?:sealed\s+)?(?:value|jumbo|hobby|retail|slab|hanger)?\s*pack'
     r'|sealed\s+bundle'
     r'|bundle\s+box'
     r')\b',

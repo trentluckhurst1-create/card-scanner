@@ -74,7 +74,8 @@ def assess_candidate_discovery(
     under = assess_underdescription(listing)
 
     sold_ready = bool(
-        identity is not None
+        under.status != "NOT_APPLICABLE"
+        and identity is not None
         and identity.player
         and quality >= MIN_SOLD_COMP_IDENTITY_QUALITY
     )
