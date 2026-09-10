@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Card Scanner Live</title>
+  <style>
+    body{font-family:Inter,Segoe UI,Arial,sans-serif;background:#0b1220;color:#e5eefc;margin:0;padding:32px}
+    .wrap{max-width:1100px;margin:auto}.top{display:flex;justify-content:space-between;gap:16px;align-items:center;flex-wrap:wrap}
+    h1{margin:0;font-size:32px}.muted{color:#9fb0ca}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin-top:24px}
+    .card{background:#131d2f;border:1px solid #24324a;border-radius:14px;padding:18px}.num{font-size:30px;font-weight:700}.good{color:#63d392}.warn{color:#f0c674}.bad{color:#ff7b7b}
+    table{width:100%;border-collapse:collapse;margin-top:12px}.panel{margin-top:24px;background:#131d2f;border:1px solid #24324a;border-radius:14px;padding:18px}
+    th,td{text-align:left;padding:10px;border-bottom:1px solid #24324a;font-size:14px}a{color:#79b8ff}.pill{display:inline-block;padding:4px 8px;border-radius:999px;background:#1e2a40;font-size:12px}
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top"><div><h1>Card Scanner Live</h1><div class="muted">NFL · NBA · MLB · AFL — governed mispricing research</div></div><div id="updated" class="pill">Loading…</div></div>
+  <div class="grid">
+    <div class="card"><div class="muted">Fetched</div><div id="fetched" class="num">—</div></div>
+    <div class="card"><div class="muted">Scanned</div><div id="scanned" class="num">—</div></div>
+    <div class="card"><div class="muted">BUY</div><div id="buy" class="num good">—</div></div>
+    <div class="card"><div class="muted">Strong BUY</div><div id="strongBuy" class="num good">—</div></div>
+    <div class="card"><div class="muted">Insufficient sold comps</div><div id="insufficient" class="num warn">—</div></div>
+  </div>
+  <div class="panel"><h2>Latest validation</h2><table><tbody id="metrics"></tbody></table></div>
+  <div class="panel"><h2>Governance</h2><div id="governance"></div></div>
+  <div class="panel"><h2>Development</h2><p id="stage"></p><p><a href="https://github.com/trentluckhurst1-create/card-scanner">Open private GitHub repository</a></p><div class="muted">This page refreshes its status feed every 20 seconds. Scanner BUY decisions still require genuine sold-comp evidence.</div></div>
+</div>
+<script>
+async function load(){
+  try{
+    const r=await fetch('latest.json?ts='+Date.now(),{cache:'no-store'}); const d=await r.json();
+    document.getElementById('updated').textContent='Updated '+d.updated;
+    document.getElementById('fetched').textContent=d.metrics.fetched_listings;
+    document.getElementById('scanned').textContent=d.metrics.candidates_scanned;
+    document.getElementById('buy').textContent=d.metrics.buy;
+    document.getElementById('strongBuy').textContent=d.metrics.strong_buy;
+    document.getElementById('insufficient').textContent=d.metrics.insufficient_sold_comps;
+    document.getElementById('stage').textContent=d.stage;
+    const rows=[['Head',d.head],['Valued',d.metrics.valued],['WATCH valuation',d.metrics.watch],['Sold queries used',d.metrics.sold_queries_used],['Provider HTTP queries',d.metrics.provider_http_queries],['History observed',d.metrics.history_observed]];
+    document.getElementById('metrics').innerHTML=rows.map(x=>`<tr><th>${x[0]}</th><td>${x[1]}</td></tr>`).join('');
+    document.getElementById('governance').innerHTML=d.governance.map(x=>`<p>✓ ${x}</p>`).join('');
+  }catch(e){document.getElementById('updated').textContent='Status feed unavailable';}
+}
+load(); setInterval(load,20000);
+</script>
+</body>
+</html>
