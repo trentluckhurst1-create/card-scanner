@@ -1,0 +1,24 @@
+{
+  "updated": "2026-09-11 07:55 AEST",
+  "stage": "Stage 7 — Persistent Market Monitoring / live dashboard setup",
+  "head": "d895400",
+  "metrics": {
+    "fetched_listings": 253,
+    "candidates_scanned": 10,
+    "valued": 0,
+    "strong_buy": 0,
+    "buy": 0,
+    "watch": 0,
+    "insufficient_sold_comps": 10,
+    "sold_queries_used": 20,
+    "provider_http_queries": 19,
+    "history_observed": 0
+  },
+  "governance": [
+    "Active asks are not fair value",
+    "BUY and STRONG_BUY require genuine sold evidence",
+    "Minimum sold-comp gate remains unchanged",
+    "Research priority cannot manufacture fair value",
+    "Raw sold API responses are not persisted"
+  ]
+}
