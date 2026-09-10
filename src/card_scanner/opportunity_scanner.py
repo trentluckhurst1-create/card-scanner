@@ -34,6 +34,12 @@ from .underdescription import (
 SPORTS = ("NFL", "NBA", "MLB", "AFL")
 
 
+from .research_priority import (
+    ResearchPriorityAssessment,
+    assess_research_priority,
+)
+
+
 class StoreSearchSource(Protocol):
     def search(
         self,
@@ -131,6 +137,7 @@ class OpportunityScanResult:
     underdescription: UnderdescriptionAssessment | None = None
     cross_store_reference: CrossStoreReference | None = None
     reference_rejection_summary: dict[str, int] | None = None
+    research_priority: ResearchPriorityAssessment | None = None
 
 
 @dataclass(frozen=True)
@@ -460,6 +467,25 @@ def scan_store_opportunities(
                 listing_history,
                 underdescription,
             )
+            candidate_discovery = next(
+                (
+                    row
+                    for row in research_candidates
+                    if row.listing is listing
+                ),
+                None,
+            )
+            if candidate_discovery is None:
+                raise RuntimeError(
+                    "Selected listing lost its discovery assessment."
+                )
+
+            research_priority = assess_research_priority(
+                candidate_discovery,
+                cross_store_reference=cross_store_reference,
+                listing_history=listing_history,
+                underdescription=underdescription,
+            )
 
             results.append(
                 OpportunityScanResult(
@@ -481,6 +507,7 @@ def scan_store_opportunities(
                     underdescription=underdescription,
                     cross_store_reference=cross_store_reference,
                     reference_rejection_summary=reference_rejection_summary,
+                    research_priority=research_priority,
                 )
             )
 
@@ -568,12 +595,19 @@ def opportunity_result_sort_key(
         99,
     )
 
-    if result.mispricing is not None:
+    if opportunity.status in {"STRONG_BUY", "BUY", "WATCH", "FAIR", "OVERPRICED"}:
+        if result.mispricing is not None:
+            secondary = -float(result.mispricing.score)
+        elif opportunity.status in {"BUY", "STRONG_BUY"}:
+            secondary = -float(opportunity.opportunity_score or 0.0)
+        elif opportunity.edge_pct is not None:
+            secondary = -float(opportunity.edge_pct)
+        else:
+            secondary = -float(result.identity_quality)
+    elif result.research_priority is not None:
+        secondary = -float(result.research_priority.score)
+    elif result.mispricing is not None:
         secondary = -float(result.mispricing.score)
-    elif opportunity.status in {"BUY", "STRONG_BUY"}:
-        secondary = -float(opportunity.opportunity_score or 0.0)
-    elif opportunity.edge_pct is not None:
-        secondary = -float(opportunity.edge_pct)
     else:
         secondary = -float(result.identity_quality)
 

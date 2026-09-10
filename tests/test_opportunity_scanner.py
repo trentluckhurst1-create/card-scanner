@@ -431,6 +431,68 @@ class OpportunityScannerTests(unittest.TestCase):
         )
 
 
+    def test_scan_result_contains_research_priority_without_creating_value(self):
+        target = listing(
+            "RESEARCH",
+            "NBA",
+            "2023-24 Panini Prizm VICTOR WEMBANYAMA #136 Silver Prizm RC",
+            50.0,
+        )
+
+        summary = scan_cherry_opportunities(
+            cherry_source=FakeCherry({"NBA": [target]}),
+            sold_provider=QueryProvider(),
+            sport="NBA",
+            max_candidates_per_sport=1,
+            max_sold_queries=2,
+            as_of=AS_OF,
+        )
+
+        self.assertEqual(len(summary.results), 1)
+        result = summary.results[0]
+
+        self.assertIsNotNone(result.research_priority)
+        self.assertFalse(result.research_priority.can_create_buy)
+        self.assertFalse(result.research_priority.can_create_strong_buy)
+        self.assertIsNone(result.research_priority.fair_value_aud)
+        self.assertNotEqual(result.valuation.status, "VALUED")
+
+    def test_research_score_breaks_tie_only_for_nonvalued_status(self):
+        target_a = listing(
+            "A-RESEARCH",
+            "NBA",
+            "2023-24 Panini Prizm VICTOR WEMBANYAMA #136 Silver Prizm RC",
+            50.0,
+        )
+        target_b = listing(
+            "B-RESEARCH",
+            "NBA",
+            "Victor Wembanyama Card",
+            50.0,
+        )
+
+        summary = scan_cherry_opportunities(
+            cherry_source=FakeCherry({"NBA": [target_a, target_b]}),
+            sold_provider=QueryProvider(),
+            sport="NBA",
+            max_candidates_per_sport=2,
+            max_sold_queries=4,
+            as_of=AS_OF,
+        )
+
+        nonvalued = [
+            row
+            for row in summary.results
+            if row.valuation.status != "VALUED"
+            and row.research_priority is not None
+        ]
+
+        if len(nonvalued) >= 2:
+            ordered = sorted(nonvalued, key=opportunity_result_sort_key)
+            self.assertGreaterEqual(
+                ordered[0].research_priority.score,
+                ordered[-1].research_priority.score,
+            )
 if __name__ == "__main__":
     unittest.main()
 

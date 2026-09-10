@@ -1389,6 +1389,9 @@ def scan_opportunities_cmd(
         "QUICK_SALE",
         "EDGE",
         "MISPRICE",
+        "RESEARCH",
+        "RESEARCH_PRIORITY",
+        "RESEARCH_WHY",
         "LOOKS_CHEAP",
         "MAY_BE_CHEAP",
         "COMP_CONF",
@@ -1405,6 +1408,7 @@ def scan_opportunities_cmd(
         valuation = result.valuation
         opportunity = result.opportunity
         mispricing = result.mispricing
+        research = result.research_priority
         history = result.listing_history
         underdescription = result.underdescription
         price_change = ""
@@ -1449,6 +1453,17 @@ def scan_opportunities_cmd(
             (
                 f"{mispricing.score:.1f}"
                 if mispricing is not None
+                else ""
+            ),
+            (
+                f"{research.score:.1f}"
+                if research is not None
+                else ""
+            ),
+            research.priority if research is not None else "",
+            (
+                "; ".join(research.reasons)[:80]
+                if research is not None
                 else ""
             ),
             (
