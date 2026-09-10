@@ -61,7 +61,33 @@ def test_live_dashboard_consumes_governed_market_feed():
 
     assert "market.json?ts=" in html
     assert "latest.json?ts=" not in html
-    assert "Current Market Cards" in html
+    assert "Research Queue" in html
     assert "Fair value unavailable until sold evidence passes governance." in html
     assert "Active median" in html
     assert "not fair value" in html
+
+
+def test_research_console_supports_store_sort_and_history_signals():
+    html = Path("docs/index.html").read_text(encoding="utf-8")
+
+    assert 'id="storeFilter"' in html
+    assert 'id="sortMode"' in html
+    assert "Research priority" in html
+    assert "History signal" in html
+    assert "Price increases" in html
+    assert "Stale listings" in html
+    assert "history_price_increases" in html
+    assert "history_relisted" in html
+    assert "history_stale" in html
+    assert "Sold evidence is governed separately" in html
+
+
+def test_active_store_strip_does_not_misrepresent_ebay_as_acquisition_store():
+    html = Path("docs/index.html").read_text(encoding="utf-8")
+    store_strip = html.split('<div class="store-strip">', 1)[1].split("</div>", 1)[0]
+
+    assert "Cherry" in store_strip
+    assert "Sports Card Store" in store_strip
+    assert "Gimko" in store_strip
+    assert "Urban Empire" in store_strip
+    assert "eBay" not in store_strip
