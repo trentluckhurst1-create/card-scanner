@@ -182,7 +182,7 @@ def assess_research_priority(
         priority = "CHECK_FIRST"
     elif (
         discovery.sold_comp_ready
-        and score >= 55.0
+        and score >= 50.0
         and strong_evidence_count >= 1
     ):
         priority = "CHECK"
