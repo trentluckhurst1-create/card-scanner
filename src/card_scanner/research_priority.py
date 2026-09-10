@@ -45,9 +45,10 @@ def assess_research_priority(
     """
     Rank listings for human research only.
 
-    This layer cannot create fair value, BUY, or STRONG_BUY.
-    Active asks are corroborative research context only.
-    Genuine sold evidence remains the valuation authority.
+    Identity determines whether a listing is researchable. Evidence determines
+    whether it deserves CHECK or CHECK_FIRST priority. This layer cannot create
+    fair value, BUY, or STRONG_BUY. Active asks are corroborative research
+    context only. Genuine sold evidence remains the valuation authority.
     """
 
     reasons: list[str] = []
@@ -64,17 +65,19 @@ def assess_research_priority(
             underdescription_signal=False,
         )
 
-    score = max(0.0, min(float(discovery.discovery_score), 100.0)) * 0.55
+    # Identity is intentionally a minority of the score. A clean title makes a
+    # card eligible for research, but must not by itself escalate to CHECK.
+    score = max(0.0, min(float(discovery.discovery_score), 100.0)) * 0.30
 
     if discovery.sold_comp_ready:
         score += 8.0
         _add_once(reasons, "IDENTITY_READY_FOR_STRICT_COMP_RESEARCH")
     else:
-        score -= 15.0
+        score -= 18.0
         _add_once(cautions, "IDENTITY_NOT_READY_FOR_STRICT_COMP_RESEARCH")
 
     quality = max(0.0, min(float(discovery.identity_quality), 1.0))
-    score += quality * 12.0
+    score += quality * 6.0
 
     active_signal = False
 
@@ -88,36 +91,38 @@ def assess_research_priority(
         if discount is not None and discount > 0:
             active_signal = True
             bounded_discount = min(float(discount), 40.0)
-            score += bounded_discount / 40.0 * 12.0
+            score += bounded_discount / 40.0 * 24.0
             _add_once(reasons, "BELOW_CROSS_STORE_ACTIVE_MEDIAN")
 
         source_count = len(cross_store_reference.reference_sources)
 
         if source_count >= 2:
-            score += min(source_count, 4) / 4.0 * 4.0
+            score += min(source_count, 4) / 4.0 * 6.0
             _add_once(reasons, "MULTI_SOURCE_ACTIVE_REFERENCE")
 
         if cross_store_reference.active_mad_pct is not None:
             mad = float(cross_store_reference.active_mad_pct)
             if mad <= 15.0:
-                score += 3.0
+                score += 4.0
                 _add_once(reasons, "TIGHT_ACTIVE_REFERENCE_DISPERSION")
             elif mad >= 40.0:
-                score -= 5.0
+                score -= 7.0
                 _add_once(cautions, "WIDE_ACTIVE_REFERENCE_DISPERSION")
 
     history_signal = False
+    strong_history_signal = False
 
     if listing_history is not None:
         if listing_history.is_price_drop:
             history_signal = True
-            score += 6.0
+            strong_history_signal = True
+            score += 14.0
             _add_once(reasons, "OBSERVED_PRICE_DROP")
 
             drop = listing_history.latest_price_drop_pct
             if drop is not None:
                 magnitude = abs(float(drop))
-                score += min(magnitude, 30.0) / 30.0 * 4.0
+                score += min(magnitude, 30.0) / 30.0 * 8.0
 
         if listing_history.is_new:
             history_signal = True
@@ -130,7 +135,7 @@ def assess_research_priority(
             _add_once(reasons, "RELISTED")
 
         if listing_history.is_stale:
-            score -= 4.0
+            score -= 5.0
             _add_once(cautions, "STALE_LISTING")
 
         if listing_history.observation_count <= 1:
@@ -153,7 +158,7 @@ def assess_research_priority(
 
         if under.status == "REVIEW":
             under_signal = True
-            score += 4.0
+            score += 5.0
             _add_once(reasons, "UNDERDESCRIPTION_REVIEW")
 
         if under.risk_score >= 0.70:
@@ -165,14 +170,29 @@ def assess_research_priority(
 
     score = max(0.0, min(score, 100.0))
 
-    if score >= 75.0:
+    strong_evidence_count = int(active_signal) + int(strong_history_signal)
+
+    # Priority has evidence gates as well as numeric thresholds. This prevents
+    # clean identity alone from producing CHECK/CHECK_FIRST.
+    if (
+        discovery.sold_comp_ready
+        and score >= 75.0
+        and strong_evidence_count >= 2
+    ):
         priority = "CHECK_FIRST"
-    elif score >= 55.0:
+    elif (
+        discovery.sold_comp_ready
+        and score >= 55.0
+        and strong_evidence_count >= 1
+    ):
         priority = "CHECK"
-    elif score >= 35.0:
+    elif discovery.sold_comp_ready and score >= 30.0:
         priority = "WATCH"
     else:
         priority = "LOW_PRIORITY"
+
+    if discovery.sold_comp_ready and strong_evidence_count == 0:
+        _add_once(cautions, "NO_STRONG_CORROBORATING_EVIDENCE")
 
     return ResearchPriorityAssessment(
         score=round(score, 6),
