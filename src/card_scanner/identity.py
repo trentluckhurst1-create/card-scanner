@@ -108,6 +108,9 @@ BRANDS = [
 
 
 PARALLEL_TERMS = [
+    "Gold Disco",
+    "Purple Ice",
+
     "White Gold",
     "Teal Explosion",
     "Superfractor",
@@ -438,11 +441,18 @@ def _extract_parallel(
 
     lower = search_text.lower()
 
+    excluded_parallels: set[str] = set()
+    if re.search(r"\bEye\s+Black\b", search_text, flags=re.I):
+        excluded_parallels.add("Black")
+
     for parallel in sorted(
         PARALLEL_TERMS,
         key=len,
         reverse=True,
     ):
+        if parallel in excluded_parallels:
+            continue
+
         pattern = (
             r"(?<![A-Za-z0-9])"
             + re.escape(parallel).replace(r"\ ", r"\s+")
