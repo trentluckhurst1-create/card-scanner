@@ -1,8 +1,11 @@
 from __future__ import annotations
 
+import hashlib
 import json
+import re
 from datetime import datetime, timezone
 from pathlib import Path
+from statistics import median
 from typing import Any
 
 from .opportunity_scanner import OpportunityScanResult, OpportunityScanSummary
@@ -16,6 +19,7 @@ GOVERNANCE = (
     "Research priority cannot manufacture fair value",
     "Raw sold API responses are not persisted or exported",
 )
+FAMILY_MATCH_RULE = "STRICT_STRUCTURED_IDENTITY"
 
 
 def _iso_now() -> str:
@@ -60,6 +64,52 @@ def _identity_payload(result: OpportunityScanResult) -> dict[str, Any]:
         "memorabilia": identity.memorabilia,
         "rookie": getattr(identity, "rookie", None),
     }
+
+
+def _normalise_family_value(value: Any) -> str:
+    if value is None:
+        return ""
+    if isinstance(value, bool):
+        return "1" if value else "0"
+    text = str(value).casefold().strip()
+    return re.sub(r"[^a-z0-9]+", "", text)
+
+
+def canonical_family_key(*, sport: str, identity: dict[str, Any]) -> str | None:
+    """Return a conservative family key for defensible cross-store grouping.
+
+    We intentionally refuse weak player/year-only grouping. The key includes card
+    variant and condition-sensitive fields so active asks for materially different
+    cards cannot be silently combined into a pseudo-comparable family.
+    """
+
+    player = _normalise_family_value(identity.get("player"))
+    year = _normalise_family_value(identity.get("year"))
+    brand = _normalise_family_value(identity.get("brand") or identity.get("set_name"))
+    discriminator_present = any(
+        _normalise_family_value(identity.get(field))
+        for field in ("card_number", "parallel", "serial_total")
+    )
+    if not player or not year or not brand or not discriminator_present:
+        return None
+
+    fields = (
+        sport,
+        identity.get("player"),
+        identity.get("year"),
+        identity.get("brand"),
+        identity.get("set_name"),
+        identity.get("card_number"),
+        identity.get("parallel"),
+        identity.get("serial_total"),
+        identity.get("grader"),
+        identity.get("grade"),
+        identity.get("autograph"),
+        identity.get("memorabilia"),
+        identity.get("rookie"),
+    )
+    signature = "|".join(_normalise_family_value(value) for value in fields)
+    return "cf_" + hashlib.sha256(signature.encode("utf-8")).hexdigest()[:20]
 
 
 def _history_payload(result: OpportunityScanResult) -> dict[str, Any] | None:
@@ -137,6 +187,7 @@ def result_to_dashboard_record(result: OpportunityScanResult) -> dict[str, Any]:
     listing = result.listing
     valuation = result.valuation
     opportunity = result.opportunity
+    identity = _identity_payload(result)
 
     fair_value = (
         _round_money(getattr(valuation, "fair_value_aud", None))
@@ -148,6 +199,7 @@ def result_to_dashboard_record(result: OpportunityScanResult) -> dict[str, Any]:
         if listing.currency.upper() == "AUD"
         else None
     )
+    family_key = canonical_family_key(sport=listing.sport.upper(), identity=identity)
 
     return {
         "source": listing.source,
@@ -161,7 +213,12 @@ def result_to_dashboard_record(result: OpportunityScanResult) -> dict[str, Any]:
         "currency": listing.currency.upper(),
         "landed_aud": landed_aud,
         "identity_quality": _round_score(result.identity_quality),
-        "identity": _identity_payload(result),
+        "identity": identity,
+        "card_family": {
+            "key": family_key,
+            "eligible": family_key is not None,
+            "match_rule": FAMILY_MATCH_RULE,
+        },
         "history": _history_payload(result),
         "active_market_reference": _cross_store_payload(result),
         "sold_evidence": {
@@ -185,11 +242,77 @@ def result_to_dashboard_record(result: OpportunityScanResult) -> dict[str, Any]:
     }
 
 
+def _build_cross_store_families(cards: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    grouped: dict[str, list[dict[str, Any]]] = {}
+    for card in cards:
+        key = (card.get("card_family") or {}).get("key")
+        if key:
+            grouped.setdefault(key, []).append(card)
+
+    families: list[dict[str, Any]] = []
+    for key, rows in grouped.items():
+        stores = sorted({str(row.get("source")) for row in rows if row.get("source")})
+        if len(stores) < 2:
+            continue
+        priced = [float(row["landed_aud"]) for row in rows if row.get("landed_aud") is not None]
+        lowest = min(priced) if priced else None
+        highest = max(priced) if priced else None
+        spread_pct = (
+            ((highest - lowest) / lowest) * 100.0
+            if lowest is not None and highest is not None and lowest > 0
+            else None
+        )
+        representative = rows[0]
+        families.append(
+            {
+                "key": key,
+                "match_rule": FAMILY_MATCH_RULE,
+                "pricing_basis": "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE",
+                "sport": representative.get("sport"),
+                "identity": representative.get("identity") or {},
+                "listing_count": len(rows),
+                "store_count": len(stores),
+                "stores": stores,
+                "lowest_active_ask_aud": _round_money(lowest),
+                "median_active_ask_aud": _round_money(median(priced)) if priced else None,
+                "highest_active_ask_aud": _round_money(highest),
+                "active_ask_spread_pct": _round_score(spread_pct, 2),
+                "listings": [
+                    {
+                        "source": row.get("source"),
+                        "external_id": row.get("external_id"),
+                        "url": row.get("url"),
+                        "landed_aud": row.get("landed_aud"),
+                    }
+                    for row in sorted(
+                        rows,
+                        key=lambda item: (
+                            item.get("landed_aud") is None,
+                            item.get("landed_aud") or 0,
+                            str(item.get("source") or ""),
+                        ),
+                    )
+                ],
+            }
+        )
+
+    return sorted(
+        families,
+        key=lambda family: (
+            -int(family["store_count"]),
+            -float(family.get("active_ask_spread_pct") or 0),
+            str(family["key"]),
+        ),
+    )
+
+
 def build_dashboard_payload(
     summary: OpportunityScanSummary,
     *,
     generated_at: str | None = None,
 ) -> dict[str, Any]:
+    cards = [result_to_dashboard_record(row) for row in summary.results]
+    families = _build_cross_store_families(cards)
     return {
         "schema_version": DASHBOARD_SCHEMA_VERSION,
         "generated_at": generated_at or _iso_now(),
@@ -210,9 +333,11 @@ def build_dashboard_payload(
             "history_price_increases": summary.history_price_increase_count,
             "history_relisted": summary.history_relisted_count,
             "history_stale": summary.history_stale_count,
+            "cross_store_families": len(families),
         },
         "governance": list(GOVERNANCE),
-        "cards": [result_to_dashboard_record(row) for row in summary.results],
+        "cards": cards,
+        "cross_store_families": families,
     }
 
 

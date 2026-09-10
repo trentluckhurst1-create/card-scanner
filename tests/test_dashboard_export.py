@@ -5,18 +5,27 @@ from types import SimpleNamespace
 
 from card_scanner.dashboard_export import (
     build_dashboard_payload,
+    canonical_family_key,
     result_to_dashboard_record,
 )
 
 
-def _sample_result(*, valued: bool = False):
+def _sample_result(
+    *,
+    valued: bool = False,
+    source: str = "Cherry",
+    external_id: str = "abc-123",
+    price: float = 200.0,
+    parallel: str | None = "Silver",
+    card_number: str | None = "136",
+):
     identity = SimpleNamespace(
         player="Victor Wembanyama",
         year="2023",
         brand="Panini",
         set_name="Prizm",
-        card_number="136",
-        parallel="Silver",
+        card_number=card_number,
+        parallel=parallel,
         serial_current=None,
         serial_total=None,
         grader=None,
@@ -26,13 +35,13 @@ def _sample_result(*, valued: bool = False):
         rookie=True,
     )
     listing = SimpleNamespace(
-        source="Cherry",
-        external_id="abc-123",
-        url="https://example.test/card",
+        source=source,
+        external_id=external_id,
+        url=f"https://example.test/{external_id}",
         image_url="https://example.test/card.jpg",
         title="2023 Panini Prizm Victor Wembanyama Silver RC #136",
         sport="NBA",
-        price=200.0,
+        price=price,
         shipping=10.0,
         currency="AUD",
         identity=identity,
@@ -44,8 +53,8 @@ def _sample_result(*, valued: bool = False):
         age_days=10,
         observation_count=3,
         previous_price=225.0,
-        current_price=200.0,
-        min_observed_price=200.0,
+        current_price=price,
+        min_observed_price=price,
         max_observed_price=225.0,
         price_change_count=1,
         price_drop_count=1,
@@ -102,7 +111,7 @@ def _sample_result(*, valued: bool = False):
     )
 
 
-def _summary(result):
+def _summary(*results):
     return SimpleNamespace(
         fetched_listings=253,
         candidates_scanned=10,
@@ -119,7 +128,7 @@ def _summary(result):
         history_price_increase_count=0,
         history_relisted_count=0,
         history_stale_count=0,
-        results=[result],
+        results=list(results),
     )
 
 
@@ -150,6 +159,60 @@ def test_valued_result_can_export_governed_fair_value_and_edge():
     assert row["opportunity_status"] == "BUY"
 
 
+def test_family_key_requires_structured_discriminator_and_changes_with_variant():
+    base_identity = {
+        "player": "Victor Wembanyama",
+        "year": "2023",
+        "brand": "Panini",
+        "set_name": "Prizm",
+        "card_number": "136",
+        "parallel": "Silver",
+        "serial_total": None,
+        "grader": None,
+        "grade": None,
+        "autograph": False,
+        "memorabilia": False,
+        "rookie": True,
+    }
+    key = canonical_family_key(sport="NBA", identity=base_identity)
+    assert key and key.startswith("cf_")
+
+    different_parallel = dict(base_identity, parallel="Red")
+    assert canonical_family_key(sport="NBA", identity=different_parallel) != key
+
+    weak = dict(base_identity, card_number=None, parallel=None, serial_total=None)
+    assert canonical_family_key(sport="NBA", identity=weak) is None
+
+
+def test_cross_store_family_groups_only_same_strict_identity_and_keeps_asks_non_valuation():
+    cherry = _sample_result(source="Cherry", external_id="cherry-1", price=200.0)
+    gimko = _sample_result(source="Gimko", external_id="gimko-1", price=180.0)
+    other_parallel = _sample_result(
+        source="Urban Empire",
+        external_id="urban-1",
+        price=150.0,
+        parallel="Red",
+    )
+
+    payload = build_dashboard_payload(
+        _summary(cherry, gimko, other_parallel),
+        generated_at="2026-09-11T00:00:00+00:00",
+    )
+
+    assert payload["metrics"]["cross_store_families"] == 1
+    assert len(payload["cross_store_families"]) == 1
+    family = payload["cross_store_families"][0]
+    assert family["store_count"] == 2
+    assert family["listing_count"] == 2
+    assert family["stores"] == ["Cherry", "Gimko"]
+    assert family["lowest_active_ask_aud"] == 190.0
+    assert family["median_active_ask_aud"] == 200.0
+    assert family["highest_active_ask_aud"] == 210.0
+    assert family["pricing_basis"] == "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE"
+    assert "fair_value" not in family
+    assert [row["source"] for row in family["listings"]] == ["Gimko", "Cherry"]
+
+
 def test_payload_contains_safe_history_metrics_and_no_provider_raw_fields():
     payload = build_dashboard_payload(
         _summary(_sample_result()),
@@ -159,7 +222,9 @@ def test_payload_contains_safe_history_metrics_and_no_provider_raw_fields():
     assert payload["schema_version"] == 1
     assert payload["metrics"]["history_observed"] == 253
     assert payload["metrics"]["history_new"] == 253
+    assert payload["metrics"]["cross_store_families"] == 0
     assert payload["cards"][0]["history"]["is_price_drop"] is True
+    assert payload["cards"][0]["card_family"]["eligible"] is True
     serialized = repr(payload).casefold()
     assert "api_key" not in serialized
     assert "client_secret" not in serialized
