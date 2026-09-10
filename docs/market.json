@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "generated_at": null,
+  "generated_at": "2026-09-10T23:01:47.135236+00:00",
   "stage": "Stage 7 — Persistent Market Monitoring",
   "metrics": {
-    "fetched_listings": 0,
-    "candidates_scanned": 0,
+    "fetched_listings": 253,
+    "candidates_scanned": 10,
     "valued": 0,
     "strong_buy": 0,
     "buy": 0,
     "watch": 0,
-    "insufficient_sold_comps": 0,
-    "insufficient_identity": 0,
-    "sold_queries_used": 0,
-    "history_observed": 0,
-    "history_new": 0,
+    "insufficient_sold_comps": 10,
+    "insufficient_identity": 93,
+    "sold_queries_used": 20,
+    "history_observed": 253,
+    "history_new": 253,
     "history_price_drops": 0,
     "history_price_increases": 0,
     "history_relisted": 0,
@@ -26,5 +26,916 @@
     "Research priority cannot manufacture fair value",
     "Raw sold API responses are not persisted or exported"
   ],
-  "cards": []
+  "cards": [
+    {
+      "source": "cherry",
+      "external_id": "9093790072886",
+      "url": "https://www.cherrycollectables.com.au/products/2025-topps-finest-nfl-keon-coleman-finest-auto-refractor-kc",
+      "image_url": "https://cdn.shopify.com/s/files/1/0263/9009/files/300726_426_79586c0e-68c2-408b-951d-db6f127929ca.jpg?v=1785712457",
+      "title": "2025 Topps Finest NFL KEON COLEMAN Finest Auto Refractor #KC",
+      "sport": "NFL",
+      "asking_price": 19.99,
+      "shipping": 0.0,
+      "currency": "AUD",
+      "landed_aud": 19.99,
+      "identity_quality": 0.84,
+      "identity": {
+        "player": "Keon Coleman",
+        "year": "2025",
+        "brand": "Topps Finest",
+        "set_name": "Topps Finest",
+        "card_number": "KC",
+        "parallel": "Refractor",
+        "serial_current": null,
+        "serial_total": null,
+        "grader": null,
+        "grade": null,
+        "autograph": true,
+        "memorabilia": false,
+        "rookie": false
+      },
+      "history": {
+        "status": "NEW_LISTING",
+        "first_seen_at": "2026-09-10T23:00:54.673512+00:00",
+        "last_seen_at": "2026-09-10T23:00:54.673512+00:00",
+        "age_days": 0,
+        "observation_count": 1,
+        "previous_price": null,
+        "current_price": 19.99,
+        "min_observed_price": 19.99,
+        "max_observed_price": 19.99,
+        "price_change_count": 0,
+        "price_drop_count": 0,
+        "price_increase_count": 0,
+        "price_change_amount": null,
+        "price_change_pct": null,
+        "latest_price_drop_pct": null,
+        "is_new": true,
+        "is_price_drop": false,
+        "is_price_increase": false,
+        "is_stale": false,
+        "is_relisted": false
+      },
+      "active_market_reference": {
+        "status": "NO_REFERENCE",
+        "accepted_count": null,
+        "exact_count": null,
+        "strong_count": null,
+        "stores_considered": null,
+        "stores_searched": null,
+        "lowest_aud": null,
+        "median_aud": null,
+        "trimmed_median_aud": null,
+        "discount_to_lowest_pct": null,
+        "discount_to_median_pct": null,
+        "confidence": 0.0
+      },
+      "sold_evidence": {
+        "status": "INSUFFICIENT_RECENT_COMPS",
+        "accepted_count": 0,
+        "exact_count": 0,
+        "strong_count": 0,
+        "fetched_count": 7
+      },
+      "valuation": {
+        "status": "INSUFFICIENT_RECENT_COMPS",
+        "fair_value_aud": null,
+        "edge_pct": null
+      },
+      "research": {
+        "score": 38.5,
+        "priority": "WATCH",
+        "reasons": [
+          "IDENTITY_READY_FOR_STRICT_COMP_RESEARCH",
+          "NEW_LISTING"
+        ],
+        "cautions": [
+          "SPARSE_HISTORY",
+          "NO_STRONG_CORROBORATING_EVIDENCE"
+        ],
+        "can_create_buy": false,
+        "fair_value_aud": null
+      },
+      "opportunity_status": "INSUFFICIENT_SOLD_COMPS"
+    },
+    {
+      "source": "cherry",
+      "external_id": "9093790367798",
+      "url": "https://www.cherrycollectables.com.au/products/2025-topps-finest-nfl-mike-alstott-finest-greats-auto-refractor-ma",
+      "image_url": "https://cdn.shopify.com/s/files/1/0263/9009/files/300726_427_68d424ee-2e9d-4ad4-abb2-e1f50f3e5dc5.jpg?v=1785712455",
+      "title": "2025 Topps Finest NFL MIKE ALSTOTT Finest Greats Auto Refractor #MA",
+      "sport": "NFL",
+      "asking_price": 34.99,
+      "shipping": 0.0,
+      "currency": "AUD",
+      "landed_aud": 34.99,
+      "identity_quality": 0.84,
+      "identity": {
+        "player": "Mike Alstott",
+        "year": "2025",
+        "brand": "Topps Finest",
+        "set_name": "Topps Finest",
+        "card_number": "MA",
+        "parallel": "Refractor",
+        "serial_current": null,
+        "serial_total": null,
+        "grader": null,
+        "grade": null,
+        "autograph": true,
+        "memorabilia": false,
+        "rookie": false
+      },
+      "history": {
+        "status": "NEW_LISTING",
+        "first_seen_at": "2026-09-10T23:00:54.673512+00:00",
+        "last_seen_at": "2026-09-10T23:00:54.673512+00:00",
+        "age_days": 0,
+        "observation_count": 1,
+        "previous_price": null,
+        "current_price": 34.99,
+        "min_observed_price": 34.99,
+        "max_observed_price": 34.99,
+        "price_change_count": 0,
+        "price_drop_count": 0,
+        "price_increase_count": 0,
+        "price_change_amount": null,
+        "price_change_pct": null,
+        "latest_price_drop_pct": null,
+        "is_new": true,
+        "is_price_drop": false,
+        "is_price_increase": false,
+        "is_stale": false,
+        "is_relisted": false
+      },
+      "active_market_reference": {
+        "status": "NO_REFERENCE",
+        "accepted_count": null,
+        "exact_count": null,
+        "strong_count": null,
+        "stores_considered": null,
+        "stores_searched": null,
+        "lowest_aud": null,
+        "median_aud": null,
+        "trimmed_median_aud": null,
+        "discount_to_lowest_pct": null,
+        "discount_to_median_pct": null,
+        "confidence": 0.0
+      },
+      "sold_evidence": {
+        "status": "INSUFFICIENT_RECENT_COMPS",
+        "accepted_count": 0,
+        "exact_count": 0,
+        "strong_count": 0,
+        "fetched_count": 8
+      },
+      "valuation": {
+        "status": "INSUFFICIENT_RECENT_COMPS",
+        "fair_value_aud": null,
+        "edge_pct": null
+      },
+      "research": {
+        "score": 38.5,
+        "priority": "WATCH",
+        "reasons": [
+          "IDENTITY_READY_FOR_STRICT_COMP_RESEARCH",
+          "NEW_LISTING"
+        ],
+        "cautions": [
+          "SPARSE_HISTORY",
+          "NO_STRONG_CORROBORATING_EVIDENCE"
+        ],
+        "can_create_buy": false,
+        "fair_value_aud": null
+      },
+      "opportunity_status": "INSUFFICIENT_SOLD_COMPS"
+    },
+    {
+      "source": "urbanempire",
+      "external_id": "8438224453821",
+      "url": "https://urbanempirecollectables.com/products/derrick-henry-2024-panini-donruss-optic-uptowns-ssp",
+      "image_url": "https://cdn.shopify.com/s/files/1/0599/1199/5581/files/7cccd5f5-9e7b-40b1-976a-a4d4b8be83f7.jpg?v=1786011258",
+      "title": "Derrick Henry 2024 Panini Donruss Optic Uptowns SSP",
+      "sport": "NFL",
+      "asking_price": 249.0,
+      "shipping": 0.0,
+      "currency": "AUD",
+      "landed_aud": 249.0,
+      "identity_quality": 0.7,
+      "identity": {
+        "player": "Derrick Henry",
+        "year": "2024",
+        "brand": "Panini Donruss Optic",
+        "set_name": "Panini Donruss Optic",
+        "card_number": null,
+        "parallel": "SSP",
+        "serial_current": null,
+        "serial_total": null,
+        "grader": null,
+        "grade": null,
+        "autograph": false,
+        "memorabilia": false,
+        "rookie": false
+      },
+      "history": {
+        "status": "NEW_LISTING",
+        "first_seen_at": "2026-09-10T23:00:54.673512+00:00",
+        "last_seen_at": "2026-09-10T23:00:54.673512+00:00",
+        "age_days": 0,
+        "observation_count": 1,
+        "previous_price": null,
+        "current_price": 249.0,
+        "min_observed_price": 249.0,
+        "max_observed_price": 249.0,
+        "price_change_count": 0,
+        "price_drop_count": 0,
+        "price_increase_count": 0,
+        "price_change_amount": null,
+        "price_change_pct": null,
+        "latest_price_drop_pct": null,
+        "is_new": true,
+        "is_price_drop": false,
+        "is_price_increase": false,
+        "is_stale": false,
+        "is_relisted": false
+      },
+      "active_market_reference": {
+        "status": "NO_REFERENCE",
+        "accepted_count": null,
+        "exact_count": null,
+        "strong_count": null,
+        "stores_considered": null,
+        "stores_searched": null,
+        "lowest_aud": null,
+        "median_aud": null,
+        "trimmed_median_aud": null,
+        "discount_to_lowest_pct": null,
+        "discount_to_median_pct": null,
+        "confidence": 0.0
+      },
+      "sold_evidence": {
+        "status": "INSUFFICIENT_RECENT_COMPS",
+        "accepted_count": 0,
+        "exact_count": 0,
+        "strong_count": 0,
+        "fetched_count": 46
+      },
+      "valuation": {
+        "status": "INSUFFICIENT_RECENT_COMPS",
+        "fair_value_aud": null,
+        "edge_pct": null
+      },
+      "research": {
+        "score": 36.0,
+        "priority": "WATCH",
+        "reasons": [
+          "IDENTITY_READY_FOR_STRICT_COMP_RESEARCH",
+          "NEW_LISTING"
+        ],
+        "cautions": [
+          "SPARSE_HISTORY",
+          "NO_STRONG_CORROBORATING_EVIDENCE"
+        ],
+        "can_create_buy": false,
+        "fair_value_aud": null
+      },
+      "opportunity_status": "INSUFFICIENT_SOLD_COMPS"
+    },
+    {
+      "source": "cherry",
+      "external_id": "9093790007350",
+      "url": "https://www.cherrycollectables.com.au/products/2025-topps-finest-nfl-pat-surtain-ii-finest-auto-refractor-ps",
+      "image_url": "https://cdn.shopify.com/s/files/1/0263/9009/files/300726_425_fd38531b-aa83-4a28-8fd7-e35c281b3b2b.jpg?v=1785712452",
+      "title": "2025 Topps Finest NFL PAT SURTAIN II Finest Auto Refractor #PS",
+      "sport": "NFL",
+      "asking_price": 59.99,
+      "shipping": 0.0,
+      "currency": "AUD",
+      "landed_aud": 59.99,
+      "identity_quality": 0.84,
+      "identity": {
+        "player": "Pat Surtain II",
+        "year": "2025",
+        "brand": "Topps Finest",
+        "set_name": "Topps Finest",
+        "card_number": "PS",
+        "parallel": "Refractor",
+        "serial_current": null,
+        "serial_total": null,
+        "grader": null,
+        "grade": null,
+        "autograph": true,
+        "memorabilia": false,
+        "rookie": false
+      },
+      "history": {
+        "status": "NEW_LISTING",
+        "first_seen_at": "2026-09-10T23:00:54.673512+00:00",
+        "last_seen_at": "2026-09-10T23:00:54.673512+00:00",
+        "age_days": 0,
+        "observation_count": 1,
+        "previous_price": null,
+        "current_price": 59.99,
+        "min_observed_price": 59.99,
+        "max_observed_price": 59.99,
+        "price_change_count": 0,
+        "price_drop_count": 0,
+        "price_increase_count": 0,
+        "price_change_amount": null,
+        "price_change_pct": null,
+        "latest_price_drop_pct": null,
+        "is_new": true,
+        "is_price_drop": false,
+        "is_price_increase": false,
+        "is_stale": false,
+        "is_relisted": false
+      },
+      "active_market_reference": {
+        "status": "NO_REFERENCE",
+        "accepted_count": null,
+        "exact_count": null,
+        "strong_count": null,
+        "stores_considered": null,
+        "stores_searched": null,
+        "lowest_aud": null,
+        "median_aud": null,
+        "trimmed_median_aud": null,
+        "discount_to_lowest_pct": null,
+        "discount_to_median_pct": null,
+        "confidence": 0.0
+      },
+      "sold_evidence": {
+        "status": "INSUFFICIENT_RECENT_COMPS",
+        "accepted_count": 0,
+        "exact_count": 0,
+        "strong_count": 0,
+        "fetched_count": 0
+      },
+      "valuation": {
+        "status": "INSUFFICIENT_RECENT_COMPS",
+        "fair_value_aud": null,
+        "edge_pct": null
+      },
+      "research": {
+        "score": 38.5,
+        "priority": "WATCH",
+        "reasons": [
+          "IDENTITY_READY_FOR_STRICT_COMP_RESEARCH",
+          "NEW_LISTING"
+        ],
+        "cautions": [
+          "SPARSE_HISTORY",
+          "NO_STRONG_CORROBORATING_EVIDENCE"
+        ],
+        "can_create_buy": false,
+        "fair_value_aud": null
+      },
+      "opportunity_status": "INSUFFICIENT_SOLD_COMPS"
+    },
+    {
+      "source": "urbanempire",
+      "external_id": "8438228287677",
+      "url": "https://urbanempirecollectables.com/products/travis-kelce-2024-panini-absolute-kaboom-horizontal-ssp",
+      "image_url": "https://cdn.shopify.com/s/files/1/0599/1199/5581/files/a16a5b25-fb02-4210-be0e-a5e08e7d9c04.jpg?v=1786011629",
+      "title": "Travis Kelce 2024 Panini Absolute Kaboom! Horizontal SSP",
+      "sport": "NFL",
+      "asking_price": 659.0,
+      "shipping": 0.0,
+      "currency": "AUD",
+      "landed_aud": 659.0,
+      "identity_quality": 0.7,
+      "identity": {
+        "player": "Travis Kelce",
+        "year": "2024",
+        "brand": "Absolute",
+        "set_name": "Absolute",
+        "card_number": null,
+        "parallel": "SSP",
+        "serial_current": null,
+        "serial_total": null,
+        "grader": null,
+        "grade": null,
+        "autograph": false,
+        "memorabilia": false,
+        "rookie": false
+      },
+      "history": {
+        "status": "NEW_LISTING",
+        "first_seen_at": "2026-09-10T23:00:54.673512+00:00",
+        "last_seen_at": "2026-09-10T23:00:54.673512+00:00",
+        "age_days": 0,
+        "observation_count": 1,
+        "previous_price": null,
+        "current_price": 659.0,
+        "min_observed_price": 659.0,
+        "max_observed_price": 659.0,
+        "price_change_count": 0,
+        "price_drop_count": 0,
+        "price_increase_count": 0,
+        "price_change_amount": null,
+        "price_change_pct": null,
+        "latest_price_drop_pct": null,
+        "is_new": true,
+        "is_price_drop": false,
+        "is_price_increase": false,
+        "is_stale": false,
+        "is_relisted": false
+      },
+      "active_market_reference": {
+        "status": "NO_REFERENCE",
+        "accepted_count": null,
+        "exact_count": null,
+        "strong_count": null,
+        "stores_considered": null,
+        "stores_searched": null,
+        "lowest_aud": null,
+        "median_aud": null,
+        "trimmed_median_aud": null,
+        "discount_to_lowest_pct": null,
+        "discount_to_median_pct": null,
+        "confidence": 0.0
+      },
+      "sold_evidence": {
+        "status": "INSUFFICIENT_RECENT_COMPS",
+        "accepted_count": 0,
+        "exact_count": 0,
+        "strong_count": 0,
+        "fetched_count": 72
+      },
+      "valuation": {
+        "status": "INSUFFICIENT_RECENT_COMPS",
+        "fair_value_aud": null,
+        "edge_pct": null
+      },
+      "research": {
+        "score": 36.0,
+        "priority": "WATCH",
+        "reasons": [
+          "IDENTITY_READY_FOR_STRICT_COMP_RESEARCH",
+          "NEW_LISTING"
+        ],
+        "cautions": [
+          "SPARSE_HISTORY",
+          "NO_STRONG_CORROBORATING_EVIDENCE"
+        ],
+        "can_create_buy": false,
+        "fair_value_aud": null
+      },
+      "opportunity_status": "INSUFFICIENT_SOLD_COMPS"
+    },
+    {
+      "source": "urbanempire",
+      "external_id": "8493061111997",
+      "url": "https://urbanempirecollectables.com/products/2023-24-panini-phoenix-victor-wembanyama-rookie-256-teal-lazer-rc",
+      "image_url": "https://cdn.shopify.com/s/files/1/0599/1199/5581/files/IMG_3636.jpg?v=1788990615",
+      "title": "2023-24 Panini Phoenix Victor Wembanyama Rookie #256 Teal Lazer RC",
+      "sport": "NBA",
+      "asking_price": 59.0,
+      "shipping": 0.0,
+      "currency": "AUD",
+      "landed_aud": 59.0,
+      "identity_quality": 0.84,
+      "identity": {
+        "player": "Victor Wembanyama",
+        "year": "2023-24",
+        "brand": "Panini Phoenix",
+        "set_name": "Panini Phoenix",
+        "card_number": "256",
+        "parallel": "Lazer",
+        "serial_current": null,
+        "serial_total": null,
+        "grader": null,
+        "grade": null,
+        "autograph": false,
+        "memorabilia": false,
+        "rookie": true
+      },
+      "history": {
+        "status": "NEW_LISTING",
+        "first_seen_at": "2026-09-10T23:01:19.558199+00:00",
+        "last_seen_at": "2026-09-10T23:01:19.558199+00:00",
+        "age_days": 0,
+        "observation_count": 1,
+        "previous_price": null,
+        "current_price": 59.0,
+        "min_observed_price": 59.0,
+        "max_observed_price": 59.0,
+        "price_change_count": 0,
+        "price_drop_count": 0,
+        "price_increase_count": 0,
+        "price_change_amount": null,
+        "price_change_pct": null,
+        "latest_price_drop_pct": null,
+        "is_new": true,
+        "is_price_drop": false,
+        "is_price_increase": false,
+        "is_stale": false,
+        "is_relisted": false
+      },
+      "active_market_reference": {
+        "status": "NO_REFERENCE",
+        "accepted_count": null,
+        "exact_count": null,
+        "strong_count": null,
+        "stores_considered": null,
+        "stores_searched": null,
+        "lowest_aud": null,
+        "median_aud": null,
+        "trimmed_median_aud": null,
+        "discount_to_lowest_pct": null,
+        "discount_to_median_pct": null,
+        "confidence": 0.0
+      },
+      "sold_evidence": {
+        "status": "INSUFFICIENT_RECENT_COMPS",
+        "accepted_count": 1,
+        "exact_count": 1,
+        "strong_count": 0,
+        "fetched_count": 101
+      },
+      "valuation": {
+        "status": "INSUFFICIENT_RECENT_COMPS",
+        "fair_value_aud": null,
+        "edge_pct": null
+      },
+      "research": {
+        "score": 38.5,
+        "priority": "WATCH",
+        "reasons": [
+          "IDENTITY_READY_FOR_STRICT_COMP_RESEARCH",
+          "NEW_LISTING"
+        ],
+        "cautions": [
+          "SPARSE_HISTORY",
+          "NO_STRONG_CORROBORATING_EVIDENCE"
+        ],
+        "can_create_buy": false,
+        "fair_value_aud": null
+      },
+      "opportunity_status": "INSUFFICIENT_SOLD_COMPS"
+    },
+    {
+      "source": "urbanempire",
+      "external_id": "8481304248509",
+      "url": "https://urbanempirecollectables.com/products/2017-18-panini-select-jayson-tatum-concourse-rookie-93-silver-prizm",
+      "image_url": "https://cdn.shopify.com/s/files/1/0599/1199/5581/files/IMG_3477.jpg?v=1788303387",
+      "title": "2017-18 Panini Select Jayson Tatum Concourse Rookie #93 Silver Prizm",
+      "sport": "NBA",
+      "asking_price": 89.0,
+      "shipping": 0.0,
+      "currency": "AUD",
+      "landed_aud": 89.0,
+      "identity_quality": 0.84,
+      "identity": {
+        "player": "Jayson Tatum",
+        "year": "2017-18",
+        "brand": "Panini Select",
+        "set_name": "Panini Select",
+        "card_number": "93",
+        "parallel": "Silver Prizm",
+        "serial_current": null,
+        "serial_total": null,
+        "grader": null,
+        "grade": null,
+        "autograph": false,
+        "memorabilia": false,
+        "rookie": true
+      },
+      "history": {
+        "status": "NEW_LISTING",
+        "first_seen_at": "2026-09-10T23:01:19.558199+00:00",
+        "last_seen_at": "2026-09-10T23:01:19.558199+00:00",
+        "age_days": 0,
+        "observation_count": 1,
+        "previous_price": null,
+        "current_price": 89.0,
+        "min_observed_price": 89.0,
+        "max_observed_price": 89.0,
+        "price_change_count": 0,
+        "price_drop_count": 0,
+        "price_increase_count": 0,
+        "price_change_amount": null,
+        "price_change_pct": null,
+        "latest_price_drop_pct": null,
+        "is_new": true,
+        "is_price_drop": false,
+        "is_price_increase": false,
+        "is_stale": false,
+        "is_relisted": false
+      },
+      "active_market_reference": {
+        "status": "NO_REFERENCE",
+        "accepted_count": null,
+        "exact_count": null,
+        "strong_count": null,
+        "stores_considered": null,
+        "stores_searched": null,
+        "lowest_aud": null,
+        "median_aud": null,
+        "trimmed_median_aud": null,
+        "discount_to_lowest_pct": null,
+        "discount_to_median_pct": null,
+        "confidence": 0.0
+      },
+      "sold_evidence": {
+        "status": "INSUFFICIENT_RECENT_COMPS",
+        "accepted_count": 0,
+        "exact_count": 0,
+        "strong_count": 0,
+        "fetched_count": 60
+      },
+      "valuation": {
+        "status": "INSUFFICIENT_RECENT_COMPS",
+        "fair_value_aud": null,
+        "edge_pct": null
+      },
+      "research": {
+        "score": 38.5,
+        "priority": "WATCH",
+        "reasons": [
+          "IDENTITY_READY_FOR_STRICT_COMP_RESEARCH",
+          "NEW_LISTING"
+        ],
+        "cautions": [
+          "SPARSE_HISTORY",
+          "NO_STRONG_CORROBORATING_EVIDENCE"
+        ],
+        "can_create_buy": false,
+        "fair_value_aud": null
+      },
+      "opportunity_status": "INSUFFICIENT_SOLD_COMPS"
+    },
+    {
+      "source": "urbanempire",
+      "external_id": "8481300971709",
+      "url": "https://urbanempirecollectables.com/products/2019-20-panini-prizm-kobe-bryant-8-red-white-blue-prizm",
+      "image_url": "https://cdn.shopify.com/s/files/1/0599/1199/5581/files/IMG_3475.jpg?v=1788303080",
+      "title": "2019-20 Panini Prizm Kobe Bryant #8 Red White Blue Prizm",
+      "sport": "NBA",
+      "asking_price": 99.0,
+      "shipping": 0.0,
+      "currency": "AUD",
+      "landed_aud": 99.0,
+      "identity_quality": 0.8,
+      "identity": {
+        "player": "Kobe Bryant",
+        "year": "2019-20",
+        "brand": "Panini Prizm",
+        "set_name": "Panini Prizm",
+        "card_number": "8",
+        "parallel": "Red White Blue",
+        "serial_current": null,
+        "serial_total": null,
+        "grader": null,
+        "grade": null,
+        "autograph": false,
+        "memorabilia": false,
+        "rookie": false
+      },
+      "history": {
+        "status": "NEW_LISTING",
+        "first_seen_at": "2026-09-10T23:01:19.558199+00:00",
+        "last_seen_at": "2026-09-10T23:01:19.558199+00:00",
+        "age_days": 0,
+        "observation_count": 1,
+        "previous_price": null,
+        "current_price": 99.0,
+        "min_observed_price": 99.0,
+        "max_observed_price": 99.0,
+        "price_change_count": 0,
+        "price_drop_count": 0,
+        "price_increase_count": 0,
+        "price_change_amount": null,
+        "price_change_pct": null,
+        "latest_price_drop_pct": null,
+        "is_new": true,
+        "is_price_drop": false,
+        "is_price_increase": false,
+        "is_stale": false,
+        "is_relisted": false
+      },
+      "active_market_reference": {
+        "status": "NO_REFERENCE",
+        "accepted_count": null,
+        "exact_count": null,
+        "strong_count": null,
+        "stores_considered": null,
+        "stores_searched": null,
+        "lowest_aud": null,
+        "median_aud": null,
+        "trimmed_median_aud": null,
+        "discount_to_lowest_pct": null,
+        "discount_to_median_pct": null,
+        "confidence": 0.0
+      },
+      "sold_evidence": {
+        "status": "INSUFFICIENT_RECENT_COMPS",
+        "accepted_count": 0,
+        "exact_count": 0,
+        "strong_count": 0,
+        "fetched_count": 100
+      },
+      "valuation": {
+        "status": "INSUFFICIENT_RECENT_COMPS",
+        "fair_value_aud": null,
+        "edge_pct": null
+      },
+      "research": {
+        "score": 37.7,
+        "priority": "WATCH",
+        "reasons": [
+          "IDENTITY_READY_FOR_STRICT_COMP_RESEARCH",
+          "NEW_LISTING"
+        ],
+        "cautions": [
+          "SPARSE_HISTORY",
+          "NO_STRONG_CORROBORATING_EVIDENCE"
+        ],
+        "can_create_buy": false,
+        "fair_value_aud": null
+      },
+      "opportunity_status": "INSUFFICIENT_SOLD_COMPS"
+    },
+    {
+      "source": "urbanempire",
+      "external_id": "8485589090493",
+      "url": "https://urbanempirecollectables.com/products/2023-24-topps-chrome-victor-wembanyama-youthquake-yq-1-refractor-rc",
+      "image_url": "https://cdn.shopify.com/s/files/1/0599/1199/5581/files/IMG_3518.jpg?v=1788476658",
+      "title": "2023-24 Topps Chrome Victor Wembanyama Youthquake #YQ-1 Refractor RC",
+      "sport": "NBA",
+      "asking_price": 299.0,
+      "shipping": 0.0,
+      "currency": "AUD",
+      "landed_aud": 299.0,
+      "identity_quality": 0.84,
+      "identity": {
+        "player": "Victor Wembanyama",
+        "year": "2023-24",
+        "brand": "Topps Chrome",
+        "set_name": "Topps Chrome",
+        "card_number": "YQ-1",
+        "parallel": "Refractor",
+        "serial_current": null,
+        "serial_total": null,
+        "grader": null,
+        "grade": null,
+        "autograph": false,
+        "memorabilia": false,
+        "rookie": true
+      },
+      "history": {
+        "status": "NEW_LISTING",
+        "first_seen_at": "2026-09-10T23:01:19.558199+00:00",
+        "last_seen_at": "2026-09-10T23:01:19.558199+00:00",
+        "age_days": 0,
+        "observation_count": 1,
+        "previous_price": null,
+        "current_price": 299.0,
+        "min_observed_price": 299.0,
+        "max_observed_price": 299.0,
+        "price_change_count": 0,
+        "price_drop_count": 0,
+        "price_increase_count": 0,
+        "price_change_amount": null,
+        "price_change_pct": null,
+        "latest_price_drop_pct": null,
+        "is_new": true,
+        "is_price_drop": false,
+        "is_price_increase": false,
+        "is_stale": false,
+        "is_relisted": false
+      },
+      "active_market_reference": {
+        "status": "NO_REFERENCE",
+        "accepted_count": null,
+        "exact_count": null,
+        "strong_count": null,
+        "stores_considered": null,
+        "stores_searched": null,
+        "lowest_aud": null,
+        "median_aud": null,
+        "trimmed_median_aud": null,
+        "discount_to_lowest_pct": null,
+        "discount_to_median_pct": null,
+        "confidence": 0.0
+      },
+      "sold_evidence": {
+        "status": "INSUFFICIENT_RECENT_COMPS",
+        "accepted_count": 0,
+        "exact_count": 0,
+        "strong_count": 0,
+        "fetched_count": 100
+      },
+      "valuation": {
+        "status": "INSUFFICIENT_RECENT_COMPS",
+        "fair_value_aud": null,
+        "edge_pct": null
+      },
+      "research": {
+        "score": 38.5,
+        "priority": "WATCH",
+        "reasons": [
+          "IDENTITY_READY_FOR_STRICT_COMP_RESEARCH",
+          "NEW_LISTING"
+        ],
+        "cautions": [
+          "SPARSE_HISTORY",
+          "NO_STRONG_CORROBORATING_EVIDENCE"
+        ],
+        "can_create_buy": false,
+        "fair_value_aud": null
+      },
+      "opportunity_status": "INSUFFICIENT_SOLD_COMPS"
+    },
+    {
+      "source": "cherry",
+      "external_id": "7978384850998",
+      "url": "https://www.cherrycollectables.com.au/products/2025-26-topps-cedric-coward-comic-court-rookie-ssp-20",
+      "image_url": "https://cdn.shopify.com/s/files/1/0263/9009/files/271025_186_aa3d5945-bce9-4a3e-8c02-a535cb2bcb96.jpg?v=1761696876",
+      "title": "2025-26 Topps CEDRIC COWARD Comic Court Rookie SSP #20",
+      "sport": "NBA",
+      "asking_price": 399.99,
+      "shipping": 0.0,
+      "currency": "AUD",
+      "landed_aud": 399.99,
+      "identity_quality": 0.84,
+      "identity": {
+        "player": "Cedric Coward",
+        "year": "2025-26",
+        "brand": "Topps",
+        "set_name": "Topps",
+        "card_number": "20",
+        "parallel": "Comic Court",
+        "serial_current": null,
+        "serial_total": null,
+        "grader": null,
+        "grade": null,
+        "autograph": false,
+        "memorabilia": false,
+        "rookie": true
+      },
+      "history": {
+        "status": "NEW_LISTING",
+        "first_seen_at": "2026-09-10T23:01:19.558199+00:00",
+        "last_seen_at": "2026-09-10T23:01:19.558199+00:00",
+        "age_days": 0,
+        "observation_count": 1,
+        "previous_price": null,
+        "current_price": 399.99,
+        "min_observed_price": 399.99,
+        "max_observed_price": 399.99,
+        "price_change_count": 0,
+        "price_drop_count": 0,
+        "price_increase_count": 0,
+        "price_change_amount": null,
+        "price_change_pct": null,
+        "latest_price_drop_pct": null,
+        "is_new": true,
+        "is_price_drop": false,
+        "is_price_increase": false,
+        "is_stale": false,
+        "is_relisted": false
+      },
+      "active_market_reference": {
+        "status": "NO_REFERENCE",
+        "accepted_count": null,
+        "exact_count": null,
+        "strong_count": null,
+        "stores_considered": null,
+        "stores_searched": null,
+        "lowest_aud": null,
+        "median_aud": null,
+        "trimmed_median_aud": null,
+        "discount_to_lowest_pct": null,
+        "discount_to_median_pct": null,
+        "confidence": 0.0
+      },
+      "sold_evidence": {
+        "status": "INSUFFICIENT_RECENT_COMPS",
+        "accepted_count": 0,
+        "exact_count": 0,
+        "strong_count": 0,
+        "fetched_count": 7
+      },
+      "valuation": {
+        "status": "INSUFFICIENT_RECENT_COMPS",
+        "fair_value_aud": null,
+        "edge_pct": null
+      },
+      "research": {
+        "score": 38.5,
+        "priority": "WATCH",
+        "reasons": [
+          "IDENTITY_READY_FOR_STRICT_COMP_RESEARCH",
+          "NEW_LISTING"
+        ],
+        "cautions": [
+          "SPARSE_HISTORY",
+          "NO_STRONG_CORROBORATING_EVIDENCE"
+        ],
+        "can_create_buy": false,
+        "fair_value_aud": null
+      },
+      "opportunity_status": "INSUFFICIENT_SOLD_COMPS"
+    }
+  ]
 }
