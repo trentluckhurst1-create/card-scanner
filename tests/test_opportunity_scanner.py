@@ -532,7 +532,7 @@ def test_multi_store_uses_one_shared_sold_query_budget():
     )
 
     assert summary.fetched_listings == 2
-    assert summary.candidates_considered == 2
+    assert summary.candidates_considered == 1
     assert summary.candidates_scanned == 1
     assert summary.sold_queries_used == 2
     assert summary.query_budget == 2
@@ -684,16 +684,18 @@ def test_multi_store_scan_reuses_one_reference_pool_for_candidates():
     assert sportscardstore.calls == [("NBA", "", 10)]
     assert gimko.calls == [("NBA", "", 10)]
     assert urban.calls == [("NBA", "", 10)]
-    assert summary.candidates_scanned == 2
-    assert summary.sold_queries_used == 4
-    assert all(
-        result.cross_store_reference is not None
-        for result in summary.results
-    )
+    assert summary.fetched_listings == 4
+    assert summary.candidates_considered == 1
+    assert summary.candidates_scanned == 1
+    assert summary.sold_queries_used == 2
+    assert len(provider.calls) == 2
+    assert len(summary.results) == 1
+    assert summary.results[0].cross_store_reference is not None
     assert (
         summary.results[0].cross_store_reference.status
         is MarketReferenceStatus.REFERENCE_AVAILABLE
     )
+    assert summary.results[0].cross_store_reference.matched_listing_count == 3
 
 
 def test_multi_store_reference_pool_excludes_own_and_same_store_items():
@@ -974,3 +976,71 @@ def test_scan_result_exposes_underdescription_assessment():
     )
 
     assert result.opportunity.status not in {"BUY", "STRONG_BUY"}
+
+def test_candidate_budget_deduplicates_serial_numerator_family():
+    same_family_expensive = listing(
+        "camporeale-39",
+        "AFL",
+        "2025 Select AFL Seamless BEN CAMPOREALE "
+        "Rookie Badge Signature Auto 39/70 #43",
+        price=129.99,
+    )
+    same_family_cheaper = listing(
+        "camporeale-42",
+        "AFL",
+        "2025 Select AFL Seamless BEN CAMPOREALE "
+        "Rookie Badge Signature Auto 42/70 #43",
+        price=119.99,
+    )
+    different_family = listing(
+        "nicholls-48",
+        "AFL",
+        "2025 Select AFL Seamless CHARLIE NICHOLLS "
+        "Rookie Badge Signature Auto 48/70 #34",
+        price=69.99,
+    )
+
+    provider = QueryProvider()
+
+    summary = scan_cherry_opportunities(
+        cherry_source=FakeCherry(
+            {
+                "AFL": [
+                    same_family_expensive,
+                    same_family_cheaper,
+                    different_family,
+                ]
+            }
+        ),
+        sold_provider=provider,
+        sport="AFL",
+        max_candidates_per_sport=2,
+        max_sold_queries=4,
+        as_of=AS_OF,
+    )
+
+    assert summary.fetched_listings == 3
+    assert summary.candidates_considered == 2
+    assert summary.candidates_scanned == 2
+    assert summary.sold_queries_used == 4
+    assert len(provider.calls) == 4
+
+    researched_players = [
+        query
+        for _sport, query, _limit in provider.calls
+        if query in {"Ben Camporeale", "Charlie Nicholls"}
+    ]
+
+    assert "Ben Camporeale" in researched_players
+    assert "Charlie Nicholls" in researched_players
+
+    ben_results = [
+        result
+        for result in summary.results
+        if result.listing.identity is not None
+        and result.listing.identity.player == "Ben Camporeale"
+    ]
+
+    assert len(ben_results) == 1
+    assert ben_results[0].listing.external_id == "camporeale-42"
+    assert ben_results[0].listing.price == 119.99

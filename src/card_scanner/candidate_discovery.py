@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 
-from .comp_key import comp_quality
+from .comp_key import comp_quality, identity_signature
 from .listing_history import ListingHistoryAssessment
 from .models import Listing
 from .sold_comp_engine import MIN_SOLD_COMP_IDENTITY_QUALITY
@@ -200,3 +200,160 @@ def rank_candidates(
     ]
 
     return sorted(assessments, key=candidate_discovery_sort_key)
+@dataclass(frozen=True)
+class CandidateResearchFamily:
+    """
+    One valuation identity family competing for sold-research budget.
+
+    The family key uses the existing canonical identity_signature().
+    Serial numerator is intentionally excluded by that signature while
+    serial denominator, parallel, grade and other valuation attributes
+    remain identity-bearing.
+
+    Asking price is research-allocation context only. It is never fair
+    value and cannot create BUY.
+    """
+
+    family_key: str
+    representative: CandidateDiscoveryAssessment
+    member_count: int
+    lowest_landed_aud: float
+    allocation_score: float
+
+    @property
+    def can_create_buy(self) -> bool:
+        return False
+
+    @property
+    def fair_value_aud(self) -> None:
+        return None
+
+
+def _listing_landed_aud_for_research(listing: Listing) -> float:
+    """
+    Research-only capital-at-risk proxy.
+
+    Candidate Discovery currently operates on AU store listings. This
+    helper deliberately does not perform FX conversion and must not be
+    used as valuation evidence.
+    """
+
+    if listing.currency.upper() != "AUD":
+        return float("inf")
+
+    return max(0.0, float(listing.price) + float(listing.shipping or 0.0))
+
+
+def _capital_efficiency_points(landed_aud: float) -> float:
+    """
+    Small bounded research-priority bonus only.
+
+    Lower capital at risk can justify spending scarce sold-comp research
+    earlier, but price alone must never dominate identity quality.
+    """
+
+    if landed_aud <= 25.0:
+        return 8.0
+    if landed_aud <= 50.0:
+        return 7.0
+    if landed_aud <= 100.0:
+        return 6.0
+    if landed_aud <= 200.0:
+        return 4.0
+    if landed_aud <= 500.0:
+        return 2.0
+    if landed_aud <= 1000.0:
+        return 1.0
+    return 0.0
+
+
+def candidate_research_families(
+    assessments: list[CandidateDiscoveryAssessment],
+) -> list[CandidateResearchFamily]:
+    """
+    Collapse sold-comp-ready candidates to canonical valuation families.
+
+    This function allocates research attention only. It does not value
+    cards, consume sold evidence, weaken matching, or create BUY.
+    """
+
+    grouped: dict[str, list[CandidateDiscoveryAssessment]] = {}
+
+    for assessment in assessments:
+        if not assessment.sold_comp_ready:
+            continue
+
+        if assessment.discovery_status == "SKIP":
+            continue
+
+        identity = assessment.listing.identity
+        if identity is None:
+            continue
+
+        key = identity_signature(identity)
+        if not key:
+            continue
+
+        grouped.setdefault(key, []).append(assessment)
+
+    families: list[CandidateResearchFamily] = []
+
+    for key, members in grouped.items():
+        ordered = sorted(
+            members,
+            key=lambda row: (
+                _listing_landed_aud_for_research(row.listing),
+                candidate_discovery_sort_key(row),
+            ),
+        )
+
+        representative = ordered[0]
+        lowest_landed = _listing_landed_aud_for_research(
+            representative.listing
+        )
+
+        allocation_score = min(
+            100.0,
+            representative.discovery_score
+            + _capital_efficiency_points(lowest_landed),
+        )
+
+        families.append(
+            CandidateResearchFamily(
+                family_key=key,
+                representative=representative,
+                member_count=len(members),
+                lowest_landed_aud=lowest_landed,
+                allocation_score=allocation_score,
+            )
+        )
+
+    families.sort(
+        key=lambda family: (
+            -family.allocation_score,
+            -family.representative.identity_quality,
+            family.lowest_landed_aud,
+            family.family_key,
+        )
+    )
+
+    return families
+
+
+def allocate_research_candidates(
+    assessments: list[CandidateDiscoveryAssessment],
+    limit: int,
+) -> list[CandidateDiscoveryAssessment]:
+    """
+    Return at most one representative per canonical valuation family.
+    """
+
+    if limit <= 0:
+        return []
+
+    families = candidate_research_families(assessments)
+
+    return [
+        family.representative
+        for family in families[:limit]
+    ]

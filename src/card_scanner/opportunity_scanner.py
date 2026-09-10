@@ -6,8 +6,8 @@ from datetime import datetime
 from typing import Protocol
 
 from .candidate_discovery import (
+    allocate_research_candidates,
     assess_candidate_discovery,
-    candidate_discovery_sort_key,
 )
 from .comp_key import comp_quality
 from .listing_history import (
@@ -358,20 +358,19 @@ def scan_store_opportunities(
                 )
             )
 
-        discovery_assessments.sort(
-            key=candidate_discovery_sort_key
-        )
-
-        eligible: list[Listing] = []
-
         for discovery in discovery_assessments:
             if not discovery.sold_comp_ready:
                 insufficient_identity_count += 1
-                continue
 
-            eligible.append(discovery.listing)
+        research_candidates = allocate_research_candidates(
+            discovery_assessments,
+            max_candidates_per_sport,
+        )
 
-        selected = eligible[:max_candidates_per_sport]
+        selected = [
+            discovery.listing
+            for discovery in research_candidates
+        ]
         candidates_considered += len(selected)
 
         for listing in selected:
