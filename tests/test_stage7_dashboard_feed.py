@@ -7,10 +7,7 @@ from scripts.stage7_scan import build_parser
 
 
 def test_stage7_scan_defaults_to_persistent_history_and_market_feed(monkeypatch):
-    monkeypatch.setattr(
-        "sys.argv",
-        ["stage7_scan.py"],
-    )
+    monkeypatch.setattr("sys.argv", ["stage7_scan.py"])
     args = build_parser().parse_args()
 
     assert args.source == "all"
@@ -63,8 +60,21 @@ def test_live_dashboard_consumes_governed_market_feed():
     assert "latest.json?ts=" not in html
     assert "Research Queue" in html
     assert "Fair value unavailable until sold evidence passes governance." in html
-    assert "Active median" in html
+    assert "Family median" in html
     assert "not fair value" in html
+
+
+def test_dashboard_browses_full_market_catalogue_and_joins_research_safely():
+    html = Path("docs/index.html").read_text(encoding="utf-8")
+
+    assert "Full Market Catalogue" in html
+    assert "market_cards" in html
+    assert "function researchMap()" in html
+    assert "function catalogue()" in html
+    assert "NOT_RESEARCHED_IN_THIS_SCAN" in html
+    assert "Not researched this scan" in html
+    assert "no fair value or BUY signal is implied" in html
+    assert "full safe active catalogue" in html
 
 
 def test_research_console_supports_store_sort_and_history_signals():
