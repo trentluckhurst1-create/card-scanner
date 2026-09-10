@@ -82,6 +82,19 @@ def test_research_console_supports_store_sort_and_history_signals():
     assert "Sold evidence is governed separately" in html
 
 
+def test_dashboard_exposes_strict_cross_store_matches_without_calling_them_fair_value():
+    html = Path("docs/index.html").read_text(encoding="utf-8")
+
+    assert "Cross-Store Matches" in html
+    assert 'id="familyRows"' in html
+    assert 'id="familyCount"' in html
+    assert "STRICT_STRUCTURED_IDENTITY" in html
+    assert "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE" in html
+    assert "These are active asking-price comparisons only — never fair value." in html
+    assert "strictFamilyKey" in html
+    assert "cross_store_families" in html
+
+
 def test_active_store_strip_does_not_misrepresent_ebay_as_acquisition_store():
     html = Path("docs/index.html").read_text(encoding="utf-8")
     store_strip = html.split('<div class="store-strip">', 1)[1].split("</div>", 1)[0]
