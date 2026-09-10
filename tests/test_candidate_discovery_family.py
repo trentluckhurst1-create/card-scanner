@@ -132,6 +132,26 @@ def test_price_only_changes_research_priority_not_fair_value():
     assert families[0].can_create_buy is False
 
 
+def test_sold_research_prioritizes_lower_friction_identity():
+    restrictive = assessment(
+        "restrictive",
+        "2025 Select AFL Seamless BEN CAMPOREALE "
+        "Rookie Badge Signature Auto Black 39/70 #43 PSA 10",
+        50.0,
+    )
+    simpler = assessment(
+        "simpler",
+        "2023-24 Panini Prizm VICTOR WEMBANYAMA Silver Rookie #136",
+        50.0,
+    )
+
+    families = candidate_research_families([restrictive, simpler])
+
+    assert families[0].representative.listing.external_id == "simpler"
+    assert families[0].fair_value_aud is None
+    assert families[0].can_create_buy is False
+
+
 def test_non_sold_ready_candidate_cannot_enter_research_budget():
     weak = assessment(
         "weak",

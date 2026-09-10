@@ -4,7 +4,7 @@ from dataclasses import dataclass
 
 from .comp_key import comp_quality, identity_signature
 from .listing_history import ListingHistoryAssessment
-from .models import Listing
+from .models import CardIdentity, Listing
 from .sold_comp_engine import MIN_SOLD_COMP_IDENTITY_QUALITY
 from .underdescription import (
     UnderdescriptionAssessment,
@@ -268,6 +268,35 @@ def _capital_efficiency_points(landed_aud: float) -> float:
     return 0.0
 
 
+def _sold_research_friction_points(identity: CardIdentity) -> float:
+    """
+    Estimate how much scarce sold-query budget an identity is likely
+    to burn before reaching exact/strong comp depth.
+
+    This is allocation-only. It does not change sold readiness,
+    strict matching, valuation, or BUY governance.
+    """
+
+    penalty = 0.0
+
+    if identity.grader or identity.grade is not None:
+        penalty += 18.0
+
+    if identity.serial_total is not None:
+        penalty += 14.0
+
+    if identity.autograph:
+        penalty += 10.0
+
+    if identity.memorabilia:
+        penalty += 8.0
+
+    if identity.parallel:
+        penalty += 6.0
+
+    return penalty
+
+
 def candidate_research_families(
     assessments: list[CandidateDiscoveryAssessment],
 ) -> list[CandidateResearchFamily]:
@@ -309,6 +338,7 @@ def candidate_research_families(
         )
 
         representative = ordered[0]
+        identity = representative.listing.identity
         lowest_landed = _listing_landed_aud_for_research(
             representative.listing
         )
@@ -318,6 +348,12 @@ def candidate_research_families(
             representative.discovery_score
             + _capital_efficiency_points(lowest_landed),
         )
+        if identity is not None:
+            allocation_score = max(
+                0.0,
+                allocation_score
+                - _sold_research_friction_points(identity),
+            )
 
         families.append(
             CandidateResearchFamily(
