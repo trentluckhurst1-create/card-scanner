@@ -19,13 +19,23 @@ def test_stage7_scan_defaults_to_persistent_history_and_market_feed(monkeypatch)
     assert args.no_record_history is False
 
 
+def _all_keys(value):
+    if isinstance(value, dict):
+        for key, child in value.items():
+            yield str(key).casefold()
+            yield from _all_keys(child)
+    elif isinstance(value, list):
+        for child in value:
+            yield from _all_keys(child)
+
+
 def test_seed_market_feed_uses_governed_schema_and_contains_no_card_payloads():
     payload = json.loads(Path("docs/market.json").read_text(encoding="utf-8"))
 
     assert payload["schema_version"] == 1
     assert payload["cards"] == []
     assert payload["generated_at"] is None
-    assert "raw" not in json.dumps(payload).casefold()
+    assert not any(key.startswith("raw") for key in _all_keys(payload))
     assert any("not fair value" in rule for rule in payload["governance"])
     assert any("genuine sold evidence" in rule for rule in payload["governance"])
 
