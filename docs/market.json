@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "generated_at": null,
+  "stage": "Stage 7 — Persistent Market Monitoring",
+  "metrics": {
+    "fetched_listings": 0,
+    "candidates_scanned": 0,
+    "valued": 0,
+    "strong_buy": 0,
+    "buy": 0,
+    "watch": 0,
+    "insufficient_sold_comps": 0,
+    "insufficient_identity": 0,
+    "sold_queries_used": 0,
+    "history_observed": 0,
+    "history_new": 0,
+    "history_price_drops": 0,
+    "history_price_increases": 0,
+    "history_relisted": 0,
+    "history_stale": 0
+  },
+  "governance": [
+    "Active asks are comparison evidence only, not fair value",
+    "BUY and STRONG_BUY require genuine sold evidence",
+    "Minimum sold-comp gate remains unchanged",
+    "Research priority cannot manufacture fair value",
+    "Raw sold API responses are not persisted or exported"
+  ],
+  "cards": []
+}
