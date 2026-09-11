@@ -47,7 +47,30 @@ def test_the_hobby_collects_in_stock_single_and_rejects_sealed_box():
     assert row.price == 25.0
     assert row.identity.player
     assert row.identity.year
+    assert row.identity.card_number == "37"
     assert "/collections/nba/products.json" in client.calls[0][0]
+
+
+def test_the_hobby_recovers_alphanumeric_bare_card_number_before_grade():
+    client = FakeClient({
+        "products": [
+            product("1", "Trae Young 2018 Panini Select 22A PSA 9 Silver"),
+        ]
+    })
+    rows = TheHobbySource(client=client).search("NBA", limit=10)
+    assert len(rows) == 1
+    assert rows[0].identity.card_number == "22A"
+
+
+def test_the_hobby_does_not_promote_unanchored_numbers_to_card_number():
+    client = FakeClient({
+        "products": [
+            product("1", "Anthony Edwards 2021 Panini Prizm NBA 75th Prizm"),
+        ]
+    })
+    rows = TheHobbySource(client=client).search("NBA", limit=10)
+    assert len(rows) == 1
+    assert rows[0].identity.card_number is None
 
 
 def test_the_hobby_collection_handles_cover_current_card_scanner_sports():
