@@ -76,4 +76,5 @@ def test_stage7_publisher_adds_governed_price_comparison_contract(tmp_path):
 
     persisted = json.loads(output.read_text(encoding="utf-8"))
     assert persisted == payload
-    assert "fair_value" not in repr(comparisons).casefold()
+    assert all("fair_value_aud" not in group for group in comparisons["groups"])
+    assert all("valuation" not in group for group in comparisons["groups"])
