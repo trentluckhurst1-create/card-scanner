@@ -14,6 +14,7 @@ from card_scanner.dashboard_export import market_listing_to_dashboard_record
 from card_scanner.market_catalogue import MarketListingObservation
 from card_scanner.models import Listing
 from card_scanner.opportunity_scanner import SPORTS, MultiStoreSource, NamedStoreSource
+from card_scanner.sources.boop import BoopSource
 from card_scanner.sources.eastside import EastsideSource
 from card_scanner.sources.the_hobby import TheHobbySource
 
@@ -204,6 +205,7 @@ def cloud_active_store_source() -> MultiStoreSource:
         *source.stores,
         NamedStoreSource(name="The Hobby", source=TheHobbySource()),
         NamedStoreSource(name="Eastside Collectables", source=EastsideSource()),
+        NamedStoreSource(name="Boop Collectables", source=BoopSource()),
     ])
 
 
@@ -241,9 +243,6 @@ def main() -> int:
     parser.add_argument("--output", default="docs/active_market.json")
     args = parser.parse_args()
 
-    # Reuse one source graph across both passes. Source-specific in-memory caches
-    # (notably Cherry's Shopify page cache) therefore survive from the broad
-    # catalogue scan into targeted exact-overlap discovery.
     cloud_source = cloud_active_store_source()
     listings, stores_considered, stores_searched, errors = collect_active_market(
         limit_per_store_per_sport=max(1, args.limit_per_store_per_sport),
