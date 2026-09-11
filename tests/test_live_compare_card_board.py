@@ -16,6 +16,6 @@ def test_live_compare_renders_actual_listing_cards_from_market_feed():
     assert "SAME PRODUCT · DIFFERENT VARIANT" in html
     assert "PLAYER / YEAR CONTEXT" in html
     assert "Browse all cards" in html
-    assert "active asking price only" in html.lower()
+    assert "Active asks are comparison evidence only" in html
     assert "fair value" in html.lower()
     assert "BUY or STRONG BUY" in html
