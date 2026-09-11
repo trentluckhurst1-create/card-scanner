@@ -34,7 +34,7 @@ class FakeSource:
         return list(self.rows_by_query.get(query, []))[:limit]
 
 
-def test_targeted_discovery_finds_only_strict_exact_signature_match():
+def test_targeted_discovery_keeps_only_strict_exact_signature_match():
     target = listing("storea", "a1", player="Player One")
     store_b_seed = listing("storeb", "b-seed", player="Someone Else", card_number="9", parallel="Base")
     exact = listing("storeb", "b1", player="Player One")
@@ -56,13 +56,14 @@ def test_targeted_discovery_finds_only_strict_exact_signature_match():
 
     assert errors == []
     assert stats.targets == 1
-    assert stats.queries == 2
-    assert stats.added_cards == 2
+    assert stats.queries == 1
+    assert stats.added_cards == 1
     assert stats.exact_matches_discovered == 1
-    assert {row.external_id for row in rows} == {"a1", "b-seed", "b1", "b2"}
+    assert {row.external_id for row in rows} == {"a1", "b-seed", "b1"}
+    assert store_a.calls == []
 
 
-def test_different_parallel_never_counts_as_exact_discovery():
+def test_different_parallel_is_rejected_not_added():
     target = listing("storea", "a1", player="Player One", parallel="Silver")
     store_b_seed = listing("storeb", "b-seed", player="Someone Else", card_number="9", parallel="Base")
     different = listing("storeb", "b2", player="Player One", parallel="Red")
@@ -72,8 +73,41 @@ def test_different_parallel_never_counts_as_exact_discovery():
         NamedStoreSource("Store B", FakeSource("storeb", {"Player One": [different]})),
     ])
 
-    _, stats, _ = discover_exact_inventory(source, [target, store_b_seed], max_targets=1)
+    rows, stats, _ = discover_exact_inventory(source, [target, store_b_seed], max_targets=1)
     assert stats.exact_matches_discovered == 0
+    assert stats.added_cards == 0
+    assert {row.external_id for row in rows} == {"a1", "b-seed"}
+
+
+def test_multiple_exact_targets_for_same_player_share_one_store_query():
+    silver = listing("storea", "a1", player="Player One", card_number="100", parallel="Silver")
+    red = listing("storea", "a2", player="Player One", card_number="101", parallel="Red")
+    store_b_seed = listing("storeb", "b-seed", player="Someone Else", card_number="9", parallel="Base")
+    exact_silver = listing("storeb", "b1", player="Player One", card_number="100", parallel="Silver")
+    exact_red = listing("storeb", "b2", player="Player One", card_number="101", parallel="Red")
+    noise = listing("storeb", "b3", player="Player One", card_number="999", parallel="Gold")
+
+    store_a = FakeSource("storea", {})
+    store_b = FakeSource("storeb", {"Player One": [exact_silver, exact_red, noise]})
+    source = MultiStoreSource([
+        NamedStoreSource("Store A", store_a),
+        NamedStoreSource("Store B", store_b),
+    ])
+
+    rows, stats, errors = discover_exact_inventory(
+        source,
+        [silver, red, store_b_seed],
+        max_targets=2,
+        results_per_store=20,
+    )
+
+    assert errors == []
+    assert stats.targets == 2
+    assert stats.queries == 1
+    assert stats.added_cards == 2
+    assert stats.exact_matches_discovered == 2
+    assert store_b.calls == [("NBA", "Player One", 20)]
+    assert {row.external_id for row in rows} == {"a1", "a2", "b-seed", "b1", "b2"}
 
 
 def test_store_without_successful_broad_sport_is_not_targeted():
@@ -85,5 +119,5 @@ def test_store_without_successful_broad_sport_is_not_targeted():
     ])
 
     _, stats, _ = discover_exact_inventory(source, [target], max_targets=1)
-    assert stats.queries == 1
+    assert stats.queries == 0
     assert unavailable.calls == []
