@@ -14,6 +14,7 @@ from card_scanner.dashboard_export import market_listing_to_dashboard_record
 from card_scanner.market_catalogue import MarketListingObservation
 from card_scanner.models import Listing
 from card_scanner.opportunity_scanner import SPORTS, MultiStoreSource, NamedStoreSource
+from card_scanner.retrying_source import RetryingStoreSource
 from card_scanner.sources.boop import BoopSource
 from card_scanner.sources.eastside import EastsideSource
 from card_scanner.sources.the_hobby import TheHobbySource
@@ -195,18 +196,26 @@ def build_active_market_payload(
     }
 
 
+def _retry_store(store: NamedStoreSource) -> NamedStoreSource:
+    return NamedStoreSource(
+        name=store.name,
+        source=RetryingStoreSource(store.source, attempts=3, base_delay_seconds=0.4),
+    )
+
+
 def cloud_active_store_source() -> MultiStoreSource:
     """Return cloud-safe active acquisition sources without altering local research scope."""
     source, _ = opportunity_store_source("all")
     if not isinstance(source, MultiStoreSource):
         raise RuntimeError("Expected all-store MultiStoreSource")
 
-    return MultiStoreSource([
+    raw_stores = [
         *source.stores,
         NamedStoreSource(name="The Hobby", source=TheHobbySource()),
         NamedStoreSource(name="Eastside Collectables", source=EastsideSource()),
         NamedStoreSource(name="Boop Collectables", source=BoopSource()),
-    ])
+    ]
+    return MultiStoreSource([_retry_store(store) for store in raw_stores])
 
 
 def collect_active_market(
