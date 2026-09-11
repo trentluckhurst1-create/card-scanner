@@ -1,11 +1,13 @@
 from __future__ import annotations
 
+import re
 from typing import Final
 
 import httpx
+from bs4 import BeautifulSoup
 
 from ..identity import parse_identity
-from ..models import Listing
+from ..models import CardIdentity, Listing
 
 
 COLLECTION_BY_SPORT: Final[dict[str, str]] = {
@@ -14,6 +16,14 @@ COLLECTION_BY_SPORT: Final[dict[str, str]] = {
 }
 
 BASE_URL: Final[str] = "https://sportscardstore.com.au"
+
+# Sports Card Store often puts the catalogue/card number in Shopify body_html
+# even when the shorter storefront title omits it. Recovery is deliberately
+# strict: require explicit card-number wording and reject x/y serial syntax.
+DESCRIPTION_CARD_NUMBER_RE = re.compile(
+    r"\bcard\s*(?:#|no\.?\s*|number\s*#?\s*)([A-Z0-9][A-Z0-9\-.]*\d[A-Z0-9\-.]*)\b(?!\s*/)",
+    re.IGNORECASE,
+)
 
 
 class SportsCardStoreSource:
@@ -135,6 +145,11 @@ class SportsCardStoreSource:
                 if images:
                     image_url = images[0].get("src")
 
+                identity = self._recover_identity_from_product(
+                    parse_identity(title, sport),
+                    product=product,
+                )
+
                 listings.append(
                     Listing(
                         source=self.source_name,
@@ -153,10 +168,7 @@ class SportsCardStoreSource:
                             "Sports Card Store Australia"
                         ),
                         condition="Raw / Store Listing",
-                        identity=parse_identity(
-                            title,
-                            sport,
-                        ),
+                        identity=identity,
                     )
                 )
 
@@ -169,3 +181,27 @@ class SportsCardStoreSource:
             page += 1
 
         return listings[:limit]
+
+    @staticmethod
+    def _recover_identity_from_product(
+        identity: CardIdentity,
+        *,
+        product: dict,
+    ) -> CardIdentity:
+        if identity.card_number:
+            return identity
+
+        body_html = str(product.get("body_html") or "")
+        if not body_html.strip():
+            return identity
+
+        description = BeautifulSoup(body_html, "html.parser").get_text(" ", strip=True)
+        match = DESCRIPTION_CARD_NUMBER_RE.search(description)
+        if not match:
+            return identity
+
+        card_number = match.group(1).strip().upper()
+        if not card_number:
+            return identity
+
+        return identity.model_copy(update={"card_number": card_number})
