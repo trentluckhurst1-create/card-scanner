@@ -60,7 +60,7 @@ jobs:
           EBAY_CLIENT_ID: ${{ secrets.EBAY_CLIENT_ID }}
           EBAY_CLIENT_SECRET: ${{ secrets.EBAY_CLIENT_SECRET }}
           EBAY_MARKETPLACE_ID: EBAY_AU
-        run: python scripts/enrich_active_market_ebay.py --feed docs/active_market.json --max-targets 160 --results-per-target 200
+        run: python scripts/enrich_active_market_ebay.py --feed docs/active_market.json --max-targets 240 --results-per-target 75
       - name: Publish exact-card-only comparison feed
         run: python scripts/publish_exact_comparisons.py --feed docs/active_market.json --output docs/comparison.json
       - name: Audit live active-price comparisons

@@ -65,3 +65,16 @@ def test_eastside_is_nba_only_during_source_proving():
     assert source.search("MLB") == []
     assert source.search("AFL") == []
     assert client.calls == []
+
+
+def test_eastside_reuses_shopify_page_across_targeted_queries():
+    client = FakeClient({
+        "products": [
+            product("1", "1995-96 Topps Kevin Garnett 237 Rookie"),
+            product("2", "1995-96 Topps Michael Jordan 1"),
+        ]
+    })
+    source = EastsideSource(client=client)
+    source.search("NBA", query="Kevin Garnett", limit=10)
+    source.search("NBA", query="Michael Jordan", limit=10)
+    assert len(client.calls) == 1

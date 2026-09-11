@@ -19,10 +19,29 @@ class CLFoxSource:
     def __init__(self, client: httpx.Client | None = None) -> None:
         self._external_client = client is not None
         self.client = client or httpx.Client(timeout=30.0, follow_redirects=True)
+        # Exact discovery can issue many player queries against the same Shopify
+        # catalogue. Reuse each fetched page for the whole publisher run rather
+        # than hammering products.json repeatedly and triggering 429 responses.
+        self._page_cache: dict[int, list[dict]] = {}
 
     def close(self) -> None:
         if not self._external_client:
             self.client.close()
+
+    def _fetch_page(self, page: int) -> list[dict]:
+        cached = self._page_cache.get(int(page))
+        if cached is not None:
+            return cached
+        response = self.client.get(
+            f"{BASE_URL}/products.json",
+            params={"limit": 250, "page": page},
+        )
+        response.raise_for_status()
+        products = response.json().get("products") or []
+        if not isinstance(products, list):
+            raise RuntimeError("CLFox response did not contain a products list")
+        self._page_cache[int(page)] = products
+        return products
 
     def search(self, sport: str, query: str = "", limit: int = 50) -> list[Listing]:
         if sport.upper().strip() != "NBA":
@@ -32,9 +51,7 @@ class CLFoxSource:
         output: list[Listing] = []
         seen: set[str] = set()
         for page in range(1, 13):
-            response = self.client.get(f"{BASE_URL}/products.json", params={"limit": 250, "page": page})
-            response.raise_for_status()
-            products = response.json().get("products") or []
+            products = self._fetch_page(page)
             if not products:
                 break
             for product in products:
