@@ -22,13 +22,14 @@ class FakeClient:
         return FakeResponse(self.payload)
 
 
-def product(product_id, title, *, available=True, price="35.00"):
+def product(product_id, title, *, available=True, price="35.00", body_html=""):
     return {
         "id": product_id,
         "title": title,
         "handle": f"card-{product_id}",
         "variants": [{"available": available, "price": price}],
         "images": [{"src": f"https://img.test/{product_id}.jpg"}],
+        "body_html": body_html,
     }
 
 
@@ -47,6 +48,35 @@ def test_boop_collects_in_stock_nba_single():
     assert row.identity.player
     assert row.identity.year
     assert "/collections/nba-singles/products.json" in client.calls[0][0]
+
+
+def test_boop_recovers_explicit_card_number_from_description():
+    client = FakeClient({
+        "products": [
+            product(
+                "1",
+                "Darius Garland 2019-20 Panini Origins Black RC 1/1",
+                body_html="<p>2019-20 Panini Origins rookie. Card No. 35.</p>",
+            ),
+        ]
+    })
+    row = BoopSource(client=client).search("NBA", limit=10)[0]
+    assert row.identity.card_number == "35"
+
+
+def test_boop_description_recovery_rejects_unlabelled_and_serial_numbers():
+    unlabelled = product(
+        "1",
+        "Darius Garland 2019-20 Panini Origins Black RC 1/1",
+        body_html="<p>Origins 35 anniversary release.</p>",
+    )
+    serial = product(
+        "2",
+        "Darius Garland 2019-20 Panini Origins Black RC 1/1",
+        body_html="<p>Card #10/10 serial numbered.</p>",
+    )
+    rows = BoopSource(client=FakeClient({"products": [unlabelled, serial]})).search("NBA", limit=10)
+    assert all(row.identity.card_number is None for row in rows)
 
 
 def test_boop_routes_nfl_and_afl_collections():
