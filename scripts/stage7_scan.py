@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import json
 from pathlib import Path
 
 from card_scanner.cli import opportunity_store_source
@@ -75,6 +76,9 @@ def main() -> int:
         Path(args.dashboard_json),
         market_listings=market_listings,
     )
+    payload = json.loads(Path(output).read_text(encoding="utf-8"))
+    diagnostics = payload.get("identity_diagnostics") or {}
+    gap_counts = diagnostics.get("gap_counts") or {}
 
     print("CARD_SCANNER_STAGE7_SCAN=PASS")
     print(f"SOURCE={source_label}")
@@ -87,6 +91,24 @@ def main() -> int:
     print(f"STRONG_BUY={summary.strong_buy_count}")
     print(f"INSUFFICIENT_SOLD_COMPS={summary.insufficient_comps_count}")
     print(f"INSUFFICIENT_IDENTITY={summary.insufficient_identity_count}")
+    print(f"FAMILY_ELIGIBLE={diagnostics.get('family_eligible_count', 0)}")
+    print(f"FAMILY_INELIGIBLE={diagnostics.get('family_ineligible_count', 0)}")
+    print(f"FAMILY_ELIGIBLE_PCT={diagnostics.get('family_eligible_pct', 0.0)}")
+    for gap in (
+        "NO_IDENTITY",
+        "MISSING_PLAYER",
+        "MISSING_YEAR",
+        "MISSING_BRAND_OR_SET",
+        "MISSING_STRUCTURED_DISCRIMINATOR",
+    ):
+        print(f"IDENTITY_{gap}={gap_counts.get(gap, 0)}")
+    for source_row in diagnostics.get("by_source") or []:
+        source = str(source_row.get("source") or "UNKNOWN").upper().replace(" ", "_")
+        print(f"IDENTITY_SOURCE_{source}_LISTINGS={source_row.get('listing_count', 0)}")
+        print(f"IDENTITY_SOURCE_{source}_FAMILY_ELIGIBLE={source_row.get('family_eligible_count', 0)}")
+        print(f"IDENTITY_SOURCE_{source}_FAMILY_ELIGIBLE_PCT={source_row.get('family_eligible_pct', 0.0)}")
+        for gap, count in sorted((source_row.get("gap_counts") or {}).items()):
+            print(f"IDENTITY_SOURCE_{source}_{gap}={count}")
     print(f"HISTORY_OBSERVED={summary.history_observed_count}")
     print(f"HISTORY_NEW={summary.history_new_count}")
     print(f"HISTORY_UNCHANGED={summary.history_unchanged_count}")
@@ -100,6 +122,7 @@ def main() -> int:
     print(f"DASHBOARD_JSON={output}")
     print(f"PROVIDER_HTTP_QUERIES={provider.query_count}")
     print("ACTIVE_STORE_REFETCH_FOR_CATALOGUE=NO")
+    print("IDENTITY_DIAGNOSTICS_CAN_RELAX_GATES=NO")
     print("RAW_API_PERSISTENCE=NO")
     print("API_SOLD_ROWS_PERSISTED=0")
     print("API_SOLD_MATCHES_PERSISTED=0")
