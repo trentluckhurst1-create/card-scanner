@@ -18,6 +18,15 @@ class ExactDiscoveryStats:
     errors: int = 0
 
 
+@dataclass(frozen=True)
+class ExactTarget:
+    sport: str
+    player: str
+    year: str
+    signature: str
+    source_count: int
+
+
 def _text(value: object) -> str:
     return " ".join(str(value or "").casefold().split())
 
@@ -58,50 +67,53 @@ def _candidate_targets(
     listings: Iterable[Listing],
     *,
     max_targets: int,
-) -> list[tuple[str, str, str]]:
-    """Choose exact-ready player/year targets most likely to create new comparisons.
+) -> list[ExactTarget]:
+    """Choose strict exact-card signatures most likely to create comparisons.
 
-    The previous ranking spent discovery capacity first on player/year groups that
-    already appeared at multiple stores. For discovery, the highest-value targets
-    are exact-ready cards currently stranded at one source: finding one matching
-    copy elsewhere immediately creates a comparison group. We therefore rank
-    single-source player/year targets first, then by the amount of exact-ready
-    inventory available within that target.
+    Discovery used to spend one target on a broad player/year bucket. That wastes
+    capacity when a player owns dozens of distinct cards and it can add hundreds
+    of unrelated same-player listings. Instead, every target is one strict exact
+    signature. Signatures present at only one source rank first because finding
+    one copy elsewhere immediately creates a genuine cross-store comparison.
     """
-    exact_counts: dict[tuple[str, str, str], int] = defaultdict(int)
-    source_counts: dict[tuple[str, str, str], set[str]] = defaultdict(set)
-    labels: dict[tuple[str, str, str], str] = {}
+    sources_by_signature: dict[str, set[str]] = defaultdict(set)
+    labels: dict[str, tuple[str, str, str]] = {}
 
     for listing in listings:
         identity = listing.identity
         if identity is None or not identity.player or not identity.year:
             continue
-        if _eligible_signature(listing) is None:
+        signature = _eligible_signature(listing)
+        if not signature:
             continue
-        sport = str(listing.sport).upper()
-        player_key = _text(identity.player)
+        sport = str(listing.sport).upper().strip()
+        player = str(identity.player).strip()
         year = str(identity.year).strip()
-        if not sport or not player_key or not year:
+        if not sport or not player or not year:
             continue
-        key = (sport, player_key, year)
-        exact_counts[key] += 1
-        source_counts[key].add(_source(listing.source))
-        labels[key] = str(identity.player).strip()
+        sources_by_signature[signature].add(_source(listing.source))
+        labels.setdefault(signature, (sport, player, year))
 
     ranked = sorted(
-        exact_counts,
-        key=lambda key: (
-            0 if len(source_counts[key]) == 1 else 1,
-            -exact_counts[key],
-            len(source_counts[key]),
-            key[0],
-            labels[key].casefold(),
-            key[2],
+        sources_by_signature,
+        key=lambda sig: (
+            0 if len(sources_by_signature[sig]) == 1 else 1,
+            len(sources_by_signature[sig]),
+            labels[sig][0],
+            labels[sig][1].casefold(),
+            labels[sig][2],
+            sig,
         ),
     )
     return [
-        (sport, labels[(sport, player_key, year)], year)
-        for sport, player_key, year in ranked[: max(0, int(max_targets))]
+        ExactTarget(
+            sport=labels[sig][0],
+            player=labels[sig][1],
+            year=labels[sig][2],
+            signature=sig,
+            source_count=len(sources_by_signature[sig]),
+        )
+        for sig in ranked[: max(0, int(max_targets))]
     ]
 
 
@@ -112,13 +124,13 @@ def discover_exact_inventory(
     max_targets: int = 16,
     results_per_store: int = 100,
 ) -> tuple[list[Listing], ExactDiscoveryStats, list[str]]:
-    """Deep-search likely exact identities without weakening exact matching.
+    """Search retailers for strict target signatures without weakening identity.
 
-    For each selected player/year, query every store that successfully returned
-    at least one row for that sport in the broad scan. All discovered listings
-    are added to the normal catalogue, but an ``exact_matches_discovered`` count
-    increments only when a newly discovered row has the same strict canonical
-    exact signature as an existing row from another store.
+    Targets are exact signatures, but searches are cached by sport/player/year per
+    store. That lets one retailer request satisfy many cards for the same player.
+    Returned listings are retained only when their strict canonical signature is
+    one of the selected target signatures for that player/year. Broad same-player
+    inventory is rejected before it can bloat the live feed.
     """
     base = _dedupe(listings)
     targets = _candidate_targets(base, max_targets=max_targets)
@@ -138,6 +150,13 @@ def discover_exact_inventory(
         if sig:
             existing_signatures[sig].add(_source(row.source))
 
+    targets_by_query: dict[tuple[str, str, str], set[str]] = defaultdict(set)
+    player_labels: dict[tuple[str, str, str], str] = {}
+    for target in targets:
+        key = (target.sport, _text(target.player), target.year)
+        targets_by_query[key].add(target.signature)
+        player_labels[key] = target.player
+
     output = list(base)
     seen = {(_source(row.source), str(row.external_id)) for row in base}
     errors: list[str] = []
@@ -145,11 +164,16 @@ def discover_exact_inventory(
     added = 0
     discovered_signatures: set[str] = set()
 
-    for sport, player, year in targets:
-        player_key = _text(player)
+    for (sport, player_key, year), target_signatures in targets_by_query.items():
+        player = player_labels[(sport, player_key, year)]
         for store_token in sorted(successful_by_sport.get(sport, set())):
             store = stores_by_token.get(store_token)
             if store is None:
+                continue
+            # Skip the request only if this store already owns every target in
+            # this player/year query bucket. Otherwise one search may discover
+            # several stranded exact signatures at once.
+            if all(store_token in existing_signatures.get(sig, set()) for sig in target_signatures):
                 continue
             queries += 1
             try:
@@ -172,21 +196,22 @@ def discover_exact_inventory(
                     continue
                 if str(identity.year or "").strip() != year:
                     continue
+                sig = _eligible_signature(row)
+                if not sig or sig not in target_signatures:
+                    continue
 
-                key = (_source(row.source), str(row.external_id))
+                row_source = _source(row.source)
+                key = (row_source, str(row.external_id))
                 if key in seen:
                     continue
                 seen.add(key)
                 output.append(row)
                 added += 1
 
-                sig = _eligible_signature(row)
-                if not sig:
-                    continue
-                other_sources = existing_signatures.get(sig, set()) - {_source(row.source)}
+                other_sources = existing_signatures.get(sig, set()) - {row_source}
                 if other_sources:
                     discovered_signatures.add(sig)
-                existing_signatures[sig].add(_source(row.source))
+                existing_signatures[sig].add(row_source)
 
     return (
         output,
