@@ -6,21 +6,17 @@ def test_compare_route_uses_automated_active_market_page():
     assert "../live-compare.html" in route
 
 
-def test_live_compare_page_prefers_active_market_and_falls_back_to_governed_feed():
+def test_live_compare_page_uses_exact_comparison_feed_and_preserves_governance():
     html = (Path(__file__).resolve().parents[1] / "docs" / "live-compare.html").read_text(encoding="utf-8")
-    assert "fetchJson('active_market.json')" in html
-    assert "fetchJson('market.json')" in html
-    assert "automated active-market feed" in html
-    assert "governed local-feed fallback" in html
+    assert "comparison.json" in html
+    assert "g.comparison_type==='EXACT_CARD'" in html
     assert "Active asks are comparison evidence only" in html
-    assert "cannot create BUY or STRONG_BUY" in html
+    assert "cannot create BUY or STRONG BUY" in html
 
 
-def test_live_compare_page_exposes_source_health_and_price_columns():
+def test_live_compare_page_exposes_exact_price_columns_only():
     html = (Path(__file__).resolve().parents[1] / "docs" / "live-compare.html").read_text(encoding="utf-8")
-    for text in ("Cherry", "Sports Card Store", "Gimko", "Urban Empire", "Cheapest", "Next best", "Median", "Highest", "Price spread"):
+    for text in ("CHEAPEST", "Difference", "% above cheapest", "EXACT SAME CARD"):
         assert text in html
-    assert "unavailable to cloud scan" in html
-    assert "EXACT CARD" in html
-    assert "RELATED VARIANTS" in html
-    assert "PLAYER / YEAR" in html
+    assert "Different variants are deliberately not compared" in html
+    assert "All comparison types" not in html
