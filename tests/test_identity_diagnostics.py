@@ -43,7 +43,6 @@ def test_family_identity_gaps_reports_missing_fields_without_relaxing_matching()
 
 def test_identity_diagnostics_separates_family_eligibility_from_sold_readiness():
     rows = [
-        # Family eligible and sold-research ready: quality = .70 exactly.
         MarketListingObservation(
             listing=_listing(
                 "cherry",
@@ -101,7 +100,9 @@ def test_identity_diagnostics_separates_family_eligibility_from_sold_readiness()
     assert result["sold_research_ready_count"] == 1
     assert result["sold_research_not_ready_count"] == 3
     assert result["sold_research_ready_pct"] == 25.0
-    assert result["sold_not_ready_reason_counts"]["IDENTITY_BELOW_SOLD_THRESHOLD"] == 3
+    # Missing identity is its own root cause and is not double-counted as
+    # below-threshold identity quality.
+    assert result["sold_not_ready_reason_counts"]["IDENTITY_BELOW_SOLD_THRESHOLD"] == 2
     assert result["sold_not_ready_reason_counts"]["NO_IDENTITY"] == 1
     assert result["gap_counts"] == {
         "MISSING_STRUCTURED_DISCRIMINATOR": 1,
@@ -133,7 +134,8 @@ def test_non_card_product_is_diagnostic_not_ready_without_relaxing_gate():
                 parallel="Gold",
                 serial_total=50,
             ),
-            title="2025 Topps Player Four Gold #12 /50 Full Team Set Bundle",
+            # Use wording recognized by the existing governed non-card filter.
+            title="2025 Topps Player Four Gold #12 /50 Sealed Bundle",
         )
     )
 
