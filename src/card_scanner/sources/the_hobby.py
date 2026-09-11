@@ -6,7 +6,7 @@ from typing import Final
 import httpx
 
 from ..identity import parse_identity
-from ..models import Listing
+from ..models import CardIdentity, Listing
 
 
 BASE_URL: Final[str] = "https://thehobby.com.au"
@@ -29,6 +29,16 @@ SEALED_RE = re.compile(
     re.IGNORECASE,
 )
 
+# The Hobby frequently writes a card number as a bare token immediately before
+# the grading company, for example "Panini Prizm 37 PSA 10". The generic parser
+# deliberately does not treat arbitrary bare numbers as card numbers because
+# titles also contain years, serials, edition numbers and anniversary markers.
+# Recover only this high-confidence source-specific pattern.
+BARE_CARD_BEFORE_GRADE_RE = re.compile(
+    r"(?<![A-Za-z0-9#/])([A-Z]?\d{1,3}[A-Z]?)(?=\s+(?:PSA|BGS|SGC|CGC)\s*\d+(?:\.\d+)?\b)",
+    re.IGNORECASE,
+)
+
 
 def _money(value) -> float:
     try:
@@ -47,6 +57,20 @@ def _image_url(product: dict) -> str | None:
     if isinstance(image, dict) and image.get("src"):
         return str(image["src"])
     return None
+
+
+def _recover_bare_card_number(title: str, identity: CardIdentity) -> CardIdentity:
+    if identity.card_number:
+        return identity
+
+    match = BARE_CARD_BEFORE_GRADE_RE.search(title)
+    if not match:
+        return identity
+
+    candidate = match.group(1).upper()
+    # A four-digit year cannot match this pattern, and serial x/y syntax is
+    # excluded by the regex. Keep this reject-only recovery intentionally narrow.
+    return identity.model_copy(update={"card_number": candidate})
 
 
 class TheHobbySource:
@@ -117,7 +141,10 @@ class TheHobbySource:
                     continue
                 seen.add(product_id)
 
-                identity = parse_identity(title, sport)
+                identity = _recover_bare_card_number(
+                    title,
+                    parse_identity(title, sport),
+                )
                 # A valid single must at minimum parse a player and year. This
                 # is a guard against collection contamination such as supplies,
                 # generic sealed products, or non-card merchandise.
