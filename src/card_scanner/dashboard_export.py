@@ -2,13 +2,18 @@ from __future__ import annotations
 
 import hashlib
 import json
-import re
 from datetime import datetime, timezone
 from pathlib import Path
 from statistics import median
 from typing import Any, Iterable
 
 from .identity_diagnostics import build_identity_diagnostics
+from .identity_match import (
+    canonical_exact_components,
+    exact_components_eligible,
+    exact_match_reasons,
+    exact_signature,
+)
 from .market_catalogue import MarketListingObservation
 from .models import Listing
 from .opportunity_scanner import OpportunityScanResult, OpportunityScanSummary
@@ -22,7 +27,7 @@ GOVERNANCE = (
     "Research priority cannot manufacture fair value",
     "Raw sold API responses are not persisted or exported",
 )
-FAMILY_MATCH_RULE = "STRICT_STRUCTURED_IDENTITY"
+FAMILY_MATCH_RULE = "STRICT_STRUCTURED_IDENTITY_V2"
 
 
 def _iso_now() -> str:
@@ -72,42 +77,11 @@ def _identity_payload(result: OpportunityScanResult) -> dict[str, Any]:
     return _identity_from_listing(result.listing)
 
 
-def _normalise_family_value(value: Any) -> str:
-    if value is None:
-        return ""
-    if isinstance(value, bool):
-        return "1" if value else "0"
-    text = str(value).casefold().strip()
-    return re.sub(r"[^a-z0-9]+", "", text)
-
-
 def canonical_family_key(*, sport: str, identity: dict[str, Any]) -> str | None:
-    player = _normalise_family_value(identity.get("player"))
-    year = _normalise_family_value(identity.get("year"))
-    brand = _normalise_family_value(identity.get("brand") or identity.get("set_name"))
-    discriminator_present = any(
-        _normalise_family_value(identity.get(field))
-        for field in ("card_number", "parallel", "serial_total")
-    )
-    if not player or not year or not brand or not discriminator_present:
+    components = canonical_exact_components(sport=sport, identity=identity)
+    if not exact_components_eligible(components):
         return None
-
-    fields = (
-        sport,
-        identity.get("player"),
-        identity.get("year"),
-        identity.get("brand"),
-        identity.get("set_name"),
-        identity.get("card_number"),
-        identity.get("parallel"),
-        identity.get("serial_total"),
-        identity.get("grader"),
-        identity.get("grade"),
-        identity.get("autograph"),
-        identity.get("memorabilia"),
-        identity.get("rookie"),
-    )
-    signature = "|".join(_normalise_family_value(value) for value in fields)
+    signature = exact_signature(components)
     return "cf_" + hashlib.sha256(signature.encode("utf-8")).hexdigest()[:20]
 
 
@@ -149,8 +123,17 @@ def _landed_aud(listing: Listing) -> float | None:
 
 
 def _family_payload(listing: Listing, identity: dict[str, Any]) -> dict[str, Any]:
-    key = canonical_family_key(sport=listing.sport.upper(), identity=identity)
-    return {"key": key, "eligible": key is not None, "match_rule": FAMILY_MATCH_RULE}
+    components = canonical_exact_components(sport=listing.sport.upper(), identity=identity)
+    eligible = exact_components_eligible(components)
+    key = canonical_family_key(sport=listing.sport.upper(), identity=identity) if eligible else None
+    return {
+        "key": key,
+        "eligible": eligible,
+        "match_rule": FAMILY_MATCH_RULE,
+        "match_confidence": 1.0 if eligible else None,
+        "match_reasons": exact_match_reasons(components) if eligible else [],
+        "canonical_components": components if eligible else None,
+    }
 
 
 def market_listing_to_dashboard_record(observation: MarketListingObservation) -> dict[str, Any]:
@@ -265,10 +248,14 @@ def _build_cross_store_families(cards: list[dict[str, Any]]) -> list[dict[str, A
         highest = max(priced) if priced else None
         spread_pct = ((highest - lowest) / lowest) * 100.0 if lowest is not None and highest is not None and lowest > 0 else None
         representative = rows[0]
+        family = representative.get("card_family") or {}
         families.append(
             {
                 "key": key,
                 "match_rule": FAMILY_MATCH_RULE,
+                "match_confidence": 1.0,
+                "match_reasons": family.get("match_reasons") or [],
+                "canonical_components": family.get("canonical_components"),
                 "pricing_basis": "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE",
                 "sport": representative.get("sport"),
                 "identity": representative.get("identity") or {},
