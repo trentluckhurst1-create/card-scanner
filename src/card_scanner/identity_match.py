@@ -77,6 +77,16 @@ def canonical_exact_components(*, sport: Any, identity: dict[str, Any]) -> dict[
 
 
 def exact_components_eligible(components: dict[str, str]) -> bool:
+    """Return True only when identity is strong enough for an exact comparison.
+
+    Exact-card grouping is intentionally conservative. Player/year/product plus a
+    vague variant token is not enough. An unnumbered card must have its card
+    number. A serial-numbered card may instead be admitted when the print-run
+    denominator is known together with either card number or a named parallel.
+
+    serial_current is deliberately not part of identity: 1/10 and 8/10 are the
+    same card variant, while /10 and /25 remain different variants.
+    """
     core = (
         components.get("sport"),
         components.get("player"),
@@ -84,11 +94,21 @@ def exact_components_eligible(components: dict[str, str]) -> bool:
         components.get("brand"),
         components.get("product"),
     )
-    discriminator = any(
-        components.get(field)
-        for field in ("card_number", "parallel", "serial_total")
-    )
-    return all(core) and discriminator
+    if not all(core):
+        return False
+
+    card_number = bool(components.get("card_number"))
+    parallel = bool(components.get("parallel"))
+    serial_total = bool(components.get("serial_total"))
+
+    # Card number is the strongest normal set discriminator.
+    if card_number:
+        return True
+
+    # Without a card number, require both a known print run and a named parallel.
+    # This keeps valid numbered variants such as Copper /170 while rejecting
+    # same-player/product guesses that could hide a different insert/variation.
+    return serial_total and parallel
 
 
 def exact_signature(components: dict[str, str]) -> str:
