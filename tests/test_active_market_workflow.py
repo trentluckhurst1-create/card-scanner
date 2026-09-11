@@ -1,9 +1,10 @@
 from pathlib import Path
 
 
-def test_active_market_workflow_detects_untracked_generated_feed():
+def test_active_market_workflow_detects_untracked_generated_feeds():
     workflow = (Path(__file__).resolve().parents[1] / ".github" / "workflows" / "publish-active-market.yml").read_text(encoding="utf-8")
-    assert "git status --porcelain -- docs/active_market.json" in workflow
+    assert "git status --porcelain -- docs/active_market.json docs/comparison.json" in workflow
+    assert "git add -- docs/active_market.json docs/comparison.json" in workflow
     assert "git diff --quiet -- docs/active_market.json" not in workflow
     assert "contents: write" in workflow
     assert "cron: '17 */6 * * *'" in workflow
@@ -17,6 +18,7 @@ def test_active_market_workflow_uses_source_supported_maximum_depth():
 
 def test_active_market_refresh_is_self_contained():
     workflow = (Path(__file__).resolve().parents[1] / ".github" / "workflows" / "publish-active-market.yml").read_text(encoding="utf-8")
+    assert "scripts/publish_exact_comparisons.py --feed docs/active_market.json --output docs/comparison.json" in workflow
     assert "scripts/audit_live_comparisons.py --feed docs/active_market.json" in workflow
     assert "scripts/audit_identity_completeness.py --feed docs/active_market.json" in workflow
     assert "active-market-refresh-audits" in workflow
