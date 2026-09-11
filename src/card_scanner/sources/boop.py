@@ -4,9 +4,10 @@ import re
 from typing import Final
 
 import httpx
+from bs4 import BeautifulSoup
 
 from ..identity import parse_identity
-from ..models import Listing
+from ..models import CardIdentity, Listing
 
 
 BASE_URL: Final[str] = "https://www.boopcollectables.com.au"
@@ -22,6 +23,21 @@ SEALED_RE = re.compile(
     r"\bsealed\s+(?:box|pack|case|tin)\b|"
     r"\b(?:hobby|retail)\s+pack\b",
     re.IGNORECASE,
+)
+
+# Boop's short Shopify titles frequently omit the catalogue number while the
+# product description contains it. Only explicit labels are trusted; naked
+# numbers are deliberately ignored so print-run, anniversary and grade values
+# can never be promoted into card identity.
+DESCRIPTION_CARD_NUMBER_PATTERNS: Final[tuple[re.Pattern[str], ...]] = (
+    re.compile(
+        r"\bcard\s*(?:#|no\.?\s*|number\s*[:#]?\s*)([A-Z0-9][A-Z0-9\-.]*\d[A-Z0-9\-.]*)\b(?!\s*/)",
+        re.IGNORECASE,
+    ),
+    re.compile(
+        r"\b(?:card\s+)?no\.?\s*[:#]?\s*([A-Z0-9][A-Z0-9\-.]*\d[A-Z0-9\-.]*)\b(?!\s*/)",
+        re.IGNORECASE,
+    ),
 )
 
 
@@ -63,6 +79,30 @@ class BoopSource:
     def close(self) -> None:
         if not self._external_client:
             self.client.close()
+
+    @staticmethod
+    def _recover_identity_from_product(
+        identity: CardIdentity,
+        *,
+        product: dict,
+    ) -> CardIdentity:
+        if identity.card_number:
+            return identity
+
+        body_html = str(product.get("body_html") or "")
+        if not body_html.strip():
+            return identity
+
+        description = BeautifulSoup(body_html, "html.parser").get_text(" ", strip=True)
+        for pattern in DESCRIPTION_CARD_NUMBER_PATTERNS:
+            match = pattern.search(description)
+            if not match:
+                continue
+            card_number = match.group(1).strip().upper()
+            if card_number:
+                return identity.model_copy(update={"card_number": card_number})
+
+        return identity
 
     def search(self, sport: str, query: str = "", limit: int = 50) -> list[Listing]:
         sport = sport.upper().strip()
@@ -109,7 +149,10 @@ class BoopSource:
                     continue
                 seen.add(product_id)
 
-                identity = parse_identity(title, sport)
+                identity = self._recover_identity_from_product(
+                    parse_identity(title, sport),
+                    product=product,
+                )
                 if not identity.player or not identity.year:
                     continue
 
