@@ -67,7 +67,28 @@ def test_same_known_identity_is_diagnostic_only():
         card("urbanempire", "2", card_number="101", parallel="Silver", serial_total="99"),
     ])
     assert report["bucket_counts"]["SAME_PRODUCT_SAME_KNOWN_IDENTITY"] == 1
+    assert report["same_known_identity_eligibility_counts"]["EXACT_ELIGIBLE_PAIR"] == 1
+    assert report["near_match_examples"][0]["exact_eligibility"] == "EXACT_ELIGIBLE_PAIR"
     assert report["governance"]["diagnostics_are_price_comparisons"] is False
+
+
+def test_same_known_identity_without_discriminator_is_insufficient():
+    report = build_overlap_report([
+        card("cherry", "1"),
+        card("urbanempire", "2"),
+    ])
+    assert report["bucket_counts"]["SAME_PRODUCT_SAME_KNOWN_IDENTITY"] == 1
+    assert report["same_known_identity_eligibility_counts"]["INSUFFICIENT_IDENTITY_PAIR"] == 1
+    assert report["near_match_examples"][0]["exact_eligibility"] == "INSUFFICIENT_IDENTITY_PAIR"
+    assert report["governance"]["same_known_identity_implies_exact_eligibility"] is False
+
+
+def test_serial_parallel_same_known_pair_is_exact_eligible_without_card_number():
+    report = build_overlap_report([
+        card("cherry", "1", parallel="Gold", serial_total="10"),
+        card("urbanempire", "2", parallel="Gold", serial_total="10"),
+    ])
+    assert report["same_known_identity_eligibility_counts"]["EXACT_ELIGIBLE_PAIR"] == 1
 
 
 def test_same_store_pairs_are_ignored():
@@ -77,3 +98,4 @@ def test_same_store_pairs_are_ignored():
     ])
     assert report["cross_store_player_year_pairs"] == 0
     assert report["bucket_counts"] == {}
+    assert report["same_known_identity_eligibility_counts"] == {}
