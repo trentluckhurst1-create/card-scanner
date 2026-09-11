@@ -15,7 +15,7 @@ def test_compare_page_exposes_governed_cross_store_price_comparison_ui():
     assert "Spread" in html
     assert "market.json?ts=" in html
     assert "active_price_comparisons" in html
-    assert "client fallback from current active catalogue" in html
+    assert "V2 client comparison from current active catalogue" in html
     assert "Active asking prices are comparison evidence only" in html
     assert "fair value" in html.casefold()
 
