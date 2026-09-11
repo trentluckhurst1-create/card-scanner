@@ -4,6 +4,7 @@ import argparse
 import json
 from pathlib import Path
 
+from card_scanner.active_price_comparison import build_active_price_comparisons
 from card_scanner.cli import opportunity_store_source
 from card_scanner.dashboard_export import write_dashboard_payload
 from card_scanner.db import init_db
@@ -36,6 +37,22 @@ def build_parser() -> argparse.ArgumentParser:
         help="Diagnostic escape hatch. Normal Stage 7 scans record active-listing history.",
     )
     return parser
+
+
+def _publish_active_price_comparisons(output: Path) -> dict:
+    payload = json.loads(output.read_text(encoding="utf-8"))
+    comparisons = build_active_price_comparisons(payload.get("market_cards") or [])
+    payload["active_price_comparisons"] = comparisons
+    metrics = payload.setdefault("metrics", {})
+    metrics["price_comparison_groups"] = comparisons["comparison_group_count"]
+    metrics["exact_price_comparison_groups"] = comparisons["exact_match_count"]
+    metrics["same_product_variant_groups"] = comparisons["same_product_variant_count"]
+    metrics["player_year_market_groups"] = comparisons["player_year_market_count"]
+    output.write_text(
+        json.dumps(payload, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
+    return payload
 
 
 def main() -> int:
@@ -76,10 +93,11 @@ def main() -> int:
         Path(args.dashboard_json),
         market_listings=market_listings,
     )
-    payload = json.loads(Path(output).read_text(encoding="utf-8"))
+    payload = _publish_active_price_comparisons(Path(output))
     diagnostics = payload.get("identity_diagnostics") or {}
     gap_counts = diagnostics.get("gap_counts") or {}
     sold_reason_counts = diagnostics.get("sold_not_ready_reason_counts") or {}
+    comparisons = payload.get("active_price_comparisons") or {}
 
     print("CARD_SCANNER_STAGE7_SCAN=PASS")
     print(f"SOURCE={source_label}")
@@ -92,6 +110,10 @@ def main() -> int:
     print(f"STRONG_BUY={summary.strong_buy_count}")
     print(f"INSUFFICIENT_SOLD_COMPS={summary.insufficient_comps_count}")
     print(f"INSUFFICIENT_IDENTITY={summary.insufficient_identity_count}")
+    print(f"PRICE_COMPARISON_GROUPS={comparisons.get('comparison_group_count', 0)}")
+    print(f"EXACT_PRICE_COMPARISON_GROUPS={comparisons.get('exact_match_count', 0)}")
+    print(f"SAME_PRODUCT_VARIANT_GROUPS={comparisons.get('same_product_variant_count', 0)}")
+    print(f"PLAYER_YEAR_MARKET_GROUPS={comparisons.get('player_year_market_count', 0)}")
     print(f"FAMILY_ELIGIBLE={diagnostics.get('family_eligible_count', 0)}")
     print(f"FAMILY_INELIGIBLE={diagnostics.get('family_ineligible_count', 0)}")
     print(f"FAMILY_ELIGIBLE_PCT={diagnostics.get('family_eligible_pct', 0.0)}")
@@ -135,6 +157,8 @@ def main() -> int:
     print(f"REFERENCE_STORE_ERRORS={len(summary.reference_store_errors)}")
     print(f"DASHBOARD_JSON={output}")
     print(f"PROVIDER_HTTP_QUERIES={provider.query_count}")
+    print("ACTIVE_PRICE_COMPARISONS_ARE_FAIR_VALUE=NO")
+    print("RELATED_VARIANTS_ARE_EXACT_EQUIVALENTS=NO")
     print("ACTIVE_STORE_REFETCH_FOR_CATALOGUE=NO")
     print("IDENTITY_DIAGNOSTICS_CAN_RELAX_GATES=NO")
     print("RAW_API_PERSISTENCE=NO")
