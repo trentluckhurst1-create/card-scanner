@@ -105,6 +105,20 @@ def test_dashboard_exposes_strict_cross_store_matches_without_calling_them_fair_
     assert "cross_store_families" in html
 
 
+def test_stage7_scan_prints_identity_diagnostics_without_relaxing_gates():
+    script = Path("scripts/stage7_scan.py").read_text(encoding="utf-8")
+
+    assert "FAMILY_ELIGIBLE=" in script
+    assert "FAMILY_INELIGIBLE=" in script
+    assert "IDENTITY_NO_IDENTITY=" in script or '"NO_IDENTITY"' in script
+    assert '"MISSING_PLAYER"' in script
+    assert '"MISSING_YEAR"' in script
+    assert '"MISSING_BRAND_OR_SET"' in script
+    assert '"MISSING_STRUCTURED_DISCRIMINATOR"' in script
+    assert "IDENTITY_SOURCE_" in script
+    assert "IDENTITY_DIAGNOSTICS_CAN_RELAX_GATES=NO" in script
+
+
 def test_active_store_strip_does_not_misrepresent_ebay_as_acquisition_store():
     html = Path("docs/index.html").read_text(encoding="utf-8")
     store_strip = html.split('<div class="store-strip">', 1)[1].split("</div>", 1)[0]
