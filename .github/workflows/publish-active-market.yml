@@ -28,7 +28,7 @@ permissions:
 
 concurrency:
   group: active-market-publisher
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   publish:
