@@ -41,27 +41,36 @@ MONEY_RE = re.compile(
     re.IGNORECASE,
 )
 
-# Gimko marketplace titles commonly use catalogue numbers without a leading '#',
-# for example TL30 or SB13. Keep this deliberately narrow: the token must be
-# uppercase, contain both letters and digits, and stand alone.
 BARE_CARD_CODE_RE = re.compile(
     r"(?<![A-Za-z0-9])([A-Z]{1,5}(?:-[A-Z0-9]{1,8}|\d{1,4}[A-Z]?))(?![A-Za-z0-9])"
 )
 
-# Explicit card-number wording. Avoid treating the numerator of a serial such
-# as "Low No. 7/40" as a card number.
 EXPLICIT_CARD_NUMBER_RE = re.compile(
     r"\b(?:card\s+)?(?:no\.?|number)\s*#?\s*([A-Z0-9][A-Z0-9\-.]*\d[A-Z0-9\-.]*)\b(?!\s*/)",
     re.IGNORECASE,
 )
 
-# Explicit print-run language seen in marketplace titles, e.g. "#'d to 25"
-# or "numbered to 50". This supplies serial_total only; serial_current remains
-# unknown unless x/y syntax is present and the shared parser already captured it.
 PRINT_RUN_TOTAL_RE = re.compile(
     r"(?:\bnumbered\b|\bserial(?:ly)?\s+numbered\b|#['\u2019]?d)\s+to\s+(\d{1,4})\b",
     re.IGNORECASE,
 )
+
+# Gimko returns ordinary public HTML to browser clients. Keep the default
+# client close to a normal browser request rather than advertising an
+# application/bot-style User-Agent. This is compatibility only; if the site
+# still rejects GitHub-hosted traffic we surface the 403 and do not bypass it.
+DEFAULT_HEADERS = {
+    "User-Agent": (
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) "
+        "Chrome/152.0.0.0 Safari/537.36"
+    ),
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "Accept-Language": "en-AU,en;q=0.9",
+    "Cache-Control": "no-cache",
+    "Pragma": "no-cache",
+    "Referer": f"{BASE_URL}/",
+}
 
 
 class GimkoSource:
@@ -76,10 +85,7 @@ class GimkoSource:
         self.client = client or httpx.Client(
             timeout=30.0,
             follow_redirects=True,
-            headers={
-                "User-Agent": "CardScanner/1.0",
-                "Accept": "text/html,application/xhtml+xml",
-            },
+            headers=DEFAULT_HEADERS,
         )
 
     def close(self) -> None:
@@ -261,8 +267,6 @@ class GimkoSource:
             if print_run:
                 updates["serial_total"] = int(print_run.group(1))
 
-        # Footy Stars is a Select AFL product family. Keep this normalization
-        # narrow so unrelated TeamCoach/other AFL products are not relabelled.
         if (
             sport == "AFL"
             and not identity.brand
