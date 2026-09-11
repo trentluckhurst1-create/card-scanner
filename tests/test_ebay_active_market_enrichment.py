@@ -13,9 +13,13 @@ def test_workflow_wires_ebay_secrets_without_literal_credentials():
     assert workflow.index("publish_active_market.py") < workflow.index("enrich_active_market_ebay.py") < workflow.index("publish_exact_comparisons.py")
 
 
-def test_ebay_enrichment_is_targeted_and_secret_safe():
+def test_ebay_enrichment_targets_exact_signatures_and_is_secret_safe():
     script = (ROOT / "scripts" / "enrich_active_market_ebay.py").read_text(encoding="utf-8")
-    assert 'query=f"{year} {player}"' in script
+    assert 'query=target["query"]' in script
+    assert 'exact_signature(components) != target["signature"]' in script
+    assert '"ebay_exact_signatures_matched"' in script
+    assert '"ebay_rejected_non_exact"' in script
+    assert '"ebay_discovery_requires_exact_signature"' in script
     assert "DISABLED_MISSING_CREDENTIALS" in script
     assert "ebay.missing_credentials()" in script
     assert "client_secret" not in script.casefold()
