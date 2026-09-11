@@ -67,7 +67,6 @@ def canonical_exact_components(*, sport: Any, identity: dict[str, Any]) -> dict[
         "product": product,
         "card_number": normalize_card_number(identity.get("card_number")),
         "parallel": norm_token(identity.get("parallel")),
-        "serial_current": norm_token(identity.get("serial_current")),
         "serial_total": norm_token(identity.get("serial_total")),
         "grader": norm_token(identity.get("grader")),
         "grade": normalize_grade(identity.get("grade")),
@@ -95,8 +94,8 @@ def exact_components_eligible(components: dict[str, str]) -> bool:
 def exact_signature(components: dict[str, str]) -> str:
     order = (
         "sport", "player", "year", "brand", "product", "card_number",
-        "parallel", "serial_current", "serial_total", "grader", "grade",
-        "autograph", "memorabilia", "rookie",
+        "parallel", "serial_total", "grader", "grade", "autograph",
+        "memorabilia", "rookie",
     )
     return "|".join(components.get(field, "") for field in order)
 
@@ -107,8 +106,6 @@ def exact_match_reasons(components: dict[str, str]) -> list[str]:
         reasons.append("same card number")
     if components.get("parallel"):
         reasons.append("same parallel")
-    if components.get("serial_current"):
-        reasons.append("same serial copy number")
     if components.get("serial_total"):
         reasons.append("same serial denominator")
     if components.get("grader") or components.get("grade"):
