@@ -29,15 +29,20 @@ SEALED_RE = re.compile(
     re.IGNORECASE,
 )
 
-# The Hobby frequently writes a card number as a bare token immediately before
-# the grading company, for example "Panini Prizm 37 PSA 10". The generic parser
-# deliberately does not treat arbitrary bare numbers as card numbers because
-# titles also contain years, serials, edition numbers and anniversary markers.
-# Recover only this high-confidence source-specific pattern.
+# The Hobby frequently writes catalogue numbers as bare tokens. The simplest
+# form is immediately before the grade ("Prizm 37 PSA 10"), but production
+# titles also use "Select 257 White Disco 9/75 PSA 10" and
+# "Donruss 201 Press Proof Purple 141/199 PSA 10". The generic parser must not
+# guess arbitrary numbers, so this recovery remains source-specific and only
+# operates on titles with an explicit grading-company/grade suffix.
 BARE_CARD_BEFORE_GRADE_RE = re.compile(
     r"(?<![A-Za-z0-9#/])([A-Z]?\d{1,3}[A-Z]?)(?=\s+(?:PSA|BGS|SGC|CGC)\s*\d+(?:\.\d+)?\b)",
     re.IGNORECASE,
 )
+GRADE_MARKER_RE = re.compile(r"\b(?:PSA|BGS|SGC|CGC)\s*\d+(?:\.\d+)?\b", re.IGNORECASE)
+SEASON_RE = re.compile(r"\b(?:19|20)\d{2}(?:-(?:\d{2}|(?:19|20)\d{2}))?\b")
+SERIAL_RE = re.compile(r"(?<![A-Za-z0-9])\d{1,4}\s*/\s*\d{1,5}(?![A-Za-z0-9])")
+BARE_CARD_TOKEN_RE = re.compile(r"(?<![A-Za-z0-9#/])([A-Z]?\d{1,3}[A-Z]?)(?![A-Za-z0-9/])", re.IGNORECASE)
 
 
 def _money(value) -> float:
@@ -63,14 +68,27 @@ def _recover_bare_card_number(title: str, identity: CardIdentity) -> CardIdentit
     if identity.card_number:
         return identity
 
-    match = BARE_CARD_BEFORE_GRADE_RE.search(title)
-    if not match:
+    direct = BARE_CARD_BEFORE_GRADE_RE.search(title)
+    if direct:
+        return identity.model_copy(update={"card_number": direct.group(1).upper()})
+
+    grade = GRADE_MARKER_RE.search(title)
+    if not grade:
         return identity
 
-    candidate = match.group(1).upper()
-    # A four-digit year cannot match this pattern, and serial x/y syntax is
-    # excluded by the regex. Keep this reject-only recovery intentionally narrow.
-    return identity.model_copy(update={"card_number": candidate})
+    # Only inspect the pre-grade portion. Remove seasons and serial fractions,
+    # then take the final remaining short number token. In The Hobby's graded
+    # title convention that token is the catalogue number while later numeric
+    # content is the serial copy, which was removed above. This deliberately
+    # does not run on raw/ungraded titles.
+    prefix = title[: grade.start()]
+    prefix = SEASON_RE.sub(" ", prefix)
+    prefix = SERIAL_RE.sub(" ", prefix)
+    candidates = [match.group(1).upper() for match in BARE_CARD_TOKEN_RE.finditer(prefix)]
+    if not candidates:
+        return identity
+
+    return identity.model_copy(update={"card_number": candidates[-1]})
 
 
 class TheHobbySource:
