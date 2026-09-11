@@ -10,10 +10,15 @@ def test_active_market_workflow_detects_untracked_generated_feeds():
     assert "cron: '17 */6 * * *'" in workflow
 
 
-def test_active_market_workflow_uses_source_supported_maximum_depth():
+def test_active_market_workflow_uses_expanded_discovery_depth():
     workflow = (Path(__file__).resolve().parents[1] / ".github" / "workflows" / "publish-active-market.yml").read_text(encoding="utf-8")
-    assert "--limit-per-store-per-sport 250" in workflow
-    assert "--limit-per-store-per-sport 125" not in workflow
+    assert "--limit-per-store-per-sport 400" in workflow
+    assert "--deep-overlap-targets 150" in workflow
+    assert "--deep-results-per-store 200" in workflow
+    assert "--exact-discovery-targets 160" in workflow
+    assert "--exact-results-per-store 200" in workflow
+    assert "--max-targets 160" in workflow
+    assert "--results-per-target 200" in workflow
 
 
 def test_active_market_refresh_is_self_contained():
