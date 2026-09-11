@@ -19,8 +19,8 @@ BASE_URL: Final[str] = "https://sportscardstore.com.au"
 
 # Sports Card Store often puts the catalogue/card number in Shopify body_html
 # even when the shorter storefront title omits it. Recovery remains deliberately
-# strict: only explicit card/no/number labels are trusted, and x/y serial syntax
-# is rejected.
+# strict: explicit card/no/number labels are preferred, x/y serial syntax is
+# rejected, and the fallback only accepts a standalone all-caps team line.
 DESCRIPTION_CARD_NUMBER_PATTERNS: Final[tuple[re.Pattern[str], ...]] = (
     re.compile(
         r"\bcard\s*(?:#|no\.?\s*|number\s*[:#]?\s*)([A-Z0-9][A-Z0-9\-.]*\d[A-Z0-9\-.]*)\b(?!\s*/)",
@@ -34,6 +34,15 @@ DESCRIPTION_CARD_NUMBER_PATTERNS: Final[tuple[re.Pattern[str], ...]] = (
         r"\bcard\s+number\s*[:#]?\s*([A-Z0-9][A-Z0-9\-.]*\d[A-Z0-9\-.]*)\b(?!\s*/)",
         re.IGNORECASE,
     ),
+)
+
+# Live Sports Card Store descriptions commonly end with a standalone team and
+# catalogue-number line, for example "WESTERN BULLDOGS 159" while the title
+# separately contains the serial "34/35". Requiring two or more all-caps team
+# tokens and a short final number prevents generic prose and serial fractions
+# from being promoted into identity. Conflicting candidate lines are rejected.
+TEAM_LINE_CARD_NUMBER_RE: Final[re.Pattern[str]] = re.compile(
+    r"^(?:[A-Z0-9][A-Z0-9'&.\-]*\s+){2,6}([A-Z]?\d{1,3}[A-Z]?)$"
 )
 
 
@@ -206,7 +215,8 @@ class SportsCardStoreSource:
         if not body_html.strip():
             return identity
 
-        description = BeautifulSoup(body_html, "html.parser").get_text(" ", strip=True)
+        soup = BeautifulSoup(body_html, "html.parser")
+        description = soup.get_text(" ", strip=True)
         for pattern in DESCRIPTION_CARD_NUMBER_PATTERNS:
             match = pattern.search(description)
             if not match:
@@ -214,5 +224,15 @@ class SportsCardStoreSource:
             card_number = match.group(1).strip().upper()
             if card_number:
                 return identity.model_copy(update={"card_number": card_number})
+
+        candidates: set[str] = set()
+        for raw_line in soup.get_text("\n", strip=True).splitlines():
+            line = " ".join(raw_line.split())
+            match = TEAM_LINE_CARD_NUMBER_RE.fullmatch(line)
+            if match:
+                candidates.add(match.group(1).upper())
+
+        if len(candidates) == 1:
+            return identity.model_copy(update={"card_number": candidates.pop()})
 
         return identity
