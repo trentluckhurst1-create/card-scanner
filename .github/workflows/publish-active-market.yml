@@ -7,6 +7,7 @@ on:
       - 'scripts/publish_active_market.py'
       - 'scripts/audit_live_comparisons.py'
       - 'scripts/audit_identity_completeness.py'
+      - 'scripts/audit_cross_store_overlap.py'
       - 'src/card_scanner/sources/**'
       - 'src/card_scanner/identity.py'
       - 'src/card_scanner/identity_match.py'
@@ -48,6 +49,8 @@ jobs:
         run: python scripts/audit_live_comparisons.py --feed docs/active_market.json --output artifacts/live_active_comparison_audit.json
       - name: Audit identity completeness
         run: python scripts/audit_identity_completeness.py --feed docs/active_market.json --output artifacts/identity_completeness_audit.json
+      - name: Audit cross-store overlap
+        run: python scripts/audit_cross_store_overlap.py --feed docs/active_market.json --output artifacts/cross_store_overlap_audit.json
       - name: Upload refresh audits
         uses: actions/upload-artifact@v4
         with:
@@ -55,6 +58,7 @@ jobs:
           path: |
             artifacts/live_active_comparison_audit.json
             artifacts/identity_completeness_audit.json
+            artifacts/cross_store_overlap_audit.json
           if-no-files-found: error
           retention-days: 30
       - name: Publish active comparison snapshot
