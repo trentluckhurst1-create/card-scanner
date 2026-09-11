@@ -36,7 +36,7 @@ jobs:
       - name: Install package
         run: python -m pip install -e .
       - name: Fetch public active-store catalogue and compare prices
-        run: python scripts/publish_active_market.py --limit-per-store-per-sport 125 --output docs/active_market.json
+        run: python scripts/publish_active_market.py --limit-per-store-per-sport 250 --output docs/active_market.json
       - name: Publish active comparison snapshot
         run: |
           if [ -z "$(git status --porcelain -- docs/active_market.json)" ]; then
