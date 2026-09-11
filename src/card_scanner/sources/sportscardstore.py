@@ -18,11 +18,22 @@ COLLECTION_BY_SPORT: Final[dict[str, str]] = {
 BASE_URL: Final[str] = "https://sportscardstore.com.au"
 
 # Sports Card Store often puts the catalogue/card number in Shopify body_html
-# even when the shorter storefront title omits it. Recovery is deliberately
-# strict: require explicit card-number wording and reject x/y serial syntax.
-DESCRIPTION_CARD_NUMBER_RE = re.compile(
-    r"\bcard\s*(?:#|no\.?\s*|number\s*#?\s*)([A-Z0-9][A-Z0-9\-.]*\d[A-Z0-9\-.]*)\b(?!\s*/)",
-    re.IGNORECASE,
+# even when the shorter storefront title omits it. Recovery remains deliberately
+# strict: only explicit card/no/number labels are trusted, and x/y serial syntax
+# is rejected.
+DESCRIPTION_CARD_NUMBER_PATTERNS: Final[tuple[re.Pattern[str], ...]] = (
+    re.compile(
+        r"\bcard\s*(?:#|no\.?\s*|number\s*[:#]?\s*)([A-Z0-9][A-Z0-9\-.]*\d[A-Z0-9\-.]*)\b(?!\s*/)",
+        re.IGNORECASE,
+    ),
+    re.compile(
+        r"\b(?:card\s+)?no\.?\s*[:#]?\s*([A-Z0-9][A-Z0-9\-.]*\d[A-Z0-9\-.]*)\b(?!\s*/)",
+        re.IGNORECASE,
+    ),
+    re.compile(
+        r"\bcard\s+number\s*[:#]?\s*([A-Z0-9][A-Z0-9\-.]*\d[A-Z0-9\-.]*)\b(?!\s*/)",
+        re.IGNORECASE,
+    ),
 )
 
 
@@ -196,12 +207,12 @@ class SportsCardStoreSource:
             return identity
 
         description = BeautifulSoup(body_html, "html.parser").get_text(" ", strip=True)
-        match = DESCRIPTION_CARD_NUMBER_RE.search(description)
-        if not match:
-            return identity
+        for pattern in DESCRIPTION_CARD_NUMBER_PATTERNS:
+            match = pattern.search(description)
+            if not match:
+                continue
+            card_number = match.group(1).strip().upper()
+            if card_number:
+                return identity.model_copy(update={"card_number": card_number})
 
-        card_number = match.group(1).strip().upper()
-        if not card_number:
-            return identity
-
-        return identity.model_copy(update={"card_number": card_number})
+        return identity
