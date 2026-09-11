@@ -4,6 +4,7 @@ on:
   push:
     branches: [main]
     paths:
+      - 'docs/active_market.json'
       - 'docs/market.json'
       - 'src/card_scanner/active_price_comparison.py'
       - 'src/card_scanner/dashboard_export.py'
@@ -26,12 +27,12 @@ jobs:
           cache: pip
       - name: Install package
         run: python -m pip install -e .
-      - name: Audit checked-in live feed
-        run: python scripts/audit_live_comparisons.py
-      - name: Upload comparison audit
+      - name: Audit automated active-market feed
+        run: python scripts/audit_live_comparisons.py --feed docs/active_market.json --output artifacts/live_active_comparison_audit.json
+      - name: Upload active-market comparison audit
         uses: actions/upload-artifact@v4
         with:
-          name: live-comparison-audit
-          path: artifacts/live_comparison_audit.json
+          name: live-active-comparison-audit
+          path: artifacts/live_active_comparison_audit.json
           if-no-files-found: error
           retention-days: 30
