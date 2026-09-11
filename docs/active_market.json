@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-11T02:35:07.639533+00:00",
+  "generated_at": "2026-09-11T02:39:35.875968+00:00",
   "feed_type": "ACTIVE_MARKET_COMPARISON_ONLY",
   "pricing_basis": "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE",
   "governance": {
@@ -21605,64 +21605,6 @@
     },
     {
       "source": "cherry",
-      "external_id": "9094341296182",
-      "url": "https://www.cherrycollectables.com.au/products/2018-prizm-shai-gilgeous-alexander-rookie-pink-ice-184-psa-9-313",
-      "image_url": "https://cdn.shopify.com/s/files/1/0263/9009/files/200226F_18_0d931fe6-9f9b-43c0-9f41-4eb17b51100e.jpg?v=1785722471",
-      "title": "2018 Prizm SHAI GILGEOUS-ALEXANDER Rookie Pink Ice #184 PSA 9 (313)",
-      "sport": "NBA",
-      "asking_price": 299.99,
-      "shipping": 0.0,
-      "currency": "AUD",
-      "landed_aud": 299.99,
-      "identity": {
-        "player": "Shai Gilgeous-Alexander",
-        "year": "2018",
-        "brand": "Prizm",
-        "set_name": "Prizm",
-        "card_number": "184",
-        "parallel": null,
-        "serial_current": null,
-        "serial_total": null,
-        "grader": "PSA",
-        "grade": 9.0,
-        "autograph": false,
-        "memorabilia": false,
-        "rookie": true
-      },
-      "card_family": {
-        "key": "cf_281add5c83120fc48528",
-        "eligible": true,
-        "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
-        "match_confidence": 1.0,
-        "match_reasons": [
-          "same player",
-          "same year",
-          "same brand/product",
-          "same card number",
-          "same grading state",
-          "same rookie state"
-        ],
-        "canonical_components": {
-          "sport": "nba",
-          "player": "shaigilgeousalexander",
-          "year": "2018",
-          "brand": "prizm",
-          "product": "prizm",
-          "card_number": "184",
-          "parallel": "",
-          "serial_total": "",
-          "grader": "psa",
-          "grade": "9",
-          "autograph": "0",
-          "memorabilia": "0",
-          "rookie": "1"
-        }
-      },
-      "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
-    },
-    {
-      "source": "cherry",
       "external_id": "9094340673590",
       "url": "https://www.cherrycollectables.com.au/products/2018-prizm-shai-gilgeous-alexander-rookie-green-184-psa-9-111",
       "image_url": "https://cdn.shopify.com/s/files/1/0263/9009/files/200226F_21_30f9b0a9-5b7d-4733-811f-44cfce37c58c.jpg?v=1785722472",
@@ -29571,6 +29513,65 @@
           "serial_total": "1",
           "grader": "psa",
           "grade": "9",
+          "autograph": "1",
+          "memorabilia": "0",
+          "rookie": "1"
+        }
+      },
+      "history": null,
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+    },
+    {
+      "source": "cherry",
+      "external_id": "9094442287158",
+      "url": "https://www.cherrycollectables.com.au/products/2017-totally-certified-deaaron-fox-rookie-roll-call-auto-1025-bgs-859-720",
+      "image_url": "https://cdn.shopify.com/s/files/1/0263/9009/files/200226I_16_ec5ae2b3-bd9e-4f5d-a21c-e607bab029cd.jpg?v=1785722579",
+      "title": "2017 Totally Certified DE'AARON FOX Rookie Roll Call Auto 10/25 BGS 8.5/9 (720)",
+      "sport": "NBA",
+      "asking_price": 249.99,
+      "shipping": 0.0,
+      "currency": "AUD",
+      "landed_aud": 249.99,
+      "identity": {
+        "player": "De'aaron Fox",
+        "year": "2017",
+        "brand": "Certified",
+        "set_name": "Certified",
+        "card_number": null,
+        "parallel": null,
+        "serial_current": 10,
+        "serial_total": 25,
+        "grader": "BGS",
+        "grade": 8.5,
+        "autograph": true,
+        "memorabilia": false,
+        "rookie": true
+      },
+      "card_family": {
+        "key": "cf_c4ab802eb8539eefeda6",
+        "eligible": true,
+        "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
+        "match_confidence": 1.0,
+        "match_reasons": [
+          "same player",
+          "same year",
+          "same brand/product",
+          "same serial denominator",
+          "same grading state",
+          "same autograph state",
+          "same rookie state"
+        ],
+        "canonical_components": {
+          "sport": "nba",
+          "player": "deaaronfox",
+          "year": "2017",
+          "brand": "certified",
+          "product": "certified",
+          "card_number": "",
+          "parallel": "",
+          "serial_total": "25",
+          "grader": "bgs",
+          "grade": "8.5",
           "autograph": "1",
           "memorabilia": "0",
           "rookie": "1"
@@ -70317,7 +70318,7 @@
         "year": "2025",
         "brand": "AFL Eminence",
         "set_name": "AFL Eminence",
-        "card_number": null,
+        "card_number": "30",
         "parallel": null,
         "serial_current": 30,
         "serial_total": 40,
@@ -70328,7 +70329,7 @@
         "rookie": false
       },
       "card_family": {
-        "key": "cf_a9a4dcf169dbee4c9a52",
+        "key": "cf_5b52d3289d32f2503fb9",
         "eligible": true,
         "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
         "match_confidence": 1.0,
@@ -70336,6 +70337,7 @@
           "same player",
           "same year",
           "same brand/product",
+          "same card number",
           "same serial denominator"
         ],
         "canonical_components": {
@@ -70344,7 +70346,7 @@
           "year": "2025",
           "brand": "afleminence",
           "product": "afleminence",
-          "card_number": "",
+          "card_number": "30",
           "parallel": "",
           "serial_total": "40",
           "grader": "",
@@ -70788,7 +70790,7 @@
         "year": "2025",
         "brand": "AFL Eminence",
         "set_name": "AFL Eminence",
-        "card_number": null,
+        "card_number": "33",
         "parallel": null,
         "serial_current": 33,
         "serial_total": 40,
@@ -70799,7 +70801,7 @@
         "rookie": false
       },
       "card_family": {
-        "key": "cf_573ec4703aea3c5dac53",
+        "key": "cf_5758cb558e58ed42955e",
         "eligible": true,
         "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
         "match_confidence": 1.0,
@@ -70807,6 +70809,7 @@
           "same player",
           "same year",
           "same brand/product",
+          "same card number",
           "same serial denominator",
           "same autograph state"
         ],
@@ -70816,7 +70819,7 @@
           "year": "2025",
           "brand": "afleminence",
           "product": "afleminence",
-          "card_number": "",
+          "card_number": "33",
           "parallel": "",
           "serial_total": "40",
           "grader": "",
@@ -70845,7 +70848,7 @@
         "year": "2024",
         "brand": "AFL Supremacy",
         "set_name": "AFL Supremacy",
-        "card_number": null,
+        "card_number": "30",
         "parallel": "Black Pearl",
         "serial_current": 30,
         "serial_total": 35,
@@ -70856,7 +70859,7 @@
         "rookie": false
       },
       "card_family": {
-        "key": "cf_fbd21f0ce609db9635f0",
+        "key": "cf_775a797bf7ee9a98287f",
         "eligible": true,
         "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
         "match_confidence": 1.0,
@@ -70864,6 +70867,7 @@
           "same player",
           "same year",
           "same brand/product",
+          "same card number",
           "same parallel",
           "same serial denominator"
         ],
@@ -70873,7 +70877,7 @@
           "year": "2024",
           "brand": "aflsupremacy",
           "product": "aflsupremacy",
-          "card_number": "",
+          "card_number": "30",
           "parallel": "blackpearl",
           "serial_total": "35",
           "grader": "",
