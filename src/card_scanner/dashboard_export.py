@@ -8,6 +8,7 @@ from pathlib import Path
 from statistics import median
 from typing import Any, Iterable
 
+from .identity_diagnostics import build_identity_diagnostics
 from .market_catalogue import MarketListingObservation
 from .models import Listing
 from .opportunity_scanner import OpportunityScanResult, OpportunityScanSummary
@@ -81,8 +82,6 @@ def _normalise_family_value(value: Any) -> str:
 
 
 def canonical_family_key(*, sport: str, identity: dict[str, Any]) -> str | None:
-    """Return a conservative family key for defensible cross-store grouping."""
-
     player = _normalise_family_value(identity.get("player"))
     year = _normalise_family_value(identity.get("year"))
     brand = _normalise_family_value(identity.get("brand") or identity.get("set_name"))
@@ -151,18 +150,10 @@ def _landed_aud(listing: Listing) -> float | None:
 
 def _family_payload(listing: Listing, identity: dict[str, Any]) -> dict[str, Any]:
     key = canonical_family_key(sport=listing.sport.upper(), identity=identity)
-    return {
-        "key": key,
-        "eligible": key is not None,
-        "match_rule": FAMILY_MATCH_RULE,
-    }
+    return {"key": key, "eligible": key is not None, "match_rule": FAMILY_MATCH_RULE}
 
 
-def market_listing_to_dashboard_record(
-    observation: MarketListingObservation,
-) -> dict[str, Any]:
-    """Export lawful active-market data only; no sold valuation is implied."""
-
+def market_listing_to_dashboard_record(observation: MarketListingObservation) -> dict[str, Any]:
     listing = observation.listing
     identity = _identity_from_listing(listing)
     return {
@@ -222,11 +213,7 @@ def result_to_dashboard_record(result: OpportunityScanResult) -> dict[str, Any]:
     valuation = result.valuation
     opportunity = result.opportunity
     identity = _identity_payload(result)
-    fair_value = (
-        _round_money(getattr(valuation, "fair_value_aud", None))
-        if getattr(valuation, "status", None) == "VALUED"
-        else None
-    )
+    fair_value = _round_money(getattr(valuation, "fair_value_aud", None)) if getattr(valuation, "status", None) == "VALUED" else None
     return {
         "source": listing.source,
         "external_id": listing.external_id,
@@ -253,11 +240,7 @@ def result_to_dashboard_record(result: OpportunityScanResult) -> dict[str, Any]:
         "valuation": {
             "status": getattr(valuation, "status", None),
             "fair_value_aud": fair_value,
-            "edge_pct": (
-                _round_score(getattr(opportunity, "edge_pct", None), 2)
-                if fair_value is not None
-                else None
-            ),
+            "edge_pct": _round_score(getattr(opportunity, "edge_pct", None), 2) if fair_value is not None else None,
         },
         "research": _research_payload(result),
         "opportunity_status": opportunity.status,
@@ -280,11 +263,7 @@ def _build_cross_store_families(cards: list[dict[str, Any]]) -> list[dict[str, A
         priced = [float(row["landed_aud"]) for row in rows if row.get("landed_aud") is not None]
         lowest = min(priced) if priced else None
         highest = max(priced) if priced else None
-        spread_pct = (
-            ((highest - lowest) / lowest) * 100.0
-            if lowest is not None and highest is not None and lowest > 0
-            else None
-        )
+        spread_pct = ((highest - lowest) / lowest) * 100.0 if lowest is not None and highest is not None and lowest > 0 else None
         representative = rows[0]
         families.append(
             {
@@ -301,51 +280,25 @@ def _build_cross_store_families(cards: list[dict[str, Any]]) -> list[dict[str, A
                 "highest_active_ask_aud": _round_money(highest),
                 "active_ask_spread_pct": _round_score(spread_pct, 2),
                 "listings": [
-                    {
-                        "source": row.get("source"),
-                        "external_id": row.get("external_id"),
-                        "url": row.get("url"),
-                        "landed_aud": row.get("landed_aud"),
-                    }
-                    for row in sorted(
-                        rows,
-                        key=lambda item: (
-                            item.get("landed_aud") is None,
-                            item.get("landed_aud") or 0,
-                            str(item.get("source") or ""),
-                        ),
-                    )
+                    {"source": row.get("source"), "external_id": row.get("external_id"), "url": row.get("url"), "landed_aud": row.get("landed_aud")}
+                    for row in sorted(rows, key=lambda item: (item.get("landed_aud") is None, item.get("landed_aud") or 0, str(item.get("source") or "")))
                 ],
             }
         )
 
-    return sorted(
-        families,
-        key=lambda family: (
-            -int(family["store_count"]),
-            -float(family.get("active_ask_spread_pct") or 0),
-            str(family["key"]),
-        ),
-    )
+    return sorted(families, key=lambda family: (-int(family["store_count"]), -float(family.get("active_ask_spread_pct") or 0), str(family["key"])))
 
 
 def _fallback_market_observations(summary: OpportunityScanSummary) -> list[MarketListingObservation]:
-    return [
-        MarketListingObservation(listing=row.listing, history=row.listing_history)
-        for row in summary.results
-    ]
+    return [MarketListingObservation(listing=row.listing, history=row.listing_history) for row in summary.results]
 
 
-def build_dashboard_payload(
-    summary: OpportunityScanSummary,
-    *,
-    generated_at: str | None = None,
-    market_listings: Iterable[MarketListingObservation] | None = None,
-) -> dict[str, Any]:
+def build_dashboard_payload(summary: OpportunityScanSummary, *, generated_at: str | None = None, market_listings: Iterable[MarketListingObservation] | None = None) -> dict[str, Any]:
     research_cards = [result_to_dashboard_record(row) for row in summary.results]
     observations = list(market_listings) if market_listings is not None else _fallback_market_observations(summary)
     market_cards = [market_listing_to_dashboard_record(row) for row in observations]
     families = _build_cross_store_families(market_cards)
+    identity_diagnostics = build_identity_diagnostics(observations)
     return {
         "schema_version": DASHBOARD_SCHEMA_VERSION,
         "generated_at": generated_at or _iso_now(),
@@ -368,30 +321,20 @@ def build_dashboard_payload(
             "history_relisted": summary.history_relisted_count,
             "history_stale": summary.history_stale_count,
             "cross_store_families": len(families),
+            "family_eligible": identity_diagnostics["family_eligible_count"],
+            "family_ineligible": identity_diagnostics["family_ineligible_count"],
         },
         "governance": list(GOVERNANCE),
+        "identity_diagnostics": identity_diagnostics,
         "market_cards": market_cards,
         "cards": research_cards,
         "cross_store_families": families,
     }
 
 
-def write_dashboard_payload(
-    summary: OpportunityScanSummary,
-    path: str | Path,
-    *,
-    generated_at: str | None = None,
-    market_listings: Iterable[MarketListingObservation] | None = None,
-) -> Path:
+def write_dashboard_payload(summary: OpportunityScanSummary, path: str | Path, *, generated_at: str | None = None, market_listings: Iterable[MarketListingObservation] | None = None) -> Path:
     output = Path(path)
     output.parent.mkdir(parents=True, exist_ok=True)
-    payload = build_dashboard_payload(
-        summary,
-        generated_at=generated_at,
-        market_listings=market_listings,
-    )
-    output.write_text(
-        json.dumps(payload, ensure_ascii=False, indent=2) + "\n",
-        encoding="utf-8",
-    )
+    payload = build_dashboard_payload(summary, generated_at=generated_at, market_listings=market_listings)
+    output.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     return output
