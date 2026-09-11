@@ -132,6 +132,7 @@ def test_sportscardstore_source_rejects_unsupported_sport_without_call() -> None
     assert rows == []
     assert client.calls == []
 
+
 def make_product(
     product_id: int,
     title: str,
@@ -338,3 +339,77 @@ def test_sportscardstore_source_stops_on_short_final_page() -> None:
 
     assert rows == []
     assert len(client.calls) == 1
+
+
+def _live_style_product(product_id: int, title: str, body_html: str) -> dict:
+    return {
+        "id": product_id,
+        "title": title,
+        "handle": f"card-{product_id}",
+        "variants": [{"available": True, "price": "200.00"}],
+        "images": [],
+        "body_html": body_html,
+    }
+
+
+def test_sportscardstore_recovers_team_line_card_number_not_serial() -> None:
+    product = _live_style_product(
+        1,
+        "2024 SELECT AFL SUPREMACY Black Pearl Aaron Naughton 34/35",
+        "<p>Rare Black Pearl card with only 35 in existence.</p>"
+        "<p>WESTERN BULLDOGS 159</p>",
+    )
+    row = SportsCardStoreSource(
+        client=FakeClient({"products": [product]})
+    ).search("AFL", limit=1)[0]
+    assert row.identity.serial_total == 35
+    assert row.identity.card_number == "159"
+
+
+def test_sportscardstore_recovers_other_live_team_line_numbers() -> None:
+    products = [
+        _live_style_product(
+            1,
+            "2024 SELECT AFL SUPREMACY Black Pearl Harry McKay 24/35",
+            "<p>CARLTON BLUES 24</p>",
+        ),
+        _live_style_product(
+            2,
+            "2024 SELECT AFL SUPREMACY Black Pearl Nick Larkey 25/35",
+            "<p>NORTH MELBOURNE KANGAROOS 101</p>",
+        ),
+        _live_style_product(
+            3,
+            "2024 SELECT AFL SUPREMACY Gold Base Sam Walsh 29/95",
+            "<p>CARLTON BLUES 26</p>",
+        ),
+    ]
+    rows = SportsCardStoreSource(
+        client=FakeClient({"products": products})
+    ).search("AFL", limit=3)
+    assert [row.identity.card_number for row in rows] == ["24", "101", "26"]
+
+
+def test_sportscardstore_team_line_recovery_rejects_generic_numeric_prose() -> None:
+    product = _live_style_product(
+        1,
+        "2024 SELECT AFL SUPREMACY Black Pearl Aaron Naughton 34/35",
+        "<p>This limited edition card has only 35 in existence.</p>"
+        "<p>Only 1 left in stock.</p>",
+    )
+    row = SportsCardStoreSource(
+        client=FakeClient({"products": [product]})
+    ).search("AFL", limit=1)[0]
+    assert row.identity.card_number is None
+
+
+def test_sportscardstore_team_line_recovery_rejects_conflicting_candidates() -> None:
+    product = _live_style_product(
+        1,
+        "2024 SELECT AFL SUPREMACY Black Pearl Aaron Naughton 34/35",
+        "<p>WESTERN BULLDOGS 159</p><p>CARLTON BLUES 24</p>",
+    )
+    row = SportsCardStoreSource(
+        client=FakeClient({"products": [product]})
+    ).search("AFL", limit=1)[0]
+    assert row.identity.card_number is None
