@@ -1,7 +1,7 @@
 from card_scanner.identity_match import canonical_exact_components, exact_signature
 
 
-def identity(serial_current):
+def identity(serial_current, serial_total=170):
     return {
         "player": "James Tunstill",
         "year": "2022",
@@ -10,7 +10,7 @@ def identity(serial_current):
         "card_number": None,
         "parallel": None,
         "serial_current": serial_current,
-        "serial_total": 170,
+        "serial_total": serial_total,
         "grader": None,
         "grade": None,
         "autograph": True,
@@ -19,19 +19,18 @@ def identity(serial_current):
     }
 
 
-def test_different_numbered_copies_are_not_exact_same_card():
-    copy_87 = canonical_exact_components(sport="AFL", identity=identity(87))
-    copy_95 = canonical_exact_components(sport="AFL", identity=identity(95))
+def test_different_copy_numbers_same_print_run_are_comparable():
+    copy_1 = canonical_exact_components(sport="AFL", identity=identity(1, 10))
+    copy_8 = canonical_exact_components(sport="AFL", identity=identity(8, 10))
 
-    assert copy_87["serial_current"] == "87"
-    assert copy_95["serial_current"] == "95"
-    assert exact_signature(copy_87) != exact_signature(copy_95)
+    # Individual serial copy number is not variant identity. 1/10 and 8/10 are
+    # the same card variant for store-price comparison purposes.
+    assert "serial_current" not in copy_1
+    assert exact_signature(copy_1) == exact_signature(copy_8)
 
 
-def test_same_numbered_copy_can_share_exact_signature():
-    first = canonical_exact_components(sport="AFL", identity=identity(87))
-    second = canonical_exact_components(sport="AFL", identity=identity("087"))
+def test_different_print_runs_are_not_exact_same_card_variant():
+    out_of_10 = canonical_exact_components(sport="AFL", identity=identity(1, 10))
+    out_of_25 = canonical_exact_components(sport="AFL", identity=identity(1, 25))
 
-    # Serial copy numbers are numeric identity; leading zero formatting must not
-    # turn the same numbered copy into a different card.
-    assert exact_signature(first) == exact_signature(second)
+    assert exact_signature(out_of_10) != exact_signature(out_of_25)
