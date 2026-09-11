@@ -13,6 +13,7 @@ on:
       - 'src/card_scanner/sources/**'
       - 'src/card_scanner/identity.py'
       - 'src/card_scanner/identity_match.py'
+      - 'src/card_scanner/exact_discovery.py'
       - 'src/card_scanner/dashboard_export.py'
       - 'src/card_scanner/active_price_comparison.py'
       - '.github/workflows/publish-active-market.yml'
@@ -48,18 +49,18 @@ jobs:
       - name: Fetch public active-store catalogue and compare prices
         run: >-
           python scripts/publish_active_market.py
-          --limit-per-store-per-sport 250
-          --deep-overlap-targets 60
-          --deep-results-per-store 100
-          --exact-discovery-targets 64
-          --exact-results-per-store 150
+          --limit-per-store-per-sport 400
+          --deep-overlap-targets 150
+          --deep-results-per-store 200
+          --exact-discovery-targets 160
+          --exact-results-per-store 200
           --output docs/active_market.json
       - name: Enrich active catalogue with targeted eBay Browse inventory
         env:
           EBAY_CLIENT_ID: ${{ secrets.EBAY_CLIENT_ID }}
           EBAY_CLIENT_SECRET: ${{ secrets.EBAY_CLIENT_SECRET }}
           EBAY_MARKETPLACE_ID: EBAY_AU
-        run: python scripts/enrich_active_market_ebay.py --feed docs/active_market.json --max-targets 64 --results-per-target 100
+        run: python scripts/enrich_active_market_ebay.py --feed docs/active_market.json --max-targets 160 --results-per-target 200
       - name: Publish exact-card-only comparison feed
         run: python scripts/publish_exact_comparisons.py --feed docs/active_market.json --output docs/comparison.json
       - name: Audit live active-price comparisons
@@ -90,6 +91,8 @@ jobs:
             git push origin HEAD:main
             echo "ACTIVE_MARKET_CHANGED=YES"
           fi
+      - name: Make exact comparison board the default landing page
+        run: cp docs/live-compare.html docs/index.html
       - name: Configure Pages
         uses: actions/configure-pages@v5
         with:
