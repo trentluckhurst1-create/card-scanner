@@ -7,7 +7,7 @@ import httpx
 from bs4 import BeautifulSoup
 
 from ..identity import parse_identity
-from ..models import Listing
+from ..models import CardIdentity, Listing
 
 
 BASE_URL = "https://www.gimko.com.au"
@@ -38,6 +38,28 @@ ITEM_LINK_RE = re.compile(
 
 MONEY_RE = re.compile(
     r"\$([0-9]+(?:\.[0-9]{1,2})?)\s*AUD",
+    re.IGNORECASE,
+)
+
+# Gimko marketplace titles commonly use catalogue numbers without a leading '#',
+# for example TL30 or SB13. Keep this deliberately narrow: the token must be
+# uppercase, contain both letters and digits, and stand alone.
+BARE_CARD_CODE_RE = re.compile(
+    r"(?<![A-Za-z0-9])([A-Z]{1,5}(?:-[A-Z0-9]{1,8}|\d{1,4}[A-Z]?))(?![A-Za-z0-9])"
+)
+
+# Explicit card-number wording. Avoid treating the numerator of a serial such
+# as "Low No. 7/40" as a card number.
+EXPLICIT_CARD_NUMBER_RE = re.compile(
+    r"\b(?:card\s+)?(?:no\.?|number)\s*#?\s*([A-Z0-9][A-Z0-9\-.]*\d[A-Z0-9\-.]*)\b(?!\s*/)",
+    re.IGNORECASE,
+)
+
+# Explicit print-run language seen in marketplace titles, e.g. "#'d to 25"
+# or "numbered to 50". This supplies serial_total only; serial_current remains
+# unknown unless x/y syntax is present and the shared parser already captured it.
+PRINT_RUN_TOTAL_RE = re.compile(
+    r"(?:\bnumbered\b|\bserial(?:ly)?\s+numbered\b|#['\u2019]?d)\s+to\s+(\d{1,4})\b",
     re.IGNORECASE,
 )
 
@@ -187,6 +209,11 @@ class GimkoSource:
 
         seller = self._extract_seller(soup)
         image_url = self._extract_image(soup)
+        identity = self._recover_identity(
+            parse_identity(title, sport),
+            title=title,
+            sport=sport,
+        )
 
         return Listing(
             source=self.source_name,
@@ -200,8 +227,51 @@ class GimkoSource:
             image_url=image_url,
             seller=seller,
             condition="Marketplace Listing",
-            identity=parse_identity(title, sport),
+            identity=identity,
         )
+
+    @staticmethod
+    def _recover_identity(
+        identity: CardIdentity,
+        *,
+        title: str,
+        sport: str,
+    ) -> CardIdentity:
+        """Recover explicit Gimko title fields missed by the shared parser.
+
+        This is evidence-only recovery. It never invents year, player or card
+        numbering from category position, price, URL, or seller metadata.
+        """
+
+        updates: dict[str, object] = {}
+
+        if not identity.card_number:
+            explicit = EXPLICIT_CARD_NUMBER_RE.search(title)
+            bare = None if explicit else BARE_CARD_CODE_RE.search(title)
+            recovered_card_number = (
+                explicit.group(1)
+                if explicit
+                else (bare.group(1) if bare else None)
+            )
+            if recovered_card_number:
+                updates["card_number"] = recovered_card_number.upper()
+
+        if identity.serial_total is None:
+            print_run = PRINT_RUN_TOTAL_RE.search(title)
+            if print_run:
+                updates["serial_total"] = int(print_run.group(1))
+
+        # Footy Stars is a Select AFL product family. Keep this normalization
+        # narrow so unrelated TeamCoach/other AFL products are not relabelled.
+        if (
+            sport == "AFL"
+            and not identity.brand
+            and re.search(r"\b(?:AFL\s+)?Footy\s+Stars\b", title, re.IGNORECASE)
+        ):
+            updates["brand"] = "Select"
+            updates["set_name"] = "Select AFL Footy Stars"
+
+        return identity.model_copy(update=updates) if updates else identity
 
     @staticmethod
     def _extract_title(
