@@ -42,6 +42,7 @@ def build_active_market_payload(
     stores_searched: int = 4,
 ) -> dict:
     rows = _dedupe(listings)
+    errors = tuple(store_errors)
     cards = [
         market_listing_to_dashboard_record(MarketListingObservation(listing=row))
         for row in rows
@@ -70,7 +71,7 @@ def build_active_market_payload(
             "active_cards": len(cards),
             "stores_considered": stores_considered,
             "stores_searched": stores_searched,
-            "store_error_count": len(tuple(store_errors)),
+            "store_error_count": len(errors),
             "comparison_groups": comparisons["comparison_group_count"],
             "exact_matches": comparisons["exact_match_count"],
             "same_product_variants": comparisons["same_product_variant_count"],
@@ -78,7 +79,7 @@ def build_active_market_payload(
         },
         "by_source": dict(sorted(by_source.items())),
         "by_sport": dict(sorted(by_sport.items())),
-        "store_errors": list(store_errors),
+        "store_errors": list(errors),
         "market_cards": cards,
         "active_price_comparisons": comparisons,
     }
@@ -133,6 +134,13 @@ def main() -> int:
     print(f"ACTIVE_CARDS={metrics['active_cards']}")
     print(f"STORES_SEARCHED={metrics['stores_searched']}/{metrics['stores_considered']}")
     print(f"STORE_ERRORS={metrics['store_error_count']}")
+    for source_name, count in payload["by_source"].items():
+        safe_source = source_name.upper().replace(" ", "_")
+        print(f"ACTIVE_SOURCE_{safe_source}={count}")
+    for sport, count in payload["by_sport"].items():
+        print(f"ACTIVE_SPORT_{sport.upper()}={count}")
+    for index, message in enumerate(payload["store_errors"], start=1):
+        print(f"STORE_ERROR_{index}={message}")
     print(f"COMPARISON_GROUPS={metrics['comparison_groups']}")
     print(f"EXACT_MATCHES={metrics['exact_matches']}")
     print(f"SAME_PRODUCT_VARIANTS={metrics['same_product_variants']}")
