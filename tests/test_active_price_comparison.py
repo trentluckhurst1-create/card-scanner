@@ -75,7 +75,8 @@ def test_exact_match_reports_cheapest_store_and_real_savings_without_calling_it_
     assert group["spread_pct"] == 40.0
     assert group["pricing_basis"] == "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE"
     assert result["governance"]["can_create_buy"] is False
-    assert "fair_value" not in repr(group).casefold()
+    assert "fair_value_aud" not in group
+    assert "valuation" not in group
 
 
 def test_same_product_variants_are_grouped_but_explicitly_not_exact_equivalents():
