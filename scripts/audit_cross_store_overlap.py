@@ -7,7 +7,12 @@ from itertools import combinations
 from pathlib import Path
 from typing import Any
 
-from card_scanner.identity_match import norm_token, normalize_product
+from card_scanner.identity_match import (
+    canonical_exact_components,
+    exact_components_eligible,
+    norm_token,
+    normalize_product,
+)
 
 
 def _identity(card: dict[str, Any]) -> dict[str, Any]:
@@ -96,9 +101,17 @@ def _pair_bucket(left: dict[str, Any], right: dict[str, Any]) -> tuple[str, list
     return "SAME_PRODUCT_SAME_KNOWN_IDENTITY", []
 
 
+def _exact_eligible(card: dict[str, Any]) -> bool:
+    components = canonical_exact_components(
+        sport=card.get("sport"),
+        identity=_identity(card),
+    )
+    return exact_components_eligible(components)
+
+
 def _safe_example(left: dict[str, Any], right: dict[str, Any], bucket: str, reasons: list[str]) -> dict[str, Any]:
     identity = _identity(left)
-    return {
+    row = {
         "bucket": bucket,
         "reasons": reasons,
         "sport": left.get("sport"),
@@ -117,6 +130,13 @@ def _safe_example(left: dict[str, Any], right: dict[str, Any], bucket: str, reas
             "url": right.get("url"),
         },
     }
+    if bucket == "SAME_PRODUCT_SAME_KNOWN_IDENTITY":
+        row["exact_eligibility"] = (
+            "EXACT_ELIGIBLE_PAIR"
+            if _exact_eligible(left) and _exact_eligible(right)
+            else "INSUFFICIENT_IDENTITY_PAIR"
+        )
+    return row
 
 
 def build_overlap_report(cards: list[dict[str, Any]], *, example_limit: int = 25) -> dict[str, Any]:
@@ -128,6 +148,7 @@ def build_overlap_report(cards: list[dict[str, Any]], *, example_limit: int = 25
 
     bucket_counts: Counter[str] = Counter()
     mismatch_counts: Counter[str] = Counter()
+    same_known_eligibility: Counter[str] = Counter()
     pair_counts: dict[str, Counter[str]] = defaultdict(Counter)
     examples: list[dict[str, Any]] = []
     cross_store_pairs = 0
@@ -144,6 +165,16 @@ def build_overlap_report(cards: list[dict[str, Any]], *, example_limit: int = 25
             bucket, reasons = _pair_bucket(left, right)
             bucket_counts[bucket] += 1
             pair_counts[store_pair][bucket] += 1
+
+            if bucket == "SAME_PRODUCT_SAME_KNOWN_IDENTITY":
+                eligibility = (
+                    "EXACT_ELIGIBLE_PAIR"
+                    if _exact_eligible(left) and _exact_eligible(right)
+                    else "INSUFFICIENT_IDENTITY_PAIR"
+                )
+                same_known_eligibility[eligibility] += 1
+                pair_counts[store_pair][f"eligibility:{eligibility}"] += 1
+
             for reason in reasons:
                 mismatch_counts[reason] += 1
                 pair_counts[store_pair][f"reason:{reason}"] += 1
@@ -155,6 +186,7 @@ def build_overlap_report(cards: list[dict[str, Any]], *, example_limit: int = 25
         "cards": len(cards),
         "cross_store_player_year_pairs": cross_store_pairs,
         "bucket_counts": dict(sorted(bucket_counts.items())),
+        "same_known_identity_eligibility_counts": dict(sorted(same_known_eligibility.items())),
         "mismatch_dimension_counts": dict(sorted(mismatch_counts.items(), key=lambda item: (-item[1], item[0]))),
         "store_pairs": {
             pair: dict(sorted(counts.items()))
@@ -164,6 +196,7 @@ def build_overlap_report(cards: list[dict[str, Any]], *, example_limit: int = 25
         "governance": {
             "diagnostics_are_price_comparisons": False,
             "near_matches_are_exact_equivalents": False,
+            "same_known_identity_implies_exact_eligibility": False,
             "can_create_buy": False,
         },
     }
@@ -192,12 +225,18 @@ def main() -> int:
     print(f"CROSS_STORE_PLAYER_YEAR_PAIRS={report['cross_store_player_year_pairs']}")
     for bucket, count in report["bucket_counts"].items():
         print(f"OVERLAP_{bucket}={count}")
+    for label, count in report["same_known_identity_eligibility_counts"].items():
+        print(f"SAME_KNOWN_IDENTITY_{label}={count}")
     for field, count in report["mismatch_dimension_counts"].items():
         print(f"MISMATCH_{field.upper()}={count}")
     for pair, counts in report["store_pairs"].items():
         label = pair.upper().replace(" ", "_").replace("<>", "VS").replace("-", "_")
-        print(f"STORE_PAIR_{label}_PAIRS={sum(v for k, v in counts.items() if not k.startswith('reason:'))}")
+        print(
+            f"STORE_PAIR_{label}_PAIRS="
+            f"{sum(v for k, v in counts.items() if not k.startswith(('reason:', 'eligibility:')))}"
+        )
     print("NEAR_MATCHES_ARE_EXACT_EQUIVALENTS=NO")
+    print("SAME_KNOWN_IDENTITY_IMPLIES_EXACT_ELIGIBILITY=NO")
     print("OVERLAP_DIAGNOSTICS_CAN_CREATE_BUY=NO")
     print(f"AUDIT_JSON={output.as_posix()}")
     return 0
