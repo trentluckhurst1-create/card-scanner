@@ -9,6 +9,12 @@ def test_active_market_workflow_detects_untracked_generated_feed():
     assert "cron: '17 */6 * * *'" in workflow
 
 
+def test_active_market_workflow_uses_source_supported_maximum_depth():
+    workflow = (Path(__file__).resolve().parents[1] / ".github" / "workflows" / "publish-active-market.yml").read_text(encoding="utf-8")
+    assert "--limit-per-store-per-sport 250" in workflow
+    assert "--limit-per-store-per-sport 125" not in workflow
+
+
 def test_active_market_publisher_prints_source_errors_for_diagnosis():
     script = (Path(__file__).resolve().parents[1] / "scripts" / "publish_active_market.py").read_text(encoding="utf-8")
     assert "ACTIVE_SOURCE_" in script
