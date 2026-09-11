@@ -52,8 +52,8 @@ jobs:
           --limit-per-store-per-sport 400
           --deep-overlap-targets 150
           --deep-results-per-store 200
-          --exact-discovery-targets 160
-          --exact-results-per-store 200
+          --exact-discovery-targets 400
+          --exact-results-per-store 250
           --output docs/active_market.json
       - name: Enrich active catalogue with targeted eBay Browse inventory
         env:
