@@ -12,6 +12,7 @@ from card_scanner.dashboard_export import market_listing_to_dashboard_record
 from card_scanner.market_catalogue import MarketListingObservation
 from card_scanner.models import Listing
 from card_scanner.opportunity_scanner import SPORTS, MultiStoreSource, NamedStoreSource
+from card_scanner.sources.eastside import EastsideSource
 from card_scanner.sources.the_hobby import TheHobbySource
 
 
@@ -95,6 +96,7 @@ def cloud_active_store_source() -> MultiStoreSource:
     return MultiStoreSource([
         *source.stores,
         NamedStoreSource(name="The Hobby", source=TheHobbySource()),
+        NamedStoreSource(name="Eastside Collectables", source=EastsideSource()),
     ])
 
 
