@@ -60,7 +60,7 @@ def test_targeted_house_of_cards_search_emits_only_active_exact_ready_single() -
     assert listing.identity is not None
     assert listing.identity.card_number == "198"
     assert listing.identity.grader == "PSA"
-    assert str(listing.identity.grade) == "8"
+    assert listing.identity.grade == 8.0
 
 
 def test_house_of_cards_fails_closed_for_broad_or_unsupported_searches() -> None:
