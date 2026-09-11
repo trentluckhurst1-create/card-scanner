@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-11T04:13:10.246858+00:00",
+  "generated_at": "2026-09-11T04:18:25.218596+00:00",
   "feed_type": "EXACT_CARD_STORE_COMPARISON_ONLY",
   "pricing_basis": "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE",
   "governance": {
@@ -11,7 +11,7 @@
     "can_create_buy": false
   },
   "metrics": {
-    "active_cards_scanned": 2160,
+    "active_cards_scanned": 2917,
     "exact_comparison_groups": 0,
     "exact_comparison_listings": 0
   },
