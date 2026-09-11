@@ -39,7 +39,7 @@ jobs:
         run: python scripts/publish_active_market.py --limit-per-store-per-sport 125 --output docs/active_market.json
       - name: Publish active comparison snapshot
         run: |
-          if git diff --quiet -- docs/active_market.json; then
+          if [ -z "$(git status --porcelain -- docs/active_market.json)" ]; then
             echo "ACTIVE_MARKET_CHANGED=NO"
             exit 0
           fi
