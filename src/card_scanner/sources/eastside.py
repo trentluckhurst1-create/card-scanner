@@ -59,10 +59,30 @@ class EastsideSource:
                 "Accept-Language": "en-AU,en;q=0.9",
             },
         )
+        # Player-specific discovery repeatedly walks the same Shopify collection.
+        # Cache pages in-memory for the publisher run to avoid duplicate requests
+        # and the 429 responses observed in production.
+        self._page_cache: dict[tuple[str, int], list[dict]] = {}
 
     def close(self) -> None:
         if not self._external_client:
             self.client.close()
+
+    def _fetch_page(self, handle: str, page: int) -> list[dict]:
+        cache_key = (handle, int(page))
+        cached = self._page_cache.get(cache_key)
+        if cached is not None:
+            return cached
+        response = self.client.get(
+            f"{BASE_URL}/collections/{handle}/products.json",
+            params={"limit": 250, "page": page},
+        )
+        response.raise_for_status()
+        products = response.json().get("products") or []
+        if not isinstance(products, list):
+            raise RuntimeError("Eastside response did not contain a products list")
+        self._page_cache[cache_key] = products
+        return products
 
     def search(self, sport: str, query: str = "", limit: int = 50) -> list[Listing]:
         sport = sport.upper().strip()
@@ -79,14 +99,7 @@ class EastsideSource:
         # The public Shopify collection is large. Walk a bounded number of pages
         # to fill the requested in-stock singles depth without unbounded crawling.
         for page in range(1, 13):
-            response = self.client.get(
-                f"{BASE_URL}/collections/{handle}/products.json",
-                params={"limit": page_size, "page": page},
-            )
-            response.raise_for_status()
-            products = response.json().get("products") or []
-            if not isinstance(products, list):
-                raise RuntimeError("Eastside response did not contain a products list")
+            products = self._fetch_page(handle, page)
             if not products:
                 break
 
