@@ -79,6 +79,7 @@ def main() -> int:
     payload = json.loads(Path(output).read_text(encoding="utf-8"))
     diagnostics = payload.get("identity_diagnostics") or {}
     gap_counts = diagnostics.get("gap_counts") or {}
+    sold_reason_counts = diagnostics.get("sold_not_ready_reason_counts") or {}
 
     print("CARD_SCANNER_STAGE7_SCAN=PASS")
     print(f"SOURCE={source_label}")
@@ -94,6 +95,14 @@ def main() -> int:
     print(f"FAMILY_ELIGIBLE={diagnostics.get('family_eligible_count', 0)}")
     print(f"FAMILY_INELIGIBLE={diagnostics.get('family_ineligible_count', 0)}")
     print(f"FAMILY_ELIGIBLE_PCT={diagnostics.get('family_eligible_pct', 0.0)}")
+    print(f"SOLD_RESEARCH_IDENTITY_READY={diagnostics.get('sold_research_ready_count', 0)}")
+    print(f"SOLD_RESEARCH_IDENTITY_NOT_READY={diagnostics.get('sold_research_not_ready_count', 0)}")
+    print(f"SOLD_RESEARCH_IDENTITY_READY_PCT={diagnostics.get('sold_research_ready_pct', 0.0)}")
+    print(f"SOLD_RESEARCH_IDENTITY_THRESHOLD={diagnostics.get('sold_identity_quality_threshold', 0.0)}")
+    for reason, count in sorted(sold_reason_counts.items()):
+        print(f"SOLD_RESEARCH_NOT_READY_{reason}={count}")
+    for band, count in sorted((diagnostics.get("identity_quality_bands") or {}).items()):
+        print(f"IDENTITY_QUALITY_BAND_{band}={count}")
     for gap in (
         "NO_IDENTITY",
         "MISSING_PLAYER",
@@ -107,6 +116,11 @@ def main() -> int:
         print(f"IDENTITY_SOURCE_{source}_LISTINGS={source_row.get('listing_count', 0)}")
         print(f"IDENTITY_SOURCE_{source}_FAMILY_ELIGIBLE={source_row.get('family_eligible_count', 0)}")
         print(f"IDENTITY_SOURCE_{source}_FAMILY_ELIGIBLE_PCT={source_row.get('family_eligible_pct', 0.0)}")
+        print(f"IDENTITY_SOURCE_{source}_SOLD_RESEARCH_READY={source_row.get('sold_research_ready_count', 0)}")
+        print(f"IDENTITY_SOURCE_{source}_SOLD_RESEARCH_READY_PCT={source_row.get('sold_research_ready_pct', 0.0)}")
+        print(f"IDENTITY_SOURCE_{source}_MEAN_QUALITY={source_row.get('mean_identity_quality', 0.0)}")
+        for reason, count in sorted((source_row.get("sold_not_ready_reason_counts") or {}).items()):
+            print(f"IDENTITY_SOURCE_{source}_SOLD_NOT_READY_{reason}={count}")
         for gap, count in sorted((source_row.get("gap_counts") or {}).items()):
             print(f"IDENTITY_SOURCE_{source}_{gap}={count}")
     print(f"HISTORY_OBSERVED={summary.history_observed_count}")
