@@ -46,13 +46,20 @@ jobs:
       - name: Install package
         run: python -m pip install -e .
       - name: Fetch public active-store catalogue and compare prices
-        run: python scripts/publish_active_market.py --limit-per-store-per-sport 250 --output docs/active_market.json
+        run: >-
+          python scripts/publish_active_market.py
+          --limit-per-store-per-sport 250
+          --deep-overlap-targets 60
+          --deep-results-per-store 100
+          --exact-discovery-targets 64
+          --exact-results-per-store 150
+          --output docs/active_market.json
       - name: Enrich active catalogue with targeted eBay Browse inventory
         env:
           EBAY_CLIENT_ID: ${{ secrets.EBAY_CLIENT_ID }}
           EBAY_CLIENT_SECRET: ${{ secrets.EBAY_CLIENT_SECRET }}
           EBAY_MARKETPLACE_ID: EBAY_AU
-        run: python scripts/enrich_active_market_ebay.py --feed docs/active_market.json --max-targets 24 --results-per-target 50
+        run: python scripts/enrich_active_market_ebay.py --feed docs/active_market.json --max-targets 64 --results-per-target 100
       - name: Publish exact-card-only comparison feed
         run: python scripts/publish_exact_comparisons.py --feed docs/active_market.json --output docs/comparison.json
       - name: Audit live active-price comparisons
