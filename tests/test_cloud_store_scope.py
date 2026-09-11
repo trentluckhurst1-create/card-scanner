@@ -10,6 +10,9 @@ def test_expansion_sources_are_added_to_cloud_publisher_not_local_cli_scope():
     assert 'NamedStoreSource(name="The Hobby"' in publisher
     assert "EastsideSource" in publisher
     assert 'NamedStoreSource(name="Eastside Collectables"' in publisher
+    assert "BoopSource" in publisher
+    assert 'NamedStoreSource(name="Boop Collectables"' in publisher
 
     assert "TheHobbySource" not in cli
     assert "EastsideSource" not in cli
+    assert "BoopSource" not in cli
