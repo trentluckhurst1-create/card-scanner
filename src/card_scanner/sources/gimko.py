@@ -59,7 +59,7 @@ EXPLICIT_CARD_NUMBER_RE = re.compile(
 # or "numbered to 50". This supplies serial_total only; serial_current remains
 # unknown unless x/y syntax is present and the shared parser already captured it.
 PRINT_RUN_TOTAL_RE = re.compile(
-    r"\b(?:numbered|serial(?:ly)?\s+numbered|#['\u2019]?d)\s+to\s+(\d{1,4})\b",
+    r"(?:\bnumbered\b|\bserial(?:ly)?\s+numbered\b|#['\u2019]?d)\s+to\s+(\d{1,4})\b",
     re.IGNORECASE,
 )
 
