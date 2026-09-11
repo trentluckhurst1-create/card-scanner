@@ -59,10 +59,14 @@ def _candidate_targets(
     *,
     max_targets: int,
 ) -> list[tuple[str, str, str]]:
-    """Choose player/year groups that contain strict-exact-ready inventory.
+    """Choose exact-ready player/year targets most likely to create new comparisons.
 
-    One player/year target can represent many exact-ready cards. Searching a
-    retailer once for that player lets strict signatures test all of them.
+    The previous ranking spent discovery capacity first on player/year groups that
+    already appeared at multiple stores. For discovery, the highest-value targets
+    are exact-ready cards currently stranded at one source: finding one matching
+    copy elsewhere immediately creates a comparison group. We therefore rank
+    single-source player/year targets first, then by the amount of exact-ready
+    inventory available within that target.
     """
     exact_counts: dict[tuple[str, str, str], int] = defaultdict(int)
     source_counts: dict[tuple[str, str, str], set[str]] = defaultdict(set)
@@ -87,8 +91,9 @@ def _candidate_targets(
     ranked = sorted(
         exact_counts,
         key=lambda key: (
-            -len(source_counts[key]),
+            0 if len(source_counts[key]) == 1 else 1,
             -exact_counts[key],
+            len(source_counts[key]),
             key[0],
             labels[key].casefold(),
             key[2],

@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 import json
+from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -19,6 +20,7 @@ def _text(value: object) -> str:
 
 def _candidate_targets(cards: list[dict], max_targets: int) -> list[tuple[str, str, str]]:
     ranked: dict[tuple[str, str, str], int] = {}
+    sources: dict[tuple[str, str, str], set[str]] = defaultdict(set)
     labels: dict[tuple[str, str, str], str] = {}
     for card in cards:
         identity = card.get("identity") or {}
@@ -32,10 +34,18 @@ def _candidate_targets(cards: list[dict], max_targets: int) -> list[tuple[str, s
             continue
         key = (sport, _text(player), year)
         ranked[key] = ranked.get(key, 0) + 1
+        sources[key].add(str(card.get("source") or "").casefold())
         labels[key] = player
     keys = sorted(
         ranked,
-        key=lambda key: (-ranked[key], key[0], labels[key].casefold(), key[2]),
+        key=lambda key: (
+            0 if len(sources[key]) == 1 else 1,
+            -ranked[key],
+            len(sources[key]),
+            key[0],
+            labels[key].casefold(),
+            key[2],
+        ),
     )
     return [
         (sport, labels[(sport, player_key, year)], year)
