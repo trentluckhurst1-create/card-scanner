@@ -1,0 +1,51 @@
+name: publish-active-market
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/publish_active_market.py'
+      - 'src/card_scanner/sources/**'
+      - 'src/card_scanner/identity.py'
+      - 'src/card_scanner/identity_match.py'
+      - 'src/card_scanner/dashboard_export.py'
+      - 'src/card_scanner/active_price_comparison.py'
+      - '.github/workflows/publish-active-market.yml'
+  schedule:
+    - cron: '17 */6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: active-market-publisher
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - name: Install package
+        run: python -m pip install -e .
+      - name: Fetch public active-store catalogue and compare prices
+        run: python scripts/publish_active_market.py --limit-per-store-per-sport 125 --output docs/active_market.json
+      - name: Publish active comparison snapshot
+        run: |
+          if git diff --quiet -- docs/active_market.json; then
+            echo "ACTIVE_MARKET_CHANGED=NO"
+            exit 0
+          fi
+          git config user.name "card-scanner-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- docs/active_market.json
+          git commit -m "data: refresh active market comparison feed"
+          git push origin HEAD:main
+          echo "ACTIVE_MARKET_CHANGED=YES"
