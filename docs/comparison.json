@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-11T09:46:07.825137+00:00",
+  "generated_at": "2026-09-11T10:01:19.111972+00:00",
   "feed_type": "EXACT_CARD_STORE_COMPARISON_ONLY",
   "pricing_basis": "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE",
   "governance": {
@@ -11,69 +11,11 @@
     "can_create_buy": false
   },
   "metrics": {
-    "active_cards_scanned": 5399,
-    "exact_comparison_groups": 40,
-    "exact_comparison_listings": 115
+    "active_cards_scanned": 5391,
+    "exact_comparison_groups": 38,
+    "exact_comparison_listings": 105
   },
   "market_cards": [
-    {
-      "source": "cherry",
-      "external_id": "9094476136502",
-      "url": "https://www.cherrycollectables.com.au/products/2018-panini-donruss-optic-trae-young-rated-rookie-choice-dragon-198-psa-8-207",
-      "image_url": "https://cdn.shopify.com/s/files/1/0263/9009/files/200226J_54_11030cb8-32d8-4537-986a-a451626be9a8.jpg?v=1785722612",
-      "title": "2018 Panini Donruss Optic TRAE YOUNG Rated Rookie Choice Dragon #198 PSA 8 (207)",
-      "sport": "NBA",
-      "asking_price": 499.99,
-      "shipping": 0.0,
-      "currency": "AUD",
-      "landed_aud": 499.99,
-      "identity": {
-        "player": "Trae Young",
-        "year": "2018",
-        "brand": "Panini Donruss Optic",
-        "set_name": "Panini Donruss Optic",
-        "card_number": "198",
-        "parallel": null,
-        "serial_current": null,
-        "serial_total": null,
-        "grader": "PSA",
-        "grade": 8.0,
-        "autograph": false,
-        "memorabilia": false,
-        "rookie": true
-      },
-      "card_family": {
-        "key": "cf_f20688c15da985d9f3cd",
-        "eligible": true,
-        "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
-        "match_confidence": 1.0,
-        "match_reasons": [
-          "same player",
-          "same year",
-          "same brand/product",
-          "same card number",
-          "same grading state",
-          "same rookie state"
-        ],
-        "canonical_components": {
-          "sport": "nba",
-          "player": "traeyoung",
-          "year": "2018",
-          "brand": "paninidonrussoptic",
-          "product": "paninidonrussoptic",
-          "card_number": "198",
-          "parallel": "",
-          "serial_total": "",
-          "grader": "psa",
-          "grade": "8",
-          "autograph": "0",
-          "memorabilia": "0",
-          "rookie": "1"
-        }
-      },
-      "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
-    },
     {
       "source": "thehobby",
       "external_id": "10025846276396",
@@ -132,7 +74,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "thehobby",
@@ -192,7 +137,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "thehobby",
@@ -252,7 +200,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "thehobby",
@@ -311,7 +262,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "thehobby",
@@ -371,7 +325,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "boop",
@@ -428,7 +385,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "boop",
@@ -485,7 +445,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "boop",
@@ -542,7 +505,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "boop",
@@ -599,7 +565,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "boop",
@@ -656,7 +625,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "boop",
@@ -713,7 +685,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "boop",
@@ -770,7 +745,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "cherry",
@@ -827,64 +805,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
-    },
-    {
-      "source": "cherry",
-      "external_id": "8235679645750",
-      "url": "https://www.cherrycollectables.com.au/products/2025-bowman-draft-eli-willits-prized-prospects-pp-1",
-      "image_url": "https://cdn.shopify.com/s/files/1/0263/9009/files/280226_8_e71cfdcd-a0a6-4267-9c74-e69038724e72.jpg?v=1772501061",
-      "title": "2025 Bowman Draft ELI WILLITS Prized Prospects #PP-1",
-      "sport": "MLB",
-      "asking_price": 2.99,
-      "shipping": 0.0,
-      "currency": "AUD",
-      "landed_aud": 2.99,
-      "identity": {
-        "player": "Eli Willits",
-        "year": "2025",
-        "brand": "Bowman Draft",
-        "set_name": "Bowman Draft",
-        "card_number": "PP-1",
-        "parallel": "Prized Prospects",
-        "serial_current": null,
-        "serial_total": null,
-        "grader": null,
-        "grade": null,
-        "autograph": false,
-        "memorabilia": false,
-        "rookie": false
-      },
-      "card_family": {
-        "key": "cf_88efb491111e809e31ff",
-        "eligible": true,
-        "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
-        "match_confidence": 1.0,
-        "match_reasons": [
-          "same player",
-          "same year",
-          "same brand/product",
-          "same card number",
-          "same parallel"
-        ],
-        "canonical_components": {
-          "sport": "mlb",
-          "player": "eliwillits",
-          "year": "2025",
-          "brand": "bowmandraft",
-          "product": "bowmandraft",
-          "card_number": "pp1",
-          "parallel": "prizedprospects",
-          "serial_total": "",
-          "grader": "",
-          "grade": "",
-          "autograph": "0",
-          "memorabilia": "0",
-          "rookie": "0"
-        }
-      },
-      "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "cherry",
@@ -941,7 +865,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "cherry",
@@ -998,7 +925,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "cherry",
@@ -1054,7 +984,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "cherry",
@@ -1111,7 +1044,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "sportscardstore",
@@ -1168,7 +1104,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "sportscardstore",
@@ -1225,7 +1164,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "sportscardstore",
@@ -1282,7 +1224,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "sportscardstore",
@@ -1339,7 +1284,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "sportscardstore",
@@ -1396,7 +1344,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "sportscardstore",
@@ -1453,7 +1404,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "sportscardstore",
@@ -1510,7 +1464,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "sportscardstore",
@@ -1567,7 +1524,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "sportscardstore",
@@ -1624,7 +1584,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "sportscardstore",
@@ -1681,7 +1644,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "thehobby",
@@ -1739,7 +1705,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "boop",
@@ -1797,7 +1766,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "cherry",
@@ -1853,7 +1825,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "cherry",
@@ -1909,7 +1884,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "cherry",
@@ -1966,7 +1944,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "cherry",
@@ -2023,65 +2004,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
-    },
-    {
-      "source": "cherry",
-      "external_id": "9094354665526",
-      "url": "https://www.cherrycollectables.com.au/products/2018-panini-donruss-optic-trae-young-rated-rookie-choice-dragon-198-psa-8-245",
-      "image_url": "https://cdn.shopify.com/s/files/1/0263/9009/files/200226F_118_74ea8b64-f95e-4a8d-8e85-4d505f06b4ea.jpg?v=1785722488",
-      "title": "2018 Panini Donruss Optic TRAE YOUNG Rated Rookie Choice Dragon #198 PSA 8 (245)",
-      "sport": "NBA",
-      "asking_price": 499.99,
-      "shipping": 0.0,
-      "currency": "AUD",
-      "landed_aud": 499.99,
-      "identity": {
-        "player": "Trae Young",
-        "year": "2018",
-        "brand": "Panini Donruss Optic",
-        "set_name": "Panini Donruss Optic",
-        "card_number": "198",
-        "parallel": null,
-        "serial_current": null,
-        "serial_total": null,
-        "grader": "PSA",
-        "grade": 8.0,
-        "autograph": false,
-        "memorabilia": false,
-        "rookie": true
-      },
-      "card_family": {
-        "key": "cf_f20688c15da985d9f3cd",
-        "eligible": true,
-        "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
-        "match_confidence": 1.0,
-        "match_reasons": [
-          "same player",
-          "same year",
-          "same brand/product",
-          "same card number",
-          "same grading state",
-          "same rookie state"
-        ],
-        "canonical_components": {
-          "sport": "nba",
-          "player": "traeyoung",
-          "year": "2018",
-          "brand": "paninidonrussoptic",
-          "product": "paninidonrussoptic",
-          "card_number": "198",
-          "parallel": "",
-          "serial_total": "",
-          "grader": "psa",
-          "grade": "8",
-          "autograph": "0",
-          "memorabilia": "0",
-          "rookie": "1"
-        }
-      },
-      "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "cherry",
@@ -2138,7 +2064,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "cherry",
@@ -2194,7 +2123,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "cherry",
@@ -2251,7 +2183,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "cherry",
@@ -2307,7 +2242,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "cherry",
@@ -2363,7 +2301,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "cherry",
@@ -2420,7 +2361,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "cherry",
@@ -2476,7 +2420,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "cherry",
@@ -2532,7 +2479,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "cherry",
@@ -2589,7 +2539,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "cherry",
@@ -2645,7 +2598,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "cherry",
@@ -2701,7 +2657,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "cherry",
@@ -2758,7 +2717,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "cherry",
@@ -2815,7 +2777,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "cherry",
@@ -2872,7 +2837,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "cherry",
@@ -2929,7 +2897,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "cherry",
@@ -2985,65 +2956,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
-    },
-    {
-      "source": "ebay",
-      "external_id": "v1|158018257880|0",
-      "url": "https://www.ebay.com.au/itm/158018257880?_skw=2018+Trae+Young&hash=item24ca9f43d8:g:f1YAAeSwEABo20J~",
-      "image_url": "https://i.ebayimg.com/images/g/f1YAAeSwEABo20J~/s-l225.jpg",
-      "title": "PSA 8 2018 Panini Donruss Optic NBA TRAE YOUNG Rated Rookie #198 Atlanta Hawks",
-      "sport": "NBA",
-      "asking_price": 35.95,
-      "shipping": 0.0,
-      "currency": "AUD",
-      "landed_aud": 35.95,
-      "identity": {
-        "player": "Trae Young",
-        "year": "2018",
-        "brand": "Panini Donruss Optic",
-        "set_name": "Panini Donruss Optic",
-        "card_number": "198",
-        "parallel": null,
-        "serial_current": null,
-        "serial_total": null,
-        "grader": "PSA",
-        "grade": 8.0,
-        "autograph": false,
-        "memorabilia": false,
-        "rookie": true
-      },
-      "card_family": {
-        "key": "cf_f20688c15da985d9f3cd",
-        "eligible": true,
-        "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
-        "match_confidence": 1.0,
-        "match_reasons": [
-          "same player",
-          "same year",
-          "same brand/product",
-          "same card number",
-          "same grading state",
-          "same rookie state"
-        ],
-        "canonical_components": {
-          "sport": "nba",
-          "player": "traeyoung",
-          "year": "2018",
-          "brand": "paninidonrussoptic",
-          "product": "paninidonrussoptic",
-          "card_number": "198",
-          "parallel": "",
-          "serial_total": "",
-          "grader": "psa",
-          "grade": "8",
-          "autograph": "0",
-          "memorabilia": "0",
-          "rookie": "1"
-        }
-      },
-      "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "ebay",
@@ -3100,121 +3016,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
-    },
-    {
-      "source": "ebay",
-      "external_id": "v1|407207226755|0",
-      "url": "https://www.ebay.com.au/itm/407207226755?_skw=2025+Jayden+Daniels&hash=item5ecf712d83:g:V88AAeSwAKZp-zeK",
-      "image_url": "https://i.ebayimg.com/images/g/V88AAeSwAKZp-zeK/s-l225.jpg",
-      "title": "2025 Topps Chrome #295 Jayden Daniels Silver Refractor",
-      "sport": "NFL",
-      "asking_price": 1.54,
-      "shipping": 0.0,
-      "currency": "AUD",
-      "landed_aud": 1.54,
-      "identity": {
-        "player": "Jayden Daniels",
-        "year": "2025",
-        "brand": "Topps Chrome",
-        "set_name": "Topps Chrome",
-        "card_number": "295",
-        "parallel": "Refractor",
-        "serial_current": null,
-        "serial_total": null,
-        "grader": null,
-        "grade": null,
-        "autograph": false,
-        "memorabilia": false,
-        "rookie": false
-      },
-      "card_family": {
-        "key": "cf_c1df5b56737845de43f2",
-        "eligible": true,
-        "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
-        "match_confidence": 1.0,
-        "match_reasons": [
-          "same player",
-          "same year",
-          "same brand/product",
-          "same card number",
-          "same parallel"
-        ],
-        "canonical_components": {
-          "sport": "nfl",
-          "player": "jaydendaniels",
-          "year": "2025",
-          "brand": "toppschrome",
-          "product": "toppschrome",
-          "card_number": "295",
-          "parallel": "refractor",
-          "serial_total": "",
-          "grader": "",
-          "grade": "",
-          "autograph": "0",
-          "memorabilia": "0",
-          "rookie": "0"
-        }
-      },
-      "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
-    },
-    {
-      "source": "ebay",
-      "external_id": "v1|178486080544|0",
-      "url": "https://www.ebay.com.au/itm/178486080544?_skw=2025+Jayden+Daniels&hash=item298e997420:g:BZ8AAeSw87BqemAl",
-      "image_url": "https://i.ebayimg.com/images/g/BZ8AAeSw87BqemAl/s-l225.jpg",
-      "title": "2025 Topps Chrome Jayden Daniels Pulsar Refractor #295",
-      "sport": "NFL",
-      "asking_price": 3.98,
-      "shipping": 0.0,
-      "currency": "AUD",
-      "landed_aud": 3.98,
-      "identity": {
-        "player": "Jayden Daniels",
-        "year": "2025",
-        "brand": "Topps Chrome",
-        "set_name": "Topps Chrome",
-        "card_number": "295",
-        "parallel": "Refractor",
-        "serial_current": null,
-        "serial_total": null,
-        "grader": null,
-        "grade": null,
-        "autograph": false,
-        "memorabilia": false,
-        "rookie": false
-      },
-      "card_family": {
-        "key": "cf_c1df5b56737845de43f2",
-        "eligible": true,
-        "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
-        "match_confidence": 1.0,
-        "match_reasons": [
-          "same player",
-          "same year",
-          "same brand/product",
-          "same card number",
-          "same parallel"
-        ],
-        "canonical_components": {
-          "sport": "nfl",
-          "player": "jaydendaniels",
-          "year": "2025",
-          "brand": "toppschrome",
-          "product": "toppschrome",
-          "card_number": "295",
-          "parallel": "refractor",
-          "serial_total": "",
-          "grader": "",
-          "grade": "",
-          "autograph": "0",
-          "memorabilia": "0",
-          "rookie": "0"
-        }
-      },
-      "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "ebay",
@@ -3270,7 +3075,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "ebay",
@@ -3327,7 +3135,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "ebay",
@@ -3383,7 +3194,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "ebay",
@@ -3440,7 +3254,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "ebay",
@@ -3497,7 +3314,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "ebay",
@@ -3554,7 +3374,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "ebay",
@@ -3610,7 +3433,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "ebay",
@@ -3667,7 +3493,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "ebay",
@@ -3724,7 +3553,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "ebay",
@@ -3781,7 +3613,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "ebay",
@@ -3838,7 +3673,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "ebay",
@@ -3894,7 +3732,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "ebay",
@@ -3950,7 +3791,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "ebay",
@@ -4007,64 +3851,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
-    },
-    {
-      "source": "ebay",
-      "external_id": "v1|407199384197|0",
-      "url": "https://www.ebay.com.au/itm/407199384197?_skw=2025+Mason+Taylor&hash=item5ecef98285:g:2a8AAeSwqHpqnsKV&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGaaKc71PC4Pdapiz9wrAuqsGlv9WxC3jAJoscwslD6tzsexHGk8UnjUoIZmApQw3N7YcmZHwtpBPeSu%2Fh%2BLzqbg6igepsp8Wzh3fdzDgi9R58ivkKP5tHa%2FoiOODErEf6yVjXp07M5udFvU3Fk73sbu8L1Jz%2FSwr45bV2uqJQ%2F2kCvocAmFI4C9Ez1SGcZrTiyxC9J7YwggKeZzwEthicr3LcahOaPs0YgYs8hJGKeABY0b5JDWLwF46RhkbIAqKhoTdKTCcajJv4QiJm1qZujmsTYFa%2FgPrxpT742KEk5%2Fuw%3D%3D",
-      "image_url": "https://i.ebayimg.com/images/g/2a8AAeSwqHpqnsKV/s-l225.jpg",
-      "title": "Mason Taylor #400 New York Jets Rookie | 2025 Topps Chrome | NFL Football",
-      "sport": "NFL",
-      "asking_price": 4.0,
-      "shipping": 1.85,
-      "currency": "AUD",
-      "landed_aud": 5.85,
-      "identity": {
-        "player": "Mason Taylor",
-        "year": "2025",
-        "brand": "Topps Chrome",
-        "set_name": "Topps Chrome",
-        "card_number": "400",
-        "parallel": null,
-        "serial_current": null,
-        "serial_total": null,
-        "grader": null,
-        "grade": null,
-        "autograph": false,
-        "memorabilia": false,
-        "rookie": true
-      },
-      "card_family": {
-        "key": "cf_19269960b70ec14a212d",
-        "eligible": true,
-        "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
-        "match_confidence": 1.0,
-        "match_reasons": [
-          "same player",
-          "same year",
-          "same brand/product",
-          "same card number",
-          "same rookie state"
-        ],
-        "canonical_components": {
-          "sport": "nfl",
-          "player": "masontaylor",
-          "year": "2025",
-          "brand": "toppschrome",
-          "product": "toppschrome",
-          "card_number": "400",
-          "parallel": "",
-          "serial_total": "",
-          "grader": "",
-          "grade": "",
-          "autograph": "0",
-          "memorabilia": "0",
-          "rookie": "1"
-        }
-      },
-      "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "ebay",
@@ -4121,7 +3911,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "ebay",
@@ -4178,7 +3971,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "ebay",
@@ -4235,64 +4031,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
-    },
-    {
-      "source": "ebay",
-      "external_id": "v1|178480970536|0",
-      "url": "https://www.ebay.com.au/itm/178480970536?_skw=2025+Justin+Jefferson&hash=item298e4b7b28:g:dHoAAeSwPlhqoNLE",
-      "image_url": "https://i.ebayimg.com/images/g/dHoAAeSwPlhqoNLE/s-l225.jpg",
-      "title": "Justin Jefferson 2025 Topps Chrome Pulsar Refractor #195 Minnesota Vikings",
-      "sport": "NFL",
-      "asking_price": 3.06,
-      "shipping": 0.0,
-      "currency": "AUD",
-      "landed_aud": 3.06,
-      "identity": {
-        "player": "Justin Jefferson",
-        "year": "2025",
-        "brand": "Topps Chrome",
-        "set_name": "Topps Chrome",
-        "card_number": "195",
-        "parallel": "Refractor",
-        "serial_current": null,
-        "serial_total": null,
-        "grader": null,
-        "grade": null,
-        "autograph": false,
-        "memorabilia": false,
-        "rookie": false
-      },
-      "card_family": {
-        "key": "cf_185a4a52bd2b34b8de0a",
-        "eligible": true,
-        "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
-        "match_confidence": 1.0,
-        "match_reasons": [
-          "same player",
-          "same year",
-          "same brand/product",
-          "same card number",
-          "same parallel"
-        ],
-        "canonical_components": {
-          "sport": "nfl",
-          "player": "justinjefferson",
-          "year": "2025",
-          "brand": "toppschrome",
-          "product": "toppschrome",
-          "card_number": "195",
-          "parallel": "refractor",
-          "serial_total": "",
-          "grader": "",
-          "grade": "",
-          "autograph": "0",
-          "memorabilia": "0",
-          "rookie": "0"
-        }
-      },
-      "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "ebay",
@@ -4349,7 +4091,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "ebay",
@@ -4405,7 +4150,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "ebay",
@@ -4462,7 +4210,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "ebay",
@@ -4519,7 +4270,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "ebay",
@@ -4576,7 +4330,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "ebay",
@@ -4632,7 +4389,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "ebay",
@@ -4689,7 +4449,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "ebay",
@@ -4746,7 +4509,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "ebay",
@@ -4803,7 +4569,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "ebay",
@@ -4860,7 +4629,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "ebay",
@@ -4917,7 +4689,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "ebay",
@@ -4974,7 +4749,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "ebay",
@@ -5031,7 +4809,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "ebay",
@@ -5088,7 +4869,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "ebay",
@@ -5145,7 +4929,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "ebay",
@@ -5202,7 +4989,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "ebay",
@@ -5259,7 +5049,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "ebay",
@@ -5316,121 +5109,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
-    },
-    {
-      "source": "ebay",
-      "external_id": "v1|237045008247|0",
-      "url": "https://www.ebay.com.au/itm/237045008247?_skw=2025+Eli+Willits&hash=item3730fbc777:g:ymYAAeSwcztqmFKb",
-      "image_url": "https://i.ebayimg.com/images/g/ymYAAeSwcztqmFKb/s-l225.jpg",
-      "title": "2025 Bowman Draft Eli Willits Chrome Prized Prospects Mojo Refractor #PP-1",
-      "sport": "MLB",
-      "asking_price": 3.07,
-      "shipping": 0.0,
-      "currency": "AUD",
-      "landed_aud": 3.07,
-      "identity": {
-        "player": "Eli Willits",
-        "year": "2025",
-        "brand": "Bowman Draft",
-        "set_name": "Bowman Draft",
-        "card_number": "PP-1",
-        "parallel": "Prized Prospects",
-        "serial_current": null,
-        "serial_total": null,
-        "grader": null,
-        "grade": null,
-        "autograph": false,
-        "memorabilia": false,
-        "rookie": false
-      },
-      "card_family": {
-        "key": "cf_88efb491111e809e31ff",
-        "eligible": true,
-        "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
-        "match_confidence": 1.0,
-        "match_reasons": [
-          "same player",
-          "same year",
-          "same brand/product",
-          "same card number",
-          "same parallel"
-        ],
-        "canonical_components": {
-          "sport": "mlb",
-          "player": "eliwillits",
-          "year": "2025",
-          "brand": "bowmandraft",
-          "product": "bowmandraft",
-          "card_number": "pp1",
-          "parallel": "prizedprospects",
-          "serial_total": "",
-          "grader": "",
-          "grade": "",
-          "autograph": "0",
-          "memorabilia": "0",
-          "rookie": "0"
-        }
-      },
-      "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
-    },
-    {
-      "source": "ebay",
-      "external_id": "v1|128072986968|0",
-      "url": "https://www.ebay.com.au/itm/128072986968?_skw=2025+Eli+Willits&hash=item1dd1beb158:g:6GkAAeSwhi5qKiXR",
-      "image_url": "https://i.ebayimg.com/images/g/6GkAAeSwhi5qKiXR/s-l225.jpg",
-      "title": "Eli Willits 2025 Bowman Draft Chrome Prized Prospects #PP-1 Nationals Lot Of 5",
-      "sport": "MLB",
-      "asking_price": 6.13,
-      "shipping": 0.0,
-      "currency": "AUD",
-      "landed_aud": 6.13,
-      "identity": {
-        "player": "Eli Willits",
-        "year": "2025",
-        "brand": "Bowman Draft",
-        "set_name": "Bowman Draft",
-        "card_number": "PP-1",
-        "parallel": "Prized Prospects",
-        "serial_current": null,
-        "serial_total": null,
-        "grader": null,
-        "grade": null,
-        "autograph": false,
-        "memorabilia": false,
-        "rookie": false
-      },
-      "card_family": {
-        "key": "cf_88efb491111e809e31ff",
-        "eligible": true,
-        "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
-        "match_confidence": 1.0,
-        "match_reasons": [
-          "same player",
-          "same year",
-          "same brand/product",
-          "same card number",
-          "same parallel"
-        ],
-        "canonical_components": {
-          "sport": "mlb",
-          "player": "eliwillits",
-          "year": "2025",
-          "brand": "bowmandraft",
-          "product": "bowmandraft",
-          "card_number": "pp1",
-          "parallel": "prizedprospects",
-          "serial_total": "",
-          "grader": "",
-          "grade": "",
-          "autograph": "0",
-          "memorabilia": "0",
-          "rookie": "0"
-        }
-      },
-      "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "ebay",
@@ -5487,7 +5169,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "ebay",
@@ -5543,7 +5228,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "ebay",
@@ -5600,7 +5288,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "ebay",
@@ -5659,7 +5350,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "ebay",
@@ -5719,7 +5413,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "ebay",
@@ -5779,7 +5476,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "ebay",
@@ -5839,7 +5539,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "ebay",
@@ -5899,7 +5602,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "ebay",
@@ -5955,7 +5661,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "ebay",
@@ -6013,7 +5722,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "ebay",
@@ -6069,7 +5781,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "ebay",
@@ -6125,7 +5840,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "ebay",
@@ -6182,7 +5900,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "ebay",
@@ -6239,7 +5960,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "ebay",
@@ -6296,7 +6020,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "ebay",
@@ -6353,7 +6080,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "ebay",
@@ -6410,7 +6140,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "ebay",
@@ -6467,7 +6200,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "ebay",
@@ -6523,7 +6259,10 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     },
     {
       "source": "ebay",
@@ -6581,12 +6320,15 @@
         }
       },
       "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN"
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-11"
     }
   ],
   "comparison_groups": [
     {
-      "comparison_key": "cf_f20688c15da985d9f3cd",
+      "comparison_key": "cf_ad93894a8f0b1b3e28f4|tg:",
       "comparison_type": "EXACT_CARD",
       "exact_equivalent": true,
       "match_confidence": 1.0,
@@ -6595,105 +6337,7 @@
         "same year",
         "same brand/product",
         "same card number",
-        "same grading state",
-        "same rookie state"
-      ],
-      "pricing_basis": "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE",
-      "comparison_warning": null,
-      "sport": "NBA",
-      "player": "Trae Young",
-      "year": "2018",
-      "product": "Panini Donruss Optic",
-      "store_count": 2,
-      "listing_count": 3,
-      "stores": [
-        "cherry",
-        "ebay"
-      ],
-      "lowest_active_ask_aud": 35.95,
-      "median_active_ask_aud": 499.99,
-      "highest_active_ask_aud": 499.99,
-      "spread_aud": 464.04,
-      "spread_pct": 1290.79,
-      "cheapest_store": "ebay",
-      "cheapest_external_id": "v1|158018257880|0",
-      "cheapest_url": "https://www.ebay.com.au/itm/158018257880?_skw=2018+Trae+Young&hash=item24ca9f43d8:g:f1YAAeSwEABo20J~",
-      "cheapest_landed_aud": 35.95,
-      "next_best_store": "cherry",
-      "next_best_landed_aud": 499.99,
-      "saving_vs_next_best_aud": 464.04,
-      "saving_vs_next_best_pct": 92.81,
-      "saving_vs_median_aud": 464.04,
-      "saving_vs_median_pct": 92.81,
-      "saving_vs_highest_aud": 464.04,
-      "saving_vs_highest_pct": 92.81,
-      "listings": [
-        {
-          "source": "ebay",
-          "external_id": "v1|158018257880|0",
-          "url": "https://www.ebay.com.au/itm/158018257880?_skw=2018+Trae+Young&hash=item24ca9f43d8:g:f1YAAeSwEABo20J~",
-          "title": "PSA 8 2018 Panini Donruss Optic NBA TRAE YOUNG Rated Rookie #198 Atlanta Hawks",
-          "landed_aud": 35.95,
-          "asking_price": 35.95,
-          "shipping": 0.0,
-          "currency": "AUD",
-          "card_number": "198",
-          "parallel": null,
-          "serial_total": null,
-          "grader": "PSA",
-          "grade": 8.0,
-          "rookie": true,
-          "autograph": false,
-          "memorabilia": false
-        },
-        {
-          "source": "cherry",
-          "external_id": "9094476136502",
-          "url": "https://www.cherrycollectables.com.au/products/2018-panini-donruss-optic-trae-young-rated-rookie-choice-dragon-198-psa-8-207",
-          "title": "2018 Panini Donruss Optic TRAE YOUNG Rated Rookie Choice Dragon #198 PSA 8 (207)",
-          "landed_aud": 499.99,
-          "asking_price": 499.99,
-          "shipping": 0.0,
-          "currency": "AUD",
-          "card_number": "198",
-          "parallel": null,
-          "serial_total": null,
-          "grader": "PSA",
-          "grade": 8.0,
-          "rookie": true,
-          "autograph": false,
-          "memorabilia": false
-        },
-        {
-          "source": "cherry",
-          "external_id": "9094354665526",
-          "url": "https://www.cherrycollectables.com.au/products/2018-panini-donruss-optic-trae-young-rated-rookie-choice-dragon-198-psa-8-245",
-          "title": "2018 Panini Donruss Optic TRAE YOUNG Rated Rookie Choice Dragon #198 PSA 8 (245)",
-          "landed_aud": 499.99,
-          "asking_price": 499.99,
-          "shipping": 0.0,
-          "currency": "AUD",
-          "card_number": "198",
-          "parallel": null,
-          "serial_total": null,
-          "grader": "PSA",
-          "grade": 8.0,
-          "rookie": true,
-          "autograph": false,
-          "memorabilia": false
-        }
-      ]
-    },
-    {
-      "comparison_key": "cf_ad93894a8f0b1b3e28f4",
-      "comparison_type": "EXACT_CARD",
-      "exact_equivalent": true,
-      "match_confidence": 1.0,
-      "match_reasons": [
-        "same player",
-        "same year",
-        "same brand/product",
-        "same card number"
+        "title discriminator guard passed"
       ],
       "pricing_basis": "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE",
       "comparison_warning": null,
@@ -6741,7 +6385,8 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": ""
         },
         {
           "source": "cherry",
@@ -6759,12 +6404,13 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": ""
         }
       ]
     },
     {
-      "comparison_key": "cf_15d09d533cc56b3db7f4",
+      "comparison_key": "cf_15d09d533cc56b3db7f4|tg:blackpearl",
       "comparison_type": "EXACT_CARD",
       "exact_equivalent": true,
       "match_confidence": 1.0,
@@ -6773,7 +6419,8 @@
         "same year",
         "same brand/product",
         "same parallel",
-        "same serial denominator"
+        "same serial denominator",
+        "title discriminator guard passed"
       ],
       "pricing_basis": "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE",
       "comparison_warning": null,
@@ -6821,7 +6468,8 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": "blackpearl"
         },
         {
           "source": "ebay",
@@ -6839,7 +6487,8 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": "blackpearl"
         },
         {
           "source": "sportscardstore",
@@ -6857,7 +6506,8 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": "blackpearl"
         },
         {
           "source": "ebay",
@@ -6875,7 +6525,8 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": "blackpearl"
         },
         {
           "source": "sportscardstore",
@@ -6893,7 +6544,8 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": "blackpearl"
         },
         {
           "source": "ebay",
@@ -6911,7 +6563,8 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": "blackpearl"
         },
         {
           "source": "ebay",
@@ -6929,7 +6582,8 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": "blackpearl"
         },
         {
           "source": "sportscardstore",
@@ -6947,7 +6601,8 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": "blackpearl"
         },
         {
           "source": "sportscardstore",
@@ -6965,7 +6620,8 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": "blackpearl"
         },
         {
           "source": "ebay",
@@ -6983,12 +6639,13 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": "blackpearl"
         }
       ]
     },
     {
-      "comparison_key": "cf_7660f15950c004f7dfb6",
+      "comparison_key": "cf_7660f15950c004f7dfb6|tg:",
       "comparison_type": "EXACT_CARD",
       "exact_equivalent": true,
       "match_confidence": 1.0,
@@ -6997,7 +6654,8 @@
         "same year",
         "same brand/product",
         "same card number",
-        "same autograph state"
+        "same autograph state",
+        "title discriminator guard passed"
       ],
       "pricing_basis": "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE",
       "comparison_warning": null,
@@ -7045,7 +6703,8 @@
           "grade": null,
           "rookie": false,
           "autograph": true,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": ""
         },
         {
           "source": "cherry",
@@ -7063,12 +6722,13 @@
           "grade": null,
           "rookie": false,
           "autograph": true,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": ""
         }
       ]
     },
     {
-      "comparison_key": "cf_d70fc0e92f548c5b8b62",
+      "comparison_key": "cf_d70fc0e92f548c5b8b62|tg:138",
       "comparison_type": "EXACT_CARD",
       "exact_equivalent": true,
       "match_confidence": 1.0,
@@ -7080,7 +6740,8 @@
         "same serial denominator",
         "same autograph state",
         "same memorabilia state",
-        "same rookie state"
+        "same rookie state",
+        "title discriminator guard passed"
       ],
       "pricing_basis": "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE",
       "comparison_warning": null,
@@ -7128,7 +6789,8 @@
           "grade": null,
           "rookie": true,
           "autograph": true,
-          "memorabilia": true
+          "memorabilia": true,
+          "title_guard": "138"
         },
         {
           "source": "ebay",
@@ -7146,12 +6808,13 @@
           "grade": null,
           "rookie": true,
           "autograph": true,
-          "memorabilia": true
+          "memorabilia": true,
+          "title_guard": "138"
         }
       ]
     },
     {
-      "comparison_key": "cf_4eb8cec2d90e49eab07b",
+      "comparison_key": "cf_4eb8cec2d90e49eab07b|tg:",
       "comparison_type": "EXACT_CARD",
       "exact_equivalent": true,
       "match_confidence": 1.0,
@@ -7161,7 +6824,8 @@
         "same brand/product",
         "same parallel",
         "same serial denominator",
-        "same autograph state"
+        "same autograph state",
+        "title discriminator guard passed"
       ],
       "pricing_basis": "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE",
       "comparison_warning": null,
@@ -7209,7 +6873,8 @@
           "grade": null,
           "rookie": false,
           "autograph": true,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": ""
         },
         {
           "source": "ebay",
@@ -7227,12 +6892,13 @@
           "grade": null,
           "rookie": false,
           "autograph": true,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": ""
         }
       ]
     },
     {
-      "comparison_key": "cf_1c70d3d7819c2db37076",
+      "comparison_key": "cf_1c70d3d7819c2db37076|tg:",
       "comparison_type": "EXACT_CARD",
       "exact_equivalent": true,
       "match_confidence": 1.0,
@@ -7241,7 +6907,8 @@
         "same year",
         "same brand/product",
         "same card number",
-        "same parallel"
+        "same parallel",
+        "title discriminator guard passed"
       ],
       "pricing_basis": "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE",
       "comparison_warning": null,
@@ -7289,7 +6956,8 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": ""
         },
         {
           "source": "ebay",
@@ -7307,12 +6975,13 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": ""
         }
       ]
     },
     {
-      "comparison_key": "cf_6013fd1564bc87ba957c",
+      "comparison_key": "cf_6013fd1564bc87ba957c|tg:125",
       "comparison_type": "EXACT_CARD",
       "exact_equivalent": true,
       "match_confidence": 1.0,
@@ -7324,7 +6993,8 @@
         "same serial denominator",
         "same autograph state",
         "same memorabilia state",
-        "same rookie state"
+        "same rookie state",
+        "title discriminator guard passed"
       ],
       "pricing_basis": "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE",
       "comparison_warning": null,
@@ -7372,7 +7042,8 @@
           "grade": null,
           "rookie": true,
           "autograph": true,
-          "memorabilia": true
+          "memorabilia": true,
+          "title_guard": "125"
         },
         {
           "source": "ebay",
@@ -7390,12 +7061,13 @@
           "grade": null,
           "rookie": true,
           "autograph": true,
-          "memorabilia": true
+          "memorabilia": true,
+          "title_guard": "125"
         }
       ]
     },
     {
-      "comparison_key": "cf_60b7ef0bc5481664c724",
+      "comparison_key": "cf_60b7ef0bc5481664c724|tg:",
       "comparison_type": "EXACT_CARD",
       "exact_equivalent": true,
       "match_confidence": 1.0,
@@ -7404,7 +7076,8 @@
         "same year",
         "same brand/product",
         "same card number",
-        "same parallel"
+        "same parallel",
+        "title discriminator guard passed"
       ],
       "pricing_basis": "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE",
       "comparison_warning": null,
@@ -7452,7 +7125,8 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": ""
         },
         {
           "source": "ebay",
@@ -7470,7 +7144,8 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": ""
         },
         {
           "source": "cherry",
@@ -7488,12 +7163,13 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": ""
         }
       ]
     },
     {
-      "comparison_key": "cf_bdfd17726ddf8f59a900",
+      "comparison_key": "cf_bdfd17726ddf8f59a900|tg:",
       "comparison_type": "EXACT_CARD",
       "exact_equivalent": true,
       "match_confidence": 1.0,
@@ -7501,7 +7177,8 @@
         "same player",
         "same year",
         "same brand/product",
-        "same card number"
+        "same card number",
+        "title discriminator guard passed"
       ],
       "pricing_basis": "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE",
       "comparison_warning": null,
@@ -7549,7 +7226,8 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": ""
         },
         {
           "source": "cherry",
@@ -7567,12 +7245,13 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": ""
         }
       ]
     },
     {
-      "comparison_key": "cf_fc370f08516b6121952b",
+      "comparison_key": "cf_fc370f08516b6121952b|tg:125,neonblue",
       "comparison_type": "EXACT_CARD",
       "exact_equivalent": true,
       "match_confidence": 1.0,
@@ -7584,7 +7263,8 @@
         "same serial denominator",
         "same autograph state",
         "same memorabilia state",
-        "same rookie state"
+        "same rookie state",
+        "title discriminator guard passed"
       ],
       "pricing_basis": "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE",
       "comparison_warning": null,
@@ -7632,7 +7312,8 @@
           "grade": null,
           "rookie": true,
           "autograph": true,
-          "memorabilia": true
+          "memorabilia": true,
+          "title_guard": "125,neonblue"
         },
         {
           "source": "ebay",
@@ -7650,12 +7331,13 @@
           "grade": null,
           "rookie": true,
           "autograph": true,
-          "memorabilia": true
+          "memorabilia": true,
+          "title_guard": "125,neonblue"
         }
       ]
     },
     {
-      "comparison_key": "cf_a21e5b9c92be1af570dd",
+      "comparison_key": "cf_a21e5b9c92be1af570dd|tg:blackpearl",
       "comparison_type": "EXACT_CARD",
       "exact_equivalent": true,
       "match_confidence": 1.0,
@@ -7664,7 +7346,8 @@
         "same year",
         "same brand/product",
         "same parallel",
-        "same serial denominator"
+        "same serial denominator",
+        "title discriminator guard passed"
       ],
       "pricing_basis": "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE",
       "comparison_warning": null,
@@ -7712,7 +7395,8 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": "blackpearl"
         },
         {
           "source": "ebay",
@@ -7730,7 +7414,8 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": "blackpearl"
         },
         {
           "source": "sportscardstore",
@@ -7748,12 +7433,13 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": "blackpearl"
         }
       ]
     },
     {
-      "comparison_key": "cf_ba47e736bb04e124403c",
+      "comparison_key": "cf_ba47e736bb04e124403c|tg:",
       "comparison_type": "EXACT_CARD",
       "exact_equivalent": true,
       "match_confidence": 1.0,
@@ -7762,7 +7448,8 @@
         "same year",
         "same brand/product",
         "same card number",
-        "same parallel"
+        "same parallel",
+        "title discriminator guard passed"
       ],
       "pricing_basis": "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE",
       "comparison_warning": null,
@@ -7810,7 +7497,8 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": ""
         },
         {
           "source": "ebay",
@@ -7828,7 +7516,8 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": ""
         },
         {
           "source": "cherry",
@@ -7846,7 +7535,8 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": ""
         },
         {
           "source": "ebay",
@@ -7864,12 +7554,13 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": ""
         }
       ]
     },
     {
-      "comparison_key": "cf_185a4a52bd2b34b8de0a",
+      "comparison_key": "cf_185a4a52bd2b34b8de0a|tg:",
       "comparison_type": "EXACT_CARD",
       "exact_equivalent": true,
       "match_confidence": 1.0,
@@ -7878,7 +7569,8 @@
         "same year",
         "same brand/product",
         "same card number",
-        "same parallel"
+        "same parallel",
+        "title discriminator guard passed"
       ],
       "pricing_basis": "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE",
       "comparison_warning": null,
@@ -7887,47 +7579,29 @@
       "year": "2025",
       "product": "Topps Chrome",
       "store_count": 2,
-      "listing_count": 3,
+      "listing_count": 2,
       "stores": [
         "cherry",
         "ebay"
       ],
-      "lowest_active_ask_aud": 3.06,
-      "median_active_ask_aud": 3.99,
+      "lowest_active_ask_aud": 3.99,
+      "median_active_ask_aud": 17.36,
       "highest_active_ask_aud": 30.73,
-      "spread_aud": 27.67,
-      "spread_pct": 904.25,
-      "cheapest_store": "ebay",
-      "cheapest_external_id": "v1|178480970536|0",
-      "cheapest_url": "https://www.ebay.com.au/itm/178480970536?_skw=2025+Justin+Jefferson&hash=item298e4b7b28:g:dHoAAeSwPlhqoNLE",
-      "cheapest_landed_aud": 3.06,
-      "next_best_store": "cherry",
-      "next_best_landed_aud": 3.99,
-      "saving_vs_next_best_aud": 0.93,
-      "saving_vs_next_best_pct": 23.31,
-      "saving_vs_median_aud": 0.93,
-      "saving_vs_median_pct": 23.31,
-      "saving_vs_highest_aud": 27.67,
-      "saving_vs_highest_pct": 90.04,
+      "spread_aud": 26.74,
+      "spread_pct": 670.18,
+      "cheapest_store": "cherry",
+      "cheapest_external_id": "8500742586422",
+      "cheapest_url": "https://www.cherrycollectables.com.au/products/2025-topps-chrome-football-justin-jefferson-base-refractor-195",
+      "cheapest_landed_aud": 3.99,
+      "next_best_store": "ebay",
+      "next_best_landed_aud": 30.73,
+      "saving_vs_next_best_aud": 26.74,
+      "saving_vs_next_best_pct": 87.02,
+      "saving_vs_median_aud": 13.37,
+      "saving_vs_median_pct": 77.02,
+      "saving_vs_highest_aud": 26.74,
+      "saving_vs_highest_pct": 87.02,
       "listings": [
-        {
-          "source": "ebay",
-          "external_id": "v1|178480970536|0",
-          "url": "https://www.ebay.com.au/itm/178480970536?_skw=2025+Justin+Jefferson&hash=item298e4b7b28:g:dHoAAeSwPlhqoNLE",
-          "title": "Justin Jefferson 2025 Topps Chrome Pulsar Refractor #195 Minnesota Vikings",
-          "landed_aud": 3.06,
-          "asking_price": 3.06,
-          "shipping": 0.0,
-          "currency": "AUD",
-          "card_number": "195",
-          "parallel": "Refractor",
-          "serial_total": null,
-          "grader": null,
-          "grade": null,
-          "rookie": false,
-          "autograph": false,
-          "memorabilia": false
-        },
         {
           "source": "cherry",
           "external_id": "8500742586422",
@@ -7944,7 +7618,8 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": ""
         },
         {
           "source": "ebay",
@@ -7962,12 +7637,13 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": ""
         }
       ]
     },
     {
-      "comparison_key": "cf_19269960b70ec14a212d",
+      "comparison_key": "cf_19269960b70ec14a212d|tg:",
       "comparison_type": "EXACT_CARD",
       "exact_equivalent": true,
       "match_confidence": 1.0,
@@ -7976,7 +7652,8 @@
         "same year",
         "same brand/product",
         "same card number",
-        "same rookie state"
+        "same rookie state",
+        "title discriminator guard passed"
       ],
       "pricing_basis": "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE",
       "comparison_warning": null,
@@ -7985,47 +7662,29 @@
       "year": "2025",
       "product": "Topps Chrome",
       "store_count": 2,
-      "listing_count": 3,
+      "listing_count": 2,
       "stores": [
         "cherry",
         "ebay"
       ],
-      "lowest_active_ask_aud": 5.85,
-      "median_active_ask_aud": 6.99,
+      "lowest_active_ask_aud": 6.99,
+      "median_active_ask_aud": 18.86,
       "highest_active_ask_aud": 30.73,
-      "spread_aud": 24.88,
-      "spread_pct": 425.3,
-      "cheapest_store": "ebay",
-      "cheapest_external_id": "v1|407199384197|0",
-      "cheapest_url": "https://www.ebay.com.au/itm/407199384197?_skw=2025+Mason+Taylor&hash=item5ecef98285:g:2a8AAeSwqHpqnsKV&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGaaKc71PC4Pdapiz9wrAuqsGlv9WxC3jAJoscwslD6tzsexHGk8UnjUoIZmApQw3N7YcmZHwtpBPeSu%2Fh%2BLzqbg6igepsp8Wzh3fdzDgi9R58ivkKP5tHa%2FoiOODErEf6yVjXp07M5udFvU3Fk73sbu8L1Jz%2FSwr45bV2uqJQ%2F2kCvocAmFI4C9Ez1SGcZrTiyxC9J7YwggKeZzwEthicr3LcahOaPs0YgYs8hJGKeABY0b5JDWLwF46RhkbIAqKhoTdKTCcajJv4QiJm1qZujmsTYFa%2FgPrxpT742KEk5%2Fuw%3D%3D",
-      "cheapest_landed_aud": 5.85,
-      "next_best_store": "cherry",
-      "next_best_landed_aud": 6.99,
-      "saving_vs_next_best_aud": 1.14,
-      "saving_vs_next_best_pct": 16.31,
-      "saving_vs_median_aud": 1.14,
-      "saving_vs_median_pct": 16.31,
-      "saving_vs_highest_aud": 24.88,
-      "saving_vs_highest_pct": 80.96,
+      "spread_aud": 23.74,
+      "spread_pct": 339.63,
+      "cheapest_store": "cherry",
+      "cheapest_external_id": "8500753137718",
+      "cheapest_url": "https://www.cherrycollectables.com.au/products/2025-topps-chrome-football-mason-taylor-rookie-base-geometric-400",
+      "cheapest_landed_aud": 6.99,
+      "next_best_store": "ebay",
+      "next_best_landed_aud": 30.73,
+      "saving_vs_next_best_aud": 23.74,
+      "saving_vs_next_best_pct": 77.25,
+      "saving_vs_median_aud": 11.87,
+      "saving_vs_median_pct": 62.94,
+      "saving_vs_highest_aud": 23.74,
+      "saving_vs_highest_pct": 77.25,
       "listings": [
-        {
-          "source": "ebay",
-          "external_id": "v1|407199384197|0",
-          "url": "https://www.ebay.com.au/itm/407199384197?_skw=2025+Mason+Taylor&hash=item5ecef98285:g:2a8AAeSwqHpqnsKV&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGaaKc71PC4Pdapiz9wrAuqsGlv9WxC3jAJoscwslD6tzsexHGk8UnjUoIZmApQw3N7YcmZHwtpBPeSu%2Fh%2BLzqbg6igepsp8Wzh3fdzDgi9R58ivkKP5tHa%2FoiOODErEf6yVjXp07M5udFvU3Fk73sbu8L1Jz%2FSwr45bV2uqJQ%2F2kCvocAmFI4C9Ez1SGcZrTiyxC9J7YwggKeZzwEthicr3LcahOaPs0YgYs8hJGKeABY0b5JDWLwF46RhkbIAqKhoTdKTCcajJv4QiJm1qZujmsTYFa%2FgPrxpT742KEk5%2Fuw%3D%3D",
-          "title": "Mason Taylor #400 New York Jets Rookie | 2025 Topps Chrome | NFL Football",
-          "landed_aud": 5.85,
-          "asking_price": 4.0,
-          "shipping": 1.85,
-          "currency": "AUD",
-          "card_number": "400",
-          "parallel": null,
-          "serial_total": null,
-          "grader": null,
-          "grade": null,
-          "rookie": true,
-          "autograph": false,
-          "memorabilia": false
-        },
         {
           "source": "cherry",
           "external_id": "8500753137718",
@@ -8042,7 +7701,8 @@
           "grade": null,
           "rookie": true,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": ""
         },
         {
           "source": "ebay",
@@ -8060,12 +7720,13 @@
           "grade": null,
           "rookie": true,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": ""
         }
       ]
     },
     {
-      "comparison_key": "cf_331138ec8aad19b1b657",
+      "comparison_key": "cf_331138ec8aad19b1b657|tg:4",
       "comparison_type": "EXACT_CARD",
       "exact_equivalent": true,
       "match_confidence": 1.0,
@@ -8077,7 +7738,8 @@
         "same serial denominator",
         "same autograph state",
         "same memorabilia state",
-        "same rookie state"
+        "same rookie state",
+        "title discriminator guard passed"
       ],
       "pricing_basis": "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE",
       "comparison_warning": null,
@@ -8125,7 +7787,8 @@
           "grade": null,
           "rookie": true,
           "autograph": true,
-          "memorabilia": true
+          "memorabilia": true,
+          "title_guard": "4"
         },
         {
           "source": "ebay",
@@ -8143,12 +7806,13 @@
           "grade": null,
           "rookie": true,
           "autograph": true,
-          "memorabilia": true
+          "memorabilia": true,
+          "title_guard": "4"
         }
       ]
     },
     {
-      "comparison_key": "cf_efc70772e8f61fb1974a",
+      "comparison_key": "cf_efc70772e8f61fb1974a|tg:",
       "comparison_type": "EXACT_CARD",
       "exact_equivalent": true,
       "match_confidence": 1.0,
@@ -8157,7 +7821,8 @@
         "same year",
         "same brand/product",
         "same card number",
-        "same parallel"
+        "same parallel",
+        "title discriminator guard passed"
       ],
       "pricing_basis": "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE",
       "comparison_warning": null,
@@ -8205,7 +7870,8 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": ""
         },
         {
           "source": "cherry",
@@ -8223,7 +7889,8 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": ""
         },
         {
           "source": "ebay",
@@ -8241,7 +7908,8 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": ""
         },
         {
           "source": "ebay",
@@ -8259,12 +7927,13 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": ""
         }
       ]
     },
     {
-      "comparison_key": "cf_c1df5b56737845de43f2",
+      "comparison_key": "cf_c1df5b56737845de43f2|tg:",
       "comparison_type": "EXACT_CARD",
       "exact_equivalent": true,
       "match_confidence": 1.0,
@@ -8273,7 +7942,8 @@
         "same year",
         "same brand/product",
         "same card number",
-        "same parallel"
+        "same parallel",
+        "title discriminator guard passed"
       ],
       "pricing_basis": "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE",
       "comparison_warning": null,
@@ -8282,7 +7952,7 @@
       "year": "2025",
       "product": "Topps Chrome",
       "store_count": 2,
-      "listing_count": 5,
+      "listing_count": 3,
       "stores": [
         "cherry",
         "ebay"
@@ -8293,36 +7963,18 @@
       "spread_aud": 13.45,
       "spread_pct": 873.38,
       "cheapest_store": "ebay",
-      "cheapest_external_id": "v1|407207226755|0",
-      "cheapest_url": "https://www.ebay.com.au/itm/407207226755?_skw=2025+Jayden+Daniels&hash=item5ecf712d83:g:V88AAeSwAKZp-zeK",
+      "cheapest_external_id": "v1|318851367624|0",
+      "cheapest_url": "https://www.ebay.com.au/itm/318851367624?_skw=2025+Jayden+Daniels&hash=item4a3d05c2c8:g:5zAAAeSwDWdqojtO",
       "cheapest_landed_aud": 1.54,
       "next_best_store": "ebay",
-      "next_best_landed_aud": 1.54,
-      "saving_vs_next_best_aud": 0.0,
-      "saving_vs_next_best_pct": 0.0,
+      "next_best_landed_aud": 3.07,
+      "saving_vs_next_best_aud": 1.53,
+      "saving_vs_next_best_pct": 49.84,
       "saving_vs_median_aud": 1.53,
       "saving_vs_median_pct": 49.84,
       "saving_vs_highest_aud": 13.45,
       "saving_vs_highest_pct": 89.73,
       "listings": [
-        {
-          "source": "ebay",
-          "external_id": "v1|407207226755|0",
-          "url": "https://www.ebay.com.au/itm/407207226755?_skw=2025+Jayden+Daniels&hash=item5ecf712d83:g:V88AAeSwAKZp-zeK",
-          "title": "2025 Topps Chrome #295 Jayden Daniels Silver Refractor",
-          "landed_aud": 1.54,
-          "asking_price": 1.54,
-          "shipping": 0.0,
-          "currency": "AUD",
-          "card_number": "295",
-          "parallel": "Refractor",
-          "serial_total": null,
-          "grader": null,
-          "grade": null,
-          "rookie": false,
-          "autograph": false,
-          "memorabilia": false
-        },
         {
           "source": "ebay",
           "external_id": "v1|318851367624|0",
@@ -8339,7 +7991,8 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": ""
         },
         {
           "source": "ebay",
@@ -8357,25 +8010,8 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
-        },
-        {
-          "source": "ebay",
-          "external_id": "v1|178486080544|0",
-          "url": "https://www.ebay.com.au/itm/178486080544?_skw=2025+Jayden+Daniels&hash=item298e997420:g:BZ8AAeSw87BqemAl",
-          "title": "2025 Topps Chrome Jayden Daniels Pulsar Refractor #295",
-          "landed_aud": 3.98,
-          "asking_price": 3.98,
-          "shipping": 0.0,
-          "currency": "AUD",
-          "card_number": "295",
-          "parallel": "Refractor",
-          "serial_total": null,
-          "grader": null,
-          "grade": null,
-          "rookie": false,
-          "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": ""
         },
         {
           "source": "cherry",
@@ -8393,12 +8029,13 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": ""
         }
       ]
     },
     {
-      "comparison_key": "cf_2f8c56d4e221acc88705",
+      "comparison_key": "cf_2f8c56d4e221acc88705|tg:22",
       "comparison_type": "EXACT_CARD",
       "exact_equivalent": true,
       "match_confidence": 1.0,
@@ -8409,7 +8046,8 @@
         "same parallel",
         "same serial denominator",
         "same autograph state",
-        "same rookie state"
+        "same rookie state",
+        "title discriminator guard passed"
       ],
       "pricing_basis": "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE",
       "comparison_warning": null,
@@ -8457,7 +8095,8 @@
           "grade": null,
           "rookie": true,
           "autograph": true,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": "22"
         },
         {
           "source": "ebay",
@@ -8475,12 +8114,13 @@
           "grade": null,
           "rookie": true,
           "autograph": true,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": "22"
         }
       ]
     },
     {
-      "comparison_key": "cf_eeb95c6da22262d183d0",
+      "comparison_key": "cf_eeb95c6da22262d183d0|tg:blackpearl",
       "comparison_type": "EXACT_CARD",
       "exact_equivalent": true,
       "match_confidence": 1.0,
@@ -8489,7 +8129,8 @@
         "same year",
         "same brand/product",
         "same parallel",
-        "same serial denominator"
+        "same serial denominator",
+        "title discriminator guard passed"
       ],
       "pricing_basis": "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE",
       "comparison_warning": null,
@@ -8537,7 +8178,8 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": "blackpearl"
         },
         {
           "source": "sportscardstore",
@@ -8555,7 +8197,8 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": "blackpearl"
         },
         {
           "source": "sportscardstore",
@@ -8573,7 +8216,8 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": "blackpearl"
         },
         {
           "source": "ebay",
@@ -8591,7 +8235,8 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": "blackpearl"
         },
         {
           "source": "ebay",
@@ -8609,7 +8254,8 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": "blackpearl"
         },
         {
           "source": "ebay",
@@ -8627,12 +8273,13 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": "blackpearl"
         }
       ]
     },
     {
-      "comparison_key": "cf_62bae7b513d5d8bc497d",
+      "comparison_key": "cf_62bae7b513d5d8bc497d|tg:",
       "comparison_type": "EXACT_CARD",
       "exact_equivalent": true,
       "match_confidence": 1.0,
@@ -8641,7 +8288,8 @@
         "same year",
         "same brand/product",
         "same parallel",
-        "same serial denominator"
+        "same serial denominator",
+        "title discriminator guard passed"
       ],
       "pricing_basis": "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE",
       "comparison_warning": null,
@@ -8689,7 +8337,8 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": ""
         },
         {
           "source": "ebay",
@@ -8707,7 +8356,8 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": ""
         },
         {
           "source": "boop",
@@ -8725,7 +8375,8 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": ""
         },
         {
           "source": "ebay",
@@ -8743,12 +8394,13 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": ""
         }
       ]
     },
     {
-      "comparison_key": "cf_bfb82f7009aef2d92ec5",
+      "comparison_key": "cf_bfb82f7009aef2d92ec5|tg:",
       "comparison_type": "EXACT_CARD",
       "exact_equivalent": true,
       "match_confidence": 1.0,
@@ -8758,7 +8410,8 @@
         "same brand/product",
         "same parallel",
         "same serial denominator",
-        "same memorabilia state"
+        "same memorabilia state",
+        "title discriminator guard passed"
       ],
       "pricing_basis": "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE",
       "comparison_warning": null,
@@ -8806,7 +8459,8 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": true
+          "memorabilia": true,
+          "title_guard": ""
         },
         {
           "source": "ebay",
@@ -8824,12 +8478,13 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": true
+          "memorabilia": true,
+          "title_guard": ""
         }
       ]
     },
     {
-      "comparison_key": "cf_bc0779c74d8bd3614dce",
+      "comparison_key": "cf_bc0779c74d8bd3614dce|tg:",
       "comparison_type": "EXACT_CARD",
       "exact_equivalent": true,
       "match_confidence": 1.0,
@@ -8838,7 +8493,8 @@
         "same year",
         "same brand/product",
         "same card number",
-        "same parallel"
+        "same parallel",
+        "title discriminator guard passed"
       ],
       "pricing_basis": "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE",
       "comparison_warning": null,
@@ -8886,7 +8542,8 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": ""
         },
         {
           "source": "ebay",
@@ -8904,7 +8561,8 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": ""
         },
         {
           "source": "ebay",
@@ -8922,12 +8580,13 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": ""
         }
       ]
     },
     {
-      "comparison_key": "cf_57eb2862d9a6d2326701",
+      "comparison_key": "cf_57eb2862d9a6d2326701|tg:choiceblue",
       "comparison_type": "EXACT_CARD",
       "exact_equivalent": true,
       "match_confidence": 1.0,
@@ -8936,7 +8595,8 @@
         "same year",
         "same brand/product",
         "same parallel",
-        "same serial denominator"
+        "same serial denominator",
+        "title discriminator guard passed"
       ],
       "pricing_basis": "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE",
       "comparison_warning": null,
@@ -8984,7 +8644,8 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": "choiceblue"
         },
         {
           "source": "boop",
@@ -9002,7 +8663,8 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": "choiceblue"
         },
         {
           "source": "ebay",
@@ -9020,7 +8682,8 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": "choiceblue"
         },
         {
           "source": "ebay",
@@ -9038,12 +8701,13 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": "choiceblue"
         }
       ]
     },
     {
-      "comparison_key": "cf_e31d52f363fe50f24b55",
+      "comparison_key": "cf_e31d52f363fe50f24b55|tg:",
       "comparison_type": "EXACT_CARD",
       "exact_equivalent": true,
       "match_confidence": 1.0,
@@ -9052,7 +8716,8 @@
         "same year",
         "same brand/product",
         "same parallel",
-        "same serial denominator"
+        "same serial denominator",
+        "title discriminator guard passed"
       ],
       "pricing_basis": "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE",
       "comparison_warning": null,
@@ -9100,7 +8765,8 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": ""
         },
         {
           "source": "boop",
@@ -9118,7 +8784,8 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": ""
         },
         {
           "source": "boop",
@@ -9136,7 +8803,8 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": ""
         },
         {
           "source": "ebay",
@@ -9154,7 +8822,8 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": ""
         },
         {
           "source": "ebay",
@@ -9172,7 +8841,8 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": ""
         },
         {
           "source": "ebay",
@@ -9190,12 +8860,13 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": ""
         }
       ]
     },
     {
-      "comparison_key": "cf_1c619012f69e8d154b65",
+      "comparison_key": "cf_1c619012f69e8d154b65|tg:",
       "comparison_type": "EXACT_CARD",
       "exact_equivalent": true,
       "match_confidence": 1.0,
@@ -9204,7 +8875,8 @@
         "same year",
         "same brand/product",
         "same card number",
-        "same parallel"
+        "same parallel",
+        "title discriminator guard passed"
       ],
       "pricing_basis": "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE",
       "comparison_warning": null,
@@ -9252,7 +8924,8 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": ""
         },
         {
           "source": "cherry",
@@ -9270,12 +8943,13 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": ""
         }
       ]
     },
     {
-      "comparison_key": "cf_88efb491111e809e31ff",
+      "comparison_key": "cf_0401c8eac09c9fad631d|tg:",
       "comparison_type": "EXACT_CARD",
       "exact_equivalent": true,
       "match_confidence": 1.0,
@@ -9284,104 +8958,7 @@
         "same year",
         "same brand/product",
         "same card number",
-        "same parallel"
-      ],
-      "pricing_basis": "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE",
-      "comparison_warning": null,
-      "sport": "MLB",
-      "player": "Eli Willits",
-      "year": "2025",
-      "product": "Bowman Draft",
-      "store_count": 2,
-      "listing_count": 3,
-      "stores": [
-        "cherry",
-        "ebay"
-      ],
-      "lowest_active_ask_aud": 2.99,
-      "median_active_ask_aud": 3.07,
-      "highest_active_ask_aud": 6.13,
-      "spread_aud": 3.14,
-      "spread_pct": 105.02,
-      "cheapest_store": "cherry",
-      "cheapest_external_id": "8235679645750",
-      "cheapest_url": "https://www.cherrycollectables.com.au/products/2025-bowman-draft-eli-willits-prized-prospects-pp-1",
-      "cheapest_landed_aud": 2.99,
-      "next_best_store": "ebay",
-      "next_best_landed_aud": 3.07,
-      "saving_vs_next_best_aud": 0.08,
-      "saving_vs_next_best_pct": 2.61,
-      "saving_vs_median_aud": 0.08,
-      "saving_vs_median_pct": 2.61,
-      "saving_vs_highest_aud": 3.14,
-      "saving_vs_highest_pct": 51.22,
-      "listings": [
-        {
-          "source": "cherry",
-          "external_id": "8235679645750",
-          "url": "https://www.cherrycollectables.com.au/products/2025-bowman-draft-eli-willits-prized-prospects-pp-1",
-          "title": "2025 Bowman Draft ELI WILLITS Prized Prospects #PP-1",
-          "landed_aud": 2.99,
-          "asking_price": 2.99,
-          "shipping": 0.0,
-          "currency": "AUD",
-          "card_number": "PP-1",
-          "parallel": "Prized Prospects",
-          "serial_total": null,
-          "grader": null,
-          "grade": null,
-          "rookie": false,
-          "autograph": false,
-          "memorabilia": false
-        },
-        {
-          "source": "ebay",
-          "external_id": "v1|237045008247|0",
-          "url": "https://www.ebay.com.au/itm/237045008247?_skw=2025+Eli+Willits&hash=item3730fbc777:g:ymYAAeSwcztqmFKb",
-          "title": "2025 Bowman Draft Eli Willits Chrome Prized Prospects Mojo Refractor #PP-1",
-          "landed_aud": 3.07,
-          "asking_price": 3.07,
-          "shipping": 0.0,
-          "currency": "AUD",
-          "card_number": "PP-1",
-          "parallel": "Prized Prospects",
-          "serial_total": null,
-          "grader": null,
-          "grade": null,
-          "rookie": false,
-          "autograph": false,
-          "memorabilia": false
-        },
-        {
-          "source": "ebay",
-          "external_id": "v1|128072986968|0",
-          "url": "https://www.ebay.com.au/itm/128072986968?_skw=2025+Eli+Willits&hash=item1dd1beb158:g:6GkAAeSwhi5qKiXR",
-          "title": "Eli Willits 2025 Bowman Draft Chrome Prized Prospects #PP-1 Nationals Lot Of 5",
-          "landed_aud": 6.13,
-          "asking_price": 6.13,
-          "shipping": 0.0,
-          "currency": "AUD",
-          "card_number": "PP-1",
-          "parallel": "Prized Prospects",
-          "serial_total": null,
-          "grader": null,
-          "grade": null,
-          "rookie": false,
-          "autograph": false,
-          "memorabilia": false
-        }
-      ]
-    },
-    {
-      "comparison_key": "cf_0401c8eac09c9fad631d",
-      "comparison_type": "EXACT_CARD",
-      "exact_equivalent": true,
-      "match_confidence": 1.0,
-      "match_reasons": [
-        "same player",
-        "same year",
-        "same brand/product",
-        "same card number"
+        "title discriminator guard passed"
       ],
       "pricing_basis": "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE",
       "comparison_warning": null,
@@ -9429,7 +9006,8 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": ""
         },
         {
           "source": "ebay",
@@ -9447,12 +9025,13 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": ""
         }
       ]
     },
     {
-      "comparison_key": "cf_5a9d1b6832679c344ec9",
+      "comparison_key": "cf_5a9d1b6832679c344ec9|tg:",
       "comparison_type": "EXACT_CARD",
       "exact_equivalent": true,
       "match_confidence": 1.0,
@@ -9460,7 +9039,8 @@
         "same player",
         "same year",
         "same brand/product",
-        "same card number"
+        "same card number",
+        "title discriminator guard passed"
       ],
       "pricing_basis": "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE",
       "comparison_warning": null,
@@ -9508,7 +9088,8 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": ""
         },
         {
           "source": "ebay",
@@ -9526,12 +9107,13 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": ""
         }
       ]
     },
     {
-      "comparison_key": "cf_1b5c1d9ddb7871e5acbf",
+      "comparison_key": "cf_1b5c1d9ddb7871e5acbf|tg:",
       "comparison_type": "EXACT_CARD",
       "exact_equivalent": true,
       "match_confidence": 1.0,
@@ -9539,7 +9121,8 @@
         "same player",
         "same year",
         "same brand/product",
-        "same card number"
+        "same card number",
+        "title discriminator guard passed"
       ],
       "pricing_basis": "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE",
       "comparison_warning": null,
@@ -9587,7 +9170,8 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": ""
         },
         {
           "source": "ebay",
@@ -9605,12 +9189,13 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": ""
         }
       ]
     },
     {
-      "comparison_key": "cf_8acb38ae3309930b3460",
+      "comparison_key": "cf_8acb38ae3309930b3460|tg:",
       "comparison_type": "EXACT_CARD",
       "exact_equivalent": true,
       "match_confidence": 1.0,
@@ -9619,7 +9204,8 @@
         "same year",
         "same brand/product",
         "same card number",
-        "same serial denominator"
+        "same serial denominator",
+        "title discriminator guard passed"
       ],
       "pricing_basis": "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE",
       "comparison_warning": null,
@@ -9667,7 +9253,8 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": ""
         },
         {
           "source": "cherry",
@@ -9685,12 +9272,13 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": ""
         }
       ]
     },
     {
-      "comparison_key": "cf_103a383f9e020164a4c3",
+      "comparison_key": "cf_103a383f9e020164a4c3|tg:",
       "comparison_type": "EXACT_CARD",
       "exact_equivalent": true,
       "match_confidence": 1.0,
@@ -9699,7 +9287,8 @@
         "same year",
         "same brand/product",
         "same card number",
-        "same parallel"
+        "same parallel",
+        "title discriminator guard passed"
       ],
       "pricing_basis": "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE",
       "comparison_warning": null,
@@ -9747,7 +9336,8 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": ""
         },
         {
           "source": "ebay",
@@ -9765,12 +9355,13 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": ""
         }
       ]
     },
     {
-      "comparison_key": "cf_f098c8d9b07d3fbded3f",
+      "comparison_key": "cf_f098c8d9b07d3fbded3f|tg:",
       "comparison_type": "EXACT_CARD",
       "exact_equivalent": true,
       "match_confidence": 1.0,
@@ -9778,7 +9369,8 @@
         "same player",
         "same year",
         "same brand/product",
-        "same card number"
+        "same card number",
+        "title discriminator guard passed"
       ],
       "pricing_basis": "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE",
       "comparison_warning": null,
@@ -9826,7 +9418,8 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": ""
         },
         {
           "source": "cherry",
@@ -9844,12 +9437,13 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": ""
         }
       ]
     },
     {
-      "comparison_key": "cf_4168f0bb56d519ab12ec",
+      "comparison_key": "cf_4168f0bb56d519ab12ec|tg:",
       "comparison_type": "EXACT_CARD",
       "exact_equivalent": true,
       "match_confidence": 1.0,
@@ -9857,7 +9451,8 @@
         "same player",
         "same year",
         "same brand/product",
-        "same card number"
+        "same card number",
+        "title discriminator guard passed"
       ],
       "pricing_basis": "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE",
       "comparison_warning": null,
@@ -9905,7 +9500,8 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": ""
         },
         {
           "source": "cherry",
@@ -9923,7 +9519,8 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": ""
         },
         {
           "source": "ebay",
@@ -9941,12 +9538,13 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": ""
         }
       ]
     },
     {
-      "comparison_key": "cf_b248ddd41b142e351a51",
+      "comparison_key": "cf_b248ddd41b142e351a51|tg:",
       "comparison_type": "EXACT_CARD",
       "exact_equivalent": true,
       "match_confidence": 1.0,
@@ -9955,7 +9553,8 @@
         "same year",
         "same brand/product",
         "same card number",
-        "same parallel"
+        "same parallel",
+        "title discriminator guard passed"
       ],
       "pricing_basis": "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE",
       "comparison_warning": null,
@@ -10003,7 +9602,8 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": ""
         },
         {
           "source": "cherry",
@@ -10021,12 +9621,13 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": ""
         }
       ]
     },
     {
-      "comparison_key": "cf_bbe66a729a52d1b46723",
+      "comparison_key": "cf_bbe66a729a52d1b46723|tg:",
       "comparison_type": "EXACT_CARD",
       "exact_equivalent": true,
       "match_confidence": 1.0,
@@ -10035,7 +9636,8 @@
         "same year",
         "same brand/product",
         "same card number",
-        "same parallel"
+        "same parallel",
+        "title discriminator guard passed"
       ],
       "pricing_basis": "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE",
       "comparison_warning": null,
@@ -10083,7 +9685,8 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": ""
         },
         {
           "source": "cherry",
@@ -10101,12 +9704,13 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": ""
         }
       ]
     },
     {
-      "comparison_key": "cf_f1f0f38b4c1fe870deb0",
+      "comparison_key": "cf_f1f0f38b4c1fe870deb0|tg:",
       "comparison_type": "EXACT_CARD",
       "exact_equivalent": true,
       "match_confidence": 1.0,
@@ -10114,7 +9718,8 @@
         "same player",
         "same year",
         "same brand/product",
-        "same card number"
+        "same card number",
+        "title discriminator guard passed"
       ],
       "pricing_basis": "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE",
       "comparison_warning": null,
@@ -10162,7 +9767,8 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": ""
         },
         {
           "source": "cherry",
@@ -10180,12 +9786,13 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": ""
         }
       ]
     },
     {
-      "comparison_key": "cf_d130a0aeb3bbf384f146",
+      "comparison_key": "cf_d130a0aeb3bbf384f146|tg:",
       "comparison_type": "EXACT_CARD",
       "exact_equivalent": true,
       "match_confidence": 1.0,
@@ -10193,7 +9800,8 @@
         "same player",
         "same year",
         "same brand/product",
-        "same card number"
+        "same card number",
+        "title discriminator guard passed"
       ],
       "pricing_basis": "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE",
       "comparison_warning": null,
@@ -10241,7 +9849,8 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": ""
         },
         {
           "source": "cherry",
@@ -10259,12 +9868,13 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": ""
         }
       ]
     },
     {
-      "comparison_key": "cf_15dc598302aa5e0cdd10",
+      "comparison_key": "cf_15dc598302aa5e0cdd10|tg:",
       "comparison_type": "EXACT_CARD",
       "exact_equivalent": true,
       "match_confidence": 1.0,
@@ -10272,7 +9882,8 @@
         "same player",
         "same year",
         "same brand/product",
-        "same card number"
+        "same card number",
+        "title discriminator guard passed"
       ],
       "pricing_basis": "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE",
       "comparison_warning": null,
@@ -10320,7 +9931,8 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": ""
         },
         {
           "source": "ebay",
@@ -10338,12 +9950,13 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": ""
         }
       ]
     },
     {
-      "comparison_key": "cf_2dcf5e30e4ec4f964348",
+      "comparison_key": "cf_2dcf5e30e4ec4f964348|tg:",
       "comparison_type": "EXACT_CARD",
       "exact_equivalent": true,
       "match_confidence": 1.0,
@@ -10351,7 +9964,8 @@
         "same player",
         "same year",
         "same brand/product",
-        "same card number"
+        "same card number",
+        "title discriminator guard passed"
       ],
       "pricing_basis": "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE",
       "comparison_warning": null,
@@ -10399,7 +10013,8 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": ""
         },
         {
           "source": "ebay",
@@ -10417,7 +10032,8 @@
           "grade": null,
           "rookie": false,
           "autograph": false,
-          "memorabilia": false
+          "memorabilia": false,
+          "title_guard": ""
         }
       ]
     }
