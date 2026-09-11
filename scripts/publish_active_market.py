@@ -11,7 +11,8 @@ from card_scanner.cli import opportunity_store_source
 from card_scanner.dashboard_export import market_listing_to_dashboard_record
 from card_scanner.market_catalogue import MarketListingObservation
 from card_scanner.models import Listing
-from card_scanner.opportunity_scanner import SPORTS, MultiStoreSource
+from card_scanner.opportunity_scanner import SPORTS, MultiStoreSource, NamedStoreSource
+from card_scanner.sources.the_hobby import TheHobbySource
 
 
 ACTIVE_MARKET_SCHEMA_VERSION = 1
@@ -85,10 +86,20 @@ def build_active_market_payload(
     }
 
 
-def collect_active_market(*, limit_per_store_per_sport: int) -> tuple[list[Listing], int, int, list[str]]:
+def cloud_active_store_source() -> MultiStoreSource:
+    """Return cloud-safe active acquisition sources without altering local research scope."""
     source, _ = opportunity_store_source("all")
     if not isinstance(source, MultiStoreSource):
         raise RuntimeError("Expected all-store MultiStoreSource")
+
+    return MultiStoreSource([
+        *source.stores,
+        NamedStoreSource(name="The Hobby", source=TheHobbySource()),
+    ])
+
+
+def collect_active_market(*, limit_per_store_per_sport: int) -> tuple[list[Listing], int, int, list[str]]:
+    source = cloud_active_store_source()
 
     listings: list[Listing] = []
     errors: list[str] = []
