@@ -5,6 +5,8 @@ on:
     branches: [main]
     paths:
       - 'scripts/publish_active_market.py'
+      - 'scripts/audit_live_comparisons.py'
+      - 'scripts/audit_identity_completeness.py'
       - 'src/card_scanner/sources/**'
       - 'src/card_scanner/identity.py'
       - 'src/card_scanner/identity_match.py'
@@ -17,6 +19,8 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 concurrency:
   group: active-market-publisher
@@ -24,6 +28,9 @@ concurrency:
 
 jobs:
   publish:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -37,15 +44,39 @@ jobs:
         run: python -m pip install -e .
       - name: Fetch public active-store catalogue and compare prices
         run: python scripts/publish_active_market.py --limit-per-store-per-sport 250 --output docs/active_market.json
+      - name: Audit live active-price comparisons
+        run: python scripts/audit_live_comparisons.py --feed docs/active_market.json --output artifacts/live_active_comparison_audit.json
+      - name: Audit identity completeness
+        run: python scripts/audit_identity_completeness.py --feed docs/active_market.json --output artifacts/identity_completeness_audit.json
+      - name: Upload refresh audits
+        uses: actions/upload-artifact@v4
+        with:
+          name: active-market-refresh-audits
+          path: |
+            artifacts/live_active_comparison_audit.json
+            artifacts/identity_completeness_audit.json
+          if-no-files-found: error
+          retention-days: 30
       - name: Publish active comparison snapshot
         run: |
           if [ -z "$(git status --porcelain -- docs/active_market.json)" ]; then
             echo "ACTIVE_MARKET_CHANGED=NO"
-            exit 0
+          else
+            git config user.name "card-scanner-bot"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add -- docs/active_market.json
+            git commit -m "data: refresh active market comparison feed"
+            git push origin HEAD:main
+            echo "ACTIVE_MARKET_CHANGED=YES"
           fi
-          git config user.name "card-scanner-bot"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -- docs/active_market.json
-          git commit -m "data: refresh active market comparison feed"
-          git push origin HEAD:main
-          echo "ACTIVE_MARKET_CHANGED=YES"
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
+      - name: Upload live dashboard
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+      - name: Deploy live dashboard
+        id: deployment
+        uses: actions/deploy-pages@v4
