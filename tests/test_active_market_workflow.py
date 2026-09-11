@@ -15,8 +15,8 @@ def test_active_market_workflow_uses_expanded_discovery_depth():
     assert "--limit-per-store-per-sport 400" in workflow
     assert "--deep-overlap-targets 150" in workflow
     assert "--deep-results-per-store 200" in workflow
-    assert "--exact-discovery-targets 160" in workflow
-    assert "--exact-results-per-store 200" in workflow
+    assert "--exact-discovery-targets 400" in workflow
+    assert "--exact-results-per-store 250" in workflow
     assert "--max-targets 240" in workflow
     assert "--results-per-target 75" in workflow
 
