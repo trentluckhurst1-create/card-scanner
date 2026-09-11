@@ -10,12 +10,15 @@ on:
       - 'scripts/audit_live_comparisons.py'
       - 'scripts/audit_identity_completeness.py'
       - 'scripts/audit_cross_store_overlap.py'
+      - 'scripts/audit_visual_exactness.py'
       - 'src/card_scanner/sources/**'
       - 'src/card_scanner/identity.py'
       - 'src/card_scanner/identity_match.py'
       - 'src/card_scanner/exact_discovery.py'
       - 'src/card_scanner/dashboard_export.py'
       - 'src/card_scanner/active_price_comparison.py'
+      - 'src/card_scanner/visual_identity.py'
+      - 'pyproject.toml'
       - '.github/workflows/publish-active-market.yml'
   schedule:
     - cron: '17 */6 * * *'
@@ -69,6 +72,8 @@ jobs:
         run: python scripts/audit_identity_completeness.py --feed docs/active_market.json --output artifacts/identity_completeness_audit.json
       - name: Audit cross-store overlap
         run: python scripts/audit_cross_store_overlap.py --feed docs/active_market.json --output artifacts/cross_store_overlap_audit.json
+      - name: Audit exact-card listing photos
+        run: python scripts/audit_visual_exactness.py --feed docs/comparison.json --output artifacts/visual_exactness_audit.json
       - name: Upload refresh audits
         uses: actions/upload-artifact@v4
         with:
@@ -77,6 +82,7 @@ jobs:
             artifacts/live_active_comparison_audit.json
             artifacts/identity_completeness_audit.json
             artifacts/cross_store_overlap_audit.json
+            artifacts/visual_exactness_audit.json
           if-no-files-found: error
           retention-days: 30
       - name: Publish active comparison snapshot
