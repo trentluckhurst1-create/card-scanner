@@ -62,10 +62,47 @@ def test_the_hobby_recovers_alphanumeric_bare_card_number_before_grade():
     assert rows[0].identity.card_number == "22A"
 
 
+def test_the_hobby_recovers_card_number_before_parallel_and_serial():
+    client = FakeClient({
+        "products": [
+            product("1", "Shai Gilgeous-Alexander 2023 Panini Select 257 White Disco 9/75 PSA 10"),
+            product("2", "Anthony Edwards 2020 Panini Donruss 201 Press Proof Purple 141/199 PSA 10"),
+            product("3", "Giannis Antetokounmpo 2018 Panini Select 120 Gold Prizm 9/10 PSA 9"),
+        ]
+    })
+    rows = TheHobbySource(client=client).search("NBA", limit=10)
+    by_id = {row.external_id: row for row in rows}
+    assert by_id["1"].identity.card_number == "257"
+    assert by_id["2"].identity.card_number == "201"
+    assert by_id["3"].identity.card_number == "120"
+
+
+def test_the_hobby_recovers_card_number_from_season_title():
+    client = FakeClient({
+        "products": [
+            product("1", "Julius Erving 1972-73 Topps Basketball 195 RC Rookie SGC 5"),
+        ]
+    })
+    rows = TheHobbySource(client=client).search("NBA", limit=10)
+    assert len(rows) == 1
+    assert rows[0].identity.card_number == "195"
+
+
 def test_the_hobby_does_not_promote_unanchored_numbers_to_card_number():
     client = FakeClient({
         "products": [
             product("1", "Anthony Edwards 2021 Panini Prizm NBA 75th Prizm"),
+        ]
+    })
+    rows = TheHobbySource(client=client).search("NBA", limit=10)
+    assert len(rows) == 1
+    assert rows[0].identity.card_number is None
+
+
+def test_the_hobby_does_not_promote_serial_from_graded_title_without_card_number():
+    client = FakeClient({
+        "products": [
+            product("1", "Nickeil Alexander-Walker 2023-24 Panini Spectra RetroSpect Auto Gold 4/10 PSA 10"),
         ]
     })
     rows = TheHobbySource(client=client).search("NBA", limit=10)
