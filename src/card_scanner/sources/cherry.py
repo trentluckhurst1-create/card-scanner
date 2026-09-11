@@ -1,6 +1,5 @@
 ﻿from __future__ import annotations
 
-import re
 import httpx
 
 from card_scanner.identity import parse_identity
@@ -16,6 +15,7 @@ COLLECTIONS = {
 }
 
 BASE_URL = "https://www.cherrycollectables.com.au"
+SHOPIFY_PAGE_SIZE = 250
 
 
 def _money(value) -> float:
@@ -67,6 +67,10 @@ class CherrySource(ListingSource):
             follow_redirects=True,
             timeout=30,
         )
+        # A publisher run may issue many player-specific overlap searches over
+        # the same collection. Cache Shopify pages for this source instance so
+        # each page is fetched at most once per run.
+        self._page_cache: dict[tuple[str, int, int], list[dict]] = {}
 
     def _collection_url(self, sport: str) -> str:
         sport = sport.upper()
@@ -90,6 +94,11 @@ class CherrySource(ListingSource):
         page: int,
         page_size: int,
     ) -> list[dict]:
+        sport = sport.upper()
+        cache_key = (sport, int(page), int(page_size))
+        cached = self._page_cache.get(cache_key)
+        if cached is not None:
+            return cached
 
         response = self.client.get(
             self._collection_url(sport),
@@ -110,6 +119,7 @@ class CherrySource(ListingSource):
                 "Cherry response did not contain a products list."
             )
 
+        self._page_cache[cache_key] = products
         return products
 
     def product_to_listing(
@@ -179,8 +189,10 @@ class CherrySource(ListingSource):
 
         page = 1
 
-        # Shopify collection endpoint supports up to 250 products per page.
-        page_size = min(250, max(limit, 50))
+        # Shopify supports 250 products per page. Always use the maximum page
+        # size even when the caller only wants a handful of matches; targeted
+        # overlap searches otherwise walk dozens of 50-product pages.
+        page_size = SHOPIFY_PAGE_SIZE
 
         while len(results) < limit:
 
@@ -215,8 +227,9 @@ class CherrySource(ListingSource):
 
             page += 1
 
-            # Safety guard.
-            if page > 100:
+            # Safety guard. With 250-item pages this is far beyond the current
+            # Cherry singles inventory while still preventing unbounded crawls.
+            if page > 24:
                 break
 
         return results

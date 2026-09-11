@@ -207,8 +207,12 @@ def cloud_active_store_source() -> MultiStoreSource:
     ])
 
 
-def collect_active_market(*, limit_per_store_per_sport: int) -> tuple[list[Listing], int, int, list[str]]:
-    source = cloud_active_store_source()
+def collect_active_market(
+    *,
+    limit_per_store_per_sport: int,
+    source: MultiStoreSource | None = None,
+) -> tuple[list[Listing], int, int, list[str]]:
+    source = source or cloud_active_store_source()
 
     listings: list[Listing] = []
     errors: list[str] = []
@@ -237,11 +241,16 @@ def main() -> int:
     parser.add_argument("--output", default="docs/active_market.json")
     args = parser.parse_args()
 
+    # Reuse one source graph across both passes. Source-specific in-memory caches
+    # (notably Cherry's Shopify page cache) therefore survive from the broad
+    # catalogue scan into targeted exact-overlap discovery.
+    cloud_source = cloud_active_store_source()
     listings, stores_considered, stores_searched, errors = collect_active_market(
         limit_per_store_per_sport=max(1, args.limit_per_store_per_sport),
+        source=cloud_source,
     )
     listings, discovery_metrics, deep_errors = expand_shared_player_inventory(
-        cloud_active_store_source(),
+        cloud_source,
         listings,
         max_targets=max(0, args.deep_overlap_targets),
         results_per_store=max(1, args.deep_results_per_store),
