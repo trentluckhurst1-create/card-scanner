@@ -15,6 +15,18 @@ def test_active_market_workflow_uses_source_supported_maximum_depth():
     assert "--limit-per-store-per-sport 125" not in workflow
 
 
+def test_active_market_refresh_is_self_contained():
+    workflow = (Path(__file__).resolve().parents[1] / ".github" / "workflows" / "publish-active-market.yml").read_text(encoding="utf-8")
+    assert "scripts/audit_live_comparisons.py --feed docs/active_market.json" in workflow
+    assert "scripts/audit_identity_completeness.py --feed docs/active_market.json" in workflow
+    assert "active-market-refresh-audits" in workflow
+    assert "pages: write" in workflow
+    assert "id-token: write" in workflow
+    assert "actions/configure-pages@v5" in workflow
+    assert "actions/upload-pages-artifact@v3" in workflow
+    assert "actions/deploy-pages@v4" in workflow
+
+
 def test_active_market_publisher_prints_source_errors_for_diagnosis():
     script = (Path(__file__).resolve().parents[1] / "scripts" / "publish_active_market.py").read_text(encoding="utf-8")
     assert "ACTIVE_SOURCE_" in script
