@@ -19,6 +19,7 @@ from card_scanner.retrying_source import RetryingStoreSource
 from card_scanner.sources.boop import BoopSource
 from card_scanner.sources.clfox import CLFoxSource
 from card_scanner.sources.eastside import EastsideSource
+from card_scanner.sources.house_of_cards import HouseOfCardsSource
 from card_scanner.sources.local_card_shop import LocalCardShopSource
 from card_scanner.sources.the_hobby import TheHobbySource
 
@@ -76,7 +77,7 @@ def _retry_store(store:NamedStoreSource)->NamedStoreSource: return NamedStoreSou
 def cloud_active_store_source()->MultiStoreSource:
     source,_=opportunity_store_source("all")
     if not isinstance(source,MultiStoreSource): raise RuntimeError("Expected all-store MultiStoreSource")
-    raw_stores=[*source.stores,NamedStoreSource(name="The Hobby",source=TheHobbySource()),NamedStoreSource(name="Eastside Collectables",source=EastsideSource()),NamedStoreSource(name="Boop Collectables",source=BoopSource()),NamedStoreSource(name="CLFox Collectables",source=CLFoxSource()),NamedStoreSource(name="Local Card Shop",source=LocalCardShopSource())]
+    raw_stores=[*source.stores,NamedStoreSource(name="The Hobby",source=TheHobbySource()),NamedStoreSource(name="Eastside Collectables",source=EastsideSource()),NamedStoreSource(name="Boop Collectables",source=BoopSource()),NamedStoreSource(name="CLFox Collectables",source=CLFoxSource()),NamedStoreSource(name="Local Card Shop",source=LocalCardShopSource()),NamedStoreSource(name="House of Cards N Collectables",source=HouseOfCardsSource())]
     return MultiStoreSource([_retry_store(store) for store in raw_stores])
 
 def collect_active_market(*,limit_per_store_per_sport:int,source:MultiStoreSource|None=None):
