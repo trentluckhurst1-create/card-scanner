@@ -11,6 +11,7 @@ from typing import Iterable
 from card_scanner.active_price_comparison import build_active_price_comparisons
 from card_scanner.cli import opportunity_store_source
 from card_scanner.dashboard_export import market_listing_to_dashboard_record
+from card_scanner.exact_discovery import discover_exact_inventory
 from card_scanner.market_catalogue import MarketListingObservation
 from card_scanner.models import Listing
 from card_scanner.opportunity_scanner import SPORTS, MultiStoreSource, NamedStoreSource
@@ -249,6 +250,8 @@ def main() -> int:
     parser.add_argument("--limit-per-store-per-sport", type=int, default=125)
     parser.add_argument("--deep-overlap-targets", type=int, default=20)
     parser.add_argument("--deep-results-per-store", type=int, default=50)
+    parser.add_argument("--exact-discovery-targets", type=int, default=16)
+    parser.add_argument("--exact-results-per-store", type=int, default=100)
     parser.add_argument("--output", default="docs/active_market.json")
     args = parser.parse_args()
 
@@ -264,6 +267,21 @@ def main() -> int:
         results_per_store=max(1, args.deep_results_per_store),
     )
     errors.extend(deep_errors)
+
+    listings, exact_stats, exact_errors = discover_exact_inventory(
+        cloud_source,
+        listings,
+        max_targets=max(0, args.exact_discovery_targets),
+        results_per_store=max(1, args.exact_results_per_store),
+    )
+    errors.extend(exact_errors)
+    discovery_metrics.update({
+        "exact_discovery_targets": exact_stats.targets,
+        "exact_discovery_queries": exact_stats.queries,
+        "exact_discovery_added_cards": exact_stats.added_cards,
+        "exact_discovery_matches": exact_stats.exact_matches_discovered,
+        "exact_discovery_errors": exact_stats.errors,
+    })
 
     payload = build_active_market_payload(
         listings,
@@ -293,6 +311,11 @@ def main() -> int:
     print(f"DEEP_OVERLAP_QUERIES={metrics.get('deep_overlap_queries', 0)}")
     print(f"DEEP_OVERLAP_ADDED_CARDS={metrics.get('deep_overlap_added_cards', 0)}")
     print(f"DEEP_OVERLAP_ERRORS={metrics.get('deep_overlap_errors', 0)}")
+    print(f"EXACT_DISCOVERY_TARGETS={metrics.get('exact_discovery_targets', 0)}")
+    print(f"EXACT_DISCOVERY_QUERIES={metrics.get('exact_discovery_queries', 0)}")
+    print(f"EXACT_DISCOVERY_ADDED_CARDS={metrics.get('exact_discovery_added_cards', 0)}")
+    print(f"EXACT_DISCOVERY_MATCHES={metrics.get('exact_discovery_matches', 0)}")
+    print(f"EXACT_DISCOVERY_ERRORS={metrics.get('exact_discovery_errors', 0)}")
     print(f"COMPARISON_GROUPS={metrics['comparison_groups']}")
     print(f"EXACT_MATCHES={metrics['exact_matches']}")
     print(f"SAME_PRODUCT_VARIANTS={metrics['same_product_variants']}")
