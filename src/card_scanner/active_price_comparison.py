@@ -1,22 +1,16 @@
 from __future__ import annotations
 
-import re
 from collections import defaultdict
 from statistics import median
 from typing import Any, Iterable
+
+from .identity_match import norm_token, normalize_product
 
 
 PRICING_BASIS = "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE"
 EXACT_MATCH = "EXACT_CARD"
 SAME_PRODUCT_VARIANTS = "SAME_PRODUCT_VARIANTS"
 PLAYER_YEAR_MARKET = "PLAYER_YEAR_MARKET"
-
-
-def _norm(value: Any) -> str:
-    if value is None:
-        return ""
-    text = str(value).casefold().strip()
-    return re.sub(r"[^a-z0-9]+", "", text)
 
 
 def _money(value: Any) -> float | None:
@@ -42,20 +36,23 @@ def _exact_key(card: dict[str, Any]) -> str | None:
 
 def _same_product_key(card: dict[str, Any]) -> str | None:
     identity = card.get("identity") or {}
-    sport = _norm(card.get("sport"))
-    player = _norm(identity.get("player"))
-    year = _norm(identity.get("year"))
-    product = _norm(identity.get("set_name") or identity.get("brand"))
-    if not sport or not player or not year or not product:
+    sport = norm_token(card.get("sport"))
+    player = norm_token(identity.get("player"))
+    year = norm_token(identity.get("year"))
+    brand, product = normalize_product(
+        brand=identity.get("brand"),
+        set_name=identity.get("set_name"),
+    )
+    if not sport or not player or not year or not brand or not product:
         return None
-    return "|".join((sport, player, year, product))
+    return "|".join((sport, player, year, brand, product))
 
 
 def _player_year_key(card: dict[str, Any]) -> str | None:
     identity = card.get("identity") or {}
-    sport = _norm(card.get("sport"))
-    player = _norm(identity.get("player"))
-    year = _norm(identity.get("year"))
+    sport = norm_token(card.get("sport"))
+    player = norm_token(identity.get("player"))
+    year = norm_token(identity.get("year"))
     if not sport or not player or not year:
         return None
     return "|".join((sport, player, year))
@@ -83,6 +80,17 @@ def _listing_payload(card: dict[str, Any]) -> dict[str, Any]:
     }
 
 
+def _match_explanation(rows: list[dict[str, Any]], comparison_type: str) -> tuple[float, list[str]]:
+    if comparison_type == EXACT_MATCH:
+        family = rows[0].get("card_family") or {}
+        return float(family.get("match_confidence") or 1.0), list(family.get("match_reasons") or [
+            "same strict canonical card identity"
+        ])
+    if comparison_type == SAME_PRODUCT_VARIANTS:
+        return 0.65, ["same player", "same year", "same brand/product", "variant fields may differ"]
+    return 0.35, ["same player", "same year", "product and variant may differ"]
+
+
 def _comparison_payload(
     rows: list[dict[str, Any]],
     *,
@@ -96,7 +104,6 @@ def _comparison_payload(
     listings = [_listing_payload(row) for row in rows]
     priced = [row for row in listings if row.get("landed_aud") is not None]
     priced.sort(key=lambda row: (float(row["landed_aud"]), str(row.get("source") or "")))
-
     if not priced:
         return None
 
@@ -106,31 +113,24 @@ def _comparison_payload(
     lowest = prices[0]
     highest = prices[-1]
     med = float(median(prices))
-
     next_best_price = float(next_best["landed_aud"]) if next_best else None
-    saving_vs_next = (
-        round(next_best_price - lowest, 2)
-        if next_best_price is not None
-        else None
-    )
+    saving_vs_next = round(next_best_price - lowest, 2) if next_best_price is not None else None
     saving_vs_median = round(med - lowest, 2)
     saving_vs_highest = round(highest - lowest, 2)
 
     representative = rows[0]
     identity = representative.get("identity") or {}
-
     exact_equivalent = comparison_type == EXACT_MATCH
+    confidence, reasons = _match_explanation(rows, comparison_type)
 
     return {
         "comparison_key": comparison_key,
         "comparison_type": comparison_type,
         "exact_equivalent": exact_equivalent,
+        "match_confidence": round(confidence, 2),
+        "match_reasons": reasons,
         "pricing_basis": PRICING_BASIS,
-        "comparison_warning": (
-            None
-            if exact_equivalent
-            else "RELATED ACTIVE LISTINGS ARE NOT GUARANTEED TO BE THE SAME CARD VARIANT"
-        ),
+        "comparison_warning": None if exact_equivalent else "RELATED ACTIVE LISTINGS ARE NOT GUARANTEED TO BE THE SAME CARD VARIANT",
         "sport": representative.get("sport"),
         "player": identity.get("player"),
         "year": identity.get("year"),
@@ -166,83 +166,46 @@ def _comparison_payload(
     }
 
 
-def _group(
-    cards: Iterable[dict[str, Any]],
-    key_func,
-    comparison_type: str,
-) -> list[dict[str, Any]]:
+def _group(cards: Iterable[dict[str, Any]], key_func, comparison_type: str) -> list[dict[str, Any]]:
     grouped: dict[str, list[dict[str, Any]]] = defaultdict(list)
     for card in cards:
         key = key_func(card)
         if key:
             grouped[key].append(card)
-
     output: list[dict[str, Any]] = []
     for key, rows in grouped.items():
-        payload = _comparison_payload(
-            rows,
-            comparison_type=comparison_type,
-            comparison_key=key,
-        )
+        payload = _comparison_payload(rows, comparison_type=comparison_type, comparison_key=key)
         if payload:
             output.append(payload)
-
     return output
 
 
-def build_active_price_comparisons(
-    cards: Iterable[dict[str, Any]],
-) -> dict[str, Any]:
+def build_active_price_comparisons(cards: Iterable[dict[str, Any]]) -> dict[str, Any]:
     rows = list(cards)
-
     exact = _group(rows, _exact_key, EXACT_MATCH)
     exact_member_ids = {
         (listing.get("source"), listing.get("external_id"))
         for comparison in exact
         for listing in comparison["listings"]
     }
-
-    same_product_candidates = [
-        row
-        for row in rows
-        if (row.get("source"), row.get("external_id")) not in exact_member_ids
-    ]
-    same_product = _group(
-        same_product_candidates,
-        _same_product_key,
-        SAME_PRODUCT_VARIANTS,
-    )
-
+    same_product_candidates = [row for row in rows if (row.get("source"), row.get("external_id")) not in exact_member_ids]
+    same_product = _group(same_product_candidates, _same_product_key, SAME_PRODUCT_VARIANTS)
     represented_ids = exact_member_ids | {
         (listing.get("source"), listing.get("external_id"))
         for comparison in same_product
         for listing in comparison["listings"]
     }
-    player_year_candidates = [
-        row
-        for row in rows
-        if (row.get("source"), row.get("external_id")) not in represented_ids
-    ]
-    player_year = _group(
-        player_year_candidates,
-        _player_year_key,
-        PLAYER_YEAR_MARKET,
-    )
+    player_year_candidates = [row for row in rows if (row.get("source"), row.get("external_id")) not in represented_ids]
+    player_year = _group(player_year_candidates, _player_year_key, PLAYER_YEAR_MARKET)
 
     all_groups = [*exact, *same_product, *player_year]
-    rank = {
-        EXACT_MATCH: 0,
-        SAME_PRODUCT_VARIANTS: 1,
-        PLAYER_YEAR_MARKET: 2,
-    }
-    all_groups.sort(
-        key=lambda row: (
-            rank.get(str(row.get("comparison_type")), 9),
-            -int(row.get("store_count") or 0),
-            -float(row.get("saving_vs_highest_aud") or 0.0),
-            str(row.get("player") or ""),
-        )
-    )
+    rank = {EXACT_MATCH: 0, SAME_PRODUCT_VARIANTS: 1, PLAYER_YEAR_MARKET: 2}
+    all_groups.sort(key=lambda row: (
+        rank.get(str(row.get("comparison_type")), 9),
+        -int(row.get("store_count") or 0),
+        -float(row.get("saving_vs_highest_aud") or 0.0),
+        str(row.get("player") or ""),
+    ))
 
     return {
         "pricing_basis": PRICING_BASIS,
