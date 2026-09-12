@@ -33,13 +33,13 @@ jobs:
       - name: Install package
         run: python -m pip install -e .
       - name: Crawl deep NFL singles inventory in staging
-        run: python scripts/publish_nfl_inventory.py --limit-per-store 2500 --output docs/nfl_inventory.json
+        run: python scripts/publish_nfl_inventory.py --limit-per-store 2500 --ebay-retain-cycles 3 --output docs/nfl_inventory.json
       - name: Enrich staged NFL inventory with targeted eBay Browse inventory
         env:
           EBAY_CLIENT_ID: ${{ secrets.EBAY_CLIENT_ID }}
           EBAY_CLIENT_SECRET: ${{ secrets.EBAY_CLIENT_SECRET }}
           EBAY_MARKETPLACE_ID: EBAY_AU
-        run: python scripts/enrich_active_market_ebay.py --feed docs/nfl_inventory.json --max-targets 500 --results-per-target 100
+        run: python scripts/enrich_active_market_ebay.py --feed docs/nfl_inventory.json --max-targets 1000 --results-per-target 75
       - name: Audit staged NFL identity readiness
         run: python scripts/audit_nfl_identity_readiness.py --feed docs/nfl_inventory.json --output artifacts/nfl_identity_readiness_audit.json
       - name: Audit exact NFL promotion candidates
