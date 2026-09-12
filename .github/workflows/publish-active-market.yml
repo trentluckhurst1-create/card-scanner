@@ -7,6 +7,7 @@ on:
       - 'scripts/publish_active_market.py'
       - 'scripts/enrich_active_market_ebay.py'
       - 'scripts/publish_exact_comparisons.py'
+      - 'scripts/merge_exact_comparison_feeds.py'
       - 'scripts/merge_staged_nfl_exact_comparisons.py'
       - 'scripts/audit_live_comparisons.py'
       - 'scripts/audit_identity_completeness.py'
@@ -47,6 +48,10 @@ jobs:
           cache: pip
       - name: Install package
         run: python -m pip install -e .
+      - name: Snapshot current live comparison feed
+        run: |
+          mkdir -p artifacts
+          cp docs/comparison.json artifacts/previous_comparison.json
       - name: Fetch public active-store catalogue and compare prices
         run: >-
           python scripts/publish_active_market.py
@@ -62,8 +67,10 @@ jobs:
           EBAY_CLIENT_SECRET: ${{ secrets.EBAY_CLIENT_SECRET }}
           EBAY_MARKETPLACE_ID: EBAY_AU
         run: python scripts/enrich_active_market_ebay.py --feed docs/active_market.json --max-targets 240 --results-per-target 75
-      - name: Publish exact-card-only comparison feed
-        run: python scripts/publish_exact_comparisons.py --feed docs/active_market.json --output docs/comparison.json
+      - name: Build fresh exact-card-only comparison candidate
+        run: python scripts/publish_exact_comparisons.py --feed docs/active_market.json --output artifacts/fresh_comparison.json
+      - name: Preserve live groups across transient refresh gaps
+        run: python scripts/merge_exact_comparison_feeds.py --previous artifacts/previous_comparison.json --fresh artifacts/fresh_comparison.json --output docs/comparison.json
       - name: Preserve and add strict staged NFL exact comparisons
         run: python scripts/merge_staged_nfl_exact_comparisons.py --production docs/comparison.json --staging docs/nfl_inventory.json --output docs/comparison.json
       - name: Audit live active-price comparisons
