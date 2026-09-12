@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-12T11:03:41.776979+00:00",
+  "generated_at": "2026-09-12T15:44:30.161968+00:00",
   "feed_type": "EXACT_CARD_STORE_COMPARISON_ONLY",
   "pricing_basis": "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE",
   "governance": {
@@ -22,7 +22,7 @@
     "active_cards_scanned": 4093,
     "exact_comparison_groups": 393,
     "exact_comparison_listings": 3374,
-    "previous_exact_groups": 380,
+    "previous_exact_groups": 393,
     "fresh_exact_groups": 67,
     "retained_previous_groups_missing_from_fresh": 326,
     "previous_groups_lost": 0,
@@ -6557,7 +6557,7 @@
     {
       "source": "ebay",
       "external_id": "v1|356384056552|0",
-      "url": "https://www.ebay.com.au/itm/356384056552?_skw=2018+Trae+Young+Donruss+198+PSA+10&hash=item52fa2524e8:g:X3AAAOSwModnYlMI&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGYDspwPvHJne%2BJL84Eein%2BTbJWyynw81cGallKcfaZ2hwIlryrh%2BCmdxob6f6AZsA%2Fi%2BjpU1Z517kxerqvx4P%2FrKNzhDf5HVwKPqmeerqZysExpOSc5IbLWv2aYNH4Hwc3hl3ckbIgJQmxXA69cKdaeYKahzC0m1xBLEhnICPbJysjNBSt4jmy3sOAn0jXoXSjRKJ%2BA%2B8mtyl96KWnNXoqtcoT9sD3jz8igCpOPOVbTdJIlXE52L9ixpFmBPQGOuQldBSGW7dI03G2DFGlfveO7z0G4QTgencILNN5pV6E6XBhRQgTZ%2Fjw8dxs3%2FGlyYhQ%3D",
+      "url": "https://www.ebay.com.au/itm/356384056552?_skw=2018+Trae+Young+Donruss+198+PSA+10&hash=item52fa2524e8:g:X3AAAOSwModnYlMI&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGYDspwPvHJne%2BJL84Eein%2BTbJWyynw81cGallKcfaZ2hwIlryrh%2BCmdxob6f6AZsA%2Fi%2BjpU1Z517kxerqvx4P%2FrKNzhDf5HVwKPqmeerqZysExpOSc5IbLWv2aYNH4Hwc0GbiUeJRQ9QeU5vHaM68exPVbte8HPrdP%2Fll8r8D1vyctfS9eEMewEl09vXfAzW6jKOJtmbEoBmQJ4YWHFaPPBQIbPD13vXlUfU1zmQuFYOGaxs8AGpk4T5cwovGVFZ49z5n8ukfpE%2B3FMb7MKhaNuyGqbvIQ3d608%2FS4CoK2hgek9XBZvhsxSMaCwcx5jbNc%3D",
       "image_url": "https://i.ebayimg.com/images/g/X3AAAOSwModnYlMI/s-l225.jpg",
       "title": "Trae Young 2018 Panini Donruss Rated Rookie #198 PSA 10",
       "sport": "NBA",
@@ -7646,7 +7646,7 @@
     {
       "source": "ebay",
       "external_id": "v1|286812343335|0",
-      "url": "https://www.ebay.com.au/itm/286812343335?_skw=2018+Trae+Young+Select+45+PSA+10&hash=item42c7590c27:g:azkAAOSwwCBnhC4p&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGaWedYougW%2FB9UPwNkkJ7bxqCCqCwddfl8SDYoYSHEPoORbApOSR6PRLUVoiBdksOmMwYS9%2FfYzGcDbjD%2BeNRfFFQNc45CmU6Ek8jtFw%2BB4Tb8L%2FoBP3RM9QaOgRL4jBeYrwiTtYHVxkqn%2B6OXgbJdxugD6U0ycEpGRxUl6VbG6Xn4a%2BKl1LcdFy%2FU26eP8pAuFtT7limfgZjHjCJ6nIWEdcTFVnJ7G7SzF4wEd36SY%2FH4J1ZbwV8TUYZfDF4J7RN%2Bohs%2FNG%2ButUNALv6iijfNsllPhqirhH46Zc2WqJoSRxKeD62jI8DHptu%2B3qfM5JN8%3D",
+      "url": "https://www.ebay.com.au/itm/286812343335?_skw=2018+Trae+Young+Select+45+PSA+10&hash=item42c7590c27:g:azkAAOSwwCBnhC4p&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGaWedYougW%2FB9UPwNkkJ7bxqCCqCwddfl8SDYoYSHEPoORbApOSR6PRLUVoiBdksOmMwYS9%2FfYzGcDbjD%2BeNRfFFQNc45CmU6Ek8jtFw%2BB4Tb8L%2FoBP3RM9QaOgRL4jBeaVQAvwBv3evTFSMadTuepX6Ezw%2BDM1VKpYI6U3zkiISUhtQo0GRGFgrvGOAeU8e2yovwoG%2FpmRGu2ueLLQVBLr6v1QfZ9d9wJXxn2kZsTAW2t2VbPY0jIsMnOrSvEx5fbY8jlHBOVcR0wtxZjoozVF0y052M%2FuDnTIe0LDqWYNB2aB%2BQfg%2BYGpVLgdf%2Fc4Aog%3D",
       "image_url": "https://i.ebayimg.com/images/g/azkAAOSwwCBnhC4p/s-l225.jpg",
       "title": "Trae Young 2018 Select Tri Color Concourse Prizm #45 RC PSA 10 Rookie Hawks",
       "sport": "NBA",
@@ -10123,7 +10123,7 @@
     {
       "source": "ebay",
       "external_id": "v1|377442074055|0",
-      "url": "https://www.ebay.com.au/itm/377442074055?_skw=2019+RJ+Barrett+Panini+Mosaic+229+PSA+10&hash=item57e14cfdc7:g:RTkAAeSwp05qiwtB&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGbM1yAy2HnxyZ%2F64kXVaktSi3UUiw2bF04n%2B3F4hRVHXyVzPWqZW0j5MgtJPh3MfnK5kvLnmDBOQkxWuFV7Ao7WX1S9I%2BWM%2Fdw7S1QB%2BRvS0Y83rk2ItmPoxUwCZpuvnq4Hp%2BM0g2ZRIhaGwR6arQT9WjfHpirDBvS1T5vRmP8Ge%2B9wkQ9IEYhkC%2BxupclvmVs9rtaaxMAaidbYGrWQOunCxkFR56vptvLI2ZWNa0ebDaiGgjFctqGtNXf2toG%2FjfMxUAVl%2B4vwygzzOXKlwRwOsSHCWYu6BlYHF6a6WZfogpHHbpHDgldh%2F%2B%2F4t%2FQEjUM%3D",
+      "url": "https://www.ebay.com.au/itm/377442074055?_skw=2019+RJ+Barrett+Panini+Mosaic+229+PSA+10&hash=item57e14cfdc7:g:RTkAAeSwp05qiwtB",
       "image_url": "https://i.ebayimg.com/images/g/RTkAAeSwp05qiwtB/s-l225.jpg",
       "title": "2019 Panini Mosaic RJ Barrett RC PSA 10 (GEM MT) #229 New York Knicks!!",
       "sport": "NBA",
@@ -204015,7 +204015,7 @@
         {
           "source": "ebay",
           "external_id": "v1|286812343335|0",
-          "url": "https://www.ebay.com.au/itm/286812343335?_skw=2018+Trae+Young+Select+45+PSA+10&hash=item42c7590c27:g:azkAAOSwwCBnhC4p&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGaWedYougW%2FB9UPwNkkJ7bxqCCqCwddfl8SDYoYSHEPoORbApOSR6PRLUVoiBdksOmMwYS9%2FfYzGcDbjD%2BeNRfFFQNc45CmU6Ek8jtFw%2BB4Tb8L%2FoBP3RM9QaOgRL4jBeYrwiTtYHVxkqn%2B6OXgbJdxugD6U0ycEpGRxUl6VbG6Xn4a%2BKl1LcdFy%2FU26eP8pAuFtT7limfgZjHjCJ6nIWEdcTFVnJ7G7SzF4wEd36SY%2FH4J1ZbwV8TUYZfDF4J7RN%2Bohs%2FNG%2ButUNALv6iijfNsllPhqirhH46Zc2WqJoSRxKeD62jI8DHptu%2B3qfM5JN8%3D",
+          "url": "https://www.ebay.com.au/itm/286812343335?_skw=2018+Trae+Young+Select+45+PSA+10&hash=item42c7590c27:g:azkAAOSwwCBnhC4p&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGaWedYougW%2FB9UPwNkkJ7bxqCCqCwddfl8SDYoYSHEPoORbApOSR6PRLUVoiBdksOmMwYS9%2FfYzGcDbjD%2BeNRfFFQNc45CmU6Ek8jtFw%2BB4Tb8L%2FoBP3RM9QaOgRL4jBeaVQAvwBv3evTFSMadTuepX6Ezw%2BDM1VKpYI6U3zkiISUhtQo0GRGFgrvGOAeU8e2yovwoG%2FpmRGu2ueLLQVBLr6v1QfZ9d9wJXxn2kZsTAW2t2VbPY0jIsMnOrSvEx5fbY8jlHBOVcR0wtxZjoozVF0y052M%2FuDnTIe0LDqWYNB2aB%2BQfg%2BYGpVLgdf%2Fc4Aog%3D",
           "title": "Trae Young 2018 Select Tri Color Concourse Prizm #45 RC PSA 10 Rookie Hawks",
           "landed_aud": 230.16,
           "asking_price": 230.16,
@@ -205143,7 +205143,7 @@
         {
           "source": "ebay",
           "external_id": "v1|356384056552|0",
-          "url": "https://www.ebay.com.au/itm/356384056552?_skw=2018+Trae+Young+Donruss+198+PSA+10&hash=item52fa2524e8:g:X3AAAOSwModnYlMI&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGYDspwPvHJne%2BJL84Eein%2BTbJWyynw81cGallKcfaZ2hwIlryrh%2BCmdxob6f6AZsA%2Fi%2BjpU1Z517kxerqvx4P%2FrKNzhDf5HVwKPqmeerqZysExpOSc5IbLWv2aYNH4Hwc3hl3ckbIgJQmxXA69cKdaeYKahzC0m1xBLEhnICPbJysjNBSt4jmy3sOAn0jXoXSjRKJ%2BA%2B8mtyl96KWnNXoqtcoT9sD3jz8igCpOPOVbTdJIlXE52L9ixpFmBPQGOuQldBSGW7dI03G2DFGlfveO7z0G4QTgencILNN5pV6E6XBhRQgTZ%2Fjw8dxs3%2FGlyYhQ%3D",
+          "url": "https://www.ebay.com.au/itm/356384056552?_skw=2018+Trae+Young+Donruss+198+PSA+10&hash=item52fa2524e8:g:X3AAAOSwModnYlMI&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGYDspwPvHJne%2BJL84Eein%2BTbJWyynw81cGallKcfaZ2hwIlryrh%2BCmdxob6f6AZsA%2Fi%2BjpU1Z517kxerqvx4P%2FrKNzhDf5HVwKPqmeerqZysExpOSc5IbLWv2aYNH4Hwc0GbiUeJRQ9QeU5vHaM68exPVbte8HPrdP%2Fll8r8D1vyctfS9eEMewEl09vXfAzW6jKOJtmbEoBmQJ4YWHFaPPBQIbPD13vXlUfU1zmQuFYOGaxs8AGpk4T5cwovGVFZ49z5n8ukfpE%2B3FMb7MKhaNuyGqbvIQ3d608%2FS4CoK2hgek9XBZvhsxSMaCwcx5jbNc%3D",
           "title": "Trae Young 2018 Panini Donruss Rated Rookie #198 PSA 10",
           "landed_aud": 92.06,
           "asking_price": 92.06,
@@ -205527,7 +205527,7 @@
         {
           "source": "ebay",
           "external_id": "v1|377442074055|0",
-          "url": "https://www.ebay.com.au/itm/377442074055?_skw=2019+RJ+Barrett+Panini+Mosaic+229+PSA+10&hash=item57e14cfdc7:g:RTkAAeSwp05qiwtB&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGbM1yAy2HnxyZ%2F64kXVaktSi3UUiw2bF04n%2B3F4hRVHXyVzPWqZW0j5MgtJPh3MfnK5kvLnmDBOQkxWuFV7Ao7WX1S9I%2BWM%2Fdw7S1QB%2BRvS0Y83rk2ItmPoxUwCZpuvnq4Hp%2BM0g2ZRIhaGwR6arQT9WjfHpirDBvS1T5vRmP8Ge%2B9wkQ9IEYhkC%2BxupclvmVs9rtaaxMAaidbYGrWQOunCxkFR56vptvLI2ZWNa0ebDaiGgjFctqGtNXf2toG%2FjfMxUAVl%2B4vwygzzOXKlwRwOsSHCWYu6BlYHF6a6WZfogpHHbpHDgldh%2F%2B%2F4t%2FQEjUM%3D",
+          "url": "https://www.ebay.com.au/itm/377442074055?_skw=2019+RJ+Barrett+Panini+Mosaic+229+PSA+10&hash=item57e14cfdc7:g:RTkAAeSwp05qiwtB",
           "title": "2019 Panini Mosaic RJ Barrett RC PSA 10 (GEM MT) #229 New York Knicks!!",
           "landed_aud": 21.57,
           "asking_price": 21.57,
