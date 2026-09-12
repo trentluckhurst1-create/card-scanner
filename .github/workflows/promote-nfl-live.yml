@@ -5,7 +5,7 @@ on:
     branches: [main]
     paths:
       - '.github/workflows/promote-nfl-live.yml'
-      - 'scripts/promote_nfl_exact_comparisons.py'
+      - 'scripts/merge_staged_nfl_exact_comparisons.py'
   workflow_dispatch:
 
 permissions:
@@ -34,7 +34,7 @@ jobs:
       - name: Install package
         run: python -m pip install -e .
       - name: Promote existing staged NFL exact groups immediately
-        run: python scripts/promote_nfl_exact_comparisons.py --staging docs/nfl_inventory.json --production docs/comparison.json --output docs/comparison.json
+        run: python scripts/merge_staged_nfl_exact_comparisons.py --staging docs/nfl_inventory.json --production docs/comparison.json --output docs/comparison.json
       - name: Commit promoted comparison feed
         run: |
           git config user.name "card-scanner-bot"
