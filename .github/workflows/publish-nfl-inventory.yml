@@ -6,6 +6,7 @@ on:
     paths:
       - 'scripts/publish_nfl_inventory.py'
       - 'scripts/audit_nfl_identity_readiness.py'
+      - 'scripts/audit_nfl_promotion_candidates.py'
       - '.github/workflows/publish-nfl-inventory.yml'
   schedule:
     - cron: '47 */6 * * *'
@@ -41,11 +42,15 @@ jobs:
         run: python scripts/enrich_active_market_ebay.py --feed docs/nfl_inventory.json --max-targets 500 --results-per-target 100
       - name: Audit staged NFL identity readiness
         run: python scripts/audit_nfl_identity_readiness.py --feed docs/nfl_inventory.json --output artifacts/nfl_identity_readiness_audit.json
-      - name: Upload NFL identity audit
+      - name: Audit exact NFL promotion candidates
+        run: python scripts/audit_nfl_promotion_candidates.py --staging docs/nfl_inventory.json --production docs/comparison.json --output artifacts/nfl_promotion_candidates.json
+      - name: Upload NFL staging audits
         uses: actions/upload-artifact@v4
         with:
-          name: nfl-identity-readiness-audit
-          path: artifacts/nfl_identity_readiness_audit.json
+          name: nfl-staging-audits
+          path: |
+            artifacts/nfl_identity_readiness_audit.json
+            artifacts/nfl_promotion_candidates.json
           if-no-files-found: error
           retention-days: 30
       - name: Publish staged NFL inventory snapshot
