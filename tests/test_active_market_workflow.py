@@ -23,7 +23,10 @@ def test_active_market_workflow_uses_expanded_discovery_depth():
 
 def test_active_market_refresh_is_self_contained():
     workflow = (Path(__file__).resolve().parents[1] / ".github" / "workflows" / "publish-active-market.yml").read_text(encoding="utf-8")
-    assert "scripts/publish_exact_comparisons.py --feed docs/active_market.json --output docs/comparison.json" in workflow
+    assert "cp docs/comparison.json artifacts/previous_comparison.json" in workflow
+    assert "scripts/publish_exact_comparisons.py --feed docs/active_market.json --output artifacts/fresh_comparison.json" in workflow
+    assert "scripts/merge_exact_comparison_feeds.py --previous artifacts/previous_comparison.json --fresh artifacts/fresh_comparison.json --output docs/comparison.json" in workflow
+    assert "scripts/merge_staged_nfl_exact_comparisons.py --production docs/comparison.json --staging docs/nfl_inventory.json --output docs/comparison.json" in workflow
     assert "scripts/audit_live_comparisons.py --feed docs/active_market.json" in workflow
     assert "scripts/audit_identity_completeness.py --feed docs/active_market.json" in workflow
     assert "active-market-refresh-audits" in workflow
