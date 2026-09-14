@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-13T16:41:47.419244+00:00",
+  "generated_at": "2026-09-14T05:12:24.328332+00:00",
   "feed_type": "EXACT_CARD_STORE_COMPARISON_ONLY",
   "pricing_basis": "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE",
   "governance": {
@@ -19,15 +19,15 @@
     "title_discriminator_guard_reused_for_nfl": true
   },
   "metrics": {
-    "active_cards_scanned": 3890,
+    "active_cards_scanned": 4087,
     "exact_comparison_groups": 496,
-    "exact_comparison_listings": 4278,
+    "exact_comparison_listings": 4276,
     "previous_exact_groups": 496,
-    "fresh_exact_groups": 66,
-    "retained_previous_groups_missing_from_fresh": 430,
+    "fresh_exact_groups": 68,
+    "retained_previous_groups_missing_from_fresh": 428,
     "previous_groups_lost": 0,
     "production_groups_before_nfl_merge": 496,
-    "production_listings_before_nfl_merge": 4278,
+    "production_listings_before_nfl_merge": 4276,
     "staged_nfl_exact_groups_seen": 364,
     "staged_nfl_groups_added": 0,
     "staged_nfl_listings_added": 0,
@@ -93,7 +93,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "cherry",
@@ -154,7 +154,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "cherry",
@@ -215,7 +215,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "cherry",
@@ -276,7 +276,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "cherry",
@@ -337,7 +337,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "cherry",
@@ -398,7 +398,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "cherry",
@@ -459,7 +459,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "cherry",
@@ -520,7 +520,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "cherry",
@@ -581,7 +581,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "cherry",
@@ -642,7 +642,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "cherry",
@@ -703,7 +703,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "cherry",
@@ -764,7 +764,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "cherry",
@@ -825,7 +825,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "cherry",
@@ -886,7 +886,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "cherry",
@@ -947,7 +947,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "cherry",
@@ -1008,7 +1008,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "cherry",
@@ -1069,7 +1069,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "cherry",
@@ -1130,7 +1130,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "cherry",
@@ -1191,7 +1191,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "cherry",
@@ -1252,7 +1252,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "cherry",
@@ -1313,7 +1313,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "cherry",
@@ -1374,7 +1374,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "thehobby",
@@ -1383,10 +1383,10 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0440/6935/5678/files/mixed_028-1_azbs6y.jpg?v=1752549373",
       "title": "Bilal Coulibaly 2023-24 Panini Recon 236 Purple Holo RC 19/75",
       "sport": "NBA",
-      "asking_price": 13.3,
+      "asking_price": 13.25,
       "shipping": 0.0,
       "currency": "AUD",
-      "landed_aud": 13.3,
+      "landed_aud": 13.25,
       "identity": {
         "player": "Bilal Coulibaly",
         "year": "2023-24",
@@ -1435,7 +1435,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-12"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "boop",
@@ -1495,7 +1495,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "boop",
@@ -1555,7 +1555,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "boop",
@@ -1615,7 +1615,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "boop",
@@ -1675,7 +1675,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "boop",
@@ -1735,7 +1735,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "boop",
@@ -1795,7 +1795,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "boop",
@@ -1855,7 +1855,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "boop",
@@ -1915,7 +1915,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "boop",
@@ -1975,7 +1975,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "thehobby",
@@ -1984,10 +1984,10 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0440/6935/5678/files/baseball_077-1_m7h30v.jpg?v=1722901793",
       "title": "Miguel Bleis 2024 Panini Donruss 195 Red RC 220/275",
       "sport": "MLB",
-      "asking_price": 6.65,
+      "asking_price": 6.63,
       "shipping": 0.0,
       "currency": "AUD",
-      "landed_aud": 6.65,
+      "landed_aud": 6.63,
       "identity": {
         "player": "Miguel Bleis",
         "year": "2024",
@@ -2036,7 +2036,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "thehobby",
@@ -2045,10 +2045,10 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0440/6935/5678/files/baseball_076-1_bvpnj8.jpg?v=1722901789",
       "title": "Miguel Bleis 2024 Panini Donruss 195 Red RC 261/275",
       "sport": "MLB",
-      "asking_price": 6.65,
+      "asking_price": 6.63,
       "shipping": 0.0,
       "currency": "AUD",
-      "landed_aud": 6.65,
+      "landed_aud": 6.63,
       "identity": {
         "player": "Miguel Bleis",
         "year": "2024",
@@ -2097,7 +2097,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "cherry",
@@ -2158,7 +2158,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "cherry",
@@ -2218,7 +2218,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "cherry",
@@ -2278,7 +2278,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "cherry",
@@ -2338,7 +2338,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "cherry",
@@ -2398,7 +2398,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "cherry",
@@ -2458,7 +2458,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "cherry",
@@ -2518,7 +2518,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "cherry",
@@ -2578,7 +2578,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "cherry",
@@ -2637,7 +2637,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "cherry",
@@ -2696,7 +2696,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "cherry",
@@ -2755,7 +2755,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "cherry",
@@ -2814,7 +2814,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "cherry",
@@ -2873,7 +2873,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "sportscardstore",
@@ -2933,7 +2933,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "sportscardstore",
@@ -2993,7 +2993,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "sportscardstore",
@@ -3054,7 +3054,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "sportscardstore",
@@ -3115,7 +3115,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "sportscardstore",
@@ -3176,7 +3176,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "sportscardstore",
@@ -3236,7 +3236,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "sportscardstore",
@@ -3296,7 +3296,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "sportscardstore",
@@ -3356,7 +3356,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "sportscardstore",
@@ -3416,7 +3416,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "sportscardstore",
@@ -3476,7 +3476,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "sportscardstore",
@@ -3536,7 +3536,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "sportscardstore",
@@ -3596,7 +3596,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "sportscardstore",
@@ -3656,7 +3656,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "sportscardstore",
@@ -3716,7 +3716,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "sportscardstore",
@@ -3776,7 +3776,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "sportscardstore",
@@ -3836,7 +3836,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "sportscardstore",
@@ -3896,7 +3896,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "sportscardstore",
@@ -3956,7 +3956,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "sportscardstore",
@@ -4016,7 +4016,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "sportscardstore",
@@ -4076,7 +4076,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "sportscardstore",
@@ -4136,7 +4136,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "sportscardstore",
@@ -4196,7 +4196,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "sportscardstore",
@@ -4256,7 +4256,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "sportscardstore",
@@ -4316,7 +4316,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "sportscardstore",
@@ -4376,7 +4376,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "sportscardstore",
@@ -4436,7 +4436,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "sportscardstore",
@@ -4497,7 +4497,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "sportscardstore",
@@ -4558,7 +4558,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "sportscardstore",
@@ -4619,7 +4619,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "thehobby",
@@ -4628,10 +4628,10 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0440/6935/5678/files/brilliance_0006_xzaino.jpg?v=1715839619",
       "title": "Charlie Cameron 2024 Select Brilliance SS4 Superstars Gold Low 03/25",
       "sport": "AFL",
-      "asking_price": 299.3,
+      "asking_price": 298.2,
       "shipping": 0.0,
       "currency": "AUD",
-      "landed_aud": 299.3,
+      "landed_aud": 298.2,
       "identity": {
         "player": "Charlie Cameron",
         "year": "2024",
@@ -4679,7 +4679,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "thehobby",
@@ -4688,10 +4688,10 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0440/6935/5678/files/afl_029-1_ertkls.jpg?v=1726731429",
       "title": "Bailey Smith 2024 Select Supremacy 160 Blue 50/65",
       "sport": "AFL",
-      "asking_price": 46.56,
+      "asking_price": 46.39,
       "shipping": 0.0,
       "currency": "AUD",
-      "landed_aud": 46.56,
+      "landed_aud": 46.39,
       "identity": {
         "player": "Bailey Smith",
         "year": "2024",
@@ -4739,7 +4739,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "thehobby",
@@ -4748,10 +4748,10 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0440/6935/5678/files/mixed_007-1_txhd76.jpg?v=1735013447",
       "title": "Angus Hastie 2024 Select Supremacy Rookies RPB33 Rookies Platinum Blue RC 54/75",
       "sport": "AFL",
-      "asking_price": 29.93,
+      "asking_price": 29.82,
       "shipping": 0.0,
       "currency": "AUD",
-      "landed_aud": 29.93,
+      "landed_aud": 29.82,
       "identity": {
         "player": "Angus Hastie",
         "year": "2024",
@@ -4800,7 +4800,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "thehobby",
@@ -4809,10 +4809,10 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0440/6935/5678/files/afl_001-1_aarpww.jpg?v=1733971875",
       "title": "Andrew Brayshaw 2024 Select Legacy Ultimate FFB24 Footy's Finest Black 7/30",
       "sport": "AFL",
-      "asking_price": 331.89,
+      "asking_price": 330.67,
       "shipping": 0.0,
       "currency": "AUD",
-      "landed_aud": 331.89,
+      "landed_aud": 330.67,
       "identity": {
         "player": "Andrew Brayshaw",
         "year": "2024",
@@ -4860,7 +4860,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "thehobby",
@@ -4869,10 +4869,10 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0440/6935/5678/files/afl_016-1_fof5nt.jpg?v=1728356398",
       "title": "Adam Saad 2024 Select Supremacy 25 Gold 50/95",
       "sport": "AFL",
-      "asking_price": 39.91,
+      "asking_price": 39.76,
       "shipping": 0.0,
       "currency": "AUD",
-      "landed_aud": 39.91,
+      "landed_aud": 39.76,
       "identity": {
         "player": "Adam Saad",
         "year": "2024",
@@ -4920,7 +4920,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "thehobby",
@@ -4929,10 +4929,10 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0440/6935/5678/files/afl_015-1_szkks6.jpg?v=1728356395",
       "title": "Adam Saad 2024 Select Supremacy 25 Gold 83/95",
       "sport": "AFL",
-      "asking_price": 39.91,
+      "asking_price": 39.76,
       "shipping": 0.0,
       "currency": "AUD",
-      "landed_aud": 39.91,
+      "landed_aud": 39.76,
       "identity": {
         "player": "Adam Saad",
         "year": "2024",
@@ -4980,7 +4980,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "thehobby",
@@ -4989,10 +4989,10 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0440/6935/5678/products/afl_039-1_k75zcp.jpg?v=1709873073",
       "title": "Bobby Hill 2024 Select Footy Stars FFG17 Future Force Green 89/195",
       "sport": "AFL",
-      "asking_price": 16.63,
+      "asking_price": 16.57,
       "shipping": 0.0,
       "currency": "AUD",
-      "landed_aud": 16.63,
+      "landed_aud": 16.57,
       "identity": {
         "player": "Bobby Hill",
         "year": "2024",
@@ -5040,7 +5040,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "thehobby",
@@ -5049,10 +5049,10 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0440/6935/5678/products/afl_026-1_i808gs.jpg?v=1709873043",
       "title": "Brisbane Lions 2024 Select Footy Stars Rising Star Predictor Gold Low 004/315",
       "sport": "AFL",
-      "asking_price": 32.59,
+      "asking_price": 32.47,
       "shipping": 0.0,
       "currency": "AUD",
-      "landed_aud": 32.59,
+      "landed_aud": 32.47,
       "identity": {
         "player": "Brisbane Lions",
         "year": "2024",
@@ -5100,7 +5100,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "thehobby",
@@ -5109,10 +5109,10 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0440/6935/5678/products/afl_025-1_ybhsnv.jpg?v=1678415346",
       "title": "Andrew Gaff 2023 Select Footy Stars BPG81 Brownlow Predictor Gold 15/260",
       "sport": "AFL",
-      "asking_price": 13.3,
+      "asking_price": 13.25,
       "shipping": 0.0,
       "currency": "AUD",
-      "landed_aud": 13.3,
+      "landed_aud": 13.25,
       "identity": {
         "player": "Andrew Gaff",
         "year": "2023",
@@ -5160,7 +5160,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "thehobby",
@@ -5169,10 +5169,10 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0440/6935/5678/products/afl_015-1_abude8.jpg?v=1678415330",
       "title": "Brisbane Lions 2023 Select Footy Stars PPG2 Premiership Predictor Gold 130/260",
       "sport": "AFL",
-      "asking_price": 13.3,
+      "asking_price": 13.25,
       "shipping": 0.0,
       "currency": "AUD",
-      "landed_aud": 13.3,
+      "landed_aud": 13.25,
       "identity": {
         "player": "Brisbane Lions",
         "year": "2023",
@@ -5220,7 +5220,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "boop",
@@ -5282,7 +5282,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "boop",
@@ -5342,7 +5342,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "boop",
@@ -5402,7 +5402,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "cherry",
@@ -5461,7 +5461,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-12"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "cherry",
@@ -5520,7 +5520,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-12"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "thehobby",
@@ -5529,10 +5529,10 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0440/6935/5678/files/mixed_006-1_col4ky.jpg?v=1752549334",
       "title": "Bilal Coulibaly 2023-24 Panini Recon 21 Future Legends Purple RC 44/75",
       "sport": "NBA",
-      "asking_price": 9.98,
+      "asking_price": 9.95,
       "shipping": 0.0,
       "currency": "AUD",
-      "landed_aud": 9.98,
+      "landed_aud": 9.95,
       "identity": {
         "player": "Bilal Coulibaly",
         "year": "2023-24",
@@ -5581,7 +5581,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-12"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "cherry",
@@ -5642,7 +5642,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-12"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "cherry",
@@ -5703,7 +5703,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-12"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "cherry",
@@ -5764,7 +5764,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-12"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "cherry",
@@ -5825,7 +5825,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-12"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "cherry",
@@ -5886,7 +5886,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-12"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "cherry",
@@ -5947,7 +5947,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "cherry",
@@ -6008,7 +6008,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -6069,7 +6069,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -6129,7 +6129,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -6189,7 +6189,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -6249,7 +6249,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -6309,67 +6309,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
-    },
-    {
-      "source": "ebay",
-      "external_id": "v1|326912146973|0",
-      "url": "https://www.ebay.com.au/itm/326912146973?_skw=2024+Cameron+Zurhaar+AFL+Supremacy+Black+Pearl+%2F35&hash=item4c1d7b7e1d:g:lH8AAeSwxMFpPg8p",
-      "image_url": "https://i.ebayimg.com/images/g/lH8AAeSwxMFpPg8p/s-l225.jpg",
-      "title": "2024 SELECT AFL SUPREMACY Black Pearl Cameron Zurhaar 06/35 LOW",
-      "sport": "AFL",
-      "asking_price": 229.0,
-      "shipping": 0.0,
-      "currency": "AUD",
-      "landed_aud": 229.0,
-      "identity": {
-        "player": "Cameron Zurhaar",
-        "year": "2024",
-        "brand": "AFL Supremacy",
-        "set_name": "AFL Supremacy",
-        "card_number": null,
-        "parallel": "Black Pearl",
-        "serial_current": 6,
-        "serial_total": 35,
-        "grader": null,
-        "grade": null,
-        "autograph": false,
-        "memorabilia": false,
-        "rookie": false
-      },
-      "card_family": {
-        "key": "cf_15d09d533cc56b3db7f4",
-        "eligible": true,
-        "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
-        "match_confidence": 1.0,
-        "match_reasons": [
-          "same player",
-          "same year",
-          "same brand/product",
-          "same parallel",
-          "same serial denominator"
-        ],
-        "canonical_components": {
-          "sport": "afl",
-          "player": "cameronzurhaar",
-          "year": "2024",
-          "brand": "aflsupremacy",
-          "product": "aflsupremacy",
-          "card_number": "",
-          "parallel": "blackpearl",
-          "serial_total": "35",
-          "grader": "",
-          "grade": "",
-          "autograph": "0",
-          "memorabilia": "0",
-          "rookie": "0"
-        }
-      },
-      "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
-      "fx_status": "AUD_NATIVE",
-      "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -6430,7 +6370,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -6491,7 +6431,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -6552,12 +6492,12 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
       "external_id": "v1|356384056552|0",
-      "url": "https://www.ebay.com.au/itm/356384056552?_skw=2018+Trae+Young+Donruss+198+PSA+10&hash=item52fa2524e8:g:X3AAAOSwModnYlMI&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGYDspwPvHJne%2BJL84Eein%2BTbJWyynw81cGallKcfaZ2hwIlryrh%2BCmdxob6f6AZsA%2Fi%2BjpU1Z517kxerqvx4P%2FrKNzhDf5HVwKPqmeerqZysExpOSc5IbLWv2aYNH4Hwc3QUEuOIMs6oiUgPI85BE69FjVsjUapwqzRQUxuMGegP1WfmBnwEJHH3CiS7I7LF2FTmMA8MyLhZBqn6TZHcAVxy8Xm0cNoL9s7WVO5tYUw0ehI6zrCXLmLERHmO5Z6Of04OT52B35KSqQdCIlCV3hDl%2B7a64D7tpBep5WWPh2P92EtXDMsfdxousJN5BTC1Io%3D",
+      "url": "https://www.ebay.com.au/itm/356384056552?_skw=2018+Trae+Young+Donruss+198+PSA+10&hash=item52fa2524e8:g:X3AAAOSwModnYlMI&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGYDspwPvHJne%2BJL84Eein%2BTbJWyynw81cGallKcfaZ2hwIlryrh%2BCmdxob6f6AZsA%2Fi%2BjpU1Z517kxerqvx4P%2FrKNzhDf5HVwKPqmeerqZysExpOSc5IbLWv2aYNH4Hwc0hi371Z0FQER9jV0K6%2FT98I%2FC0K--eMdT%2B4Mauh1fw6MKDWs7wbo0X%2Fb7f5by6gv%2FVoL9w6zyyw7%2FgijxtM%2FOjuVc7iL%2BBzBGAAQJzHTAixF8sWiGT1KjCCf17Zw5OBKLCFJU%2FoLUbw0jb4TrnkJHNAt0%2BuqZrZ4LQnyLIatJ9wGTOszPfckwTenbi7ZRawWU%3D",
       "image_url": "https://i.ebayimg.com/images/g/X3AAAOSwModnYlMI/s-l225.jpg",
       "title": "Trae Young 2018 Panini Donruss Rated Rookie #198 PSA 10",
       "sport": "NBA",
@@ -6613,7 +6553,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -6674,7 +6614,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -6735,7 +6675,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -6796,7 +6736,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -6857,7 +6797,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -6918,7 +6858,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -6979,7 +6919,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -7040,7 +6980,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -7101,7 +7041,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -7161,67 +7101,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
-    },
-    {
-      "source": "ebay",
-      "external_id": "v1|287009277236|0",
-      "url": "https://www.ebay.com.au/itm/287009277236?_skw=2024+Aaron+Naughton+AFL+Supremacy+Black+Pearl+%2F35&hash=item42d3160534:g:tkgAAeSwrGVpPgtH",
-      "image_url": "https://i.ebayimg.com/images/g/tkgAAeSwrGVpPgtH/s-l225.jpg",
-      "title": "2024 SELECT AFL SUPREMACY Black Pearl Aaron Naughton 09/35 LOW",
-      "sport": "AFL",
-      "asking_price": 249.0,
-      "shipping": 0.0,
-      "currency": "AUD",
-      "landed_aud": 249.0,
-      "identity": {
-        "player": "Aaron Naughton",
-        "year": "2024",
-        "brand": "AFL Supremacy",
-        "set_name": "AFL Supremacy",
-        "card_number": null,
-        "parallel": "Black Pearl",
-        "serial_current": 9,
-        "serial_total": 35,
-        "grader": null,
-        "grade": null,
-        "autograph": false,
-        "memorabilia": false,
-        "rookie": false
-      },
-      "card_family": {
-        "key": "cf_659b41da8799699444a5",
-        "eligible": true,
-        "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
-        "match_confidence": 1.0,
-        "match_reasons": [
-          "same player",
-          "same year",
-          "same brand/product",
-          "same parallel",
-          "same serial denominator"
-        ],
-        "canonical_components": {
-          "sport": "afl",
-          "player": "aaronnaughton",
-          "year": "2024",
-          "brand": "aflsupremacy",
-          "product": "aflsupremacy",
-          "card_number": "",
-          "parallel": "blackpearl",
-          "serial_total": "35",
-          "grader": "",
-          "grade": "",
-          "autograph": "0",
-          "memorabilia": "0",
-          "rookie": "0"
-        }
-      },
-      "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
-      "fx_status": "AUD_NATIVE",
-      "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -7281,7 +7161,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -7341,67 +7221,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
-    },
-    {
-      "source": "ebay",
-      "external_id": "v1|287009346498|0",
-      "url": "https://www.ebay.com.au/itm/287009346498?_skw=2024+Harry+McKay+AFL+Supremacy+Black+Pearl+%2F35&hash=item42d31713c2:g:f2UAAeSwKpxpPhUY",
-      "image_url": "https://i.ebayimg.com/images/g/f2UAAeSwKpxpPhUY/s-l225.jpg",
-      "title": "2024 SELECT AFL SUPREMACY Black Pearl Harry McKay 24/35",
-      "sport": "AFL",
-      "asking_price": 349.0,
-      "shipping": 0.0,
-      "currency": "AUD",
-      "landed_aud": 349.0,
-      "identity": {
-        "player": "Harry McKay",
-        "year": "2024",
-        "brand": "AFL Supremacy",
-        "set_name": "AFL Supremacy",
-        "card_number": null,
-        "parallel": "Black Pearl",
-        "serial_current": 24,
-        "serial_total": 35,
-        "grader": null,
-        "grade": null,
-        "autograph": false,
-        "memorabilia": false,
-        "rookie": false
-      },
-      "card_family": {
-        "key": "cf_eeb95c6da22262d183d0",
-        "eligible": true,
-        "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
-        "match_confidence": 1.0,
-        "match_reasons": [
-          "same player",
-          "same year",
-          "same brand/product",
-          "same parallel",
-          "same serial denominator"
-        ],
-        "canonical_components": {
-          "sport": "afl",
-          "player": "harrymckay",
-          "year": "2024",
-          "brand": "aflsupremacy",
-          "product": "aflsupremacy",
-          "card_number": "",
-          "parallel": "blackpearl",
-          "serial_total": "35",
-          "grader": "",
-          "grade": "",
-          "autograph": "0",
-          "memorabilia": "0",
-          "rookie": "0"
-        }
-      },
-      "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
-      "fx_status": "AUD_NATIVE",
-      "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -7461,7 +7281,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -7521,7 +7341,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -7581,7 +7401,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -7641,12 +7461,12 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
       "external_id": "v1|286812343335|0",
-      "url": "https://www.ebay.com.au/itm/286812343335?_skw=2018+Trae+Young+Select+45+PSA+10&hash=item42c7590c27:g:azkAAOSwwCBnhC4p&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGaWedYougW%2FB9UPwNkkJ7bxqCCqCwddfl8SDYoYSHEPoORbApOSR6PRLUVoiBdksOmMwYS9%2FfYzGcDbjD%2BeNRfFFQNc45CmU6Ek8jtFw%2BB4Tb8L%2FoBP3RM9QaOgRL4jBeZdQDz0bMFaBQTFy4VWujIEOg%2BNZCdT45v583aMBKQtbN6A9FZOxYedIjOD2StQrSXAVD5pHVs2PSLFn8zyhMXtDv%2FD2pLElyAmrlvsN9CxeHcg%2B%2FwbNmddlazcDitZ0x6XckA59MirG%2FmuBPqyxoKYO%2FPGPAAA%2B8FIRGjoRUlu77DN9kx%2Fb77oCpZCWZebcvI%3D",
+      "url": "https://www.ebay.com.au/itm/286812343335?_skw=2018+Trae+Young+Select+45+PSA+10&hash=item42c7590c27:g:azkAAOSwwCBnhC4p&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGaWedYougW%2FB9UPwNkkJ7bxqCCqCwddfl8SDYoYSHEPoORbApOSR6PRLUVoiBdksOmMwYS9%2FfYzGcDbjD%2BeNRfFFQNc45CmU6Ek8jtFw%2BB4Tb8L%2FoBP3RM9QaOgRL4jBea8hQBoAD21gM258MmyhkoPFwANU95ZZ8Kekuv2lvXYY4KnYKKczKv%2BR7PGkgAERl1jmS%2FAGCDHrCrHTiWF9H%2BiGWtzh5Z2HqTzBZc38xRW78T%2FTNzMkfUdWOeI0NK4m2MJsXFXrLKiA3dhPA4SaJ1ZdiGC7y5qAWeuqOec0UjiEyElLZOJ0GukX84Uhqgrpkw%3D",
       "image_url": "https://i.ebayimg.com/images/g/azkAAOSwwCBnhC4p/s-l225.jpg",
       "title": "Trae Young 2018 Select Tri Color Concourse Prizm #45 RC PSA 10 Rookie Hawks",
       "sport": "NBA",
@@ -7702,7 +7522,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -7762,7 +7582,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -7822,7 +7642,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -7882,7 +7702,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -7942,7 +7762,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -8003,7 +7823,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -8064,7 +7884,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -8125,7 +7945,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -8185,7 +8005,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -8245,7 +8065,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -8305,7 +8125,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -8365,7 +8185,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -8425,7 +8245,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -8485,7 +8305,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -8545,7 +8365,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -8605,7 +8425,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -8665,7 +8485,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -8725,7 +8545,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -8785,7 +8605,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -8845,7 +8665,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -8905,7 +8725,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -8965,7 +8785,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -9026,7 +8846,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -9087,7 +8907,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -9148,7 +8968,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-12"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -9209,7 +9029,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-12"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -9270,7 +9090,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-12"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -9331,7 +9151,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-12"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -9391,7 +9211,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -9451,7 +9271,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -9511,7 +9331,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -9571,7 +9391,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -9631,7 +9451,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -9691,7 +9511,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -9752,7 +9572,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-12"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -9813,7 +9633,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-12"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -9874,7 +9694,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-12"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -9935,7 +9755,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-12"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -9996,7 +9816,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-12"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -10057,7 +9877,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-12"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -10118,7 +9938,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-12"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -10179,7 +9999,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-12"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -10240,7 +10060,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-12"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -10301,7 +10121,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-12"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -10362,7 +10182,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-12"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -10423,12 +10243,12 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-12"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
       "external_id": "v1|196059248447|0",
-      "url": "https://www.ebay.com.au/itm/196059248447?_skw=2019+RJ+Barrett+Panini+Mosaic+229+PSA+10&hash=item2da60ab73f:g:ndcAAOSwW1ZlQa80",
+      "url": "https://www.ebay.com.au/itm/196059248447?_skw=2019+RJ+Barrett+Panini+Mosaic+229+PSA+10&hash=item2da60ab73f:g:ndcAAOSwW1ZlQa80&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGY%2FjYafznEeb6uoe2aJPyQPcyeDcxNwHPJDHFeYjdqCJLTmUGujPxwh%2BJ1FK%2FPpe5EWOqVhyqkUkJyaxmubJnxiSwWWog44qczco5GV%2BS0lRAy4nae%2FM%2F1kFwjGJP45Zlu5jpGxVVn3F0P%2B%2BFVFEVbFbIkWVjRQj4V3DaKWWwZpVvPAc7leHUtRF2oad--f5RSxoEF5F0iO8vEaCO62lrK8xKj1FiLn583vRTby1F0AuMiHUq5bHnyP3oZlsJXN1wAJ6B66kST7OzeXXy9NGC6EpCMZm%2FYb5mTGIPqGCLZXgmMLjxuA0icBsnL7y3kT%2B78%3D",
       "image_url": "https://i.ebayimg.com/images/g/ndcAAOSwW1ZlQa80/s-l225.jpg",
       "title": "RJ Barrett 2019 Panini Mosaic #229 Rookie PSA 10 GEM MT ",
       "sport": "NBA",
@@ -10484,7 +10304,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-12"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -10545,7 +10365,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-12"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -10606,7 +10426,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-12"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -10667,7 +10487,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -10728,7 +10548,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -10789,7 +10609,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -10848,7 +10668,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -10907,7 +10727,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -10967,7 +10787,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -11027,7 +10847,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -11088,7 +10908,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -11148,7 +10968,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -11208,7 +11028,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -11268,7 +11088,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -11328,7 +11148,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -11389,7 +11209,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -11450,7 +11270,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -11511,7 +11331,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -11572,7 +11392,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -11632,7 +11452,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -11692,7 +11512,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -11753,7 +11573,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -11813,7 +11633,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -11873,7 +11693,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -11933,7 +11753,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -11993,7 +11813,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -12053,7 +11873,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -12113,7 +11933,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -12173,7 +11993,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -12233,7 +12053,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -12293,7 +12113,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -12352,7 +12172,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -12414,7 +12234,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -12473,7 +12293,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -12532,7 +12352,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-12"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -12591,7 +12411,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-12"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -12651,7 +12471,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -12712,7 +12532,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -12773,7 +12593,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -12832,7 +12652,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -12891,7 +12711,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "cherry",
@@ -202120,7 +201940,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "cherry",
@@ -202179,7 +201999,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "sportscardstore",
@@ -202240,7 +202060,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "sportscardstore",
@@ -202301,7 +202121,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "thehobby",
@@ -202310,10 +202130,10 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0440/6935/5678/files/mixed_135-1_e93pko.jpg?v=1759730366",
       "title": "Guy McKenna 2025 Select Brilliance B-GM Silver 03/50",
       "sport": "AFL",
-      "asking_price": 116.39,
+      "asking_price": 115.96,
       "shipping": 0.0,
       "currency": "AUD",
-      "landed_aud": 116.39,
+      "landed_aud": 115.96,
       "identity": {
         "player": "Guy McKenna",
         "year": "2025",
@@ -202361,7 +202181,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "thehobby",
@@ -202370,10 +202190,10 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0440/6935/5678/files/mixed_003-1_otmh1a.jpg?v=1730076181",
       "title": "George Wardlaw 2024 Select Supremacy 107 Blue Portraits 46/65",
       "sport": "AFL",
-      "asking_price": 65.85,
+      "asking_price": 65.6,
       "shipping": 0.0,
       "currency": "AUD",
-      "landed_aud": 65.85,
+      "landed_aud": 65.6,
       "identity": {
         "player": "George Wardlaw",
         "year": "2024",
@@ -202421,7 +202241,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "thehobby",
@@ -202430,10 +202250,10 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0440/6935/5678/files/mixed_004-1_sb3xy8_b0e55e2e-3d77-4d30-a2b5-e08fbd083a36.jpg?v=1756859912",
       "title": "Fremantle Dockers 2024 Select Footy Stars CPG6 Coleman Predictor Gold 164/315",
       "sport": "AFL",
-      "asking_price": 16.63,
+      "asking_price": 16.57,
       "shipping": 0.0,
       "currency": "AUD",
-      "landed_aud": 16.63,
+      "landed_aud": 16.57,
       "identity": {
         "player": "Fremantle Dockers",
         "year": "2024",
@@ -202481,7 +202301,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "thehobby",
@@ -202490,10 +202310,10 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0440/6935/5678/files/mixed_041-1_yrxz4x.jpg?v=1745291320",
       "title": "Greater Western Sydney 2025 Select Footy Stars Coleman Predictor Sig Gold /220",
       "sport": "AFL",
-      "asking_price": 132.36,
+      "asking_price": 131.87,
       "shipping": 0.0,
       "currency": "AUD",
-      "landed_aud": 132.36,
+      "landed_aud": 131.87,
       "identity": {
         "player": "Greater Western",
         "year": "2025",
@@ -202541,7 +202361,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "thehobby",
@@ -202550,10 +202370,10 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0440/6935/5678/files/afl_014-1_ps6udb.jpg?v=1728356391",
       "title": "Errol Gulden 2024 Select Supremacy 138 Gold 64/95",
       "sport": "AFL",
-      "asking_price": 49.88,
+      "asking_price": 49.7,
       "shipping": 0.0,
       "currency": "AUD",
-      "landed_aud": 49.88,
+      "landed_aud": 49.7,
       "identity": {
         "player": "Errol Gulden",
         "year": "2024",
@@ -202601,7 +202421,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "thehobby",
@@ -202610,10 +202430,10 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0440/6935/5678/products/afl_030-1_l1wvso.jpg?v=1709873059",
       "title": "Hugh McCluggage 2024 Select Footy Stars IGG7 Ignite Gold 93/125",
       "sport": "AFL",
-      "asking_price": 19.95,
+      "asking_price": 19.88,
       "shipping": 0.0,
       "currency": "AUD",
-      "landed_aud": 19.95,
+      "landed_aud": 19.88,
       "identity": {
         "player": "Hugh McCluggage",
         "year": "2024",
@@ -202661,7 +202481,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "thehobby",
@@ -202670,10 +202490,10 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0440/6935/5678/products/afl_014-1_eboiks.jpg?v=1697688253",
       "title": "Harris Andrews 2023 Select Footy Stars N21 Numbers Gold 176/255",
       "sport": "AFL",
-      "asking_price": 16.63,
+      "asking_price": 16.57,
       "shipping": 0.0,
       "currency": "AUD",
-      "landed_aud": 16.63,
+      "landed_aud": 16.57,
       "identity": {
         "player": "Harris Andrews",
         "year": "2023",
@@ -202721,7 +202541,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "boop",
@@ -202782,7 +202602,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "boop",
@@ -202842,7 +202662,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -202901,7 +202721,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -202962,7 +202782,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -203023,7 +202843,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -203083,7 +202903,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -203142,7 +202962,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -203203,7 +203023,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -203264,7 +203084,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -203325,7 +203145,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -203385,7 +203205,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -203445,7 +203265,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -203505,7 +203325,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -203565,7 +203385,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -203625,7 +203445,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -203685,7 +203505,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -203745,7 +203565,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "cherry",
@@ -244990,7 +244810,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "thehobby",
@@ -245230,7 +245050,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -245290,7 +245110,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -245350,7 +245170,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-13"
+      "fx_rate_date": "2026-09-14"
     },
     {
       "source": "ebay",
@@ -258132,6 +257952,67 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-09-12"
+    },
+    {
+      "source": "ebay",
+      "external_id": "v1|178145922408|0",
+      "url": "https://www.ebay.com.au/itm/178145922408?_skw=2019+RJ+Barrett+Panini+Donruss+Optic+178+PSA+9&hash=item297a530d68:g:eSUAAeSwI3ZqC2YT",
+      "image_url": "https://i.ebayimg.com/images/g/eSUAAeSwI3ZqC2YT/s-l225.jpg",
+      "title": "2019 PANINI DONRUSS OPTIC #178 RJ BARRETT RC RATED ROOKIE PSA 9",
+      "sport": "NBA",
+      "asking_price": 22.11,
+      "shipping": 0.0,
+      "currency": "AUD",
+      "landed_aud": 22.11,
+      "identity": {
+        "player": "RJ Barrett",
+        "year": "2019",
+        "brand": "Panini Donruss Optic",
+        "set_name": "Panini Donruss Optic",
+        "card_number": "178",
+        "parallel": null,
+        "serial_current": null,
+        "serial_total": null,
+        "grader": "PSA",
+        "grade": 9.0,
+        "autograph": false,
+        "memorabilia": false,
+        "rookie": true
+      },
+      "card_family": {
+        "key": "cf_c3a18a974428bb22c54f",
+        "eligible": true,
+        "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
+        "match_confidence": 1.0,
+        "match_reasons": [
+          "same player",
+          "same year",
+          "same brand/product",
+          "same card number",
+          "same grading state",
+          "same rookie state"
+        ],
+        "canonical_components": {
+          "sport": "nba",
+          "player": "rjbarrett",
+          "year": "2019",
+          "brand": "paninidonrussoptic",
+          "product": "paninidonrussoptic",
+          "card_number": "178",
+          "parallel": "",
+          "serial_total": "",
+          "grader": "psa",
+          "grade": "9",
+          "autograph": "0",
+          "memorabilia": "0",
+          "rookie": "1"
+        }
+      },
+      "history": null,
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-09-14"
     }
   ],
   "comparison_groups": [
@@ -258341,7 +258222,7 @@
         {
           "source": "ebay",
           "external_id": "v1|286812343335|0",
-          "url": "https://www.ebay.com.au/itm/286812343335?_skw=2018+Trae+Young+Select+45+PSA+10&hash=item42c7590c27:g:azkAAOSwwCBnhC4p&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGaWedYougW%2FB9UPwNkkJ7bxqCCqCwddfl8SDYoYSHEPoORbApOSR6PRLUVoiBdksOmMwYS9%2FfYzGcDbjD%2BeNRfFFQNc45CmU6Ek8jtFw%2BB4Tb8L%2FoBP3RM9QaOgRL4jBeZdQDz0bMFaBQTFy4VWujIEOg%2BNZCdT45v583aMBKQtbN6A9FZOxYedIjOD2StQrSXAVD5pHVs2PSLFn8zyhMXtDv%2FD2pLElyAmrlvsN9CxeHcg%2B%2FwbNmddlazcDitZ0x6XckA59MirG%2FmuBPqyxoKYO%2FPGPAAA%2B8FIRGjoRUlu77DN9kx%2Fb77oCpZCWZebcvI%3D",
+          "url": "https://www.ebay.com.au/itm/286812343335?_skw=2018+Trae+Young+Select+45+PSA+10&hash=item42c7590c27:g:azkAAOSwwCBnhC4p&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGaWedYougW%2FB9UPwNkkJ7bxqCCqCwddfl8SDYoYSHEPoORbApOSR6PRLUVoiBdksOmMwYS9%2FfYzGcDbjD%2BeNRfFFQNc45CmU6Ek8jtFw%2BB4Tb8L%2FoBP3RM9QaOgRL4jBea8hQBoAD21gM258MmyhkoPFwANU95ZZ8Kekuv2lvXYY4KnYKKczKv%2BR7PGkgAERl1jmS%2FAGCDHrCrHTiWF9H%2BiGWtzh5Z2HqTzBZc38xRW78T%2FTNzMkfUdWOeI0NK4m2MJsXFXrLKiA3dhPA4SaJ1ZdiGC7y5qAWeuqOec0UjiEyElLZOJ0GukX84Uhqgrpkw%3D",
           "title": "Trae Young 2018 Select Tri Color Concourse Prizm #45 RC PSA 10 Rookie Hawks",
           "landed_aud": 230.16,
           "asking_price": 230.16,
@@ -258384,31 +258265,31 @@
         "ebay",
         "thehobby"
       ],
-      "lowest_active_ask_aud": 331.89,
+      "lowest_active_ask_aud": 330.67,
       "median_active_ask_aud": 378.64,
       "highest_active_ask_aud": 508.99,
-      "spread_aud": 177.1,
-      "spread_pct": 53.36,
+      "spread_aud": 178.32,
+      "spread_pct": 53.93,
       "cheapest_store": "thehobby",
       "cheapest_external_id": "9755204976940",
       "cheapest_url": "https://thehobby.com.au/products/skucard21467",
-      "cheapest_landed_aud": 331.89,
+      "cheapest_landed_aud": 330.67,
       "next_best_store": "ebay",
       "next_best_landed_aud": 378.64,
-      "saving_vs_next_best_aud": 46.75,
-      "saving_vs_next_best_pct": 12.35,
-      "saving_vs_median_aud": 46.75,
-      "saving_vs_median_pct": 12.35,
-      "saving_vs_highest_aud": 177.1,
-      "saving_vs_highest_pct": 34.79,
+      "saving_vs_next_best_aud": 47.97,
+      "saving_vs_next_best_pct": 12.67,
+      "saving_vs_median_aud": 47.97,
+      "saving_vs_median_pct": 12.67,
+      "saving_vs_highest_aud": 178.32,
+      "saving_vs_highest_pct": 35.03,
       "listings": [
         {
           "source": "thehobby",
           "external_id": "9755204976940",
           "url": "https://thehobby.com.au/products/skucard21467",
           "title": "Andrew Brayshaw 2024 Select Legacy Ultimate FFB24 Footy's Finest Black 7/30",
-          "landed_aud": 331.89,
-          "asking_price": 331.89,
+          "landed_aud": 330.67,
+          "asking_price": 330.67,
           "shipping": 0.0,
           "currency": "AUD",
           "card_number": null,
@@ -258486,31 +258367,31 @@
         "ebay",
         "thehobby"
       ],
-      "lowest_active_ask_aud": 299.3,
-      "median_active_ask_aud": 379.64,
+      "lowest_active_ask_aud": 298.2,
+      "median_active_ask_aud": 379.1,
       "highest_active_ask_aud": 459.99,
-      "spread_aud": 160.69,
-      "spread_pct": 53.69,
+      "spread_aud": 161.79,
+      "spread_pct": 54.26,
       "cheapest_store": "thehobby",
       "cheapest_external_id": "9351749337388",
       "cheapest_url": "https://thehobby.com.au/products/skucard18527",
-      "cheapest_landed_aud": 299.3,
+      "cheapest_landed_aud": 298.2,
       "next_best_store": "ebay",
       "next_best_landed_aud": 459.99,
-      "saving_vs_next_best_aud": 160.69,
-      "saving_vs_next_best_pct": 34.93,
-      "saving_vs_median_aud": 80.34,
-      "saving_vs_median_pct": 21.16,
-      "saving_vs_highest_aud": 160.69,
-      "saving_vs_highest_pct": 34.93,
+      "saving_vs_next_best_aud": 161.79,
+      "saving_vs_next_best_pct": 35.17,
+      "saving_vs_median_aud": 80.9,
+      "saving_vs_median_pct": 21.34,
+      "saving_vs_highest_aud": 161.79,
+      "saving_vs_highest_pct": 35.17,
       "listings": [
         {
           "source": "thehobby",
           "external_id": "9351749337388",
           "url": "https://thehobby.com.au/products/skucard18527",
           "title": "Charlie Cameron 2024 Select Brilliance SS4 Superstars Gold Low 03/25",
-          "landed_aud": 299.3,
-          "asking_price": 299.3,
+          "landed_aud": 298.2,
+          "asking_price": 298.2,
           "shipping": 0.0,
           "currency": "AUD",
           "card_number": null,
@@ -258705,13 +258586,13 @@
       "year": "2024",
       "product": "AFL Supremacy",
       "store_count": 2,
-      "listing_count": 10,
+      "listing_count": 9,
       "stores": [
         "ebay",
         "sportscardstore"
       ],
       "lowest_active_ask_aud": 169.0,
-      "median_active_ask_aud": 214.0,
+      "median_active_ask_aud": 199.0,
       "highest_active_ask_aud": 299.0,
       "spread_aud": 130.0,
       "spread_pct": 76.92,
@@ -258723,8 +258604,8 @@
       "next_best_landed_aud": 179.0,
       "saving_vs_next_best_aud": 10.0,
       "saving_vs_next_best_pct": 5.59,
-      "saving_vs_median_aud": 45.0,
-      "saving_vs_median_pct": 21.03,
+      "saving_vs_median_aud": 30.0,
+      "saving_vs_median_pct": 15.08,
       "saving_vs_highest_aud": 130.0,
       "saving_vs_highest_pct": 43.48,
       "listings": [
@@ -258828,25 +258709,6 @@
           "external_id": "v1|326297803503|0",
           "url": "https://www.ebay.com.au/itm/326297803503?_skw=2024+Cameron+Zurhaar+AFL+Supremacy+Black+Pearl+%2F35&hash=item4bf8dd5aef:g:J48AAOSwIFxnBwxz",
           "title": "2024 SELECT AFL SUPREMACY Black Pearl Cameron Zurhaar 03/35 LOW",
-          "landed_aud": 229.0,
-          "asking_price": 229.0,
-          "shipping": 0.0,
-          "currency": "AUD",
-          "card_number": null,
-          "parallel": "Black Pearl",
-          "serial_total": 35,
-          "grader": null,
-          "grade": null,
-          "rookie": false,
-          "autograph": false,
-          "memorabilia": false,
-          "title_guard": "blackpearl"
-        },
-        {
-          "source": "ebay",
-          "external_id": "v1|326912146973|0",
-          "url": "https://www.ebay.com.au/itm/326912146973?_skw=2024+Cameron+Zurhaar+AFL+Supremacy+Black+Pearl+%2F35&hash=item4c1d7b7e1d:g:lH8AAeSwxMFpPg8p",
-          "title": "2024 SELECT AFL SUPREMACY Black Pearl Cameron Zurhaar 06/35 LOW",
           "landed_aud": 229.0,
           "asking_price": 229.0,
           "shipping": 0.0,
@@ -259469,7 +259331,7 @@
         {
           "source": "ebay",
           "external_id": "v1|356384056552|0",
-          "url": "https://www.ebay.com.au/itm/356384056552?_skw=2018+Trae+Young+Donruss+198+PSA+10&hash=item52fa2524e8:g:X3AAAOSwModnYlMI&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGYDspwPvHJne%2BJL84Eein%2BTbJWyynw81cGallKcfaZ2hwIlryrh%2BCmdxob6f6AZsA%2Fi%2BjpU1Z517kxerqvx4P%2FrKNzhDf5HVwKPqmeerqZysExpOSc5IbLWv2aYNH4Hwc3QUEuOIMs6oiUgPI85BE69FjVsjUapwqzRQUxuMGegP1WfmBnwEJHH3CiS7I7LF2FTmMA8MyLhZBqn6TZHcAVxy8Xm0cNoL9s7WVO5tYUw0ehI6zrCXLmLERHmO5Z6Of04OT52B35KSqQdCIlCV3hDl%2B7a64D7tpBep5WWPh2P92EtXDMsfdxousJN5BTC1Io%3D",
+          "url": "https://www.ebay.com.au/itm/356384056552?_skw=2018+Trae+Young+Donruss+198+PSA+10&hash=item52fa2524e8:g:X3AAAOSwModnYlMI&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGYDspwPvHJne%2BJL84Eein%2BTbJWyynw81cGallKcfaZ2hwIlryrh%2BCmdxob6f6AZsA%2Fi%2BjpU1Z517kxerqvx4P%2FrKNzhDf5HVwKPqmeerqZysExpOSc5IbLWv2aYNH4Hwc0hi371Z0FQER9jV0K6%2FT98I%2FC0K--eMdT%2B4Mauh1fw6MKDWs7wbo0X%2Fb7f5by6gv%2FVoL9w6zyyw7%2FgijxtM%2FOjuVc7iL%2BBzBGAAQJzHTAixF8sWiGT1KjCCf17Zw5OBKLCFJU%2FoLUbw0jb4TrnkJHNAt0%2BuqZrZ4LQnyLIatJ9wGTOszPfckwTenbi7ZRawWU%3D",
           "title": "Trae Young 2018 Panini Donruss Rated Rookie #198 PSA 10",
           "landed_aud": 92.06,
           "asking_price": 92.06,
@@ -259629,16 +259491,16 @@
       "year": "2024",
       "product": "AFL Supremacy",
       "store_count": 2,
-      "listing_count": 6,
+      "listing_count": 5,
       "stores": [
         "ebay",
         "sportscardstore"
       ],
       "lowest_active_ask_aud": 200.0,
-      "median_active_ask_aud": 224.0,
-      "highest_active_ask_aud": 249.0,
-      "spread_aud": 49.0,
-      "spread_pct": 24.5,
+      "median_active_ask_aud": 219.0,
+      "highest_active_ask_aud": 239.0,
+      "spread_aud": 39.0,
+      "spread_pct": 19.5,
       "cheapest_store": "sportscardstore",
       "cheapest_external_id": "9533264167198",
       "cheapest_url": "https://sportscardstore.com.au/products/2024-select-afl-supremacy-black-pearl-aaron-naughton-34-35",
@@ -259647,10 +259509,10 @@
       "next_best_landed_aud": 219.0,
       "saving_vs_next_best_aud": 19.0,
       "saving_vs_next_best_pct": 8.68,
-      "saving_vs_median_aud": 24.0,
-      "saving_vs_median_pct": 10.71,
-      "saving_vs_highest_aud": 49.0,
-      "saving_vs_highest_pct": 19.68,
+      "saving_vs_median_aud": 19.0,
+      "saving_vs_median_pct": 8.68,
+      "saving_vs_highest_aud": 39.0,
+      "saving_vs_highest_pct": 16.32,
       "listings": [
         {
           "source": "sportscardstore",
@@ -259735,25 +259597,6 @@
           "title": "2024 SELECT AFL SUPREMACY Black Pearl Aaron Naughton 09/35 LOW",
           "landed_aud": 239.0,
           "asking_price": 239.0,
-          "shipping": 0.0,
-          "currency": "AUD",
-          "card_number": null,
-          "parallel": "Black Pearl",
-          "serial_total": 35,
-          "grader": null,
-          "grade": null,
-          "rookie": false,
-          "autograph": false,
-          "memorabilia": false,
-          "title_guard": "blackpearl"
-        },
-        {
-          "source": "ebay",
-          "external_id": "v1|287009277236|0",
-          "url": "https://www.ebay.com.au/itm/287009277236?_skw=2024+Aaron+Naughton+AFL+Supremacy+Black+Pearl+%2F35&hash=item42d3160534:g:tkgAAeSwrGVpPgtH",
-          "title": "2024 SELECT AFL SUPREMACY Black Pearl Aaron Naughton 09/35 LOW",
-          "landed_aud": 249.0,
-          "asking_price": 249.0,
           "shipping": 0.0,
           "currency": "AUD",
           "card_number": null,
@@ -259910,7 +259753,7 @@
         {
           "source": "ebay",
           "external_id": "v1|196059248447|0",
-          "url": "https://www.ebay.com.au/itm/196059248447?_skw=2019+RJ+Barrett+Panini+Mosaic+229+PSA+10&hash=item2da60ab73f:g:ndcAAOSwW1ZlQa80",
+          "url": "https://www.ebay.com.au/itm/196059248447?_skw=2019+RJ+Barrett+Panini+Mosaic+229+PSA+10&hash=item2da60ab73f:g:ndcAAOSwW1ZlQa80&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGY%2FjYafznEeb6uoe2aJPyQPcyeDcxNwHPJDHFeYjdqCJLTmUGujPxwh%2BJ1FK%2FPpe5EWOqVhyqkUkJyaxmubJnxiSwWWog44qczco5GV%2BS0lRAy4nae%2FM%2F1kFwjGJP45Zlu5jpGxVVn3F0P%2B%2BFVFEVbFbIkWVjRQj4V3DaKWWwZpVvPAc7leHUtRF2oad--f5RSxoEF5F0iO8vEaCO62lrK8xKj1FiLn583vRTby1F0AuMiHUq5bHnyP3oZlsJXN1wAJ6B66kST7OzeXXy9NGC6EpCMZm%2FYb5mTGIPqGCLZXgmMLjxuA0icBsnL7y3kT%2B78%3D",
           "title": "RJ Barrett 2019 Panini Mosaic #229 Rookie PSA 10 GEM MT ",
           "landed_aud": 30.67,
           "asking_price": 30.67,
@@ -260170,31 +260013,31 @@
         "ebay",
         "thehobby"
       ],
-      "lowest_active_ask_aud": 46.56,
-      "median_active_ask_aud": 63.27,
+      "lowest_active_ask_aud": 46.39,
+      "median_active_ask_aud": 63.19,
       "highest_active_ask_aud": 79.99,
-      "spread_aud": 33.43,
-      "spread_pct": 71.8,
+      "spread_aud": 33.6,
+      "spread_pct": 72.43,
       "cheapest_store": "thehobby",
       "cheapest_external_id": "9648118169900",
       "cheapest_url": "https://thehobby.com.au/products/skucard20220",
-      "cheapest_landed_aud": 46.56,
+      "cheapest_landed_aud": 46.39,
       "next_best_store": "ebay",
       "next_best_landed_aud": 79.99,
-      "saving_vs_next_best_aud": 33.43,
-      "saving_vs_next_best_pct": 41.79,
-      "saving_vs_median_aud": 16.71,
-      "saving_vs_median_pct": 26.41,
-      "saving_vs_highest_aud": 33.43,
-      "saving_vs_highest_pct": 41.79,
+      "saving_vs_next_best_aud": 33.6,
+      "saving_vs_next_best_pct": 42.01,
+      "saving_vs_median_aud": 16.8,
+      "saving_vs_median_pct": 26.59,
+      "saving_vs_highest_aud": 33.6,
+      "saving_vs_highest_pct": 42.01,
       "listings": [
         {
           "source": "thehobby",
           "external_id": "9648118169900",
           "url": "https://thehobby.com.au/products/skucard20220",
           "title": "Bailey Smith 2024 Select Supremacy 160 Blue 50/65",
-          "landed_aud": 46.56,
-          "asking_price": 46.56,
+          "landed_aud": 46.39,
+          "asking_price": 46.39,
           "shipping": 0.0,
           "currency": "AUD",
           "card_number": null,
@@ -260253,31 +260096,31 @@
         "ebay",
         "thehobby"
       ],
-      "lowest_active_ask_aud": 39.91,
-      "median_active_ask_aud": 54.95,
+      "lowest_active_ask_aud": 39.76,
+      "median_active_ask_aud": 54.88,
       "highest_active_ask_aud": 69.99,
-      "spread_aud": 30.08,
-      "spread_pct": 75.37,
+      "spread_aud": 30.23,
+      "spread_pct": 76.03,
       "cheapest_store": "thehobby",
       "cheapest_external_id": "9675228807468",
       "cheapest_url": "https://thehobby.com.au/products/skucard20329",
-      "cheapest_landed_aud": 39.91,
+      "cheapest_landed_aud": 39.76,
       "next_best_store": "thehobby",
-      "next_best_landed_aud": 39.91,
+      "next_best_landed_aud": 39.76,
       "saving_vs_next_best_aud": 0.0,
       "saving_vs_next_best_pct": 0.0,
-      "saving_vs_median_aud": 15.04,
-      "saving_vs_median_pct": 27.37,
-      "saving_vs_highest_aud": 30.08,
-      "saving_vs_highest_pct": 42.98,
+      "saving_vs_median_aud": 15.12,
+      "saving_vs_median_pct": 27.55,
+      "saving_vs_highest_aud": 30.23,
+      "saving_vs_highest_pct": 43.19,
       "listings": [
         {
           "source": "thehobby",
           "external_id": "9675228807468",
           "url": "https://thehobby.com.au/products/skucard20329",
           "title": "Adam Saad 2024 Select Supremacy 25 Gold 50/95",
-          "landed_aud": 39.91,
-          "asking_price": 39.91,
+          "landed_aud": 39.76,
+          "asking_price": 39.76,
           "shipping": 0.0,
           "currency": "AUD",
           "card_number": null,
@@ -260295,8 +260138,8 @@
           "external_id": "9675228774700",
           "url": "https://thehobby.com.au/products/skucard20328",
           "title": "Adam Saad 2024 Select Supremacy 25 Gold 83/95",
-          "landed_aud": 39.91,
-          "asking_price": 39.91,
+          "landed_aud": 39.76,
+          "asking_price": 39.76,
           "shipping": 0.0,
           "currency": "AUD",
           "card_number": null,
@@ -260597,31 +260440,31 @@
         "ebay",
         "thehobby"
       ],
-      "lowest_active_ask_aud": 32.59,
-      "median_active_ask_aud": 45.79,
+      "lowest_active_ask_aud": 32.47,
+      "median_active_ask_aud": 45.73,
       "highest_active_ask_aud": 58.99,
-      "spread_aud": 26.4,
-      "spread_pct": 81.01,
+      "spread_aud": 26.52,
+      "spread_pct": 81.68,
       "cheapest_store": "thehobby",
       "cheapest_external_id": "9080376787244",
       "cheapest_url": "https://thehobby.com.au/products/skucard17157",
-      "cheapest_landed_aud": 32.59,
+      "cheapest_landed_aud": 32.47,
       "next_best_store": "ebay",
       "next_best_landed_aud": 58.99,
-      "saving_vs_next_best_aud": 26.4,
-      "saving_vs_next_best_pct": 44.75,
-      "saving_vs_median_aud": 13.2,
-      "saving_vs_median_pct": 28.83,
-      "saving_vs_highest_aud": 26.4,
-      "saving_vs_highest_pct": 44.75,
+      "saving_vs_next_best_aud": 26.52,
+      "saving_vs_next_best_pct": 44.96,
+      "saving_vs_median_aud": 13.26,
+      "saving_vs_median_pct": 29.0,
+      "saving_vs_highest_aud": 26.52,
+      "saving_vs_highest_pct": 44.96,
       "listings": [
         {
           "source": "thehobby",
           "external_id": "9080376787244",
           "url": "https://thehobby.com.au/products/skucard17157",
           "title": "Brisbane Lions 2024 Select Footy Stars Rising Star Predictor Gold Low 004/315",
-          "landed_aud": 32.59,
-          "asking_price": 32.59,
+          "landed_aud": 32.47,
+          "asking_price": 32.47,
           "shipping": 0.0,
           "currency": "AUD",
           "card_number": null,
@@ -260691,9 +260534,9 @@
       "cheapest_url": "https://www.ebay.com.au/itm/117389565254?_skw=2024+Angus+Hastie+Select+Blue+%2F75&hash=item1b54f69d46:g:NzcAAeSwbp5qlo9R",
       "cheapest_landed_aud": 29.0,
       "next_best_store": "thehobby",
-      "next_best_landed_aud": 29.93,
-      "saving_vs_next_best_aud": 0.93,
-      "saving_vs_next_best_pct": 3.11,
+      "next_best_landed_aud": 29.82,
+      "saving_vs_next_best_aud": 0.82,
+      "saving_vs_next_best_pct": 2.75,
       "saving_vs_median_aud": 2.44,
       "saving_vs_median_pct": 7.76,
       "saving_vs_highest_aud": 25.99,
@@ -260723,8 +260566,8 @@
           "external_id": "9772162646316",
           "url": "https://thehobby.com.au/products/skucard22012",
           "title": "Angus Hastie 2024 Select Supremacy Rookies RPB33 Rookies Platinum Blue RC 54/75",
-          "landed_aud": 29.93,
-          "asking_price": 29.93,
+          "landed_aud": 29.82,
+          "asking_price": 29.82,
           "shipping": 0.0,
           "currency": "AUD",
           "card_number": null,
@@ -260817,13 +260660,13 @@
       "year": "2019",
       "product": "Panini Donruss Optic",
       "store_count": 2,
-      "listing_count": 8,
+      "listing_count": 9,
       "stores": [
         "cherry",
         "ebay"
       ],
       "lowest_active_ask_aud": 12.26,
-      "median_active_ask_aud": 15.86,
+      "median_active_ask_aud": 16.39,
       "highest_active_ask_aud": 30.69,
       "spread_aud": 18.43,
       "spread_pct": 150.33,
@@ -260835,8 +260678,8 @@
       "next_best_landed_aud": 12.28,
       "saving_vs_next_best_aud": 0.02,
       "saving_vs_next_best_pct": 0.16,
-      "saving_vs_median_aud": 3.6,
-      "saving_vs_median_pct": 22.7,
+      "saving_vs_median_aud": 4.13,
+      "saving_vs_median_pct": 25.2,
       "saving_vs_highest_aud": 18.43,
       "saving_vs_highest_pct": 60.05,
       "listings": [
@@ -260975,6 +260818,25 @@
         },
         {
           "source": "ebay",
+          "external_id": "v1|178145922408|0",
+          "url": "https://www.ebay.com.au/itm/178145922408?_skw=2019+RJ+Barrett+Panini+Donruss+Optic+178+PSA+9&hash=item297a530d68:g:eSUAAeSwI3ZqC2YT",
+          "title": "2019 PANINI DONRUSS OPTIC #178 RJ BARRETT RC RATED ROOKIE PSA 9",
+          "landed_aud": 22.11,
+          "asking_price": 22.11,
+          "shipping": 0.0,
+          "currency": "AUD",
+          "card_number": "178",
+          "parallel": null,
+          "serial_total": null,
+          "grader": "PSA",
+          "grade": 9.0,
+          "rookie": true,
+          "autograph": false,
+          "memorabilia": false,
+          "title_guard": ""
+        },
+        {
+          "source": "ebay",
           "external_id": "v1|305211379191|0",
           "url": "https://www.ebay.com.au/itm/305211379191?_skw=2019+RJ+Barrett+Panini+Donruss+Optic+178+PSA+9&hash=item4710040df7:g:mR4AAOSw7MRlLytB",
           "title": "2019 Panini Donruss Optic RJ Barrett Hyper Pink Rated Rookie #178 PSA 9 Mint",
@@ -261019,31 +260881,31 @@
         "ebay",
         "thehobby"
       ],
-      "lowest_active_ask_aud": 13.3,
+      "lowest_active_ask_aud": 13.25,
       "median_active_ask_aud": 23.95,
       "highest_active_ask_aud": 27.8,
-      "spread_aud": 14.5,
-      "spread_pct": 109.02,
+      "spread_aud": 14.55,
+      "spread_pct": 109.81,
       "cheapest_store": "thehobby",
       "cheapest_external_id": "8201247064364",
       "cheapest_url": "https://thehobby.com.au/products/card-13876",
-      "cheapest_landed_aud": 13.3,
+      "cheapest_landed_aud": 13.25,
       "next_best_store": "ebay",
       "next_best_landed_aud": 23.9,
-      "saving_vs_next_best_aud": 10.6,
-      "saving_vs_next_best_pct": 44.35,
-      "saving_vs_median_aud": 10.65,
-      "saving_vs_median_pct": 44.47,
-      "saving_vs_highest_aud": 14.5,
-      "saving_vs_highest_pct": 52.16,
+      "saving_vs_next_best_aud": 10.65,
+      "saving_vs_next_best_pct": 44.56,
+      "saving_vs_median_aud": 10.7,
+      "saving_vs_median_pct": 44.68,
+      "saving_vs_highest_aud": 14.55,
+      "saving_vs_highest_pct": 52.34,
       "listings": [
         {
           "source": "thehobby",
           "external_id": "8201247064364",
           "url": "https://thehobby.com.au/products/card-13876",
           "title": "Brisbane Lions 2023 Select Footy Stars PPG2 Premiership Predictor Gold 130/260",
-          "landed_aud": 13.3,
-          "asking_price": 13.3,
+          "landed_aud": 13.25,
+          "asking_price": 13.25,
           "shipping": 0.0,
           "currency": "AUD",
           "card_number": null,
@@ -261140,31 +261002,31 @@
         "ebay",
         "thehobby"
       ],
-      "lowest_active_ask_aud": 16.63,
-      "median_active_ask_aud": 22.81,
+      "lowest_active_ask_aud": 16.57,
+      "median_active_ask_aud": 22.79,
       "highest_active_ask_aud": 29.0,
-      "spread_aud": 12.37,
-      "spread_pct": 74.38,
+      "spread_aud": 12.43,
+      "spread_pct": 75.02,
       "cheapest_store": "thehobby",
       "cheapest_external_id": "9080380752172",
       "cheapest_url": "https://thehobby.com.au/products/skucard17164",
-      "cheapest_landed_aud": 16.63,
+      "cheapest_landed_aud": 16.57,
       "next_best_store": "ebay",
       "next_best_landed_aud": 29.0,
-      "saving_vs_next_best_aud": 12.37,
-      "saving_vs_next_best_pct": 42.66,
-      "saving_vs_median_aud": 6.18,
-      "saving_vs_median_pct": 27.09,
-      "saving_vs_highest_aud": 12.37,
-      "saving_vs_highest_pct": 42.66,
+      "saving_vs_next_best_aud": 12.43,
+      "saving_vs_next_best_pct": 42.86,
+      "saving_vs_median_aud": 6.21,
+      "saving_vs_median_pct": 27.25,
+      "saving_vs_highest_aud": 12.43,
+      "saving_vs_highest_pct": 42.86,
       "listings": [
         {
           "source": "thehobby",
           "external_id": "9080380752172",
           "url": "https://thehobby.com.au/products/skucard17164",
           "title": "Bobby Hill 2024 Select Footy Stars FFG17 Future Force Green 89/195",
-          "landed_aud": 16.63,
-          "asking_price": 16.63,
+          "landed_aud": 16.57,
+          "asking_price": 16.57,
           "shipping": 0.0,
           "currency": "AUD",
           "card_number": null,
@@ -261344,31 +261206,31 @@
         "ebay",
         "thehobby"
       ],
-      "lowest_active_ask_aud": 13.3,
+      "lowest_active_ask_aud": 13.25,
       "median_active_ask_aud": 13.5,
       "highest_active_ask_aud": 24.0,
-      "spread_aud": 10.7,
-      "spread_pct": 80.45,
+      "spread_aud": 10.75,
+      "spread_pct": 81.13,
       "cheapest_store": "thehobby",
       "cheapest_external_id": "8201248375084",
       "cheapest_url": "https://thehobby.com.au/products/card-13880",
-      "cheapest_landed_aud": 13.3,
+      "cheapest_landed_aud": 13.25,
       "next_best_store": "ebay",
       "next_best_landed_aud": 13.5,
-      "saving_vs_next_best_aud": 0.2,
-      "saving_vs_next_best_pct": 1.48,
-      "saving_vs_median_aud": 0.2,
-      "saving_vs_median_pct": 1.48,
-      "saving_vs_highest_aud": 10.7,
-      "saving_vs_highest_pct": 44.58,
+      "saving_vs_next_best_aud": 0.25,
+      "saving_vs_next_best_pct": 1.85,
+      "saving_vs_median_aud": 0.25,
+      "saving_vs_median_pct": 1.85,
+      "saving_vs_highest_aud": 10.75,
+      "saving_vs_highest_pct": 44.79,
       "listings": [
         {
           "source": "thehobby",
           "external_id": "8201248375084",
           "url": "https://thehobby.com.au/products/card-13880",
           "title": "Andrew Gaff 2023 Select Footy Stars BPG81 Brownlow Predictor Gold 15/260",
-          "landed_aud": 13.3,
-          "asking_price": 13.3,
+          "landed_aud": 13.25,
+          "asking_price": 13.25,
           "shipping": 0.0,
           "currency": "AUD",
           "card_number": null,
@@ -261447,31 +261309,31 @@
         "ebay",
         "thehobby"
       ],
-      "lowest_active_ask_aud": 13.3,
-      "median_active_ask_aud": 18.65,
+      "lowest_active_ask_aud": 13.25,
+      "median_active_ask_aud": 18.62,
       "highest_active_ask_aud": 24.0,
-      "spread_aud": 10.7,
-      "spread_pct": 80.45,
+      "spread_aud": 10.75,
+      "spread_pct": 81.13,
       "cheapest_store": "thehobby",
       "cheapest_external_id": "10035356336428",
       "cheapest_url": "https://thehobby.com.au/products/skucard25512",
-      "cheapest_landed_aud": 13.3,
+      "cheapest_landed_aud": 13.25,
       "next_best_store": "ebay",
       "next_best_landed_aud": 24.0,
-      "saving_vs_next_best_aud": 10.7,
-      "saving_vs_next_best_pct": 44.58,
-      "saving_vs_median_aud": 5.35,
-      "saving_vs_median_pct": 28.69,
-      "saving_vs_highest_aud": 10.7,
-      "saving_vs_highest_pct": 44.58,
+      "saving_vs_next_best_aud": 10.75,
+      "saving_vs_next_best_pct": 44.79,
+      "saving_vs_median_aud": 5.38,
+      "saving_vs_median_pct": 28.89,
+      "saving_vs_highest_aud": 10.75,
+      "saving_vs_highest_pct": 44.79,
       "listings": [
         {
           "source": "thehobby",
           "external_id": "10035356336428",
           "url": "https://thehobby.com.au/products/skucard25512",
           "title": "Bilal Coulibaly 2023-24 Panini Recon 236 Purple Holo RC 19/75",
-          "landed_aud": 13.3,
-          "asking_price": 13.3,
+          "landed_aud": 13.25,
+          "asking_price": 13.25,
           "shipping": 0.0,
           "currency": "AUD",
           "card_number": null,
@@ -261525,13 +261387,13 @@
       "year": "2024",
       "product": "AFL Supremacy",
       "store_count": 2,
-      "listing_count": 6,
+      "listing_count": 5,
       "stores": [
         "ebay",
         "sportscardstore"
       ],
       "lowest_active_ask_aud": 339.0,
-      "median_active_ask_aud": 344.0,
+      "median_active_ask_aud": 339.0,
       "highest_active_ask_aud": 349.0,
       "spread_aud": 10.0,
       "spread_pct": 2.95,
@@ -261543,8 +261405,8 @@
       "next_best_landed_aud": 339.0,
       "saving_vs_next_best_aud": 0.0,
       "saving_vs_next_best_pct": 0.0,
-      "saving_vs_median_aud": 5.0,
-      "saving_vs_median_pct": 1.45,
+      "saving_vs_median_aud": 0.0,
+      "saving_vs_median_pct": 0.0,
       "saving_vs_highest_aud": 10.0,
       "saving_vs_highest_pct": 2.87,
       "listings": [
@@ -261593,25 +261455,6 @@
           "title": "2024 SELECT AFL SUPREMACY Black Pearl Harry McKay 15/35",
           "landed_aud": 339.0,
           "asking_price": 339.0,
-          "shipping": 0.0,
-          "currency": "AUD",
-          "card_number": null,
-          "parallel": "Black Pearl",
-          "serial_total": 35,
-          "grader": null,
-          "grade": null,
-          "rookie": false,
-          "autograph": false,
-          "memorabilia": false,
-          "title_guard": "blackpearl"
-        },
-        {
-          "source": "ebay",
-          "external_id": "v1|287009346498|0",
-          "url": "https://www.ebay.com.au/itm/287009346498?_skw=2024+Harry+McKay+AFL+Supremacy+Black+Pearl+%2F35&hash=item42d31713c2:g:f2UAAeSwKpxpPhUY",
-          "title": "2024 SELECT AFL SUPREMACY Black Pearl Harry McKay 24/35",
-          "landed_aud": 349.0,
-          "asking_price": 349.0,
           "shipping": 0.0,
           "currency": "AUD",
           "card_number": null,
@@ -261951,31 +261794,31 @@
         "ebay",
         "thehobby"
       ],
-      "lowest_active_ask_aud": 9.98,
-      "median_active_ask_aud": 14.49,
+      "lowest_active_ask_aud": 9.95,
+      "median_active_ask_aud": 14.47,
       "highest_active_ask_aud": 19.0,
-      "spread_aud": 9.02,
-      "spread_pct": 90.38,
+      "spread_aud": 9.05,
+      "spread_pct": 90.95,
       "cheapest_store": "thehobby",
       "cheapest_external_id": "10035355910444",
       "cheapest_url": "https://thehobby.com.au/products/skucard25502",
-      "cheapest_landed_aud": 9.98,
+      "cheapest_landed_aud": 9.95,
       "next_best_store": "ebay",
       "next_best_landed_aud": 19.0,
-      "saving_vs_next_best_aud": 9.02,
-      "saving_vs_next_best_pct": 47.47,
-      "saving_vs_median_aud": 4.51,
-      "saving_vs_median_pct": 31.12,
-      "saving_vs_highest_aud": 9.02,
-      "saving_vs_highest_pct": 47.47,
+      "saving_vs_next_best_aud": 9.05,
+      "saving_vs_next_best_pct": 47.63,
+      "saving_vs_median_aud": 4.53,
+      "saving_vs_median_pct": 31.3,
+      "saving_vs_highest_aud": 9.05,
+      "saving_vs_highest_pct": 47.63,
       "listings": [
         {
           "source": "thehobby",
           "external_id": "10035355910444",
           "url": "https://thehobby.com.au/products/skucard25502",
           "title": "Bilal Coulibaly 2023-24 Panini Recon 21 Future Legends Purple RC 44/75",
-          "landed_aud": 9.98,
-          "asking_price": 9.98,
+          "landed_aud": 9.95,
+          "asking_price": 9.95,
           "shipping": 0.0,
           "currency": "AUD",
           "card_number": null,
@@ -262491,31 +262334,31 @@
         "ebay",
         "thehobby"
       ],
-      "lowest_active_ask_aud": 6.65,
-      "median_active_ask_aud": 10.32,
+      "lowest_active_ask_aud": 6.63,
+      "median_active_ask_aud": 10.31,
       "highest_active_ask_aud": 14.0,
-      "spread_aud": 7.35,
-      "spread_pct": 110.53,
+      "spread_aud": 7.37,
+      "spread_pct": 111.16,
       "cheapest_store": "thehobby",
       "cheapest_external_id": "9559495180588",
       "cheapest_url": "https://thehobby.com.au/products/skucard19656",
-      "cheapest_landed_aud": 6.65,
+      "cheapest_landed_aud": 6.63,
       "next_best_store": "thehobby",
-      "next_best_landed_aud": 6.65,
+      "next_best_landed_aud": 6.63,
       "saving_vs_next_best_aud": 0.0,
       "saving_vs_next_best_pct": 0.0,
-      "saving_vs_median_aud": 3.67,
-      "saving_vs_median_pct": 35.54,
-      "saving_vs_highest_aud": 7.35,
-      "saving_vs_highest_pct": 52.5,
+      "saving_vs_median_aud": 3.68,
+      "saving_vs_median_pct": 35.68,
+      "saving_vs_highest_aud": 7.37,
+      "saving_vs_highest_pct": 52.64,
       "listings": [
         {
           "source": "thehobby",
           "external_id": "9559495180588",
           "url": "https://thehobby.com.au/products/skucard19656",
           "title": "Miguel Bleis 2024 Panini Donruss 195 Red RC 220/275",
-          "landed_aud": 6.65,
-          "asking_price": 6.65,
+          "landed_aud": 6.63,
+          "asking_price": 6.63,
           "shipping": 0.0,
           "currency": "AUD",
           "card_number": null,
@@ -262533,8 +262376,8 @@
           "external_id": "9559495115052",
           "url": "https://thehobby.com.au/products/skucard19655",
           "title": "Miguel Bleis 2024 Panini Donruss 195 Red RC 261/275",
-          "landed_aud": 6.65,
-          "asking_price": 6.65,
+          "landed_aud": 6.63,
+          "asking_price": 6.63,
           "shipping": 0.0,
           "currency": "AUD",
           "card_number": null,
@@ -264535,8 +264378,8 @@
       "spread_aud": 0.0,
       "spread_pct": 0.0,
       "cheapest_store": "ebay",
-      "cheapest_external_id": "v1|286122159824|0",
-      "cheapest_url": "https://www.ebay.com.au/itm/286122159824?_skw=2024+Tim+English+AFL+Supremacy+Black+Pearl+%2F35&hash=item429e35aed0:g:xl4AAOSwzQ1nGEJQ",
+      "cheapest_external_id": "v1|326912195274|0",
+      "cheapest_url": "https://www.ebay.com.au/itm/326912195274?_skw=2024+Tim+English+AFL+Supremacy+Black+Pearl+%2F35&hash=item4c1d7c3aca:g:oNoAAeSwKpxpPh5Q",
       "cheapest_landed_aud": 149.0,
       "next_best_store": "ebay",
       "next_best_landed_aud": 149.0,
@@ -264549,9 +264392,9 @@
       "listings": [
         {
           "source": "ebay",
-          "external_id": "v1|286122159824|0",
-          "url": "https://www.ebay.com.au/itm/286122159824?_skw=2024+Tim+English+AFL+Supremacy+Black+Pearl+%2F35&hash=item429e35aed0:g:xl4AAOSwzQ1nGEJQ",
-          "title": "2024 SELECT AFL SUPREMACY Black Pearl Tim English 16/35",
+          "external_id": "v1|326912195274|0",
+          "url": "https://www.ebay.com.au/itm/326912195274?_skw=2024+Tim+English+AFL+Supremacy+Black+Pearl+%2F35&hash=item4c1d7c3aca:g:oNoAAeSwKpxpPh5Q",
+          "title": "2024 SELECT AFL SUPREMACY Black Pearl Tim English 15/35",
           "landed_aud": 149.0,
           "asking_price": 149.0,
           "shipping": 0.0,
@@ -264568,9 +264411,9 @@
         },
         {
           "source": "ebay",
-          "external_id": "v1|326912195274|0",
-          "url": "https://www.ebay.com.au/itm/326912195274?_skw=2024+Tim+English+AFL+Supremacy+Black+Pearl+%2F35&hash=item4c1d7c3aca:g:oNoAAeSwKpxpPh5Q",
-          "title": "2024 SELECT AFL SUPREMACY Black Pearl Tim English 15/35",
+          "external_id": "v1|286122159824|0",
+          "url": "https://www.ebay.com.au/itm/286122159824?_skw=2024+Tim+English+AFL+Supremacy+Black+Pearl+%2F35&hash=item429e35aed0:g:xl4AAOSwzQ1nGEJQ",
+          "title": "2024 SELECT AFL SUPREMACY Black Pearl Tim English 16/35",
           "landed_aud": 149.0,
           "asking_price": 149.0,
           "shipping": 0.0,
@@ -338970,31 +338813,31 @@
         "ebay",
         "thehobby"
       ],
-      "lowest_active_ask_aud": 132.36,
-      "median_active_ask_aud": 170.68,
+      "lowest_active_ask_aud": 131.87,
+      "median_active_ask_aud": 170.43,
       "highest_active_ask_aud": 208.99,
-      "spread_aud": 76.63,
-      "spread_pct": 57.9,
+      "spread_aud": 77.12,
+      "spread_pct": 58.48,
       "cheapest_store": "thehobby",
       "cheapest_external_id": "9944924881196",
       "cheapest_url": "https://thehobby.com.au/products/skucard23660",
-      "cheapest_landed_aud": 132.36,
+      "cheapest_landed_aud": 131.87,
       "next_best_store": "ebay",
       "next_best_landed_aud": 208.99,
-      "saving_vs_next_best_aud": 76.63,
-      "saving_vs_next_best_pct": 36.67,
-      "saving_vs_median_aud": 38.31,
-      "saving_vs_median_pct": 22.45,
-      "saving_vs_highest_aud": 76.63,
-      "saving_vs_highest_pct": 36.67,
+      "saving_vs_next_best_aud": 77.12,
+      "saving_vs_next_best_pct": 36.9,
+      "saving_vs_median_aud": 38.56,
+      "saving_vs_median_pct": 22.63,
+      "saving_vs_highest_aud": 77.12,
+      "saving_vs_highest_pct": 36.9,
       "listings": [
         {
           "source": "thehobby",
           "external_id": "9944924881196",
           "url": "https://thehobby.com.au/products/skucard23660",
           "title": "Greater Western Sydney 2025 Select Footy Stars Coleman Predictor Sig Gold /220",
-          "landed_aud": 132.36,
-          "asking_price": 132.36,
+          "landed_aud": 131.87,
+          "asking_price": 131.87,
           "shipping": 0.0,
           "currency": "AUD",
           "card_number": null,
@@ -339053,31 +338896,31 @@
         "ebay",
         "thehobby"
       ],
-      "lowest_active_ask_aud": 116.39,
-      "median_active_ask_aud": 150.69,
+      "lowest_active_ask_aud": 115.96,
+      "median_active_ask_aud": 150.47,
       "highest_active_ask_aud": 184.99,
-      "spread_aud": 68.6,
-      "spread_pct": 58.94,
+      "spread_aud": 69.03,
+      "spread_pct": 59.53,
       "cheapest_store": "thehobby",
       "cheapest_external_id": "10104555077932",
       "cheapest_url": "https://thehobby.com.au/products/skucard27466",
-      "cheapest_landed_aud": 116.39,
+      "cheapest_landed_aud": 115.96,
       "next_best_store": "ebay",
       "next_best_landed_aud": 184.99,
-      "saving_vs_next_best_aud": 68.6,
-      "saving_vs_next_best_pct": 37.08,
-      "saving_vs_median_aud": 34.3,
-      "saving_vs_median_pct": 22.76,
-      "saving_vs_highest_aud": 68.6,
-      "saving_vs_highest_pct": 37.08,
+      "saving_vs_next_best_aud": 69.03,
+      "saving_vs_next_best_pct": 37.32,
+      "saving_vs_median_aud": 34.52,
+      "saving_vs_median_pct": 22.94,
+      "saving_vs_highest_aud": 69.03,
+      "saving_vs_highest_pct": 37.32,
       "listings": [
         {
           "source": "thehobby",
           "external_id": "10104555077932",
           "url": "https://thehobby.com.au/products/skucard27466",
           "title": "Guy McKenna 2025 Select Brilliance B-GM Silver 03/50",
-          "landed_aud": 116.39,
-          "asking_price": 116.39,
+          "landed_aud": 115.96,
+          "asking_price": 115.96,
           "shipping": 0.0,
           "currency": "AUD",
           "card_number": null,
@@ -339136,31 +338979,31 @@
         "ebay",
         "thehobby"
       ],
-      "lowest_active_ask_aud": 65.85,
-      "median_active_ask_aud": 87.42,
+      "lowest_active_ask_aud": 65.6,
+      "median_active_ask_aud": 87.29,
       "highest_active_ask_aud": 108.99,
-      "spread_aud": 43.14,
-      "spread_pct": 65.51,
+      "spread_aud": 43.39,
+      "spread_pct": 66.14,
       "cheapest_store": "thehobby",
       "cheapest_external_id": "9696993607980",
       "cheapest_url": "https://thehobby.com.au/products/skucard20728",
-      "cheapest_landed_aud": 65.85,
+      "cheapest_landed_aud": 65.6,
       "next_best_store": "ebay",
       "next_best_landed_aud": 108.99,
-      "saving_vs_next_best_aud": 43.14,
-      "saving_vs_next_best_pct": 39.58,
-      "saving_vs_median_aud": 21.57,
-      "saving_vs_median_pct": 24.67,
-      "saving_vs_highest_aud": 43.14,
-      "saving_vs_highest_pct": 39.58,
+      "saving_vs_next_best_aud": 43.39,
+      "saving_vs_next_best_pct": 39.81,
+      "saving_vs_median_aud": 21.69,
+      "saving_vs_median_pct": 24.85,
+      "saving_vs_highest_aud": 43.39,
+      "saving_vs_highest_pct": 39.81,
       "listings": [
         {
           "source": "thehobby",
           "external_id": "9696993607980",
           "url": "https://thehobby.com.au/products/skucard20728",
           "title": "George Wardlaw 2024 Select Supremacy 107 Blue Portraits 46/65",
-          "landed_aud": 65.85,
-          "asking_price": 65.85,
+          "landed_aud": 65.6,
+          "asking_price": 65.6,
           "shipping": 0.0,
           "currency": "AUD",
           "card_number": null,
@@ -339219,31 +339062,31 @@
         "ebay",
         "thehobby"
       ],
-      "lowest_active_ask_aud": 49.88,
-      "median_active_ask_aud": 67.44,
+      "lowest_active_ask_aud": 49.7,
+      "median_active_ask_aud": 67.34,
       "highest_active_ask_aud": 84.99,
-      "spread_aud": 35.11,
-      "spread_pct": 70.39,
+      "spread_aud": 35.29,
+      "spread_pct": 71.01,
       "cheapest_store": "thehobby",
       "cheapest_external_id": "9675228643628",
       "cheapest_url": "https://thehobby.com.au/products/skucard20327",
-      "cheapest_landed_aud": 49.88,
+      "cheapest_landed_aud": 49.7,
       "next_best_store": "ebay",
       "next_best_landed_aud": 84.99,
-      "saving_vs_next_best_aud": 35.11,
-      "saving_vs_next_best_pct": 41.31,
-      "saving_vs_median_aud": 17.55,
-      "saving_vs_median_pct": 26.03,
-      "saving_vs_highest_aud": 35.11,
-      "saving_vs_highest_pct": 41.31,
+      "saving_vs_next_best_aud": 35.29,
+      "saving_vs_next_best_pct": 41.52,
+      "saving_vs_median_aud": 17.64,
+      "saving_vs_median_pct": 26.19,
+      "saving_vs_highest_aud": 35.29,
+      "saving_vs_highest_pct": 41.52,
       "listings": [
         {
           "source": "thehobby",
           "external_id": "9675228643628",
           "url": "https://thehobby.com.au/products/skucard20327",
           "title": "Errol Gulden 2024 Select Supremacy 138 Gold 64/95",
-          "landed_aud": 49.88,
-          "asking_price": 49.88,
+          "landed_aud": 49.7,
+          "asking_price": 49.7,
           "shipping": 0.0,
           "currency": "AUD",
           "card_number": null,
@@ -339302,31 +339145,31 @@
         "ebay",
         "thehobby"
       ],
-      "lowest_active_ask_aud": 19.95,
-      "median_active_ask_aud": 29.97,
+      "lowest_active_ask_aud": 19.88,
+      "median_active_ask_aud": 29.94,
       "highest_active_ask_aud": 39.99,
-      "spread_aud": 20.04,
-      "spread_pct": 100.45,
+      "spread_aud": 20.11,
+      "spread_pct": 101.16,
       "cheapest_store": "thehobby",
       "cheapest_external_id": "9080379474220",
       "cheapest_url": "https://thehobby.com.au/products/skucard17161",
-      "cheapest_landed_aud": 19.95,
+      "cheapest_landed_aud": 19.88,
       "next_best_store": "ebay",
       "next_best_landed_aud": 39.99,
-      "saving_vs_next_best_aud": 20.04,
-      "saving_vs_next_best_pct": 50.11,
-      "saving_vs_median_aud": 10.02,
-      "saving_vs_median_pct": 33.43,
-      "saving_vs_highest_aud": 20.04,
-      "saving_vs_highest_pct": 50.11,
+      "saving_vs_next_best_aud": 20.11,
+      "saving_vs_next_best_pct": 50.29,
+      "saving_vs_median_aud": 10.06,
+      "saving_vs_median_pct": 33.61,
+      "saving_vs_highest_aud": 20.11,
+      "saving_vs_highest_pct": 50.29,
       "listings": [
         {
           "source": "thehobby",
           "external_id": "9080379474220",
           "url": "https://thehobby.com.au/products/skucard17161",
           "title": "Hugh McCluggage 2024 Select Footy Stars IGG7 Ignite Gold 93/125",
-          "landed_aud": 19.95,
-          "asking_price": 19.95,
+          "landed_aud": 19.88,
+          "asking_price": 19.88,
           "shipping": 0.0,
           "currency": "AUD",
           "card_number": null,
@@ -339488,31 +339331,31 @@
         "ebay",
         "thehobby"
       ],
-      "lowest_active_ask_aud": 16.63,
-      "median_active_ask_aud": 22.81,
+      "lowest_active_ask_aud": 16.57,
+      "median_active_ask_aud": 22.79,
       "highest_active_ask_aud": 29.0,
-      "spread_aud": 12.37,
-      "spread_pct": 74.38,
+      "spread_aud": 12.43,
+      "spread_pct": 75.02,
       "cheapest_store": "thehobby",
       "cheapest_external_id": "10079713394988",
       "cheapest_url": "https://thehobby.com.au/products/skucard26196",
-      "cheapest_landed_aud": 16.63,
+      "cheapest_landed_aud": 16.57,
       "next_best_store": "ebay",
       "next_best_landed_aud": 29.0,
-      "saving_vs_next_best_aud": 12.37,
-      "saving_vs_next_best_pct": 42.66,
-      "saving_vs_median_aud": 6.18,
-      "saving_vs_median_pct": 27.09,
-      "saving_vs_highest_aud": 12.37,
-      "saving_vs_highest_pct": 42.66,
+      "saving_vs_next_best_aud": 12.43,
+      "saving_vs_next_best_pct": 42.86,
+      "saving_vs_median_aud": 6.21,
+      "saving_vs_median_pct": 27.25,
+      "saving_vs_highest_aud": 12.43,
+      "saving_vs_highest_pct": 42.86,
       "listings": [
         {
           "source": "thehobby",
           "external_id": "10079713394988",
           "url": "https://thehobby.com.au/products/skucard26196",
           "title": "Fremantle Dockers 2024 Select Footy Stars CPG6 Coleman Predictor Gold 164/315",
-          "landed_aud": 16.63,
-          "asking_price": 16.63,
+          "landed_aud": 16.57,
+          "asking_price": 16.57,
           "shipping": 0.0,
           "currency": "AUD",
           "card_number": null,
@@ -339571,31 +339414,31 @@
         "ebay",
         "thehobby"
       ],
-      "lowest_active_ask_aud": 16.63,
-      "median_active_ask_aud": 22.81,
+      "lowest_active_ask_aud": 16.57,
+      "median_active_ask_aud": 22.79,
       "highest_active_ask_aud": 29.0,
-      "spread_aud": 12.37,
-      "spread_pct": 74.38,
+      "spread_aud": 12.43,
+      "spread_pct": 75.02,
       "cheapest_store": "thehobby",
       "cheapest_external_id": "8820264206636",
       "cheapest_url": "https://thehobby.com.au/products/skucard15927",
-      "cheapest_landed_aud": 16.63,
+      "cheapest_landed_aud": 16.57,
       "next_best_store": "ebay",
       "next_best_landed_aud": 29.0,
-      "saving_vs_next_best_aud": 12.37,
-      "saving_vs_next_best_pct": 42.66,
-      "saving_vs_median_aud": 6.18,
-      "saving_vs_median_pct": 27.09,
-      "saving_vs_highest_aud": 12.37,
-      "saving_vs_highest_pct": 42.66,
+      "saving_vs_next_best_aud": 12.43,
+      "saving_vs_next_best_pct": 42.86,
+      "saving_vs_median_aud": 6.21,
+      "saving_vs_median_pct": 27.25,
+      "saving_vs_highest_aud": 12.43,
+      "saving_vs_highest_pct": 42.86,
       "listings": [
         {
           "source": "thehobby",
           "external_id": "8820264206636",
           "url": "https://thehobby.com.au/products/skucard15927",
           "title": "Harris Andrews 2023 Select Footy Stars N21 Numbers Gold 176/255",
-          "landed_aud": 16.63,
-          "asking_price": 16.63,
+          "landed_aud": 16.57,
+          "asking_price": 16.57,
           "shipping": 0.0,
           "currency": "AUD",
           "card_number": null,
