@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-26T16:37:49.512436+00:00",
+  "generated_at": "2026-09-26T21:24:57.258451+00:00",
   "feed_type": "EXACT_CARD_STORE_COMPARISON_ONLY",
   "pricing_basis": "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE",
   "governance": {
@@ -19,7 +19,7 @@
     "title_discriminator_guard_reused_for_nfl": true
   },
   "metrics": {
-    "active_cards_scanned": 3892,
+    "active_cards_scanned": 3889,
     "exact_comparison_groups": 616,
     "exact_comparison_listings": 4610,
     "previous_exact_groups": 616,
@@ -6497,7 +6497,7 @@
     {
       "source": "ebay",
       "external_id": "v1|356384056552|0",
-      "url": "https://www.ebay.com.au/itm/356384056552?_skw=2018+Trae+Young+Donruss+198+PSA+10&hash=item52fa2524e8:g:X3AAAOSwModnYlMI&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGYDspwPvHJne%2BJL84Eein%2BTbJWyynw81cGallKcfaZ2hwIlryrh%2BCmdxob6f6AZsA%2Fi%2BjpU1Z517kxerqvx4P%2FrKNzhDf5HVwKPqmeerqZysExpOSc5IbLWv2aYNH4Hwc3znW1Lm4QHa3uLuK0xLMTzm3VePiPIbvLa8ltaJYXp88wyUg0OjHdConK5r3Gm%2Fn1H4pahEQBEg%2BU3LHHT6WlqW9r05%2BphyxNXJBER0BnxWEzTviY1M2LqrdG8vNqm9nYxHXE%2FZi08vd54L3gt7pTc4rzZHgZll88iB2lmZdc0aL3qO8HAUh0%2BzZhQ2navFbM%3D",
+      "url": "https://www.ebay.com.au/itm/356384056552?_skw=2018+Trae+Young+Donruss+198+PSA+10&hash=item52fa2524e8:g:X3AAAOSwModnYlMI&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGYDspwPvHJne%2BJL84Eein%2BTbJWyynw81cGallKcfaZ2hwIlryrh%2BCmdxob6f6AZsA%2Fi%2BjpU1Z517kxerqvx4P%2FrKNzhDf5HVwKPqmeerqZysExpOSc5IbLWv2aYNH4Hwc3WKgCm846KGt4m8dzfRlLExfM3GL3k0R782OW%2BwxScskaODGgG%2FApbtzIddlGHZtnBqhXtF5A1ebXkgxi35qXCvyHYl7I3OR7lAj3Ul660Q3TPLKhdFoNIjNr8BYtpI41ZaqOApPAjyxVlhBtVnlz7SeLFL%2Fu1%2BvjuNLgx4F4R2mdHBnmdTjqCtTumyNWi5Es%3D",
       "image_url": "https://i.ebayimg.com/images/g/X3AAAOSwModnYlMI/s-l225.jpg",
       "title": "Trae Young 2018 Panini Donruss Rated Rookie #198 PSA 10",
       "sport": "NBA",
@@ -267765,7 +267765,7 @@
     {
       "source": "ebay",
       "external_id": "v1|234527395858|0",
-      "url": "https://www.ebay.com.au/itm/234527395858?_skw=2019+Tyler+Herro+Prizm+259+PSA+10&hash=item369aec1012:g:xz0AAOSwzudiaIFw&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGb3UQZeLdf%2BL7S6YCtRELufWksKdieXPMkbeXDezca0fhJpV3ogenXGQiYUjQhaRzzVdwiJMSeCjM8X%2Fb4sRAfvC%2FHgzp4SDq%2F8flJAERktUuHL5zmDw0Dln1iCnQCMgI5xKMLwoGuQmDU1hkOAux%2FnZncPr3Tif57d0yyGef9eBvHxcE0vk81m6l9nfSbgXKJiEjeLED8aVDDt4l6bilb9b9gcoCtUbK4Wn8yKnGNCYcNJq5GMLBOYNk421Aol%2BR1sLoaT%2FL8AZGgdxSyVSZJ6%2FZWi38%2Fm%2F4gW7i5P0QpdaBxsivlYhBbsoHx%2BiB7ncv0%3D",
+      "url": "https://www.ebay.com.au/itm/234527395858?_skw=2019+Tyler+Herro+Prizm+259+PSA+10&hash=item369aec1012:g:xz0AAOSwzudiaIFw&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGb3UQZeLdf%2BL7S6YCtRELufWksKdieXPMkbeXDezca0fhJpV3ogenXGQiYUjQhaRzzVdwiJMSeCjM8X%2Fb4sRAfvC%2FHgzp4SDq%2F8flJAERktUuHL5zmDw0Dln1iCnQCMgI62nfYgNcqmkfFO7cOAnV%2Bjey2ccQXK4b6g%2Fp6x%2By6A%2FUI2RrYTutO1Gysm0hB8ojFesARESIGZVIzzoVMLDjAfntYzUErYhoU5R0VtRgUbdRvk159DxhP6CQ3C3%2BNdhYIbVwbAWugo5Y4Opq4JcCk601j8VkV90UnQQUkJGaG5UtzIAd1lyrBfoBkI0el1%2B%2BU%3D",
       "image_url": "https://i.ebayimg.com/images/g/xz0AAOSwzudiaIFw/s-l225.jpg",
       "title": "2019 Tyler Herro Prizm RC Rookie PSA 10 #259",
       "sport": "NBA",
@@ -270082,7 +270082,7 @@
     {
       "source": "ebay",
       "external_id": "v1|397287441924|0",
-      "url": "https://www.ebay.com.au/itm/397287441924?_skw=2018+Trae+Young+Donruss+198+PSA+10&hash=item5c802d4604:g:JwQAAOSwMUdl~EDY&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGaor1kWDxMIs8bowgaCH24j1PVbZAo290rOVhZHzM7lp0QGQylWq41edKAqkYGQMAOvb60itYvXIjfYPC068QaeNFLvhSlriP1f%2FzlJn5ZK3%2FDQsH802mI%2Fssg7oLTsOvvFWXWzIk%2BHT3FYcWjuBwLKBTjPJb9ANupz0fm7JhVKITPjB%2BKGMhFyoBymEH9w6O6zF52qis6d9mwlsmyh8sddmo9uW1EIgVyIygxy2EHhibRTm%2FfpQUCCpbCp1YxlMLLBW774YbJdJHLUptR9x0HCm11rQOd5GysKux8c2UBoImwjWHQsahuMa9GgeF%2F3ALU%3D",
+      "url": "https://www.ebay.com.au/itm/397287441924?_skw=2018+Trae+Young+Donruss+198+PSA+10&hash=item5c802d4604:g:JwQAAOSwMUdl~EDY&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGaor1kWDxMIs8bowgaCH24j1PVbZAo290rOVhZHzM7lp0QGQylWq41edKAqkYGQMAOvb60itYvXIjfYPC068QaeNFLvhSlriP1f%2FzlJn5ZK3%2FDQsH802mI%2Fssg7oLTsOvvZx5MSu8Rl33KABSwowAUO9wlsCoChHwp3VP9qJM%2F%2BXOjuIXR0xb%2Fqu7h6%2FF0XktOA4J3%2BuflSh%2FRBzPk2L5fu4OIh1ytydVjRMNIzVFTci8WSP4NRDQyPvkTfB8%2F8ISaejp5NehzUL3Hx%2FxObL%2BpI%2B8VYt9IvaQV1G5C5vc%2BJt6LTl1Wh9F%2Bp3JTWNUE68vA%3D",
       "image_url": "https://i.ebayimg.com/images/g/JwQAAOSwMUdl~EDY/s-l225.jpg",
       "title": "2018 Panini Donruss Trae Young Rated Rookie RC #198 PSA 10 Gem Mint Hawks",
       "sport": "NBA",
@@ -279358,7 +279358,7 @@
         {
           "source": "ebay",
           "external_id": "v1|397287441924|0",
-          "url": "https://www.ebay.com.au/itm/397287441924?_skw=2018+Trae+Young+Donruss+198+PSA+10&hash=item5c802d4604:g:JwQAAOSwMUdl~EDY&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGaor1kWDxMIs8bowgaCH24j1PVbZAo290rOVhZHzM7lp0QGQylWq41edKAqkYGQMAOvb60itYvXIjfYPC068QaeNFLvhSlriP1f%2FzlJn5ZK3%2FDQsH802mI%2Fssg7oLTsOvvFWXWzIk%2BHT3FYcWjuBwLKBTjPJb9ANupz0fm7JhVKITPjB%2BKGMhFyoBymEH9w6O6zF52qis6d9mwlsmyh8sddmo9uW1EIgVyIygxy2EHhibRTm%2FfpQUCCpbCp1YxlMLLBW774YbJdJHLUptR9x0HCm11rQOd5GysKux8c2UBoImwjWHQsahuMa9GgeF%2F3ALU%3D",
+          "url": "https://www.ebay.com.au/itm/397287441924?_skw=2018+Trae+Young+Donruss+198+PSA+10&hash=item5c802d4604:g:JwQAAOSwMUdl~EDY&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGaor1kWDxMIs8bowgaCH24j1PVbZAo290rOVhZHzM7lp0QGQylWq41edKAqkYGQMAOvb60itYvXIjfYPC068QaeNFLvhSlriP1f%2FzlJn5ZK3%2FDQsH802mI%2Fssg7oLTsOvvZx5MSu8Rl33KABSwowAUO9wlsCoChHwp3VP9qJM%2F%2BXOjuIXR0xb%2Fqu7h6%2FF0XktOA4J3%2BuflSh%2FRBzPk2L5fu4OIh1ytydVjRMNIzVFTci8WSP4NRDQyPvkTfB8%2F8ISaejp5NehzUL3Hx%2FxObL%2BpI%2B8VYt9IvaQV1G5C5vc%2BJt6LTl1Wh9F%2Bp3JTWNUE68vA%3D",
           "title": "2018 Panini Donruss Trae Young Rated Rookie RC #198 PSA 10 Gem Mint Hawks",
           "landed_aud": 72.66,
           "asking_price": 46.97,
@@ -279434,7 +279434,7 @@
         {
           "source": "ebay",
           "external_id": "v1|356384056552|0",
-          "url": "https://www.ebay.com.au/itm/356384056552?_skw=2018+Trae+Young+Donruss+198+PSA+10&hash=item52fa2524e8:g:X3AAAOSwModnYlMI&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGYDspwPvHJne%2BJL84Eein%2BTbJWyynw81cGallKcfaZ2hwIlryrh%2BCmdxob6f6AZsA%2Fi%2BjpU1Z517kxerqvx4P%2FrKNzhDf5HVwKPqmeerqZysExpOSc5IbLWv2aYNH4Hwc3znW1Lm4QHa3uLuK0xLMTzm3VePiPIbvLa8ltaJYXp88wyUg0OjHdConK5r3Gm%2Fn1H4pahEQBEg%2BU3LHHT6WlqW9r05%2BphyxNXJBER0BnxWEzTviY1M2LqrdG8vNqm9nYxHXE%2FZi08vd54L3gt7pTc4rzZHgZll88iB2lmZdc0aL3qO8HAUh0%2BzZhQ2navFbM%3D",
+          "url": "https://www.ebay.com.au/itm/356384056552?_skw=2018+Trae+Young+Donruss+198+PSA+10&hash=item52fa2524e8:g:X3AAAOSwModnYlMI&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGYDspwPvHJne%2BJL84Eein%2BTbJWyynw81cGallKcfaZ2hwIlryrh%2BCmdxob6f6AZsA%2Fi%2BjpU1Z517kxerqvx4P%2FrKNzhDf5HVwKPqmeerqZysExpOSc5IbLWv2aYNH4Hwc3WKgCm846KGt4m8dzfRlLExfM3GL3k0R782OW%2BwxScskaODGgG%2FApbtzIddlGHZtnBqhXtF5A1ebXkgxi35qXCvyHYl7I3OR7lAj3Ul660Q3TPLKhdFoNIjNr8BYtpI41ZaqOApPAjyxVlhBtVnlz7SeLFL%2Fu1%2BvjuNLgx4F4R2mdHBnmdTjqCtTumyNWi5Es%3D",
           "title": "Trae Young 2018 Panini Donruss Rated Rookie #198 PSA 10",
           "landed_aud": 126.62,
           "asking_price": 93.98,
@@ -387945,7 +387945,7 @@
         {
           "source": "ebay",
           "external_id": "v1|234527395858|0",
-          "url": "https://www.ebay.com.au/itm/234527395858?_skw=2019+Tyler+Herro+Prizm+259+PSA+10&hash=item369aec1012:g:xz0AAOSwzudiaIFw&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGb3UQZeLdf%2BL7S6YCtRELufWksKdieXPMkbeXDezca0fhJpV3ogenXGQiYUjQhaRzzVdwiJMSeCjM8X%2Fb4sRAfvC%2FHgzp4SDq%2F8flJAERktUuHL5zmDw0Dln1iCnQCMgI5xKMLwoGuQmDU1hkOAux%2FnZncPr3Tif57d0yyGef9eBvHxcE0vk81m6l9nfSbgXKJiEjeLED8aVDDt4l6bilb9b9gcoCtUbK4Wn8yKnGNCYcNJq5GMLBOYNk421Aol%2BR1sLoaT%2FL8AZGgdxSyVSZJ6%2FZWi38%2Fm%2F4gW7i5P0QpdaBxsivlYhBbsoHx%2BiB7ncv0%3D",
+          "url": "https://www.ebay.com.au/itm/234527395858?_skw=2019+Tyler+Herro+Prizm+259+PSA+10&hash=item369aec1012:g:xz0AAOSwzudiaIFw&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGb3UQZeLdf%2BL7S6YCtRELufWksKdieXPMkbeXDezca0fhJpV3ogenXGQiYUjQhaRzzVdwiJMSeCjM8X%2Fb4sRAfvC%2FHgzp4SDq%2F8flJAERktUuHL5zmDw0Dln1iCnQCMgI62nfYgNcqmkfFO7cOAnV%2Bjey2ccQXK4b6g%2Fp6x%2By6A%2FUI2RrYTutO1Gysm0hB8ojFesARESIGZVIzzoVMLDjAfntYzUErYhoU5R0VtRgUbdRvk159DxhP6CQ3C3%2BNdhYIbVwbAWugo5Y4Opq4JcCk601j8VkV90UnQQUkJGaG5UtzIAd1lyrBfoBkI0el1%2B%2BU%3D",
           "title": "2019 Tyler Herro Prizm RC Rookie PSA 10 #259",
           "landed_aud": 355.76,
           "asking_price": 311.69,
