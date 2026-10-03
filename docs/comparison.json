@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-02T22:28:27.957757+00:00",
+  "generated_at": "2026-10-03T05:34:42.310235+00:00",
   "feed_type": "EXACT_CARD_STORE_COMPARISON_ONLY",
   "pricing_basis": "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE",
   "governance": {
@@ -19,15 +19,15 @@
     "title_discriminator_guard_reused_for_nfl": true
   },
   "metrics": {
-    "active_cards_scanned": 3909,
+    "active_cards_scanned": 3928,
     "exact_comparison_groups": 624,
-    "exact_comparison_listings": 4646,
+    "exact_comparison_listings": 4645,
     "previous_exact_groups": 624,
     "fresh_exact_groups": 73,
     "retained_previous_groups_missing_from_fresh": 551,
     "previous_groups_lost": 0,
     "production_groups_before_nfl_merge": 624,
-    "production_listings_before_nfl_merge": 4646,
+    "production_listings_before_nfl_merge": 4645,
     "staged_nfl_exact_groups_seen": 424,
     "staged_nfl_groups_added": 0,
     "staged_nfl_listings_added": 0,
@@ -215,7 +215,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "cherry",
@@ -276,7 +276,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "cherry",
@@ -398,7 +398,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "cherry",
@@ -642,7 +642,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "cherry",
@@ -886,7 +886,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "cherry",
@@ -1191,7 +1191,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "cherry",
@@ -1435,7 +1435,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "boop",
@@ -1495,7 +1495,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "boop",
@@ -1555,7 +1555,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "boop",
@@ -1615,7 +1615,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "boop",
@@ -1675,7 +1675,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "boop",
@@ -1735,7 +1735,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "boop",
@@ -1795,7 +1795,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "boop",
@@ -1855,7 +1855,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "boop",
@@ -1915,7 +1915,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "boop",
@@ -1975,7 +1975,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "thehobby",
@@ -2036,7 +2036,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "thehobby",
@@ -2097,7 +2097,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "cherry",
@@ -2158,7 +2158,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "cherry",
@@ -2218,7 +2218,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "cherry",
@@ -2338,7 +2338,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "cherry",
@@ -2398,7 +2398,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "cherry",
@@ -2518,7 +2518,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "cherry",
@@ -2578,7 +2578,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "cherry",
@@ -2637,7 +2637,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "cherry",
@@ -2696,7 +2696,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "cherry",
@@ -2755,7 +2755,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "cherry",
@@ -2873,7 +2873,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "sportscardstore",
@@ -2933,7 +2933,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "sportscardstore",
@@ -2993,7 +2993,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "sportscardstore",
@@ -3054,7 +3054,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "sportscardstore",
@@ -3115,7 +3115,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "sportscardstore",
@@ -3176,7 +3176,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "sportscardstore",
@@ -3236,7 +3236,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "sportscardstore",
@@ -3296,7 +3296,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "sportscardstore",
@@ -3356,7 +3356,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "sportscardstore",
@@ -3416,7 +3416,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "sportscardstore",
@@ -3476,7 +3476,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "sportscardstore",
@@ -3536,7 +3536,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "sportscardstore",
@@ -3596,7 +3596,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "sportscardstore",
@@ -3656,7 +3656,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "sportscardstore",
@@ -3716,7 +3716,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "sportscardstore",
@@ -3776,7 +3776,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "sportscardstore",
@@ -3836,7 +3836,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "sportscardstore",
@@ -3896,7 +3896,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "sportscardstore",
@@ -3956,7 +3956,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "sportscardstore",
@@ -4016,7 +4016,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "sportscardstore",
@@ -4076,7 +4076,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "sportscardstore",
@@ -4136,7 +4136,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "sportscardstore",
@@ -4196,7 +4196,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "sportscardstore",
@@ -4256,7 +4256,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "sportscardstore",
@@ -4316,7 +4316,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "sportscardstore",
@@ -4376,7 +4376,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "sportscardstore",
@@ -4436,7 +4436,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "sportscardstore",
@@ -4497,7 +4497,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "sportscardstore",
@@ -4558,7 +4558,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "sportscardstore",
@@ -4619,7 +4619,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "thehobby",
@@ -4679,7 +4679,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "thehobby",
@@ -4739,7 +4739,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "thehobby",
@@ -4800,7 +4800,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "thehobby",
@@ -4860,7 +4860,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "thehobby",
@@ -4920,7 +4920,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "thehobby",
@@ -4980,7 +4980,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "thehobby",
@@ -5040,7 +5040,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "thehobby",
@@ -5100,7 +5100,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "thehobby",
@@ -5160,7 +5160,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "thehobby",
@@ -5220,7 +5220,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "boop",
@@ -5282,7 +5282,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "boop",
@@ -5342,7 +5342,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "boop",
@@ -5402,7 +5402,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "cherry",
@@ -5461,7 +5461,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "cherry",
@@ -5520,7 +5520,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "thehobby",
@@ -5581,7 +5581,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "cherry",
@@ -5947,7 +5947,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "cherry",
@@ -6008,7 +6008,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -6129,7 +6129,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -6189,7 +6189,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -6249,7 +6249,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -6309,7 +6309,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -6431,7 +6431,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -6440,10 +6440,10 @@
       "image_url": "https://i.ebayimg.com/images/g/za0AAeSwdo1qpHrC/s-l225.jpg",
       "title": "2018 Panini Donruss Trae Young Rated Rookie RC #198 PSA 10 Gem Mint Hawks",
       "sport": "NBA",
-      "asking_price": 39.68,
-      "shipping": 31.09,
+      "asking_price": 39.53,
+      "shipping": 30.98,
       "currency": "AUD",
-      "landed_aud": 70.77,
+      "landed_aud": 70.51,
       "identity": {
         "player": "Trae Young",
         "year": "2018",
@@ -6492,19 +6492,19 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
       "external_id": "v1|356384056552|0",
-      "url": "https://www.ebay.com.au/itm/356384056552?_skw=2018+Trae+Young+Donruss+198+PSA+10&hash=item52fa2524e8:g:X3AAAOSwModnYlMI&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGYDspwPvHJne%2BJL84Eein%2BTbJWyynw81cGallKcfaZ2hwIlryrh%2BCmdxob6f6AZsA%2Fi%2BjpU1Z517kxerqvx4P%2FrKNzhDf5HVwKPqmeerqZysExpOSc5IbLWv2aYNH4Hwc0KyrpJvaTPogXZt5yI1ZwXRM%2FO6CL0I48R5rl1YA1ELCbf7BGwXLNozIoW%2F5Ng4EMmUN2XxwxuQSL7gjGemMgmVCXAE04FwFLKWJ15A0MbjvHp8Jvhh2G4nXc2e1oRm%2FPL4Dp8C8ndWtO3esyR4OettID2PvnB9TfwQlwaUeDcI81Ba4ZCX4REvHI%2B9ZQVZjg%3D",
+      "url": "https://www.ebay.com.au/itm/356384056552?_skw=2018+Trae+Young+Donruss+198+PSA+10&hash=item52fa2524e8:g:X3AAAOSwModnYlMI&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGYDspwPvHJne%2BJL84Eein%2BTbJWyynw81cGallKcfaZ2hwIlryrh%2BCmdxob6f6AZsA%2Fi%2BjpU1Z517kxerqvx4P%2FrKNzhDf5HVwKPqmeerqZysExpOSc5IbLWv2aYNH4Hwc2ZADdN47HMH6%2FHcVsm7BPPKOtAqaUuGreQ%2BMe5xe0KHRpjO4lzcX192lL5%2BKQw7oW%2FeO0qAXiR2TWm4led6juO%2FgssbDNuxx%2FGGcfhPUsjzd2H%2FOWaeygPMaV6KsZ4OfifRWZfCXF%2Bgn23PYrbU8W9SDk4HIRLRlAc%2Bn1pfqFVmVkeIRqnxWAWhyPyC7%2BPvdg%3D",
       "image_url": "https://i.ebayimg.com/images/g/X3AAAOSwModnYlMI/s-l225.jpg",
       "title": "Trae Young 2018 Panini Donruss Rated Rookie #198 PSA 10",
       "sport": "NBA",
-      "asking_price": 95.22,
-      "shipping": 33.07,
+      "asking_price": 94.88,
+      "shipping": 32.95,
       "currency": "AUD",
-      "landed_aud": 128.29,
+      "landed_aud": 127.83,
       "identity": {
         "player": "Trae Young",
         "year": "2018",
@@ -6553,7 +6553,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -6613,7 +6613,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -6673,7 +6673,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -6733,7 +6733,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -6793,7 +6793,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -6853,7 +6853,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -6913,7 +6913,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -6973,7 +6973,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -7094,7 +7094,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -7154,7 +7154,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -7214,7 +7214,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -7274,7 +7274,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -7335,7 +7335,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -7396,7 +7396,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -7456,7 +7456,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -7516,7 +7516,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -7576,7 +7576,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -7636,7 +7636,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -7696,7 +7696,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -7756,7 +7756,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -7816,7 +7816,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -7876,7 +7876,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -7936,7 +7936,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -8057,7 +8057,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -8118,7 +8118,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -8179,7 +8179,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -8240,7 +8240,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -8422,7 +8422,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -8482,7 +8482,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -8542,7 +8542,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -8602,7 +8602,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -8662,7 +8662,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -8722,7 +8722,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -9219,10 +9219,10 @@
       "image_url": "https://i.ebayimg.com/images/g/ur4AAOSw9-tlkaNL/s-l225.jpg",
       "title": "2018 Panini Select Trae Young Concourse Rookie RC PSA 9 #45 Hawks",
       "sport": "NBA",
-      "asking_price": 63.47,
-      "shipping": 29.32,
+      "asking_price": 63.24,
+      "shipping": 29.21,
       "currency": "AUD",
-      "landed_aud": 92.79,
+      "landed_aud": 92.45,
       "identity": {
         "player": "Trae Young",
         "year": "2018",
@@ -9271,7 +9271,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -9280,10 +9280,10 @@
       "image_url": "https://i.ebayimg.com/images/g/HRYAAOSwi9ZfygEg/s-l225.jpg",
       "title": "2018 Panini Select #45 Trae Young RC Rookie Mint PSA 9",
       "sport": "NBA",
-      "asking_price": 158.71,
-      "shipping": 40.34,
+      "asking_price": 158.14,
+      "shipping": 40.2,
       "currency": "AUD",
-      "landed_aud": 199.05,
+      "landed_aud": 198.34,
       "identity": {
         "player": "Trae Young",
         "year": "2018",
@@ -9332,7 +9332,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -9391,7 +9391,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -9451,7 +9451,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -9511,7 +9511,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -9572,7 +9572,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -9632,7 +9632,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -9692,7 +9692,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -9752,7 +9752,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -9812,7 +9812,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -9873,7 +9873,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -9934,7 +9934,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -9995,7 +9995,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -10056,7 +10056,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -10116,7 +10116,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -10176,7 +10176,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -10237,7 +10237,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -10297,7 +10297,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -10357,7 +10357,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -10417,7 +10417,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -10477,7 +10477,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -10537,7 +10537,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -10597,7 +10597,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -10657,7 +10657,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -10717,7 +10717,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -10838,7 +10838,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -10897,7 +10897,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -10956,7 +10956,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -11015,7 +11015,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -11075,7 +11075,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -11136,7 +11136,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -11197,7 +11197,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -11256,7 +11256,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "cherry",
@@ -200485,7 +200485,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "cherry",
@@ -200605,7 +200605,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "sportscardstore",
@@ -200666,7 +200666,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "thehobby",
@@ -200726,7 +200726,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "thehobby",
@@ -200786,7 +200786,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "thehobby",
@@ -200846,7 +200846,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "thehobby",
@@ -200906,7 +200906,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "thehobby",
@@ -200966,7 +200966,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "thehobby",
@@ -201026,7 +201026,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "thehobby",
@@ -201086,7 +201086,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "boop",
@@ -201147,7 +201147,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "boop",
@@ -201207,7 +201207,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -201327,7 +201327,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -201387,7 +201387,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -201446,7 +201446,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -201507,7 +201507,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -201568,7 +201568,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -201628,7 +201628,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -201688,7 +201688,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -201748,7 +201748,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -201808,7 +201808,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -201868,7 +201868,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -201928,7 +201928,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -201988,7 +201988,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "cherry",
@@ -243114,7 +243114,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "cherry",
@@ -243173,7 +243173,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "sportscardstore",
@@ -243233,7 +243233,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "thehobby",
@@ -243293,7 +243293,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "thehobby",
@@ -243353,7 +243353,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "boop",
@@ -243413,7 +243413,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -243473,7 +243473,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -243533,7 +243533,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -243593,7 +243593,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -243653,7 +243653,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -243713,7 +243713,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -243773,7 +243773,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -243833,7 +243833,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -243893,7 +243893,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -243953,7 +243953,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -244012,7 +244012,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "cherry",
@@ -256919,7 +256919,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -256979,7 +256979,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -257039,7 +257039,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "cherry",
@@ -269537,14 +269537,14 @@
     {
       "source": "ebay",
       "external_id": "v1|397287441924|0",
-      "url": "https://www.ebay.com.au/itm/397287441924?_skw=2018+Trae+Young+Donruss+198+PSA+10&hash=item5c802d4604:g:JwQAAOSwMUdl~EDY&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGaor1kWDxMIs8bowgaCH24j1PVbZAo290rOVhZHzM7lp0QGQylWq41edKAqkYGQMAOvb60itYvXIjfYPC068QaeNFLvhSlriP1f%2FzlJn5ZK3%2FDQsH802mI%2Fssg7oLTsOvuHZMs4PWB1HqgJQnRpyc0sj0xs0EmQGKwQrvZ9VUp3xEoLy4a3Qpj%2B90SGhqrkPgq36X9U6ProISjptzvJm3gdo7z1uX7jM60xt8vAyqc3tCt3jDFXaNczBpmI544cSDgqv8A1X4JZ1SOL9CMrfhiddOKDaV9YSaxduj6q705AWq9WgQ%2BITNpI2u%2BUvgHDxNo%3D",
+      "url": "https://www.ebay.com.au/itm/397287441924?_skw=2018+Trae+Young+Donruss+198+PSA+10&hash=item5c802d4604:g:JwQAAOSwMUdl~EDY&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGaor1kWDxMIs8bowgaCH24j1PVbZAo290rOVhZHzM7lp0QGQylWq41edKAqkYGQMAOvb60itYvXIjfYPC068QaeNFLvhSlriP1f%2FzlJn5ZK3%2FDQsH802mI%2Fssg7oLTsOvuYwnTKg7KZsOVYtd934aTthwzMYZghLCdpZN216cHZzUz49zZoUeds8X9ebDd1%2B%2BQxYYDpTjXO2Gbz6d%2F22puQxbmWMDXSrrF9G%2FH%2F5Cpwi5dOCGQwTfWgOBgCpsYAr2ux0elrWe%2FcVR1sFXXzy1hKMRTALl838OubEsEgpk%2FF7voSN4FKjL%2FkA0%2FV0jAtg4o%3D",
       "image_url": "https://i.ebayimg.com/images/g/JwQAAOSwMUdl~EDY/s-l225.jpg",
       "title": "2018 Panini Donruss Trae Young Rated Rookie RC #198 PSA 10 Gem Mint Hawks",
       "sport": "NBA",
-      "asking_price": 47.6,
-      "shipping": 26.03,
+      "asking_price": 47.43,
+      "shipping": 25.93,
       "currency": "AUD",
-      "landed_aud": 73.63,
+      "landed_aud": 73.36,
       "identity": {
         "player": "Trae Young",
         "year": "2018",
@@ -269593,7 +269593,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -275263,7 +275263,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "cherry",
@@ -275324,7 +275324,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -275333,10 +275333,10 @@
       "image_url": "https://i.ebayimg.com/images/g/6o4AAeSwf55qrGNx/s-l225.jpg",
       "title": "Stephen Curry 2009 Upper Deck Draft Edition #34 PSA 9 Rookie RC",
       "sport": "NBA",
-      "asking_price": 365.01,
-      "shipping": 44.96,
+      "asking_price": 363.7,
+      "shipping": 44.8,
       "currency": "AUD",
-      "landed_aud": 409.97,
+      "landed_aud": 408.5,
       "identity": {
         "player": "Stephen Curry",
         "year": "2009",
@@ -275385,7 +275385,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "thehobby",
@@ -275505,7 +275505,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -275686,7 +275686,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "cherry",
@@ -275745,7 +275745,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "cherry",
@@ -275804,7 +275804,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "cherry",
@@ -275863,7 +275863,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -275922,7 +275922,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -275981,7 +275981,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -276040,7 +276040,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -276099,7 +276099,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "cherry",
@@ -276885,7 +276885,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -276945,7 +276945,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "cherry",
@@ -277125,7 +277125,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "urbanempire",
@@ -277185,7 +277185,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -277245,7 +277245,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -277254,10 +277254,10 @@
       "image_url": "https://i.ebayimg.com/images/g/5RkAAeSw34pqrdaw/s-l225.jpg",
       "title": "2018-19 Panini Prizm - Kobe Bryant #15 PSA 9",
       "sport": "NBA",
-      "asking_price": 125.38,
-      "shipping": 33.13,
+      "asking_price": 124.93,
+      "shipping": 33.01,
       "currency": "AUD",
-      "landed_aud": 158.51,
+      "landed_aud": 157.94,
       "identity": {
         "player": "Kobe Bryant",
         "year": "2018-19",
@@ -277305,7 +277305,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -277314,10 +277314,10 @@
       "image_url": "https://i.ebayimg.com/images/g/sE8AAeSwR6Rqsiqw/s-l225.jpg",
       "title": "2018-19 Panini Prizm Kobe Bryant #15 PSA 9 MINT HOF y8a",
       "sport": "NBA",
-      "asking_price": 363.28,
-      "shipping": 39.92,
+      "asking_price": 361.98,
+      "shipping": 39.78,
       "currency": "AUD",
-      "landed_aud": 403.2,
+      "landed_aud": 401.76,
       "identity": {
         "player": "Kobe Bryant",
         "year": "2018-19",
@@ -277365,7 +277365,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -277374,10 +277374,10 @@
       "image_url": "https://i.ebayimg.com/images/g/LsoAAeSwEl1p8U0h/s-l225.jpg",
       "title": "Kobe Bryant 2018-19 Panini Prizm #15 PSA 9 Mint",
       "sport": "NBA",
-      "asking_price": 174.51,
-      "shipping": 38.46,
+      "asking_price": 173.88,
+      "shipping": 38.33,
       "currency": "AUD",
-      "landed_aud": 212.97,
+      "landed_aud": 212.21,
       "identity": {
         "player": "Kobe Bryant",
         "year": "2018-19",
@@ -277425,7 +277425,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -277434,10 +277434,10 @@
       "image_url": "https://i.ebayimg.com/images/g/HaoAAeSwMTNquJ2J/s-l225.jpg",
       "title": "2018 PANINI DONRUSS TRAE YOUNG #198 RATED ROOKIE PSA 10 GEM MINT",
       "sport": "NBA",
-      "asking_price": 47.6,
-      "shipping": 25.61,
+      "asking_price": 47.43,
+      "shipping": 25.52,
       "currency": "AUD",
-      "landed_aud": 73.21,
+      "landed_aud": 72.95,
       "identity": {
         "player": "Trae Young",
         "year": "2018",
@@ -277486,7 +277486,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -277495,10 +277495,10 @@
       "image_url": "https://i.ebayimg.com/images/g/ixIAAOSwaP5mtmep/s-l225.jpg",
       "title": "2018 Panini Donruss Trae Young Rated Rookie RC #198 PSA 10 Hawks GEM MT Hawks",
       "sport": "NBA",
-      "asking_price": 55.55,
-      "shipping": 25.87,
+      "asking_price": 55.35,
+      "shipping": 25.78,
       "currency": "AUD",
-      "landed_aud": 81.42,
+      "landed_aud": 81.13,
       "identity": {
         "player": "Trae Young",
         "year": "2018",
@@ -277547,7 +277547,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "cherry",
@@ -277607,7 +277607,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "cherry",
@@ -277667,7 +277667,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -277727,7 +277727,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -277787,19 +277787,19 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
       "external_id": "v1|198372305627|0",
-      "url": "https://www.ebay.com.au/itm/198372305627?_skw=2025-26+Cooper+Flagg+Topps+Finest+1&hash=item2e2fe92adb:g:mREAAeSw-jZqD~pk&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGaNmxB1ERJ%2BwEDyeyc7WeDROIVBhkIlvQHIcni0rnHz9NdBLp6uoZoT999efT3uuT06aoZw4hJAbSKLInos4l3%2BgOURJQCfL6QxgsXZDv0DYSUWWXIUkbB7zvNU1b8xA7mySlm41Mqdz3sB2PGbqbjM7ePBrD1vHBEEIZQxGxNrv6ShXQOU9KJNRPKNYOQ%2BBYIhxAsxPdDXvk3RezkxQ6UIxQZtHHdg6TivzUnpVPhoMETL8Iw6O1unAEg6Kmp2UU7HN82nZ5tXCMEnPbprQBfXsp0Fjf5odaCcoBwx7V7DJTcV3YwP5N%2Bbjd2Gq6kPWkw%3D",
+      "url": "https://www.ebay.com.au/itm/198372305627?_skw=2025-26+Cooper+Flagg+Topps+Finest+1&hash=item2e2fe92adb:g:mREAAeSw-jZqD~pk&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGaNmxB1ERJ%2BwEDyeyc7WeDROIVBhkIlvQHIcni0rnHz9NdBLp6uoZoT999efT3uuT06aoZw4hJAbSKLInos4l3%2BgOURJQCfL6QxgsXZDv0DYSUWWXIUkbB7zvNU1b8xA7l9aS0Xr8KCheD%2BkQUjXKQUki%2BJ7sg2f9tFvAyk9SXMFSUvLmLv55hsAsEmhDPDS5Bw8PWjJxLQ4dCzXmAK%2BmOBvPxUq6sT4tE27v3oVdbgmQTwuYjsOiQv75K1J1QmNvhkmWozrQscRnBwh0cGoyI5msWU57SfwhFcyxfmMinIUuKdTiYGw1NBdNAK3jkFESg%3D",
       "image_url": "https://i.ebayimg.com/images/g/mREAAeSw-jZqD~pk/s-l225.jpg",
       "title": "2025-26 Topps Finest Cooper Flagg Common Base  Arrivals RC Mavericks #1 #A-1 Lot",
       "sport": "NBA",
-      "asking_price": 111.08,
-      "shipping": 15.86,
+      "asking_price": 110.68,
+      "shipping": 15.8,
       "currency": "AUD",
-      "landed_aud": 126.94,
+      "landed_aud": 126.48,
       "identity": {
         "player": "Cooper Flagg",
         "year": "2025-26",
@@ -277847,7 +277847,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "cherry",
@@ -278150,7 +278150,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "cherry",
@@ -278209,7 +278209,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "cherry",
@@ -278268,7 +278268,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "cherry",
@@ -278327,19 +278327,19 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
       "external_id": "v1|168558357885|0",
-      "url": "https://www.ebay.com.au/itm/168558357885?_skw=2025-26+Stephen+Curry+Topps+Finest+74&hash=item273edc6d7d:g:ujIAAeSwvPRp4o6G&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGYgmulxo4UZZTlgajAwqelf4YLhp4nNH5WUD1Ry1%2F0fZDxt27NU9miexC5yzdI4aMBDCdvG93b9XeBY6uxnz6BWQF9czTLeu3KuHzrzB0JXC8xWCIlTUp8zdVkAxHeKxqVOInkAhhVTI7Q78MEuY8mkxcl7KursK%2FwTx7qArJqS%2BT6i2NFFrc0mg70xt2i0eutFNvuIMuuvJ6PXW2rmrGMVAd0%2FeJJoKkjpFJasl5qsmYu9zZEcByXAb1fMn22RlydLKnF8KnR7c5cXXIk4GU%2BzjNeA83awRll4m5zOZGsTktHK%2FiJfFGL1%2BmDvpWQJCd0%3D",
+      "url": "https://www.ebay.com.au/itm/168558357885?_skw=2025-26+Stephen+Curry+Topps+Finest+74&hash=item273edc6d7d:g:ujIAAeSwvPRp4o6G&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGYgmulxo4UZZTlgajAwqelf4YLhp4nNH5WUD1Ry1%2F0fZDxt27NU9miexC5yzdI4aMBDCdvG93b9XeBY6uxnz6BWQF9czTLeu3KuHzrzB0JXC8xWCIlTUp8zdVkAxHeKxqXRIJnK%2Bn2BAZwhQUMwTFqun6y6mBsHtRdwnvCfMDzCJ3M8MnhYjaklgYHBbRn0S4Gak%2BB3LwxEdpL1mJDhlSRPRz3T8a%2Fe3yPFt10RXjaxqACeNdD%2FE2ZrdrMGI0ZKZwfalQbc%2BlfvfAX8qJ5ovN5YUb7RwS%2BYMCkJut0YCOWwlGPdMkOKVh0Jqnj58TMgTJk%3D",
       "image_url": "https://i.ebayimg.com/images/g/ujIAAeSwvPRp4o6G/s-l225.jpg",
       "title": "Stephen Curry #74 2025-26 Topps Finest Common Golden State Warriors",
       "sport": "NBA",
-      "asking_price": 14.75,
-      "shipping": 16.64,
+      "asking_price": 14.69,
+      "shipping": 16.58,
       "currency": "AUD",
-      "landed_aud": 31.39,
+      "landed_aud": 31.27,
       "identity": {
         "player": "Stephen Curry",
         "year": "2025-26",
@@ -278386,7 +278386,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -278395,10 +278395,10 @@
       "image_url": "https://i.ebayimg.com/images/g/7bcAAeSw9jhqe0xd/s-l225.jpg",
       "title": "2025-26 Topps Finest Stephen Curry Base Common #74",
       "sport": "NBA",
-      "asking_price": 3.58,
-      "shipping": 18.42,
+      "asking_price": 3.57,
+      "shipping": 18.36,
       "currency": "AUD",
-      "landed_aud": 22.0,
+      "landed_aud": 21.93,
       "identity": {
         "player": "Stephen Curry",
         "year": "2025-26",
@@ -278445,7 +278445,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -278454,10 +278454,10 @@
       "image_url": "https://i.ebayimg.com/images/g/qcIAAeSwX9xp7nPV/s-l225.jpg",
       "title": "STEPHEN CURRY 2025-26 Topps Finest #74 Warriors SP MINT",
       "sport": "NBA",
-      "asking_price": 9.51,
-      "shipping": 21.74,
+      "asking_price": 9.47,
+      "shipping": 21.66,
       "currency": "AUD",
-      "landed_aud": 31.25,
+      "landed_aud": 31.13,
       "identity": {
         "player": "Stephen Curry",
         "year": "2025-26",
@@ -278504,7 +278504,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -278513,10 +278513,10 @@
       "image_url": "https://i.ebayimg.com/images/g/7aoAAeSwAvJpubH8/s-l225.jpg",
       "title": "2025-26 Topps Finest STEPHEN CURRY Warriors #74",
       "sport": "NBA",
-      "asking_price": 7.39,
-      "shipping": 18.55,
+      "asking_price": 7.36,
+      "shipping": 18.49,
       "currency": "AUD",
-      "landed_aud": 25.94,
+      "landed_aud": 25.85,
       "identity": {
         "player": "Stephen Curry",
         "year": "2025-26",
@@ -278563,7 +278563,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -278572,10 +278572,10 @@
       "image_url": "https://i.ebayimg.com/images/g/7CYAAeSwLGBp6oux/s-l225.jpg",
       "title": "2025-26 Topps Finest - Stephen Curry #74",
       "sport": "NBA",
-      "asking_price": 11.1,
-      "shipping": 17.75,
+      "asking_price": 11.06,
+      "shipping": 17.68,
       "currency": "AUD",
-      "landed_aud": 28.85,
+      "landed_aud": 28.74,
       "identity": {
         "player": "Stephen Curry",
         "year": "2025-26",
@@ -278622,7 +278622,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -278631,10 +278631,10 @@
       "image_url": "https://i.ebayimg.com/images/g/jzkAAeSwLDppzeyH/s-l225.jpg",
       "title": "2025-26 Topps Finest STEPHEN CURRY Warriors #74",
       "sport": "NBA",
-      "asking_price": 18.25,
-      "shipping": 19.68,
+      "asking_price": 18.19,
+      "shipping": 19.61,
       "currency": "AUD",
-      "landed_aud": 37.93,
+      "landed_aud": 37.8,
       "identity": {
         "player": "Stephen Curry",
         "year": "2025-26",
@@ -278681,7 +278681,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -278740,7 +278740,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -278749,10 +278749,10 @@
       "image_url": "https://i.ebayimg.com/images/g/75MAAeSw7pFqErFX/s-l225.jpg",
       "title": "Stephen Curry 2025-26 Topps Cosmic Chrome Basketball #18",
       "sport": "NBA",
-      "asking_price": 20.56,
-      "shipping": 19.92,
+      "asking_price": 20.49,
+      "shipping": 19.85,
       "currency": "AUD",
-      "landed_aud": 40.48,
+      "landed_aud": 40.34,
       "identity": {
         "player": "Stephen Curry",
         "year": "2025-26",
@@ -278799,7 +278799,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "urbanempire",
@@ -279113,10 +279113,10 @@
       "image_url": "https://i.ebayimg.com/images/g/X3sAAOSwCf1mDtl9/s-l225.jpg",
       "title": "Trae Young RC 2018 Donruss Rated Rookie #198 PSA 10 Atlanta Hawks",
       "sport": "NBA",
-      "asking_price": 79.35,
-      "shipping": 32.94,
+      "asking_price": 79.07,
+      "shipping": 32.82,
       "currency": "AUD",
-      "landed_aud": 112.29,
+      "landed_aud": 111.89,
       "identity": {
         "player": "Trae Young",
         "year": "2018",
@@ -279165,7 +279165,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -279174,10 +279174,10 @@
       "image_url": "https://i.ebayimg.com/images/g/kwUAAOSwy6NkNg6z/s-l225.jpg",
       "title": "2018 Donruss Rated Rookie Trae Young #198 Gem Mint PSA 10",
       "sport": "NBA",
-      "asking_price": 44.44,
-      "shipping": 17.6,
+      "asking_price": 44.28,
+      "shipping": 17.54,
       "currency": "AUD",
-      "landed_aud": 62.04,
+      "landed_aud": 61.82,
       "identity": {
         "player": "Trae Young",
         "year": "2018",
@@ -279226,7 +279226,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -279235,10 +279235,10 @@
       "image_url": "https://i.ebayimg.com/images/g/ZCEAAOSwjQVk0Dn5/s-l225.jpg",
       "title": "2018 Trae Young Panini Donruss Rated Rookie #198 RC PSA 10 GEM MINT Heat",
       "sport": "NBA",
-      "asking_price": 39.6,
-      "shipping": 25.29,
+      "asking_price": 39.46,
+      "shipping": 25.2,
       "currency": "AUD",
-      "landed_aud": 64.89,
+      "landed_aud": 64.66,
       "identity": {
         "player": "Trae Young",
         "year": "2018",
@@ -279287,7 +279287,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -279348,7 +279348,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -279408,7 +279408,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -279468,7 +279468,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -279477,10 +279477,10 @@
       "image_url": "https://i.ebayimg.com/images/g/RAUAAeSw5etqvj0z/s-l225.jpg",
       "title": "2018-19 Panini Prizm Kobe Bryant #15 PSA 9 MINT HOF nv6",
       "sport": "NBA",
-      "asking_price": 131.81,
-      "shipping": 32.39,
+      "asking_price": 131.34,
+      "shipping": 32.27,
       "currency": "AUD",
-      "landed_aud": 164.2,
+      "landed_aud": 163.61,
       "identity": {
         "player": "Kobe Bryant",
         "year": "2018-19",
@@ -279528,7 +279528,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -279588,7 +279588,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -279649,7 +279649,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -279710,7 +279710,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -279770,7 +279770,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "urbanempire",
@@ -280023,10 +280023,10 @@
       "image_url": "https://i.ebayimg.com/images/g/9eYAAOSwf1lkVt0C/s-l225.jpg",
       "title": "2018 Donruss Trae Young Rated Rookie #198 Hawks PSA 10 GEM 💎 🔥",
       "sport": "NBA",
-      "asking_price": 47.6,
-      "shipping": 30.88,
+      "asking_price": 47.43,
+      "shipping": 30.76,
       "currency": "AUD",
-      "landed_aud": 78.48,
+      "landed_aud": 78.19,
       "identity": {
         "player": "Trae Young",
         "year": "2018",
@@ -280075,80 +280075,19 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
-    },
-    {
-      "source": "ebay",
-      "external_id": "v1|178359212054|0",
-      "url": "https://www.ebay.com.au/itm/178359212054?_skw=2018+Trae+Young+Donruss+198+PSA+10&hash=item2987099816:g:slcAAeSwZnFqbEYU",
-      "image_url": "https://i.ebayimg.com/images/g/slcAAeSwZnFqbEYU/s-l225.jpg",
-      "title": "2018 Panini Donruss Trae Young Rated Rookie PSA 10 RC #198 Hawks Gem Mint",
-      "sport": "NBA",
-      "asking_price": 71.42,
-      "shipping": 31.15,
-      "currency": "AUD",
-      "landed_aud": 102.57,
-      "identity": {
-        "player": "Trae Young",
-        "year": "2018",
-        "brand": "Donruss",
-        "set_name": "Donruss",
-        "card_number": "198",
-        "parallel": null,
-        "serial_current": null,
-        "serial_total": null,
-        "grader": "PSA",
-        "grade": 10.0,
-        "autograph": false,
-        "memorabilia": false,
-        "rookie": true
-      },
-      "card_family": {
-        "key": "cf_a6cc91510f4748f343ae",
-        "eligible": true,
-        "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
-        "match_confidence": 1.0,
-        "match_reasons": [
-          "same player",
-          "same year",
-          "same brand/product",
-          "same card number",
-          "same grading state",
-          "same rookie state"
-        ],
-        "canonical_components": {
-          "sport": "nba",
-          "player": "traeyoung",
-          "year": "2018",
-          "brand": "donruss",
-          "product": "donruss",
-          "card_number": "198",
-          "parallel": "",
-          "serial_total": "",
-          "grader": "psa",
-          "grade": "10",
-          "autograph": "0",
-          "memorabilia": "0",
-          "rookie": "1"
-        }
-      },
-      "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
-      "fx_status": "AUD_NATIVE",
-      "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
       "external_id": "v1|860002123914|0",
-      "url": "https://www.ebay.com.au/itm/860002123914?_skw=2025-26+Cooper+Flagg+Topps+Finest+1&hash=itemc83c1f008a:g:J6oAAeSw7pFp99C8",
+      "url": "https://www.ebay.com.au/itm/860002123914?_skw=2025-26+Cooper+Flagg+Topps+Finest+1&hash=itemc83c1f008a:g:J6oAAeSw7pFp99C8&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGbZ8Zy37ZkwTIfM1jfJ8ncSjyRckm2X%2BqBwCUuW6lnlueXrcNobr2lV2H1abD8LSQoJ00aQ4tjwPwqhhD%2Fm3mO8P3ut2u%2FUqlCdmNEjUo%2Fh3mPo29j2iYnDYDynjvx0JPAcoW7Vch89cfd37U9E8Svz%2FGokSss3hxwEdyRknUjAlQ3S32Y64oSbxK%2FXZqCgbqK9EscZMvWuQHwFY95FCEmALexdGIu7ktE6y5xzbfnjqR1FyXZkiZWHks1bXJj0zFQ3UAlMqJnAQaRQ6BE5Ndj7FHgsYIZhiv%2BTWq7NZP5YYSUYNfR6rj91kMjltl8OY6w%3D",
       "image_url": "https://i.ebayimg.com/images/g/J6oAAeSw7pFp99C8/s-l225.jpg",
       "title": "2025-26 Topps Finest Cooper Flagg RC #1 (Common) Dallas Mavericks🔥",
       "sport": "NBA",
-      "asking_price": 71.42,
-      "shipping": 30.41,
+      "asking_price": 71.16,
+      "shipping": 30.3,
       "currency": "AUD",
-      "landed_aud": 101.83,
+      "landed_aud": 101.46,
       "identity": {
         "player": "Cooper Flagg",
         "year": "2025-26",
@@ -280196,19 +280135,19 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
       "external_id": "v1|860002123970|0",
-      "url": "https://www.ebay.com.au/itm/860002123970?_skw=2025-26+Stephen+Curry+Topps+Finest+74&hash=itemc83c1f00c2:g:DhUAAeSwI0FpsKRp",
+      "url": "https://www.ebay.com.au/itm/860002123970?_skw=2025-26+Stephen+Curry+Topps+Finest+74&hash=itemc83c1f00c2:g:DhUAAeSwI0FpsKRp&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGYtQYQLsOanKpTyuLSxcxaA74%2F%2BjPIOL0E0bmVA576MJbBAu6rWopiUHYD9tTLHKoLNsZPEZZ2eW56tGh077r0Ig8O4JM6Sc94U302QYgppdgX8hF%2BRZmAYPfUtjb%2B6bwtUz8sfTJf1pzPU8JM3oIHztOdRru2NoWlnVY8V3xN6o2yd4fUxLa8PFA4KhhHXHtkUeA83h3maMwyuYV20wmRjc6%2BunYWOIq87Y4d9u3Hb5BkOqOIWNfuzs8CC6i%2B4Qx%2BxAHjp%2B2TRU7cZS%2FapXlBJxf8B8gS3%2F8Oa8P3MdXQXxPVe9s6Xj8uZXLVTcBigQSk%3D",
       "image_url": "https://i.ebayimg.com/images/g/DhUAAeSwI0FpsKRp/s-l225.jpg",
       "title": "2025-26 Topps Finest Stephen Curry #74 Common Golden State Warriors",
       "sport": "NBA",
-      "asking_price": 9.52,
-      "shipping": 25.32,
+      "asking_price": 9.49,
+      "shipping": 25.23,
       "currency": "AUD",
-      "landed_aud": 34.84,
+      "landed_aud": 34.72,
       "identity": {
         "player": "Stephen Curry",
         "year": "2025-26",
@@ -280255,7 +280194,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     },
     {
       "source": "ebay",
@@ -280264,10 +280203,10 @@
       "image_url": "https://i.ebayimg.com/images/g/s0IAAeSwYclqS-3l/s-l225.jpg",
       "title": "Stephen Curry 2025-26 Topps Cosmic Chrome Base #18",
       "sport": "NBA",
-      "asking_price": 12.68,
-      "shipping": 15.86,
+      "asking_price": 12.64,
+      "shipping": 15.8,
       "currency": "AUD",
-      "landed_aud": 28.54,
+      "landed_aud": 28.44,
       "identity": {
         "player": "Stephen Curry",
         "year": "2025-26",
@@ -280314,7 +280253,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-02"
+      "fx_rate_date": "2026-10-03"
     }
   ],
   "comparison_groups": [
@@ -280754,10 +280693,10 @@
         "ebay"
       ],
       "lowest_active_ask_aud": 24.99,
-      "median_active_ask_aud": 58.89,
-      "highest_active_ask_aud": 199.05,
-      "spread_aud": 174.06,
-      "spread_pct": 696.52,
+      "median_active_ask_aud": 58.72,
+      "highest_active_ask_aud": 198.34,
+      "spread_aud": 173.35,
+      "spread_pct": 693.68,
       "cheapest_store": "cherry",
       "cheapest_external_id": "9094459392054",
       "cheapest_url": "https://www.cherrycollectables.com.au/products/2018-panini-select-trae-young-rookie-base-45-psa-9-293",
@@ -280766,10 +280705,10 @@
       "next_best_landed_aud": 24.99,
       "saving_vs_next_best_aud": 0.0,
       "saving_vs_next_best_pct": 0.0,
-      "saving_vs_median_aud": 33.9,
-      "saving_vs_median_pct": 57.56,
-      "saving_vs_highest_aud": 174.06,
-      "saving_vs_highest_pct": 87.45,
+      "saving_vs_median_aud": 33.73,
+      "saving_vs_median_pct": 57.44,
+      "saving_vs_highest_aud": 173.35,
+      "saving_vs_highest_pct": 87.4,
       "listings": [
         {
           "source": "cherry",
@@ -280814,9 +280753,9 @@
           "external_id": "v1|285816907162|0",
           "url": "https://www.ebay.com.au/itm/285816907162?_skw=2018+Trae+Young+Panini+Select+45+PSA+9&hash=item428c03e59a:g:ur4AAOSw9-tlkaNL",
           "title": "2018 Panini Select Trae Young Concourse Rookie RC PSA 9 #45 Hawks",
-          "landed_aud": 92.79,
-          "asking_price": 63.47,
-          "shipping": 29.32,
+          "landed_aud": 92.45,
+          "asking_price": 63.24,
+          "shipping": 29.21,
           "currency": "AUD",
           "card_number": "45",
           "parallel": null,
@@ -280833,9 +280772,9 @@
           "external_id": "v1|394836622762|0",
           "url": "https://www.ebay.com.au/itm/394836622762?_skw=2018+Trae+Young+Panini+Select+45+PSA+9&hash=item5bee18bdaa:g:HRYAAOSwi9ZfygEg",
           "title": "2018 Panini Select #45 Trae Young RC Rookie Mint PSA 9",
-          "landed_aud": 199.05,
-          "asking_price": 158.71,
-          "shipping": 40.34,
+          "landed_aud": 198.34,
+          "asking_price": 158.14,
+          "shipping": 40.2,
           "currency": "AUD",
           "card_number": "45",
           "parallel": null,
@@ -281341,16 +281280,16 @@
       "year": "2018",
       "product": "Donruss",
       "store_count": 2,
-      "listing_count": 15,
+      "listing_count": 14,
       "stores": [
         "cherry",
         "ebay"
       ],
       "lowest_active_ask_aud": 49.99,
-      "median_active_ask_aud": 70.77,
-      "highest_active_ask_aud": 128.29,
-      "spread_aud": 78.3,
-      "spread_pct": 156.63,
+      "median_active_ask_aud": 67.59,
+      "highest_active_ask_aud": 127.83,
+      "spread_aud": 77.84,
+      "spread_pct": 155.71,
       "cheapest_store": "cherry",
       "cheapest_external_id": "9094464864310",
       "cheapest_url": "https://www.cherrycollectables.com.au/products/2018-donruss-trae-young-rated-rookie-base-198-psa-10-098",
@@ -281359,10 +281298,10 @@
       "next_best_landed_aud": 49.99,
       "saving_vs_next_best_aud": 0.0,
       "saving_vs_next_best_pct": 0.0,
-      "saving_vs_median_aud": 20.78,
-      "saving_vs_median_pct": 29.36,
-      "saving_vs_highest_aud": 78.3,
-      "saving_vs_highest_pct": 61.03,
+      "saving_vs_median_aud": 17.6,
+      "saving_vs_median_pct": 26.04,
+      "saving_vs_highest_aud": 77.84,
+      "saving_vs_highest_pct": 60.89,
       "listings": [
         {
           "source": "cherry",
@@ -281445,9 +281384,9 @@
           "external_id": "v1|115767374678|0",
           "url": "https://www.ebay.com.au/itm/115767374678?_skw=2018+Trae+Young+Donruss+198+PSA+10&hash=item1af445f356:g:kwUAAOSwy6NkNg6z",
           "title": "2018 Donruss Rated Rookie Trae Young #198 Gem Mint PSA 10",
-          "landed_aud": 62.04,
-          "asking_price": 44.44,
-          "shipping": 17.6,
+          "landed_aud": 61.82,
+          "asking_price": 44.28,
+          "shipping": 17.54,
           "currency": "AUD",
           "card_number": "198",
           "parallel": null,
@@ -281483,9 +281422,9 @@
           "external_id": "v1|394795875345|0",
           "url": "https://www.ebay.com.au/itm/394795875345?_skw=2018+Trae+Young+Donruss+198+PSA+10&hash=item5bebaafc11:g:ZCEAAOSwjQVk0Dn5",
           "title": "2018 Trae Young Panini Donruss Rated Rookie #198 RC PSA 10 GEM MINT Heat",
-          "landed_aud": 64.89,
-          "asking_price": 39.6,
-          "shipping": 25.29,
+          "landed_aud": 64.66,
+          "asking_price": 39.46,
+          "shipping": 25.2,
           "currency": "AUD",
           "card_number": "198",
           "parallel": null,
@@ -281502,9 +281441,9 @@
           "external_id": "v1|257737431002|0",
           "url": "https://www.ebay.com.au/itm/257737431002?_skw=2018+Trae+Young+Donruss+198+PSA+10&hash=item3c025917da:g:za0AAeSwdo1qpHrC",
           "title": "2018 Panini Donruss Trae Young Rated Rookie RC #198 PSA 10 Gem Mint Hawks",
-          "landed_aud": 70.77,
-          "asking_price": 39.68,
-          "shipping": 31.09,
+          "landed_aud": 70.51,
+          "asking_price": 39.53,
+          "shipping": 30.98,
           "currency": "AUD",
           "card_number": "198",
           "parallel": null,
@@ -281521,9 +281460,9 @@
           "external_id": "v1|407248611951|0",
           "url": "https://www.ebay.com.au/itm/407248611951?_skw=2018+Trae+Young+Donruss+198+PSA+10&hash=item5ed1e8aa6f:g:HaoAAeSwMTNquJ2J",
           "title": "2018 PANINI DONRUSS TRAE YOUNG #198 RATED ROOKIE PSA 10 GEM MINT",
-          "landed_aud": 73.21,
-          "asking_price": 47.6,
-          "shipping": 25.61,
+          "landed_aud": 72.95,
+          "asking_price": 47.43,
+          "shipping": 25.52,
           "currency": "AUD",
           "card_number": "198",
           "parallel": null,
@@ -281538,11 +281477,11 @@
         {
           "source": "ebay",
           "external_id": "v1|397287441924|0",
-          "url": "https://www.ebay.com.au/itm/397287441924?_skw=2018+Trae+Young+Donruss+198+PSA+10&hash=item5c802d4604:g:JwQAAOSwMUdl~EDY&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGaor1kWDxMIs8bowgaCH24j1PVbZAo290rOVhZHzM7lp0QGQylWq41edKAqkYGQMAOvb60itYvXIjfYPC068QaeNFLvhSlriP1f%2FzlJn5ZK3%2FDQsH802mI%2Fssg7oLTsOvuHZMs4PWB1HqgJQnRpyc0sj0xs0EmQGKwQrvZ9VUp3xEoLy4a3Qpj%2B90SGhqrkPgq36X9U6ProISjptzvJm3gdo7z1uX7jM60xt8vAyqc3tCt3jDFXaNczBpmI544cSDgqv8A1X4JZ1SOL9CMrfhiddOKDaV9YSaxduj6q705AWq9WgQ%2BITNpI2u%2BUvgHDxNo%3D",
+          "url": "https://www.ebay.com.au/itm/397287441924?_skw=2018+Trae+Young+Donruss+198+PSA+10&hash=item5c802d4604:g:JwQAAOSwMUdl~EDY&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGaor1kWDxMIs8bowgaCH24j1PVbZAo290rOVhZHzM7lp0QGQylWq41edKAqkYGQMAOvb60itYvXIjfYPC068QaeNFLvhSlriP1f%2FzlJn5ZK3%2FDQsH802mI%2Fssg7oLTsOvuYwnTKg7KZsOVYtd934aTthwzMYZghLCdpZN216cHZzUz49zZoUeds8X9ebDd1%2B%2BQxYYDpTjXO2Gbz6d%2F22puQxbmWMDXSrrF9G%2FH%2F5Cpwi5dOCGQwTfWgOBgCpsYAr2ux0elrWe%2FcVR1sFXXzy1hKMRTALl838OubEsEgpk%2FF7voSN4FKjL%2FkA0%2FV0jAtg4o%3D",
           "title": "2018 Panini Donruss Trae Young Rated Rookie RC #198 PSA 10 Gem Mint Hawks",
-          "landed_aud": 73.63,
-          "asking_price": 47.6,
-          "shipping": 26.03,
+          "landed_aud": 73.36,
+          "asking_price": 47.43,
+          "shipping": 25.93,
           "currency": "AUD",
           "card_number": "198",
           "parallel": null,
@@ -281559,9 +281498,9 @@
           "external_id": "v1|336548676498|0",
           "url": "https://www.ebay.com.au/itm/336548676498?_skw=2018+Trae+Young+Donruss+198+PSA+10&hash=item4e5bdd4392:g:9eYAAOSwf1lkVt0C",
           "title": "2018 Donruss Trae Young Rated Rookie #198 Hawks PSA 10 GEM 💎 🔥",
-          "landed_aud": 78.48,
-          "asking_price": 47.6,
-          "shipping": 30.88,
+          "landed_aud": 78.19,
+          "asking_price": 47.43,
+          "shipping": 30.76,
           "currency": "AUD",
           "card_number": "198",
           "parallel": null,
@@ -281578,28 +281517,9 @@
           "external_id": "v1|316625690098|0",
           "url": "https://www.ebay.com.au/itm/316625690098?_skw=2018+Trae+Young+Donruss+198+PSA+10&hash=item49b85c9df2:g:ixIAAOSwaP5mtmep",
           "title": "2018 Panini Donruss Trae Young Rated Rookie RC #198 PSA 10 Hawks GEM MT Hawks",
-          "landed_aud": 81.42,
-          "asking_price": 55.55,
-          "shipping": 25.87,
-          "currency": "AUD",
-          "card_number": "198",
-          "parallel": null,
-          "serial_total": null,
-          "grader": "PSA",
-          "grade": 10.0,
-          "rookie": true,
-          "autograph": false,
-          "memorabilia": false,
-          "title_guard": ""
-        },
-        {
-          "source": "ebay",
-          "external_id": "v1|178359212054|0",
-          "url": "https://www.ebay.com.au/itm/178359212054?_skw=2018+Trae+Young+Donruss+198+PSA+10&hash=item2987099816:g:slcAAeSwZnFqbEYU",
-          "title": "2018 Panini Donruss Trae Young Rated Rookie PSA 10 RC #198 Hawks Gem Mint",
-          "landed_aud": 102.57,
-          "asking_price": 71.42,
-          "shipping": 31.15,
+          "landed_aud": 81.13,
+          "asking_price": 55.35,
+          "shipping": 25.78,
           "currency": "AUD",
           "card_number": "198",
           "parallel": null,
@@ -281616,9 +281536,9 @@
           "external_id": "v1|375352440842|0",
           "url": "https://www.ebay.com.au/itm/375352440842?_skw=2018+Trae+Young+Donruss+198+PSA+10&hash=item5764bfb80a:g:X3sAAOSwCf1mDtl9",
           "title": "Trae Young RC 2018 Donruss Rated Rookie #198 PSA 10 Atlanta Hawks",
-          "landed_aud": 112.29,
-          "asking_price": 79.35,
-          "shipping": 32.94,
+          "landed_aud": 111.89,
+          "asking_price": 79.07,
+          "shipping": 32.82,
           "currency": "AUD",
           "card_number": "198",
           "parallel": null,
@@ -281633,11 +281553,11 @@
         {
           "source": "ebay",
           "external_id": "v1|356384056552|0",
-          "url": "https://www.ebay.com.au/itm/356384056552?_skw=2018+Trae+Young+Donruss+198+PSA+10&hash=item52fa2524e8:g:X3AAAOSwModnYlMI&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGYDspwPvHJne%2BJL84Eein%2BTbJWyynw81cGallKcfaZ2hwIlryrh%2BCmdxob6f6AZsA%2Fi%2BjpU1Z517kxerqvx4P%2FrKNzhDf5HVwKPqmeerqZysExpOSc5IbLWv2aYNH4Hwc0KyrpJvaTPogXZt5yI1ZwXRM%2FO6CL0I48R5rl1YA1ELCbf7BGwXLNozIoW%2F5Ng4EMmUN2XxwxuQSL7gjGemMgmVCXAE04FwFLKWJ15A0MbjvHp8Jvhh2G4nXc2e1oRm%2FPL4Dp8C8ndWtO3esyR4OettID2PvnB9TfwQlwaUeDcI81Ba4ZCX4REvHI%2B9ZQVZjg%3D",
+          "url": "https://www.ebay.com.au/itm/356384056552?_skw=2018+Trae+Young+Donruss+198+PSA+10&hash=item52fa2524e8:g:X3AAAOSwModnYlMI&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGYDspwPvHJne%2BJL84Eein%2BTbJWyynw81cGallKcfaZ2hwIlryrh%2BCmdxob6f6AZsA%2Fi%2BjpU1Z517kxerqvx4P%2FrKNzhDf5HVwKPqmeerqZysExpOSc5IbLWv2aYNH4Hwc2ZADdN47HMH6%2FHcVsm7BPPKOtAqaUuGreQ%2BMe5xe0KHRpjO4lzcX192lL5%2BKQw7oW%2FeO0qAXiR2TWm4led6juO%2FgssbDNuxx%2FGGcfhPUsjzd2H%2FOWaeygPMaV6KsZ4OfifRWZfCXF%2Bgn23PYrbU8W9SDk4HIRLRlAc%2Bn1pfqFVmVkeIRqnxWAWhyPyC7%2BPvdg%3D",
           "title": "Trae Young 2018 Panini Donruss Rated Rookie #198 PSA 10",
-          "landed_aud": 128.29,
-          "asking_price": 95.22,
-          "shipping": 33.07,
+          "landed_aud": 127.83,
+          "asking_price": 94.88,
+          "shipping": 32.95,
           "currency": "AUD",
           "card_number": "198",
           "parallel": null,
@@ -394679,7 +394599,7 @@
         "ebay"
       ],
       "lowest_active_ask_aud": 399.99,
-      "median_active_ask_aud": 409.97,
+      "median_active_ask_aud": 408.5,
       "highest_active_ask_aud": 699.99,
       "spread_aud": 300.0,
       "spread_pct": 75.0,
@@ -394688,11 +394608,11 @@
       "cheapest_url": "https://www.cherrycollectables.com.au/products/2009-upper-deck-draft-edition-stephen-curry-rookie-base-34-psa-9-016",
       "cheapest_landed_aud": 399.99,
       "next_best_store": "ebay",
-      "next_best_landed_aud": 409.97,
-      "saving_vs_next_best_aud": 9.98,
-      "saving_vs_next_best_pct": 2.43,
-      "saving_vs_median_aud": 9.98,
-      "saving_vs_median_pct": 2.43,
+      "next_best_landed_aud": 408.5,
+      "saving_vs_next_best_aud": 8.51,
+      "saving_vs_next_best_pct": 2.08,
+      "saving_vs_median_aud": 8.51,
+      "saving_vs_median_pct": 2.08,
       "saving_vs_highest_aud": 300.0,
       "saving_vs_highest_pct": 42.86,
       "listings": [
@@ -394720,9 +394640,9 @@
           "external_id": "v1|188944638272|0",
           "url": "https://www.ebay.com.au/itm/188944638272?_skw=2009+Stephen+Curry+Upper+Deck+Draft+Edition+34+PSA+9&hash=item2bfdfa6140:g:6o4AAeSwf55qrGNx",
           "title": "Stephen Curry 2009 Upper Deck Draft Edition #34 PSA 9 Rookie RC",
-          "landed_aud": 409.97,
-          "asking_price": 365.01,
-          "shipping": 44.96,
+          "landed_aud": 408.5,
+          "asking_price": 363.7,
+          "shipping": 44.8,
           "currency": "AUD",
           "card_number": "34",
           "parallel": null,
@@ -395628,10 +395548,10 @@
         "urbanempire"
       ],
       "lowest_active_ask_aud": 109.0,
-      "median_active_ask_aud": 164.2,
-      "highest_active_ask_aud": 403.2,
-      "spread_aud": 294.2,
-      "spread_pct": 269.91,
+      "median_active_ask_aud": 163.61,
+      "highest_active_ask_aud": 401.76,
+      "spread_aud": 292.76,
+      "spread_pct": 268.59,
       "cheapest_store": "urbanempire",
       "cheapest_external_id": "10319830646973",
       "cheapest_url": "https://urbanempirecollectables.com/products/2018-19-panini-prizm-kobe-bryant-15-psa-9-mint-los-angeles-lakers",
@@ -395640,10 +395560,10 @@
       "next_best_landed_aud": 119.99,
       "saving_vs_next_best_aud": 10.99,
       "saving_vs_next_best_pct": 9.16,
-      "saving_vs_median_aud": 55.2,
-      "saving_vs_median_pct": 33.62,
-      "saving_vs_highest_aud": 294.2,
-      "saving_vs_highest_pct": 72.97,
+      "saving_vs_median_aud": 54.61,
+      "saving_vs_median_pct": 33.38,
+      "saving_vs_highest_aud": 292.76,
+      "saving_vs_highest_pct": 72.87,
       "listings": [
         {
           "source": "urbanempire",
@@ -395688,9 +395608,9 @@
           "external_id": "v1|377507087595|0",
           "url": "https://www.ebay.com.au/itm/377507087595?_skw=2018-19+Kobe+Bryant+Panini+Prizm+15+PSA+9&hash=item57e52d04eb:g:5RkAAeSw34pqrdaw",
           "title": "2018-19 Panini Prizm - Kobe Bryant #15 PSA 9",
-          "landed_aud": 158.51,
-          "asking_price": 125.38,
-          "shipping": 33.13,
+          "landed_aud": 157.94,
+          "asking_price": 124.93,
+          "shipping": 33.01,
           "currency": "AUD",
           "card_number": "15",
           "parallel": null,
@@ -395707,9 +395627,9 @@
           "external_id": "v1|336822105570|0",
           "url": "https://www.ebay.com.au/itm/336822105570?_skw=2018-19+Kobe+Bryant+Panini+Prizm+15+PSA+9&hash=item4e6c2975e2:g:RAUAAeSw5etqvj0z",
           "title": "2018-19 Panini Prizm Kobe Bryant #15 PSA 9 MINT HOF nv6",
-          "landed_aud": 164.2,
-          "asking_price": 131.81,
-          "shipping": 32.39,
+          "landed_aud": 163.61,
+          "asking_price": 131.34,
+          "shipping": 32.27,
           "currency": "AUD",
           "card_number": "15",
           "parallel": null,
@@ -395726,9 +395646,9 @@
           "external_id": "v1|198317512984|0",
           "url": "https://www.ebay.com.au/itm/198317512984?_skw=2018-19+Kobe+Bryant+Panini+Prizm+15+PSA+9&hash=item2e2ca51918:g:LsoAAeSwEl1p8U0h",
           "title": "Kobe Bryant 2018-19 Panini Prizm #15 PSA 9 Mint",
-          "landed_aud": 212.97,
-          "asking_price": 174.51,
-          "shipping": 38.46,
+          "landed_aud": 212.21,
+          "asking_price": 173.88,
+          "shipping": 38.33,
           "currency": "AUD",
           "card_number": "15",
           "parallel": null,
@@ -395764,9 +395684,9 @@
           "external_id": "v1|237083262575|0",
           "url": "https://www.ebay.com.au/itm/237083262575?_skw=2018-19+Kobe+Bryant+Panini+Prizm+15+PSA+9&hash=item3733437e6f:g:sE8AAeSwR6Rqsiqw",
           "title": "2018-19 Panini Prizm Kobe Bryant #15 PSA 9 MINT HOF y8a",
-          "landed_aud": 403.2,
-          "asking_price": 363.28,
-          "shipping": 39.92,
+          "landed_aud": 401.76,
+          "asking_price": 361.98,
+          "shipping": 39.78,
           "currency": "AUD",
           "card_number": "15",
           "parallel": null,
@@ -395806,7 +395726,7 @@
         "ebay"
       ],
       "lowest_active_ask_aud": 43.5,
-      "median_active_ask_aud": 93.41,
+      "median_active_ask_aud": 93.22,
       "highest_active_ask_aud": 299.99,
       "spread_aud": 256.49,
       "spread_pct": 589.63,
@@ -395818,8 +395738,8 @@
       "next_best_landed_aud": 46.9,
       "saving_vs_next_best_aud": 3.4,
       "saving_vs_next_best_pct": 7.25,
-      "saving_vs_median_aud": 49.91,
-      "saving_vs_median_pct": 53.43,
+      "saving_vs_median_aud": 49.72,
+      "saving_vs_median_pct": 53.33,
       "saving_vs_highest_aud": 256.49,
       "saving_vs_highest_pct": 85.5,
       "listings": [
@@ -395883,11 +395803,11 @@
         {
           "source": "ebay",
           "external_id": "v1|860002123914|0",
-          "url": "https://www.ebay.com.au/itm/860002123914?_skw=2025-26+Cooper+Flagg+Topps+Finest+1&hash=itemc83c1f008a:g:J6oAAeSw7pFp99C8",
+          "url": "https://www.ebay.com.au/itm/860002123914?_skw=2025-26+Cooper+Flagg+Topps+Finest+1&hash=itemc83c1f008a:g:J6oAAeSw7pFp99C8&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGbZ8Zy37ZkwTIfM1jfJ8ncSjyRckm2X%2BqBwCUuW6lnlueXrcNobr2lV2H1abD8LSQoJ00aQ4tjwPwqhhD%2Fm3mO8P3ut2u%2FUqlCdmNEjUo%2Fh3mPo29j2iYnDYDynjvx0JPAcoW7Vch89cfd37U9E8Svz%2FGokSss3hxwEdyRknUjAlQ3S32Y64oSbxK%2FXZqCgbqK9EscZMvWuQHwFY95FCEmALexdGIu7ktE6y5xzbfnjqR1FyXZkiZWHks1bXJj0zFQ3UAlMqJnAQaRQ6BE5Ndj7FHgsYIZhiv%2BTWq7NZP5YYSUYNfR6rj91kMjltl8OY6w%3D",
           "title": "2025-26 Topps Finest Cooper Flagg RC #1 (Common) Dallas Mavericks🔥",
-          "landed_aud": 101.83,
-          "asking_price": 71.42,
-          "shipping": 30.41,
+          "landed_aud": 101.46,
+          "asking_price": 71.16,
+          "shipping": 30.3,
           "currency": "AUD",
           "card_number": "1",
           "parallel": null,
@@ -395902,11 +395822,11 @@
         {
           "source": "ebay",
           "external_id": "v1|198372305627|0",
-          "url": "https://www.ebay.com.au/itm/198372305627?_skw=2025-26+Cooper+Flagg+Topps+Finest+1&hash=item2e2fe92adb:g:mREAAeSw-jZqD~pk&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGaNmxB1ERJ%2BwEDyeyc7WeDROIVBhkIlvQHIcni0rnHz9NdBLp6uoZoT999efT3uuT06aoZw4hJAbSKLInos4l3%2BgOURJQCfL6QxgsXZDv0DYSUWWXIUkbB7zvNU1b8xA7mySlm41Mqdz3sB2PGbqbjM7ePBrD1vHBEEIZQxGxNrv6ShXQOU9KJNRPKNYOQ%2BBYIhxAsxPdDXvk3RezkxQ6UIxQZtHHdg6TivzUnpVPhoMETL8Iw6O1unAEg6Kmp2UU7HN82nZ5tXCMEnPbprQBfXsp0Fjf5odaCcoBwx7V7DJTcV3YwP5N%2Bbjd2Gq6kPWkw%3D",
+          "url": "https://www.ebay.com.au/itm/198372305627?_skw=2025-26+Cooper+Flagg+Topps+Finest+1&hash=item2e2fe92adb:g:mREAAeSw-jZqD~pk&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGaNmxB1ERJ%2BwEDyeyc7WeDROIVBhkIlvQHIcni0rnHz9NdBLp6uoZoT999efT3uuT06aoZw4hJAbSKLInos4l3%2BgOURJQCfL6QxgsXZDv0DYSUWWXIUkbB7zvNU1b8xA7l9aS0Xr8KCheD%2BkQUjXKQUki%2BJ7sg2f9tFvAyk9SXMFSUvLmLv55hsAsEmhDPDS5Bw8PWjJxLQ4dCzXmAK%2BmOBvPxUq6sT4tE27v3oVdbgmQTwuYjsOiQv75K1J1QmNvhkmWozrQscRnBwh0cGoyI5msWU57SfwhFcyxfmMinIUuKdTiYGw1NBdNAK3jkFESg%3D",
           "title": "2025-26 Topps Finest Cooper Flagg Common Base  Arrivals RC Mavericks #1 #A-1 Lot",
-          "landed_aud": 126.94,
-          "asking_price": 111.08,
-          "shipping": 15.86,
+          "landed_aud": 126.48,
+          "asking_price": 110.68,
+          "shipping": 15.8,
           "currency": "AUD",
           "card_number": "1",
           "parallel": null,
@@ -396132,7 +396052,7 @@
         "ebay"
       ],
       "lowest_active_ask_aud": 13.26,
-      "median_active_ask_aud": 28.54,
+      "median_active_ask_aud": 28.44,
       "highest_active_ask_aud": 99.99,
       "spread_aud": 86.73,
       "spread_pct": 654.07,
@@ -396144,8 +396064,8 @@
       "next_best_landed_aud": 24.99,
       "saving_vs_next_best_aud": 11.73,
       "saving_vs_next_best_pct": 46.94,
-      "saving_vs_median_aud": 15.28,
-      "saving_vs_median_pct": 53.54,
+      "saving_vs_median_aud": 15.18,
+      "saving_vs_median_pct": 53.38,
       "saving_vs_highest_aud": 86.73,
       "saving_vs_highest_pct": 86.74,
       "listings": [
@@ -396192,9 +396112,9 @@
           "external_id": "v1|298485080633|0",
           "url": "https://www.ebay.com.au/itm/298485080633?_skw=2025-26+Stephen+Curry+Topps+18&hash=item457f18e239:g:s0IAAeSwYclqS-3l",
           "title": "Stephen Curry 2025-26 Topps Cosmic Chrome Base #18",
-          "landed_aud": 28.54,
-          "asking_price": 12.68,
-          "shipping": 15.86,
+          "landed_aud": 28.44,
+          "asking_price": 12.64,
+          "shipping": 15.8,
           "currency": "AUD",
           "card_number": "18",
           "parallel": null,
@@ -396211,9 +396131,9 @@
           "external_id": "v1|257523495933|0",
           "url": "https://www.ebay.com.au/itm/257523495933?_skw=2025-26+Stephen+Curry+Topps+18&hash=item3bf598b3fd:g:75MAAeSw7pFqErFX",
           "title": "Stephen Curry 2025-26 Topps Cosmic Chrome Basketball #18",
-          "landed_aud": 40.48,
-          "asking_price": 20.56,
-          "shipping": 19.92,
+          "landed_aud": 40.34,
+          "asking_price": 20.49,
+          "shipping": 19.85,
           "currency": "AUD",
           "card_number": "18",
           "parallel": null,
@@ -396271,7 +396191,7 @@
         "ebay"
       ],
       "lowest_active_ask_aud": 9.99,
-      "median_active_ask_aud": 31.25,
+      "median_active_ask_aud": 31.13,
       "highest_active_ask_aud": 39.99,
       "spread_aud": 30.0,
       "spread_pct": 300.3,
@@ -396280,11 +396200,11 @@
       "cheapest_url": "https://www.cherrycollectables.com.au/products/2025-26-topps-finest-stephen-curry-common-base-74",
       "cheapest_landed_aud": 9.99,
       "next_best_store": "ebay",
-      "next_best_landed_aud": 22.0,
-      "saving_vs_next_best_aud": 12.01,
-      "saving_vs_next_best_pct": 54.59,
-      "saving_vs_median_aud": 21.26,
-      "saving_vs_median_pct": 68.03,
+      "next_best_landed_aud": 21.93,
+      "saving_vs_next_best_aud": 11.94,
+      "saving_vs_next_best_pct": 54.45,
+      "saving_vs_median_aud": 21.14,
+      "saving_vs_median_pct": 67.91,
       "saving_vs_highest_aud": 30.0,
       "saving_vs_highest_pct": 75.02,
       "listings": [
@@ -396312,9 +396232,9 @@
           "external_id": "v1|377410637163|0",
           "url": "https://www.ebay.com.au/itm/377410637163?_skw=2025-26+Stephen+Curry+Topps+Finest+74&hash=item57df6d4d6b:g:7bcAAeSw9jhqe0xd",
           "title": "2025-26 Topps Finest Stephen Curry Base Common #74",
-          "landed_aud": 22.0,
-          "asking_price": 3.58,
-          "shipping": 18.42,
+          "landed_aud": 21.93,
+          "asking_price": 3.57,
+          "shipping": 18.36,
           "currency": "AUD",
           "card_number": "74",
           "parallel": null,
@@ -396331,9 +396251,9 @@
           "external_id": "v1|318020007339|0",
           "url": "https://www.ebay.com.au/itm/318020007339?_skw=2025-26+Stephen+Curry+Topps+Finest+74&hash=item4a0b7835ab:g:7aoAAeSwAvJpubH8",
           "title": "2025-26 Topps Finest STEPHEN CURRY Warriors #74",
-          "landed_aud": 25.94,
-          "asking_price": 7.39,
-          "shipping": 18.55,
+          "landed_aud": 25.85,
+          "asking_price": 7.36,
+          "shipping": 18.49,
           "currency": "AUD",
           "card_number": "74",
           "parallel": null,
@@ -396350,9 +396270,9 @@
           "external_id": "v1|389929806828|0",
           "url": "https://www.ebay.com.au/itm/389929806828?_skw=2025-26+Stephen+Curry+Topps+Finest+74&hash=item5ac9a0abec:g:7CYAAeSwLGBp6oux",
           "title": "2025-26 Topps Finest - Stephen Curry #74",
-          "landed_aud": 28.85,
-          "asking_price": 11.1,
-          "shipping": 17.75,
+          "landed_aud": 28.74,
+          "asking_price": 11.06,
+          "shipping": 17.68,
           "currency": "AUD",
           "card_number": "74",
           "parallel": null,
@@ -396369,9 +396289,9 @@
           "external_id": "v1|306903854275|0",
           "url": "https://www.ebay.com.au/itm/306903854275?_skw=2025-26+Stephen+Curry+Topps+Finest+74&hash=item4774e52cc3:g:qcIAAeSwX9xp7nPV",
           "title": "STEPHEN CURRY 2025-26 Topps Finest #74 Warriors SP MINT",
-          "landed_aud": 31.25,
-          "asking_price": 9.51,
-          "shipping": 21.74,
+          "landed_aud": 31.13,
+          "asking_price": 9.47,
+          "shipping": 21.66,
           "currency": "AUD",
           "card_number": "74",
           "parallel": null,
@@ -396386,11 +396306,11 @@
         {
           "source": "ebay",
           "external_id": "v1|168558357885|0",
-          "url": "https://www.ebay.com.au/itm/168558357885?_skw=2025-26+Stephen+Curry+Topps+Finest+74&hash=item273edc6d7d:g:ujIAAeSwvPRp4o6G&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGYgmulxo4UZZTlgajAwqelf4YLhp4nNH5WUD1Ry1%2F0fZDxt27NU9miexC5yzdI4aMBDCdvG93b9XeBY6uxnz6BWQF9czTLeu3KuHzrzB0JXC8xWCIlTUp8zdVkAxHeKxqVOInkAhhVTI7Q78MEuY8mkxcl7KursK%2FwTx7qArJqS%2BT6i2NFFrc0mg70xt2i0eutFNvuIMuuvJ6PXW2rmrGMVAd0%2FeJJoKkjpFJasl5qsmYu9zZEcByXAb1fMn22RlydLKnF8KnR7c5cXXIk4GU%2BzjNeA83awRll4m5zOZGsTktHK%2FiJfFGL1%2BmDvpWQJCd0%3D",
+          "url": "https://www.ebay.com.au/itm/168558357885?_skw=2025-26+Stephen+Curry+Topps+Finest+74&hash=item273edc6d7d:g:ujIAAeSwvPRp4o6G&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGYgmulxo4UZZTlgajAwqelf4YLhp4nNH5WUD1Ry1%2F0fZDxt27NU9miexC5yzdI4aMBDCdvG93b9XeBY6uxnz6BWQF9czTLeu3KuHzrzB0JXC8xWCIlTUp8zdVkAxHeKxqXRIJnK%2Bn2BAZwhQUMwTFqun6y6mBsHtRdwnvCfMDzCJ3M8MnhYjaklgYHBbRn0S4Gak%2BB3LwxEdpL1mJDhlSRPRz3T8a%2Fe3yPFt10RXjaxqACeNdD%2FE2ZrdrMGI0ZKZwfalQbc%2BlfvfAX8qJ5ovN5YUb7RwS%2BYMCkJut0YCOWwlGPdMkOKVh0Jqnj58TMgTJk%3D",
           "title": "Stephen Curry #74 2025-26 Topps Finest Common Golden State Warriors",
-          "landed_aud": 31.39,
-          "asking_price": 14.75,
-          "shipping": 16.64,
+          "landed_aud": 31.27,
+          "asking_price": 14.69,
+          "shipping": 16.58,
           "currency": "AUD",
           "card_number": "74",
           "parallel": null,
@@ -396405,11 +396325,11 @@
         {
           "source": "ebay",
           "external_id": "v1|860002123970|0",
-          "url": "https://www.ebay.com.au/itm/860002123970?_skw=2025-26+Stephen+Curry+Topps+Finest+74&hash=itemc83c1f00c2:g:DhUAAeSwI0FpsKRp",
+          "url": "https://www.ebay.com.au/itm/860002123970?_skw=2025-26+Stephen+Curry+Topps+Finest+74&hash=itemc83c1f00c2:g:DhUAAeSwI0FpsKRp&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGYtQYQLsOanKpTyuLSxcxaA74%2F%2BjPIOL0E0bmVA576MJbBAu6rWopiUHYD9tTLHKoLNsZPEZZ2eW56tGh077r0Ig8O4JM6Sc94U302QYgppdgX8hF%2BRZmAYPfUtjb%2B6bwtUz8sfTJf1pzPU8JM3oIHztOdRru2NoWlnVY8V3xN6o2yd4fUxLa8PFA4KhhHXHtkUeA83h3maMwyuYV20wmRjc6%2BunYWOIq87Y4d9u3Hb5BkOqOIWNfuzs8CC6i%2B4Qx%2BxAHjp%2B2TRU7cZS%2FapXlBJxf8B8gS3%2F8Oa8P3MdXQXxPVe9s6Xj8uZXLVTcBigQSk%3D",
           "title": "2025-26 Topps Finest Stephen Curry #74 Common Golden State Warriors",
-          "landed_aud": 34.84,
-          "asking_price": 9.52,
-          "shipping": 25.32,
+          "landed_aud": 34.72,
+          "asking_price": 9.49,
+          "shipping": 25.23,
           "currency": "AUD",
           "card_number": "74",
           "parallel": null,
@@ -396426,9 +396346,9 @@
           "external_id": "v1|306856357186|0",
           "url": "https://www.ebay.com.au/itm/306856357186?_skw=2025-26+Stephen+Curry+Topps+Finest+74&hash=item4772106d42:g:jzkAAeSwLDppzeyH",
           "title": "2025-26 Topps Finest STEPHEN CURRY Warriors #74",
-          "landed_aud": 37.93,
-          "asking_price": 18.25,
-          "shipping": 19.68,
+          "landed_aud": 37.8,
+          "asking_price": 18.19,
+          "shipping": 19.61,
           "currency": "AUD",
           "card_number": "74",
           "parallel": null,
