@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-04T06:08:58.017863+00:00",
+  "generated_at": "2026-10-04T12:38:56.319047+00:00",
   "feed_type": "EXACT_CARD_STORE_COMPARISON_ONLY",
   "pricing_basis": "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE",
   "governance": {
@@ -19,7 +19,7 @@
     "title_discriminator_guard_reused_for_nfl": true
   },
   "metrics": {
-    "active_cards_scanned": 3929,
+    "active_cards_scanned": 3931,
     "exact_comparison_groups": 624,
     "exact_comparison_listings": 4647,
     "previous_exact_groups": 624,
@@ -6497,7 +6497,7 @@
     {
       "source": "ebay",
       "external_id": "v1|356384056552|0",
-      "url": "https://www.ebay.com.au/itm/356384056552?_skw=2018+Trae+Young+Donruss+198+PSA+10&hash=item52fa2524e8:g:X3AAAOSwModnYlMI&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGYDspwPvHJne%2BJL84Eein%2BTbJWyynw81cGallKcfaZ2hwIlryrh%2BCmdxob6f6AZsA%2Fi%2BjpU1Z517kxerqvx4P%2FrKNzhDf5HVwKPqmeerqZysExpOSc5IbLWv2aYNH4Hwc1R0xXL417pY0t6EFXWPNQJ9k4UvJJ3Iy2%2F7LXk%2BGMSvNZMA5AmqSi2PBxb5MQLEvGAyLbCQyKvaUARMCvNo4LzTgnfQlAq7A6dMjqrTjmUzpgT9zvPp4H%2FZftvTbVhLdUIfWAidK3LcHL3G2yinsK2%2BtBEU0%2FQ23VXG%2BpRwFqo6iAzspxrGYnil%2FbvTAlItMo%3D",
+      "url": "https://www.ebay.com.au/itm/356384056552?_skw=2018+Trae+Young+Donruss+198+PSA+10&hash=item52fa2524e8:g:X3AAAOSwModnYlMI&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGYDspwPvHJne%2BJL84Eein%2BTbJWyynw81cGallKcfaZ2hwIlryrh%2BCmdxob6f6AZsA%2Fi%2BjpU1Z517kxerqvx4P%2FrKNzhDf5HVwKPqmeerqZysExpOSc5IbLWv2aYNH4Hwc2kKM7mBWP4%2BLpb3icPGwNOLlPLlgPuNIG7lHWBbeKL8FYscD6LjdONBuETClg%2FNmmx2hR7b69HqktW%2BKulmwxQ9fEPYP0kvfMVWS2bCT8KUkYPu8UKCwXbyOJ4unSKMCIpbT%2F3oF63%2FdryoKlGkojlCoLSyCdsY%2F%2BWV8J4TmHJJGgX09YtQHo4uYU8MFzAptg%3D",
       "image_url": "https://i.ebayimg.com/images/g/X3AAAOSwModnYlMI/s-l225.jpg",
       "title": "Trae Young 2018 Panini Donruss Rated Rookie #198 PSA 10",
       "sport": "NBA",
@@ -269537,7 +269537,7 @@
     {
       "source": "ebay",
       "external_id": "v1|397287441924|0",
-      "url": "https://www.ebay.com.au/itm/397287441924?_skw=2018+Trae+Young+Donruss+198+PSA+10&hash=item5c802d4604:g:JwQAAOSwMUdl~EDY&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGaor1kWDxMIs8bowgaCH24j1PVbZAo290rOVhZHzM7lp0QGQylWq41edKAqkYGQMAOvb60itYvXIjfYPC068QaeNFLvhSlriP1f%2FzlJn5ZK3%2FDQsH802mI%2Fssg7oLTsOvtVWpXxaAnd5BPNqcHL9XrM4m0qc3J7Ax3pWsoH8Ybo14aQhnaUO6G2lRxupU9Kpaj6XurHVPg1N%2B%2BhSFDPo3f%2BDfsmAUeLCot4xrs2a%2BIZrbtzRRqa54KfZGF0w%2FkQpcp4f93Ztr8YK7RIZZicgiuxhOKWIWyl1elBdm6kwCiT%2Bs8u%2BrExvR%2BWs%2BbSuGG1DBo%3D",
+      "url": "https://www.ebay.com.au/itm/397287441924?_skw=2018+Trae+Young+Donruss+198+PSA+10&hash=item5c802d4604:g:JwQAAOSwMUdl~EDY&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGaor1kWDxMIs8bowgaCH24j1PVbZAo290rOVhZHzM7lp0QGQylWq41edKAqkYGQMAOvb60itYvXIjfYPC068QaeNFLvhSlriP1f%2FzlJn5ZK3%2FDQsH802mI%2Fssg7oLTsOvteHNU5jNKHo8h1RdtkR9c8N3X2lqHnKaujahz4sDkfwo5xmDJ6KTosA5lPc%2FVJ4WDx5jGivgGM9r7HV57VQDI2e83%2FBXEMz8F9k1%2BEYoa5TAkD%2FWUCNOqNxJ2kcNnhq9ulN6wfbI2Rh5KekB847nOryPjtomWo5d6OtIJmlvAZ6VrKCV3p3b%2Bhst3cI%2F7YC6g%3D",
       "image_url": "https://i.ebayimg.com/images/g/JwQAAOSwMUdl~EDY/s-l225.jpg",
       "title": "2018 Panini Donruss Trae Young Rated Rookie RC #198 PSA 10 Gem Mint Hawks",
       "sport": "NBA",
@@ -277792,7 +277792,7 @@
     {
       "source": "ebay",
       "external_id": "v1|198372305627|0",
-      "url": "https://www.ebay.com.au/itm/198372305627?_skw=2025-26+Cooper+Flagg+Topps+Finest+1&hash=item2e2fe92adb:g:mREAAeSw-jZqD~pk&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGaNmxB1ERJ%2BwEDyeyc7WeDROIVBhkIlvQHIcni0rnHz9NdBLp6uoZoT999efT3uuT06aoZw4hJAbSKLInos4l3%2BgOURJQCfL6QxgsXZDv0DYSUWWXIUkbB7zvNU1b8xA7kEk7AqC4ZugX8keEMmaw5tVMreSgHdG9mAKOUFiF0bX5dQiUKurDDIZxKQRzF3YmCxmOgze7zGeapw8j5lVK0vJ0vOPlFgOMnimyLHk8bK1%2Fi4HicZLGXn%2FSNQ2YKY7S5crk5%2BMTmrXaqHs%2BA3OcmS70x1ZrdZmY9W2dYTMPswEZSRHT%2FGP%2B%2BiLYILNlkUtGU%3D",
+      "url": "https://www.ebay.com.au/itm/198372305627?_skw=2025-26+Cooper+Flagg+Topps+Finest+1&hash=item2e2fe92adb:g:mREAAeSw-jZqD~pk&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGaNmxB1ERJ%2BwEDyeyc7WeDROIVBhkIlvQHIcni0rnHz9NdBLp6uoZoT999efT3uuT06aoZw4hJAbSKLInos4l3%2BgOURJQCfL6QxgsXZDv0DYSUWWXIUkbB7zvNU1b8xA7kDOfLKoa22w0W3YjmXl8%2Bxnt0dGnGFyBzUogOPQdo1aGnKEfKBo9EKwEyGXCFbWtSIwHS4hU9ZWeOsYo5avGacsUaoZO%2FjkniOea7OBhyU%2BdlBqf8mQaaCZGo8oQ5HXQESx2%2FqVUoNyt0H314t6qRhLXSgRP2XkrC6kP0jsQeo1KKOWQvnxWae6dXRFrDt9xc%3D",
       "image_url": "https://i.ebayimg.com/images/g/mREAAeSw-jZqD~pk/s-l225.jpg",
       "title": "2025-26 Topps Finest Cooper Flagg Common Base  Arrivals RC Mavericks #1 #A-1 Lot",
       "sport": "NBA",
@@ -278332,7 +278332,7 @@
     {
       "source": "ebay",
       "external_id": "v1|168558357885|0",
-      "url": "https://www.ebay.com.au/itm/168558357885?_skw=2025-26+Stephen+Curry+Topps+Finest+74&hash=item273edc6d7d:g:ujIAAeSwvPRp4o6G&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGYgmulxo4UZZTlgajAwqelf4YLhp4nNH5WUD1Ry1%2F0fZDxt27NU9miexC5yzdI4aMBDCdvG93b9XeBY6uxnz6BWQF9czTLeu3KuHzrzB0JXC8xWCIlTUp8zdVkAxHeKxqUbxhIeigcAwH5h1hmnM9BPwlwAwYeXopUDCGpfKCAQQgyhCOA0Oky5e8jtENxuiY6oYstir6DUhllM%2Fp1uKA3G79Hmd0y1%2BcUZRmwVaKBuyiipdLSURc2O%2BF3MxmdIuPzkGcWpZyVif%2FH6dcLbeUORO7k9uImhouL9%2BY4ACMtLFfqdBof8sw6NV3qz7RFm3Ho%3D",
+      "url": "https://www.ebay.com.au/itm/168558357885?_skw=2025-26+Stephen+Curry+Topps+Finest+74&hash=item273edc6d7d:g:ujIAAeSwvPRp4o6G&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGYgmulxo4UZZTlgajAwqelfbyTlx2QVGkTmmN%2F4PUvqdseeGYNOYrvcQZASwuxVjno85ZLRWr%2BUeVndzGrNQ37J%2BpZFQK7wrCp7%2BluS%2BENL0TI9htYqLrpATvKNWH78W%2FpNaHBdnbF%2FKqyUWt1x0ONeOz8SUdbVxD8h00sOAsY8X%2BaU7GjSeSrw1opfn%2FojG2rJ7bffefcn8cd0w1QXnD4fzH1vcqVvmz%2B1Q20XegxnKJxRGON1Td6jOcZusJPj1KN%2BO2XUjVSu1s3hshu5lGIMpnXrv4xDGnjCmrUwAFoBP4V0viXkR0g6TsPVRempC60%3D",
       "image_url": "https://i.ebayimg.com/images/g/ujIAAeSwvPRp4o6G/s-l225.jpg",
       "title": "Stephen Curry #74 2025-26 Topps Finest Common Golden State Warriors",
       "sport": "NBA",
@@ -278391,7 +278391,7 @@
     {
       "source": "ebay",
       "external_id": "v1|377410637163|0",
-      "url": "https://www.ebay.com.au/itm/377410637163?_skw=2025-26+Stephen+Curry+Topps+Finest+74&hash=item57df6d4d6b:g:7bcAAeSw9jhqe0xd&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGYGIOPNqWr2pAjx8BR7fFGYklAiMbwFhJKTw4JlVOg6N3%2FkF9%2BPf%2FST%2B%2B4ZlOyLCuX%2BrMcDK2svgVL8hP6U6AGaZCUeIlxx9eeIWou2Plz8%2FZi4TutU59l0o8x%2Fulaom2%2F44SWxR%2FQW5nRGhyS3n%2BoNbo5S2YWkcj7CHUJ2DJKBAr%2FG7zWpgcBTPsN%2FPLKrohipIu0Cg1cfQ05awu4hYt93VN2%2FUimwtd5Dcyz3wBnst4eKIxu%2FkGYJwuINnbtorMFy6RYKTrQh4V%2Bz8dQnPQBVQ0uXmVDGXWnD1y6%2FJS9LP4LQfxtUQC05U73yJbZj2L0%3D",
+      "url": "https://www.ebay.com.au/itm/377410637163?_skw=2025-26+Stephen+Curry+Topps+Finest+74&hash=item57df6d4d6b:g:7bcAAeSw9jhqe0xd&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGYGIOPNqWr2pAjx8BR7fFGYklAiMbwFhJKTw4JlVOg6N3%2FkF9%2BPf%2FST%2B%2B4ZlOyLCuX%2BrMcDK2svgVL8hP6U6AGaZCUeIlxx9eeIWou2Plz8%2FZi4TutU59l0o8x%2Fulaom2%2FaIYLJDet0Rm%2B0YqvTlbi8ZuYFRetpieOPPTNQselwMckrYBjkVAtT%2B7N9QKzHerZJ9BZALvo6uQCZi302ZMy0Jy9GryJoTotZCHv%2FsIDy8W6%2BmXSSwdzJ9ejVA2yW2cO6hkKNikSqaBsXQAhep9FF5se2xNx4bTlDb02pFlLu8GIRSQSIMV4acXw%2F0CpEpz4%3D",
       "image_url": "https://i.ebayimg.com/images/g/7bcAAeSw9jhqe0xd/s-l225.jpg",
       "title": "2025-26 Topps Finest Stephen Curry Base Common #74",
       "sport": "NBA",
@@ -279117,67 +279117,6 @@
       "shipping": 34.0,
       "currency": "AUD",
       "landed_aud": 113.07,
-      "identity": {
-        "player": "Trae Young",
-        "year": "2018",
-        "brand": "Donruss",
-        "set_name": "Donruss",
-        "card_number": "198",
-        "parallel": null,
-        "serial_current": null,
-        "serial_total": null,
-        "grader": "PSA",
-        "grade": 10.0,
-        "autograph": false,
-        "memorabilia": false,
-        "rookie": true
-      },
-      "card_family": {
-        "key": "cf_a6cc91510f4748f343ae",
-        "eligible": true,
-        "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
-        "match_confidence": 1.0,
-        "match_reasons": [
-          "same player",
-          "same year",
-          "same brand/product",
-          "same card number",
-          "same grading state",
-          "same rookie state"
-        ],
-        "canonical_components": {
-          "sport": "nba",
-          "player": "traeyoung",
-          "year": "2018",
-          "brand": "donruss",
-          "product": "donruss",
-          "card_number": "198",
-          "parallel": "",
-          "serial_total": "",
-          "grader": "psa",
-          "grade": "10",
-          "autograph": "0",
-          "memorabilia": "0",
-          "rookie": "1"
-        }
-      },
-      "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
-      "fx_status": "AUD_NATIVE",
-      "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-04"
-    },
-    {
-      "source": "ebay",
-      "external_id": "v1|394795875345|0",
-      "url": "https://www.ebay.com.au/itm/394795875345?_skw=2018+Trae+Young+Donruss+198+PSA+10&hash=item5bebaafc11:g:ZCEAAOSwjQVk0Dn5",
-      "image_url": "https://i.ebayimg.com/images/g/ZCEAAOSwjQVk0Dn5/s-l225.jpg",
-      "title": "2018 Trae Young Panini Donruss Rated Rookie #198 RC PSA 10 GEM MINT Heat",
-      "sport": "NBA",
-      "asking_price": 39.46,
-      "shipping": 25.2,
-      "currency": "AUD",
-      "landed_aud": 64.66,
       "identity": {
         "player": "Trae Young",
         "year": "2018",
@@ -279958,7 +279897,7 @@
     {
       "source": "ebay",
       "external_id": "v1|860002123914|0",
-      "url": "https://www.ebay.com.au/itm/860002123914?_skw=2025-26+Cooper+Flagg+Topps+Finest+1&hash=itemc83c1f008a:g:J6oAAeSw7pFp99C8&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGbZ8Zy37ZkwTIfM1jfJ8ncSjyRckm2X%2BqBwCUuW6lnlueXrcNobr2lV2H1abD8LSQoJ00aQ4tjwPwqhhD%2Fm3mO8P3ut2u%2FUqlCdmNEjUo%2Fh3mPo29j2iYnDYDynjvx0JPCp0VxT0IiDpMdqSCJQxSIDm7HVNGB94V1Y%2FYA16W5FTgEUL8P7j%2F3nEaUurmzPiJpRjgK0qgulEii6AbkQoKZg1cXRwdM5aOHYxIdUc8HU0jIUroU0DsJQnaCyQD3wHKViWJf22p4jjcaqsYoxwtJisGNPijFlp%2FwjGR1IxJp2F674AzLi1ExuMIKxIQ2IdkY%3D",
+      "url": "https://www.ebay.com.au/itm/860002123914?_skw=2025-26+Cooper+Flagg+Topps+Finest+1&hash=itemc83c1f008a:g:J6oAAeSw7pFp99C8&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGbZ8Zy37ZkwTIfM1jfJ8ncSjyRckm2X%2BqBwCUuW6lnlueXrcNobr2lV2H1abD8LSQoJ00aQ4tjwPwqhhD%2Fm3mO8P3ut2u%2FUqlCdmNEjUo%2Fh3mPo29j2iYnDYDynjvx0JPC9bCytA%2FWYV7gD5u9lvOMnTsD0bIp%2FYSuXAG03kdcuCg0Cl80%2By3nU7Bv6KfCByFp5y5lttYeEsjshsXdmtBu6iwnmp7AXpAgJENukCIglZtExSCur5i4UfIPsnNdaSlWMtnqYixalrQsikq0itMpy3lUOcnH8rnb7ZDZpw7DqsCgG0dgnH074XhWEWCwWdwk%3D",
       "image_url": "https://i.ebayimg.com/images/g/J6oAAeSw7pFp99C8/s-l225.jpg",
       "title": "2025-26 Topps Finest Cooper Flagg RC #1 (Common) Dallas Mavericks🔥",
       "sport": "NBA",
@@ -280018,7 +279957,7 @@
     {
       "source": "ebay",
       "external_id": "v1|860002123970|0",
-      "url": "https://www.ebay.com.au/itm/860002123970?_skw=2025-26+Stephen+Curry+Topps+Finest+74&hash=itemc83c1f00c2:g:DhUAAeSwI0FpsKRp&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGYtQYQLsOanKpTyuLSxcxaA74%2F%2BjPIOL0E0bmVA576MJbBAu6rWopiUHYD9tTLHKoLNsZPEZZ2eW56tGh077r0Ig8O4JM6Sc94U302QYgppdgX8hF%2BRZmAYPfUtjb%2B6bwtMCh8ygETn4l2AScYevJmWTbC1Y85oWn3iqql0BHGlvXF292POQnALcQ0cspsrbE9opxskqbmYZP6MOYzqQZvM7k2KpUVIYXzIwt7qFaW9XD1vGhZ329rHGjAHnUmt0nSRn6Y1nvPD6vKfNuaBKfMto9bogUdoQL07JgYr4nhRrkmLHyw8bJcHaiPz3f0cY%2FQ%3D",
+      "url": "https://www.ebay.com.au/itm/860002123970?_skw=2025-26+Stephen+Curry+Topps+Finest+74&hash=itemc83c1f00c2:g:DhUAAeSwI0FpsKRp&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGYtQYQLsOanKpTyuLSxcxaA74%2F%2BjPIOL0E0bmVA576MJbBAu6rWopiUHYD9tTLHKoLNsZPEZZ2eW56tGh077r0Ig8O4JM6Sc94U302QYgppdgX8hF%2BRZmAYPfUtjb%2B6bwsfU5C%2F8XcaKtQvJ6TCHOMuISxkXRFnM%2FWNxOFsY3w6XgysES4AZONI1N96rb1qh8JqPkQzxGrZbIDV61V2O6cOhZjV5NqFrm28z8s0j44XoMKV41G5dzAzDk16F5J%2BbWbducAh2udqaMqI5AsV4YsVtoxfuIqyH9uENpNsqjV6yj8rbFo36cexCESwc87H%2Fag%3D",
       "image_url": "https://i.ebayimg.com/images/g/DhUAAeSwI0FpsKRp/s-l225.jpg",
       "title": "2025-26 Topps Finest Stephen Curry #74 Common Golden State Warriors",
       "sport": "NBA",
@@ -280364,6 +280303,67 @@
           "autograph": "0",
           "memorabilia": "0",
           "rookie": "0"
+        }
+      },
+      "history": null,
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-10-04"
+    },
+    {
+      "source": "ebay",
+      "external_id": "v1|336548676498|0",
+      "url": "https://www.ebay.com.au/itm/336548676498?_skw=2018+Trae+Young+Donruss+198+PSA+10&hash=item4e5bdd4392:g:9eYAAOSwf1lkVt0C",
+      "image_url": "https://i.ebayimg.com/images/g/9eYAAOSwf1lkVt0C/s-l225.jpg",
+      "title": "2018 Donruss Trae Young Rated Rookie #198 Hawks PSA 10 GEM 💎 🔥",
+      "sport": "NBA",
+      "asking_price": 47.43,
+      "shipping": 31.56,
+      "currency": "AUD",
+      "landed_aud": 78.99,
+      "identity": {
+        "player": "Trae Young",
+        "year": "2018",
+        "brand": "Donruss",
+        "set_name": "Donruss",
+        "card_number": "198",
+        "parallel": null,
+        "serial_current": null,
+        "serial_total": null,
+        "grader": "PSA",
+        "grade": 10.0,
+        "autograph": false,
+        "memorabilia": false,
+        "rookie": true
+      },
+      "card_family": {
+        "key": "cf_a6cc91510f4748f343ae",
+        "eligible": true,
+        "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
+        "match_confidence": 1.0,
+        "match_reasons": [
+          "same player",
+          "same year",
+          "same brand/product",
+          "same card number",
+          "same grading state",
+          "same rookie state"
+        ],
+        "canonical_components": {
+          "sport": "nba",
+          "player": "traeyoung",
+          "year": "2018",
+          "brand": "donruss",
+          "product": "donruss",
+          "card_number": "198",
+          "parallel": "",
+          "serial_total": "",
+          "grader": "psa",
+          "grade": "10",
+          "autograph": "0",
+          "memorabilia": "0",
+          "rookie": "1"
         }
       },
       "history": null,
@@ -281403,7 +281403,7 @@
         "ebay"
       ],
       "lowest_active_ask_aud": 49.99,
-      "median_active_ask_aud": 71.69,
+      "median_active_ask_aud": 72.95,
       "highest_active_ask_aud": 127.83,
       "spread_aud": 77.84,
       "spread_pct": 155.71,
@@ -281415,8 +281415,8 @@
       "next_best_landed_aud": 49.99,
       "saving_vs_next_best_aud": 0.0,
       "saving_vs_next_best_pct": 0.0,
-      "saving_vs_median_aud": 21.7,
-      "saving_vs_median_pct": 30.27,
+      "saving_vs_median_aud": 22.96,
+      "saving_vs_median_pct": 31.47,
       "saving_vs_highest_aud": 77.84,
       "saving_vs_highest_pct": 60.89,
       "listings": [
@@ -281517,25 +281517,6 @@
         },
         {
           "source": "ebay",
-          "external_id": "v1|394795875345|0",
-          "url": "https://www.ebay.com.au/itm/394795875345?_skw=2018+Trae+Young+Donruss+198+PSA+10&hash=item5bebaafc11:g:ZCEAAOSwjQVk0Dn5",
-          "title": "2018 Trae Young Panini Donruss Rated Rookie #198 RC PSA 10 GEM MINT Heat",
-          "landed_aud": 64.66,
-          "asking_price": 39.46,
-          "shipping": 25.2,
-          "currency": "AUD",
-          "card_number": "198",
-          "parallel": null,
-          "serial_total": null,
-          "grader": "PSA",
-          "grade": 10.0,
-          "rookie": true,
-          "autograph": false,
-          "memorabilia": false,
-          "title_guard": ""
-        },
-        {
-          "source": "ebay",
           "external_id": "v1|257737431002|0",
           "url": "https://www.ebay.com.au/itm/257737431002?_skw=2018+Trae+Young+Donruss+198+PSA+10&hash=item3c025917da:g:za0AAeSwdo1qpHrC",
           "title": "2018 Panini Donruss Trae Young Rated Rookie RC #198 PSA 10 Gem Mint Hawks",
@@ -281575,11 +281556,30 @@
         {
           "source": "ebay",
           "external_id": "v1|397287441924|0",
-          "url": "https://www.ebay.com.au/itm/397287441924?_skw=2018+Trae+Young+Donruss+198+PSA+10&hash=item5c802d4604:g:JwQAAOSwMUdl~EDY&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGaor1kWDxMIs8bowgaCH24j1PVbZAo290rOVhZHzM7lp0QGQylWq41edKAqkYGQMAOvb60itYvXIjfYPC068QaeNFLvhSlriP1f%2FzlJn5ZK3%2FDQsH802mI%2Fssg7oLTsOvtVWpXxaAnd5BPNqcHL9XrM4m0qc3J7Ax3pWsoH8Ybo14aQhnaUO6G2lRxupU9Kpaj6XurHVPg1N%2B%2BhSFDPo3f%2BDfsmAUeLCot4xrs2a%2BIZrbtzRRqa54KfZGF0w%2FkQpcp4f93Ztr8YK7RIZZicgiuxhOKWIWyl1elBdm6kwCiT%2Bs8u%2BrExvR%2BWs%2BbSuGG1DBo%3D",
+          "url": "https://www.ebay.com.au/itm/397287441924?_skw=2018+Trae+Young+Donruss+198+PSA+10&hash=item5c802d4604:g:JwQAAOSwMUdl~EDY&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGaor1kWDxMIs8bowgaCH24j1PVbZAo290rOVhZHzM7lp0QGQylWq41edKAqkYGQMAOvb60itYvXIjfYPC068QaeNFLvhSlriP1f%2FzlJn5ZK3%2FDQsH802mI%2Fssg7oLTsOvteHNU5jNKHo8h1RdtkR9c8N3X2lqHnKaujahz4sDkfwo5xmDJ6KTosA5lPc%2FVJ4WDx5jGivgGM9r7HV57VQDI2e83%2FBXEMz8F9k1%2BEYoa5TAkD%2FWUCNOqNxJ2kcNnhq9ulN6wfbI2Rh5KekB847nOryPjtomWo5d6OtIJmlvAZ6VrKCV3p3b%2Bhst3cI%2F7YC6g%3D",
           "title": "2018 Panini Donruss Trae Young Rated Rookie RC #198 PSA 10 Gem Mint Hawks",
           "landed_aud": 73.36,
           "asking_price": 47.43,
           "shipping": 25.93,
+          "currency": "AUD",
+          "card_number": "198",
+          "parallel": null,
+          "serial_total": null,
+          "grader": "PSA",
+          "grade": 10.0,
+          "rookie": true,
+          "autograph": false,
+          "memorabilia": false,
+          "title_guard": ""
+        },
+        {
+          "source": "ebay",
+          "external_id": "v1|336548676498|0",
+          "url": "https://www.ebay.com.au/itm/336548676498?_skw=2018+Trae+Young+Donruss+198+PSA+10&hash=item4e5bdd4392:g:9eYAAOSwf1lkVt0C",
+          "title": "2018 Donruss Trae Young Rated Rookie #198 Hawks PSA 10 GEM 💎 🔥",
+          "landed_aud": 78.99,
+          "asking_price": 47.43,
+          "shipping": 31.56,
           "currency": "AUD",
           "card_number": "198",
           "parallel": null,
@@ -281651,7 +281651,7 @@
         {
           "source": "ebay",
           "external_id": "v1|356384056552|0",
-          "url": "https://www.ebay.com.au/itm/356384056552?_skw=2018+Trae+Young+Donruss+198+PSA+10&hash=item52fa2524e8:g:X3AAAOSwModnYlMI&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGYDspwPvHJne%2BJL84Eein%2BTbJWyynw81cGallKcfaZ2hwIlryrh%2BCmdxob6f6AZsA%2Fi%2BjpU1Z517kxerqvx4P%2FrKNzhDf5HVwKPqmeerqZysExpOSc5IbLWv2aYNH4Hwc1R0xXL417pY0t6EFXWPNQJ9k4UvJJ3Iy2%2F7LXk%2BGMSvNZMA5AmqSi2PBxb5MQLEvGAyLbCQyKvaUARMCvNo4LzTgnfQlAq7A6dMjqrTjmUzpgT9zvPp4H%2FZftvTbVhLdUIfWAidK3LcHL3G2yinsK2%2BtBEU0%2FQ23VXG%2BpRwFqo6iAzspxrGYnil%2FbvTAlItMo%3D",
+          "url": "https://www.ebay.com.au/itm/356384056552?_skw=2018+Trae+Young+Donruss+198+PSA+10&hash=item52fa2524e8:g:X3AAAOSwModnYlMI&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGYDspwPvHJne%2BJL84Eein%2BTbJWyynw81cGallKcfaZ2hwIlryrh%2BCmdxob6f6AZsA%2Fi%2BjpU1Z517kxerqvx4P%2FrKNzhDf5HVwKPqmeerqZysExpOSc5IbLWv2aYNH4Hwc2kKM7mBWP4%2BLpb3icPGwNOLlPLlgPuNIG7lHWBbeKL8FYscD6LjdONBuETClg%2FNmmx2hR7b69HqktW%2BKulmwxQ9fEPYP0kvfMVWS2bCT8KUkYPu8UKCwXbyOJ4unSKMCIpbT%2F3oF63%2FdryoKlGkojlCoLSyCdsY%2F%2BWV8J4TmHJJGgX09YtQHo4uYU8MFzAptg%3D",
           "title": "Trae Young 2018 Panini Donruss Rated Rookie #198 PSA 10",
           "landed_aud": 127.83,
           "asking_price": 94.88,
@@ -395920,7 +395920,7 @@
         {
           "source": "ebay",
           "external_id": "v1|860002123914|0",
-          "url": "https://www.ebay.com.au/itm/860002123914?_skw=2025-26+Cooper+Flagg+Topps+Finest+1&hash=itemc83c1f008a:g:J6oAAeSw7pFp99C8&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGbZ8Zy37ZkwTIfM1jfJ8ncSjyRckm2X%2BqBwCUuW6lnlueXrcNobr2lV2H1abD8LSQoJ00aQ4tjwPwqhhD%2Fm3mO8P3ut2u%2FUqlCdmNEjUo%2Fh3mPo29j2iYnDYDynjvx0JPCp0VxT0IiDpMdqSCJQxSIDm7HVNGB94V1Y%2FYA16W5FTgEUL8P7j%2F3nEaUurmzPiJpRjgK0qgulEii6AbkQoKZg1cXRwdM5aOHYxIdUc8HU0jIUroU0DsJQnaCyQD3wHKViWJf22p4jjcaqsYoxwtJisGNPijFlp%2FwjGR1IxJp2F674AzLi1ExuMIKxIQ2IdkY%3D",
+          "url": "https://www.ebay.com.au/itm/860002123914?_skw=2025-26+Cooper+Flagg+Topps+Finest+1&hash=itemc83c1f008a:g:J6oAAeSw7pFp99C8&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGbZ8Zy37ZkwTIfM1jfJ8ncSjyRckm2X%2BqBwCUuW6lnlueXrcNobr2lV2H1abD8LSQoJ00aQ4tjwPwqhhD%2Fm3mO8P3ut2u%2FUqlCdmNEjUo%2Fh3mPo29j2iYnDYDynjvx0JPC9bCytA%2FWYV7gD5u9lvOMnTsD0bIp%2FYSuXAG03kdcuCg0Cl80%2By3nU7Bv6KfCByFp5y5lttYeEsjshsXdmtBu6iwnmp7AXpAgJENukCIglZtExSCur5i4UfIPsnNdaSlWMtnqYixalrQsikq0itMpy3lUOcnH8rnb7ZDZpw7DqsCgG0dgnH074XhWEWCwWdwk%3D",
           "title": "2025-26 Topps Finest Cooper Flagg RC #1 (Common) Dallas Mavericks🔥",
           "landed_aud": 101.46,
           "asking_price": 71.16,
@@ -395939,7 +395939,7 @@
         {
           "source": "ebay",
           "external_id": "v1|198372305627|0",
-          "url": "https://www.ebay.com.au/itm/198372305627?_skw=2025-26+Cooper+Flagg+Topps+Finest+1&hash=item2e2fe92adb:g:mREAAeSw-jZqD~pk&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGaNmxB1ERJ%2BwEDyeyc7WeDROIVBhkIlvQHIcni0rnHz9NdBLp6uoZoT999efT3uuT06aoZw4hJAbSKLInos4l3%2BgOURJQCfL6QxgsXZDv0DYSUWWXIUkbB7zvNU1b8xA7kEk7AqC4ZugX8keEMmaw5tVMreSgHdG9mAKOUFiF0bX5dQiUKurDDIZxKQRzF3YmCxmOgze7zGeapw8j5lVK0vJ0vOPlFgOMnimyLHk8bK1%2Fi4HicZLGXn%2FSNQ2YKY7S5crk5%2BMTmrXaqHs%2BA3OcmS70x1ZrdZmY9W2dYTMPswEZSRHT%2FGP%2B%2BiLYILNlkUtGU%3D",
+          "url": "https://www.ebay.com.au/itm/198372305627?_skw=2025-26+Cooper+Flagg+Topps+Finest+1&hash=item2e2fe92adb:g:mREAAeSw-jZqD~pk&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGaNmxB1ERJ%2BwEDyeyc7WeDROIVBhkIlvQHIcni0rnHz9NdBLp6uoZoT999efT3uuT06aoZw4hJAbSKLInos4l3%2BgOURJQCfL6QxgsXZDv0DYSUWWXIUkbB7zvNU1b8xA7kDOfLKoa22w0W3YjmXl8%2Bxnt0dGnGFyBzUogOPQdo1aGnKEfKBo9EKwEyGXCFbWtSIwHS4hU9ZWeOsYo5avGacsUaoZO%2FjkniOea7OBhyU%2BdlBqf8mQaaCZGo8oQ5HXQESx2%2FqVUoNyt0H314t6qRhLXSgRP2XkrC6kP0jsQeo1KKOWQvnxWae6dXRFrDt9xc%3D",
           "title": "2025-26 Topps Finest Cooper Flagg Common Base  Arrivals RC Mavericks #1 #A-1 Lot",
           "landed_aud": 126.48,
           "asking_price": 110.68,
@@ -396366,7 +396366,7 @@
         {
           "source": "ebay",
           "external_id": "v1|377410637163|0",
-          "url": "https://www.ebay.com.au/itm/377410637163?_skw=2025-26+Stephen+Curry+Topps+Finest+74&hash=item57df6d4d6b:g:7bcAAeSw9jhqe0xd&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGYGIOPNqWr2pAjx8BR7fFGYklAiMbwFhJKTw4JlVOg6N3%2FkF9%2BPf%2FST%2B%2B4ZlOyLCuX%2BrMcDK2svgVL8hP6U6AGaZCUeIlxx9eeIWou2Plz8%2FZi4TutU59l0o8x%2Fulaom2%2F44SWxR%2FQW5nRGhyS3n%2BoNbo5S2YWkcj7CHUJ2DJKBAr%2FG7zWpgcBTPsN%2FPLKrohipIu0Cg1cfQ05awu4hYt93VN2%2FUimwtd5Dcyz3wBnst4eKIxu%2FkGYJwuINnbtorMFy6RYKTrQh4V%2Bz8dQnPQBVQ0uXmVDGXWnD1y6%2FJS9LP4LQfxtUQC05U73yJbZj2L0%3D",
+          "url": "https://www.ebay.com.au/itm/377410637163?_skw=2025-26+Stephen+Curry+Topps+Finest+74&hash=item57df6d4d6b:g:7bcAAeSw9jhqe0xd&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGYGIOPNqWr2pAjx8BR7fFGYklAiMbwFhJKTw4JlVOg6N3%2FkF9%2BPf%2FST%2B%2B4ZlOyLCuX%2BrMcDK2svgVL8hP6U6AGaZCUeIlxx9eeIWou2Plz8%2FZi4TutU59l0o8x%2Fulaom2%2FaIYLJDet0Rm%2B0YqvTlbi8ZuYFRetpieOPPTNQselwMckrYBjkVAtT%2B7N9QKzHerZJ9BZALvo6uQCZi302ZMy0Jy9GryJoTotZCHv%2FsIDy8W6%2BmXSSwdzJ9ejVA2yW2cO6hkKNikSqaBsXQAhep9FF5se2xNx4bTlDb02pFlLu8GIRSQSIMV4acXw%2F0CpEpz4%3D",
           "title": "2025-26 Topps Finest Stephen Curry Base Common #74",
           "landed_aud": 21.93,
           "asking_price": 3.57,
@@ -396442,7 +396442,7 @@
         {
           "source": "ebay",
           "external_id": "v1|168558357885|0",
-          "url": "https://www.ebay.com.au/itm/168558357885?_skw=2025-26+Stephen+Curry+Topps+Finest+74&hash=item273edc6d7d:g:ujIAAeSwvPRp4o6G&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGYgmulxo4UZZTlgajAwqelf4YLhp4nNH5WUD1Ry1%2F0fZDxt27NU9miexC5yzdI4aMBDCdvG93b9XeBY6uxnz6BWQF9czTLeu3KuHzrzB0JXC8xWCIlTUp8zdVkAxHeKxqUbxhIeigcAwH5h1hmnM9BPwlwAwYeXopUDCGpfKCAQQgyhCOA0Oky5e8jtENxuiY6oYstir6DUhllM%2Fp1uKA3G79Hmd0y1%2BcUZRmwVaKBuyiipdLSURc2O%2BF3MxmdIuPzkGcWpZyVif%2FH6dcLbeUORO7k9uImhouL9%2BY4ACMtLFfqdBof8sw6NV3qz7RFm3Ho%3D",
+          "url": "https://www.ebay.com.au/itm/168558357885?_skw=2025-26+Stephen+Curry+Topps+Finest+74&hash=item273edc6d7d:g:ujIAAeSwvPRp4o6G&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGYgmulxo4UZZTlgajAwqelfbyTlx2QVGkTmmN%2F4PUvqdseeGYNOYrvcQZASwuxVjno85ZLRWr%2BUeVndzGrNQ37J%2BpZFQK7wrCp7%2BluS%2BENL0TI9htYqLrpATvKNWH78W%2FpNaHBdnbF%2FKqyUWt1x0ONeOz8SUdbVxD8h00sOAsY8X%2BaU7GjSeSrw1opfn%2FojG2rJ7bffefcn8cd0w1QXnD4fzH1vcqVvmz%2B1Q20XegxnKJxRGON1Td6jOcZusJPj1KN%2BO2XUjVSu1s3hshu5lGIMpnXrv4xDGnjCmrUwAFoBP4V0viXkR0g6TsPVRempC60%3D",
           "title": "Stephen Curry #74 2025-26 Topps Finest Common Golden State Warriors",
           "landed_aud": 31.27,
           "asking_price": 14.69,
@@ -396461,7 +396461,7 @@
         {
           "source": "ebay",
           "external_id": "v1|860002123970|0",
-          "url": "https://www.ebay.com.au/itm/860002123970?_skw=2025-26+Stephen+Curry+Topps+Finest+74&hash=itemc83c1f00c2:g:DhUAAeSwI0FpsKRp&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGYtQYQLsOanKpTyuLSxcxaA74%2F%2BjPIOL0E0bmVA576MJbBAu6rWopiUHYD9tTLHKoLNsZPEZZ2eW56tGh077r0Ig8O4JM6Sc94U302QYgppdgX8hF%2BRZmAYPfUtjb%2B6bwtMCh8ygETn4l2AScYevJmWTbC1Y85oWn3iqql0BHGlvXF292POQnALcQ0cspsrbE9opxskqbmYZP6MOYzqQZvM7k2KpUVIYXzIwt7qFaW9XD1vGhZ329rHGjAHnUmt0nSRn6Y1nvPD6vKfNuaBKfMto9bogUdoQL07JgYr4nhRrkmLHyw8bJcHaiPz3f0cY%2FQ%3D",
+          "url": "https://www.ebay.com.au/itm/860002123970?_skw=2025-26+Stephen+Curry+Topps+Finest+74&hash=itemc83c1f00c2:g:DhUAAeSwI0FpsKRp&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGYtQYQLsOanKpTyuLSxcxaA74%2F%2BjPIOL0E0bmVA576MJbBAu6rWopiUHYD9tTLHKoLNsZPEZZ2eW56tGh077r0Ig8O4JM6Sc94U302QYgppdgX8hF%2BRZmAYPfUtjb%2B6bwsfU5C%2F8XcaKtQvJ6TCHOMuISxkXRFnM%2FWNxOFsY3w6XgysES4AZONI1N96rb1qh8JqPkQzxGrZbIDV61V2O6cOhZjV5NqFrm28z8s0j44XoMKV41G5dzAzDk16F5J%2BbWbducAh2udqaMqI5AsV4YsVtoxfuIqyH9uENpNsqjV6yj8rbFo36cexCESwc87H%2Fag%3D",
           "title": "2025-26 Topps Finest Stephen Curry #74 Common Golden State Warriors",
           "landed_aud": 34.72,
           "asking_price": 9.49,
