@@ -26,11 +26,11 @@
     "fresh_exact_groups": 82,
     "retained_previous_groups_missing_from_fresh": 803,
     "previous_groups_lost": 0,
-    "production_groups_before_nfl_merge": 885,
-    "production_listings_before_nfl_merge": 5431,
-    "staged_nfl_exact_groups_seen": 3,
-    "staged_nfl_groups_added": 1,
-    "staged_nfl_listings_added": 2,
+    "production_groups_before_nfl_merge": 886,
+    "production_listings_before_nfl_merge": 5433,
+    "staged_nfl_exact_groups_seen": 0,
+    "staged_nfl_groups_added": 0,
+    "staged_nfl_listings_added": 0,
     "production_groups_lost": 0
   },
   "market_cards": [
