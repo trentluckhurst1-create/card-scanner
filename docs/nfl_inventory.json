@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-10T06:23:04.875959+00:00",
+  "generated_at": "2026-10-10T13:03:18.345915+00:00",
   "feed_type": "NFL_DEEP_INVENTORY_STAGING",
   "pricing_basis": "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE",
   "display_currency": "AUD",
@@ -18,18 +18,18 @@
     "ebay_discovery_requires_exact_signature": true
   },
   "metrics": {
-    "active_cards": 70,
+    "active_cards": 82,
     "stores_considered": 10,
-    "stores_searched": 5,
-    "store_error_count": 5,
-    "comparison_groups": 0,
-    "exact_matches": 0,
+    "stores_searched": 6,
+    "store_error_count": 4,
+    "comparison_groups": 3,
+    "exact_matches": 2,
     "same_product_variants": 0,
-    "player_year_markets": 0,
+    "player_year_markets": 1,
     "foreign_currency_cards": 0,
     "fx_converted_cards": 0,
-    "retained_ebay_cards": 70,
-    "expired_ebay_cards": 0,
+    "retained_ebay_cards": 65,
+    "expired_ebay_cards": 5,
     "ebay_enabled": true,
     "ebay_targets": 0,
     "ebay_queries": 0,
@@ -39,288 +39,36 @@
     "ebay_errors": 0
   },
   "by_source": {
-    "ebay": 70
+    "boop": 17,
+    "ebay": 65
   },
   "by_sport": {
-    "NFL": 70
+    "NFL": 82
   },
   "store_errors": [
     "NFL: Cherry: HTTPStatusError: Client error '429 Too Many Requests' for url 'https://www.cherrycollectables.com.au/collections/nfl-singles/products.json?limit=250&page=1'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
     "NFL: Gimko: HTTPStatusError: Client error '403 Forbidden' for url 'https://www.gimko.com.au/categories.php?item_type=buy_out&page_url=categories&category=nfl-football-cards&parent_id=1922&limit=50&start=0'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403",
     "NFL: Urban Empire: HTTPStatusError: Client error '429 Too Many Requests' for url 'https://urbanempirecollectables.com/collections/nfl-singles/products.json?limit=250&page=1'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
-    "NFL: The Hobby: HTTPStatusError: Client error '429 Too Many Requests' for url 'https://thehobby.com.au/collections/nfl/products.json?limit=250&page=1'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
-    "NFL: Boop Collectables: HTTPStatusError: Client error '429 Too Many Requests' for url 'https://www.boopcollectables.com.au/collections/nfl-singles/products.json?limit=250&page=1'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+    "NFL: The Hobby: HTTPStatusError: Client error '429 Too Many Requests' for url 'https://thehobby.com.au/collections/nfl/products.json?limit=250&page=1'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
   ],
   "market_cards": [
     {
-      "source": "ebay",
-      "external_id": "v1|257755171301|0",
-      "url": "https://www.ebay.com.au/itm/257755171301?_skw=2025+Cam+Ward+Panini+Donruss+Optic+1+Black+%2F149&hash=item3c0367c9e5:g:w5cAAeSwS7ZqncvQ",
-      "image_url": "https://i.ebayimg.com/images/g/w5cAAeSwS7ZqncvQ/s-l225.jpg",
-      "title": "2025 Panini Donruss Optic CAM WARD #1 2015 Retro Black Pandora Rookie 85/149",
+      "source": "boop",
+      "external_id": "15228824092838",
+      "url": "https://www.boopcollectables.com.au/products/21656",
+      "image_url": "https://cdn.shopify.com/s/files/1/0412/4190/3270/files/Cards_0013_ahtpae.jpg?v=1770281147",
+      "title": "Bo Nix 2024 Panini Donruss Oversized Jumbo Downtown RC",
       "sport": "NFL",
-      "asking_price": 102.7,
-      "shipping": 34.44,
+      "asking_price": 160.0,
+      "shipping": 0.0,
       "currency": "AUD",
-      "landed_aud": 137.14,
+      "landed_aud": 160.0,
       "identity": {
-        "player": "Cam Ward",
-        "year": "2025",
-        "brand": "Panini Donruss Optic",
-        "set_name": "Panini Donruss Optic",
-        "card_number": "1",
-        "parallel": "Black",
-        "serial_current": 85,
-        "serial_total": 149,
-        "grader": null,
-        "grade": null,
-        "autograph": false,
-        "memorabilia": false,
-        "rookie": true
-      },
-      "card_family": {
-        "key": "cf_fdcf846365bfe3ddb6eb",
-        "eligible": true,
-        "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
-        "match_confidence": 1.0,
-        "match_reasons": [
-          "same player",
-          "same year",
-          "same brand/product",
-          "same card number",
-          "same parallel",
-          "same serial denominator",
-          "same rookie state"
-        ],
-        "canonical_components": {
-          "sport": "nfl",
-          "player": "camward",
-          "year": "2025",
-          "brand": "paninidonrussoptic",
-          "product": "paninidonrussoptic",
-          "card_number": "1",
-          "parallel": "black",
-          "serial_total": "149",
-          "grader": "",
-          "grade": "",
-          "autograph": "0",
-          "memorabilia": "0",
-          "rookie": "1"
-        }
-      },
-      "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
-      "fx_status": "AUD_NATIVE",
-      "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-09",
-      "staging_ebay_retain_cycles": 3
-    },
-    {
-      "source": "ebay",
-      "external_id": "v1|278409801196|0",
-      "url": "https://www.ebay.com.au/itm/278409801196?_skw=2025+Cam+Ward+Panini+Donruss+Optic+1+Black+%2F149&hash=item40d2846dec:g:Lm0AAeSwtwVqmgnK",
-      "image_url": "https://i.ebayimg.com/images/g/Lm0AAeSwtwVqmgnK/s-l225.jpg",
-      "title": "2025 Panini Donruss Optic Cam Ward Rookie #1 Retro Black Pandora Prizm /149 RC",
-      "sport": "NFL",
-      "asking_price": 237.16,
-      "shipping": 37.2,
-      "currency": "AUD",
-      "landed_aud": 274.36,
-      "identity": {
-        "player": "Cam Ward",
-        "year": "2025",
-        "brand": "Panini Donruss Optic",
-        "set_name": "Panini Donruss Optic",
-        "card_number": "1",
-        "parallel": "Black",
-        "serial_current": null,
-        "serial_total": 149,
-        "grader": null,
-        "grade": null,
-        "autograph": false,
-        "memorabilia": false,
-        "rookie": true
-      },
-      "card_family": {
-        "key": "cf_fdcf846365bfe3ddb6eb",
-        "eligible": true,
-        "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
-        "match_confidence": 1.0,
-        "match_reasons": [
-          "same player",
-          "same year",
-          "same brand/product",
-          "same card number",
-          "same parallel",
-          "same serial denominator",
-          "same rookie state"
-        ],
-        "canonical_components": {
-          "sport": "nfl",
-          "player": "camward",
-          "year": "2025",
-          "brand": "paninidonrussoptic",
-          "product": "paninidonrussoptic",
-          "card_number": "1",
-          "parallel": "black",
-          "serial_total": "149",
-          "grader": "",
-          "grade": "",
-          "autograph": "0",
-          "memorabilia": "0",
-          "rookie": "1"
-        }
-      },
-      "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
-      "fx_status": "AUD_NATIVE",
-      "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-09",
-      "staging_ebay_retain_cycles": 3
-    },
-    {
-      "source": "ebay",
-      "external_id": "v1|318708830388|0",
-      "url": "https://www.ebay.com.au/itm/318708830388?_skw=2025+Cam+Ward+Panini+Donruss+Optic+1+Black+%2F149&hash=item4a3486d0b4:g:RnYAAeSw-jdqUBUc",
-      "image_url": "https://i.ebayimg.com/images/g/RnYAAeSw-jdqUBUc/s-l225.jpg",
-      "title": "Cam Ward #1 [Black Pandora] 2025 Panini Donruss Optic Passing Grade [RC] /149",
-      "sport": "NFL",
-      "asking_price": 237.17,
-      "shipping": 36.17,
-      "currency": "AUD",
-      "landed_aud": 273.34,
-      "identity": {
-        "player": "Cam Ward",
-        "year": "2025",
-        "brand": "Panini Donruss Optic",
-        "set_name": "Panini Donruss Optic",
-        "card_number": "1",
-        "parallel": "Black",
-        "serial_current": null,
-        "serial_total": 149,
-        "grader": null,
-        "grade": null,
-        "autograph": false,
-        "memorabilia": false,
-        "rookie": true
-      },
-      "card_family": {
-        "key": "cf_fdcf846365bfe3ddb6eb",
-        "eligible": true,
-        "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
-        "match_confidence": 1.0,
-        "match_reasons": [
-          "same player",
-          "same year",
-          "same brand/product",
-          "same card number",
-          "same parallel",
-          "same serial denominator",
-          "same rookie state"
-        ],
-        "canonical_components": {
-          "sport": "nfl",
-          "player": "camward",
-          "year": "2025",
-          "brand": "paninidonrussoptic",
-          "product": "paninidonrussoptic",
-          "card_number": "1",
-          "parallel": "black",
-          "serial_total": "149",
-          "grader": "",
-          "grade": "",
-          "autograph": "0",
-          "memorabilia": "0",
-          "rookie": "1"
-        }
-      },
-      "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
-      "fx_status": "AUD_NATIVE",
-      "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-09",
-      "staging_ebay_retain_cycles": 3
-    },
-    {
-      "source": "ebay",
-      "external_id": "v1|265461878116|0",
-      "url": "https://www.ebay.com.au/itm/265461878116?_skw=2019+Kyler+Murray+Panini+Prizm+301+Silver+Prizm+PSA+8&hash=item3dcec2cd64:g:Hi4AAOSwiNlhpx-i",
-      "image_url": "https://i.ebayimg.com/images/g/Hi4AAOSwiNlhpx-i/s-l225.jpg",
-      "title": "2019 PANINI PRIZM Kyler Murray #301 Silver Prizm Arizona Cardinals RC PSA 8",
-      "sport": "NFL",
-      "asking_price": 205.53,
-      "shipping": 37.85,
-      "currency": "AUD",
-      "landed_aud": 243.38,
-      "identity": {
-        "player": "Kyler Murray",
-        "year": "2019",
-        "brand": "Panini Prizm",
-        "set_name": "Panini Prizm",
-        "card_number": "301",
-        "parallel": "Silver Prizm",
-        "serial_current": null,
-        "serial_total": null,
-        "grader": "PSA",
-        "grade": 8.0,
-        "autograph": false,
-        "memorabilia": false,
-        "rookie": true
-      },
-      "card_family": {
-        "key": "cf_06c4651c3f3b04c53367",
-        "eligible": true,
-        "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
-        "match_confidence": 1.0,
-        "match_reasons": [
-          "same player",
-          "same year",
-          "same brand/product",
-          "same card number",
-          "same parallel",
-          "same grading state",
-          "same rookie state"
-        ],
-        "canonical_components": {
-          "sport": "nfl",
-          "player": "kylermurray",
-          "year": "2019",
-          "brand": "paniniprizm",
-          "product": "paniniprizm",
-          "card_number": "301",
-          "parallel": "silverprizm",
-          "serial_total": "",
-          "grader": "psa",
-          "grade": "8",
-          "autograph": "0",
-          "memorabilia": "0",
-          "rookie": "1"
-        }
-      },
-      "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
-      "fx_status": "AUD_NATIVE",
-      "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-09",
-      "staging_ebay_retain_cycles": 3
-    },
-    {
-      "source": "ebay",
-      "external_id": "v1|377410760176|0",
-      "url": "https://www.ebay.com.au/itm/377410760176?_skw=2025+Mike+Evans+Absolute+12&hash=item57df6f2df0:g:hewAAeSwFkJqe12K",
-      "image_url": "https://i.ebayimg.com/images/g/hewAAeSwFkJqe12K/s-l225.jpg",
-      "title": "2025 Panini Absolute Mike Evans Kaboom! #12",
-      "sport": "NFL",
-      "asking_price": 890.11,
-      "shipping": 53.17,
-      "currency": "AUD",
-      "landed_aud": 943.28,
-      "identity": {
-        "player": "Mike Evans",
-        "year": "2025",
-        "brand": "Absolute",
-        "set_name": "Absolute",
-        "card_number": "12",
+        "player": "Bo Nix",
+        "year": "2024",
+        "brand": "Donruss",
+        "set_name": "Donruss",
+        "card_number": null,
         "parallel": null,
         "serial_current": null,
         "serial_total": null,
@@ -328,10 +76,570 @@
         "grade": null,
         "autograph": false,
         "memorabilia": false,
+        "rookie": true
+      },
+      "card_family": {
+        "key": null,
+        "eligible": false,
+        "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
+        "match_confidence": null,
+        "match_reasons": [],
+        "canonical_components": null
+      },
+      "history": null,
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-10-10"
+    },
+    {
+      "source": "boop",
+      "external_id": "15228824060070",
+      "url": "https://www.boopcollectables.com.au/products/21655",
+      "image_url": "https://cdn.shopify.com/s/files/1/0412/4190/3270/files/Cards_0011_mndutm.jpg?v=1770281146",
+      "title": "Bo Nix 2024 Panini Donruss Oversized Jumbo Downtown RC",
+      "sport": "NFL",
+      "asking_price": 160.0,
+      "shipping": 0.0,
+      "currency": "AUD",
+      "landed_aud": 160.0,
+      "identity": {
+        "player": "Bo Nix",
+        "year": "2024",
+        "brand": "Donruss",
+        "set_name": "Donruss",
+        "card_number": null,
+        "parallel": null,
+        "serial_current": null,
+        "serial_total": null,
+        "grader": null,
+        "grade": null,
+        "autograph": false,
+        "memorabilia": false,
+        "rookie": true
+      },
+      "card_family": {
+        "key": null,
+        "eligible": false,
+        "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
+        "match_confidence": null,
+        "match_reasons": [],
+        "canonical_components": null
+      },
+      "history": null,
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-10-10"
+    },
+    {
+      "source": "boop",
+      "external_id": "15228824027302",
+      "url": "https://www.boopcollectables.com.au/products/21654",
+      "image_url": "https://cdn.shopify.com/s/files/1/0412/4190/3270/files/Cards_0009_xrsvxz.jpg?v=1770281144",
+      "title": "Bo Nix 2024 Panini Donruss Oversized Jumbo Downtown RC",
+      "sport": "NFL",
+      "asking_price": 160.0,
+      "shipping": 0.0,
+      "currency": "AUD",
+      "landed_aud": 160.0,
+      "identity": {
+        "player": "Bo Nix",
+        "year": "2024",
+        "brand": "Donruss",
+        "set_name": "Donruss",
+        "card_number": null,
+        "parallel": null,
+        "serial_current": null,
+        "serial_total": null,
+        "grader": null,
+        "grade": null,
+        "autograph": false,
+        "memorabilia": false,
+        "rookie": true
+      },
+      "card_family": {
+        "key": null,
+        "eligible": false,
+        "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
+        "match_confidence": null,
+        "match_reasons": [],
+        "canonical_components": null
+      },
+      "history": null,
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-10-10"
+    },
+    {
+      "source": "boop",
+      "external_id": "15228823994534",
+      "url": "https://www.boopcollectables.com.au/products/21653",
+      "image_url": "https://cdn.shopify.com/s/files/1/0412/4190/3270/files/Cards_0007_llo4ns.jpg?v=1770281144",
+      "title": "JJ Mccarthy 2024 Panini Donruss Oversized Jumbo Downtown RC",
+      "sport": "NFL",
+      "asking_price": 75.0,
+      "shipping": 0.0,
+      "currency": "AUD",
+      "landed_aud": 75.0,
+      "identity": {
+        "player": "JJ Mccarthy",
+        "year": "2024",
+        "brand": "Donruss",
+        "set_name": "Donruss",
+        "card_number": null,
+        "parallel": null,
+        "serial_current": null,
+        "serial_total": null,
+        "grader": null,
+        "grade": null,
+        "autograph": false,
+        "memorabilia": false,
+        "rookie": true
+      },
+      "card_family": {
+        "key": null,
+        "eligible": false,
+        "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
+        "match_confidence": null,
+        "match_reasons": [],
+        "canonical_components": null
+      },
+      "history": null,
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-10-10"
+    },
+    {
+      "source": "boop",
+      "external_id": "15228823961766",
+      "url": "https://www.boopcollectables.com.au/products/21652",
+      "image_url": "https://cdn.shopify.com/s/files/1/0412/4190/3270/files/Cards_0005_cuemf3.jpg?v=1770281143",
+      "title": "JJ Mccarthy 2024 Panini Donruss Oversized Jumbo Downtown RC",
+      "sport": "NFL",
+      "asking_price": 75.0,
+      "shipping": 0.0,
+      "currency": "AUD",
+      "landed_aud": 75.0,
+      "identity": {
+        "player": "JJ Mccarthy",
+        "year": "2024",
+        "brand": "Donruss",
+        "set_name": "Donruss",
+        "card_number": null,
+        "parallel": null,
+        "serial_current": null,
+        "serial_total": null,
+        "grader": null,
+        "grade": null,
+        "autograph": false,
+        "memorabilia": false,
+        "rookie": true
+      },
+      "card_family": {
+        "key": null,
+        "eligible": false,
+        "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
+        "match_confidence": null,
+        "match_reasons": [],
+        "canonical_components": null
+      },
+      "history": null,
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-10-10"
+    },
+    {
+      "source": "boop",
+      "external_id": "15228824322214",
+      "url": "https://www.boopcollectables.com.au/products/21662",
+      "image_url": "https://cdn.shopify.com/s/files/1/0412/4190/3270/files/Cards_0025_dkjoso.jpg?v=1770281155",
+      "title": "Michael Penix 2024 Panini Donruss Oversized Jumbo Downtown RC",
+      "sport": "NFL",
+      "asking_price": 50.0,
+      "shipping": 0.0,
+      "currency": "AUD",
+      "landed_aud": 50.0,
+      "identity": {
+        "player": "Michael Penix",
+        "year": "2024",
+        "brand": "Donruss",
+        "set_name": "Donruss",
+        "card_number": null,
+        "parallel": null,
+        "serial_current": null,
+        "serial_total": null,
+        "grader": null,
+        "grade": null,
+        "autograph": false,
+        "memorabilia": false,
+        "rookie": true
+      },
+      "card_family": {
+        "key": null,
+        "eligible": false,
+        "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
+        "match_confidence": null,
+        "match_reasons": [],
+        "canonical_components": null
+      },
+      "history": null,
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-10-10"
+    },
+    {
+      "source": "boop",
+      "external_id": "15228824256678",
+      "url": "https://www.boopcollectables.com.au/products/21660",
+      "image_url": "https://cdn.shopify.com/s/files/1/0412/4190/3270/files/Cards_0021_xwldmh.jpg?v=1770281152",
+      "title": "Brock Bowers 2024 Panini Donruss Oversized Jumbo Downtown RC",
+      "sport": "NFL",
+      "asking_price": 50.0,
+      "shipping": 0.0,
+      "currency": "AUD",
+      "landed_aud": 50.0,
+      "identity": {
+        "player": "Brock Bowers",
+        "year": "2024",
+        "brand": "Donruss",
+        "set_name": "Donruss",
+        "card_number": null,
+        "parallel": null,
+        "serial_current": null,
+        "serial_total": null,
+        "grader": null,
+        "grade": null,
+        "autograph": false,
+        "memorabilia": false,
+        "rookie": true
+      },
+      "card_family": {
+        "key": null,
+        "eligible": false,
+        "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
+        "match_confidence": null,
+        "match_reasons": [],
+        "canonical_components": null
+      },
+      "history": null,
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-10-10"
+    },
+    {
+      "source": "boop",
+      "external_id": "15228824223910",
+      "url": "https://www.boopcollectables.com.au/products/21659",
+      "image_url": "https://cdn.shopify.com/s/files/1/0412/4190/3270/files/Cards_0019_g8xipx.jpg?v=1770281152",
+      "title": "Brock Bowers 2024 Panini Donruss Oversized Jumbo Downtown RC",
+      "sport": "NFL",
+      "asking_price": 50.0,
+      "shipping": 0.0,
+      "currency": "AUD",
+      "landed_aud": 50.0,
+      "identity": {
+        "player": "Brock Bowers",
+        "year": "2024",
+        "brand": "Donruss",
+        "set_name": "Donruss",
+        "card_number": null,
+        "parallel": null,
+        "serial_current": null,
+        "serial_total": null,
+        "grader": null,
+        "grade": null,
+        "autograph": false,
+        "memorabilia": false,
+        "rookie": true
+      },
+      "card_family": {
+        "key": null,
+        "eligible": false,
+        "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
+        "match_confidence": null,
+        "match_reasons": [],
+        "canonical_components": null
+      },
+      "history": null,
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-10-10"
+    },
+    {
+      "source": "boop",
+      "external_id": "15228824191142",
+      "url": "https://www.boopcollectables.com.au/products/21658",
+      "image_url": "https://cdn.shopify.com/s/files/1/0412/4190/3270/files/Cards_0017_cqztiz.jpg?v=1770281149",
+      "title": "Malik Nabers 2024 Panini Donruss Oversized Jumbo Downtown RC",
+      "sport": "NFL",
+      "asking_price": 45.0,
+      "shipping": 0.0,
+      "currency": "AUD",
+      "landed_aud": 45.0,
+      "identity": {
+        "player": "Malik Nabers",
+        "year": "2024",
+        "brand": "Donruss",
+        "set_name": "Donruss",
+        "card_number": null,
+        "parallel": null,
+        "serial_current": null,
+        "serial_total": null,
+        "grader": null,
+        "grade": null,
+        "autograph": false,
+        "memorabilia": false,
+        "rookie": true
+      },
+      "card_family": {
+        "key": null,
+        "eligible": false,
+        "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
+        "match_confidence": null,
+        "match_reasons": [],
+        "canonical_components": null
+      },
+      "history": null,
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-10-10"
+    },
+    {
+      "source": "boop",
+      "external_id": "15228824125606",
+      "url": "https://www.boopcollectables.com.au/products/21657",
+      "image_url": "https://cdn.shopify.com/s/files/1/0412/4190/3270/files/Cards_0015_cdyh3w.jpg?v=1770281148",
+      "title": "Malik Nabers 2024 Panini Donruss Oversized Jumbo Downtown RC",
+      "sport": "NFL",
+      "asking_price": 45.0,
+      "shipping": 0.0,
+      "currency": "AUD",
+      "landed_aud": 45.0,
+      "identity": {
+        "player": "Malik Nabers",
+        "year": "2024",
+        "brand": "Donruss",
+        "set_name": "Donruss",
+        "card_number": null,
+        "parallel": null,
+        "serial_current": null,
+        "serial_total": null,
+        "grader": null,
+        "grade": null,
+        "autograph": false,
+        "memorabilia": false,
+        "rookie": true
+      },
+      "card_family": {
+        "key": null,
+        "eligible": false,
+        "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
+        "match_confidence": null,
+        "match_reasons": [],
+        "canonical_components": null
+      },
+      "history": null,
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-10-10"
+    },
+    {
+      "source": "boop",
+      "external_id": "15228824551590",
+      "url": "https://www.boopcollectables.com.au/products/21669",
+      "image_url": "https://cdn.shopify.com/s/files/1/0412/4190/3270/files/Cards_0039_reovz2.jpg?v=1770281165",
+      "title": "Marvin Harrison Jr 2024 Panini Donruss Oversized Jumbo Downtown RC",
+      "sport": "NFL",
+      "asking_price": 40.0,
+      "shipping": 0.0,
+      "currency": "AUD",
+      "landed_aud": 40.0,
+      "identity": {
+        "player": "Marvin Harrison Jr.",
+        "year": "2024",
+        "brand": "Donruss",
+        "set_name": "Donruss",
+        "card_number": null,
+        "parallel": null,
+        "serial_current": null,
+        "serial_total": null,
+        "grader": null,
+        "grade": null,
+        "autograph": false,
+        "memorabilia": false,
+        "rookie": true
+      },
+      "card_family": {
+        "key": null,
+        "eligible": false,
+        "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
+        "match_confidence": null,
+        "match_reasons": [],
+        "canonical_components": null
+      },
+      "history": null,
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-10-10"
+    },
+    {
+      "source": "boop",
+      "external_id": "15228824518822",
+      "url": "https://www.boopcollectables.com.au/products/21668",
+      "image_url": "https://cdn.shopify.com/s/files/1/0412/4190/3270/files/Cards_0037_mchbod.jpg?v=1770281161",
+      "title": "Marvin Harrison Jr 2024 Panini Donruss Oversized Jumbo Downtown RC",
+      "sport": "NFL",
+      "asking_price": 40.0,
+      "shipping": 0.0,
+      "currency": "AUD",
+      "landed_aud": 40.0,
+      "identity": {
+        "player": "Marvin Harrison Jr.",
+        "year": "2024",
+        "brand": "Donruss",
+        "set_name": "Donruss",
+        "card_number": null,
+        "parallel": null,
+        "serial_current": null,
+        "serial_total": null,
+        "grader": null,
+        "grade": null,
+        "autograph": false,
+        "memorabilia": false,
+        "rookie": true
+      },
+      "card_family": {
+        "key": null,
+        "eligible": false,
+        "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
+        "match_confidence": null,
+        "match_reasons": [],
+        "canonical_components": null
+      },
+      "history": null,
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-10-10"
+    },
+    {
+      "source": "boop",
+      "external_id": "15228824486054",
+      "url": "https://www.boopcollectables.com.au/products/21667",
+      "image_url": "https://cdn.shopify.com/s/files/1/0412/4190/3270/files/Cards_0035_lghfey.jpg?v=1770281161",
+      "title": "Marvin Harrison Jr 2024 Panini Donruss Oversized Jumbo Downtown RC",
+      "sport": "NFL",
+      "asking_price": 40.0,
+      "shipping": 0.0,
+      "currency": "AUD",
+      "landed_aud": 40.0,
+      "identity": {
+        "player": "Marvin Harrison Jr.",
+        "year": "2024",
+        "brand": "Donruss",
+        "set_name": "Donruss",
+        "card_number": null,
+        "parallel": null,
+        "serial_current": null,
+        "serial_total": null,
+        "grader": null,
+        "grade": null,
+        "autograph": false,
+        "memorabilia": false,
+        "rookie": true
+      },
+      "card_family": {
+        "key": null,
+        "eligible": false,
+        "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
+        "match_confidence": null,
+        "match_reasons": [],
+        "canonical_components": null
+      },
+      "history": null,
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-10-10"
+    },
+    {
+      "source": "boop",
+      "external_id": "15228824453286",
+      "url": "https://www.boopcollectables.com.au/products/21666",
+      "image_url": "https://cdn.shopify.com/s/files/1/0412/4190/3270/files/Cards_0033_jjyx19.jpg?v=1770281159",
+      "title": "Marvin Harrison Jr 2024 Panini Donruss Oversized Jumbo Downtown RC",
+      "sport": "NFL",
+      "asking_price": 40.0,
+      "shipping": 0.0,
+      "currency": "AUD",
+      "landed_aud": 40.0,
+      "identity": {
+        "player": "Marvin Harrison Jr.",
+        "year": "2024",
+        "brand": "Donruss",
+        "set_name": "Donruss",
+        "card_number": null,
+        "parallel": null,
+        "serial_current": null,
+        "serial_total": null,
+        "grader": null,
+        "grade": null,
+        "autograph": false,
+        "memorabilia": false,
+        "rookie": true
+      },
+      "card_family": {
+        "key": null,
+        "eligible": false,
+        "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
+        "match_confidence": null,
+        "match_reasons": [],
+        "canonical_components": null
+      },
+      "history": null,
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-10-10"
+    },
+    {
+      "source": "boop",
+      "external_id": "8622949040294",
+      "url": "https://www.boopcollectables.com.au/products/20115",
+      "image_url": "https://cdn.shopify.com/s/files/1/0412/4190/3270/files/Cards-216-1-rj8ooq-_1.jpg?v=1767534435",
+      "title": "Aaron Glenn 2024 Panini Prizm Purple Power Sensational Auto 25/49",
+      "sport": "NFL",
+      "asking_price": 35.0,
+      "shipping": 0.0,
+      "currency": "AUD",
+      "landed_aud": 35.0,
+      "identity": {
+        "player": "Aaron Glenn",
+        "year": "2024",
+        "brand": "Panini Prizm",
+        "set_name": "Panini Prizm",
+        "card_number": null,
+        "parallel": "Purple",
+        "serial_current": 25,
+        "serial_total": 49,
+        "grader": null,
+        "grade": null,
+        "autograph": true,
+        "memorabilia": false,
         "rookie": false
       },
       "card_family": {
-        "key": "cf_7c222465974b22111f22",
+        "key": "cf_213951d0a6ca97557d61",
         "eligible": true,
         "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
         "match_confidence": 1.0,
@@ -339,20 +647,22 @@
           "same player",
           "same year",
           "same brand/product",
-          "same card number"
+          "same parallel",
+          "same serial denominator",
+          "same autograph state"
         ],
         "canonical_components": {
           "sport": "nfl",
-          "player": "mikeevans",
-          "year": "2025",
-          "brand": "absolute",
-          "product": "absolute",
-          "card_number": "12",
-          "parallel": "",
-          "serial_total": "",
+          "player": "aaronglenn",
+          "year": "2024",
+          "brand": "paniniprizm",
+          "product": "paniniprizm",
+          "card_number": "",
+          "parallel": "purple",
+          "serial_total": "49",
           "grader": "",
           "grade": "",
-          "autograph": "0",
+          "autograph": "1",
           "memorabilia": "0",
           "rookie": "0"
         }
@@ -361,8 +671,109 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-09",
-      "staging_ebay_retain_cycles": 3
+      "fx_rate_date": "2026-10-10"
+    },
+    {
+      "source": "boop",
+      "external_id": "8521888432294",
+      "url": "https://www.boopcollectables.com.au/products/19167",
+      "image_url": "https://cdn.shopify.com/s/files/1/0412/4190/3270/files/NBA_152-1_ac153q.jpg?v=1751886248",
+      "title": "Daniel Jones 2023 Panini Limited Limitless Material Jersey 39/150 PSA 7",
+      "sport": "NFL",
+      "asking_price": 20.0,
+      "shipping": 0.0,
+      "currency": "AUD",
+      "landed_aud": 20.0,
+      "identity": {
+        "player": "Daniel Jones",
+        "year": "2023",
+        "brand": "Limited",
+        "set_name": "Limited",
+        "card_number": null,
+        "parallel": null,
+        "serial_current": 39,
+        "serial_total": 150,
+        "grader": "PSA",
+        "grade": 7.0,
+        "autograph": false,
+        "memorabilia": true,
+        "rookie": false
+      },
+      "card_family": {
+        "key": null,
+        "eligible": false,
+        "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
+        "match_confidence": null,
+        "match_reasons": [],
+        "canonical_components": null
+      },
+      "history": null,
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-10-10"
+    },
+    {
+      "source": "boop",
+      "external_id": "8622949073062",
+      "url": "https://www.boopcollectables.com.au/products/20116",
+      "image_url": "https://cdn.shopify.com/s/files/1/0412/4190/3270/files/Cards-223-1-tf1ast-_1.jpg?v=1767534430",
+      "title": "Amarius Mims 2024 Panini Absolute Blue Auto RC 19/50",
+      "sport": "NFL",
+      "asking_price": 15.0,
+      "shipping": 0.0,
+      "currency": "AUD",
+      "landed_aud": 15.0,
+      "identity": {
+        "player": "Amarius Mims",
+        "year": "2024",
+        "brand": "Absolute",
+        "set_name": "Absolute",
+        "card_number": null,
+        "parallel": "Blue",
+        "serial_current": 19,
+        "serial_total": 50,
+        "grader": null,
+        "grade": null,
+        "autograph": true,
+        "memorabilia": false,
+        "rookie": true
+      },
+      "card_family": {
+        "key": "cf_8cc9287b2b95b2d89f37",
+        "eligible": true,
+        "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
+        "match_confidence": 1.0,
+        "match_reasons": [
+          "same player",
+          "same year",
+          "same brand/product",
+          "same parallel",
+          "same serial denominator",
+          "same autograph state",
+          "same rookie state"
+        ],
+        "canonical_components": {
+          "sport": "nfl",
+          "player": "amariusmims",
+          "year": "2024",
+          "brand": "absolute",
+          "product": "absolute",
+          "card_number": "",
+          "parallel": "blue",
+          "serial_total": "50",
+          "grader": "",
+          "grade": "",
+          "autograph": "1",
+          "memorabilia": "0",
+          "rookie": "1"
+        }
+      },
+      "history": null,
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -424,7 +835,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-09",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -486,7 +897,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-09",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -549,7 +960,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-09",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -610,7 +1021,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-09",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -672,7 +1083,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-09",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -734,7 +1145,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-09",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -795,7 +1206,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-09",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -857,7 +1268,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-09",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -918,7 +1329,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-09",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -981,7 +1392,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-09",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -1043,7 +1454,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-09",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -1104,7 +1515,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-09",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -1165,7 +1576,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-09",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -1228,7 +1639,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-09",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -1289,7 +1700,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-09",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -1350,7 +1761,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-09",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -1411,7 +1822,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-09",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -1472,7 +1883,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-09",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -1534,7 +1945,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-09",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -1595,7 +2006,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-09",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -1656,7 +2067,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-09",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -1718,7 +2129,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-09",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -1780,7 +2191,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-09",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -1841,7 +2252,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-09",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -1903,7 +2314,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-09",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -1964,7 +2375,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-09",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -2026,7 +2437,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-09",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -2088,7 +2499,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-09",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -2150,7 +2561,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-09",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -2212,7 +2623,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-09",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -2273,7 +2684,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-09",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -2334,7 +2745,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-09",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -2396,7 +2807,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-09",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -2458,7 +2869,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-09",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -2520,7 +2931,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-09",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -2582,7 +2993,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-09",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -2643,7 +3054,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-09",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -2704,7 +3115,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-09",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -2765,7 +3176,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-09",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -2826,7 +3237,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-09",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -2889,7 +3300,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-09",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -2952,7 +3363,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-09",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -3013,7 +3424,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-09",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -3074,7 +3485,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-09",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -3135,7 +3546,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-09",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -3197,7 +3608,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-09",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -3258,7 +3669,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-09",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -3319,7 +3730,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-09",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -3380,7 +3791,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-09",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -3443,7 +3854,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-09",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -3504,7 +3915,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-09",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -3565,7 +3976,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-09",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -3627,7 +4038,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-09",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -3688,7 +4099,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-09",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -3751,7 +4162,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-09",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -3813,7 +4224,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-09",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -3875,7 +4286,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-09",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -3939,7 +4350,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-09",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -4000,7 +4411,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-09",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -4062,7 +4473,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-09",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -4123,7 +4534,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-09",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -4184,7 +4595,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-09",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -4245,7 +4656,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-09",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -4307,7 +4718,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-09",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -4369,7 +4780,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-09",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     }
   ],
   "active_price_comparisons": {
@@ -4380,11 +4791,337 @@
       "title_discriminator_guard_required_for_exact": true,
       "can_create_buy": false
     },
-    "exact_match_count": 0,
+    "exact_match_count": 2,
     "same_product_variant_count": 0,
-    "player_year_market_count": 0,
-    "comparison_group_count": 0,
-    "groups": []
+    "player_year_market_count": 1,
+    "comparison_group_count": 3,
+    "groups": [
+      {
+        "comparison_key": "cf_213951d0a6ca97557d61|tg:",
+        "comparison_type": "EXACT_CARD",
+        "exact_equivalent": true,
+        "match_confidence": 1.0,
+        "match_reasons": [
+          "same player",
+          "same year",
+          "same brand/product",
+          "same parallel",
+          "same serial denominator",
+          "same autograph state",
+          "title discriminator guard passed"
+        ],
+        "pricing_basis": "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE",
+        "comparison_warning": null,
+        "sport": "NFL",
+        "player": "Aaron Glenn",
+        "year": "2024",
+        "product": "Panini Prizm",
+        "store_count": 2,
+        "listing_count": 2,
+        "stores": [
+          "boop",
+          "ebay"
+        ],
+        "lowest_active_ask_aud": 35.0,
+        "median_active_ask_aud": 39.5,
+        "highest_active_ask_aud": 43.99,
+        "spread_aud": 8.99,
+        "spread_pct": 25.69,
+        "cheapest_store": "boop",
+        "cheapest_external_id": "8622949040294",
+        "cheapest_url": "https://www.boopcollectables.com.au/products/20115",
+        "cheapest_landed_aud": 35.0,
+        "next_best_store": "ebay",
+        "next_best_landed_aud": 43.99,
+        "saving_vs_next_best_aud": 8.99,
+        "saving_vs_next_best_pct": 20.44,
+        "saving_vs_median_aud": 4.5,
+        "saving_vs_median_pct": 11.39,
+        "saving_vs_highest_aud": 8.99,
+        "saving_vs_highest_pct": 20.44,
+        "listings": [
+          {
+            "source": "boop",
+            "external_id": "8622949040294",
+            "url": "https://www.boopcollectables.com.au/products/20115",
+            "title": "Aaron Glenn 2024 Panini Prizm Purple Power Sensational Auto 25/49",
+            "landed_aud": 35.0,
+            "asking_price": 35.0,
+            "shipping": 0.0,
+            "currency": "AUD",
+            "card_number": null,
+            "parallel": "Purple",
+            "serial_total": 49,
+            "grader": null,
+            "grade": null,
+            "rookie": false,
+            "autograph": true,
+            "memorabilia": false,
+            "title_guard": ""
+          },
+          {
+            "source": "ebay",
+            "external_id": "v1|389180626750|0",
+            "url": "https://www.ebay.com.au/itm/389180626750?_skw=2024+Aaron+Glenn+Panini+Prizm+Purple+%2F49+auto&hash=item5a9cf9173e:g:T6wAAeSw5rdqkdCb",
+            "title": "Aaron Glenn 2024 Panini Prizm Purple Power Sensational Auto 25/49",
+            "landed_aud": 43.99,
+            "asking_price": 35.0,
+            "shipping": 8.99,
+            "currency": "AUD",
+            "card_number": null,
+            "parallel": "Purple",
+            "serial_total": 49,
+            "grader": null,
+            "grade": null,
+            "rookie": false,
+            "autograph": true,
+            "memorabilia": false,
+            "title_guard": ""
+          }
+        ]
+      },
+      {
+        "comparison_key": "cf_8cc9287b2b95b2d89f37|tg:",
+        "comparison_type": "EXACT_CARD",
+        "exact_equivalent": true,
+        "match_confidence": 1.0,
+        "match_reasons": [
+          "same player",
+          "same year",
+          "same brand/product",
+          "same parallel",
+          "same serial denominator",
+          "same autograph state",
+          "same rookie state",
+          "title discriminator guard passed"
+        ],
+        "pricing_basis": "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE",
+        "comparison_warning": null,
+        "sport": "NFL",
+        "player": "Amarius Mims",
+        "year": "2024",
+        "product": "Absolute",
+        "store_count": 2,
+        "listing_count": 2,
+        "stores": [
+          "boop",
+          "ebay"
+        ],
+        "lowest_active_ask_aud": 15.0,
+        "median_active_ask_aud": 17.25,
+        "highest_active_ask_aud": 19.5,
+        "spread_aud": 4.5,
+        "spread_pct": 30.0,
+        "cheapest_store": "boop",
+        "cheapest_external_id": "8622949073062",
+        "cheapest_url": "https://www.boopcollectables.com.au/products/20116",
+        "cheapest_landed_aud": 15.0,
+        "next_best_store": "ebay",
+        "next_best_landed_aud": 19.5,
+        "saving_vs_next_best_aud": 4.5,
+        "saving_vs_next_best_pct": 23.08,
+        "saving_vs_median_aud": 2.25,
+        "saving_vs_median_pct": 13.04,
+        "saving_vs_highest_aud": 4.5,
+        "saving_vs_highest_pct": 23.08,
+        "listings": [
+          {
+            "source": "boop",
+            "external_id": "8622949073062",
+            "url": "https://www.boopcollectables.com.au/products/20116",
+            "title": "Amarius Mims 2024 Panini Absolute Blue Auto RC 19/50",
+            "landed_aud": 15.0,
+            "asking_price": 15.0,
+            "shipping": 0.0,
+            "currency": "AUD",
+            "card_number": null,
+            "parallel": "Blue",
+            "serial_total": 50,
+            "grader": null,
+            "grade": null,
+            "rookie": true,
+            "autograph": true,
+            "memorabilia": false,
+            "title_guard": ""
+          },
+          {
+            "source": "ebay",
+            "external_id": "v1|389180625264|0",
+            "url": "https://www.ebay.com.au/itm/389180625264?_skw=2024+Amarius+Mims+Absolute+Blue+%2F50+auto&hash=item5a9cf91170:g:Y5IAAeSwS8tqkc-y",
+            "title": "Amarius Mims 2024 Panini Absolute Blue Auto RC 19/50",
+            "landed_aud": 19.5,
+            "asking_price": 15.0,
+            "shipping": 4.5,
+            "currency": "AUD",
+            "card_number": null,
+            "parallel": "Blue",
+            "serial_total": 50,
+            "grader": null,
+            "grade": null,
+            "rookie": true,
+            "autograph": true,
+            "memorabilia": false,
+            "title_guard": ""
+          }
+        ]
+      },
+      {
+        "comparison_key": "nfl|marvinharrisonjr|2024",
+        "comparison_type": "PLAYER_YEAR_MARKET",
+        "exact_equivalent": false,
+        "match_confidence": 0.35,
+        "match_reasons": [
+          "same player",
+          "same year",
+          "product and variant may differ"
+        ],
+        "pricing_basis": "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE",
+        "comparison_warning": "RELATED ACTIVE LISTINGS ARE NOT GUARANTEED TO BE THE SAME CARD VARIANT",
+        "sport": "NFL",
+        "player": "Marvin Harrison Jr.",
+        "year": "2024",
+        "product": "Donruss",
+        "store_count": 2,
+        "listing_count": 6,
+        "stores": [
+          "boop",
+          "ebay"
+        ],
+        "lowest_active_ask_aud": 40.0,
+        "median_active_ask_aud": 40.0,
+        "highest_active_ask_aud": 131.72,
+        "spread_aud": 91.72,
+        "spread_pct": 229.3,
+        "cheapest_store": "boop",
+        "cheapest_external_id": "15228824551590",
+        "cheapest_url": "https://www.boopcollectables.com.au/products/21669",
+        "cheapest_landed_aud": 40.0,
+        "next_best_store": "boop",
+        "next_best_landed_aud": 40.0,
+        "saving_vs_next_best_aud": 0.0,
+        "saving_vs_next_best_pct": 0.0,
+        "saving_vs_median_aud": 0.0,
+        "saving_vs_median_pct": 0.0,
+        "saving_vs_highest_aud": 91.72,
+        "saving_vs_highest_pct": 69.63,
+        "listings": [
+          {
+            "source": "boop",
+            "external_id": "15228824551590",
+            "url": "https://www.boopcollectables.com.au/products/21669",
+            "title": "Marvin Harrison Jr 2024 Panini Donruss Oversized Jumbo Downtown RC",
+            "landed_aud": 40.0,
+            "asking_price": 40.0,
+            "shipping": 0.0,
+            "currency": "AUD",
+            "card_number": null,
+            "parallel": null,
+            "serial_total": null,
+            "grader": null,
+            "grade": null,
+            "rookie": true,
+            "autograph": false,
+            "memorabilia": false,
+            "title_guard": ""
+          },
+          {
+            "source": "boop",
+            "external_id": "15228824518822",
+            "url": "https://www.boopcollectables.com.au/products/21668",
+            "title": "Marvin Harrison Jr 2024 Panini Donruss Oversized Jumbo Downtown RC",
+            "landed_aud": 40.0,
+            "asking_price": 40.0,
+            "shipping": 0.0,
+            "currency": "AUD",
+            "card_number": null,
+            "parallel": null,
+            "serial_total": null,
+            "grader": null,
+            "grade": null,
+            "rookie": true,
+            "autograph": false,
+            "memorabilia": false,
+            "title_guard": ""
+          },
+          {
+            "source": "boop",
+            "external_id": "15228824486054",
+            "url": "https://www.boopcollectables.com.au/products/21667",
+            "title": "Marvin Harrison Jr 2024 Panini Donruss Oversized Jumbo Downtown RC",
+            "landed_aud": 40.0,
+            "asking_price": 40.0,
+            "shipping": 0.0,
+            "currency": "AUD",
+            "card_number": null,
+            "parallel": null,
+            "serial_total": null,
+            "grader": null,
+            "grade": null,
+            "rookie": true,
+            "autograph": false,
+            "memorabilia": false,
+            "title_guard": ""
+          },
+          {
+            "source": "boop",
+            "external_id": "15228824453286",
+            "url": "https://www.boopcollectables.com.au/products/21666",
+            "title": "Marvin Harrison Jr 2024 Panini Donruss Oversized Jumbo Downtown RC",
+            "landed_aud": 40.0,
+            "asking_price": 40.0,
+            "shipping": 0.0,
+            "currency": "AUD",
+            "card_number": null,
+            "parallel": null,
+            "serial_total": null,
+            "grader": null,
+            "grade": null,
+            "rookie": true,
+            "autograph": false,
+            "memorabilia": false,
+            "title_guard": ""
+          },
+          {
+            "source": "ebay",
+            "external_id": "v1|326477556990|0",
+            "url": "https://www.ebay.com.au/itm/326477556990?_skw=2024+Marvin+Harrison+Jr.+Panini+Gold+Standard+Gold+%2F299+relic&hash=item4c03942cfe:g:UhAAAeSw1oBnzHpK",
+            "title": "2024 Panini Gold Standard Marvin Harrison Jr. Rookie Patch Gold Gear RC /299",
+            "landed_aud": 64.79,
+            "asking_price": 39.51,
+            "shipping": 25.28,
+            "currency": "AUD",
+            "card_number": null,
+            "parallel": "Gold",
+            "serial_total": 299,
+            "grader": null,
+            "grade": null,
+            "rookie": true,
+            "autograph": false,
+            "memorabilia": true,
+            "title_guard": "299"
+          },
+          {
+            "source": "ebay",
+            "external_id": "v1|267037535030|0",
+            "url": "https://www.ebay.com.au/itm/267037535030?_skw=2024+Marvin+Harrison+Jr.+Panini+Gold+Standard+Gold+%2F299+relic&hash=item3e2cad6b36:g:sfgAAOSw2-xnF7Ka",
+            "title": "Marvin Harrison Jr. /299 2024 Panini Gold Standard Rookie Patch Gold Gear RC",
+            "landed_aud": 131.72,
+            "asking_price": 94.85,
+            "shipping": 36.87,
+            "currency": "AUD",
+            "card_number": null,
+            "parallel": "Gold",
+            "serial_total": 299,
+            "grader": null,
+            "grade": null,
+            "rookie": true,
+            "autograph": false,
+            "memorabilia": true,
+            "title_guard": "299"
+          }
+        ]
+      }
+    ]
   },
   "ebay_status": "ENABLED",
   "ebay_errors": []
