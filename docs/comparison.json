@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-10T12:44:51.293000+00:00",
+  "generated_at": "2026-10-10T21:53:41.195738+00:00",
   "feed_type": "EXACT_CARD_STORE_COMPARISON_ONLY",
   "pricing_basis": "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE",
   "governance": {
@@ -19,15 +19,15 @@
     "title_discriminator_guard_reused_for_nfl": true
   },
   "metrics": {
-    "active_cards_scanned": 510,
-    "exact_comparison_groups": 895,
-    "exact_comparison_listings": 5496,
-    "previous_exact_groups": 887,
-    "fresh_exact_groups": 47,
-    "retained_previous_groups_missing_from_fresh": 848,
+    "active_cards_scanned": 561,
+    "exact_comparison_groups": 911,
+    "exact_comparison_listings": 5529,
+    "previous_exact_groups": 895,
+    "fresh_exact_groups": 103,
+    "retained_previous_groups_missing_from_fresh": 808,
     "previous_groups_lost": 0,
-    "production_groups_before_nfl_merge": 895,
-    "production_listings_before_nfl_merge": 5496,
+    "production_groups_before_nfl_merge": 911,
+    "production_listings_before_nfl_merge": 5529,
     "staged_nfl_exact_groups_seen": 2,
     "staged_nfl_groups_added": 0,
     "staged_nfl_listings_added": 0,
@@ -1495,7 +1495,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -1555,7 +1555,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -1615,7 +1615,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -1675,7 +1675,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -1735,7 +1735,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -1795,7 +1795,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -1855,7 +1855,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -1915,7 +1915,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -1975,7 +1975,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "thehobby",
@@ -5282,7 +5282,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -5342,7 +5342,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -5402,7 +5402,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "cherry",
@@ -6853,7 +6853,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -6913,7 +6913,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -6973,7 +6973,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -7816,7 +7816,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -7876,7 +7876,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -8422,7 +8422,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -8482,7 +8482,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -8542,7 +8542,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -8602,7 +8602,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -8662,7 +8662,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -8722,7 +8722,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -10777,7 +10777,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -201076,7 +201076,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -201136,7 +201136,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -201436,7 +201436,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -201677,7 +201677,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -243282,7 +243282,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -243462,7 +243462,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -243522,7 +243522,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -243582,7 +243582,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -276630,7 +276630,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -276690,7 +276690,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "cherry",
@@ -284062,7 +284062,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -284123,7 +284123,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -284184,7 +284184,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -284245,7 +284245,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -284305,7 +284305,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -284365,7 +284365,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -284426,7 +284426,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -284487,7 +284487,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -284548,7 +284548,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -284608,7 +284608,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -284669,7 +284669,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -284729,7 +284729,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -284789,7 +284789,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -284850,7 +284850,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -284911,7 +284911,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -284972,7 +284972,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -285032,7 +285032,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -285092,7 +285092,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -285152,7 +285152,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -285212,7 +285212,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -285273,7 +285273,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -285334,7 +285334,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -285395,7 +285395,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -285455,7 +285455,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -285517,7 +285517,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -285577,7 +285577,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -285637,7 +285637,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -285697,7 +285697,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -285757,7 +285757,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -285818,7 +285818,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -285878,7 +285878,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -285938,7 +285938,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -285998,7 +285998,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -286058,7 +286058,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -286118,7 +286118,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -286178,7 +286178,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -286238,7 +286238,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -286298,7 +286298,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -286358,7 +286358,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -286418,7 +286418,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -286478,7 +286478,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -286539,7 +286539,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -286600,7 +286600,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -286661,7 +286661,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -286722,7 +286722,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -286782,7 +286782,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -286842,7 +286842,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -286902,7 +286902,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -286962,7 +286962,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -287022,7 +287022,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -287082,7 +287082,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -287142,7 +287142,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -287202,7 +287202,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -287263,7 +287263,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -287323,7 +287323,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -287383,7 +287383,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -287443,7 +287443,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -287503,7 +287503,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -287563,7 +287563,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -287623,7 +287623,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -287683,7 +287683,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -287743,7 +287743,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -287803,7 +287803,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -287863,7 +287863,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -287923,7 +287923,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -287983,7 +287983,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -288043,7 +288043,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -288103,7 +288103,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -288163,7 +288163,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -289302,7 +289302,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -289362,7 +289362,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -289422,7 +289422,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -289483,7 +289483,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -289543,7 +289543,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -289603,7 +289603,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -289663,7 +289663,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -289724,7 +289724,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -289784,7 +289784,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -289845,7 +289845,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -289906,7 +289906,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -289967,7 +289967,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -290264,7 +290264,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -290324,7 +290324,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -290567,7 +290567,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -290627,7 +290627,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -290868,7 +290868,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -290929,7 +290929,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -290989,7 +290989,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -291049,7 +291049,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -291109,7 +291109,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -291169,7 +291169,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -292129,7 +292129,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -292189,7 +292189,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -293151,7 +293151,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -293211,7 +293211,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -293633,7 +293633,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -293693,7 +293693,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -293753,7 +293753,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -293813,7 +293813,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -293996,7 +293996,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -294057,7 +294057,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -294117,7 +294117,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -294544,7 +294544,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -294604,7 +294604,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -294666,7 +294666,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -294727,7 +294727,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -294787,7 +294787,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -294847,7 +294847,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -294907,7 +294907,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -294967,7 +294967,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -295027,7 +295027,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -295087,7 +295087,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -295147,7 +295147,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -295207,7 +295207,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -295267,7 +295267,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -296523,7 +296523,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -296583,7 +296583,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -296643,7 +296643,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -296703,7 +296703,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -296764,7 +296764,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -297946,7 +297946,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -298006,7 +298006,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -298066,7 +298066,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -298127,7 +298127,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -304394,7 +304394,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -304455,7 +304455,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -304515,7 +304515,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -304575,7 +304575,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -304696,7 +304696,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -304817,7 +304817,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -304877,7 +304877,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -304937,7 +304937,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -304997,7 +304997,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -305057,7 +305057,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -305177,7 +305177,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -305237,7 +305237,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -308425,7 +308425,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -308485,7 +308485,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "thehobby",
@@ -315047,7 +315047,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -315108,7 +315108,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -315168,7 +315168,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -315228,7 +315228,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -315288,7 +315288,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -315348,7 +315348,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -315408,7 +315408,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -315468,7 +315468,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -315528,7 +315528,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -315588,7 +315588,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -315648,7 +315648,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -315709,7 +315709,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -315770,7 +315770,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -315831,7 +315831,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -315891,7 +315891,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -315951,7 +315951,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -316011,7 +316011,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -316071,7 +316071,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -316131,7 +316131,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -316191,7 +316191,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-08"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -326396,7 +326396,7 @@
     {
       "source": "ebay",
       "external_id": "v1|186845013175|0",
-      "url": "https://www.ebay.com.au/itm/186845013175?_skw=2024-25+Bronny+James+Topps+1&hash=item2b80d4a4b7:g:CPoAAOSwFUJnX6pT&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7n5ZSP6bUcDVa5kcKymlbBODQXhTY4ulc%2BMo160LMZWXxn%2FUnIdTofWPU%2BoaYLhLXnOntUnW5QkKP93RObWSpFzY2qY%2BoFaRvChbqnr%2FNy%2FIKkwjne9fFu4uDhfLpqituoMEpGq8P7qHfZOkYchyWI67h18211sdakkhP1FZmngl2VFX9GW8%2FCYIRUCPHwtXatP0lu6aVIjbRoX%2BfOwu%2Flg%2FscwxQCB2Fzf0raMM4KwFHLC4Xlbezasoy3dRs%2FLXXDhY2jk1yRA0L0qu3GCDiBMlFw1DWqWw56Cu5m1hgrqA99ADC3%2F4eShfJflBsO6X24%3D",
+      "url": "https://www.ebay.com.au/itm/186845013175?_skw=2024-25+Bronny+James+Topps+1&hash=item2b80d4a4b7:g:CPoAAOSwFUJnX6pT&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7n5ZSP6bUcDVa5kcKymlbBODQXhTY4ulc%2BMo160LMZWXxn%2FUnIdTofWPU%2BoaYLhLXnOntUnW5QkKP93RObWSpFzY2qY%2BoFaRvChbqnr%2FNy%2FIKkwjne9fFu4uDhfLpqiturLHfltoIhWBi6ThWJXcQiX88ta%2BZ6nnAYR02I%2FtSmys5QZnlDOa7MeR3ud7pBapwxqePjuMfUePTrhIOlZi6l7HupbbUfu8vbZkVtRDTutj2qh9UHpzxkTCuGH7y6MouzXFj0CCQ2eNtRQ%2BPLqzyXP%2BUsR4bOZ2OuiggIGEfaHbDJ7jgFlSbSouR8glaEMo4o%3D",
       "image_url": "https://i.ebayimg.com/images/g/CPoAAOSwFUJnX6pT/s-l225.jpg",
       "title": "Bronny James Jr./LeBron James - 2024-25 Topps NOW Basketball Card 1",
       "sport": "NBA",
@@ -331306,6 +331306,1996 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-10"
+    },
+    {
+      "source": "boop",
+      "external_id": "8622949499046",
+      "url": "https://www.boopcollectables.com.au/products/20129",
+      "image_url": "https://cdn.shopify.com/s/files/1/0412/4190/3270/files/Cards-248-1-e1csfk-_1.jpg?v=1767534357",
+      "title": "Sasha Vezenkov 2023-24 Panini Select Orange Pulsar Courtside RC 5/15",
+      "sport": "NBA",
+      "asking_price": 35.0,
+      "shipping": 0.0,
+      "currency": "AUD",
+      "landed_aud": 35.0,
+      "identity": {
+        "player": "Sasha Vezenkov",
+        "year": "2023-24",
+        "brand": "Panini Select",
+        "set_name": "Panini Select",
+        "card_number": null,
+        "parallel": "Orange",
+        "serial_current": 5,
+        "serial_total": 15,
+        "grader": null,
+        "grade": null,
+        "autograph": false,
+        "memorabilia": false,
+        "rookie": true
+      },
+      "card_family": {
+        "key": "cf_0d5926b694502fb7dd0c",
+        "eligible": true,
+        "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
+        "match_confidence": 1.0,
+        "match_reasons": [
+          "same player",
+          "same year",
+          "same brand/product",
+          "same parallel",
+          "same serial denominator",
+          "same rookie state"
+        ],
+        "canonical_components": {
+          "sport": "nba",
+          "player": "sashavezenkov",
+          "year": "202324",
+          "brand": "paniniselect",
+          "product": "paniniselect",
+          "card_number": "",
+          "parallel": "orange",
+          "serial_total": "15",
+          "grader": "",
+          "grade": "",
+          "autograph": "0",
+          "memorabilia": "0",
+          "rookie": "1"
+        }
+      },
+      "history": null,
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-10-10"
+    },
+    {
+      "source": "boop",
+      "external_id": "15215562293414",
+      "url": "https://www.boopcollectables.com.au/products/21419",
+      "image_url": "https://cdn.shopify.com/s/files/1/0412/4190/3270/files/20260112201259_0197_eb14dc.jpg?v=1768465284",
+      "title": "Scottie Barnes 2023 Topps Chrome Gold Refractor 28/50",
+      "sport": "NBA",
+      "asking_price": 20.0,
+      "shipping": 0.0,
+      "currency": "AUD",
+      "landed_aud": 20.0,
+      "identity": {
+        "player": "Scottie Barnes",
+        "year": "2023",
+        "brand": "Topps Chrome",
+        "set_name": "Topps Chrome",
+        "card_number": null,
+        "parallel": "Gold Refractor",
+        "serial_current": 28,
+        "serial_total": 50,
+        "grader": null,
+        "grade": null,
+        "autograph": false,
+        "memorabilia": false,
+        "rookie": false
+      },
+      "card_family": {
+        "key": "cf_ac15918c4c1ccb68393c",
+        "eligible": true,
+        "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
+        "match_confidence": 1.0,
+        "match_reasons": [
+          "same player",
+          "same year",
+          "same brand/product",
+          "same parallel",
+          "same serial denominator"
+        ],
+        "canonical_components": {
+          "sport": "nba",
+          "player": "scottiebarnes",
+          "year": "2023",
+          "brand": "toppschrome",
+          "product": "toppschrome",
+          "card_number": "",
+          "parallel": "goldrefractor",
+          "serial_total": "50",
+          "grader": "",
+          "grade": "",
+          "autograph": "0",
+          "memorabilia": "0",
+          "rookie": "0"
+        }
+      },
+      "history": null,
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-10-10"
+    },
+    {
+      "source": "boop",
+      "external_id": "15215560065190",
+      "url": "https://www.boopcollectables.com.au/products/21358",
+      "image_url": "https://cdn.shopify.com/s/files/1/0412/4190/3270/files/20260112201259_0069_sts8to.jpg?v=1768465221",
+      "title": "Tristan Da Silva 2024 Court Kings Panini Works in Progress Ruby RC 12/149",
+      "sport": "NBA",
+      "asking_price": 15.0,
+      "shipping": 0.0,
+      "currency": "AUD",
+      "landed_aud": 15.0,
+      "identity": {
+        "player": "Tristan Da",
+        "year": "2024",
+        "brand": "Panini",
+        "set_name": "Panini",
+        "card_number": null,
+        "parallel": "Ruby",
+        "serial_current": 12,
+        "serial_total": 149,
+        "grader": null,
+        "grade": null,
+        "autograph": false,
+        "memorabilia": false,
+        "rookie": true
+      },
+      "card_family": {
+        "key": "cf_ba2fb07e97b51c776bc6",
+        "eligible": true,
+        "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
+        "match_confidence": 1.0,
+        "match_reasons": [
+          "same player",
+          "same year",
+          "same brand/product",
+          "same parallel",
+          "same serial denominator",
+          "same rookie state"
+        ],
+        "canonical_components": {
+          "sport": "nba",
+          "player": "tristanda",
+          "year": "2024",
+          "brand": "panini",
+          "product": "panini",
+          "card_number": "",
+          "parallel": "ruby",
+          "serial_total": "149",
+          "grader": "",
+          "grade": "",
+          "autograph": "0",
+          "memorabilia": "0",
+          "rookie": "1"
+        }
+      },
+      "history": null,
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-10-10"
+    },
+    {
+      "source": "boop",
+      "external_id": "15215558525094",
+      "url": "https://www.boopcollectables.com.au/products/21322",
+      "image_url": "https://cdn.shopify.com/s/files/1/0412/4190/3270/files/20260112201017_0051_qnafqu.jpg?v=1768465183",
+      "title": "Tyrese Maxey 2024 Panini Prizm Red 009/299",
+      "sport": "NBA",
+      "asking_price": 15.0,
+      "shipping": 0.0,
+      "currency": "AUD",
+      "landed_aud": 15.0,
+      "identity": {
+        "player": "Tyrese Maxey",
+        "year": "2024",
+        "brand": "Panini Prizm",
+        "set_name": "Panini Prizm",
+        "card_number": null,
+        "parallel": "Red",
+        "serial_current": 9,
+        "serial_total": 299,
+        "grader": null,
+        "grade": null,
+        "autograph": false,
+        "memorabilia": false,
+        "rookie": false
+      },
+      "card_family": {
+        "key": "cf_527b07470d257f9f5229",
+        "eligible": true,
+        "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
+        "match_confidence": 1.0,
+        "match_reasons": [
+          "same player",
+          "same year",
+          "same brand/product",
+          "same parallel",
+          "same serial denominator"
+        ],
+        "canonical_components": {
+          "sport": "nba",
+          "player": "tyresemaxey",
+          "year": "2024",
+          "brand": "paniniprizm",
+          "product": "paniniprizm",
+          "card_number": "",
+          "parallel": "red",
+          "serial_total": "299",
+          "grader": "",
+          "grade": "",
+          "autograph": "0",
+          "memorabilia": "0",
+          "rookie": "0"
+        }
+      },
+      "history": null,
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-10-10"
+    },
+    {
+      "source": "boop",
+      "external_id": "15210051535014",
+      "url": "https://www.boopcollectables.com.au/products/20761",
+      "image_url": "https://cdn.shopify.com/s/files/1/0412/4190/3270/files/Cards_121-1_xh6e3l.jpg?v=1767605646",
+      "title": "Tyler Smith 2024 Panini Prizm Blue Shimmer RC 35/35",
+      "sport": "NBA",
+      "asking_price": 15.0,
+      "shipping": 0.0,
+      "currency": "AUD",
+      "landed_aud": 15.0,
+      "identity": {
+        "player": "Tyler Smith",
+        "year": "2024",
+        "brand": "Panini Prizm",
+        "set_name": "Panini Prizm",
+        "card_number": null,
+        "parallel": "Shimmer",
+        "serial_current": 35,
+        "serial_total": 35,
+        "grader": null,
+        "grade": null,
+        "autograph": false,
+        "memorabilia": false,
+        "rookie": true
+      },
+      "card_family": {
+        "key": "cf_f8ee4b9b31d92fd40663",
+        "eligible": true,
+        "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
+        "match_confidence": 1.0,
+        "match_reasons": [
+          "same player",
+          "same year",
+          "same brand/product",
+          "same parallel",
+          "same serial denominator",
+          "same rookie state"
+        ],
+        "canonical_components": {
+          "sport": "nba",
+          "player": "tylersmith",
+          "year": "2024",
+          "brand": "paniniprizm",
+          "product": "paniniprizm",
+          "card_number": "",
+          "parallel": "shimmer",
+          "serial_total": "35",
+          "grader": "",
+          "grade": "",
+          "autograph": "0",
+          "memorabilia": "0",
+          "rookie": "1"
+        }
+      },
+      "history": null,
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-10-10"
+    },
+    {
+      "source": "boop",
+      "external_id": "15226225098918",
+      "url": "https://www.boopcollectables.com.au/products/21587",
+      "image_url": "https://cdn.shopify.com/s/files/1/0412/4190/3270/files/20260112203251_0087_hkyozz.jpg?v=1769936710",
+      "title": "Ron Holland II 2024-25 Panini Donruss Crunch Time Holo Laser RC 67/99",
+      "sport": "NBA",
+      "asking_price": 10.0,
+      "shipping": 0.0,
+      "currency": "AUD",
+      "landed_aud": 10.0,
+      "identity": {
+        "player": "Ron Holland II",
+        "year": "2024-25",
+        "brand": "Donruss",
+        "set_name": "Donruss",
+        "card_number": null,
+        "parallel": "Holo",
+        "serial_current": 67,
+        "serial_total": 99,
+        "grader": null,
+        "grade": null,
+        "autograph": false,
+        "memorabilia": false,
+        "rookie": true
+      },
+      "card_family": {
+        "key": "cf_7338feeb756531ea2bd7",
+        "eligible": true,
+        "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
+        "match_confidence": 1.0,
+        "match_reasons": [
+          "same player",
+          "same year",
+          "same brand/product",
+          "same parallel",
+          "same serial denominator",
+          "same rookie state"
+        ],
+        "canonical_components": {
+          "sport": "nba",
+          "player": "ronhollandii",
+          "year": "202425",
+          "brand": "donruss",
+          "product": "donruss",
+          "card_number": "",
+          "parallel": "holo",
+          "serial_total": "99",
+          "grader": "",
+          "grade": "",
+          "autograph": "0",
+          "memorabilia": "0",
+          "rookie": "1"
+        }
+      },
+      "history": null,
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-10-10"
+    },
+    {
+      "source": "boop",
+      "external_id": "15226222608550",
+      "url": "https://www.boopcollectables.com.au/products/21514",
+      "image_url": "https://cdn.shopify.com/s/files/1/0412/4190/3270/files/20260112202900_0019_wnxxjx.jpg?v=1769936638",
+      "title": "Zach LaVine 2017-18 Panini Donruss Optic All Clear For Takeoff Lime Green 91/175",
+      "sport": "NBA",
+      "asking_price": 10.0,
+      "shipping": 0.0,
+      "currency": "AUD",
+      "landed_aud": 10.0,
+      "identity": {
+        "player": "Zach LaVine",
+        "year": "2017-18",
+        "brand": "Panini Donruss Optic",
+        "set_name": "Panini Donruss Optic",
+        "card_number": null,
+        "parallel": "Green",
+        "serial_current": 91,
+        "serial_total": 175,
+        "grader": null,
+        "grade": null,
+        "autograph": false,
+        "memorabilia": false,
+        "rookie": false
+      },
+      "card_family": {
+        "key": "cf_bf0bf8bede3e680ff15e",
+        "eligible": true,
+        "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
+        "match_confidence": 1.0,
+        "match_reasons": [
+          "same player",
+          "same year",
+          "same brand/product",
+          "same parallel",
+          "same serial denominator"
+        ],
+        "canonical_components": {
+          "sport": "nba",
+          "player": "zachlavine",
+          "year": "201718",
+          "brand": "paninidonrussoptic",
+          "product": "paninidonrussoptic",
+          "card_number": "",
+          "parallel": "green",
+          "serial_total": "175",
+          "grader": "",
+          "grade": "",
+          "autograph": "0",
+          "memorabilia": "0",
+          "rookie": "0"
+        }
+      },
+      "history": null,
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-10-10"
+    },
+    {
+      "source": "boop",
+      "external_id": "15226222543014",
+      "url": "https://www.boopcollectables.com.au/products/21512",
+      "image_url": "https://cdn.shopify.com/s/files/1/0412/4190/3270/files/20260112202900_0015_h3vqhs.jpg?v=1769936636",
+      "title": "Robin Lopez 2017-18 Panini Prizm Orange 17/49",
+      "sport": "NBA",
+      "asking_price": 10.0,
+      "shipping": 0.0,
+      "currency": "AUD",
+      "landed_aud": 10.0,
+      "identity": {
+        "player": "Robin Lopez",
+        "year": "2017-18",
+        "brand": "Panini Prizm",
+        "set_name": "Panini Prizm",
+        "card_number": null,
+        "parallel": "Orange",
+        "serial_current": 17,
+        "serial_total": 49,
+        "grader": null,
+        "grade": null,
+        "autograph": false,
+        "memorabilia": false,
+        "rookie": false
+      },
+      "card_family": {
+        "key": "cf_70b3bf46d49df266800c",
+        "eligible": true,
+        "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
+        "match_confidence": 1.0,
+        "match_reasons": [
+          "same player",
+          "same year",
+          "same brand/product",
+          "same parallel",
+          "same serial denominator"
+        ],
+        "canonical_components": {
+          "sport": "nba",
+          "player": "robinlopez",
+          "year": "201718",
+          "brand": "paniniprizm",
+          "product": "paniniprizm",
+          "card_number": "",
+          "parallel": "orange",
+          "serial_total": "49",
+          "grader": "",
+          "grade": "",
+          "autograph": "0",
+          "memorabilia": "0",
+          "rookie": "0"
+        }
+      },
+      "history": null,
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-10-10"
+    },
+    {
+      "source": "boop",
+      "external_id": "15215559475366",
+      "url": "https://www.boopcollectables.com.au/products/21344",
+      "image_url": "https://cdn.shopify.com/s/files/1/0412/4190/3270/files/20260112201259_0041_w8lp3k.jpg?v=1768465206",
+      "title": "Trayce Jackson-Davis 2024 Panini Hoops Red Lazer 34/99",
+      "sport": "NBA",
+      "asking_price": 10.0,
+      "shipping": 0.0,
+      "currency": "AUD",
+      "landed_aud": 10.0,
+      "identity": {
+        "player": "Trayce Jackson-Davis",
+        "year": "2024",
+        "brand": "Panini Hoops",
+        "set_name": "Panini Hoops",
+        "card_number": null,
+        "parallel": "Lazer",
+        "serial_current": 34,
+        "serial_total": 99,
+        "grader": null,
+        "grade": null,
+        "autograph": false,
+        "memorabilia": false,
+        "rookie": false
+      },
+      "card_family": {
+        "key": "cf_4f0f43ab38706def0b72",
+        "eligible": true,
+        "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
+        "match_confidence": 1.0,
+        "match_reasons": [
+          "same player",
+          "same year",
+          "same brand/product",
+          "same parallel",
+          "same serial denominator"
+        ],
+        "canonical_components": {
+          "sport": "nba",
+          "player": "traycejacksondavis",
+          "year": "2024",
+          "brand": "paninihoops",
+          "product": "paninihoops",
+          "card_number": "",
+          "parallel": "lazer",
+          "serial_total": "99",
+          "grader": "",
+          "grade": "",
+          "autograph": "0",
+          "memorabilia": "0",
+          "rookie": "0"
+        }
+      },
+      "history": null,
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-10-10"
+    },
+    {
+      "source": "boop",
+      "external_id": "8622948581542",
+      "url": "https://www.boopcollectables.com.au/products/20103",
+      "image_url": "https://cdn.shopify.com/s/files/1/0412/4190/3270/files/Cards-192-1-xgxzsk-_1.jpg?v=1767534501",
+      "title": "Walker Kessler 2022-23 Panini Chronicles Red RC 55/149",
+      "sport": "NBA",
+      "asking_price": 10.0,
+      "shipping": 0.0,
+      "currency": "AUD",
+      "landed_aud": 10.0,
+      "identity": {
+        "player": "Walker Kessler",
+        "year": "2022-23",
+        "brand": "Panini Chronicles",
+        "set_name": "Panini Chronicles",
+        "card_number": null,
+        "parallel": "Red",
+        "serial_current": 55,
+        "serial_total": 149,
+        "grader": null,
+        "grade": null,
+        "autograph": false,
+        "memorabilia": false,
+        "rookie": true
+      },
+      "card_family": {
+        "key": "cf_5a4fc00da3613c04a67c",
+        "eligible": true,
+        "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
+        "match_confidence": 1.0,
+        "match_reasons": [
+          "same player",
+          "same year",
+          "same brand/product",
+          "same parallel",
+          "same serial denominator",
+          "same rookie state"
+        ],
+        "canonical_components": {
+          "sport": "nba",
+          "player": "walkerkessler",
+          "year": "202223",
+          "brand": "paninichronicles",
+          "product": "paninichronicles",
+          "card_number": "",
+          "parallel": "red",
+          "serial_total": "149",
+          "grader": "",
+          "grade": "",
+          "autograph": "0",
+          "memorabilia": "0",
+          "rookie": "1"
+        }
+      },
+      "history": null,
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-10-10"
+    },
+    {
+      "source": "boop",
+      "external_id": "15215557705894",
+      "url": "https://www.boopcollectables.com.au/products/21302",
+      "image_url": "https://cdn.shopify.com/s/files/1/0412/4190/3270/files/20260112201017_0011_batm6v.jpg?v=1768465158",
+      "title": "Tyus Jones 2024 Panini Prizm Blue Fast Break 140/150",
+      "sport": "NBA",
+      "asking_price": 6.0,
+      "shipping": 0.0,
+      "currency": "AUD",
+      "landed_aud": 6.0,
+      "identity": {
+        "player": "Tyus Jones",
+        "year": "2024",
+        "brand": "Panini Prizm",
+        "set_name": "Panini Prizm",
+        "card_number": null,
+        "parallel": "Blue",
+        "serial_current": 140,
+        "serial_total": 150,
+        "grader": null,
+        "grade": null,
+        "autograph": false,
+        "memorabilia": false,
+        "rookie": false
+      },
+      "card_family": {
+        "key": "cf_6c669d798fa5403916d8",
+        "eligible": true,
+        "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
+        "match_confidence": 1.0,
+        "match_reasons": [
+          "same player",
+          "same year",
+          "same brand/product",
+          "same parallel",
+          "same serial denominator"
+        ],
+        "canonical_components": {
+          "sport": "nba",
+          "player": "tyusjones",
+          "year": "2024",
+          "brand": "paniniprizm",
+          "product": "paniniprizm",
+          "card_number": "",
+          "parallel": "blue",
+          "serial_total": "150",
+          "grader": "",
+          "grade": "",
+          "autograph": "0",
+          "memorabilia": "0",
+          "rookie": "0"
+        }
+      },
+      "history": null,
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-10-10"
+    },
+    {
+      "source": "boop",
+      "external_id": "15226224771238",
+      "url": "https://www.boopcollectables.com.au/products/21577",
+      "image_url": "https://cdn.shopify.com/s/files/1/0412/4190/3270/files/20260112203251_0067_w8bn4m.jpg?v=1769936699",
+      "title": "Tre Mann 2024-25 Panini Prizm Fast Break Blue 53/150",
+      "sport": "NBA",
+      "asking_price": 5.0,
+      "shipping": 0.0,
+      "currency": "AUD",
+      "landed_aud": 5.0,
+      "identity": {
+        "player": "Tre Mann",
+        "year": "2024-25",
+        "brand": "Panini Prizm",
+        "set_name": "Panini Prizm",
+        "card_number": null,
+        "parallel": "Blue",
+        "serial_current": 53,
+        "serial_total": 150,
+        "grader": null,
+        "grade": null,
+        "autograph": false,
+        "memorabilia": false,
+        "rookie": false
+      },
+      "card_family": {
+        "key": "cf_262535d8b53f6a80fe48",
+        "eligible": true,
+        "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
+        "match_confidence": 1.0,
+        "match_reasons": [
+          "same player",
+          "same year",
+          "same brand/product",
+          "same parallel",
+          "same serial denominator"
+        ],
+        "canonical_components": {
+          "sport": "nba",
+          "player": "tremann",
+          "year": "202425",
+          "brand": "paniniprizm",
+          "product": "paniniprizm",
+          "card_number": "",
+          "parallel": "blue",
+          "serial_total": "150",
+          "grader": "",
+          "grade": "",
+          "autograph": "0",
+          "memorabilia": "0",
+          "rookie": "0"
+        }
+      },
+      "history": null,
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-10-10"
+    },
+    {
+      "source": "boop",
+      "external_id": "15226224115878",
+      "url": "https://www.boopcollectables.com.au/products/21557",
+      "image_url": "https://cdn.shopify.com/s/files/1/0412/4190/3270/files/20260112203251_0027_gxxumg.jpg?v=1769936681",
+      "title": "RJ Hampton 2022-23 Panini Prizm Blue 57/199",
+      "sport": "NBA",
+      "asking_price": 5.0,
+      "shipping": 0.0,
+      "currency": "AUD",
+      "landed_aud": 5.0,
+      "identity": {
+        "player": "RJ Hampton",
+        "year": "2022-23",
+        "brand": "Panini Prizm",
+        "set_name": "Panini Prizm",
+        "card_number": null,
+        "parallel": "Blue",
+        "serial_current": 57,
+        "serial_total": 199,
+        "grader": null,
+        "grade": null,
+        "autograph": false,
+        "memorabilia": false,
+        "rookie": false
+      },
+      "card_family": {
+        "key": "cf_0add71d0c22a0288484e",
+        "eligible": true,
+        "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
+        "match_confidence": 1.0,
+        "match_reasons": [
+          "same player",
+          "same year",
+          "same brand/product",
+          "same parallel",
+          "same serial denominator"
+        ],
+        "canonical_components": {
+          "sport": "nba",
+          "player": "rjhampton",
+          "year": "202223",
+          "brand": "paniniprizm",
+          "product": "paniniprizm",
+          "card_number": "",
+          "parallel": "blue",
+          "serial_total": "199",
+          "grader": "",
+          "grade": "",
+          "autograph": "0",
+          "memorabilia": "0",
+          "rookie": "0"
+        }
+      },
+      "history": null,
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-10-10"
+    },
+    {
+      "source": "boop",
+      "external_id": "15226222805158",
+      "url": "https://www.boopcollectables.com.au/products/21519",
+      "image_url": "https://cdn.shopify.com/s/files/1/0412/4190/3270/files/20260112202900_0029_vgxn2r.jpg?v=1769936643",
+      "title": "Zach LaVine 2024-25 Panini Donruss Holo Laser 71/149",
+      "sport": "NBA",
+      "asking_price": 5.0,
+      "shipping": 0.0,
+      "currency": "AUD",
+      "landed_aud": 5.0,
+      "identity": {
+        "player": "Zach LaVine",
+        "year": "2024-25",
+        "brand": "Donruss",
+        "set_name": "Donruss",
+        "card_number": null,
+        "parallel": "Holo",
+        "serial_current": 71,
+        "serial_total": 149,
+        "grader": null,
+        "grade": null,
+        "autograph": false,
+        "memorabilia": false,
+        "rookie": false
+      },
+      "card_family": {
+        "key": "cf_20f87acfc8b6238b8231",
+        "eligible": true,
+        "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
+        "match_confidence": 1.0,
+        "match_reasons": [
+          "same player",
+          "same year",
+          "same brand/product",
+          "same parallel",
+          "same serial denominator"
+        ],
+        "canonical_components": {
+          "sport": "nba",
+          "player": "zachlavine",
+          "year": "202425",
+          "brand": "donruss",
+          "product": "donruss",
+          "card_number": "",
+          "parallel": "holo",
+          "serial_total": "149",
+          "grader": "",
+          "grade": "",
+          "autograph": "0",
+          "memorabilia": "0",
+          "rookie": "0"
+        }
+      },
+      "history": null,
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-10-10"
+    },
+    {
+      "source": "boop",
+      "external_id": "15215562457254",
+      "url": "https://www.boopcollectables.com.au/products/21424",
+      "image_url": "https://cdn.shopify.com/s/files/1/0412/4190/3270/files/20260112201259_0207_hzdh6v.jpg?v=1768465289",
+      "title": "Zach Collins 2023 Topps Chrome Green Wave 27/65",
+      "sport": "NBA",
+      "asking_price": 5.0,
+      "shipping": 0.0,
+      "currency": "AUD",
+      "landed_aud": 5.0,
+      "identity": {
+        "player": "Zach Collins",
+        "year": "2023",
+        "brand": "Topps Chrome",
+        "set_name": "Topps Chrome",
+        "card_number": null,
+        "parallel": "Green Wave",
+        "serial_current": 27,
+        "serial_total": 65,
+        "grader": null,
+        "grade": null,
+        "autograph": false,
+        "memorabilia": false,
+        "rookie": false
+      },
+      "card_family": {
+        "key": "cf_8f25dfe0aa0d8a9d3c34",
+        "eligible": true,
+        "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
+        "match_confidence": 1.0,
+        "match_reasons": [
+          "same player",
+          "same year",
+          "same brand/product",
+          "same parallel",
+          "same serial denominator"
+        ],
+        "canonical_components": {
+          "sport": "nba",
+          "player": "zachcollins",
+          "year": "2023",
+          "brand": "toppschrome",
+          "product": "toppschrome",
+          "card_number": "",
+          "parallel": "greenwave",
+          "serial_total": "65",
+          "grader": "",
+          "grade": "",
+          "autograph": "0",
+          "memorabilia": "0",
+          "rookie": "0"
+        }
+      },
+      "history": null,
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-10-10"
+    },
+    {
+      "source": "boop",
+      "external_id": "15215559573670",
+      "url": "https://www.boopcollectables.com.au/products/21346",
+      "image_url": "https://cdn.shopify.com/s/files/1/0412/4190/3270/files/20260112201259_0045_cjw8an.jpg?v=1768465208",
+      "title": "Scottie Barnes 2024 Panini Donruss Red Lazer 36/99",
+      "sport": "NBA",
+      "asking_price": 5.0,
+      "shipping": 0.0,
+      "currency": "AUD",
+      "landed_aud": 5.0,
+      "identity": {
+        "player": "Scottie Barnes",
+        "year": "2024",
+        "brand": "Donruss",
+        "set_name": "Donruss",
+        "card_number": null,
+        "parallel": "Lazer",
+        "serial_current": 36,
+        "serial_total": 99,
+        "grader": null,
+        "grade": null,
+        "autograph": false,
+        "memorabilia": false,
+        "rookie": false
+      },
+      "card_family": {
+        "key": "cf_3ef8a82435c00d4c3c35",
+        "eligible": true,
+        "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
+        "match_confidence": 1.0,
+        "match_reasons": [
+          "same player",
+          "same year",
+          "same brand/product",
+          "same parallel",
+          "same serial denominator"
+        ],
+        "canonical_components": {
+          "sport": "nba",
+          "player": "scottiebarnes",
+          "year": "2024",
+          "brand": "donruss",
+          "product": "donruss",
+          "card_number": "",
+          "parallel": "lazer",
+          "serial_total": "99",
+          "grader": "",
+          "grade": "",
+          "autograph": "0",
+          "memorabilia": "0",
+          "rookie": "0"
+        }
+      },
+      "history": null,
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-10-10"
+    },
+    {
+      "source": "ebay",
+      "external_id": "v1|389564932148|0",
+      "url": "https://www.ebay.com.au/itm/389564932148?_skw=2022-23+RJ+Hampton+Panini+Prizm+Blue+%2F199&hash=item5ab3e12034:g:NkUAAeSwhthqkdnd",
+      "image_url": "https://i.ebayimg.com/images/g/NkUAAeSwhthqkdnd/s-l225.jpg",
+      "title": "RJ Hampton 2022-23 Panini Prizm Blue 57/199",
+      "sport": "NBA",
+      "asking_price": 5.0,
+      "shipping": 4.5,
+      "currency": "AUD",
+      "landed_aud": 9.5,
+      "identity": {
+        "player": "RJ Hampton",
+        "year": "2022-23",
+        "brand": "Panini Prizm",
+        "set_name": "Panini Prizm",
+        "card_number": null,
+        "parallel": "Blue",
+        "serial_current": 57,
+        "serial_total": 199,
+        "grader": null,
+        "grade": null,
+        "autograph": false,
+        "memorabilia": false,
+        "rookie": false
+      },
+      "card_family": {
+        "key": "cf_0add71d0c22a0288484e",
+        "eligible": true,
+        "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
+        "match_confidence": 1.0,
+        "match_reasons": [
+          "same player",
+          "same year",
+          "same brand/product",
+          "same parallel",
+          "same serial denominator"
+        ],
+        "canonical_components": {
+          "sport": "nba",
+          "player": "rjhampton",
+          "year": "202223",
+          "brand": "paniniprizm",
+          "product": "paniniprizm",
+          "card_number": "",
+          "parallel": "blue",
+          "serial_total": "199",
+          "grader": "",
+          "grade": "",
+          "autograph": "0",
+          "memorabilia": "0",
+          "rookie": "0"
+        }
+      },
+      "history": null,
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-10-10"
+    },
+    {
+      "source": "ebay",
+      "external_id": "v1|134757605283|0",
+      "url": "https://www.ebay.com.au/itm/134757605283?_skw=2022-23+RJ+Hampton+Panini+Prizm+Blue+%2F199&hash=item1f602ddfa3:g:zokAAOSweldlIATb",
+      "image_url": "https://i.ebayimg.com/images/g/zokAAOSweldlIATb/s-l225.jpg",
+      "title": "2022-23 PANINI PRIZM RJ HAMPTON 30/199 BLUE MAGIC SP ",
+      "sport": "NBA",
+      "asking_price": 5.5,
+      "shipping": 17.96,
+      "currency": "AUD",
+      "landed_aud": 23.46,
+      "identity": {
+        "player": "RJ Hampton",
+        "year": "2022-23",
+        "brand": "Panini Prizm",
+        "set_name": "Panini Prizm",
+        "card_number": null,
+        "parallel": "Blue",
+        "serial_current": 30,
+        "serial_total": 199,
+        "grader": null,
+        "grade": null,
+        "autograph": false,
+        "memorabilia": false,
+        "rookie": false
+      },
+      "card_family": {
+        "key": "cf_0add71d0c22a0288484e",
+        "eligible": true,
+        "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
+        "match_confidence": 1.0,
+        "match_reasons": [
+          "same player",
+          "same year",
+          "same brand/product",
+          "same parallel",
+          "same serial denominator"
+        ],
+        "canonical_components": {
+          "sport": "nba",
+          "player": "rjhampton",
+          "year": "202223",
+          "brand": "paniniprizm",
+          "product": "paniniprizm",
+          "card_number": "",
+          "parallel": "blue",
+          "serial_total": "199",
+          "grader": "",
+          "grade": "",
+          "autograph": "0",
+          "memorabilia": "0",
+          "rookie": "0"
+        }
+      },
+      "history": null,
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-10-10"
+    },
+    {
+      "source": "ebay",
+      "external_id": "v1|389564923480|0",
+      "url": "https://www.ebay.com.au/itm/389564923480?_skw=2017-18+Robin+Lopez+Panini+Prizm+Orange+%2F49&hash=item5ab3e0fe58:g:EGsAAeSwW9Vpf0Qv",
+      "image_url": "https://i.ebayimg.com/images/g/EGsAAeSwW9Vpf0Qv/s-l225.jpg",
+      "title": "Robin Lopez 2017-18 Panini Prizm Orange 17/49",
+      "sport": "NBA",
+      "asking_price": 10.0,
+      "shipping": 4.5,
+      "currency": "AUD",
+      "landed_aud": 14.5,
+      "identity": {
+        "player": "Robin Lopez",
+        "year": "2017-18",
+        "brand": "Panini Prizm",
+        "set_name": "Panini Prizm",
+        "card_number": null,
+        "parallel": "Orange",
+        "serial_current": 17,
+        "serial_total": 49,
+        "grader": null,
+        "grade": null,
+        "autograph": false,
+        "memorabilia": false,
+        "rookie": false
+      },
+      "card_family": {
+        "key": "cf_70b3bf46d49df266800c",
+        "eligible": true,
+        "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
+        "match_confidence": 1.0,
+        "match_reasons": [
+          "same player",
+          "same year",
+          "same brand/product",
+          "same parallel",
+          "same serial denominator"
+        ],
+        "canonical_components": {
+          "sport": "nba",
+          "player": "robinlopez",
+          "year": "201718",
+          "brand": "paniniprizm",
+          "product": "paniniprizm",
+          "card_number": "",
+          "parallel": "orange",
+          "serial_total": "49",
+          "grader": "",
+          "grade": "",
+          "autograph": "0",
+          "memorabilia": "0",
+          "rookie": "0"
+        }
+      },
+      "history": null,
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-10-10"
+    },
+    {
+      "source": "ebay",
+      "external_id": "v1|389564927196|0",
+      "url": "https://www.ebay.com.au/itm/389564927196?_skw=2024-25+Ron+Holland+II+Donruss+Holo+%2F99&hash=item5ab3e10cdc:g:kY8AAeSwmmZqkdod",
+      "image_url": "https://i.ebayimg.com/images/g/kY8AAeSwmmZqkdod/s-l225.jpg",
+      "title": "Ron Holland II 2024-25 Panini Donruss Crunch Time Holo Laser RC 67/99",
+      "sport": "NBA",
+      "asking_price": 10.0,
+      "shipping": 4.5,
+      "currency": "AUD",
+      "landed_aud": 14.5,
+      "identity": {
+        "player": "Ron Holland II",
+        "year": "2024-25",
+        "brand": "Donruss",
+        "set_name": "Donruss",
+        "card_number": null,
+        "parallel": "Holo",
+        "serial_current": 67,
+        "serial_total": 99,
+        "grader": null,
+        "grade": null,
+        "autograph": false,
+        "memorabilia": false,
+        "rookie": true
+      },
+      "card_family": {
+        "key": "cf_7338feeb756531ea2bd7",
+        "eligible": true,
+        "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
+        "match_confidence": 1.0,
+        "match_reasons": [
+          "same player",
+          "same year",
+          "same brand/product",
+          "same parallel",
+          "same serial denominator",
+          "same rookie state"
+        ],
+        "canonical_components": {
+          "sport": "nba",
+          "player": "ronhollandii",
+          "year": "202425",
+          "brand": "donruss",
+          "product": "donruss",
+          "card_number": "",
+          "parallel": "holo",
+          "serial_total": "99",
+          "grader": "",
+          "grade": "",
+          "autograph": "0",
+          "memorabilia": "0",
+          "rookie": "1"
+        }
+      },
+      "history": null,
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-10-10"
+    },
+    {
+      "source": "ebay",
+      "external_id": "v1|389180627084|0",
+      "url": "https://www.ebay.com.au/itm/389180627084?_skw=2023-24+Sasha+Vezenkov+Panini+Select+Orange+%2F15&hash=item5a9cf9188c:g:wYkAAeSwzf9qkdDq",
+      "image_url": "https://i.ebayimg.com/images/g/wYkAAeSwzf9qkdDq/s-l225.jpg",
+      "title": "Sasha Vezenkov 2023-24 Panini Select Orange Pulsar Courtside RC 5/15",
+      "sport": "NBA",
+      "asking_price": 35.0,
+      "shipping": 8.99,
+      "currency": "AUD",
+      "landed_aud": 43.99,
+      "identity": {
+        "player": "Sasha Vezenkov",
+        "year": "2023-24",
+        "brand": "Panini Select",
+        "set_name": "Panini Select",
+        "card_number": null,
+        "parallel": "Orange",
+        "serial_current": 5,
+        "serial_total": 15,
+        "grader": null,
+        "grade": null,
+        "autograph": false,
+        "memorabilia": false,
+        "rookie": true
+      },
+      "card_family": {
+        "key": "cf_0d5926b694502fb7dd0c",
+        "eligible": true,
+        "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
+        "match_confidence": 1.0,
+        "match_reasons": [
+          "same player",
+          "same year",
+          "same brand/product",
+          "same parallel",
+          "same serial denominator",
+          "same rookie state"
+        ],
+        "canonical_components": {
+          "sport": "nba",
+          "player": "sashavezenkov",
+          "year": "202324",
+          "brand": "paniniselect",
+          "product": "paniniselect",
+          "card_number": "",
+          "parallel": "orange",
+          "serial_total": "15",
+          "grader": "",
+          "grade": "",
+          "autograph": "0",
+          "memorabilia": "0",
+          "rookie": "1"
+        }
+      },
+      "history": null,
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-10-10"
+    },
+    {
+      "source": "ebay",
+      "external_id": "v1|389497910532|0",
+      "url": "https://www.ebay.com.au/itm/389497910532?_skw=2023+Scottie+Barnes+Topps+Chrome+Gold+Refractor+%2F50&hash=item5aafe27504:g:U8EAAeSwgwRqkdkF",
+      "image_url": "https://i.ebayimg.com/images/g/U8EAAeSwgwRqkdkF/s-l225.jpg",
+      "title": "Scottie Barnes 2023 Topps Chrome Gold Refractor 28/50",
+      "sport": "NBA",
+      "asking_price": 20.0,
+      "shipping": 4.5,
+      "currency": "AUD",
+      "landed_aud": 24.5,
+      "identity": {
+        "player": "Scottie Barnes",
+        "year": "2023",
+        "brand": "Topps Chrome",
+        "set_name": "Topps Chrome",
+        "card_number": null,
+        "parallel": "Gold Refractor",
+        "serial_current": 28,
+        "serial_total": 50,
+        "grader": null,
+        "grade": null,
+        "autograph": false,
+        "memorabilia": false,
+        "rookie": false
+      },
+      "card_family": {
+        "key": "cf_ac15918c4c1ccb68393c",
+        "eligible": true,
+        "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
+        "match_confidence": 1.0,
+        "match_reasons": [
+          "same player",
+          "same year",
+          "same brand/product",
+          "same parallel",
+          "same serial denominator"
+        ],
+        "canonical_components": {
+          "sport": "nba",
+          "player": "scottiebarnes",
+          "year": "2023",
+          "brand": "toppschrome",
+          "product": "toppschrome",
+          "card_number": "",
+          "parallel": "goldrefractor",
+          "serial_total": "50",
+          "grader": "",
+          "grade": "",
+          "autograph": "0",
+          "memorabilia": "0",
+          "rookie": "0"
+        }
+      },
+      "history": null,
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-10-10"
+    },
+    {
+      "source": "ebay",
+      "external_id": "v1|389497904109|0",
+      "url": "https://www.ebay.com.au/itm/389497904109?_skw=2024+Scottie+Barnes+Donruss+Lazer+%2F99&hash=item5aafe25bed:g:pJ4AAeSwicFqkdtc",
+      "image_url": "https://i.ebayimg.com/images/g/pJ4AAeSwicFqkdtc/s-l225.jpg",
+      "title": "Scottie Barnes 2024 Panini Donruss Red Lazer 36/99",
+      "sport": "NBA",
+      "asking_price": 5.0,
+      "shipping": 4.5,
+      "currency": "AUD",
+      "landed_aud": 9.5,
+      "identity": {
+        "player": "Scottie Barnes",
+        "year": "2024",
+        "brand": "Donruss",
+        "set_name": "Donruss",
+        "card_number": null,
+        "parallel": "Lazer",
+        "serial_current": 36,
+        "serial_total": 99,
+        "grader": null,
+        "grade": null,
+        "autograph": false,
+        "memorabilia": false,
+        "rookie": false
+      },
+      "card_family": {
+        "key": "cf_3ef8a82435c00d4c3c35",
+        "eligible": true,
+        "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
+        "match_confidence": 1.0,
+        "match_reasons": [
+          "same player",
+          "same year",
+          "same brand/product",
+          "same parallel",
+          "same serial denominator"
+        ],
+        "canonical_components": {
+          "sport": "nba",
+          "player": "scottiebarnes",
+          "year": "2024",
+          "brand": "donruss",
+          "product": "donruss",
+          "card_number": "",
+          "parallel": "lazer",
+          "serial_total": "99",
+          "grader": "",
+          "grade": "",
+          "autograph": "0",
+          "memorabilia": "0",
+          "rookie": "0"
+        }
+      },
+      "history": null,
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-10-10"
+    },
+    {
+      "source": "ebay",
+      "external_id": "v1|389497898744|0",
+      "url": "https://www.ebay.com.au/itm/389497898744?_skw=2024+Trayce+Jackson-Davis+Panini+Hoops+Lazer+%2F99&hash=item5aafe246f8:g:nmYAAeSwMf5qkdku",
+      "image_url": "https://i.ebayimg.com/images/g/nmYAAeSwMf5qkdku/s-l225.jpg",
+      "title": "Trayce Jackson-Davis 2024 Panini Hoops Red Lazer 34/99",
+      "sport": "NBA",
+      "asking_price": 10.0,
+      "shipping": 4.5,
+      "currency": "AUD",
+      "landed_aud": 14.5,
+      "identity": {
+        "player": "Trayce Jackson-Davis",
+        "year": "2024",
+        "brand": "Panini Hoops",
+        "set_name": "Panini Hoops",
+        "card_number": null,
+        "parallel": "Lazer",
+        "serial_current": 34,
+        "serial_total": 99,
+        "grader": null,
+        "grade": null,
+        "autograph": false,
+        "memorabilia": false,
+        "rookie": false
+      },
+      "card_family": {
+        "key": "cf_4f0f43ab38706def0b72",
+        "eligible": true,
+        "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
+        "match_confidence": 1.0,
+        "match_reasons": [
+          "same player",
+          "same year",
+          "same brand/product",
+          "same parallel",
+          "same serial denominator"
+        ],
+        "canonical_components": {
+          "sport": "nba",
+          "player": "traycejacksondavis",
+          "year": "2024",
+          "brand": "paninihoops",
+          "product": "paninihoops",
+          "card_number": "",
+          "parallel": "lazer",
+          "serial_total": "99",
+          "grader": "",
+          "grade": "",
+          "autograph": "0",
+          "memorabilia": "0",
+          "rookie": "0"
+        }
+      },
+      "history": null,
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-10-10"
+    },
+    {
+      "source": "ebay",
+      "external_id": "v1|389564927656|0",
+      "url": "https://www.ebay.com.au/itm/389564927656?_skw=2024-25+Tre+Mann+Panini+Prizm+Blue+%2F150&hash=item5ab3e10ea8:g:kdkAAeSwD~1qkdlu",
+      "image_url": "https://i.ebayimg.com/images/g/kdkAAeSwD~1qkdlu/s-l225.jpg",
+      "title": "Tre Mann 2024-25 Panini Prizm Fast Break Blue 53/150",
+      "sport": "NBA",
+      "asking_price": 5.0,
+      "shipping": 4.5,
+      "currency": "AUD",
+      "landed_aud": 9.5,
+      "identity": {
+        "player": "Tre Mann",
+        "year": "2024-25",
+        "brand": "Panini Prizm",
+        "set_name": "Panini Prizm",
+        "card_number": null,
+        "parallel": "Blue",
+        "serial_current": 53,
+        "serial_total": 150,
+        "grader": null,
+        "grade": null,
+        "autograph": false,
+        "memorabilia": false,
+        "rookie": false
+      },
+      "card_family": {
+        "key": "cf_262535d8b53f6a80fe48",
+        "eligible": true,
+        "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
+        "match_confidence": 1.0,
+        "match_reasons": [
+          "same player",
+          "same year",
+          "same brand/product",
+          "same parallel",
+          "same serial denominator"
+        ],
+        "canonical_components": {
+          "sport": "nba",
+          "player": "tremann",
+          "year": "202425",
+          "brand": "paniniprizm",
+          "product": "paniniprizm",
+          "card_number": "",
+          "parallel": "blue",
+          "serial_total": "150",
+          "grader": "",
+          "grade": "",
+          "autograph": "0",
+          "memorabilia": "0",
+          "rookie": "0"
+        }
+      },
+      "history": null,
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-10-10"
+    },
+    {
+      "source": "ebay",
+      "external_id": "v1|389497896601|0",
+      "url": "https://www.ebay.com.au/itm/389497896601?_skw=2024+Tristan+Da+Panini+Ruby+%2F149&hash=item5aafe23e99:g:h48AAeSwmmZqkdkA",
+      "image_url": "https://i.ebayimg.com/images/g/h48AAeSwmmZqkdkA/s-l225.jpg",
+      "title": "Tristan Da Silva 2024 Court Kings Panini Works in Progress Ruby RC 12/149",
+      "sport": "NBA",
+      "asking_price": 15.0,
+      "shipping": 4.5,
+      "currency": "AUD",
+      "landed_aud": 19.5,
+      "identity": {
+        "player": "Tristan Da",
+        "year": "2024",
+        "brand": "Panini",
+        "set_name": "Panini",
+        "card_number": null,
+        "parallel": "Ruby",
+        "serial_current": 12,
+        "serial_total": 149,
+        "grader": null,
+        "grade": null,
+        "autograph": false,
+        "memorabilia": false,
+        "rookie": true
+      },
+      "card_family": {
+        "key": "cf_ba2fb07e97b51c776bc6",
+        "eligible": true,
+        "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
+        "match_confidence": 1.0,
+        "match_reasons": [
+          "same player",
+          "same year",
+          "same brand/product",
+          "same parallel",
+          "same serial denominator",
+          "same rookie state"
+        ],
+        "canonical_components": {
+          "sport": "nba",
+          "player": "tristanda",
+          "year": "2024",
+          "brand": "panini",
+          "product": "panini",
+          "card_number": "",
+          "parallel": "ruby",
+          "serial_total": "149",
+          "grader": "",
+          "grade": "",
+          "autograph": "0",
+          "memorabilia": "0",
+          "rookie": "1"
+        }
+      },
+      "history": null,
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-10-10"
+    },
+    {
+      "source": "ebay",
+      "external_id": "v1|389456932222|0",
+      "url": "https://www.ebay.com.au/itm/389456932222?_skw=2024+Tyler+Smith+Panini+Prizm+Shimmer+%2F35&hash=item5aad712d7e:g:sE0AAeSwrBFqkdlM",
+      "image_url": "https://i.ebayimg.com/images/g/sE0AAeSwrBFqkdlM/s-l225.jpg",
+      "title": "Tyler Smith 2024 Panini Prizm Blue Shimmer RC 35/35",
+      "sport": "NBA",
+      "asking_price": 15.0,
+      "shipping": 4.5,
+      "currency": "AUD",
+      "landed_aud": 19.5,
+      "identity": {
+        "player": "Tyler Smith",
+        "year": "2024",
+        "brand": "Panini Prizm",
+        "set_name": "Panini Prizm",
+        "card_number": null,
+        "parallel": "Shimmer",
+        "serial_current": 35,
+        "serial_total": 35,
+        "grader": null,
+        "grade": null,
+        "autograph": false,
+        "memorabilia": false,
+        "rookie": true
+      },
+      "card_family": {
+        "key": "cf_f8ee4b9b31d92fd40663",
+        "eligible": true,
+        "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
+        "match_confidence": 1.0,
+        "match_reasons": [
+          "same player",
+          "same year",
+          "same brand/product",
+          "same parallel",
+          "same serial denominator",
+          "same rookie state"
+        ],
+        "canonical_components": {
+          "sport": "nba",
+          "player": "tylersmith",
+          "year": "2024",
+          "brand": "paniniprizm",
+          "product": "paniniprizm",
+          "card_number": "",
+          "parallel": "shimmer",
+          "serial_total": "35",
+          "grader": "",
+          "grade": "",
+          "autograph": "0",
+          "memorabilia": "0",
+          "rookie": "1"
+        }
+      },
+      "history": null,
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-10-10"
+    },
+    {
+      "source": "ebay",
+      "external_id": "v1|389497901152|0",
+      "url": "https://www.ebay.com.au/itm/389497901152?_skw=2024+Tyrese+Maxey+Panini+Prizm+Red+%2F299&hash=item5aafe25060:g:Ja4AAeSwEu1qkdrX",
+      "image_url": "https://i.ebayimg.com/images/g/Ja4AAeSwEu1qkdrX/s-l225.jpg",
+      "title": "Tyrese Maxey 2024 Panini Prizm Red 009/299",
+      "sport": "NBA",
+      "asking_price": 15.0,
+      "shipping": 4.5,
+      "currency": "AUD",
+      "landed_aud": 19.5,
+      "identity": {
+        "player": "Tyrese Maxey",
+        "year": "2024",
+        "brand": "Panini Prizm",
+        "set_name": "Panini Prizm",
+        "card_number": null,
+        "parallel": "Red",
+        "serial_current": 9,
+        "serial_total": 299,
+        "grader": null,
+        "grade": null,
+        "autograph": false,
+        "memorabilia": false,
+        "rookie": false
+      },
+      "card_family": {
+        "key": "cf_527b07470d257f9f5229",
+        "eligible": true,
+        "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
+        "match_confidence": 1.0,
+        "match_reasons": [
+          "same player",
+          "same year",
+          "same brand/product",
+          "same parallel",
+          "same serial denominator"
+        ],
+        "canonical_components": {
+          "sport": "nba",
+          "player": "tyresemaxey",
+          "year": "2024",
+          "brand": "paniniprizm",
+          "product": "paniniprizm",
+          "card_number": "",
+          "parallel": "red",
+          "serial_total": "299",
+          "grader": "",
+          "grade": "",
+          "autograph": "0",
+          "memorabilia": "0",
+          "rookie": "0"
+        }
+      },
+      "history": null,
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-10-10"
+    },
+    {
+      "source": "ebay",
+      "external_id": "v1|389497894548|0",
+      "url": "https://www.ebay.com.au/itm/389497894548?_skw=2024+Tyus+Jones+Panini+Prizm+Blue+%2F150&hash=item5aafe23694:g:tDEAAeSwGDJqkdtU",
+      "image_url": "https://i.ebayimg.com/images/g/tDEAAeSwGDJqkdtU/s-l225.jpg",
+      "title": "Tyus Jones 2024 Panini Prizm Blue Fast Break 140/150",
+      "sport": "NBA",
+      "asking_price": 6.0,
+      "shipping": 4.5,
+      "currency": "AUD",
+      "landed_aud": 10.5,
+      "identity": {
+        "player": "Tyus Jones",
+        "year": "2024",
+        "brand": "Panini Prizm",
+        "set_name": "Panini Prizm",
+        "card_number": null,
+        "parallel": "Blue",
+        "serial_current": 140,
+        "serial_total": 150,
+        "grader": null,
+        "grade": null,
+        "autograph": false,
+        "memorabilia": false,
+        "rookie": false
+      },
+      "card_family": {
+        "key": "cf_6c669d798fa5403916d8",
+        "eligible": true,
+        "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
+        "match_confidence": 1.0,
+        "match_reasons": [
+          "same player",
+          "same year",
+          "same brand/product",
+          "same parallel",
+          "same serial denominator"
+        ],
+        "canonical_components": {
+          "sport": "nba",
+          "player": "tyusjones",
+          "year": "2024",
+          "brand": "paniniprizm",
+          "product": "paniniprizm",
+          "card_number": "",
+          "parallel": "blue",
+          "serial_total": "150",
+          "grader": "",
+          "grade": "",
+          "autograph": "0",
+          "memorabilia": "0",
+          "rookie": "0"
+        }
+      },
+      "history": null,
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-10-10"
+    },
+    {
+      "source": "ebay",
+      "external_id": "v1|389180626387|0",
+      "url": "https://www.ebay.com.au/itm/389180626387?_skw=2022-23+Walker+Kessler+Panini+Chronicles+Red+%2F149&hash=item5a9cf915d3:g:4nQAAeSwe9ZqkdFE",
+      "image_url": "https://i.ebayimg.com/images/g/4nQAAeSwe9ZqkdFE/s-l225.jpg",
+      "title": "Walker Kessler 2022-23 Panini Chronicles Red RC 55/149",
+      "sport": "NBA",
+      "asking_price": 10.0,
+      "shipping": 4.5,
+      "currency": "AUD",
+      "landed_aud": 14.5,
+      "identity": {
+        "player": "Walker Kessler",
+        "year": "2022-23",
+        "brand": "Panini Chronicles",
+        "set_name": "Panini Chronicles",
+        "card_number": null,
+        "parallel": "Red",
+        "serial_current": 55,
+        "serial_total": 149,
+        "grader": null,
+        "grade": null,
+        "autograph": false,
+        "memorabilia": false,
+        "rookie": true
+      },
+      "card_family": {
+        "key": "cf_5a4fc00da3613c04a67c",
+        "eligible": true,
+        "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
+        "match_confidence": 1.0,
+        "match_reasons": [
+          "same player",
+          "same year",
+          "same brand/product",
+          "same parallel",
+          "same serial denominator",
+          "same rookie state"
+        ],
+        "canonical_components": {
+          "sport": "nba",
+          "player": "walkerkessler",
+          "year": "202223",
+          "brand": "paninichronicles",
+          "product": "paninichronicles",
+          "card_number": "",
+          "parallel": "red",
+          "serial_total": "149",
+          "grader": "",
+          "grade": "",
+          "autograph": "0",
+          "memorabilia": "0",
+          "rookie": "1"
+        }
+      },
+      "history": null,
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-10-10"
+    },
+    {
+      "source": "ebay",
+      "external_id": "v1|389497907344|0",
+      "url": "https://www.ebay.com.au/itm/389497907344?_skw=2023+Zach+Collins+Topps+Chrome+Green+Wave+%2F65&hash=item5aafe26890:g:tmYAAeSwp05qkdmc",
+      "image_url": "https://i.ebayimg.com/images/g/tmYAAeSwp05qkdmc/s-l225.jpg",
+      "title": "Zach Collins 2023 Topps Chrome Green Wave 27/65",
+      "sport": "NBA",
+      "asking_price": 5.0,
+      "shipping": 4.5,
+      "currency": "AUD",
+      "landed_aud": 9.5,
+      "identity": {
+        "player": "Zach Collins",
+        "year": "2023",
+        "brand": "Topps Chrome",
+        "set_name": "Topps Chrome",
+        "card_number": null,
+        "parallel": "Green Wave",
+        "serial_current": 27,
+        "serial_total": 65,
+        "grader": null,
+        "grade": null,
+        "autograph": false,
+        "memorabilia": false,
+        "rookie": false
+      },
+      "card_family": {
+        "key": "cf_8f25dfe0aa0d8a9d3c34",
+        "eligible": true,
+        "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
+        "match_confidence": 1.0,
+        "match_reasons": [
+          "same player",
+          "same year",
+          "same brand/product",
+          "same parallel",
+          "same serial denominator"
+        ],
+        "canonical_components": {
+          "sport": "nba",
+          "player": "zachcollins",
+          "year": "2023",
+          "brand": "toppschrome",
+          "product": "toppschrome",
+          "card_number": "",
+          "parallel": "greenwave",
+          "serial_total": "65",
+          "grader": "",
+          "grade": "",
+          "autograph": "0",
+          "memorabilia": "0",
+          "rookie": "0"
+        }
+      },
+      "history": null,
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-10-10"
+    },
+    {
+      "source": "ebay",
+      "external_id": "v1|389564929129|0",
+      "url": "https://www.ebay.com.au/itm/389564929129?_skw=2017-18+Zach+LaVine+Panini+Donruss+Optic+Green+%2F175&hash=item5ab3e11469:g:zsAAAeSw4C1qkdoz",
+      "image_url": "https://i.ebayimg.com/images/g/zsAAAeSw4C1qkdoz/s-l225.jpg",
+      "title": "Zach LaVine 2017-18 Panini Donruss Optic All Clear For Takeoff Lime Green 91/175",
+      "sport": "NBA",
+      "asking_price": 10.0,
+      "shipping": 4.5,
+      "currency": "AUD",
+      "landed_aud": 14.5,
+      "identity": {
+        "player": "Zach LaVine",
+        "year": "2017-18",
+        "brand": "Panini Donruss Optic",
+        "set_name": "Panini Donruss Optic",
+        "card_number": null,
+        "parallel": "Green",
+        "serial_current": 91,
+        "serial_total": 175,
+        "grader": null,
+        "grade": null,
+        "autograph": false,
+        "memorabilia": false,
+        "rookie": false
+      },
+      "card_family": {
+        "key": "cf_bf0bf8bede3e680ff15e",
+        "eligible": true,
+        "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
+        "match_confidence": 1.0,
+        "match_reasons": [
+          "same player",
+          "same year",
+          "same brand/product",
+          "same parallel",
+          "same serial denominator"
+        ],
+        "canonical_components": {
+          "sport": "nba",
+          "player": "zachlavine",
+          "year": "201718",
+          "brand": "paninidonrussoptic",
+          "product": "paninidonrussoptic",
+          "card_number": "",
+          "parallel": "green",
+          "serial_total": "175",
+          "grader": "",
+          "grade": "",
+          "autograph": "0",
+          "memorabilia": "0",
+          "rookie": "0"
+        }
+      },
+      "history": null,
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-10-10"
+    },
+    {
+      "source": "ebay",
+      "external_id": "v1|389564920773|0",
+      "url": "https://www.ebay.com.au/itm/389564920773?_skw=2024-25+Zach+LaVine+Donruss+Holo+%2F149&hash=item5ab3e0f3c5:g:h~oAAeSwMtZqkdkK",
+      "image_url": "https://i.ebayimg.com/images/g/h~oAAeSwMtZqkdkK/s-l225.jpg",
+      "title": "Zach LaVine 2024-25 Panini Donruss Holo Laser 71/149",
+      "sport": "NBA",
+      "asking_price": 5.0,
+      "shipping": 4.5,
+      "currency": "AUD",
+      "landed_aud": 9.5,
+      "identity": {
+        "player": "Zach LaVine",
+        "year": "2024-25",
+        "brand": "Donruss",
+        "set_name": "Donruss",
+        "card_number": null,
+        "parallel": "Holo",
+        "serial_current": 71,
+        "serial_total": 149,
+        "grader": null,
+        "grade": null,
+        "autograph": false,
+        "memorabilia": false,
+        "rookie": false
+      },
+      "card_family": {
+        "key": "cf_20f87acfc8b6238b8231",
+        "eligible": true,
+        "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
+        "match_confidence": 1.0,
+        "match_reasons": [
+          "same player",
+          "same year",
+          "same brand/product",
+          "same parallel",
+          "same serial denominator"
+        ],
+        "canonical_components": {
+          "sport": "nba",
+          "player": "zachlavine",
+          "year": "202425",
+          "brand": "donruss",
+          "product": "donruss",
+          "card_number": "",
+          "parallel": "holo",
+          "serial_total": "149",
+          "grader": "",
+          "grade": "",
+          "autograph": "0",
+          "memorabilia": "0",
+          "rookie": "0"
+        }
+      },
+      "history": null,
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-10-10"
     }
   ],
   "comparison_groups": [
@@ -336042,9 +338032,9 @@
         },
         {
           "source": "ebay",
-          "external_id": "v1|389659394094|0",
-          "url": "https://www.ebay.com.au/itm/389659394094?_skw=2023+Tom+Green+Select+Green+%2F425&hash=item5ab982802e:g:xdcAAeSwW8Nqkdpl",
-          "title": "Tom Green 2023 Select Legacy Plus 165/425",
+          "external_id": "v1|389659394085|0",
+          "url": "https://www.ebay.com.au/itm/389659394085?_skw=2023+Tom+Green+Select+Green+%2F425&hash=item5ab9828025:g:rCQAAeSww99qkdrO",
+          "title": "Tom Green 2023 Select Legacy Plus 235/425",
           "landed_aud": 9.5,
           "asking_price": 5.0,
           "shipping": 4.5,
@@ -336061,9 +338051,9 @@
         },
         {
           "source": "ebay",
-          "external_id": "v1|389659394085|0",
-          "url": "https://www.ebay.com.au/itm/389659394085?_skw=2023+Tom+Green+Select+Green+%2F425&hash=item5ab9828025:g:rCQAAeSww99qkdrO",
-          "title": "Tom Green 2023 Select Legacy Plus 235/425",
+          "external_id": "v1|389659394094|0",
+          "url": "https://www.ebay.com.au/itm/389659394094?_skw=2023+Tom+Green+Select+Green+%2F425&hash=item5ab982802e:g:xdcAAeSwW8Nqkdpl",
+          "title": "Tom Green 2023 Select Legacy Plus 165/425",
           "landed_aud": 9.5,
           "asking_price": 5.0,
           "shipping": 4.5,
@@ -474698,7 +476688,7 @@
         {
           "source": "ebay",
           "external_id": "v1|186845013175|0",
-          "url": "https://www.ebay.com.au/itm/186845013175?_skw=2024-25+Bronny+James+Topps+1&hash=item2b80d4a4b7:g:CPoAAOSwFUJnX6pT&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7n5ZSP6bUcDVa5kcKymlbBODQXhTY4ulc%2BMo160LMZWXxn%2FUnIdTofWPU%2BoaYLhLXnOntUnW5QkKP93RObWSpFzY2qY%2BoFaRvChbqnr%2FNy%2FIKkwjne9fFu4uDhfLpqituoMEpGq8P7qHfZOkYchyWI67h18211sdakkhP1FZmngl2VFX9GW8%2FCYIRUCPHwtXatP0lu6aVIjbRoX%2BfOwu%2Flg%2FscwxQCB2Fzf0raMM4KwFHLC4Xlbezasoy3dRs%2FLXXDhY2jk1yRA0L0qu3GCDiBMlFw1DWqWw56Cu5m1hgrqA99ADC3%2F4eShfJflBsO6X24%3D",
+          "url": "https://www.ebay.com.au/itm/186845013175?_skw=2024-25+Bronny+James+Topps+1&hash=item2b80d4a4b7:g:CPoAAOSwFUJnX6pT&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7n5ZSP6bUcDVa5kcKymlbBODQXhTY4ulc%2BMo160LMZWXxn%2FUnIdTofWPU%2BoaYLhLXnOntUnW5QkKP93RObWSpFzY2qY%2BoFaRvChbqnr%2FNy%2FIKkwjne9fFu4uDhfLpqiturLHfltoIhWBi6ThWJXcQiX88ta%2BZ6nnAYR02I%2FtSmys5QZnlDOa7MeR3ud7pBapwxqePjuMfUePTrhIOlZi6l7HupbbUfu8vbZkVtRDTutj2qh9UHpzxkTCuGH7y6MouzXFj0CCQ2eNtRQ%2BPLqzyXP%2BUsR4bOZ2OuiggIGEfaHbDJ7jgFlSbSouR8glaEMo4o%3D",
           "title": "Bronny James Jr./LeBron James - 2024-25 Topps NOW Basketball Card 1",
           "landed_aud": 31.49,
           "asking_price": 24.99,
@@ -476188,6 +478178,1358 @@
           "autograph": false,
           "memorabilia": false,
           "title_guard": ""
+        }
+      ]
+    },
+    {
+      "comparison_key": "cf_0add71d0c22a0288484e|tg:",
+      "comparison_type": "EXACT_CARD",
+      "exact_equivalent": true,
+      "match_confidence": 1.0,
+      "match_reasons": [
+        "same player",
+        "same year",
+        "same brand/product",
+        "same parallel",
+        "same serial denominator",
+        "title discriminator guard passed"
+      ],
+      "pricing_basis": "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE",
+      "comparison_warning": null,
+      "sport": "NBA",
+      "player": "RJ Hampton",
+      "year": "2022-23",
+      "product": "Panini Prizm",
+      "store_count": 2,
+      "listing_count": 3,
+      "stores": [
+        "boop",
+        "ebay"
+      ],
+      "lowest_active_ask_aud": 5.0,
+      "median_active_ask_aud": 9.5,
+      "highest_active_ask_aud": 23.46,
+      "spread_aud": 18.46,
+      "spread_pct": 369.2,
+      "cheapest_store": "boop",
+      "cheapest_external_id": "15226224115878",
+      "cheapest_url": "https://www.boopcollectables.com.au/products/21557",
+      "cheapest_landed_aud": 5.0,
+      "next_best_store": "ebay",
+      "next_best_landed_aud": 9.5,
+      "saving_vs_next_best_aud": 4.5,
+      "saving_vs_next_best_pct": 47.37,
+      "saving_vs_median_aud": 4.5,
+      "saving_vs_median_pct": 47.37,
+      "saving_vs_highest_aud": 18.46,
+      "saving_vs_highest_pct": 78.69,
+      "listings": [
+        {
+          "source": "boop",
+          "external_id": "15226224115878",
+          "url": "https://www.boopcollectables.com.au/products/21557",
+          "title": "RJ Hampton 2022-23 Panini Prizm Blue 57/199",
+          "landed_aud": 5.0,
+          "asking_price": 5.0,
+          "shipping": 0.0,
+          "currency": "AUD",
+          "card_number": null,
+          "parallel": "Blue",
+          "serial_total": 199,
+          "grader": null,
+          "grade": null,
+          "rookie": false,
+          "autograph": false,
+          "memorabilia": false,
+          "title_guard": ""
+        },
+        {
+          "source": "ebay",
+          "external_id": "v1|389564932148|0",
+          "url": "https://www.ebay.com.au/itm/389564932148?_skw=2022-23+RJ+Hampton+Panini+Prizm+Blue+%2F199&hash=item5ab3e12034:g:NkUAAeSwhthqkdnd",
+          "title": "RJ Hampton 2022-23 Panini Prizm Blue 57/199",
+          "landed_aud": 9.5,
+          "asking_price": 5.0,
+          "shipping": 4.5,
+          "currency": "AUD",
+          "card_number": null,
+          "parallel": "Blue",
+          "serial_total": 199,
+          "grader": null,
+          "grade": null,
+          "rookie": false,
+          "autograph": false,
+          "memorabilia": false,
+          "title_guard": ""
+        },
+        {
+          "source": "ebay",
+          "external_id": "v1|134757605283|0",
+          "url": "https://www.ebay.com.au/itm/134757605283?_skw=2022-23+RJ+Hampton+Panini+Prizm+Blue+%2F199&hash=item1f602ddfa3:g:zokAAOSweldlIATb",
+          "title": "2022-23 PANINI PRIZM RJ HAMPTON 30/199 BLUE MAGIC SP ",
+          "landed_aud": 23.46,
+          "asking_price": 5.5,
+          "shipping": 17.96,
+          "currency": "AUD",
+          "card_number": null,
+          "parallel": "Blue",
+          "serial_total": 199,
+          "grader": null,
+          "grade": null,
+          "rookie": false,
+          "autograph": false,
+          "memorabilia": false,
+          "title_guard": ""
+        }
+      ]
+    },
+    {
+      "comparison_key": "cf_0d5926b694502fb7dd0c|tg:pulsar",
+      "comparison_type": "EXACT_CARD",
+      "exact_equivalent": true,
+      "match_confidence": 1.0,
+      "match_reasons": [
+        "same player",
+        "same year",
+        "same brand/product",
+        "same parallel",
+        "same serial denominator",
+        "same rookie state",
+        "title discriminator guard passed"
+      ],
+      "pricing_basis": "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE",
+      "comparison_warning": null,
+      "sport": "NBA",
+      "player": "Sasha Vezenkov",
+      "year": "2023-24",
+      "product": "Panini Select",
+      "store_count": 2,
+      "listing_count": 2,
+      "stores": [
+        "boop",
+        "ebay"
+      ],
+      "lowest_active_ask_aud": 35.0,
+      "median_active_ask_aud": 39.5,
+      "highest_active_ask_aud": 43.99,
+      "spread_aud": 8.99,
+      "spread_pct": 25.69,
+      "cheapest_store": "boop",
+      "cheapest_external_id": "8622949499046",
+      "cheapest_url": "https://www.boopcollectables.com.au/products/20129",
+      "cheapest_landed_aud": 35.0,
+      "next_best_store": "ebay",
+      "next_best_landed_aud": 43.99,
+      "saving_vs_next_best_aud": 8.99,
+      "saving_vs_next_best_pct": 20.44,
+      "saving_vs_median_aud": 4.5,
+      "saving_vs_median_pct": 11.39,
+      "saving_vs_highest_aud": 8.99,
+      "saving_vs_highest_pct": 20.44,
+      "listings": [
+        {
+          "source": "boop",
+          "external_id": "8622949499046",
+          "url": "https://www.boopcollectables.com.au/products/20129",
+          "title": "Sasha Vezenkov 2023-24 Panini Select Orange Pulsar Courtside RC 5/15",
+          "landed_aud": 35.0,
+          "asking_price": 35.0,
+          "shipping": 0.0,
+          "currency": "AUD",
+          "card_number": null,
+          "parallel": "Orange",
+          "serial_total": 15,
+          "grader": null,
+          "grade": null,
+          "rookie": true,
+          "autograph": false,
+          "memorabilia": false,
+          "title_guard": "pulsar"
+        },
+        {
+          "source": "ebay",
+          "external_id": "v1|389180627084|0",
+          "url": "https://www.ebay.com.au/itm/389180627084?_skw=2023-24+Sasha+Vezenkov+Panini+Select+Orange+%2F15&hash=item5a9cf9188c:g:wYkAAeSwzf9qkdDq",
+          "title": "Sasha Vezenkov 2023-24 Panini Select Orange Pulsar Courtside RC 5/15",
+          "landed_aud": 43.99,
+          "asking_price": 35.0,
+          "shipping": 8.99,
+          "currency": "AUD",
+          "card_number": null,
+          "parallel": "Orange",
+          "serial_total": 15,
+          "grader": null,
+          "grade": null,
+          "rookie": true,
+          "autograph": false,
+          "memorabilia": false,
+          "title_guard": "pulsar"
+        }
+      ]
+    },
+    {
+      "comparison_key": "cf_70b3bf46d49df266800c|tg:",
+      "comparison_type": "EXACT_CARD",
+      "exact_equivalent": true,
+      "match_confidence": 1.0,
+      "match_reasons": [
+        "same player",
+        "same year",
+        "same brand/product",
+        "same parallel",
+        "same serial denominator",
+        "title discriminator guard passed"
+      ],
+      "pricing_basis": "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE",
+      "comparison_warning": null,
+      "sport": "NBA",
+      "player": "Robin Lopez",
+      "year": "2017-18",
+      "product": "Panini Prizm",
+      "store_count": 2,
+      "listing_count": 2,
+      "stores": [
+        "boop",
+        "ebay"
+      ],
+      "lowest_active_ask_aud": 10.0,
+      "median_active_ask_aud": 12.25,
+      "highest_active_ask_aud": 14.5,
+      "spread_aud": 4.5,
+      "spread_pct": 45.0,
+      "cheapest_store": "boop",
+      "cheapest_external_id": "15226222543014",
+      "cheapest_url": "https://www.boopcollectables.com.au/products/21512",
+      "cheapest_landed_aud": 10.0,
+      "next_best_store": "ebay",
+      "next_best_landed_aud": 14.5,
+      "saving_vs_next_best_aud": 4.5,
+      "saving_vs_next_best_pct": 31.03,
+      "saving_vs_median_aud": 2.25,
+      "saving_vs_median_pct": 18.37,
+      "saving_vs_highest_aud": 4.5,
+      "saving_vs_highest_pct": 31.03,
+      "listings": [
+        {
+          "source": "boop",
+          "external_id": "15226222543014",
+          "url": "https://www.boopcollectables.com.au/products/21512",
+          "title": "Robin Lopez 2017-18 Panini Prizm Orange 17/49",
+          "landed_aud": 10.0,
+          "asking_price": 10.0,
+          "shipping": 0.0,
+          "currency": "AUD",
+          "card_number": null,
+          "parallel": "Orange",
+          "serial_total": 49,
+          "grader": null,
+          "grade": null,
+          "rookie": false,
+          "autograph": false,
+          "memorabilia": false,
+          "title_guard": ""
+        },
+        {
+          "source": "ebay",
+          "external_id": "v1|389564923480|0",
+          "url": "https://www.ebay.com.au/itm/389564923480?_skw=2017-18+Robin+Lopez+Panini+Prizm+Orange+%2F49&hash=item5ab3e0fe58:g:EGsAAeSwW9Vpf0Qv",
+          "title": "Robin Lopez 2017-18 Panini Prizm Orange 17/49",
+          "landed_aud": 14.5,
+          "asking_price": 10.0,
+          "shipping": 4.5,
+          "currency": "AUD",
+          "card_number": null,
+          "parallel": "Orange",
+          "serial_total": 49,
+          "grader": null,
+          "grade": null,
+          "rookie": false,
+          "autograph": false,
+          "memorabilia": false,
+          "title_guard": ""
+        }
+      ]
+    },
+    {
+      "comparison_key": "cf_7338feeb756531ea2bd7|tg:holo",
+      "comparison_type": "EXACT_CARD",
+      "exact_equivalent": true,
+      "match_confidence": 1.0,
+      "match_reasons": [
+        "same player",
+        "same year",
+        "same brand/product",
+        "same parallel",
+        "same serial denominator",
+        "same rookie state",
+        "title discriminator guard passed"
+      ],
+      "pricing_basis": "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE",
+      "comparison_warning": null,
+      "sport": "NBA",
+      "player": "Ron Holland II",
+      "year": "2024-25",
+      "product": "Donruss",
+      "store_count": 2,
+      "listing_count": 2,
+      "stores": [
+        "boop",
+        "ebay"
+      ],
+      "lowest_active_ask_aud": 10.0,
+      "median_active_ask_aud": 12.25,
+      "highest_active_ask_aud": 14.5,
+      "spread_aud": 4.5,
+      "spread_pct": 45.0,
+      "cheapest_store": "boop",
+      "cheapest_external_id": "15226225098918",
+      "cheapest_url": "https://www.boopcollectables.com.au/products/21587",
+      "cheapest_landed_aud": 10.0,
+      "next_best_store": "ebay",
+      "next_best_landed_aud": 14.5,
+      "saving_vs_next_best_aud": 4.5,
+      "saving_vs_next_best_pct": 31.03,
+      "saving_vs_median_aud": 2.25,
+      "saving_vs_median_pct": 18.37,
+      "saving_vs_highest_aud": 4.5,
+      "saving_vs_highest_pct": 31.03,
+      "listings": [
+        {
+          "source": "boop",
+          "external_id": "15226225098918",
+          "url": "https://www.boopcollectables.com.au/products/21587",
+          "title": "Ron Holland II 2024-25 Panini Donruss Crunch Time Holo Laser RC 67/99",
+          "landed_aud": 10.0,
+          "asking_price": 10.0,
+          "shipping": 0.0,
+          "currency": "AUD",
+          "card_number": null,
+          "parallel": "Holo",
+          "serial_total": 99,
+          "grader": null,
+          "grade": null,
+          "rookie": true,
+          "autograph": false,
+          "memorabilia": false,
+          "title_guard": "holo"
+        },
+        {
+          "source": "ebay",
+          "external_id": "v1|389564927196|0",
+          "url": "https://www.ebay.com.au/itm/389564927196?_skw=2024-25+Ron+Holland+II+Donruss+Holo+%2F99&hash=item5ab3e10cdc:g:kY8AAeSwmmZqkdod",
+          "title": "Ron Holland II 2024-25 Panini Donruss Crunch Time Holo Laser RC 67/99",
+          "landed_aud": 14.5,
+          "asking_price": 10.0,
+          "shipping": 4.5,
+          "currency": "AUD",
+          "card_number": null,
+          "parallel": "Holo",
+          "serial_total": 99,
+          "grader": null,
+          "grade": null,
+          "rookie": true,
+          "autograph": false,
+          "memorabilia": false,
+          "title_guard": "holo"
+        }
+      ]
+    },
+    {
+      "comparison_key": "cf_ac15918c4c1ccb68393c|tg:goldrefractor",
+      "comparison_type": "EXACT_CARD",
+      "exact_equivalent": true,
+      "match_confidence": 1.0,
+      "match_reasons": [
+        "same player",
+        "same year",
+        "same brand/product",
+        "same parallel",
+        "same serial denominator",
+        "title discriminator guard passed"
+      ],
+      "pricing_basis": "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE",
+      "comparison_warning": null,
+      "sport": "NBA",
+      "player": "Scottie Barnes",
+      "year": "2023",
+      "product": "Topps Chrome",
+      "store_count": 2,
+      "listing_count": 2,
+      "stores": [
+        "boop",
+        "ebay"
+      ],
+      "lowest_active_ask_aud": 20.0,
+      "median_active_ask_aud": 22.25,
+      "highest_active_ask_aud": 24.5,
+      "spread_aud": 4.5,
+      "spread_pct": 22.5,
+      "cheapest_store": "boop",
+      "cheapest_external_id": "15215562293414",
+      "cheapest_url": "https://www.boopcollectables.com.au/products/21419",
+      "cheapest_landed_aud": 20.0,
+      "next_best_store": "ebay",
+      "next_best_landed_aud": 24.5,
+      "saving_vs_next_best_aud": 4.5,
+      "saving_vs_next_best_pct": 18.37,
+      "saving_vs_median_aud": 2.25,
+      "saving_vs_median_pct": 10.11,
+      "saving_vs_highest_aud": 4.5,
+      "saving_vs_highest_pct": 18.37,
+      "listings": [
+        {
+          "source": "boop",
+          "external_id": "15215562293414",
+          "url": "https://www.boopcollectables.com.au/products/21419",
+          "title": "Scottie Barnes 2023 Topps Chrome Gold Refractor 28/50",
+          "landed_aud": 20.0,
+          "asking_price": 20.0,
+          "shipping": 0.0,
+          "currency": "AUD",
+          "card_number": null,
+          "parallel": "Gold Refractor",
+          "serial_total": 50,
+          "grader": null,
+          "grade": null,
+          "rookie": false,
+          "autograph": false,
+          "memorabilia": false,
+          "title_guard": "goldrefractor"
+        },
+        {
+          "source": "ebay",
+          "external_id": "v1|389497910532|0",
+          "url": "https://www.ebay.com.au/itm/389497910532?_skw=2023+Scottie+Barnes+Topps+Chrome+Gold+Refractor+%2F50&hash=item5aafe27504:g:U8EAAeSwgwRqkdkF",
+          "title": "Scottie Barnes 2023 Topps Chrome Gold Refractor 28/50",
+          "landed_aud": 24.5,
+          "asking_price": 20.0,
+          "shipping": 4.5,
+          "currency": "AUD",
+          "card_number": null,
+          "parallel": "Gold Refractor",
+          "serial_total": 50,
+          "grader": null,
+          "grade": null,
+          "rookie": false,
+          "autograph": false,
+          "memorabilia": false,
+          "title_guard": "goldrefractor"
+        }
+      ]
+    },
+    {
+      "comparison_key": "cf_3ef8a82435c00d4c3c35|tg:",
+      "comparison_type": "EXACT_CARD",
+      "exact_equivalent": true,
+      "match_confidence": 1.0,
+      "match_reasons": [
+        "same player",
+        "same year",
+        "same brand/product",
+        "same parallel",
+        "same serial denominator",
+        "title discriminator guard passed"
+      ],
+      "pricing_basis": "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE",
+      "comparison_warning": null,
+      "sport": "NBA",
+      "player": "Scottie Barnes",
+      "year": "2024",
+      "product": "Donruss",
+      "store_count": 2,
+      "listing_count": 2,
+      "stores": [
+        "boop",
+        "ebay"
+      ],
+      "lowest_active_ask_aud": 5.0,
+      "median_active_ask_aud": 7.25,
+      "highest_active_ask_aud": 9.5,
+      "spread_aud": 4.5,
+      "spread_pct": 90.0,
+      "cheapest_store": "boop",
+      "cheapest_external_id": "15215559573670",
+      "cheapest_url": "https://www.boopcollectables.com.au/products/21346",
+      "cheapest_landed_aud": 5.0,
+      "next_best_store": "ebay",
+      "next_best_landed_aud": 9.5,
+      "saving_vs_next_best_aud": 4.5,
+      "saving_vs_next_best_pct": 47.37,
+      "saving_vs_median_aud": 2.25,
+      "saving_vs_median_pct": 31.03,
+      "saving_vs_highest_aud": 4.5,
+      "saving_vs_highest_pct": 47.37,
+      "listings": [
+        {
+          "source": "boop",
+          "external_id": "15215559573670",
+          "url": "https://www.boopcollectables.com.au/products/21346",
+          "title": "Scottie Barnes 2024 Panini Donruss Red Lazer 36/99",
+          "landed_aud": 5.0,
+          "asking_price": 5.0,
+          "shipping": 0.0,
+          "currency": "AUD",
+          "card_number": null,
+          "parallel": "Lazer",
+          "serial_total": 99,
+          "grader": null,
+          "grade": null,
+          "rookie": false,
+          "autograph": false,
+          "memorabilia": false,
+          "title_guard": ""
+        },
+        {
+          "source": "ebay",
+          "external_id": "v1|389497904109|0",
+          "url": "https://www.ebay.com.au/itm/389497904109?_skw=2024+Scottie+Barnes+Donruss+Lazer+%2F99&hash=item5aafe25bed:g:pJ4AAeSwicFqkdtc",
+          "title": "Scottie Barnes 2024 Panini Donruss Red Lazer 36/99",
+          "landed_aud": 9.5,
+          "asking_price": 5.0,
+          "shipping": 4.5,
+          "currency": "AUD",
+          "card_number": null,
+          "parallel": "Lazer",
+          "serial_total": 99,
+          "grader": null,
+          "grade": null,
+          "rookie": false,
+          "autograph": false,
+          "memorabilia": false,
+          "title_guard": ""
+        }
+      ]
+    },
+    {
+      "comparison_key": "cf_4f0f43ab38706def0b72|tg:",
+      "comparison_type": "EXACT_CARD",
+      "exact_equivalent": true,
+      "match_confidence": 1.0,
+      "match_reasons": [
+        "same player",
+        "same year",
+        "same brand/product",
+        "same parallel",
+        "same serial denominator",
+        "title discriminator guard passed"
+      ],
+      "pricing_basis": "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE",
+      "comparison_warning": null,
+      "sport": "NBA",
+      "player": "Trayce Jackson-Davis",
+      "year": "2024",
+      "product": "Panini Hoops",
+      "store_count": 2,
+      "listing_count": 2,
+      "stores": [
+        "boop",
+        "ebay"
+      ],
+      "lowest_active_ask_aud": 10.0,
+      "median_active_ask_aud": 12.25,
+      "highest_active_ask_aud": 14.5,
+      "spread_aud": 4.5,
+      "spread_pct": 45.0,
+      "cheapest_store": "boop",
+      "cheapest_external_id": "15215559475366",
+      "cheapest_url": "https://www.boopcollectables.com.au/products/21344",
+      "cheapest_landed_aud": 10.0,
+      "next_best_store": "ebay",
+      "next_best_landed_aud": 14.5,
+      "saving_vs_next_best_aud": 4.5,
+      "saving_vs_next_best_pct": 31.03,
+      "saving_vs_median_aud": 2.25,
+      "saving_vs_median_pct": 18.37,
+      "saving_vs_highest_aud": 4.5,
+      "saving_vs_highest_pct": 31.03,
+      "listings": [
+        {
+          "source": "boop",
+          "external_id": "15215559475366",
+          "url": "https://www.boopcollectables.com.au/products/21344",
+          "title": "Trayce Jackson-Davis 2024 Panini Hoops Red Lazer 34/99",
+          "landed_aud": 10.0,
+          "asking_price": 10.0,
+          "shipping": 0.0,
+          "currency": "AUD",
+          "card_number": null,
+          "parallel": "Lazer",
+          "serial_total": 99,
+          "grader": null,
+          "grade": null,
+          "rookie": false,
+          "autograph": false,
+          "memorabilia": false,
+          "title_guard": ""
+        },
+        {
+          "source": "ebay",
+          "external_id": "v1|389497898744|0",
+          "url": "https://www.ebay.com.au/itm/389497898744?_skw=2024+Trayce+Jackson-Davis+Panini+Hoops+Lazer+%2F99&hash=item5aafe246f8:g:nmYAAeSwMf5qkdku",
+          "title": "Trayce Jackson-Davis 2024 Panini Hoops Red Lazer 34/99",
+          "landed_aud": 14.5,
+          "asking_price": 10.0,
+          "shipping": 4.5,
+          "currency": "AUD",
+          "card_number": null,
+          "parallel": "Lazer",
+          "serial_total": 99,
+          "grader": null,
+          "grade": null,
+          "rookie": false,
+          "autograph": false,
+          "memorabilia": false,
+          "title_guard": ""
+        }
+      ]
+    },
+    {
+      "comparison_key": "cf_262535d8b53f6a80fe48|tg:",
+      "comparison_type": "EXACT_CARD",
+      "exact_equivalent": true,
+      "match_confidence": 1.0,
+      "match_reasons": [
+        "same player",
+        "same year",
+        "same brand/product",
+        "same parallel",
+        "same serial denominator",
+        "title discriminator guard passed"
+      ],
+      "pricing_basis": "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE",
+      "comparison_warning": null,
+      "sport": "NBA",
+      "player": "Tre Mann",
+      "year": "2024-25",
+      "product": "Panini Prizm",
+      "store_count": 2,
+      "listing_count": 2,
+      "stores": [
+        "boop",
+        "ebay"
+      ],
+      "lowest_active_ask_aud": 5.0,
+      "median_active_ask_aud": 7.25,
+      "highest_active_ask_aud": 9.5,
+      "spread_aud": 4.5,
+      "spread_pct": 90.0,
+      "cheapest_store": "boop",
+      "cheapest_external_id": "15226224771238",
+      "cheapest_url": "https://www.boopcollectables.com.au/products/21577",
+      "cheapest_landed_aud": 5.0,
+      "next_best_store": "ebay",
+      "next_best_landed_aud": 9.5,
+      "saving_vs_next_best_aud": 4.5,
+      "saving_vs_next_best_pct": 47.37,
+      "saving_vs_median_aud": 2.25,
+      "saving_vs_median_pct": 31.03,
+      "saving_vs_highest_aud": 4.5,
+      "saving_vs_highest_pct": 47.37,
+      "listings": [
+        {
+          "source": "boop",
+          "external_id": "15226224771238",
+          "url": "https://www.boopcollectables.com.au/products/21577",
+          "title": "Tre Mann 2024-25 Panini Prizm Fast Break Blue 53/150",
+          "landed_aud": 5.0,
+          "asking_price": 5.0,
+          "shipping": 0.0,
+          "currency": "AUD",
+          "card_number": null,
+          "parallel": "Blue",
+          "serial_total": 150,
+          "grader": null,
+          "grade": null,
+          "rookie": false,
+          "autograph": false,
+          "memorabilia": false,
+          "title_guard": ""
+        },
+        {
+          "source": "ebay",
+          "external_id": "v1|389564927656|0",
+          "url": "https://www.ebay.com.au/itm/389564927656?_skw=2024-25+Tre+Mann+Panini+Prizm+Blue+%2F150&hash=item5ab3e10ea8:g:kdkAAeSwD~1qkdlu",
+          "title": "Tre Mann 2024-25 Panini Prizm Fast Break Blue 53/150",
+          "landed_aud": 9.5,
+          "asking_price": 5.0,
+          "shipping": 4.5,
+          "currency": "AUD",
+          "card_number": null,
+          "parallel": "Blue",
+          "serial_total": 150,
+          "grader": null,
+          "grade": null,
+          "rookie": false,
+          "autograph": false,
+          "memorabilia": false,
+          "title_guard": ""
+        }
+      ]
+    },
+    {
+      "comparison_key": "cf_ba2fb07e97b51c776bc6|tg:",
+      "comparison_type": "EXACT_CARD",
+      "exact_equivalent": true,
+      "match_confidence": 1.0,
+      "match_reasons": [
+        "same player",
+        "same year",
+        "same brand/product",
+        "same parallel",
+        "same serial denominator",
+        "same rookie state",
+        "title discriminator guard passed"
+      ],
+      "pricing_basis": "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE",
+      "comparison_warning": null,
+      "sport": "NBA",
+      "player": "Tristan Da",
+      "year": "2024",
+      "product": "Panini",
+      "store_count": 2,
+      "listing_count": 2,
+      "stores": [
+        "boop",
+        "ebay"
+      ],
+      "lowest_active_ask_aud": 15.0,
+      "median_active_ask_aud": 17.25,
+      "highest_active_ask_aud": 19.5,
+      "spread_aud": 4.5,
+      "spread_pct": 30.0,
+      "cheapest_store": "boop",
+      "cheapest_external_id": "15215560065190",
+      "cheapest_url": "https://www.boopcollectables.com.au/products/21358",
+      "cheapest_landed_aud": 15.0,
+      "next_best_store": "ebay",
+      "next_best_landed_aud": 19.5,
+      "saving_vs_next_best_aud": 4.5,
+      "saving_vs_next_best_pct": 23.08,
+      "saving_vs_median_aud": 2.25,
+      "saving_vs_median_pct": 13.04,
+      "saving_vs_highest_aud": 4.5,
+      "saving_vs_highest_pct": 23.08,
+      "listings": [
+        {
+          "source": "boop",
+          "external_id": "15215560065190",
+          "url": "https://www.boopcollectables.com.au/products/21358",
+          "title": "Tristan Da Silva 2024 Court Kings Panini Works in Progress Ruby RC 12/149",
+          "landed_aud": 15.0,
+          "asking_price": 15.0,
+          "shipping": 0.0,
+          "currency": "AUD",
+          "card_number": null,
+          "parallel": "Ruby",
+          "serial_total": 149,
+          "grader": null,
+          "grade": null,
+          "rookie": true,
+          "autograph": false,
+          "memorabilia": false,
+          "title_guard": ""
+        },
+        {
+          "source": "ebay",
+          "external_id": "v1|389497896601|0",
+          "url": "https://www.ebay.com.au/itm/389497896601?_skw=2024+Tristan+Da+Panini+Ruby+%2F149&hash=item5aafe23e99:g:h48AAeSwmmZqkdkA",
+          "title": "Tristan Da Silva 2024 Court Kings Panini Works in Progress Ruby RC 12/149",
+          "landed_aud": 19.5,
+          "asking_price": 15.0,
+          "shipping": 4.5,
+          "currency": "AUD",
+          "card_number": null,
+          "parallel": "Ruby",
+          "serial_total": 149,
+          "grader": null,
+          "grade": null,
+          "rookie": true,
+          "autograph": false,
+          "memorabilia": false,
+          "title_guard": ""
+        }
+      ]
+    },
+    {
+      "comparison_key": "cf_f8ee4b9b31d92fd40663|tg:blueshimmer,shimmer",
+      "comparison_type": "EXACT_CARD",
+      "exact_equivalent": true,
+      "match_confidence": 1.0,
+      "match_reasons": [
+        "same player",
+        "same year",
+        "same brand/product",
+        "same parallel",
+        "same serial denominator",
+        "same rookie state",
+        "title discriminator guard passed"
+      ],
+      "pricing_basis": "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE",
+      "comparison_warning": null,
+      "sport": "NBA",
+      "player": "Tyler Smith",
+      "year": "2024",
+      "product": "Panini Prizm",
+      "store_count": 2,
+      "listing_count": 2,
+      "stores": [
+        "boop",
+        "ebay"
+      ],
+      "lowest_active_ask_aud": 15.0,
+      "median_active_ask_aud": 17.25,
+      "highest_active_ask_aud": 19.5,
+      "spread_aud": 4.5,
+      "spread_pct": 30.0,
+      "cheapest_store": "boop",
+      "cheapest_external_id": "15210051535014",
+      "cheapest_url": "https://www.boopcollectables.com.au/products/20761",
+      "cheapest_landed_aud": 15.0,
+      "next_best_store": "ebay",
+      "next_best_landed_aud": 19.5,
+      "saving_vs_next_best_aud": 4.5,
+      "saving_vs_next_best_pct": 23.08,
+      "saving_vs_median_aud": 2.25,
+      "saving_vs_median_pct": 13.04,
+      "saving_vs_highest_aud": 4.5,
+      "saving_vs_highest_pct": 23.08,
+      "listings": [
+        {
+          "source": "boop",
+          "external_id": "15210051535014",
+          "url": "https://www.boopcollectables.com.au/products/20761",
+          "title": "Tyler Smith 2024 Panini Prizm Blue Shimmer RC 35/35",
+          "landed_aud": 15.0,
+          "asking_price": 15.0,
+          "shipping": 0.0,
+          "currency": "AUD",
+          "card_number": null,
+          "parallel": "Shimmer",
+          "serial_total": 35,
+          "grader": null,
+          "grade": null,
+          "rookie": true,
+          "autograph": false,
+          "memorabilia": false,
+          "title_guard": "blueshimmer,shimmer"
+        },
+        {
+          "source": "ebay",
+          "external_id": "v1|389456932222|0",
+          "url": "https://www.ebay.com.au/itm/389456932222?_skw=2024+Tyler+Smith+Panini+Prizm+Shimmer+%2F35&hash=item5aad712d7e:g:sE0AAeSwrBFqkdlM",
+          "title": "Tyler Smith 2024 Panini Prizm Blue Shimmer RC 35/35",
+          "landed_aud": 19.5,
+          "asking_price": 15.0,
+          "shipping": 4.5,
+          "currency": "AUD",
+          "card_number": null,
+          "parallel": "Shimmer",
+          "serial_total": 35,
+          "grader": null,
+          "grade": null,
+          "rookie": true,
+          "autograph": false,
+          "memorabilia": false,
+          "title_guard": "blueshimmer,shimmer"
+        }
+      ]
+    },
+    {
+      "comparison_key": "cf_527b07470d257f9f5229|tg:",
+      "comparison_type": "EXACT_CARD",
+      "exact_equivalent": true,
+      "match_confidence": 1.0,
+      "match_reasons": [
+        "same player",
+        "same year",
+        "same brand/product",
+        "same parallel",
+        "same serial denominator",
+        "title discriminator guard passed"
+      ],
+      "pricing_basis": "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE",
+      "comparison_warning": null,
+      "sport": "NBA",
+      "player": "Tyrese Maxey",
+      "year": "2024",
+      "product": "Panini Prizm",
+      "store_count": 2,
+      "listing_count": 2,
+      "stores": [
+        "boop",
+        "ebay"
+      ],
+      "lowest_active_ask_aud": 15.0,
+      "median_active_ask_aud": 17.25,
+      "highest_active_ask_aud": 19.5,
+      "spread_aud": 4.5,
+      "spread_pct": 30.0,
+      "cheapest_store": "boop",
+      "cheapest_external_id": "15215558525094",
+      "cheapest_url": "https://www.boopcollectables.com.au/products/21322",
+      "cheapest_landed_aud": 15.0,
+      "next_best_store": "ebay",
+      "next_best_landed_aud": 19.5,
+      "saving_vs_next_best_aud": 4.5,
+      "saving_vs_next_best_pct": 23.08,
+      "saving_vs_median_aud": 2.25,
+      "saving_vs_median_pct": 13.04,
+      "saving_vs_highest_aud": 4.5,
+      "saving_vs_highest_pct": 23.08,
+      "listings": [
+        {
+          "source": "boop",
+          "external_id": "15215558525094",
+          "url": "https://www.boopcollectables.com.au/products/21322",
+          "title": "Tyrese Maxey 2024 Panini Prizm Red 009/299",
+          "landed_aud": 15.0,
+          "asking_price": 15.0,
+          "shipping": 0.0,
+          "currency": "AUD",
+          "card_number": null,
+          "parallel": "Red",
+          "serial_total": 299,
+          "grader": null,
+          "grade": null,
+          "rookie": false,
+          "autograph": false,
+          "memorabilia": false,
+          "title_guard": ""
+        },
+        {
+          "source": "ebay",
+          "external_id": "v1|389497901152|0",
+          "url": "https://www.ebay.com.au/itm/389497901152?_skw=2024+Tyrese+Maxey+Panini+Prizm+Red+%2F299&hash=item5aafe25060:g:Ja4AAeSwEu1qkdrX",
+          "title": "Tyrese Maxey 2024 Panini Prizm Red 009/299",
+          "landed_aud": 19.5,
+          "asking_price": 15.0,
+          "shipping": 4.5,
+          "currency": "AUD",
+          "card_number": null,
+          "parallel": "Red",
+          "serial_total": 299,
+          "grader": null,
+          "grade": null,
+          "rookie": false,
+          "autograph": false,
+          "memorabilia": false,
+          "title_guard": ""
+        }
+      ]
+    },
+    {
+      "comparison_key": "cf_6c669d798fa5403916d8|tg:",
+      "comparison_type": "EXACT_CARD",
+      "exact_equivalent": true,
+      "match_confidence": 1.0,
+      "match_reasons": [
+        "same player",
+        "same year",
+        "same brand/product",
+        "same parallel",
+        "same serial denominator",
+        "title discriminator guard passed"
+      ],
+      "pricing_basis": "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE",
+      "comparison_warning": null,
+      "sport": "NBA",
+      "player": "Tyus Jones",
+      "year": "2024",
+      "product": "Panini Prizm",
+      "store_count": 2,
+      "listing_count": 2,
+      "stores": [
+        "boop",
+        "ebay"
+      ],
+      "lowest_active_ask_aud": 6.0,
+      "median_active_ask_aud": 8.25,
+      "highest_active_ask_aud": 10.5,
+      "spread_aud": 4.5,
+      "spread_pct": 75.0,
+      "cheapest_store": "boop",
+      "cheapest_external_id": "15215557705894",
+      "cheapest_url": "https://www.boopcollectables.com.au/products/21302",
+      "cheapest_landed_aud": 6.0,
+      "next_best_store": "ebay",
+      "next_best_landed_aud": 10.5,
+      "saving_vs_next_best_aud": 4.5,
+      "saving_vs_next_best_pct": 42.86,
+      "saving_vs_median_aud": 2.25,
+      "saving_vs_median_pct": 27.27,
+      "saving_vs_highest_aud": 4.5,
+      "saving_vs_highest_pct": 42.86,
+      "listings": [
+        {
+          "source": "boop",
+          "external_id": "15215557705894",
+          "url": "https://www.boopcollectables.com.au/products/21302",
+          "title": "Tyus Jones 2024 Panini Prizm Blue Fast Break 140/150",
+          "landed_aud": 6.0,
+          "asking_price": 6.0,
+          "shipping": 0.0,
+          "currency": "AUD",
+          "card_number": null,
+          "parallel": "Blue",
+          "serial_total": 150,
+          "grader": null,
+          "grade": null,
+          "rookie": false,
+          "autograph": false,
+          "memorabilia": false,
+          "title_guard": ""
+        },
+        {
+          "source": "ebay",
+          "external_id": "v1|389497894548|0",
+          "url": "https://www.ebay.com.au/itm/389497894548?_skw=2024+Tyus+Jones+Panini+Prizm+Blue+%2F150&hash=item5aafe23694:g:tDEAAeSwGDJqkdtU",
+          "title": "Tyus Jones 2024 Panini Prizm Blue Fast Break 140/150",
+          "landed_aud": 10.5,
+          "asking_price": 6.0,
+          "shipping": 4.5,
+          "currency": "AUD",
+          "card_number": null,
+          "parallel": "Blue",
+          "serial_total": 150,
+          "grader": null,
+          "grade": null,
+          "rookie": false,
+          "autograph": false,
+          "memorabilia": false,
+          "title_guard": ""
+        }
+      ]
+    },
+    {
+      "comparison_key": "cf_5a4fc00da3613c04a67c|tg:",
+      "comparison_type": "EXACT_CARD",
+      "exact_equivalent": true,
+      "match_confidence": 1.0,
+      "match_reasons": [
+        "same player",
+        "same year",
+        "same brand/product",
+        "same parallel",
+        "same serial denominator",
+        "same rookie state",
+        "title discriminator guard passed"
+      ],
+      "pricing_basis": "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE",
+      "comparison_warning": null,
+      "sport": "NBA",
+      "player": "Walker Kessler",
+      "year": "2022-23",
+      "product": "Panini Chronicles",
+      "store_count": 2,
+      "listing_count": 2,
+      "stores": [
+        "boop",
+        "ebay"
+      ],
+      "lowest_active_ask_aud": 10.0,
+      "median_active_ask_aud": 12.25,
+      "highest_active_ask_aud": 14.5,
+      "spread_aud": 4.5,
+      "spread_pct": 45.0,
+      "cheapest_store": "boop",
+      "cheapest_external_id": "8622948581542",
+      "cheapest_url": "https://www.boopcollectables.com.au/products/20103",
+      "cheapest_landed_aud": 10.0,
+      "next_best_store": "ebay",
+      "next_best_landed_aud": 14.5,
+      "saving_vs_next_best_aud": 4.5,
+      "saving_vs_next_best_pct": 31.03,
+      "saving_vs_median_aud": 2.25,
+      "saving_vs_median_pct": 18.37,
+      "saving_vs_highest_aud": 4.5,
+      "saving_vs_highest_pct": 31.03,
+      "listings": [
+        {
+          "source": "boop",
+          "external_id": "8622948581542",
+          "url": "https://www.boopcollectables.com.au/products/20103",
+          "title": "Walker Kessler 2022-23 Panini Chronicles Red RC 55/149",
+          "landed_aud": 10.0,
+          "asking_price": 10.0,
+          "shipping": 0.0,
+          "currency": "AUD",
+          "card_number": null,
+          "parallel": "Red",
+          "serial_total": 149,
+          "grader": null,
+          "grade": null,
+          "rookie": true,
+          "autograph": false,
+          "memorabilia": false,
+          "title_guard": ""
+        },
+        {
+          "source": "ebay",
+          "external_id": "v1|389180626387|0",
+          "url": "https://www.ebay.com.au/itm/389180626387?_skw=2022-23+Walker+Kessler+Panini+Chronicles+Red+%2F149&hash=item5a9cf915d3:g:4nQAAeSwe9ZqkdFE",
+          "title": "Walker Kessler 2022-23 Panini Chronicles Red RC 55/149",
+          "landed_aud": 14.5,
+          "asking_price": 10.0,
+          "shipping": 4.5,
+          "currency": "AUD",
+          "card_number": null,
+          "parallel": "Red",
+          "serial_total": 149,
+          "grader": null,
+          "grade": null,
+          "rookie": true,
+          "autograph": false,
+          "memorabilia": false,
+          "title_guard": ""
+        }
+      ]
+    },
+    {
+      "comparison_key": "cf_8f25dfe0aa0d8a9d3c34|tg:greenwave",
+      "comparison_type": "EXACT_CARD",
+      "exact_equivalent": true,
+      "match_confidence": 1.0,
+      "match_reasons": [
+        "same player",
+        "same year",
+        "same brand/product",
+        "same parallel",
+        "same serial denominator",
+        "title discriminator guard passed"
+      ],
+      "pricing_basis": "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE",
+      "comparison_warning": null,
+      "sport": "NBA",
+      "player": "Zach Collins",
+      "year": "2023",
+      "product": "Topps Chrome",
+      "store_count": 2,
+      "listing_count": 2,
+      "stores": [
+        "boop",
+        "ebay"
+      ],
+      "lowest_active_ask_aud": 5.0,
+      "median_active_ask_aud": 7.25,
+      "highest_active_ask_aud": 9.5,
+      "spread_aud": 4.5,
+      "spread_pct": 90.0,
+      "cheapest_store": "boop",
+      "cheapest_external_id": "15215562457254",
+      "cheapest_url": "https://www.boopcollectables.com.au/products/21424",
+      "cheapest_landed_aud": 5.0,
+      "next_best_store": "ebay",
+      "next_best_landed_aud": 9.5,
+      "saving_vs_next_best_aud": 4.5,
+      "saving_vs_next_best_pct": 47.37,
+      "saving_vs_median_aud": 2.25,
+      "saving_vs_median_pct": 31.03,
+      "saving_vs_highest_aud": 4.5,
+      "saving_vs_highest_pct": 47.37,
+      "listings": [
+        {
+          "source": "boop",
+          "external_id": "15215562457254",
+          "url": "https://www.boopcollectables.com.au/products/21424",
+          "title": "Zach Collins 2023 Topps Chrome Green Wave 27/65",
+          "landed_aud": 5.0,
+          "asking_price": 5.0,
+          "shipping": 0.0,
+          "currency": "AUD",
+          "card_number": null,
+          "parallel": "Green Wave",
+          "serial_total": 65,
+          "grader": null,
+          "grade": null,
+          "rookie": false,
+          "autograph": false,
+          "memorabilia": false,
+          "title_guard": "greenwave"
+        },
+        {
+          "source": "ebay",
+          "external_id": "v1|389497907344|0",
+          "url": "https://www.ebay.com.au/itm/389497907344?_skw=2023+Zach+Collins+Topps+Chrome+Green+Wave+%2F65&hash=item5aafe26890:g:tmYAAeSwp05qkdmc",
+          "title": "Zach Collins 2023 Topps Chrome Green Wave 27/65",
+          "landed_aud": 9.5,
+          "asking_price": 5.0,
+          "shipping": 4.5,
+          "currency": "AUD",
+          "card_number": null,
+          "parallel": "Green Wave",
+          "serial_total": 65,
+          "grader": null,
+          "grade": null,
+          "rookie": false,
+          "autograph": false,
+          "memorabilia": false,
+          "title_guard": "greenwave"
+        }
+      ]
+    },
+    {
+      "comparison_key": "cf_bf0bf8bede3e680ff15e|tg:",
+      "comparison_type": "EXACT_CARD",
+      "exact_equivalent": true,
+      "match_confidence": 1.0,
+      "match_reasons": [
+        "same player",
+        "same year",
+        "same brand/product",
+        "same parallel",
+        "same serial denominator",
+        "title discriminator guard passed"
+      ],
+      "pricing_basis": "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE",
+      "comparison_warning": null,
+      "sport": "NBA",
+      "player": "Zach LaVine",
+      "year": "2017-18",
+      "product": "Panini Donruss Optic",
+      "store_count": 2,
+      "listing_count": 2,
+      "stores": [
+        "boop",
+        "ebay"
+      ],
+      "lowest_active_ask_aud": 10.0,
+      "median_active_ask_aud": 12.25,
+      "highest_active_ask_aud": 14.5,
+      "spread_aud": 4.5,
+      "spread_pct": 45.0,
+      "cheapest_store": "boop",
+      "cheapest_external_id": "15226222608550",
+      "cheapest_url": "https://www.boopcollectables.com.au/products/21514",
+      "cheapest_landed_aud": 10.0,
+      "next_best_store": "ebay",
+      "next_best_landed_aud": 14.5,
+      "saving_vs_next_best_aud": 4.5,
+      "saving_vs_next_best_pct": 31.03,
+      "saving_vs_median_aud": 2.25,
+      "saving_vs_median_pct": 18.37,
+      "saving_vs_highest_aud": 4.5,
+      "saving_vs_highest_pct": 31.03,
+      "listings": [
+        {
+          "source": "boop",
+          "external_id": "15226222608550",
+          "url": "https://www.boopcollectables.com.au/products/21514",
+          "title": "Zach LaVine 2017-18 Panini Donruss Optic All Clear For Takeoff Lime Green 91/175",
+          "landed_aud": 10.0,
+          "asking_price": 10.0,
+          "shipping": 0.0,
+          "currency": "AUD",
+          "card_number": null,
+          "parallel": "Green",
+          "serial_total": 175,
+          "grader": null,
+          "grade": null,
+          "rookie": false,
+          "autograph": false,
+          "memorabilia": false,
+          "title_guard": ""
+        },
+        {
+          "source": "ebay",
+          "external_id": "v1|389564929129|0",
+          "url": "https://www.ebay.com.au/itm/389564929129?_skw=2017-18+Zach+LaVine+Panini+Donruss+Optic+Green+%2F175&hash=item5ab3e11469:g:zsAAAeSw4C1qkdoz",
+          "title": "Zach LaVine 2017-18 Panini Donruss Optic All Clear For Takeoff Lime Green 91/175",
+          "landed_aud": 14.5,
+          "asking_price": 10.0,
+          "shipping": 4.5,
+          "currency": "AUD",
+          "card_number": null,
+          "parallel": "Green",
+          "serial_total": 175,
+          "grader": null,
+          "grade": null,
+          "rookie": false,
+          "autograph": false,
+          "memorabilia": false,
+          "title_guard": ""
+        }
+      ]
+    },
+    {
+      "comparison_key": "cf_20f87acfc8b6238b8231|tg:holo",
+      "comparison_type": "EXACT_CARD",
+      "exact_equivalent": true,
+      "match_confidence": 1.0,
+      "match_reasons": [
+        "same player",
+        "same year",
+        "same brand/product",
+        "same parallel",
+        "same serial denominator",
+        "title discriminator guard passed"
+      ],
+      "pricing_basis": "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE",
+      "comparison_warning": null,
+      "sport": "NBA",
+      "player": "Zach LaVine",
+      "year": "2024-25",
+      "product": "Donruss",
+      "store_count": 2,
+      "listing_count": 2,
+      "stores": [
+        "boop",
+        "ebay"
+      ],
+      "lowest_active_ask_aud": 5.0,
+      "median_active_ask_aud": 7.25,
+      "highest_active_ask_aud": 9.5,
+      "spread_aud": 4.5,
+      "spread_pct": 90.0,
+      "cheapest_store": "boop",
+      "cheapest_external_id": "15226222805158",
+      "cheapest_url": "https://www.boopcollectables.com.au/products/21519",
+      "cheapest_landed_aud": 5.0,
+      "next_best_store": "ebay",
+      "next_best_landed_aud": 9.5,
+      "saving_vs_next_best_aud": 4.5,
+      "saving_vs_next_best_pct": 47.37,
+      "saving_vs_median_aud": 2.25,
+      "saving_vs_median_pct": 31.03,
+      "saving_vs_highest_aud": 4.5,
+      "saving_vs_highest_pct": 47.37,
+      "listings": [
+        {
+          "source": "boop",
+          "external_id": "15226222805158",
+          "url": "https://www.boopcollectables.com.au/products/21519",
+          "title": "Zach LaVine 2024-25 Panini Donruss Holo Laser 71/149",
+          "landed_aud": 5.0,
+          "asking_price": 5.0,
+          "shipping": 0.0,
+          "currency": "AUD",
+          "card_number": null,
+          "parallel": "Holo",
+          "serial_total": 149,
+          "grader": null,
+          "grade": null,
+          "rookie": false,
+          "autograph": false,
+          "memorabilia": false,
+          "title_guard": "holo"
+        },
+        {
+          "source": "ebay",
+          "external_id": "v1|389564920773|0",
+          "url": "https://www.ebay.com.au/itm/389564920773?_skw=2024-25+Zach+LaVine+Donruss+Holo+%2F149&hash=item5ab3e0f3c5:g:h~oAAeSwMtZqkdkK",
+          "title": "Zach LaVine 2024-25 Panini Donruss Holo Laser 71/149",
+          "landed_aud": 9.5,
+          "asking_price": 5.0,
+          "shipping": 4.5,
+          "currency": "AUD",
+          "card_number": null,
+          "parallel": "Holo",
+          "serial_total": 149,
+          "grader": null,
+          "grade": null,
+          "rookie": false,
+          "autograph": false,
+          "memorabilia": false,
+          "title_guard": "holo"
         }
       ]
     }
