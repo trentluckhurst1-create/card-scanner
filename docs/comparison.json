@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-09T18:25:09.084622+00:00",
+  "generated_at": "2026-10-10T06:01:59.511708+00:00",
   "feed_type": "EXACT_CARD_STORE_COMPARISON_ONLY",
   "pricing_basis": "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE",
   "governance": {
@@ -19,12 +19,12 @@
     "title_discriminator_guard_reused_for_nfl": true
   },
   "metrics": {
-    "active_cards_scanned": 434,
+    "active_cards_scanned": 30,
     "exact_comparison_groups": 887,
     "exact_comparison_listings": 5438,
-    "previous_exact_groups": 886,
-    "fresh_exact_groups": 110,
-    "retained_previous_groups_missing_from_fresh": 777,
+    "previous_exact_groups": 887,
+    "fresh_exact_groups": 3,
+    "retained_previous_groups_missing_from_fresh": 884,
     "previous_groups_lost": 0,
     "production_groups_before_nfl_merge": 887,
     "production_listings_before_nfl_merge": 5438,
@@ -32227,7 +32227,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-12"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "boop",
@@ -32289,7 +32289,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-12"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -40722,8 +40722,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-12",
-      "staging_ebay_retain_cycles": 1
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -47134,8 +47133,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-09-12",
-      "staging_ebay_retain_cycles": 1
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -327578,12 +327576,12 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-09"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
       "external_id": "v1|186845013175|0",
-      "url": "https://www.ebay.com.au/itm/186845013175?_skw=2024-25+Bronny+James+Topps+1&hash=item2b80d4a4b7:g:CPoAAOSwFUJnX6pT&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGb9hfO7l63RSQLXuxsCc7cYQhv6KMPwunMcbWY1ubEscb5JEGCnqttZOkRYvkdsUadfJqOwbuRe8BkCwJ%2FNG9ZycsIeCUgYaRa%2BuaTK3M9q4yCFrv6mOzZNSuYjZ1idvmFsflSS2PlrGTJUydY8R0pthfo5YfUlLXH2jdrrWQ6UfbXqem3XoDz263XA6YgVpM7L2xcPOlw4bPvQ%2FuW28m0ppgCoZeL9M5tohI0GGyriA7QJ0o4ietDOsw5rni%2F8FVSAM5xq%2BEU%2Fo31VY6%2BFAN7MCZky%2B9w0sXRwfAvfy4AMRMzgBlDP%2FoWKK2fBwtZJxAc%3D",
+      "url": "https://www.ebay.com.au/itm/186845013175?_skw=2024-25+Bronny+James+Topps+1&hash=item2b80d4a4b7:g:CPoAAOSwFUJnX6pT&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7n5ZSP6bUcDVa5kcKymlbBODQXhTY4ulc%2BMo160LMZWXxn%2FUnIdTofWPU%2BoaYLhLXnOntUnW5QkKP93RObWSpFzY2qY%2BoFaRvChbqnr%2FNy%2FIKkwjne9fFu4uDhfLpqitupt%2FfE%2FOjrioue3zugsxpAXIWkZ2tOpaSzf6B%2B7lB7Fu0OVGz3%2FEBV4%2Fc%2F22ce7S22FOfiqQ749qnMx4kKRk4AC8gwTn3c1Pfp1LYEK4Hdc87m%2FGCB1yklT6h0G%2FoeQb7nkJp4%2FGmfK2yWWaFF7NN2QRt0TimGlCwmAuyOmEdH068Ga73f3%2BHby6p6cLLSE8so%3D",
       "image_url": "https://i.ebayimg.com/images/g/CPoAAOSwFUJnX6pT/s-l225.jpg",
       "title": "Bronny James Jr./LeBron James - 2024-25 Topps NOW Basketball Card 1",
       "sport": "NBA",
@@ -327637,7 +327635,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-09"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -327696,7 +327694,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-09"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -327705,10 +327703,10 @@
       "image_url": "https://i.ebayimg.com/images/g/nxsAAOSwPRpnMbJw/s-l225.jpg",
       "title": "Bronny James Jr./LeBron James - 2024-25 Topps NOW Card 1",
       "sport": "NBA",
-      "asking_price": 15.8,
-      "shipping": 18.17,
+      "asking_price": 15.74,
+      "shipping": 18.1,
       "currency": "AUD",
-      "landed_aud": 33.97,
+      "landed_aud": 33.84,
       "identity": {
         "player": "Bronny James",
         "year": "2024-25",
@@ -327755,7 +327753,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-09"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -327764,10 +327762,10 @@
       "image_url": "https://i.ebayimg.com/images/g/8NkAAOSw7ONnP2~Y/s-l225.jpg",
       "title": "Bronny James 2024-25 Topps Now Father Son Debut #1 LeBron & Bronny James LAKERS",
       "sport": "NBA",
-      "asking_price": 39.51,
-      "shipping": 25.28,
+      "asking_price": 39.37,
+      "shipping": 25.19,
       "currency": "AUD",
-      "landed_aud": 64.79,
+      "landed_aud": 64.56,
       "identity": {
         "player": "Bronny James",
         "year": "2024-25",
@@ -327814,7 +327812,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-09"
+      "fx_rate_date": "2026-10-10"
     },
     {
       "source": "ebay",
@@ -327823,10 +327821,10 @@
       "image_url": "https://i.ebayimg.com/images/g/BMwAAOSwNexnQVyi/s-l225.jpg",
       "title": "Bronny James Jr./LeBron James - 2024-25 Topps NOW Basketball Card 1",
       "sport": "NBA",
-      "asking_price": 39.51,
-      "shipping": 18.94,
+      "asking_price": 39.37,
+      "shipping": 18.87,
       "currency": "AUD",
-      "landed_aud": 58.45,
+      "landed_aud": 58.24,
       "identity": {
         "player": "Bronny James",
         "year": "2024-25",
@@ -327873,7 +327871,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-09"
+      "fx_rate_date": "2026-10-10"
     }
   ],
   "comparison_groups": [
@@ -471170,10 +471168,10 @@
         "sportscardstore"
       ],
       "lowest_active_ask_aud": 20.0,
-      "median_active_ask_aud": 36.48,
-      "highest_active_ask_aud": 64.79,
-      "spread_aud": 44.79,
-      "spread_pct": 223.95,
+      "median_active_ask_aud": 36.42,
+      "highest_active_ask_aud": 64.56,
+      "spread_aud": 44.56,
+      "spread_pct": 222.8,
       "cheapest_store": "sportscardstore",
       "cheapest_external_id": "9654369452318",
       "cheapest_url": "https://sportscardstore.com.au/products/bronny-james-jr-lebron-james-2024-25-topps-now®-basketball-card-1",
@@ -471182,10 +471180,10 @@
       "next_best_landed_aud": 31.49,
       "saving_vs_next_best_aud": 11.49,
       "saving_vs_next_best_pct": 36.49,
-      "saving_vs_median_aud": 16.48,
-      "saving_vs_median_pct": 45.17,
-      "saving_vs_highest_aud": 44.79,
-      "saving_vs_highest_pct": 69.13,
+      "saving_vs_median_aud": 16.42,
+      "saving_vs_median_pct": 45.09,
+      "saving_vs_highest_aud": 44.56,
+      "saving_vs_highest_pct": 69.02,
       "listings": [
         {
           "source": "sportscardstore",
@@ -471209,7 +471207,7 @@
         {
           "source": "ebay",
           "external_id": "v1|186845013175|0",
-          "url": "https://www.ebay.com.au/itm/186845013175?_skw=2024-25+Bronny+James+Topps+1&hash=item2b80d4a4b7:g:CPoAAOSwFUJnX6pT&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGb9hfO7l63RSQLXuxsCc7cYQhv6KMPwunMcbWY1ubEscb5JEGCnqttZOkRYvkdsUadfJqOwbuRe8BkCwJ%2FNG9ZycsIeCUgYaRa%2BuaTK3M9q4yCFrv6mOzZNSuYjZ1idvmFsflSS2PlrGTJUydY8R0pthfo5YfUlLXH2jdrrWQ6UfbXqem3XoDz263XA6YgVpM7L2xcPOlw4bPvQ%2FuW28m0ppgCoZeL9M5tohI0GGyriA7QJ0o4ietDOsw5rni%2F8FVSAM5xq%2BEU%2Fo31VY6%2BFAN7MCZky%2B9w0sXRwfAvfy4AMRMzgBlDP%2FoWKK2fBwtZJxAc%3D",
+          "url": "https://www.ebay.com.au/itm/186845013175?_skw=2024-25+Bronny+James+Topps+1&hash=item2b80d4a4b7:g:CPoAAOSwFUJnX6pT&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7n5ZSP6bUcDVa5kcKymlbBODQXhTY4ulc%2BMo160LMZWXxn%2FUnIdTofWPU%2BoaYLhLXnOntUnW5QkKP93RObWSpFzY2qY%2BoFaRvChbqnr%2FNy%2FIKkwjne9fFu4uDhfLpqitupt%2FfE%2FOjrioue3zugsxpAXIWkZ2tOpaSzf6B%2B7lB7Fu0OVGz3%2FEBV4%2Fc%2F22ce7S22FOfiqQ749qnMx4kKRk4AC8gwTn3c1Pfp1LYEK4Hdc87m%2FGCB1yklT6h0G%2FoeQb7nkJp4%2FGmfK2yWWaFF7NN2QRt0TimGlCwmAuyOmEdH068Ga73f3%2BHby6p6cLLSE8so%3D",
           "title": "Bronny James Jr./LeBron James - 2024-25 Topps NOW Basketball Card 1",
           "landed_aud": 31.49,
           "asking_price": 24.99,
@@ -471230,9 +471228,9 @@
           "external_id": "v1|336497342214|0",
           "url": "https://www.ebay.com.au/itm/336497342214?_skw=2024-25+Bronny+James+Topps+1&hash=item4e58cdf706:g:nxsAAOSwPRpnMbJw",
           "title": "Bronny James Jr./LeBron James - 2024-25 Topps NOW Card 1",
-          "landed_aud": 33.97,
-          "asking_price": 15.8,
-          "shipping": 18.17,
+          "landed_aud": 33.84,
+          "asking_price": 15.74,
+          "shipping": 18.1,
           "currency": "AUD",
           "card_number": "1",
           "parallel": null,
@@ -471268,9 +471266,9 @@
           "external_id": "v1|147606010625|0",
           "url": "https://www.ebay.com.au/itm/147606010625?_skw=2024-25+Bronny+James+Topps+1&hash=item225e00fb01:g:BMwAAOSwNexnQVyi",
           "title": "Bronny James Jr./LeBron James - 2024-25 Topps NOW Basketball Card 1",
-          "landed_aud": 58.45,
-          "asking_price": 39.51,
-          "shipping": 18.94,
+          "landed_aud": 58.24,
+          "asking_price": 39.37,
+          "shipping": 18.87,
           "currency": "AUD",
           "card_number": "1",
           "parallel": null,
@@ -471287,9 +471285,9 @@
           "external_id": "v1|305924524269|0",
           "url": "https://www.ebay.com.au/itm/305924524269?_skw=2024-25+Bronny+James+Topps+1&hash=item473a85c8ed:g:8NkAAOSw7ONnP2~Y",
           "title": "Bronny James 2024-25 Topps Now Father Son Debut #1 LeBron & Bronny James LAKERS",
-          "landed_aud": 64.79,
-          "asking_price": 39.51,
-          "shipping": 25.28,
+          "landed_aud": 64.56,
+          "asking_price": 39.37,
+          "shipping": 25.19,
           "currency": "AUD",
           "card_number": "1",
           "parallel": null,
