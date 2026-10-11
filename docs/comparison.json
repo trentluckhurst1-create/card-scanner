@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-11T06:05:30.026078+00:00",
+  "generated_at": "2026-10-11T13:04:00.956769+00:00",
   "feed_type": "EXACT_CARD_STORE_COMPARISON_ONLY",
   "pricing_basis": "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE",
   "governance": {
@@ -19,12 +19,12 @@
     "title_discriminator_guard_reused_for_nfl": true
   },
   "metrics": {
-    "active_cards_scanned": 1184,
+    "active_cards_scanned": 352,
     "exact_comparison_groups": 950,
     "exact_comparison_listings": 5688,
-    "previous_exact_groups": 912,
-    "fresh_exact_groups": 169,
-    "retained_previous_groups_missing_from_fresh": 781,
+    "previous_exact_groups": 950,
+    "fresh_exact_groups": 89,
+    "retained_previous_groups_missing_from_fresh": 861,
     "previous_groups_lost": 0,
     "production_groups_before_nfl_merge": 950,
     "production_listings_before_nfl_merge": 5688,
@@ -1495,7 +1495,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -1555,7 +1555,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -1615,7 +1615,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -1675,7 +1675,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -1735,7 +1735,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -1795,7 +1795,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -1855,7 +1855,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -1915,7 +1915,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -1975,7 +1975,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "thehobby",
@@ -6853,7 +6853,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -6913,7 +6913,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -6973,7 +6973,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -8422,7 +8422,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -8482,7 +8482,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -8542,7 +8542,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -8602,7 +8602,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -8662,7 +8662,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -8722,7 +8722,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -284062,7 +284062,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -284123,7 +284123,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -284184,7 +284184,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -284245,7 +284245,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -284305,7 +284305,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -284365,7 +284365,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -284426,7 +284426,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -284487,7 +284487,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -284548,7 +284548,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -284608,7 +284608,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -284669,7 +284669,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -284729,7 +284729,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -284789,7 +284789,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -284850,7 +284850,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -284911,7 +284911,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -284972,7 +284972,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -285032,7 +285032,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -285092,7 +285092,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -285152,7 +285152,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -285212,7 +285212,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -285273,7 +285273,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -285334,7 +285334,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -285395,7 +285395,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -285455,7 +285455,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -285517,7 +285517,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -285577,7 +285577,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -285637,7 +285637,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -285697,7 +285697,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -285757,7 +285757,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -285818,7 +285818,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -285878,7 +285878,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -285938,7 +285938,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -285998,7 +285998,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -286058,7 +286058,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -286118,7 +286118,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -286178,7 +286178,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -286238,7 +286238,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -286298,7 +286298,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -286358,7 +286358,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -286418,7 +286418,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -286478,7 +286478,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -286539,7 +286539,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -286600,7 +286600,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -286661,7 +286661,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -286722,7 +286722,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -286782,7 +286782,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -286842,7 +286842,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -286902,7 +286902,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -286962,7 +286962,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -287022,7 +287022,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -287082,7 +287082,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -287142,7 +287142,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -287202,7 +287202,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -287263,7 +287263,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -287323,7 +287323,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -287383,7 +287383,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -287443,7 +287443,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -287503,7 +287503,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -287563,7 +287563,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -287623,7 +287623,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -287683,7 +287683,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -287743,7 +287743,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -287803,7 +287803,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -287863,7 +287863,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -287923,7 +287923,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -287983,7 +287983,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -288043,7 +288043,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -288103,7 +288103,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -288163,7 +288163,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -289122,7 +289122,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -289182,7 +289182,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -289242,7 +289242,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -289303,7 +289303,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -289363,7 +289363,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -289423,7 +289423,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -289483,7 +289483,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -289544,7 +289544,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -289604,7 +289604,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -289665,7 +289665,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -289726,7 +289726,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -289787,7 +289787,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -290084,7 +290084,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -290144,7 +290144,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -290387,7 +290387,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -290447,7 +290447,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -290688,7 +290688,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -290749,7 +290749,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -290809,7 +290809,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -290869,7 +290869,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -290929,7 +290929,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -290989,7 +290989,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -291649,7 +291649,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -291709,7 +291709,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -292671,7 +292671,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -292731,7 +292731,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -293153,7 +293153,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -293213,7 +293213,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -293273,7 +293273,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -293333,7 +293333,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -293516,7 +293516,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -293577,7 +293577,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -293637,7 +293637,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -294064,7 +294064,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -294124,7 +294124,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -294186,7 +294186,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -294247,7 +294247,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -294307,7 +294307,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -294367,7 +294367,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -294427,7 +294427,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -294487,7 +294487,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -294547,7 +294547,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -294607,7 +294607,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -294667,7 +294667,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -294727,7 +294727,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -294787,7 +294787,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -296043,7 +296043,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -296103,7 +296103,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -296163,7 +296163,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -296223,7 +296223,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -296284,7 +296284,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -297289,7 +297289,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -297349,7 +297349,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -297409,7 +297409,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -297470,7 +297470,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -303560,7 +303560,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -303621,7 +303621,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -303681,7 +303681,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -303741,7 +303741,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -303862,7 +303862,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -303983,7 +303983,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -304043,7 +304043,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -304103,7 +304103,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -304163,7 +304163,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -304223,7 +304223,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -304343,7 +304343,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -304403,7 +304403,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -307591,7 +307591,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -307651,7 +307651,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "thehobby",
@@ -330532,7 +330532,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -330592,7 +330592,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -330653,7 +330653,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -330713,7 +330713,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -330774,7 +330774,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -330835,7 +330835,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -330895,7 +330895,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -330955,7 +330955,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -331015,7 +331015,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -331076,7 +331076,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -331136,7 +331136,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -331196,7 +331196,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -331256,7 +331256,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -331316,7 +331316,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -331376,7 +331376,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "boop",
@@ -331436,7 +331436,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -331496,7 +331496,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -331556,7 +331556,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -331616,7 +331616,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -331677,7 +331677,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -331738,7 +331738,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -331798,7 +331798,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -331858,7 +331858,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -331918,7 +331918,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -331978,7 +331978,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -332039,7 +332039,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -332100,7 +332100,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -332160,7 +332160,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -332220,7 +332220,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -332281,7 +332281,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -332341,7 +332341,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -332401,7 +332401,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "ebay",
@@ -332461,7 +332461,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-10"
+      "fx_rate_date": "2026-10-11"
     },
     {
       "source": "cherry",
