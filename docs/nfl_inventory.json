@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-12T16:07:00.482307+00:00",
+  "generated_at": "2026-10-13T00:58:34.962556+00:00",
   "feed_type": "NFL_DEEP_INVENTORY_STAGING",
   "pricing_basis": "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE",
   "display_currency": "AUD",
@@ -18,7 +18,7 @@
     "ebay_discovery_requires_exact_signature": true
   },
   "metrics": {
-    "active_cards": 9,
+    "active_cards": 4,
     "stores_considered": 10,
     "stores_searched": 5,
     "store_error_count": 5,
@@ -28,8 +28,8 @@
     "player_year_markets": 0,
     "foreign_currency_cards": 0,
     "fx_converted_cards": 0,
-    "retained_ebay_cards": 9,
-    "expired_ebay_cards": 0,
+    "retained_ebay_cards": 4,
+    "expired_ebay_cards": 5,
     "ebay_enabled": true,
     "ebay_targets": 0,
     "ebay_queries": 0,
@@ -39,329 +39,19 @@
     "ebay_errors": 0
   },
   "by_source": {
-    "ebay": 9
+    "ebay": 4
   },
   "by_sport": {
-    "NFL": 9
+    "NFL": 4
   },
   "store_errors": [
-    "NFL: Cherry: HTTPStatusError: Client error '429 Too Many Requests' for url 'https://www.cherrycollectables.com.au/collections/nfl-singles/products.json?limit=250&page=1'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
+    "NFL: Cherry: HTTPStatusError: Client error '429 Too Many Requests' for url 'https://www.cherrycollectables.com.au/collections/nfl-singles/products.json?limit=250&page=2'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
     "NFL: Gimko: HTTPStatusError: Client error '403 Forbidden' for url 'https://www.gimko.com.au/categories.php?item_type=buy_out&page_url=categories&category=nfl-football-cards&parent_id=1922&limit=50&start=0'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403",
     "NFL: Urban Empire: HTTPStatusError: Client error '429 Too Many Requests' for url 'https://urbanempirecollectables.com/collections/nfl-singles/products.json?limit=250&page=1'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
     "NFL: The Hobby: HTTPStatusError: Client error '429 Too Many Requests' for url 'https://thehobby.com.au/collections/nfl/products.json?limit=250&page=1'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
     "NFL: Boop Collectables: HTTPStatusError: Client error '429 Too Many Requests' for url 'https://www.boopcollectables.com.au/collections/nfl-singles/products.json?limit=250&page=1'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
   ],
   "market_cards": [
-    {
-      "source": "ebay",
-      "external_id": "v1|389180626750|0",
-      "url": "https://www.ebay.com.au/itm/389180626750?_skw=2024+Aaron+Glenn+Panini+Prizm+Purple+%2F49+auto&hash=item5a9cf9173e:g:T6wAAeSw5rdqkdCb",
-      "image_url": "https://i.ebayimg.com/images/g/T6wAAeSw5rdqkdCb/s-l225.jpg",
-      "title": "Aaron Glenn 2024 Panini Prizm Purple Power Sensational Auto 25/49",
-      "sport": "NFL",
-      "asking_price": 35.0,
-      "shipping": 8.99,
-      "currency": "AUD",
-      "landed_aud": 43.99,
-      "identity": {
-        "player": "Aaron Glenn",
-        "year": "2024",
-        "brand": "Panini Prizm",
-        "set_name": "Panini Prizm",
-        "card_number": null,
-        "parallel": "Purple",
-        "serial_current": 25,
-        "serial_total": 49,
-        "grader": null,
-        "grade": null,
-        "autograph": true,
-        "memorabilia": false,
-        "rookie": false
-      },
-      "card_family": {
-        "key": "cf_213951d0a6ca97557d61",
-        "eligible": true,
-        "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
-        "match_confidence": 1.0,
-        "match_reasons": [
-          "same player",
-          "same year",
-          "same brand/product",
-          "same parallel",
-          "same serial denominator",
-          "same autograph state"
-        ],
-        "canonical_components": {
-          "sport": "nfl",
-          "player": "aaronglenn",
-          "year": "2024",
-          "brand": "paniniprizm",
-          "product": "paniniprizm",
-          "card_number": "",
-          "parallel": "purple",
-          "serial_total": "49",
-          "grader": "",
-          "grade": "",
-          "autograph": "1",
-          "memorabilia": "0",
-          "rookie": "0"
-        }
-      },
-      "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
-      "fx_status": "AUD_NATIVE",
-      "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-11",
-      "staging_ebay_retain_cycles": 3
-    },
-    {
-      "source": "ebay",
-      "external_id": "v1|335984493942|0",
-      "url": "https://www.ebay.com.au/itm/335984493942?_skw=2024+Aaron+Glenn+Panini+Prizm+Purple+%2F49+auto&hash=item4e3a3c8576:g:4JcAAeSwbYRoN~QW",
-      "image_url": "https://i.ebayimg.com/images/g/4JcAAeSwbYRoN~QW/s-l225.jpg",
-      "title": "Aaron Glenn 2024 Panini Prizm Franchise Legends Purple Power Auto /49! Jets",
-      "sport": "NFL",
-      "asking_price": 63.0,
-      "shipping": 27.52,
-      "currency": "AUD",
-      "landed_aud": 90.52,
-      "identity": {
-        "player": "Aaron Glenn",
-        "year": "2024",
-        "brand": "Panini Prizm",
-        "set_name": "Panini Prizm",
-        "card_number": null,
-        "parallel": "Purple",
-        "serial_current": null,
-        "serial_total": 49,
-        "grader": null,
-        "grade": null,
-        "autograph": true,
-        "memorabilia": false,
-        "rookie": false
-      },
-      "card_family": {
-        "key": "cf_213951d0a6ca97557d61",
-        "eligible": true,
-        "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
-        "match_confidence": 1.0,
-        "match_reasons": [
-          "same player",
-          "same year",
-          "same brand/product",
-          "same parallel",
-          "same serial denominator",
-          "same autograph state"
-        ],
-        "canonical_components": {
-          "sport": "nfl",
-          "player": "aaronglenn",
-          "year": "2024",
-          "brand": "paniniprizm",
-          "product": "paniniprizm",
-          "card_number": "",
-          "parallel": "purple",
-          "serial_total": "49",
-          "grader": "",
-          "grade": "",
-          "autograph": "1",
-          "memorabilia": "0",
-          "rookie": "0"
-        }
-      },
-      "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
-      "fx_status": "AUD_NATIVE",
-      "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-11",
-      "staging_ebay_retain_cycles": 3
-    },
-    {
-      "source": "ebay",
-      "external_id": "v1|389180625264|0",
-      "url": "https://www.ebay.com.au/itm/389180625264?_skw=2024+Amarius+Mims+Absolute+Blue+%2F50+auto&hash=item5a9cf91170:g:Y5IAAeSwS8tqkc-y",
-      "image_url": "https://i.ebayimg.com/images/g/Y5IAAeSwS8tqkc-y/s-l225.jpg",
-      "title": "Amarius Mims 2024 Panini Absolute Blue Auto RC 19/50",
-      "sport": "NFL",
-      "asking_price": 15.0,
-      "shipping": 4.5,
-      "currency": "AUD",
-      "landed_aud": 19.5,
-      "identity": {
-        "player": "Amarius Mims",
-        "year": "2024",
-        "brand": "Absolute",
-        "set_name": "Absolute",
-        "card_number": null,
-        "parallel": "Blue",
-        "serial_current": 19,
-        "serial_total": 50,
-        "grader": null,
-        "grade": null,
-        "autograph": true,
-        "memorabilia": false,
-        "rookie": true
-      },
-      "card_family": {
-        "key": "cf_8cc9287b2b95b2d89f37",
-        "eligible": true,
-        "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
-        "match_confidence": 1.0,
-        "match_reasons": [
-          "same player",
-          "same year",
-          "same brand/product",
-          "same parallel",
-          "same serial denominator",
-          "same autograph state",
-          "same rookie state"
-        ],
-        "canonical_components": {
-          "sport": "nfl",
-          "player": "amariusmims",
-          "year": "2024",
-          "brand": "absolute",
-          "product": "absolute",
-          "card_number": "",
-          "parallel": "blue",
-          "serial_total": "50",
-          "grader": "",
-          "grade": "",
-          "autograph": "1",
-          "memorabilia": "0",
-          "rookie": "1"
-        }
-      },
-      "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
-      "fx_status": "AUD_NATIVE",
-      "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-11",
-      "staging_ebay_retain_cycles": 3
-    },
-    {
-      "source": "ebay",
-      "external_id": "v1|265461878116|0",
-      "url": "https://www.ebay.com.au/itm/265461878116?_skw=2019+Kyler+Murray+Panini+Prizm+301+Silver+Prizm+PSA+8&hash=item3dcec2cd64:g:Hi4AAOSwiNlhpx-i",
-      "image_url": "https://i.ebayimg.com/images/g/Hi4AAOSwiNlhpx-i/s-l225.jpg",
-      "title": "2019 PANINI PRIZM Kyler Murray #301 Silver Prizm Arizona Cardinals RC PSA 8",
-      "sport": "NFL",
-      "asking_price": 204.77,
-      "shipping": 37.71,
-      "currency": "AUD",
-      "landed_aud": 242.48,
-      "identity": {
-        "player": "Kyler Murray",
-        "year": "2019",
-        "brand": "Panini Prizm",
-        "set_name": "Panini Prizm",
-        "card_number": "301",
-        "parallel": "Silver Prizm",
-        "serial_current": null,
-        "serial_total": null,
-        "grader": "PSA",
-        "grade": 8.0,
-        "autograph": false,
-        "memorabilia": false,
-        "rookie": true
-      },
-      "card_family": {
-        "key": "cf_06c4651c3f3b04c53367",
-        "eligible": true,
-        "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
-        "match_confidence": 1.0,
-        "match_reasons": [
-          "same player",
-          "same year",
-          "same brand/product",
-          "same card number",
-          "same parallel",
-          "same grading state",
-          "same rookie state"
-        ],
-        "canonical_components": {
-          "sport": "nfl",
-          "player": "kylermurray",
-          "year": "2019",
-          "brand": "paniniprizm",
-          "product": "paniniprizm",
-          "card_number": "301",
-          "parallel": "silverprizm",
-          "serial_total": "",
-          "grader": "psa",
-          "grade": "8",
-          "autograph": "0",
-          "memorabilia": "0",
-          "rookie": "1"
-        }
-      },
-      "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
-      "fx_status": "AUD_NATIVE",
-      "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-11",
-      "staging_ebay_retain_cycles": 3
-    },
-    {
-      "source": "ebay",
-      "external_id": "v1|377410760176|0",
-      "url": "https://www.ebay.com.au/itm/377410760176?_skw=2025+Mike+Evans+Absolute+12&hash=item57df6f2df0:g:hewAAeSwFkJqe12K",
-      "image_url": "https://i.ebayimg.com/images/g/hewAAeSwFkJqe12K/s-l225.jpg",
-      "title": "2025 Panini Absolute Mike Evans Kaboom! #12",
-      "sport": "NFL",
-      "asking_price": 886.8,
-      "shipping": 52.97,
-      "currency": "AUD",
-      "landed_aud": 939.77,
-      "identity": {
-        "player": "Mike Evans",
-        "year": "2025",
-        "brand": "Absolute",
-        "set_name": "Absolute",
-        "card_number": "12",
-        "parallel": null,
-        "serial_current": null,
-        "serial_total": null,
-        "grader": null,
-        "grade": null,
-        "autograph": false,
-        "memorabilia": false,
-        "rookie": false
-      },
-      "card_family": {
-        "key": "cf_7c222465974b22111f22",
-        "eligible": true,
-        "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
-        "match_confidence": 1.0,
-        "match_reasons": [
-          "same player",
-          "same year",
-          "same brand/product",
-          "same card number"
-        ],
-        "canonical_components": {
-          "sport": "nfl",
-          "player": "mikeevans",
-          "year": "2025",
-          "brand": "absolute",
-          "product": "absolute",
-          "card_number": "12",
-          "parallel": "",
-          "serial_total": "",
-          "grader": "",
-          "grade": "",
-          "autograph": "0",
-          "memorabilia": "0",
-          "rookie": "0"
-        }
-      },
-      "history": null,
-      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
-      "fx_status": "AUD_NATIVE",
-      "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-11",
-      "staging_ebay_retain_cycles": 3
-    },
     {
       "source": "ebay",
       "external_id": "v1|257755171301|0",
@@ -423,7 +113,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-12",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -486,7 +176,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-12",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -549,7 +239,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-12",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -612,7 +302,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-12",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     }
   ],
   "active_price_comparisons": {
