@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-13T23:07:37.975834+00:00",
+  "generated_at": "2026-10-14T05:23:45.534862+00:00",
   "feed_type": "NFL_DEEP_INVENTORY_STAGING",
   "pricing_basis": "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE",
   "display_currency": "AUD",
@@ -29,7 +29,7 @@
     "foreign_currency_cards": 0,
     "fx_converted_cards": 0,
     "retained_ebay_cards": 63,
-    "expired_ebay_cards": 4,
+    "expired_ebay_cards": 0,
     "ebay_enabled": true,
     "ebay_targets": 0,
     "ebay_queries": 0,
@@ -45,11 +45,11 @@
     "NFL": 63
   },
   "store_errors": [
-    "NFL: Cherry: HTTPStatusError: Client error '429 Too Many Requests' for url 'https://www.cherrycollectables.com.au/collections/nfl-singles/products.json?limit=250&page=2'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
+    "NFL: Cherry: HTTPStatusError: Client error '429 Too Many Requests' for url 'https://www.cherrycollectables.com.au/collections/nfl-singles/products.json?limit=250&page=1'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
     "NFL: Gimko: HTTPStatusError: Client error '403 Forbidden' for url 'https://www.gimko.com.au/categories.php?item_type=buy_out&page_url=categories&category=nfl-football-cards&parent_id=1922&limit=50&start=0'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403",
     "NFL: Urban Empire: HTTPStatusError: Client error '429 Too Many Requests' for url 'https://urbanempirecollectables.com/collections/nfl-singles/products.json?limit=250&page=1'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
     "NFL: The Hobby: HTTPStatusError: Client error '429 Too Many Requests' for url 'https://thehobby.com.au/collections/nfl/products.json?limit=250&page=1'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
-    "NFL: Boop Collectables: HTTPStatusError: Client error '429 Too Many Requests' for url 'https://www.boopcollectables.com.au/collections/nfl-singles/products.json?limit=250&page=1'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+    "NFL: Boop Collectables: HTTPStatusError: Client error '404 Not Found' for url 'https://boopcollectables.com.au/collections/nfl-singles/products.json?limit=250&page=1'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
   ],
   "market_cards": [
     {
@@ -111,7 +111,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-13",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -173,7 +173,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-13",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -235,7 +235,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-13",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -296,7 +296,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-13",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -358,7 +358,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-13",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -419,7 +419,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-13",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -482,7 +482,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-13",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -544,7 +544,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-13",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -605,7 +605,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-13",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -666,7 +666,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-13",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -729,7 +729,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-13",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -790,7 +790,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-13",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -851,7 +851,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-13",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -912,7 +912,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-13",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -973,7 +973,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-13",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -1035,7 +1035,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-13",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -1096,7 +1096,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-13",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -1157,7 +1157,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-13",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -1219,7 +1219,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-13",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -1281,7 +1281,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-13",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -1342,7 +1342,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-13",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -1404,7 +1404,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-13",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -1465,7 +1465,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-13",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -1527,7 +1527,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-13",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -1589,7 +1589,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-13",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -1651,7 +1651,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-13",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -1713,7 +1713,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-13",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -1774,7 +1774,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-13",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -1835,7 +1835,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-13",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -1897,7 +1897,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-13",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -1959,7 +1959,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-13",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -2021,7 +2021,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-13",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -2083,7 +2083,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-13",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -2144,7 +2144,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-13",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -2205,7 +2205,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-13",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -2266,7 +2266,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-13",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -2327,7 +2327,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-13",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -2389,7 +2389,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-13",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -2452,7 +2452,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-13",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -2515,7 +2515,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-13",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -2576,7 +2576,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-13",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -2637,7 +2637,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-13",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -2698,7 +2698,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-13",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -2760,7 +2760,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-13",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -2821,7 +2821,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-13",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -2882,7 +2882,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-13",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -2943,7 +2943,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-13",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -3006,7 +3006,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-13",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -3067,7 +3067,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-13",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -3128,7 +3128,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-13",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -3190,7 +3190,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-13",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -3251,7 +3251,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-13",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -3314,7 +3314,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-13",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -3376,7 +3376,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-13",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -3438,7 +3438,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-13",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -3502,7 +3502,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-13",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -3563,7 +3563,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-13",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -3625,7 +3625,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-13",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -3686,7 +3686,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-13",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -3747,7 +3747,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-13",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -3808,7 +3808,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-13",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -3870,7 +3870,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-13",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     },
     {
       "source": "ebay",
@@ -3932,7 +3932,7 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-13",
-      "staging_ebay_retain_cycles": 1
+      "staging_ebay_retain_cycles": 2
     }
   ],
   "active_price_comparisons": {
