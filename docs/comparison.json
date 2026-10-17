@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-17T04:43:41.215890+00:00",
+  "generated_at": "2026-10-17T10:57:31.784298+00:00",
   "feed_type": "EXACT_CARD_STORE_COMPARISON_ONLY",
   "pricing_basis": "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE",
   "governance": {
@@ -19,12 +19,12 @@
     "title_discriminator_guard_reused_for_nfl": true
   },
   "metrics": {
-    "active_cards_scanned": 1354,
+    "active_cards_scanned": 708,
     "exact_comparison_groups": 1031,
     "exact_comparison_listings": 5855,
-    "previous_exact_groups": 1026,
-    "fresh_exact_groups": 206,
-    "retained_previous_groups_missing_from_fresh": 825,
+    "previous_exact_groups": 1031,
+    "fresh_exact_groups": 123,
+    "retained_previous_groups_missing_from_fresh": 908,
     "previous_groups_lost": 0,
     "production_groups_before_nfl_merge": 1031,
     "production_listings_before_nfl_merge": 5855,
@@ -30723,10 +30723,10 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0440/6935/5678/files/mixed_003-1_zj9mog.jpg?v=1751438230",
       "title": "Doug Williams 2024 Topps Resurgence 95 Red Power Surge 3/5",
       "sport": "NFL",
-      "asking_price": 16.1,
+      "asking_price": 16.11,
       "shipping": 0.0,
       "currency": "AUD",
-      "landed_aud": 16.1,
+      "landed_aud": 16.11,
       "identity": {
         "player": "Doug Williams",
         "year": "2024",
@@ -30774,7 +30774,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "thehobby",
@@ -30783,10 +30783,10 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0440/6935/5678/files/mixed_064-1_aso8ov.jpg?v=1752821298",
       "title": "Andy Dalton 2024 Panini Select 106 Gold Disco 3/10",
       "sport": "NFL",
-      "asking_price": 41.86,
+      "asking_price": 41.87,
       "shipping": 0.0,
       "currency": "AUD",
-      "landed_aud": 41.86,
+      "landed_aud": 41.87,
       "identity": {
         "player": "Andy Dalton",
         "year": "2024",
@@ -30834,7 +30834,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "thehobby",
@@ -30843,10 +30843,10 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0440/6935/5678/files/nflmlb_037-1_wv3vx0.jpg?v=1747204028",
       "title": "Jaylen Wright 2024 Topps Cosmic Chrome 158 Green Space Dust RC 17/75",
       "sport": "NFL",
-      "asking_price": 16.1,
+      "asking_price": 16.11,
       "shipping": 0.0,
       "currency": "AUD",
-      "landed_aud": 16.1,
+      "landed_aud": 16.11,
       "identity": {
         "player": "Jaylen Wright",
         "year": "2024",
@@ -30895,7 +30895,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "thehobby",
@@ -30904,10 +30904,10 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0440/6935/5678/files/nflmlb_039-1_fvvudb.jpg?v=1747204034",
       "title": "Isaiah Davis 2024 Topps Cosmic Chrome 169 Green Space Dust RC 47/75",
       "sport": "NFL",
-      "asking_price": 28.98,
+      "asking_price": 28.99,
       "shipping": 0.0,
       "currency": "AUD",
-      "landed_aud": 28.98,
+      "landed_aud": 28.99,
       "identity": {
         "player": "Isaiah Davis",
         "year": "2024",
@@ -30956,7 +30956,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "thehobby",
@@ -30965,10 +30965,10 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0440/6935/5678/files/nflmlb_040-1_wfjxha.jpg?v=1747204038",
       "title": "Isaiah Davis 2024 Topps Cosmic Chrome 169 Gold Interstellar RC 16/50",
       "sport": "NFL",
-      "asking_price": 38.64,
+      "asking_price": 38.65,
       "shipping": 0.0,
       "currency": "AUD",
-      "landed_aud": 38.64,
+      "landed_aud": 38.65,
       "identity": {
         "player": "Isaiah Davis",
         "year": "2024",
@@ -31017,7 +31017,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "thehobby",
@@ -31077,7 +31077,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "thehobby",
@@ -31086,10 +31086,10 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0440/6935/5678/files/nflmlb_030-1_q07sgj.jpg?v=1747204024",
       "title": "Brenden Rice 2024 Topps Cosmic Chrome 154 Green Space Dust RC 36/75",
       "sport": "NFL",
-      "asking_price": 16.1,
+      "asking_price": 16.11,
       "shipping": 0.0,
       "currency": "AUD",
-      "landed_aud": 16.1,
+      "landed_aud": 16.11,
       "identity": {
         "player": "Brenden Rice",
         "year": "2024",
@@ -31138,7 +31138,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "thehobby",
@@ -31147,10 +31147,10 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0440/6935/5678/files/mixed_015-1_p5q2nc.jpg?v=1745291273",
       "title": "Dalvin Cook 2020 Panini Certified M-DC Materials Gold 41/50",
       "sport": "NFL",
-      "asking_price": 28.98,
+      "asking_price": 28.99,
       "shipping": 0.0,
       "currency": "AUD",
-      "landed_aud": 28.98,
+      "landed_aud": 28.99,
       "identity": {
         "player": "Dalvin Cook",
         "year": "2020",
@@ -31198,7 +31198,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "thehobby",
@@ -31207,10 +31207,10 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0440/6935/5678/products/nfl_028-1_anjkhz.jpg?v=1662437118",
       "title": "Chase Claypool 2020 Panini Chronicles Prizm Black Green RC 19/49",
       "sport": "NFL",
-      "asking_price": 95.95,
+      "asking_price": 95.98,
       "shipping": 0.0,
       "currency": "AUD",
-      "landed_aud": 95.95,
+      "landed_aud": 95.98,
       "identity": {
         "player": "Chase Claypool",
         "year": "2020",
@@ -31259,7 +31259,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "thehobby",
@@ -31268,10 +31268,10 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0440/6935/5678/files/mixed_017-1_ycwwo5.jpg?v=1735015076",
       "title": "Jim Everett 2023 Panini National Treasures 61 Purple 13/49",
       "sport": "NFL",
-      "asking_price": 9.66,
+      "asking_price": 9.67,
       "shipping": 0.0,
       "currency": "AUD",
-      "landed_aud": 9.66,
+      "landed_aud": 9.67,
       "identity": {
         "player": "Jim Everett",
         "year": "2023",
@@ -31319,7 +31319,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "thehobby",
@@ -31379,7 +31379,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "thehobby",
@@ -31440,7 +31440,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "thehobby",
@@ -31449,10 +31449,10 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0440/6935/5678/files/mix_005-1_mdrcfb.jpg?v=1717651716",
       "title": "Ja'Marr Chase 2022 Panini Phoenix CT-12 Contours Orange 41/99",
       "sport": "NFL",
-      "asking_price": 16.1,
+      "asking_price": 16.11,
       "shipping": 0.0,
       "currency": "AUD",
-      "landed_aud": 16.1,
+      "landed_aud": 16.11,
       "identity": {
         "player": "Ja'Marr Chase",
         "year": "2022",
@@ -31500,7 +31500,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "thehobby",
@@ -31509,10 +31509,10 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0440/6935/5678/files/basketball_029-1_m6y2wo.jpg?v=1715322274",
       "title": "Austin Ekeler 2022 Panini Obsidian 71 Orange Etch 60/75",
       "sport": "NFL",
-      "asking_price": 9.66,
+      "asking_price": 9.67,
       "shipping": 0.0,
       "currency": "AUD",
-      "landed_aud": 9.66,
+      "landed_aud": 9.67,
       "identity": {
         "player": "Austin Ekeler",
         "year": "2022",
@@ -31560,7 +31560,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "thehobby",
@@ -31620,7 +31620,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "thehobby",
@@ -31689,10 +31689,10 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0440/6935/5678/products/mix_053-1_udfwca.jpg?v=1705641526",
       "title": "Dorian Williams 2023 Panini Prizm 309 Purple RC 37/125",
       "sport": "NFL",
-      "asking_price": 63.76,
+      "asking_price": 63.77,
       "shipping": 0.0,
       "currency": "AUD",
-      "landed_aud": 63.76,
+      "landed_aud": 63.77,
       "identity": {
         "player": "Dorian Williams",
         "year": "2023",
@@ -31741,7 +31741,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "thehobby",
@@ -31801,7 +31801,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "thehobby",
@@ -31861,7 +31861,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "thehobby",
@@ -31870,10 +31870,10 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0440/6935/5678/products/mix_082-1_lv72p2.jpg?v=1705291810",
       "title": "Davis Mills 2023 Panini Prizm 117 Green Scope 26/75",
       "sport": "NFL",
-      "asking_price": 16.1,
+      "asking_price": 16.11,
       "shipping": 0.0,
       "currency": "AUD",
-      "landed_aud": 16.1,
+      "landed_aud": 16.11,
       "identity": {
         "player": "Davis Mills",
         "year": "2023",
@@ -31921,7 +31921,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "thehobby",
@@ -31930,10 +31930,10 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0440/6935/5678/products/bball_038-1_els8wv.jpg?v=1695859996",
       "title": "Cole Turner 2022 Panini Limited 239 Rookie Auto Ruby RC 9/25",
       "sport": "NFL",
-      "asking_price": 44.44,
+      "asking_price": 44.45,
       "shipping": 0.0,
       "currency": "AUD",
-      "landed_aud": 44.44,
+      "landed_aud": 44.45,
       "identity": {
         "player": "Cole Turner",
         "year": "2022",
@@ -31983,7 +31983,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "thehobby",
@@ -32045,7 +32045,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "boop",
@@ -49391,7 +49391,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "ebay",
@@ -49576,7 +49576,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "ebay",
@@ -49884,7 +49884,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "ebay",
@@ -65761,7 +65761,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "ebay",
@@ -67529,7 +67529,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "ebay",
@@ -76973,7 +76973,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "ebay",
@@ -94717,10 +94717,10 @@
       "image_url": "https://i.ebayimg.com/images/g/k20AAOSwJFVjLmfX/s-l225.jpg",
       "title": "Chase Claypool 2020 Panini Chronicles Prizm Black Green RC 04/49 Mint Condition",
       "sport": "NFL",
-      "asking_price": 63.56,
-      "shipping": 23.0,
+      "asking_price": 63.33,
+      "shipping": 22.92,
       "currency": "AUD",
-      "landed_aud": 86.56,
+      "landed_aud": 86.25,
       "identity": {
         "player": "Chase Claypool",
         "year": "2020",
@@ -94769,7 +94769,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "ebay",
@@ -94829,7 +94829,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "ebay",
@@ -100122,7 +100122,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "ebay",
@@ -111874,7 +111874,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "ebay",
@@ -111934,7 +111934,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "ebay",
@@ -121725,7 +121725,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "ebay",
@@ -133825,7 +133825,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "ebay",
@@ -135100,7 +135100,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "ebay",
@@ -135219,7 +135219,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "ebay",
@@ -135339,7 +135339,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "ebay",
@@ -160635,7 +160635,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "ebay",
@@ -160696,7 +160696,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "ebay",
@@ -163283,7 +163283,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "ebay",
@@ -191539,7 +191539,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "ebay",
@@ -198074,7 +198074,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "ebay",
@@ -206015,10 +206015,10 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0440/6935/5678/files/mixed_015-1_ont0hj.jpg?v=1744242208",
       "title": "Joey Bosa 2016 Panini Prizm 228 Purple Scope RC 2/99",
       "sport": "NFL",
-      "asking_price": 31.56,
+      "asking_price": 31.57,
       "shipping": 0.0,
       "currency": "AUD",
-      "landed_aud": 31.56,
+      "landed_aud": 31.57,
       "identity": {
         "player": "Joey Bosa",
         "year": "2016",
@@ -206067,7 +206067,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "thehobby",
@@ -206128,7 +206128,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "thehobby",
@@ -206189,7 +206189,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "thehobby",
@@ -206198,10 +206198,10 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0440/6935/5678/products/mix_065-1_bhapar.jpg?v=1705641550",
       "title": "Kenny Pickett 2023 Panini Prizm 249 Orange 181/249",
       "sport": "NFL",
-      "asking_price": 31.56,
+      "asking_price": 31.57,
       "shipping": 0.0,
       "currency": "AUD",
-      "landed_aud": 31.56,
+      "landed_aud": 31.57,
       "identity": {
         "player": "Kenny Pickett",
         "year": "2023",
@@ -206249,7 +206249,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "thehobby",
@@ -206309,7 +206309,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "thehobby",
@@ -206369,7 +206369,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "thehobby",
@@ -206378,10 +206378,10 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0440/6935/5678/products/bball_065-1_uw4puu.jpg?v=1692250258",
       "title": "Kenny Pickett 2022 Panini Chronicles CVR-1 Clear Vision Blue RC 40/99",
       "sport": "NFL",
-      "asking_price": 31.56,
+      "asking_price": 31.57,
       "shipping": 0.0,
       "currency": "AUD",
-      "landed_aud": 31.56,
+      "landed_aud": 31.57,
       "identity": {
         "player": "Kenny Pickett",
         "year": "2022",
@@ -206430,7 +206430,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "ebay",
@@ -207930,7 +207930,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "ebay",
@@ -207991,7 +207991,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "ebay",
@@ -208051,7 +208051,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "ebay",
@@ -228715,7 +228715,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "ebay",
@@ -233121,7 +233121,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "ebay",
@@ -233181,7 +233181,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "ebay",
@@ -233190,10 +233190,10 @@
       "image_url": "https://i.ebayimg.com/images/g/YlkAAeSwsSFpzVfO/s-l225.jpg",
       "title": "Kenny Pickett 2023 Panini Prizm Orange /249 Steelers Raiders Eagles Panthers",
       "sport": "NFL",
-      "asking_price": 4.77,
-      "shipping": 16.33,
+      "asking_price": 4.75,
+      "shipping": 16.27,
       "currency": "AUD",
-      "landed_aud": 21.1,
+      "landed_aud": 21.02,
       "identity": {
         "player": "Kenny Pickett",
         "year": "2023",
@@ -233241,7 +233241,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "ebay",
@@ -233250,10 +233250,10 @@
       "image_url": "https://i.ebayimg.com/images/g/Z0wAAOSwCdll25MR/s-l225.jpg",
       "title": "2023 Panini Prizm Kenny Pickett Orange /249",
       "sport": "NFL",
-      "asking_price": 23.84,
-      "shipping": 23.29,
+      "asking_price": 23.75,
+      "shipping": 23.21,
       "currency": "AUD",
-      "landed_aud": 47.13,
+      "landed_aud": 46.96,
       "identity": {
         "player": "Kenny Pickett",
         "year": "2023",
@@ -233301,7 +233301,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "ebay",
@@ -235469,7 +235469,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "ebay",
@@ -269641,7 +269641,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "thehobby",
@@ -269650,10 +269650,10 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0440/6935/5678/files/psa_015-1_rhkqa6.jpg?v=1717478324",
       "title": "Roschon Johnson 2023 Panini Prizm 314 Purple Power Auto RC 38/49 PSA 8/10",
       "sport": "NFL",
-      "asking_price": 48.3,
+      "asking_price": 48.31,
       "shipping": 0.0,
       "currency": "AUD",
-      "landed_aud": 48.3,
+      "landed_aud": 48.31,
       "identity": {
         "player": "Roschon Johnson",
         "year": "2023",
@@ -269704,7 +269704,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "thehobby",
@@ -269764,7 +269764,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "thehobby",
@@ -269824,7 +269824,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "thehobby",
@@ -269833,10 +269833,10 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0440/6935/5678/files/mixed_028-1_gg4utx.jpg?v=1736476504",
       "title": "Raequan Williams 2020 Panini Prizm Draft Picks Draft Picks Auto Green Ice RC /18",
       "sport": "NFL",
-      "asking_price": 31.56,
+      "asking_price": 31.57,
       "shipping": 0.0,
       "currency": "AUD",
-      "landed_aud": 31.56,
+      "landed_aud": 31.57,
       "identity": {
         "player": "Raequan Williams",
         "year": "2020",
@@ -269886,7 +269886,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "thehobby",
@@ -269895,10 +269895,10 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0440/6935/5678/files/mixed_038-1_ctrwji.jpg?v=1735015116",
       "title": "Ricky Pearsall 2024 Panini Origins 133 Holo Gold RC 17/25",
       "sport": "NFL",
-      "asking_price": 31.56,
+      "asking_price": 31.57,
       "shipping": 0.0,
       "currency": "AUD",
-      "landed_aud": 31.56,
+      "landed_aud": 31.57,
       "identity": {
         "player": "Ricky Pearsall",
         "year": "2024",
@@ -269947,7 +269947,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "thehobby",
@@ -270008,7 +270008,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "thehobby",
@@ -270069,7 +270069,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "thehobby",
@@ -270078,10 +270078,10 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0440/6935/5678/products/mix_064-1_st7k0m.jpg?v=1705641546",
       "title": "Marvin Jones Jr 2023 Panini Prizm 102 Orange 66/249",
       "sport": "NFL",
-      "asking_price": 31.56,
+      "asking_price": 31.57,
       "shipping": 0.0,
       "currency": "AUD",
-      "landed_aud": 31.56,
+      "landed_aud": 31.57,
       "identity": {
         "player": "Marvin Jones Jr.",
         "year": "2023",
@@ -270129,7 +270129,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "thehobby",
@@ -270138,10 +270138,10 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0440/6935/5678/products/mix_057-1_kkis0y.jpg?v=1705641542",
       "title": "Mike Singletary 2023 Panini Prizm 54 Purple Ice 79/225",
       "sport": "NFL",
-      "asking_price": 31.56,
+      "asking_price": 31.57,
       "shipping": 0.0,
       "currency": "AUD",
-      "landed_aud": 31.56,
+      "landed_aud": 31.57,
       "identity": {
         "player": "Mike Singletary",
         "year": "2023",
@@ -270189,7 +270189,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "thehobby",
@@ -270198,10 +270198,10 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0440/6935/5678/products/mix_056-1_g5ajzy.jpg?v=1705641538",
       "title": "Tank Dell 2023 Panini Prizm 341 Blue Wave RC 87/199",
       "sport": "NFL",
-      "asking_price": 128.16,
+      "asking_price": 128.19,
       "shipping": 0.0,
       "currency": "AUD",
-      "landed_aud": 128.16,
+      "landed_aud": 128.19,
       "identity": {
         "player": "Tank Dell",
         "year": "2023",
@@ -270250,7 +270250,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "thehobby",
@@ -270310,7 +270310,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "thehobby",
@@ -270370,7 +270370,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "thehobby",
@@ -270379,10 +270379,10 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0440/6935/5678/products/mix_104-1_fbe27r.jpg?v=1705291861",
       "title": "Will Anderson Jr 2023 Panini Prizm 342 Purple Ice RC 102/225",
       "sport": "NFL",
-      "asking_price": 22.54,
+      "asking_price": 22.55,
       "shipping": 0.0,
       "currency": "AUD",
-      "landed_aud": 22.54,
+      "landed_aud": 22.55,
       "identity": {
         "player": "Will Anderson Jr.",
         "year": "2023",
@@ -270431,7 +270431,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "thehobby",
@@ -270492,7 +270492,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "thehobby",
@@ -270501,10 +270501,10 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0440/6935/5678/products/mix_083-1_chwezw.jpg?v=1705291814",
       "title": "Preston Smith 2023 Panini Prizm 111 Blue Ice 27/99",
       "sport": "NFL",
-      "asking_price": 16.1,
+      "asking_price": 16.11,
       "shipping": 0.0,
       "currency": "AUD",
-      "landed_aud": 16.1,
+      "landed_aud": 16.11,
       "identity": {
         "player": "Preston Smith",
         "year": "2023",
@@ -270552,7 +270552,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "thehobby",
@@ -270561,10 +270561,10 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0440/6935/5678/products/mix_079-1_szhtnx.jpg?v=1705291794",
       "title": "Odell Beckhamr Jr 2023 Panini Prizm 25 Purple Power 37/49",
       "sport": "NFL",
-      "asking_price": 22.54,
+      "asking_price": 22.55,
       "shipping": 0.0,
       "currency": "AUD",
-      "landed_aud": 22.54,
+      "landed_aud": 22.55,
       "identity": {
         "player": "Odell Beckhamr Jr.",
         "year": "2023",
@@ -270612,7 +270612,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "thehobby",
@@ -270621,10 +270621,10 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0440/6935/5678/products/mix_006-1_jn8rkj.jpg?v=1692064259",
       "title": "Mac Jones 2022 Panini Contenders MVP-MJO MVP Contenders Silver 79/99",
       "sport": "NFL",
-      "asking_price": 9.66,
+      "asking_price": 9.67,
       "shipping": 0.0,
       "currency": "AUD",
-      "landed_aud": 9.66,
+      "landed_aud": 9.67,
       "identity": {
         "player": "Mvp-Mjo Mvp",
         "year": "2022",
@@ -270672,7 +270672,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "ebay",
@@ -270732,7 +270732,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "ebay",
@@ -270793,7 +270793,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "ebay",
@@ -270912,7 +270912,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "ebay",
@@ -270972,7 +270972,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "ebay",
@@ -271032,7 +271032,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "ebay",
@@ -271092,7 +271092,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "ebay",
@@ -271152,7 +271152,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "ebay",
@@ -271213,7 +271213,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "ebay",
@@ -271273,7 +271273,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "ebay",
@@ -271335,7 +271335,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "ebay",
@@ -271396,7 +271396,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "ebay",
@@ -271457,7 +271457,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "ebay",
@@ -271520,7 +271520,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "ebay",
@@ -271642,7 +271642,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "ebay",
@@ -271702,7 +271702,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "ebay",
@@ -271711,10 +271711,10 @@
       "image_url": "https://i.ebayimg.com/images/g/xZUAAeSwLDJokmEX/s-l225.jpg",
       "title": "Terry Bradshaw 2024 Topps Resurgence C-20 Conductors Orange Power Surge 25/25",
       "sport": "NFL",
-      "asking_price": 30.43,
-      "shipping": 18.49,
+      "asking_price": 30.42,
+      "shipping": 18.48,
       "currency": "AUD",
-      "landed_aud": 48.92,
+      "landed_aud": 48.9,
       "identity": {
         "player": "Terry Bradshaw",
         "year": "2024",
@@ -271762,7 +271762,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "ebay",
@@ -271822,7 +271822,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "ebay",
@@ -272003,7 +272003,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "ebay",
@@ -272064,7 +272064,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-16"
+      "fx_rate_date": "2026-10-17"
     },
     {
       "source": "cherry",
@@ -353528,9 +353528,9 @@
         },
         {
           "source": "ebay",
-          "external_id": "v1|326912146973|0",
-          "url": "https://www.ebay.com.au/itm/326912146973?_skw=2024+Cameron+Zurhaar+AFL+Supremacy+Black+Pearl+%2F35&hash=item4c1d7b7e1d:g:lH8AAeSwxMFpPg8p",
-          "title": "2024 SELECT AFL SUPREMACY Black Pearl Cameron Zurhaar 06/35 LOW",
+          "external_id": "v1|326297803503|0",
+          "url": "https://www.ebay.com.au/itm/326297803503?_skw=2024+Cameron+Zurhaar+AFL+Supremacy+Black+Pearl+%2F35&hash=item4bf8dd5aef:g:J48AAOSwIFxnBwxz",
+          "title": "2024 SELECT AFL SUPREMACY Black Pearl Cameron Zurhaar 03/35 LOW",
           "landed_aud": 229.0,
           "asking_price": 229.0,
           "shipping": 0.0,
@@ -353547,9 +353547,9 @@
         },
         {
           "source": "ebay",
-          "external_id": "v1|326297803503|0",
-          "url": "https://www.ebay.com.au/itm/326297803503?_skw=2024+Cameron+Zurhaar+AFL+Supremacy+Black+Pearl+%2F35&hash=item4bf8dd5aef:g:J48AAOSwIFxnBwxz",
-          "title": "2024 SELECT AFL SUPREMACY Black Pearl Cameron Zurhaar 03/35 LOW",
+          "external_id": "v1|326912146973|0",
+          "url": "https://www.ebay.com.au/itm/326912146973?_skw=2024+Cameron+Zurhaar+AFL+Supremacy+Black+Pearl+%2F35&hash=item4c1d7b7e1d:g:lH8AAeSwxMFpPg8p",
+          "title": "2024 SELECT AFL SUPREMACY Black Pearl Cameron Zurhaar 06/35 LOW",
           "landed_aud": 229.0,
           "asking_price": 229.0,
           "shipping": 0.0,
@@ -377748,31 +377748,31 @@
         "ebay",
         "thehobby"
       ],
-      "lowest_active_ask_aud": 63.76,
+      "lowest_active_ask_aud": 63.77,
       "median_active_ask_aud": 86.38,
       "highest_active_ask_aud": 108.99,
-      "spread_aud": 45.23,
-      "spread_pct": 70.94,
+      "spread_aud": 45.22,
+      "spread_pct": 70.91,
       "cheapest_store": "thehobby",
       "cheapest_external_id": "8981809758508",
       "cheapest_url": "https://thehobby.com.au/products/skucard16531",
-      "cheapest_landed_aud": 63.76,
+      "cheapest_landed_aud": 63.77,
       "next_best_store": "ebay",
       "next_best_landed_aud": 108.99,
-      "saving_vs_next_best_aud": 45.23,
-      "saving_vs_next_best_pct": 41.5,
-      "saving_vs_median_aud": 22.62,
-      "saving_vs_median_pct": 26.19,
-      "saving_vs_highest_aud": 45.23,
-      "saving_vs_highest_pct": 41.5,
+      "saving_vs_next_best_aud": 45.22,
+      "saving_vs_next_best_pct": 41.49,
+      "saving_vs_median_aud": 22.61,
+      "saving_vs_median_pct": 26.18,
+      "saving_vs_highest_aud": 45.22,
+      "saving_vs_highest_pct": 41.49,
       "listings": [
         {
           "source": "thehobby",
           "external_id": "8981809758508",
           "url": "https://thehobby.com.au/products/skucard16531",
           "title": "Dorian Williams 2023 Panini Prizm 309 Purple RC 37/125",
-          "landed_aud": 63.76,
-          "asking_price": 63.76,
+          "landed_aud": 63.77,
+          "asking_price": 63.77,
           "shipping": 0.0,
           "currency": "AUD",
           "card_number": null,
@@ -378570,32 +378570,32 @@
         "ebay",
         "thehobby"
       ],
-      "lowest_active_ask_aud": 86.56,
-      "median_active_ask_aud": 91.25,
-      "highest_active_ask_aud": 95.95,
-      "spread_aud": 9.39,
-      "spread_pct": 10.85,
+      "lowest_active_ask_aud": 86.25,
+      "median_active_ask_aud": 91.12,
+      "highest_active_ask_aud": 95.98,
+      "spread_aud": 9.73,
+      "spread_pct": 11.28,
       "cheapest_store": "ebay",
       "cheapest_external_id": "v1|175426343897|0",
       "cheapest_url": "https://www.ebay.com.au/itm/175426343897?_skw=2020+Chase+Claypool+Panini+Chronicles+Green+%2F49&hash=item28d83993d9:g:k20AAOSwJFVjLmfX",
-      "cheapest_landed_aud": 86.56,
+      "cheapest_landed_aud": 86.25,
       "next_best_store": "thehobby",
-      "next_best_landed_aud": 95.95,
-      "saving_vs_next_best_aud": 9.39,
-      "saving_vs_next_best_pct": 9.79,
-      "saving_vs_median_aud": 4.69,
-      "saving_vs_median_pct": 5.14,
-      "saving_vs_highest_aud": 9.39,
-      "saving_vs_highest_pct": 9.79,
+      "next_best_landed_aud": 95.98,
+      "saving_vs_next_best_aud": 9.73,
+      "saving_vs_next_best_pct": 10.14,
+      "saving_vs_median_aud": 4.87,
+      "saving_vs_median_pct": 5.34,
+      "saving_vs_highest_aud": 9.73,
+      "saving_vs_highest_pct": 10.14,
       "listings": [
         {
           "source": "ebay",
           "external_id": "v1|175426343897|0",
           "url": "https://www.ebay.com.au/itm/175426343897?_skw=2020+Chase+Claypool+Panini+Chronicles+Green+%2F49&hash=item28d83993d9:g:k20AAOSwJFVjLmfX",
           "title": "Chase Claypool 2020 Panini Chronicles Prizm Black Green RC 04/49 Mint Condition",
-          "landed_aud": 86.56,
-          "asking_price": 63.56,
-          "shipping": 23.0,
+          "landed_aud": 86.25,
+          "asking_price": 63.33,
+          "shipping": 22.92,
           "currency": "AUD",
           "card_number": null,
           "parallel": "Green",
@@ -378612,8 +378612,8 @@
           "external_id": "7901522886890",
           "url": "https://thehobby.com.au/products/card-g17f9d209",
           "title": "Chase Claypool 2020 Panini Chronicles Prizm Black Green RC 19/49",
-          "landed_aud": 95.95,
-          "asking_price": 95.95,
+          "landed_aud": 95.98,
+          "asking_price": 95.98,
           "shipping": 0.0,
           "currency": "AUD",
           "card_number": null,
@@ -382672,31 +382672,31 @@
         "ebay",
         "thehobby"
       ],
-      "lowest_active_ask_aud": 44.44,
-      "median_active_ask_aud": 61.71,
+      "lowest_active_ask_aud": 44.45,
+      "median_active_ask_aud": 61.72,
       "highest_active_ask_aud": 78.99,
-      "spread_aud": 34.55,
-      "spread_pct": 77.75,
+      "spread_aud": 34.54,
+      "spread_pct": 77.71,
       "cheapest_store": "thehobby",
       "cheapest_external_id": "8747556471084",
       "cheapest_url": "https://thehobby.com.au/products/skucard15703",
-      "cheapest_landed_aud": 44.44,
+      "cheapest_landed_aud": 44.45,
       "next_best_store": "ebay",
       "next_best_landed_aud": 78.99,
-      "saving_vs_next_best_aud": 34.55,
-      "saving_vs_next_best_pct": 43.74,
+      "saving_vs_next_best_aud": 34.54,
+      "saving_vs_next_best_pct": 43.73,
       "saving_vs_median_aud": 17.27,
       "saving_vs_median_pct": 27.98,
-      "saving_vs_highest_aud": 34.55,
-      "saving_vs_highest_pct": 43.74,
+      "saving_vs_highest_aud": 34.54,
+      "saving_vs_highest_pct": 43.73,
       "listings": [
         {
           "source": "thehobby",
           "external_id": "8747556471084",
           "url": "https://thehobby.com.au/products/skucard15703",
           "title": "Cole Turner 2022 Panini Limited 239 Rookie Auto Ruby RC 9/25",
-          "landed_aud": 44.44,
-          "asking_price": 44.44,
+          "landed_aud": 44.45,
+          "asking_price": 44.45,
           "shipping": 0.0,
           "currency": "AUD",
           "card_number": null,
@@ -383447,31 +383447,31 @@
         "ebay",
         "thehobby"
       ],
-      "lowest_active_ask_aud": 41.86,
-      "median_active_ask_aud": 58.42,
+      "lowest_active_ask_aud": 41.87,
+      "median_active_ask_aud": 58.43,
       "highest_active_ask_aud": 74.99,
-      "spread_aud": 33.13,
-      "spread_pct": 79.14,
+      "spread_aud": 33.12,
+      "spread_pct": 79.1,
       "cheapest_store": "thehobby",
       "cheapest_external_id": "10037924725036",
       "cheapest_url": "https://thehobby.com.au/products/skucard25633",
-      "cheapest_landed_aud": 41.86,
+      "cheapest_landed_aud": 41.87,
       "next_best_store": "ebay",
       "next_best_landed_aud": 74.99,
-      "saving_vs_next_best_aud": 33.13,
-      "saving_vs_next_best_pct": 44.18,
+      "saving_vs_next_best_aud": 33.12,
+      "saving_vs_next_best_pct": 44.17,
       "saving_vs_median_aud": 16.56,
       "saving_vs_median_pct": 28.34,
-      "saving_vs_highest_aud": 33.13,
-      "saving_vs_highest_pct": 44.18,
+      "saving_vs_highest_aud": 33.12,
+      "saving_vs_highest_pct": 44.17,
       "listings": [
         {
           "source": "thehobby",
           "external_id": "10037924725036",
           "url": "https://thehobby.com.au/products/skucard25633",
           "title": "Andy Dalton 2024 Panini Select 106 Gold Disco 3/10",
-          "landed_aud": 41.86,
-          "asking_price": 41.86,
+          "landed_aud": 41.87,
+          "asking_price": 41.87,
           "shipping": 0.0,
           "currency": "AUD",
           "card_number": null,
@@ -384153,31 +384153,31 @@
         "ebay",
         "thehobby"
       ],
-      "lowest_active_ask_aud": 38.64,
-      "median_active_ask_aud": 54.31,
+      "lowest_active_ask_aud": 38.65,
+      "median_active_ask_aud": 54.32,
       "highest_active_ask_aud": 69.99,
-      "spread_aud": 31.35,
-      "spread_pct": 81.13,
+      "spread_aud": 31.34,
+      "spread_pct": 81.09,
       "cheapest_store": "thehobby",
       "cheapest_external_id": "9975322149164",
       "cheapest_url": "https://thehobby.com.au/products/skucard24063",
-      "cheapest_landed_aud": 38.64,
+      "cheapest_landed_aud": 38.65,
       "next_best_store": "ebay",
       "next_best_landed_aud": 69.99,
-      "saving_vs_next_best_aud": 31.35,
-      "saving_vs_next_best_pct": 44.79,
+      "saving_vs_next_best_aud": 31.34,
+      "saving_vs_next_best_pct": 44.78,
       "saving_vs_median_aud": 15.67,
       "saving_vs_median_pct": 28.85,
-      "saving_vs_highest_aud": 31.35,
-      "saving_vs_highest_pct": 44.79,
+      "saving_vs_highest_aud": 31.34,
+      "saving_vs_highest_pct": 44.78,
       "listings": [
         {
           "source": "thehobby",
           "external_id": "9975322149164",
           "url": "https://thehobby.com.au/products/skucard24063",
           "title": "Isaiah Davis 2024 Topps Cosmic Chrome 169 Gold Interstellar RC 16/50",
-          "landed_aud": 38.64,
-          "asking_price": 38.64,
+          "landed_aud": 38.65,
+          "asking_price": 38.65,
           "shipping": 0.0,
           "currency": "AUD",
           "card_number": null,
@@ -390064,31 +390064,31 @@
         "ebay",
         "thehobby"
       ],
-      "lowest_active_ask_aud": 28.98,
-      "median_active_ask_aud": 41.98,
+      "lowest_active_ask_aud": 28.99,
+      "median_active_ask_aud": 41.99,
       "highest_active_ask_aud": 54.99,
-      "spread_aud": 26.01,
-      "spread_pct": 89.75,
+      "spread_aud": 26.0,
+      "spread_pct": 89.69,
       "cheapest_store": "thehobby",
       "cheapest_external_id": "9944923668780",
       "cheapest_url": "https://thehobby.com.au/products/skucard23646",
-      "cheapest_landed_aud": 28.98,
+      "cheapest_landed_aud": 28.99,
       "next_best_store": "ebay",
       "next_best_landed_aud": 54.99,
-      "saving_vs_next_best_aud": 26.01,
-      "saving_vs_next_best_pct": 47.3,
+      "saving_vs_next_best_aud": 26.0,
+      "saving_vs_next_best_pct": 47.28,
       "saving_vs_median_aud": 13.0,
       "saving_vs_median_pct": 30.96,
-      "saving_vs_highest_aud": 26.01,
-      "saving_vs_highest_pct": 47.3,
+      "saving_vs_highest_aud": 26.0,
+      "saving_vs_highest_pct": 47.28,
       "listings": [
         {
           "source": "thehobby",
           "external_id": "9944923668780",
           "url": "https://thehobby.com.au/products/skucard23646",
           "title": "Dalvin Cook 2020 Panini Certified M-DC Materials Gold 41/50",
-          "landed_aud": 28.98,
-          "asking_price": 28.98,
+          "landed_aud": 28.99,
+          "asking_price": 28.99,
           "shipping": 0.0,
           "currency": "AUD",
           "card_number": null,
@@ -390148,31 +390148,31 @@
         "ebay",
         "thehobby"
       ],
-      "lowest_active_ask_aud": 28.98,
-      "median_active_ask_aud": 41.98,
+      "lowest_active_ask_aud": 28.99,
+      "median_active_ask_aud": 41.99,
       "highest_active_ask_aud": 54.99,
-      "spread_aud": 26.01,
-      "spread_pct": 89.75,
+      "spread_aud": 26.0,
+      "spread_pct": 89.69,
       "cheapest_store": "thehobby",
       "cheapest_external_id": "9975322018092",
       "cheapest_url": "https://thehobby.com.au/products/skucard24062",
-      "cheapest_landed_aud": 28.98,
+      "cheapest_landed_aud": 28.99,
       "next_best_store": "ebay",
       "next_best_landed_aud": 54.99,
-      "saving_vs_next_best_aud": 26.01,
-      "saving_vs_next_best_pct": 47.3,
+      "saving_vs_next_best_aud": 26.0,
+      "saving_vs_next_best_pct": 47.28,
       "saving_vs_median_aud": 13.0,
       "saving_vs_median_pct": 30.96,
-      "saving_vs_highest_aud": 26.01,
-      "saving_vs_highest_pct": 47.3,
+      "saving_vs_highest_aud": 26.0,
+      "saving_vs_highest_pct": 47.28,
       "listings": [
         {
           "source": "thehobby",
           "external_id": "9975322018092",
           "url": "https://thehobby.com.au/products/skucard24062",
           "title": "Isaiah Davis 2024 Topps Cosmic Chrome 169 Green Space Dust RC 47/75",
-          "landed_aud": 28.98,
-          "asking_price": 28.98,
+          "landed_aud": 28.99,
+          "asking_price": 28.99,
           "shipping": 0.0,
           "currency": "AUD",
           "card_number": null,
@@ -408226,31 +408226,31 @@
         "ebay",
         "thehobby"
       ],
-      "lowest_active_ask_aud": 16.1,
+      "lowest_active_ask_aud": 16.11,
       "median_active_ask_aud": 22.55,
       "highest_active_ask_aud": 29.0,
-      "spread_aud": 12.9,
-      "spread_pct": 80.12,
+      "spread_aud": 12.89,
+      "spread_pct": 80.01,
       "cheapest_store": "thehobby",
       "cheapest_external_id": "9975321559340",
       "cheapest_url": "https://thehobby.com.au/products/skucard24059",
-      "cheapest_landed_aud": 16.1,
+      "cheapest_landed_aud": 16.11,
       "next_best_store": "ebay",
       "next_best_landed_aud": 29.0,
-      "saving_vs_next_best_aud": 12.9,
-      "saving_vs_next_best_pct": 44.48,
+      "saving_vs_next_best_aud": 12.89,
+      "saving_vs_next_best_pct": 44.45,
       "saving_vs_median_aud": 6.45,
       "saving_vs_median_pct": 28.6,
-      "saving_vs_highest_aud": 12.9,
-      "saving_vs_highest_pct": 44.48,
+      "saving_vs_highest_aud": 12.89,
+      "saving_vs_highest_pct": 44.45,
       "listings": [
         {
           "source": "thehobby",
           "external_id": "9975321559340",
           "url": "https://thehobby.com.au/products/skucard24059",
           "title": "Brenden Rice 2024 Topps Cosmic Chrome 154 Green Space Dust RC 36/75",
-          "landed_aud": 16.1,
-          "asking_price": 16.1,
+          "landed_aud": 16.11,
+          "asking_price": 16.11,
           "shipping": 0.0,
           "currency": "AUD",
           "card_number": null,
@@ -408309,31 +408309,31 @@
         "ebay",
         "thehobby"
       ],
-      "lowest_active_ask_aud": 16.1,
+      "lowest_active_ask_aud": 16.11,
       "median_active_ask_aud": 22.55,
       "highest_active_ask_aud": 29.0,
-      "spread_aud": 12.9,
-      "spread_pct": 80.12,
+      "spread_aud": 12.89,
+      "spread_pct": 80.01,
       "cheapest_store": "thehobby",
       "cheapest_external_id": "8973728776492",
       "cheapest_url": "https://thehobby.com.au/products/skucard16473",
-      "cheapest_landed_aud": 16.1,
+      "cheapest_landed_aud": 16.11,
       "next_best_store": "ebay",
       "next_best_landed_aud": 29.0,
-      "saving_vs_next_best_aud": 12.9,
-      "saving_vs_next_best_pct": 44.48,
+      "saving_vs_next_best_aud": 12.89,
+      "saving_vs_next_best_pct": 44.45,
       "saving_vs_median_aud": 6.45,
       "saving_vs_median_pct": 28.6,
-      "saving_vs_highest_aud": 12.9,
-      "saving_vs_highest_pct": 44.48,
+      "saving_vs_highest_aud": 12.89,
+      "saving_vs_highest_pct": 44.45,
       "listings": [
         {
           "source": "thehobby",
           "external_id": "8973728776492",
           "url": "https://thehobby.com.au/products/skucard16473",
           "title": "Davis Mills 2023 Panini Prizm 117 Green Scope 26/75",
-          "landed_aud": 16.1,
-          "asking_price": 16.1,
+          "landed_aud": 16.11,
+          "asking_price": 16.11,
           "shipping": 0.0,
           "currency": "AUD",
           "card_number": null,
@@ -408392,31 +408392,31 @@
         "ebay",
         "thehobby"
       ],
-      "lowest_active_ask_aud": 16.1,
+      "lowest_active_ask_aud": 16.11,
       "median_active_ask_aud": 22.55,
       "highest_active_ask_aud": 29.0,
-      "spread_aud": 12.9,
-      "spread_pct": 80.12,
+      "spread_aud": 12.89,
+      "spread_pct": 80.01,
       "cheapest_store": "thehobby",
       "cheapest_external_id": "10026612818220",
       "cheapest_url": "https://thehobby.com.au/products/skucard25313",
-      "cheapest_landed_aud": 16.1,
+      "cheapest_landed_aud": 16.11,
       "next_best_store": "ebay",
       "next_best_landed_aud": 29.0,
-      "saving_vs_next_best_aud": 12.9,
-      "saving_vs_next_best_pct": 44.48,
+      "saving_vs_next_best_aud": 12.89,
+      "saving_vs_next_best_pct": 44.45,
       "saving_vs_median_aud": 6.45,
       "saving_vs_median_pct": 28.6,
-      "saving_vs_highest_aud": 12.9,
-      "saving_vs_highest_pct": 44.48,
+      "saving_vs_highest_aud": 12.89,
+      "saving_vs_highest_pct": 44.45,
       "listings": [
         {
           "source": "thehobby",
           "external_id": "10026612818220",
           "url": "https://thehobby.com.au/products/skucard25313",
           "title": "Doug Williams 2024 Topps Resurgence 95 Red Power Surge 3/5",
-          "landed_aud": 16.1,
-          "asking_price": 16.1,
+          "landed_aud": 16.11,
+          "asking_price": 16.11,
           "shipping": 0.0,
           "currency": "AUD",
           "card_number": null,
@@ -408475,31 +408475,31 @@
         "ebay",
         "thehobby"
       ],
-      "lowest_active_ask_aud": 16.1,
+      "lowest_active_ask_aud": 16.11,
       "median_active_ask_aud": 22.55,
       "highest_active_ask_aud": 29.0,
-      "spread_aud": 12.9,
-      "spread_pct": 80.12,
+      "spread_aud": 12.89,
+      "spread_pct": 80.01,
       "cheapest_store": "thehobby",
       "cheapest_external_id": "9420732694828",
       "cheapest_url": "https://thehobby.com.au/products/skucard19089",
-      "cheapest_landed_aud": 16.1,
+      "cheapest_landed_aud": 16.11,
       "next_best_store": "ebay",
       "next_best_landed_aud": 29.0,
-      "saving_vs_next_best_aud": 12.9,
-      "saving_vs_next_best_pct": 44.48,
+      "saving_vs_next_best_aud": 12.89,
+      "saving_vs_next_best_pct": 44.45,
       "saving_vs_median_aud": 6.45,
       "saving_vs_median_pct": 28.6,
-      "saving_vs_highest_aud": 12.9,
-      "saving_vs_highest_pct": 44.48,
+      "saving_vs_highest_aud": 12.89,
+      "saving_vs_highest_pct": 44.45,
       "listings": [
         {
           "source": "thehobby",
           "external_id": "9420732694828",
           "url": "https://thehobby.com.au/products/skucard19089",
           "title": "Ja'Marr Chase 2022 Panini Phoenix CT-12 Contours Orange 41/99",
-          "landed_aud": 16.1,
-          "asking_price": 16.1,
+          "landed_aud": 16.11,
+          "asking_price": 16.11,
           "shipping": 0.0,
           "currency": "AUD",
           "card_number": null,
@@ -408559,31 +408559,31 @@
         "ebay",
         "thehobby"
       ],
-      "lowest_active_ask_aud": 16.1,
+      "lowest_active_ask_aud": 16.11,
       "median_active_ask_aud": 22.55,
       "highest_active_ask_aud": 29.0,
-      "spread_aud": 12.9,
-      "spread_pct": 80.12,
+      "spread_aud": 12.89,
+      "spread_pct": 80.01,
       "cheapest_store": "thehobby",
       "cheapest_external_id": "9975321657644",
       "cheapest_url": "https://thehobby.com.au/products/skucard24060",
-      "cheapest_landed_aud": 16.1,
+      "cheapest_landed_aud": 16.11,
       "next_best_store": "ebay",
       "next_best_landed_aud": 29.0,
-      "saving_vs_next_best_aud": 12.9,
-      "saving_vs_next_best_pct": 44.48,
+      "saving_vs_next_best_aud": 12.89,
+      "saving_vs_next_best_pct": 44.45,
       "saving_vs_median_aud": 6.45,
       "saving_vs_median_pct": 28.6,
-      "saving_vs_highest_aud": 12.9,
-      "saving_vs_highest_pct": 44.48,
+      "saving_vs_highest_aud": 12.89,
+      "saving_vs_highest_pct": 44.45,
       "listings": [
         {
           "source": "thehobby",
           "external_id": "9975321657644",
           "url": "https://thehobby.com.au/products/skucard24060",
           "title": "Jaylen Wright 2024 Topps Cosmic Chrome 158 Green Space Dust RC 17/75",
-          "landed_aud": 16.1,
-          "asking_price": 16.1,
+          "landed_aud": 16.11,
+          "asking_price": 16.11,
           "shipping": 0.0,
           "currency": "AUD",
           "card_number": null,
@@ -413715,31 +413715,31 @@
         "ebay",
         "thehobby"
       ],
-      "lowest_active_ask_aud": 9.66,
-      "median_active_ask_aud": 14.33,
+      "lowest_active_ask_aud": 9.67,
+      "median_active_ask_aud": 14.34,
       "highest_active_ask_aud": 19.0,
-      "spread_aud": 9.34,
-      "spread_pct": 96.69,
+      "spread_aud": 9.33,
+      "spread_pct": 96.48,
       "cheapest_store": "thehobby",
       "cheapest_external_id": "9338732871980",
       "cheapest_url": "https://thehobby.com.au/products/skucard18493",
-      "cheapest_landed_aud": 9.66,
+      "cheapest_landed_aud": 9.67,
       "next_best_store": "ebay",
       "next_best_landed_aud": 19.0,
-      "saving_vs_next_best_aud": 9.34,
-      "saving_vs_next_best_pct": 49.16,
+      "saving_vs_next_best_aud": 9.33,
+      "saving_vs_next_best_pct": 49.11,
       "saving_vs_median_aud": 4.67,
-      "saving_vs_median_pct": 32.59,
-      "saving_vs_highest_aud": 9.34,
-      "saving_vs_highest_pct": 49.16,
+      "saving_vs_median_pct": 32.58,
+      "saving_vs_highest_aud": 9.33,
+      "saving_vs_highest_pct": 49.11,
       "listings": [
         {
           "source": "thehobby",
           "external_id": "9338732871980",
           "url": "https://thehobby.com.au/products/skucard18493",
           "title": "Austin Ekeler 2022 Panini Obsidian 71 Orange Etch 60/75",
-          "landed_aud": 9.66,
-          "asking_price": 9.66,
+          "landed_aud": 9.67,
+          "asking_price": 9.67,
           "shipping": 0.0,
           "currency": "AUD",
           "card_number": null,
@@ -413798,31 +413798,31 @@
         "ebay",
         "thehobby"
       ],
-      "lowest_active_ask_aud": 9.66,
-      "median_active_ask_aud": 14.33,
+      "lowest_active_ask_aud": 9.67,
+      "median_active_ask_aud": 14.34,
       "highest_active_ask_aud": 19.0,
-      "spread_aud": 9.34,
-      "spread_pct": 96.69,
+      "spread_aud": 9.33,
+      "spread_pct": 96.48,
       "cheapest_store": "thehobby",
       "cheapest_external_id": "9772176703788",
       "cheapest_url": "https://thehobby.com.au/products/skucard21942",
-      "cheapest_landed_aud": 9.66,
+      "cheapest_landed_aud": 9.67,
       "next_best_store": "ebay",
       "next_best_landed_aud": 19.0,
-      "saving_vs_next_best_aud": 9.34,
-      "saving_vs_next_best_pct": 49.16,
+      "saving_vs_next_best_aud": 9.33,
+      "saving_vs_next_best_pct": 49.11,
       "saving_vs_median_aud": 4.67,
-      "saving_vs_median_pct": 32.59,
-      "saving_vs_highest_aud": 9.34,
-      "saving_vs_highest_pct": 49.16,
+      "saving_vs_median_pct": 32.58,
+      "saving_vs_highest_aud": 9.33,
+      "saving_vs_highest_pct": 49.11,
       "listings": [
         {
           "source": "thehobby",
           "external_id": "9772176703788",
           "url": "https://thehobby.com.au/products/skucard21942",
           "title": "Jim Everett 2023 Panini National Treasures 61 Purple 13/49",
-          "landed_aud": 9.66,
-          "asking_price": 9.66,
+          "landed_aud": 9.67,
+          "asking_price": 9.67,
           "shipping": 0.0,
           "currency": "AUD",
           "card_number": null,
@@ -437275,32 +437275,32 @@
         "ebay",
         "thehobby"
       ],
-      "lowest_active_ask_aud": 21.1,
-      "median_active_ask_aud": 39.34,
+      "lowest_active_ask_aud": 21.02,
+      "median_active_ask_aud": 39.27,
       "highest_active_ask_aud": 58.99,
-      "spread_aud": 37.89,
-      "spread_pct": 179.57,
+      "spread_aud": 37.97,
+      "spread_pct": 180.64,
       "cheapest_store": "ebay",
       "cheapest_external_id": "v1|336513207076|0",
       "cheapest_url": "https://www.ebay.com.au/itm/336513207076?_skw=2023+Kenny+Pickett+Panini+Prizm+Orange+%2F249&hash=item4e59c00b24:g:YlkAAeSwsSFpzVfO",
-      "cheapest_landed_aud": 21.1,
+      "cheapest_landed_aud": 21.02,
       "next_best_store": "thehobby",
-      "next_best_landed_aud": 31.56,
-      "saving_vs_next_best_aud": 10.46,
-      "saving_vs_next_best_pct": 33.14,
-      "saving_vs_median_aud": 18.24,
-      "saving_vs_median_pct": 46.36,
-      "saving_vs_highest_aud": 37.89,
-      "saving_vs_highest_pct": 64.23,
+      "next_best_landed_aud": 31.57,
+      "saving_vs_next_best_aud": 10.55,
+      "saving_vs_next_best_pct": 33.42,
+      "saving_vs_median_aud": 18.25,
+      "saving_vs_median_pct": 46.48,
+      "saving_vs_highest_aud": 37.97,
+      "saving_vs_highest_pct": 64.37,
       "listings": [
         {
           "source": "ebay",
           "external_id": "v1|336513207076|0",
           "url": "https://www.ebay.com.au/itm/336513207076?_skw=2023+Kenny+Pickett+Panini+Prizm+Orange+%2F249&hash=item4e59c00b24:g:YlkAAeSwsSFpzVfO",
           "title": "Kenny Pickett 2023 Panini Prizm Orange /249 Steelers Raiders Eagles Panthers",
-          "landed_aud": 21.1,
-          "asking_price": 4.77,
-          "shipping": 16.33,
+          "landed_aud": 21.02,
+          "asking_price": 4.75,
+          "shipping": 16.27,
           "currency": "AUD",
           "card_number": null,
           "parallel": "Orange",
@@ -437317,8 +437317,8 @@
           "external_id": "8981811855660",
           "url": "https://thehobby.com.au/products/skucard16537",
           "title": "Kenny Pickett 2023 Panini Prizm 249 Orange 181/249",
-          "landed_aud": 31.56,
-          "asking_price": 31.56,
+          "landed_aud": 31.57,
+          "asking_price": 31.57,
           "shipping": 0.0,
           "currency": "AUD",
           "card_number": null,
@@ -437336,9 +437336,9 @@
           "external_id": "v1|296250153408|0",
           "url": "https://www.ebay.com.au/itm/296250153408?_skw=2023+Kenny+Pickett+Panini+Prizm+Orange+%2F249&hash=item44f9e299c0:g:Z0wAAOSwCdll25MR",
           "title": "2023 Panini Prizm Kenny Pickett Orange /249",
-          "landed_aud": 47.13,
-          "asking_price": 23.84,
-          "shipping": 23.29,
+          "landed_aud": 46.96,
+          "asking_price": 23.75,
+          "shipping": 23.21,
           "currency": "AUD",
           "card_number": null,
           "parallel": "Orange",
@@ -442266,31 +442266,31 @@
         "ebay",
         "thehobby"
       ],
-      "lowest_active_ask_aud": 31.56,
-      "median_active_ask_aud": 45.27,
+      "lowest_active_ask_aud": 31.57,
+      "median_active_ask_aud": 45.28,
       "highest_active_ask_aud": 58.99,
-      "spread_aud": 27.43,
-      "spread_pct": 86.91,
+      "spread_aud": 27.42,
+      "spread_pct": 86.85,
       "cheapest_store": "thehobby",
       "cheapest_external_id": "9931149017388",
       "cheapest_url": "https://thehobby.com.au/products/skucard23120",
-      "cheapest_landed_aud": 31.56,
+      "cheapest_landed_aud": 31.57,
       "next_best_store": "ebay",
       "next_best_landed_aud": 58.99,
-      "saving_vs_next_best_aud": 27.43,
-      "saving_vs_next_best_pct": 46.5,
+      "saving_vs_next_best_aud": 27.42,
+      "saving_vs_next_best_pct": 46.48,
       "saving_vs_median_aud": 13.71,
       "saving_vs_median_pct": 30.28,
-      "saving_vs_highest_aud": 27.43,
-      "saving_vs_highest_pct": 46.5,
+      "saving_vs_highest_aud": 27.42,
+      "saving_vs_highest_pct": 46.48,
       "listings": [
         {
           "source": "thehobby",
           "external_id": "9931149017388",
           "url": "https://thehobby.com.au/products/skucard23120",
           "title": "Joey Bosa 2016 Panini Prizm 228 Purple Scope RC 2/99",
-          "landed_aud": 31.56,
-          "asking_price": 31.56,
+          "landed_aud": 31.57,
+          "asking_price": 31.57,
           "shipping": 0.0,
           "currency": "AUD",
           "card_number": null,
@@ -442350,31 +442350,31 @@
         "ebay",
         "thehobby"
       ],
-      "lowest_active_ask_aud": 31.56,
-      "median_active_ask_aud": 45.27,
+      "lowest_active_ask_aud": 31.57,
+      "median_active_ask_aud": 45.28,
       "highest_active_ask_aud": 58.99,
-      "spread_aud": 27.43,
-      "spread_pct": 86.91,
+      "spread_aud": 27.42,
+      "spread_pct": 86.85,
       "cheapest_store": "thehobby",
       "cheapest_external_id": "8575724978476",
       "cheapest_url": "https://thehobby.com.au/products/skucard15138",
-      "cheapest_landed_aud": 31.56,
+      "cheapest_landed_aud": 31.57,
       "next_best_store": "ebay",
       "next_best_landed_aud": 58.99,
-      "saving_vs_next_best_aud": 27.43,
-      "saving_vs_next_best_pct": 46.5,
+      "saving_vs_next_best_aud": 27.42,
+      "saving_vs_next_best_pct": 46.48,
       "saving_vs_median_aud": 13.71,
       "saving_vs_median_pct": 30.28,
-      "saving_vs_highest_aud": 27.43,
-      "saving_vs_highest_pct": 46.5,
+      "saving_vs_highest_aud": 27.42,
+      "saving_vs_highest_pct": 46.48,
       "listings": [
         {
           "source": "thehobby",
           "external_id": "8575724978476",
           "url": "https://thehobby.com.au/products/skucard15138",
           "title": "Kenny Pickett 2022 Panini Chronicles CVR-1 Clear Vision Blue RC 40/99",
-          "landed_aud": 31.56,
-          "asking_price": 31.56,
+          "landed_aud": 31.57,
+          "asking_price": 31.57,
           "shipping": 0.0,
           "currency": "AUD",
           "card_number": null,
@@ -464376,31 +464376,31 @@
         "ebay",
         "thehobby"
       ],
-      "lowest_active_ask_aud": 128.16,
-      "median_active_ask_aud": 168.57,
+      "lowest_active_ask_aud": 128.19,
+      "median_active_ask_aud": 168.59,
       "highest_active_ask_aud": 208.99,
-      "spread_aud": 80.83,
-      "spread_pct": 63.07,
+      "spread_aud": 80.8,
+      "spread_pct": 63.03,
       "cheapest_store": "thehobby",
       "cheapest_external_id": "8981810774316",
       "cheapest_url": "https://thehobby.com.au/products/skucard16534",
-      "cheapest_landed_aud": 128.16,
+      "cheapest_landed_aud": 128.19,
       "next_best_store": "ebay",
       "next_best_landed_aud": 208.99,
-      "saving_vs_next_best_aud": 80.83,
-      "saving_vs_next_best_pct": 38.68,
-      "saving_vs_median_aud": 40.41,
-      "saving_vs_median_pct": 23.97,
-      "saving_vs_highest_aud": 80.83,
-      "saving_vs_highest_pct": 38.68,
+      "saving_vs_next_best_aud": 80.8,
+      "saving_vs_next_best_pct": 38.66,
+      "saving_vs_median_aud": 40.4,
+      "saving_vs_median_pct": 23.96,
+      "saving_vs_highest_aud": 80.8,
+      "saving_vs_highest_pct": 38.66,
       "listings": [
         {
           "source": "thehobby",
           "external_id": "8981810774316",
           "url": "https://thehobby.com.au/products/skucard16534",
           "title": "Tank Dell 2023 Panini Prizm 341 Blue Wave RC 87/199",
-          "landed_aud": 128.16,
-          "asking_price": 128.16,
+          "landed_aud": 128.19,
+          "asking_price": 128.19,
           "shipping": 0.0,
           "currency": "AUD",
           "card_number": null,
@@ -464462,31 +464462,31 @@
         "ebay",
         "thehobby"
       ],
-      "lowest_active_ask_aud": 48.3,
-      "median_active_ask_aud": 66.64,
+      "lowest_active_ask_aud": 48.31,
+      "median_active_ask_aud": 66.65,
       "highest_active_ask_aud": 84.99,
-      "spread_aud": 36.69,
-      "spread_pct": 75.96,
+      "spread_aud": 36.68,
+      "spread_pct": 75.93,
       "cheapest_store": "thehobby",
       "cheapest_external_id": "9409895170348",
       "cheapest_url": "https://thehobby.com.au/products/skucard18943",
-      "cheapest_landed_aud": 48.3,
+      "cheapest_landed_aud": 48.31,
       "next_best_store": "ebay",
       "next_best_landed_aud": 84.99,
-      "saving_vs_next_best_aud": 36.69,
-      "saving_vs_next_best_pct": 43.17,
+      "saving_vs_next_best_aud": 36.68,
+      "saving_vs_next_best_pct": 43.16,
       "saving_vs_median_aud": 18.34,
       "saving_vs_median_pct": 27.52,
-      "saving_vs_highest_aud": 36.69,
-      "saving_vs_highest_pct": 43.17,
+      "saving_vs_highest_aud": 36.68,
+      "saving_vs_highest_pct": 43.16,
       "listings": [
         {
           "source": "thehobby",
           "external_id": "9409895170348",
           "url": "https://thehobby.com.au/products/skucard18943",
           "title": "Roschon Johnson 2023 Panini Prizm 314 Purple Power Auto RC 38/49 PSA 8/10",
-          "landed_aud": 48.3,
-          "asking_price": 48.3,
+          "landed_aud": 48.31,
+          "asking_price": 48.31,
           "shipping": 0.0,
           "currency": "AUD",
           "card_number": null,
@@ -464545,31 +464545,31 @@
         "ebay",
         "thehobby"
       ],
-      "lowest_active_ask_aud": 31.56,
-      "median_active_ask_aud": 45.27,
+      "lowest_active_ask_aud": 31.57,
+      "median_active_ask_aud": 45.28,
       "highest_active_ask_aud": 58.99,
-      "spread_aud": 27.43,
-      "spread_pct": 86.91,
+      "spread_aud": 27.42,
+      "spread_pct": 86.85,
       "cheapest_store": "thehobby",
       "cheapest_external_id": "8981811593516",
       "cheapest_url": "https://thehobby.com.au/products/skucard16536",
-      "cheapest_landed_aud": 31.56,
+      "cheapest_landed_aud": 31.57,
       "next_best_store": "ebay",
       "next_best_landed_aud": 58.99,
-      "saving_vs_next_best_aud": 27.43,
-      "saving_vs_next_best_pct": 46.5,
+      "saving_vs_next_best_aud": 27.42,
+      "saving_vs_next_best_pct": 46.48,
       "saving_vs_median_aud": 13.71,
       "saving_vs_median_pct": 30.28,
-      "saving_vs_highest_aud": 27.43,
-      "saving_vs_highest_pct": 46.5,
+      "saving_vs_highest_aud": 27.42,
+      "saving_vs_highest_pct": 46.48,
       "listings": [
         {
           "source": "thehobby",
           "external_id": "8981811593516",
           "url": "https://thehobby.com.au/products/skucard16536",
           "title": "Marvin Jones Jr 2023 Panini Prizm 102 Orange 66/249",
-          "landed_aud": 31.56,
-          "asking_price": 31.56,
+          "landed_aud": 31.57,
+          "asking_price": 31.57,
           "shipping": 0.0,
           "currency": "AUD",
           "card_number": null,
@@ -464628,31 +464628,31 @@
         "ebay",
         "thehobby"
       ],
-      "lowest_active_ask_aud": 31.56,
-      "median_active_ask_aud": 45.27,
+      "lowest_active_ask_aud": 31.57,
+      "median_active_ask_aud": 45.28,
       "highest_active_ask_aud": 58.99,
-      "spread_aud": 27.43,
-      "spread_pct": 86.91,
+      "spread_aud": 27.42,
+      "spread_pct": 86.85,
       "cheapest_store": "thehobby",
       "cheapest_external_id": "8981811200300",
       "cheapest_url": "https://thehobby.com.au/products/skucard16535",
-      "cheapest_landed_aud": 31.56,
+      "cheapest_landed_aud": 31.57,
       "next_best_store": "ebay",
       "next_best_landed_aud": 58.99,
-      "saving_vs_next_best_aud": 27.43,
-      "saving_vs_next_best_pct": 46.5,
+      "saving_vs_next_best_aud": 27.42,
+      "saving_vs_next_best_pct": 46.48,
       "saving_vs_median_aud": 13.71,
       "saving_vs_median_pct": 30.28,
-      "saving_vs_highest_aud": 27.43,
-      "saving_vs_highest_pct": 46.5,
+      "saving_vs_highest_aud": 27.42,
+      "saving_vs_highest_pct": 46.48,
       "listings": [
         {
           "source": "thehobby",
           "external_id": "8981811200300",
           "url": "https://thehobby.com.au/products/skucard16535",
           "title": "Mike Singletary 2023 Panini Prizm 54 Purple Ice 79/225",
-          "landed_aud": 31.56,
-          "asking_price": 31.56,
+          "landed_aud": 31.57,
+          "asking_price": 31.57,
           "shipping": 0.0,
           "currency": "AUD",
           "card_number": null,
@@ -464713,31 +464713,31 @@
         "ebay",
         "thehobby"
       ],
-      "lowest_active_ask_aud": 31.56,
-      "median_active_ask_aud": 45.27,
+      "lowest_active_ask_aud": 31.57,
+      "median_active_ask_aud": 45.28,
       "highest_active_ask_aud": 58.99,
-      "spread_aud": 27.43,
-      "spread_pct": 86.91,
+      "spread_aud": 27.42,
+      "spread_pct": 86.85,
       "cheapest_store": "thehobby",
       "cheapest_external_id": "9792811696428",
       "cheapest_url": "https://thehobby.com.au/products/skucard22124",
-      "cheapest_landed_aud": 31.56,
+      "cheapest_landed_aud": 31.57,
       "next_best_store": "ebay",
       "next_best_landed_aud": 58.99,
-      "saving_vs_next_best_aud": 27.43,
-      "saving_vs_next_best_pct": 46.5,
+      "saving_vs_next_best_aud": 27.42,
+      "saving_vs_next_best_pct": 46.48,
       "saving_vs_median_aud": 13.71,
       "saving_vs_median_pct": 30.28,
-      "saving_vs_highest_aud": 27.43,
-      "saving_vs_highest_pct": 46.5,
+      "saving_vs_highest_aud": 27.42,
+      "saving_vs_highest_pct": 46.48,
       "listings": [
         {
           "source": "thehobby",
           "external_id": "9792811696428",
           "url": "https://thehobby.com.au/products/skucard22124",
           "title": "Raequan Williams 2020 Panini Prizm Draft Picks Draft Picks Auto Green Ice RC /18",
-          "landed_aud": 31.56,
-          "asking_price": 31.56,
+          "landed_aud": 31.57,
+          "asking_price": 31.57,
           "shipping": 0.0,
           "currency": "AUD",
           "card_number": null,
@@ -464797,31 +464797,31 @@
         "ebay",
         "thehobby"
       ],
-      "lowest_active_ask_aud": 31.56,
-      "median_active_ask_aud": 45.27,
+      "lowest_active_ask_aud": 31.57,
+      "median_active_ask_aud": 45.28,
       "highest_active_ask_aud": 58.99,
-      "spread_aud": 27.43,
-      "spread_pct": 86.91,
+      "spread_aud": 27.42,
+      "spread_pct": 86.85,
       "cheapest_store": "thehobby",
       "cheapest_external_id": "9772177293612",
       "cheapest_url": "https://thehobby.com.au/products/skucard21951",
-      "cheapest_landed_aud": 31.56,
+      "cheapest_landed_aud": 31.57,
       "next_best_store": "ebay",
       "next_best_landed_aud": 58.99,
-      "saving_vs_next_best_aud": 27.43,
-      "saving_vs_next_best_pct": 46.5,
+      "saving_vs_next_best_aud": 27.42,
+      "saving_vs_next_best_pct": 46.48,
       "saving_vs_median_aud": 13.71,
       "saving_vs_median_pct": 30.28,
-      "saving_vs_highest_aud": 27.43,
-      "saving_vs_highest_pct": 46.5,
+      "saving_vs_highest_aud": 27.42,
+      "saving_vs_highest_pct": 46.48,
       "listings": [
         {
           "source": "thehobby",
           "external_id": "9772177293612",
           "url": "https://thehobby.com.au/products/skucard21951",
           "title": "Ricky Pearsall 2024 Panini Origins 133 Holo Gold RC 17/25",
-          "landed_aud": 31.56,
-          "asking_price": 31.56,
+          "landed_aud": 31.57,
+          "asking_price": 31.57,
           "shipping": 0.0,
           "currency": "AUD",
           "card_number": null,
@@ -464881,7 +464881,7 @@
         "thehobby"
       ],
       "lowest_active_ask_aud": 25.76,
-      "median_active_ask_aud": 48.92,
+      "median_active_ask_aud": 48.9,
       "highest_active_ask_aud": 49.99,
       "spread_aud": 24.23,
       "spread_pct": 94.06,
@@ -464890,11 +464890,11 @@
       "cheapest_url": "https://thehobby.com.au/products/skucard24439",
       "cheapest_landed_aud": 25.76,
       "next_best_store": "ebay",
-      "next_best_landed_aud": 48.92,
-      "saving_vs_next_best_aud": 23.16,
-      "saving_vs_next_best_pct": 47.34,
-      "saving_vs_median_aud": 23.16,
-      "saving_vs_median_pct": 47.34,
+      "next_best_landed_aud": 48.9,
+      "saving_vs_next_best_aud": 23.14,
+      "saving_vs_next_best_pct": 47.32,
+      "saving_vs_median_aud": 23.14,
+      "saving_vs_median_pct": 47.32,
       "saving_vs_highest_aud": 24.23,
       "saving_vs_highest_pct": 48.47,
       "listings": [
@@ -464922,9 +464922,9 @@
           "external_id": "v1|267355582153|0",
           "url": "https://www.ebay.com.au/itm/267355582153?_skw=2024+Terry+Bradshaw+Topps+Orange+%2F25&hash=item3e3fa26ec9:g:xZUAAeSwLDJokmEX",
           "title": "Terry Bradshaw 2024 Topps Resurgence C-20 Conductors Orange Power Surge 25/25",
-          "landed_aud": 48.92,
-          "asking_price": 30.43,
-          "shipping": 18.49,
+          "landed_aud": 48.9,
+          "asking_price": 30.42,
+          "shipping": 18.48,
           "currency": "AUD",
           "card_number": null,
           "parallel": "Orange",
@@ -464982,31 +464982,31 @@
         "ebay",
         "thehobby"
       ],
-      "lowest_active_ask_aud": 22.54,
+      "lowest_active_ask_aud": 22.55,
       "median_active_ask_aud": 33.77,
       "highest_active_ask_aud": 44.99,
-      "spread_aud": 22.45,
-      "spread_pct": 99.6,
+      "spread_aud": 22.44,
+      "spread_pct": 99.51,
       "cheapest_store": "thehobby",
       "cheapest_external_id": "8973728317740",
       "cheapest_url": "https://thehobby.com.au/products/skucard16470",
-      "cheapest_landed_aud": 22.54,
+      "cheapest_landed_aud": 22.55,
       "next_best_store": "ebay",
       "next_best_landed_aud": 44.99,
-      "saving_vs_next_best_aud": 22.45,
-      "saving_vs_next_best_pct": 49.9,
-      "saving_vs_median_aud": 11.23,
-      "saving_vs_median_pct": 33.26,
-      "saving_vs_highest_aud": 22.45,
-      "saving_vs_highest_pct": 49.9,
+      "saving_vs_next_best_aud": 22.44,
+      "saving_vs_next_best_pct": 49.88,
+      "saving_vs_median_aud": 11.22,
+      "saving_vs_median_pct": 33.22,
+      "saving_vs_highest_aud": 22.44,
+      "saving_vs_highest_pct": 49.88,
       "listings": [
         {
           "source": "thehobby",
           "external_id": "8973728317740",
           "url": "https://thehobby.com.au/products/skucard16470",
           "title": "Odell Beckhamr Jr 2023 Panini Prizm 25 Purple Power 37/49",
-          "landed_aud": 22.54,
-          "asking_price": 22.54,
+          "landed_aud": 22.55,
+          "asking_price": 22.55,
           "shipping": 0.0,
           "currency": "AUD",
           "card_number": null,
@@ -465066,31 +465066,31 @@
         "ebay",
         "thehobby"
       ],
-      "lowest_active_ask_aud": 22.54,
+      "lowest_active_ask_aud": 22.55,
       "median_active_ask_aud": 33.77,
       "highest_active_ask_aud": 44.99,
-      "spread_aud": 22.45,
-      "spread_pct": 99.6,
+      "spread_aud": 22.44,
+      "spread_pct": 99.51,
       "cheapest_store": "thehobby",
       "cheapest_external_id": "8973730316588",
       "cheapest_url": "https://thehobby.com.au/products/skucard16483",
-      "cheapest_landed_aud": 22.54,
+      "cheapest_landed_aud": 22.55,
       "next_best_store": "ebay",
       "next_best_landed_aud": 44.99,
-      "saving_vs_next_best_aud": 22.45,
-      "saving_vs_next_best_pct": 49.9,
-      "saving_vs_median_aud": 11.23,
-      "saving_vs_median_pct": 33.26,
-      "saving_vs_highest_aud": 22.45,
-      "saving_vs_highest_pct": 49.9,
+      "saving_vs_next_best_aud": 22.44,
+      "saving_vs_next_best_pct": 49.88,
+      "saving_vs_median_aud": 11.22,
+      "saving_vs_median_pct": 33.22,
+      "saving_vs_highest_aud": 22.44,
+      "saving_vs_highest_pct": 49.88,
       "listings": [
         {
           "source": "thehobby",
           "external_id": "8973730316588",
           "url": "https://thehobby.com.au/products/skucard16483",
           "title": "Will Anderson Jr 2023 Panini Prizm 342 Purple Ice RC 102/225",
-          "landed_aud": 22.54,
-          "asking_price": 22.54,
+          "landed_aud": 22.55,
+          "asking_price": 22.55,
           "shipping": 0.0,
           "currency": "AUD",
           "card_number": null,
@@ -465401,31 +465401,31 @@
         "ebay",
         "thehobby"
       ],
-      "lowest_active_ask_aud": 16.1,
+      "lowest_active_ask_aud": 16.11,
       "median_active_ask_aud": 22.55,
       "highest_active_ask_aud": 29.0,
-      "spread_aud": 12.9,
-      "spread_pct": 80.12,
+      "spread_aud": 12.89,
+      "spread_pct": 80.01,
       "cheapest_store": "thehobby",
       "cheapest_external_id": "8973728973100",
       "cheapest_url": "https://thehobby.com.au/products/skucard16474",
-      "cheapest_landed_aud": 16.1,
+      "cheapest_landed_aud": 16.11,
       "next_best_store": "ebay",
       "next_best_landed_aud": 29.0,
-      "saving_vs_next_best_aud": 12.9,
-      "saving_vs_next_best_pct": 44.48,
+      "saving_vs_next_best_aud": 12.89,
+      "saving_vs_next_best_pct": 44.45,
       "saving_vs_median_aud": 6.45,
       "saving_vs_median_pct": 28.6,
-      "saving_vs_highest_aud": 12.9,
-      "saving_vs_highest_pct": 44.48,
+      "saving_vs_highest_aud": 12.89,
+      "saving_vs_highest_pct": 44.45,
       "listings": [
         {
           "source": "thehobby",
           "external_id": "8973728973100",
           "url": "https://thehobby.com.au/products/skucard16474",
           "title": "Preston Smith 2023 Panini Prizm 111 Blue Ice 27/99",
-          "landed_aud": 16.1,
-          "asking_price": 16.1,
+          "landed_aud": 16.11,
+          "asking_price": 16.11,
           "shipping": 0.0,
           "currency": "AUD",
           "card_number": null,
@@ -465733,31 +465733,31 @@
         "ebay",
         "thehobby"
       ],
-      "lowest_active_ask_aud": 9.66,
-      "median_active_ask_aud": 14.33,
+      "lowest_active_ask_aud": 9.67,
+      "median_active_ask_aud": 14.34,
       "highest_active_ask_aud": 19.0,
-      "spread_aud": 9.34,
-      "spread_pct": 96.69,
+      "spread_aud": 9.33,
+      "spread_pct": 96.48,
       "cheapest_store": "thehobby",
       "cheapest_external_id": "8569714180396",
       "cheapest_url": "https://thehobby.com.au/products/skucard15040",
-      "cheapest_landed_aud": 9.66,
+      "cheapest_landed_aud": 9.67,
       "next_best_store": "ebay",
       "next_best_landed_aud": 19.0,
-      "saving_vs_next_best_aud": 9.34,
-      "saving_vs_next_best_pct": 49.16,
+      "saving_vs_next_best_aud": 9.33,
+      "saving_vs_next_best_pct": 49.11,
       "saving_vs_median_aud": 4.67,
-      "saving_vs_median_pct": 32.59,
-      "saving_vs_highest_aud": 9.34,
-      "saving_vs_highest_pct": 49.16,
+      "saving_vs_median_pct": 32.58,
+      "saving_vs_highest_aud": 9.33,
+      "saving_vs_highest_pct": 49.11,
       "listings": [
         {
           "source": "thehobby",
           "external_id": "8569714180396",
           "url": "https://thehobby.com.au/products/skucard15040",
           "title": "Mac Jones 2022 Panini Contenders MVP-MJO MVP Contenders Silver 79/99",
-          "landed_aud": 9.66,
-          "asking_price": 9.66,
+          "landed_aud": 9.67,
+          "asking_price": 9.67,
           "shipping": 0.0,
           "currency": "AUD",
           "card_number": null,
