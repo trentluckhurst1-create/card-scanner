@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-18T16:01:19.467726+00:00",
+  "generated_at": "2026-10-18T20:53:13.363633+00:00",
   "feed_type": "EXACT_CARD_STORE_COMPARISON_ONLY",
   "pricing_basis": "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE",
   "governance": {
@@ -19,12 +19,12 @@
     "title_discriminator_guard_reused_for_nfl": true
   },
   "metrics": {
-    "active_cards_scanned": 628,
+    "active_cards_scanned": 0,
     "exact_comparison_groups": 1074,
     "exact_comparison_listings": 6040,
-    "previous_exact_groups": 1032,
-    "fresh_exact_groups": 50,
-    "retained_previous_groups_missing_from_fresh": 1024,
+    "previous_exact_groups": 1074,
+    "fresh_exact_groups": 0,
+    "retained_previous_groups_missing_from_fresh": 1074,
     "previous_groups_lost": 0,
     "production_groups_before_nfl_merge": 1074,
     "production_listings_before_nfl_merge": 6040,
