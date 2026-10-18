@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-18T04:46:47.798497+00:00",
+  "generated_at": "2026-10-18T11:20:49.727119+00:00",
   "feed_type": "EXACT_CARD_STORE_COMPARISON_ONLY",
   "pricing_basis": "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE",
   "governance": {
@@ -19,15 +19,15 @@
     "title_discriminator_guard_reused_for_nfl": true
   },
   "metrics": {
-    "active_cards_scanned": 448,
-    "exact_comparison_groups": 1031,
-    "exact_comparison_listings": 5855,
+    "active_cards_scanned": 463,
+    "exact_comparison_groups": 1032,
+    "exact_comparison_listings": 5858,
     "previous_exact_groups": 1031,
-    "fresh_exact_groups": 77,
-    "retained_previous_groups_missing_from_fresh": 954,
+    "fresh_exact_groups": 114,
+    "retained_previous_groups_missing_from_fresh": 918,
     "previous_groups_lost": 0,
-    "production_groups_before_nfl_merge": 1031,
-    "production_listings_before_nfl_merge": 5855,
+    "production_groups_before_nfl_merge": 1032,
+    "production_listings_before_nfl_merge": 5858,
     "staged_nfl_exact_groups_seen": 2,
     "staged_nfl_groups_added": 0,
     "staged_nfl_listings_added": 0,
@@ -2036,7 +2036,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -2097,7 +2097,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "cherry",
@@ -7996,7 +7996,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -8057,7 +8057,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -257151,7 +257151,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "cherry",
@@ -269580,7 +269580,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-15"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -270802,10 +270802,10 @@
       "image_url": "https://i.ebayimg.com/images/g/hewAAeSwFkJqe12K/s-l225.jpg",
       "title": "2025 Panini Absolute Mike Evans Kaboom! #12",
       "sport": "NFL",
-      "asking_price": 800.04,
-      "shipping": 50.14,
+      "asking_price": 804.42,
+      "shipping": 50.42,
       "currency": "AUD",
-      "landed_aud": 850.18,
+      "landed_aud": 854.84,
       "identity": {
         "player": "Mike Evans",
         "year": "2025",
@@ -270852,7 +270852,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-15"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -272897,7 +272897,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-15"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -272906,10 +272906,10 @@
       "image_url": "https://i.ebayimg.com/images/g/RnYAAeSw-jdqUBUc/s-l225.jpg",
       "title": "Cam Ward #1 [Black Pandora] 2025 Panini Donruss Optic Passing Grade [RC] /149",
       "sport": "NFL",
-      "asking_price": 236.25,
-      "shipping": 36.03,
+      "asking_price": 237.55,
+      "shipping": 36.19,
       "currency": "AUD",
-      "landed_aud": 272.28,
+      "landed_aud": 273.74,
       "identity": {
         "player": "Cam Ward",
         "year": "2025",
@@ -272959,7 +272959,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-15"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -305978,10 +305978,10 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0440/6935/5678/files/mixed_101-1_76268767-fc63-433c-8d6b-5db4403d134d.jpg?v=1771479090",
       "title": "Drake Baldwin 2025 Topps Chrome Update USC96 Green Variation Refractor /99 RC",
       "sport": "MLB",
-      "asking_price": 128.19,
+      "asking_price": 128.2,
       "shipping": 0.0,
       "currency": "AUD",
-      "landed_aud": 128.19,
+      "landed_aud": 128.2,
       "identity": {
         "player": "Drake Baldwin",
         "year": "2025",
@@ -306030,7 +306030,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -306091,7 +306091,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -306100,10 +306100,10 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0440/6935/5678/files/baseball_039-1_ou3ios.jpg?v=1732145107",
       "title": "Jose Perdomo 2024 Bowman Chrome BCP-220 Yellow Refractor 1st RC 22/75",
       "sport": "MLB",
-      "asking_price": 80.52,
+      "asking_price": 80.53,
       "shipping": 0.0,
       "currency": "AUD",
-      "landed_aud": 80.52,
+      "landed_aud": 80.53,
       "identity": {
         "player": "Jose Perdomo",
         "year": "2024",
@@ -306152,7 +306152,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -306161,10 +306161,10 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0440/6935/5678/files/mixed_078-1_zenszj.jpg?v=1759730332",
       "title": "Michael Helman 2025 Topps Chrome 104 Gold Refractor 32/50",
       "sport": "MLB",
-      "asking_price": 74.08,
+      "asking_price": 74.09,
       "shipping": 0.0,
       "currency": "AUD",
-      "landed_aud": 74.08,
+      "landed_aud": 74.09,
       "identity": {
         "player": "Michael Helman",
         "year": "2025",
@@ -306212,7 +306212,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -306221,10 +306221,10 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0440/6935/5678/files/baseball_028-1_jx3rln.jpg?v=1722901671",
       "title": "George Sisler 2024 Panini Donruss 22 Optic Black Velocity 19/39",
       "sport": "MLB",
-      "asking_price": 63.77,
+      "asking_price": 63.78,
       "shipping": 0.0,
       "currency": "AUD",
-      "landed_aud": 63.77,
+      "landed_aud": 63.78,
       "identity": {
         "player": "George Sisler",
         "year": "2024",
@@ -306272,7 +306272,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -306281,10 +306281,10 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0440/6935/5678/files/nflmlb_002-1_p4bppt.jpg?v=1747203974",
       "title": "Brian Roberts 2024 Topps Archives 68FF-BR 1969 Fan Favorites Auto Blue 16/25",
       "sport": "MLB",
-      "asking_price": 45.09,
+      "asking_price": 45.1,
       "shipping": 0.0,
       "currency": "AUD",
-      "landed_aud": 45.09,
+      "landed_aud": 45.1,
       "identity": {
         "player": "Brian Roberts",
         "year": "2024",
@@ -306333,7 +306333,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -306394,7 +306394,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -306403,10 +306403,10 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0440/6935/5678/files/mixed_030-1_lii9ha.jpg?v=1747109427",
       "title": "Johnny Damon 2024 Topps Archives 90BLA-JD 1991 Batting Leaders Auto Green 33/99",
       "sport": "MLB",
-      "asking_price": 38.65,
+      "asking_price": 38.66,
       "shipping": 0.0,
       "currency": "AUD",
-      "landed_aud": 38.65,
+      "landed_aud": 38.66,
       "identity": {
         "player": "Johnny Damon",
         "year": "2024",
@@ -306455,7 +306455,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -306464,10 +306464,10 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0440/6935/5678/files/mixed_039-1_ktameo.jpg?v=1747109438",
       "title": "Ceddanne Rafaela 2024 Topps Archives 266 1995 Topps Blue RC 19/25",
       "sport": "MLB",
-      "asking_price": 38.65,
+      "asking_price": 38.66,
       "shipping": 0.0,
       "currency": "AUD",
-      "landed_aud": 38.65,
+      "landed_aud": 38.66,
       "identity": {
         "player": "Ceddanne Rafaela",
         "year": "2024",
@@ -306516,7 +306516,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -306577,7 +306577,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -306637,7 +306637,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -306697,7 +306697,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -306757,7 +306757,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -306766,10 +306766,10 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0440/6935/5678/files/mixed_100-1_b1364077-c0e6-4468-9e28-9d7f5d14491c.jpg?v=1771479089",
       "title": "AJ Blubaugh 2025 Topps Chrome Update USC163 Green Refractor /99 RC",
       "sport": "MLB",
-      "asking_price": 25.76,
+      "asking_price": 25.77,
       "shipping": 0.0,
       "currency": "AUD",
-      "landed_aud": 25.76,
+      "landed_aud": 25.77,
       "identity": {
         "player": "AJ Blubaugh",
         "year": "2025",
@@ -306818,7 +306818,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -306879,7 +306879,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -306941,7 +306941,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -307001,7 +307001,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -307062,7 +307062,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -307124,7 +307124,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -307184,7 +307184,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -307244,7 +307244,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -307304,7 +307304,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -307366,7 +307366,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -307426,7 +307426,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -307486,7 +307486,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -307546,7 +307546,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -307608,7 +307608,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -307668,7 +307668,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -307729,7 +307729,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -307791,7 +307791,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -307853,7 +307853,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -307913,7 +307913,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -307973,7 +307973,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -308034,7 +308034,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -308094,7 +308094,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -308155,7 +308155,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -308217,7 +308217,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -308278,7 +308278,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -308340,7 +308340,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -308402,7 +308402,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -308463,7 +308463,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -308523,7 +308523,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -308583,7 +308583,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -308643,7 +308643,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -308704,7 +308704,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -308765,7 +308765,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -308825,7 +308825,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -308885,7 +308885,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -308945,7 +308945,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -309006,7 +309006,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -309068,7 +309068,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -309129,7 +309129,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -309190,7 +309190,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -309251,7 +309251,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -309312,7 +309312,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -309372,7 +309372,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -309433,7 +309433,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -309495,7 +309495,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -309555,7 +309555,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -309617,7 +309617,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -309679,7 +309679,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -309741,7 +309741,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -309801,7 +309801,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -309862,7 +309862,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -309922,7 +309922,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -309982,7 +309982,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -310043,7 +310043,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -310103,7 +310103,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -310163,7 +310163,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -310223,7 +310223,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -310284,7 +310284,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -310346,7 +310346,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -310407,7 +310407,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -310467,7 +310467,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -310528,7 +310528,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -310589,7 +310589,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -310650,7 +310650,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -310711,7 +310711,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -310772,7 +310772,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -310834,7 +310834,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -310895,7 +310895,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -310956,7 +310956,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -311016,7 +311016,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -311076,7 +311076,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -311137,7 +311137,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -311199,7 +311199,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -311260,7 +311260,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -311320,7 +311320,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -311381,7 +311381,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -311442,7 +311442,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -311503,7 +311503,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -311563,7 +311563,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -311623,7 +311623,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -311683,7 +311683,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -311743,7 +311743,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -311804,7 +311804,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -311864,7 +311864,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -311925,7 +311925,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -311986,7 +311986,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -312047,7 +312047,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -312108,7 +312108,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -312168,7 +312168,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -312228,7 +312228,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -312289,7 +312289,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -312350,7 +312350,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -312410,7 +312410,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -312471,7 +312471,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "boop",
@@ -313736,7 +313736,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -313798,7 +313798,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -313859,7 +313859,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -313921,7 +313921,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -313983,7 +313983,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -314043,7 +314043,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -314105,7 +314105,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -314115,9 +314115,9 @@
       "title": "Alfredo Alcantara 2024 1st Bowman Chrome Auto Purple /250",
       "sport": "MLB",
       "asking_price": 63.33,
-      "shipping": 27.24,
+      "shipping": 27.21,
       "currency": "AUD",
-      "landed_aud": 90.57,
+      "landed_aud": 90.54,
       "identity": {
         "player": "Alfredo Alcantara",
         "year": "2024",
@@ -314167,7 +314167,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -314228,7 +314228,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -314288,7 +314288,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -314348,7 +314348,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -314408,7 +314408,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -314469,7 +314469,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -314530,7 +314530,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -314591,7 +314591,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -314651,7 +314651,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -314711,7 +314711,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -314772,7 +314772,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -314833,7 +314833,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -314894,7 +314894,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -314955,7 +314955,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -315015,7 +315015,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -315076,7 +315076,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -315138,7 +315138,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -315198,7 +315198,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -315258,7 +315258,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -315320,7 +315320,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -315380,7 +315380,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -315440,7 +315440,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -315501,7 +315501,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -315561,7 +315561,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -315622,7 +315622,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -315684,7 +315684,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -315744,7 +315744,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -315805,7 +315805,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -315866,7 +315866,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -315927,7 +315927,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -315987,7 +315987,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -316049,7 +316049,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -316110,7 +316110,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -316171,7 +316171,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -316232,7 +316232,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -316293,7 +316293,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -316354,7 +316354,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -316414,7 +316414,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -316474,7 +316474,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -316536,7 +316536,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -316596,7 +316596,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -316656,7 +316656,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -316716,7 +316716,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -316776,7 +316776,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -316836,7 +316836,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -316896,7 +316896,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -316957,7 +316957,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -317017,7 +317017,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -317078,7 +317078,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -317140,7 +317140,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -317201,7 +317201,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -317262,7 +317262,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -317323,12 +317323,12 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
       "external_id": "v1|136417063989|0",
-      "url": "https://www.ebay.com.au/itm/136417063989?_skw=2024+Jeremy+Ciriaco+Bowman+Chrome+Blue+Refractor+%2F150&hash=item1fc3173435:g:3lIAAeSwb-xouizr&amdata=enc%3AAQALAAABEOf5zIIojhOf%2BkQK%2Bxzjn7kfjfPIl%2BPDy7RO1wq6bYPyXxbgZdndQzTtBE4eMuyQaY%2BMSKjG6I4LVgfB1Y0Eq2knQA0qC09yCLcewEl8opzJ2%2FZysae%2B10wc4gXg3ZJHWcKjOVcW50Z8vPoX9SDWAhUcPr1VjFd8HCfvlHCyyPyzOmDbwrAtb41DITuaYWQNa57iEUbbyzxdEush%2FVDOhoOykJQGp1TfydoyqeG2c4LPfKou8E0wZH7f63MG7zJ7D24lZfTMne6zblirp5n586BrlMGIQRodIttiRjDkEz2rBmtFmoqLbPVH%2F498sEGR9%2BGPMk6rhYDk3oXwiUnR6WWYyDZ5nZCHP1XZUQc0A3Ly",
+      "url": "https://www.ebay.com.au/itm/136417063989?_skw=2024+Jeremy+Ciriaco+Bowman+Chrome+Blue+Refractor+%2F150&hash=item1fc3173435:g:3lIAAeSwb-xouizr&amdata=enc%3AAQALAAABEOf5zIIojhOf%2BkQK%2Bxzjn7kfjfPIl%2BPDy7RO1wq6bYPyXxbgZdndQzTtBE4eMuyQaY%2BMSKjG6I4LVgfB1Y0Eq2knQA0qC09yCLcewEl8opzJ2%2FZysae%2B10wc4gXg3ZJHWcKjOVcW50Z8vPoX9SDWAhUGcwwijATpEY3sJY%2F43rUZgt07CKPLKvKRQTny5hjeYRaa8fMxPPLHoo22wtDFhx%2B3MTw7uq%2FFSXTLdW1G8MwvzHGnMZwAAZmcMrxsKRBT%2FzDiB%2FS5iIVZO2DUCS9ZXSs2L5RbDTG8U1TrP6lYejQXlp0K%2BF4iRl7JNMFNxC3lcbk%2BZw0%2F1GqltXiKHrPzW5l90bZJNt2qIGEfldTKzXB3",
       "image_url": "https://i.ebayimg.com/images/g/3lIAAeSwb-xouizr/s-l225.jpg",
       "title": "2024 BOWMAN CHROME JEREMY CIRIACO 100/150 BLUE REFRACTOR 1ST ROCKIES SP",
       "sport": "MLB",
@@ -317384,7 +317384,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -317446,7 +317446,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -317508,7 +317508,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -317569,7 +317569,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -317630,7 +317630,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -317691,7 +317691,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -317753,7 +317753,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -317815,7 +317815,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -317875,7 +317875,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -317936,7 +317936,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -317997,7 +317997,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -318057,7 +318057,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -318119,7 +318119,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -318181,7 +318181,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -318243,7 +318243,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -318305,7 +318305,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -318315,9 +318315,9 @@
       "title": "2025 Topps Chrome Julian Aguiar RC Refractor Auto /499 Cincinnati Reds",
       "sport": "MLB",
       "asking_price": 47.49,
-      "shipping": 26.88,
+      "shipping": 26.85,
       "currency": "AUD",
-      "landed_aud": 74.37,
+      "landed_aud": 74.34,
       "identity": {
         "player": "Julian Aguiar",
         "year": "2025",
@@ -318367,7 +318367,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -318429,7 +318429,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -318490,7 +318490,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -318550,7 +318550,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -318611,7 +318611,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -318673,7 +318673,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -318735,7 +318735,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -318796,7 +318796,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -318856,7 +318856,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -318916,7 +318916,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -318977,7 +318977,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -319037,7 +319037,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -319097,7 +319097,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -319157,7 +319157,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -319219,7 +319219,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -319281,7 +319281,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -319341,7 +319341,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -319402,7 +319402,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -319462,7 +319462,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -319522,7 +319522,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -319583,7 +319583,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -319643,7 +319643,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -319703,7 +319703,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -319764,7 +319764,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -319825,7 +319825,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -319886,7 +319886,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -319947,7 +319947,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -320007,7 +320007,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -320067,7 +320067,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -320127,7 +320127,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -320187,7 +320187,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -320248,7 +320248,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -320309,7 +320309,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -320370,7 +320370,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -320431,7 +320431,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -320491,7 +320491,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -320552,7 +320552,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -320613,7 +320613,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -320674,7 +320674,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -320735,7 +320735,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -320796,7 +320796,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -320856,7 +320856,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -320917,7 +320917,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -320979,7 +320979,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -321039,7 +321039,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -321099,7 +321099,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -321161,7 +321161,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -321223,7 +321223,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -321284,7 +321284,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -323629,7 +323629,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -323688,7 +323688,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -323747,7 +323747,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -323756,10 +323756,10 @@
       "image_url": "https://i.ebayimg.com/images/g/nxsAAOSwPRpnMbJw/s-l225.jpg",
       "title": "Bronny James Jr./LeBron James - 2024-25 Topps NOW Card 1",
       "sport": "NBA",
-      "asking_price": 15.88,
-      "shipping": 18.26,
+      "asking_price": 15.82,
+      "shipping": 18.2,
       "currency": "AUD",
-      "landed_aud": 34.14,
+      "landed_aud": 34.02,
       "identity": {
         "player": "Bronny James",
         "year": "2024-25",
@@ -323806,7 +323806,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -323815,10 +323815,10 @@
       "image_url": "https://i.ebayimg.com/images/g/8NkAAOSw7ONnP2~Y/s-l225.jpg",
       "title": "Bronny James 2024-25 Topps Now Father Son Debut #1 LeBron & Bronny James LAKERS",
       "sport": "NBA",
-      "asking_price": 39.72,
-      "shipping": 25.42,
+      "asking_price": 39.58,
+      "shipping": 25.32,
       "currency": "AUD",
-      "landed_aud": 65.14,
+      "landed_aud": 64.9,
       "identity": {
         "player": "Bronny James",
         "year": "2024-25",
@@ -323865,7 +323865,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -323874,10 +323874,10 @@
       "image_url": "https://i.ebayimg.com/images/g/BMwAAOSwNexnQVyi/s-l225.jpg",
       "title": "Bronny James Jr./LeBron James - 2024-25 Topps NOW Basketball Card 1",
       "sport": "NBA",
-      "asking_price": 39.72,
-      "shipping": 19.04,
+      "asking_price": 39.58,
+      "shipping": 18.97,
       "currency": "AUD",
-      "landed_aud": 58.76,
+      "landed_aud": 58.55,
       "identity": {
         "player": "Bronny James",
         "year": "2024-25",
@@ -323924,7 +323924,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "urbanempire",
@@ -340324,10 +340324,10 @@
       "image_url": "https://i.ebayimg.com/images/g/Lm0AAeSwtwVqmgnK/s-l225.jpg",
       "title": "2025 Panini Donruss Optic Cam Ward Rookie #1 Retro Black Pandora Prizm /149 RC",
       "sport": "NFL",
-      "asking_price": 236.24,
-      "shipping": 37.06,
+      "asking_price": 237.53,
+      "shipping": 37.35,
       "currency": "AUD",
-      "landed_aud": 273.3,
+      "landed_aud": 274.88,
       "identity": {
         "player": "Cam Ward",
         "year": "2025",
@@ -340377,7 +340377,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-15"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -340500,7 +340500,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -340562,7 +340562,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -341276,7 +341276,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -350512,7 +350512,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -350574,7 +350574,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -352017,7 +352017,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -352078,7 +352078,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -352139,7 +352139,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -352200,7 +352200,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "ebay",
@@ -352262,7 +352262,7 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-17"
+      "fx_rate_date": "2026-10-18"
     },
     {
       "source": "thehobby",
@@ -352873,6 +352873,187 @@
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
       "fx_rate_date": "2026-10-17"
+    },
+    {
+      "source": "thehobby",
+      "external_id": "9559494754604",
+      "url": "https://thehobby.com.au/products/skucard19648",
+      "image_url": "https://cdn.shopify.com/s/files/1/0440/6935/5678/files/baseball_063-1_aclfz6.jpg?v=1722901757",
+      "title": "Sebastian Walcott 2024 Panini Donruss 160 Optic Orange RC 123/199",
+      "sport": "MLB",
+      "asking_price": 6.44,
+      "shipping": 0.0,
+      "currency": "AUD",
+      "landed_aud": 6.44,
+      "identity": {
+        "player": "Sebastian Walcott",
+        "year": "2024",
+        "brand": "Donruss",
+        "set_name": "Donruss",
+        "card_number": null,
+        "parallel": "Orange",
+        "serial_current": 123,
+        "serial_total": 199,
+        "grader": null,
+        "grade": null,
+        "autograph": false,
+        "memorabilia": false,
+        "rookie": true
+      },
+      "card_family": {
+        "key": "cf_fbb2207a60c0f323cdee",
+        "eligible": true,
+        "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
+        "match_confidence": 1.0,
+        "match_reasons": [
+          "same player",
+          "same year",
+          "same brand/product",
+          "same parallel",
+          "same serial denominator",
+          "same rookie state"
+        ],
+        "canonical_components": {
+          "sport": "mlb",
+          "player": "sebastianwalcott",
+          "year": "2024",
+          "brand": "donruss",
+          "product": "donruss",
+          "card_number": "",
+          "parallel": "orange",
+          "serial_total": "199",
+          "grader": "",
+          "grade": "",
+          "autograph": "0",
+          "memorabilia": "0",
+          "rookie": "1"
+        }
+      },
+      "history": null,
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-10-18"
+    },
+    {
+      "source": "ebay",
+      "external_id": "v1|375576436017|0",
+      "url": "https://www.ebay.com.au/itm/375576436017?_skw=2024+Sebastian+Walcott+Donruss+Orange+%2F199&hash=item5772199d31:g:Va4AAeSwPV5qvH8-",
+      "image_url": "https://i.ebayimg.com/images/g/Va4AAeSwPV5qvH8-/s-l225.jpg",
+      "title": "Sebastian Walcott 2024 Panini Donruss 160 Optic Orange RC 123/199",
+      "sport": "MLB",
+      "asking_price": 10.0,
+      "shipping": 4.0,
+      "currency": "AUD",
+      "landed_aud": 14.0,
+      "identity": {
+        "player": "Sebastian Walcott",
+        "year": "2024",
+        "brand": "Donruss",
+        "set_name": "Donruss",
+        "card_number": null,
+        "parallel": "Orange",
+        "serial_current": 123,
+        "serial_total": 199,
+        "grader": null,
+        "grade": null,
+        "autograph": false,
+        "memorabilia": false,
+        "rookie": true
+      },
+      "card_family": {
+        "key": "cf_fbb2207a60c0f323cdee",
+        "eligible": true,
+        "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
+        "match_confidence": 1.0,
+        "match_reasons": [
+          "same player",
+          "same year",
+          "same brand/product",
+          "same parallel",
+          "same serial denominator",
+          "same rookie state"
+        ],
+        "canonical_components": {
+          "sport": "mlb",
+          "player": "sebastianwalcott",
+          "year": "2024",
+          "brand": "donruss",
+          "product": "donruss",
+          "card_number": "",
+          "parallel": "orange",
+          "serial_total": "199",
+          "grader": "",
+          "grade": "",
+          "autograph": "0",
+          "memorabilia": "0",
+          "rookie": "1"
+        }
+      },
+      "history": null,
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-10-18"
+    },
+    {
+      "source": "ebay",
+      "external_id": "v1|135316839539|0",
+      "url": "https://www.ebay.com.au/itm/135316839539?_skw=2024-25+Bronny+James+Topps+1&hash=item1f81831c73:g:wRQAAOSwlFBnGYJO",
+      "image_url": "https://i.ebayimg.com/images/g/wRQAAOSwlFBnGYJO/s-l225.jpg",
+      "title": "Bronny James Jr./LeBron James - 2024-25 Topps NOW Basketball Card 1 ",
+      "sport": "NBA",
+      "asking_price": 20.4,
+      "shipping": 16.77,
+      "currency": "AUD",
+      "landed_aud": 37.17,
+      "identity": {
+        "player": "Bronny James",
+        "year": "2024-25",
+        "brand": "Topps",
+        "set_name": "Topps",
+        "card_number": "1",
+        "parallel": null,
+        "serial_current": null,
+        "serial_total": null,
+        "grader": null,
+        "grade": null,
+        "autograph": false,
+        "memorabilia": false,
+        "rookie": false
+      },
+      "card_family": {
+        "key": "cf_37ba97d640257a93aa73",
+        "eligible": true,
+        "match_rule": "STRICT_STRUCTURED_IDENTITY_V2",
+        "match_confidence": 1.0,
+        "match_reasons": [
+          "same player",
+          "same year",
+          "same brand/product",
+          "same card number"
+        ],
+        "canonical_components": {
+          "sport": "nba",
+          "player": "bronnyjames",
+          "year": "202425",
+          "brand": "topps",
+          "product": "topps",
+          "card_number": "1",
+          "parallel": "",
+          "serial_total": "",
+          "grader": "",
+          "grade": "",
+          "autograph": "0",
+          "memorabilia": "0",
+          "rookie": "0"
+        }
+      },
+      "history": null,
+      "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
+      "fx_status": "AUD_NATIVE",
+      "fx_source": "AUD_NATIVE",
+      "fx_rate_date": "2026-10-18"
     }
   ],
   "comparison_groups": [
@@ -464209,22 +464390,22 @@
         "urbanempire"
       ],
       "lowest_active_ask_aud": 699.0,
-      "median_active_ask_aud": 774.59,
-      "highest_active_ask_aud": 850.18,
-      "spread_aud": 151.18,
-      "spread_pct": 21.63,
+      "median_active_ask_aud": 776.92,
+      "highest_active_ask_aud": 854.84,
+      "spread_aud": 155.84,
+      "spread_pct": 22.29,
       "cheapest_store": "urbanempire",
       "cheapest_external_id": "8309953396925",
       "cheapest_url": "https://urbanempirecollectables.com/products/2025-panini-absolute-kaboom-horizontal-mike-evans-12",
       "cheapest_landed_aud": 699.0,
       "next_best_store": "ebay",
-      "next_best_landed_aud": 850.18,
-      "saving_vs_next_best_aud": 151.18,
-      "saving_vs_next_best_pct": 17.78,
-      "saving_vs_median_aud": 75.59,
-      "saving_vs_median_pct": 9.76,
-      "saving_vs_highest_aud": 151.18,
-      "saving_vs_highest_pct": 17.78,
+      "next_best_landed_aud": 854.84,
+      "saving_vs_next_best_aud": 155.84,
+      "saving_vs_next_best_pct": 18.23,
+      "saving_vs_median_aud": 77.92,
+      "saving_vs_median_pct": 10.03,
+      "saving_vs_highest_aud": 155.84,
+      "saving_vs_highest_pct": 18.23,
       "listings": [
         {
           "source": "urbanempire",
@@ -464250,9 +464431,9 @@
           "external_id": "v1|377410760176|0",
           "url": "https://www.ebay.com.au/itm/377410760176?_skw=2025+Mike+Evans+Absolute+12&hash=item57df6f2df0:g:hewAAeSwFkJqe12K",
           "title": "2025 Panini Absolute Mike Evans Kaboom! #12",
-          "landed_aud": 850.18,
-          "asking_price": 800.04,
-          "shipping": 50.14,
+          "landed_aud": 854.84,
+          "asking_price": 804.42,
+          "shipping": 50.42,
           "currency": "AUD",
           "card_number": "12",
           "parallel": null,
@@ -466416,22 +466597,22 @@
         "urbanempire"
       ],
       "lowest_active_ask_aud": 109.0,
-      "median_active_ask_aud": 272.28,
-      "highest_active_ask_aud": 273.3,
-      "spread_aud": 164.3,
-      "spread_pct": 150.73,
+      "median_active_ask_aud": 273.74,
+      "highest_active_ask_aud": 274.88,
+      "spread_aud": 165.88,
+      "spread_pct": 152.18,
       "cheapest_store": "urbanempire",
       "cheapest_external_id": "8503919214781",
       "cheapest_url": "https://urbanempirecollectables.com/products/2025-panini-donruss-optic-cam-ward-rc-2015-retro-1-black-pandora-149",
       "cheapest_landed_aud": 109.0,
       "next_best_store": "ebay",
-      "next_best_landed_aud": 272.28,
-      "saving_vs_next_best_aud": 163.28,
-      "saving_vs_next_best_pct": 59.97,
-      "saving_vs_median_aud": 163.28,
-      "saving_vs_median_pct": 59.97,
-      "saving_vs_highest_aud": 164.3,
-      "saving_vs_highest_pct": 60.12,
+      "next_best_landed_aud": 273.74,
+      "saving_vs_next_best_aud": 164.74,
+      "saving_vs_next_best_pct": 60.18,
+      "saving_vs_median_aud": 164.74,
+      "saving_vs_median_pct": 60.18,
+      "saving_vs_highest_aud": 165.88,
+      "saving_vs_highest_pct": 60.35,
       "listings": [
         {
           "source": "urbanempire",
@@ -466457,9 +466638,9 @@
           "external_id": "v1|318708830388|0",
           "url": "https://www.ebay.com.au/itm/318708830388?_skw=2025+Cam+Ward+Panini+Donruss+Optic+1+Black+%2F149&hash=item4a3486d0b4:g:RnYAAeSw-jdqUBUc",
           "title": "Cam Ward #1 [Black Pandora] 2025 Panini Donruss Optic Passing Grade [RC] /149",
-          "landed_aud": 272.28,
-          "asking_price": 236.25,
-          "shipping": 36.03,
+          "landed_aud": 273.74,
+          "asking_price": 237.55,
+          "shipping": 36.19,
           "currency": "AUD",
           "card_number": "1",
           "parallel": "Black",
@@ -466476,9 +466657,9 @@
           "external_id": "v1|278409801196|0",
           "url": "https://www.ebay.com.au/itm/278409801196?_skw=2025+Cam+Ward+Panini+Donruss+Optic+1+Black+%2F149&hash=item40d2846dec:g:Lm0AAeSwtwVqmgnK",
           "title": "2025 Panini Donruss Optic Cam Ward Rookie #1 Retro Black Pandora Prizm /149 RC",
-          "landed_aud": 273.3,
-          "asking_price": 236.24,
-          "shipping": 37.06,
+          "landed_aud": 274.88,
+          "asking_price": 237.53,
+          "shipping": 37.35,
           "currency": "AUD",
           "card_number": "1",
           "parallel": "Black",
@@ -484607,7 +484788,7 @@
         "thehobby"
       ],
       "lowest_active_ask_aud": 74.95,
-      "median_active_ask_aud": 128.19,
+      "median_active_ask_aud": 128.2,
       "highest_active_ask_aud": 208.99,
       "spread_aud": 134.04,
       "spread_pct": 178.84,
@@ -484616,11 +484797,11 @@
       "cheapest_url": "https://www.ebay.com.au/itm/327282729723?_skw=2025+Drake+Baldwin+Topps+Chrome+Refractor+%2F99&hash=item4c339222fb:g:mkgAAeSwdbtqaG0B",
       "cheapest_landed_aud": 74.95,
       "next_best_store": "thehobby",
-      "next_best_landed_aud": 128.19,
-      "saving_vs_next_best_aud": 53.24,
-      "saving_vs_next_best_pct": 41.53,
-      "saving_vs_median_aud": 53.24,
-      "saving_vs_median_pct": 41.53,
+      "next_best_landed_aud": 128.2,
+      "saving_vs_next_best_aud": 53.25,
+      "saving_vs_next_best_pct": 41.54,
+      "saving_vs_median_aud": 53.25,
+      "saving_vs_median_pct": 41.54,
       "saving_vs_highest_aud": 134.04,
       "saving_vs_highest_pct": 64.14,
       "listings": [
@@ -484648,8 +484829,8 @@
           "external_id": "10240820576556",
           "url": "https://thehobby.com.au/products/skucard30714-test",
           "title": "Drake Baldwin 2025 Topps Chrome Update USC96 Green Variation Refractor /99 RC",
-          "landed_aud": 128.19,
-          "asking_price": 128.19,
+          "landed_aud": 128.2,
+          "asking_price": 128.2,
           "shipping": 0.0,
           "currency": "AUD",
           "card_number": null,
@@ -484938,9 +485119,9 @@
       ],
       "lowest_active_ask_aud": 19.32,
       "median_active_ask_aud": 39.99,
-      "highest_active_ask_aud": 90.57,
-      "spread_aud": 71.25,
-      "spread_pct": 368.79,
+      "highest_active_ask_aud": 90.54,
+      "spread_aud": 71.22,
+      "spread_pct": 368.63,
       "cheapest_store": "thehobby",
       "cheapest_external_id": "9801346941228",
       "cheapest_url": "https://thehobby.com.au/products/skucard22418",
@@ -484951,8 +485132,8 @@
       "saving_vs_next_best_pct": 51.69,
       "saving_vs_median_aud": 20.67,
       "saving_vs_median_pct": 51.69,
-      "saving_vs_highest_aud": 71.25,
-      "saving_vs_highest_pct": 78.67,
+      "saving_vs_highest_aud": 71.22,
+      "saving_vs_highest_pct": 78.66,
       "listings": [
         {
           "source": "thehobby",
@@ -484997,9 +485178,9 @@
           "external_id": "v1|287551907479|0",
           "url": "https://www.ebay.com.au/itm/287551907479?_skw=2024+Alfredo+Alcantara+Bowman+Chrome+Purple+%2F250+auto&hash=item42f36de697:g:wCcAAeSwZERqklSW",
           "title": "Alfredo Alcantara 2024 1st Bowman Chrome Auto Purple /250",
-          "landed_aud": 90.57,
+          "landed_aud": 90.54,
           "asking_price": 63.33,
-          "shipping": 27.24,
+          "shipping": 27.21,
           "currency": "AUD",
           "card_number": null,
           "parallel": "Purple",
@@ -485042,9 +485223,9 @@
       ],
       "lowest_active_ask_aud": 6.44,
       "median_active_ask_aud": 37.45,
-      "highest_active_ask_aud": 74.37,
-      "spread_aud": 67.93,
-      "spread_pct": 1054.81,
+      "highest_active_ask_aud": 74.34,
+      "spread_aud": 67.9,
+      "spread_pct": 1054.35,
       "cheapest_store": "thehobby",
       "cheapest_external_id": "10240819200300",
       "cheapest_url": "https://thehobby.com.au/products/skucard30673-test",
@@ -485055,7 +485236,7 @@
       "saving_vs_next_best_pct": 54.0,
       "saving_vs_median_aud": 31.01,
       "saving_vs_median_pct": 82.8,
-      "saving_vs_highest_aud": 67.93,
+      "saving_vs_highest_aud": 67.9,
       "saving_vs_highest_pct": 91.34,
       "listings": [
         {
@@ -485234,9 +485415,9 @@
           "external_id": "v1|167672485122|0",
           "url": "https://www.ebay.com.au/itm/167672485122?_skw=2025+Julian+Aguiar+Topps+Chrome+Refractor+%2F499+auto&hash=item270a0f1502:g:ozMAAeSwAIJohBQ7",
           "title": "2025 Topps Chrome Julian Aguiar RC Refractor Auto /499 Cincinnati Reds",
-          "landed_aud": 74.37,
+          "landed_aud": 74.34,
           "asking_price": 47.49,
-          "shipping": 26.88,
+          "shipping": 26.85,
           "currency": "AUD",
           "card_number": null,
           "parallel": "Refractor",
@@ -485360,31 +485541,31 @@
         "ebay",
         "thehobby"
       ],
-      "lowest_active_ask_aud": 80.52,
-      "median_active_ask_aud": 107.75,
+      "lowest_active_ask_aud": 80.53,
+      "median_active_ask_aud": 107.76,
       "highest_active_ask_aud": 134.99,
-      "spread_aud": 54.47,
-      "spread_pct": 67.65,
+      "spread_aud": 54.46,
+      "spread_pct": 67.63,
       "cheapest_store": "thehobby",
       "cheapest_external_id": "9731291447596",
       "cheapest_url": "https://thehobby.com.au/products/skucard20951",
-      "cheapest_landed_aud": 80.52,
+      "cheapest_landed_aud": 80.53,
       "next_best_store": "ebay",
       "next_best_landed_aud": 134.99,
-      "saving_vs_next_best_aud": 54.47,
-      "saving_vs_next_best_pct": 40.35,
+      "saving_vs_next_best_aud": 54.46,
+      "saving_vs_next_best_pct": 40.34,
       "saving_vs_median_aud": 27.23,
       "saving_vs_median_pct": 25.27,
-      "saving_vs_highest_aud": 54.47,
-      "saving_vs_highest_pct": 40.35,
+      "saving_vs_highest_aud": 54.46,
+      "saving_vs_highest_pct": 40.34,
       "listings": [
         {
           "source": "thehobby",
           "external_id": "9731291447596",
           "url": "https://thehobby.com.au/products/skucard20951",
           "title": "Jose Perdomo 2024 Bowman Chrome BCP-220 Yellow Refractor 1st RC 22/75",
-          "landed_aud": 80.52,
-          "asking_price": 80.52,
+          "landed_aud": 80.53,
+          "asking_price": 80.53,
           "shipping": 0.0,
           "currency": "AUD",
           "card_number": null,
@@ -485443,31 +485624,31 @@
         "ebay",
         "thehobby"
       ],
-      "lowest_active_ask_aud": 74.08,
-      "median_active_ask_aud": 99.53,
+      "lowest_active_ask_aud": 74.09,
+      "median_active_ask_aud": 99.54,
       "highest_active_ask_aud": 124.99,
-      "spread_aud": 50.91,
-      "spread_pct": 68.72,
+      "spread_aud": 50.9,
+      "spread_pct": 68.7,
       "cheapest_store": "thehobby",
       "cheapest_external_id": "10104554291500",
       "cheapest_url": "https://thehobby.com.au/products/skucard27442",
-      "cheapest_landed_aud": 74.08,
+      "cheapest_landed_aud": 74.09,
       "next_best_store": "ebay",
       "next_best_landed_aud": 124.99,
-      "saving_vs_next_best_aud": 50.91,
-      "saving_vs_next_best_pct": 40.73,
+      "saving_vs_next_best_aud": 50.9,
+      "saving_vs_next_best_pct": 40.72,
       "saving_vs_median_aud": 25.45,
       "saving_vs_median_pct": 25.57,
-      "saving_vs_highest_aud": 50.91,
-      "saving_vs_highest_pct": 40.73,
+      "saving_vs_highest_aud": 50.9,
+      "saving_vs_highest_pct": 40.72,
       "listings": [
         {
           "source": "thehobby",
           "external_id": "10104554291500",
           "url": "https://thehobby.com.au/products/skucard27442",
           "title": "Michael Helman 2025 Topps Chrome 104 Gold Refractor 32/50",
-          "landed_aud": 74.08,
-          "asking_price": 74.08,
+          "landed_aud": 74.09,
+          "asking_price": 74.09,
           "shipping": 0.0,
           "currency": "AUD",
           "card_number": null,
@@ -485630,31 +485811,31 @@
         "ebay",
         "thehobby"
       ],
-      "lowest_active_ask_aud": 63.77,
+      "lowest_active_ask_aud": 63.78,
       "median_active_ask_aud": 86.38,
       "highest_active_ask_aud": 108.99,
-      "spread_aud": 45.22,
-      "spread_pct": 70.91,
+      "spread_aud": 45.21,
+      "spread_pct": 70.88,
       "cheapest_store": "thehobby",
       "cheapest_external_id": "9559493706028",
       "cheapest_url": "https://thehobby.com.au/products/skucard19631",
-      "cheapest_landed_aud": 63.77,
+      "cheapest_landed_aud": 63.78,
       "next_best_store": "ebay",
       "next_best_landed_aud": 108.99,
-      "saving_vs_next_best_aud": 45.22,
-      "saving_vs_next_best_pct": 41.49,
-      "saving_vs_median_aud": 22.61,
-      "saving_vs_median_pct": 26.18,
-      "saving_vs_highest_aud": 45.22,
-      "saving_vs_highest_pct": 41.49,
+      "saving_vs_next_best_aud": 45.21,
+      "saving_vs_next_best_pct": 41.48,
+      "saving_vs_median_aud": 22.6,
+      "saving_vs_median_pct": 26.16,
+      "saving_vs_highest_aud": 45.21,
+      "saving_vs_highest_pct": 41.48,
       "listings": [
         {
           "source": "thehobby",
           "external_id": "9559493706028",
           "url": "https://thehobby.com.au/products/skucard19631",
           "title": "George Sisler 2024 Panini Donruss 22 Optic Black Velocity 19/39",
-          "landed_aud": 63.77,
-          "asking_price": 63.77,
+          "landed_aud": 63.78,
+          "asking_price": 63.78,
           "shipping": 0.0,
           "currency": "AUD",
           "card_number": null,
@@ -485899,31 +486080,31 @@
         "ebay",
         "thehobby"
       ],
-      "lowest_active_ask_aud": 45.09,
-      "median_active_ask_aud": 62.54,
+      "lowest_active_ask_aud": 45.1,
+      "median_active_ask_aud": 62.55,
       "highest_active_ask_aud": 79.99,
-      "spread_aud": 34.9,
-      "spread_pct": 77.4,
+      "spread_aud": 34.89,
+      "spread_pct": 77.36,
       "cheapest_store": "thehobby",
       "cheapest_external_id": "9975319167276",
       "cheapest_url": "https://thehobby.com.au/products/skucard24043",
-      "cheapest_landed_aud": 45.09,
+      "cheapest_landed_aud": 45.1,
       "next_best_store": "ebay",
       "next_best_landed_aud": 79.99,
-      "saving_vs_next_best_aud": 34.9,
-      "saving_vs_next_best_pct": 43.63,
+      "saving_vs_next_best_aud": 34.89,
+      "saving_vs_next_best_pct": 43.62,
       "saving_vs_median_aud": 17.45,
       "saving_vs_median_pct": 27.9,
-      "saving_vs_highest_aud": 34.9,
-      "saving_vs_highest_pct": 43.63,
+      "saving_vs_highest_aud": 34.89,
+      "saving_vs_highest_pct": 43.62,
       "listings": [
         {
           "source": "thehobby",
           "external_id": "9975319167276",
           "url": "https://thehobby.com.au/products/skucard24043",
           "title": "Brian Roberts 2024 Topps Archives 68FF-BR 1969 Fan Favorites Auto Blue 16/25",
-          "landed_aud": 45.09,
-          "asking_price": 45.09,
+          "landed_aud": 45.1,
+          "asking_price": 45.1,
           "shipping": 0.0,
           "currency": "AUD",
           "card_number": null,
@@ -486067,31 +486248,31 @@
         "ebay",
         "thehobby"
       ],
-      "lowest_active_ask_aud": 38.65,
+      "lowest_active_ask_aud": 38.66,
       "median_active_ask_aud": 54.32,
       "highest_active_ask_aud": 69.99,
-      "spread_aud": 31.34,
-      "spread_pct": 81.09,
+      "spread_aud": 31.33,
+      "spread_pct": 81.04,
       "cheapest_store": "thehobby",
       "cheapest_external_id": "9974239330604",
       "cheapest_url": "https://thehobby.com.au/products/skucard24112",
-      "cheapest_landed_aud": 38.65,
+      "cheapest_landed_aud": 38.66,
       "next_best_store": "ebay",
       "next_best_landed_aud": 69.99,
-      "saving_vs_next_best_aud": 31.34,
-      "saving_vs_next_best_pct": 44.78,
-      "saving_vs_median_aud": 15.67,
-      "saving_vs_median_pct": 28.85,
-      "saving_vs_highest_aud": 31.34,
-      "saving_vs_highest_pct": 44.78,
+      "saving_vs_next_best_aud": 31.33,
+      "saving_vs_next_best_pct": 44.76,
+      "saving_vs_median_aud": 15.66,
+      "saving_vs_median_pct": 28.83,
+      "saving_vs_highest_aud": 31.33,
+      "saving_vs_highest_pct": 44.76,
       "listings": [
         {
           "source": "thehobby",
           "external_id": "9974239330604",
           "url": "https://thehobby.com.au/products/skucard24112",
           "title": "Ceddanne Rafaela 2024 Topps Archives 266 1995 Topps Blue RC 19/25",
-          "landed_aud": 38.65,
-          "asking_price": 38.65,
+          "landed_aud": 38.66,
+          "asking_price": 38.66,
           "shipping": 0.0,
           "currency": "AUD",
           "card_number": null,
@@ -486151,31 +486332,31 @@
         "ebay",
         "thehobby"
       ],
-      "lowest_active_ask_aud": 38.65,
+      "lowest_active_ask_aud": 38.66,
       "median_active_ask_aud": 54.32,
       "highest_active_ask_aud": 69.99,
-      "spread_aud": 31.34,
-      "spread_pct": 81.09,
+      "spread_aud": 31.33,
+      "spread_pct": 81.04,
       "cheapest_store": "thehobby",
       "cheapest_external_id": "9974239068460",
       "cheapest_url": "https://thehobby.com.au/products/skucard24109",
-      "cheapest_landed_aud": 38.65,
+      "cheapest_landed_aud": 38.66,
       "next_best_store": "ebay",
       "next_best_landed_aud": 69.99,
-      "saving_vs_next_best_aud": 31.34,
-      "saving_vs_next_best_pct": 44.78,
-      "saving_vs_median_aud": 15.67,
-      "saving_vs_median_pct": 28.85,
-      "saving_vs_highest_aud": 31.34,
-      "saving_vs_highest_pct": 44.78,
+      "saving_vs_next_best_aud": 31.33,
+      "saving_vs_next_best_pct": 44.76,
+      "saving_vs_median_aud": 15.66,
+      "saving_vs_median_pct": 28.83,
+      "saving_vs_highest_aud": 31.33,
+      "saving_vs_highest_pct": 44.76,
       "listings": [
         {
           "source": "thehobby",
           "external_id": "9974239068460",
           "url": "https://thehobby.com.au/products/skucard24109",
           "title": "Johnny Damon 2024 Topps Archives 90BLA-JD 1991 Batting Leaders Auto Green 33/99",
-          "landed_aud": 38.65,
-          "asking_price": 38.65,
+          "landed_aud": 38.66,
+          "asking_price": 38.66,
           "shipping": 0.0,
           "currency": "AUD",
           "card_number": null,
@@ -486587,31 +486768,31 @@
         "ebay",
         "thehobby"
       ],
-      "lowest_active_ask_aud": 25.76,
+      "lowest_active_ask_aud": 25.77,
       "median_active_ask_aud": 37.88,
       "highest_active_ask_aud": 49.99,
-      "spread_aud": 24.23,
-      "spread_pct": 94.06,
+      "spread_aud": 24.22,
+      "spread_pct": 93.99,
       "cheapest_store": "thehobby",
       "cheapest_external_id": "10240820543788",
       "cheapest_url": "https://thehobby.com.au/products/skucard30713-test",
-      "cheapest_landed_aud": 25.76,
+      "cheapest_landed_aud": 25.77,
       "next_best_store": "ebay",
       "next_best_landed_aud": 49.99,
-      "saving_vs_next_best_aud": 24.23,
-      "saving_vs_next_best_pct": 48.47,
+      "saving_vs_next_best_aud": 24.22,
+      "saving_vs_next_best_pct": 48.45,
       "saving_vs_median_aud": 12.11,
       "saving_vs_median_pct": 31.97,
-      "saving_vs_highest_aud": 24.23,
-      "saving_vs_highest_pct": 48.47,
+      "saving_vs_highest_aud": 24.22,
+      "saving_vs_highest_pct": 48.45,
       "listings": [
         {
           "source": "thehobby",
           "external_id": "10240820543788",
           "url": "https://thehobby.com.au/products/skucard30713-test",
           "title": "AJ Blubaugh 2025 Topps Chrome Update USC163 Green Refractor /99 RC",
-          "landed_aud": 25.76,
-          "asking_price": 25.76,
+          "landed_aud": 25.77,
+          "asking_price": 25.77,
           "shipping": 0.0,
           "currency": "AUD",
           "card_number": null,
@@ -488293,7 +488474,7 @@
         {
           "source": "ebay",
           "external_id": "v1|136417063989|0",
-          "url": "https://www.ebay.com.au/itm/136417063989?_skw=2024+Jeremy+Ciriaco+Bowman+Chrome+Blue+Refractor+%2F150&hash=item1fc3173435:g:3lIAAeSwb-xouizr&amdata=enc%3AAQALAAABEOf5zIIojhOf%2BkQK%2Bxzjn7kfjfPIl%2BPDy7RO1wq6bYPyXxbgZdndQzTtBE4eMuyQaY%2BMSKjG6I4LVgfB1Y0Eq2knQA0qC09yCLcewEl8opzJ2%2FZysae%2B10wc4gXg3ZJHWcKjOVcW50Z8vPoX9SDWAhUcPr1VjFd8HCfvlHCyyPyzOmDbwrAtb41DITuaYWQNa57iEUbbyzxdEush%2FVDOhoOykJQGp1TfydoyqeG2c4LPfKou8E0wZH7f63MG7zJ7D24lZfTMne6zblirp5n586BrlMGIQRodIttiRjDkEz2rBmtFmoqLbPVH%2F498sEGR9%2BGPMk6rhYDk3oXwiUnR6WWYyDZ5nZCHP1XZUQc0A3Ly",
+          "url": "https://www.ebay.com.au/itm/136417063989?_skw=2024+Jeremy+Ciriaco+Bowman+Chrome+Blue+Refractor+%2F150&hash=item1fc3173435:g:3lIAAeSwb-xouizr&amdata=enc%3AAQALAAABEOf5zIIojhOf%2BkQK%2Bxzjn7kfjfPIl%2BPDy7RO1wq6bYPyXxbgZdndQzTtBE4eMuyQaY%2BMSKjG6I4LVgfB1Y0Eq2knQA0qC09yCLcewEl8opzJ2%2FZysae%2B10wc4gXg3ZJHWcKjOVcW50Z8vPoX9SDWAhUGcwwijATpEY3sJY%2F43rUZgt07CKPLKvKRQTny5hjeYRaa8fMxPPLHoo22wtDFhx%2B3MTw7uq%2FFSXTLdW1G8MwvzHGnMZwAAZmcMrxsKRBT%2FzDiB%2FS5iIVZO2DUCS9ZXSs2L5RbDTG8U1TrP6lYejQXlp0K%2BF4iRl7JNMFNxC3lcbk%2BZw0%2F1GqltXiKHrPzW5l90bZJNt2qIGEfldTKzXB3",
           "title": "2024 BOWMAN CHROME JEREMY CIRIACO 100/150 BLUE REFRACTOR 1ST ROCKIES SP",
           "landed_aud": 23.91,
           "asking_price": 5.53,
@@ -496106,16 +496287,16 @@
       "year": "2024-25",
       "product": "Topps",
       "store_count": 2,
-      "listing_count": 6,
+      "listing_count": 7,
       "stores": [
         "ebay",
         "sportscardstore"
       ],
       "lowest_active_ask_aud": 20.0,
-      "median_active_ask_aud": 36.57,
-      "highest_active_ask_aud": 65.14,
-      "spread_aud": 45.14,
-      "spread_pct": 225.7,
+      "median_active_ask_aud": 37.17,
+      "highest_active_ask_aud": 64.9,
+      "spread_aud": 44.9,
+      "spread_pct": 224.5,
       "cheapest_store": "sportscardstore",
       "cheapest_external_id": "9654369452318",
       "cheapest_url": "https://sportscardstore.com.au/products/bronny-james-jr-lebron-james-2024-25-topps-now®-basketball-card-1",
@@ -496124,10 +496305,10 @@
       "next_best_landed_aud": 31.49,
       "saving_vs_next_best_aud": 11.49,
       "saving_vs_next_best_pct": 36.49,
-      "saving_vs_median_aud": 16.57,
-      "saving_vs_median_pct": 45.31,
-      "saving_vs_highest_aud": 45.14,
-      "saving_vs_highest_pct": 69.3,
+      "saving_vs_median_aud": 17.17,
+      "saving_vs_median_pct": 46.19,
+      "saving_vs_highest_aud": 44.9,
+      "saving_vs_highest_pct": 69.18,
       "listings": [
         {
           "source": "sportscardstore",
@@ -496172,9 +496353,28 @@
           "external_id": "v1|336497342214|0",
           "url": "https://www.ebay.com.au/itm/336497342214?_skw=2024-25+Bronny+James+Topps+1&hash=item4e58cdf706:g:nxsAAOSwPRpnMbJw",
           "title": "Bronny James Jr./LeBron James - 2024-25 Topps NOW Card 1",
-          "landed_aud": 34.14,
-          "asking_price": 15.88,
-          "shipping": 18.26,
+          "landed_aud": 34.02,
+          "asking_price": 15.82,
+          "shipping": 18.2,
+          "currency": "AUD",
+          "card_number": "1",
+          "parallel": null,
+          "serial_total": null,
+          "grader": null,
+          "grade": null,
+          "rookie": false,
+          "autograph": false,
+          "memorabilia": false,
+          "title_guard": ""
+        },
+        {
+          "source": "ebay",
+          "external_id": "v1|135316839539|0",
+          "url": "https://www.ebay.com.au/itm/135316839539?_skw=2024-25+Bronny+James+Topps+1&hash=item1f81831c73:g:wRQAAOSwlFBnGYJO",
+          "title": "Bronny James Jr./LeBron James - 2024-25 Topps NOW Basketball Card 1 ",
+          "landed_aud": 37.17,
+          "asking_price": 20.4,
+          "shipping": 16.77,
           "currency": "AUD",
           "card_number": "1",
           "parallel": null,
@@ -496210,9 +496410,9 @@
           "external_id": "v1|147606010625|0",
           "url": "https://www.ebay.com.au/itm/147606010625?_skw=2024-25+Bronny+James+Topps+1&hash=item225e00fb01:g:BMwAAOSwNexnQVyi",
           "title": "Bronny James Jr./LeBron James - 2024-25 Topps NOW Basketball Card 1",
-          "landed_aud": 58.76,
-          "asking_price": 39.72,
-          "shipping": 19.04,
+          "landed_aud": 58.55,
+          "asking_price": 39.58,
+          "shipping": 18.97,
           "currency": "AUD",
           "card_number": "1",
           "parallel": null,
@@ -496229,9 +496429,9 @@
           "external_id": "v1|305924524269|0",
           "url": "https://www.ebay.com.au/itm/305924524269?_skw=2024-25+Bronny+James+Topps+1&hash=item473a85c8ed:g:8NkAAOSw7ONnP2~Y",
           "title": "Bronny James 2024-25 Topps Now Father Son Debut #1 LeBron & Bronny James LAKERS",
-          "landed_aud": 65.14,
-          "asking_price": 39.72,
-          "shipping": 25.42,
+          "landed_aud": 64.9,
+          "asking_price": 39.58,
+          "shipping": 25.32,
           "currency": "AUD",
           "card_number": "1",
           "parallel": null,
@@ -510774,6 +510974,90 @@
           "autograph": false,
           "memorabilia": false,
           "title_guard": "74,8,choiceblack,mojo"
+        }
+      ]
+    },
+    {
+      "comparison_key": "cf_fbb2207a60c0f323cdee|tg:160",
+      "comparison_type": "EXACT_CARD",
+      "exact_equivalent": true,
+      "match_confidence": 1.0,
+      "match_reasons": [
+        "same player",
+        "same year",
+        "same brand/product",
+        "same parallel",
+        "same serial denominator",
+        "same rookie state",
+        "title discriminator guard passed"
+      ],
+      "pricing_basis": "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE",
+      "comparison_warning": null,
+      "sport": "MLB",
+      "player": "Sebastian Walcott",
+      "year": "2024",
+      "product": "Donruss",
+      "store_count": 2,
+      "listing_count": 2,
+      "stores": [
+        "ebay",
+        "thehobby"
+      ],
+      "lowest_active_ask_aud": 6.44,
+      "median_active_ask_aud": 10.22,
+      "highest_active_ask_aud": 14.0,
+      "spread_aud": 7.56,
+      "spread_pct": 117.39,
+      "cheapest_store": "thehobby",
+      "cheapest_external_id": "9559494754604",
+      "cheapest_url": "https://thehobby.com.au/products/skucard19648",
+      "cheapest_landed_aud": 6.44,
+      "next_best_store": "ebay",
+      "next_best_landed_aud": 14.0,
+      "saving_vs_next_best_aud": 7.56,
+      "saving_vs_next_best_pct": 54.0,
+      "saving_vs_median_aud": 3.78,
+      "saving_vs_median_pct": 36.99,
+      "saving_vs_highest_aud": 7.56,
+      "saving_vs_highest_pct": 54.0,
+      "listings": [
+        {
+          "source": "thehobby",
+          "external_id": "9559494754604",
+          "url": "https://thehobby.com.au/products/skucard19648",
+          "title": "Sebastian Walcott 2024 Panini Donruss 160 Optic Orange RC 123/199",
+          "landed_aud": 6.44,
+          "asking_price": 6.44,
+          "shipping": 0.0,
+          "currency": "AUD",
+          "card_number": null,
+          "parallel": "Orange",
+          "serial_total": 199,
+          "grader": null,
+          "grade": null,
+          "rookie": true,
+          "autograph": false,
+          "memorabilia": false,
+          "title_guard": "160"
+        },
+        {
+          "source": "ebay",
+          "external_id": "v1|375576436017|0",
+          "url": "https://www.ebay.com.au/itm/375576436017?_skw=2024+Sebastian+Walcott+Donruss+Orange+%2F199&hash=item5772199d31:g:Va4AAeSwPV5qvH8-",
+          "title": "Sebastian Walcott 2024 Panini Donruss 160 Optic Orange RC 123/199",
+          "landed_aud": 14.0,
+          "asking_price": 10.0,
+          "shipping": 4.0,
+          "currency": "AUD",
+          "card_number": null,
+          "parallel": "Orange",
+          "serial_total": 199,
+          "grader": null,
+          "grade": null,
+          "rookie": true,
+          "autograph": false,
+          "memorabilia": false,
+          "title_guard": "160"
         }
       ]
     }
