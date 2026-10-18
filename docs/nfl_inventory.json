@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-18T05:08:25.990434+00:00",
+  "generated_at": "2026-10-18T11:43:06.125815+00:00",
   "feed_type": "NFL_DEEP_INVENTORY_STAGING",
   "pricing_basis": "ACTIVE_ASKS_ONLY_NOT_FAIR_VALUE",
   "display_currency": "AUD",
@@ -28,14 +28,14 @@
     "player_year_markets": 0,
     "foreign_currency_cards": 0,
     "fx_converted_cards": 0,
-    "retained_ebay_cards": 0,
-    "expired_ebay_cards": 63,
+    "retained_ebay_cards": 4,
+    "expired_ebay_cards": 0,
     "ebay_enabled": true,
-    "ebay_targets": 13,
-    "ebay_queries": 13,
-    "ebay_added_cards": 4,
-    "ebay_exact_signatures_matched": 2,
-    "ebay_rejected_non_exact": 213,
+    "ebay_targets": 11,
+    "ebay_queries": 11,
+    "ebay_added_cards": 0,
+    "ebay_exact_signatures_matched": 0,
+    "ebay_rejected_non_exact": 143,
     "ebay_errors": 0
   },
   "by_source": {
@@ -1078,7 +1078,8 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-18"
+      "fx_rate_date": "2026-10-18",
+      "staging_ebay_retain_cycles": 1
     },
     {
       "source": "ebay",
@@ -1140,7 +1141,8 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-18"
+      "fx_rate_date": "2026-10-18",
+      "staging_ebay_retain_cycles": 1
     },
     {
       "source": "ebay",
@@ -1202,7 +1204,8 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-18"
+      "fx_rate_date": "2026-10-18",
+      "staging_ebay_retain_cycles": 1
     },
     {
       "source": "ebay",
@@ -1261,7 +1264,8 @@
       "research_status": "NOT_RESEARCHED_IN_THIS_SCAN",
       "fx_status": "AUD_NATIVE",
       "fx_source": "AUD_NATIVE",
-      "fx_rate_date": "2026-10-18"
+      "fx_rate_date": "2026-10-18",
+      "staging_ebay_retain_cycles": 1
     }
   ],
   "active_price_comparisons": {
